@@ -1008,11 +1008,48 @@ This requires a 50+ food bar:
     <buff id="nutrition_18_Trigger" duration="1" actions="increment(nutrition, 18, 0, 0, 1)"/>
     <buff id="nutrition_19_Trigger" duration="1" actions="increment(nutrition, 19, 0, 0, 1)"/>
     <buff id="nutrition_20_Trigger" duration="1" actions="increment(nutrition, 20, 0, 0, 1)"/>
-    <buff id="nutritionFade" buffif="CTRfood > 0" debuffif="CTRfood lequal 0" actions="increment(CTRfood, -1, 1, 0, 0);min(CTRfood, 0)"/>
+    
+    <buff id="nutritionFade" buffif="nutrition > 0" debuffif="nutrition lequal 0" actions="increment(nutrition, -1, 60, 0, 0);min(nutrition, 0)"/>
     <buff id="malnourishedTrigger" buffif="nutrition less ??" debuffif="nutrition gequal ??" actions="buff(malnourishTimer)" ondebuff="StopMalnourishTimer" />
 	<buff id="malnourishTimer" actions="increment(malnourished, 1, 60, 0, 0)" />
 	<buff id="StopMalnourishTimer" duration="1" actions="debuff(malnourishTimer)"  />
     <buff id="malnourishFade" buffif="malnourished > 0" debuffif="malnourished lequal 0" actions="increment(malnourished, -1, 1, 0, 0);min(malnourished, 0)"/>
 
-	
+	<buff id="notFullBlockerBuff" buffif="food > 0.99" debuffif="food lequal 0.99" actions="buff(fullBuff)"/>
+   
+    <buff id="fullBuff" mutex="bleeding,notFullBlockerBuff" requires="goodNutrition3"  buffif="CTRfood > 0" debuffif="CTRfood lequal 0"icon="ui_game_symbol_natural_healing" name_key="fullBuff" description_key="fullBuffDesc" tooltip_key="fullBuffTooltip">
+        <modify id="0" stat="health" amount="1" rate="1" />
+    </buff>
+    
+    <buff id="goodNutrition1" actions="increment(malnourished, 1, 60, 0, 0)" />
+	<buff id="goodNutrition2" duration="1" actions="debuff(malnourishTimer)"  />
+    <buff id="goodNutrition3" duration="1" actions="debuff(malnourishTimer)"  />
+    
+    <buff id="badNutrition1" actions="increment(malnourished, 1, 60, 0, 0)" />
+	<buff id="badNutrition2" duration="1" actions="debuff(malnourishTimer)"  />
+    <buff id="badNutrition3" duration="1" actions="debuff(malnourishTimer)"  />
+    
+   <!--JZMOD Pain-->
+    <buff id="pain_1_Trigger" duration="1" actions="increment(pain, 1, 0, 0, 1)"/>
+    <buff id="pain_2_Trigger" duration="1" actions="increment(pain, 2, 0, 0, 1)"/>
+    <buff id="pain_3_Trigger" duration="1" actions="increment(pain, 3, 0, 0, 1)"/>
+    <buff id="pain_4_Trigger" duration="1" actions="increment(pain, 4, 0, 0, 1)"/>
+    <buff id="pain_5_Trigger" duration="1" actions="increment(pain, 5, 0, 0, 1)"/>
+    <buff id="pain_6_Trigger" duration="1" actions="increment(pain, 6, 0, 0, 1)"/>
+    <buff id="pain_7_Trigger" duration="1" actions="increment(pain, 7, 0, 0, 1)"/>
+    <buff id="pain_8_Trigger" duration="1" actions="increment(pain, 8, 0, 0, 1)"/>
+    <buff id="pain_9_Trigger" duration="1" actions="increment(pain, 9, 0, 0, 1)"/>
+    <buff id="pain_10_Trigger" duration="1" actions="increment(pain, 10, 0, 0, 1)"/>
+    <buff id="pain_11_Trigger" duration="1" actions="increment(pain, 11, 0, 0, 1)"/>
+    <buff id="pain_12_Trigger" duration="1" actions="increment(pain, 12, 0, 0, 1)"/>
+    <buff id="pain_13_Trigger" duration="1" actions="increment(pain, 13, 0, 0, 1)"/>
+    <buff id="pain_14_Trigger" duration="1" actions="increment(pain, 14, 0, 0, 1)"/>
+    <buff id="pain_15_Trigger" duration="1" actions="increment(pain, 15, 0, 0, 1)"/>
+    <buff id="pain_16_Trigger" duration="1" actions="increment(pain, 16, 0, 0, 1)"/>
+    <buff id="pain_17_Trigger" duration="1" actions="increment(pain, 17, 0, 0, 1)"/>
+    <buff id="pain_18_Trigger" duration="1" actions="increment(pain, 18, 0, 0, 1)"/>
+    <buff id="pain_19_Trigger" duration="1" actions="increment(pain, 19, 0, 0, 1)"/>
+    <buff id="pain_20_Trigger" duration="1" actions="increment(pain, 20, 0, 0, 1)"/>
+    <buff id="painFade" buffif="pain > 0" debuffif="pain lequal 0" actions="increment(pain, -1, 60, 0, 0);min(pain, 0)"/>
+   
 </buffs>
