@@ -307,7 +307,7 @@ Mesh files no longer used:
 		<property name="DismembermentBaseChance" value="0,0.01"/>
 	</property>
 	<property name="Group" value="Ammo/Weapons"/>
-	<property name="ActionSkillGroup" value="bladeWeapons"/>
+	<property name="ActionSkillGroup" value="bladeWeaponsAction"/>
 	<property name="CraftingSkillGroup" value="boneShiv"/>
 </item>
 
@@ -343,7 +343,7 @@ Mesh files no longer used:
 		<property name="DismembermentBaseChance" value="0.01,0.02"/>
 	</property>
 	<property name="Group" value="Ammo/Weapons"/>
-	<property name="ActionSkillGroup" value="bladeWeapons"/>
+	<property name="ActionSkillGroup" value="bladeWeaponsAction"/>
 	<property name="CraftingSkillGroup" value="huntingKnife"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
@@ -382,7 +382,7 @@ Mesh files no longer used:
 		<property name="DismembermentBaseChance" value="0.01,0.03"/>
 	</property>
 	<property name="Group" value="Ammo/Weapons"/>
-	<property name="ActionSkillGroup" value="bladeWeapons"/>
+	<property name="ActionSkillGroup" value="bladeWeaponsAction"/>
 	<property name="CraftingSkillGroup" value="machete"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
@@ -445,7 +445,7 @@ Mesh files no longer used:
 	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="pistols"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value="0.45"/>
 </item>
@@ -500,7 +500,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="pistols"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value="0.45"/>
 	<property name="DescriptionKey" value="devOnlyGroupDesc"/>
@@ -557,7 +557,7 @@ Mesh files no longer used:
 	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="pistols"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value="0.45"/>
 </item>
@@ -615,7 +615,7 @@ Mesh files no longer used:
 	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="shotguns"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value="0.45"/>
 </item>
@@ -673,7 +673,7 @@ Mesh files no longer used:
 	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="shotguns"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 	<property name="LightValue" value="0.45"/>
@@ -736,7 +736,7 @@ Mesh files no longer used:
 	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="submachineGuns"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value="0.45"/>
 </item>
@@ -798,7 +798,7 @@ Mesh files no longer used:
 	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="assaultRifles"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value="0.45"/>
 </item>
@@ -855,7 +855,7 @@ Mesh files no longer used:
 	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="snipers"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value="0.45"/>
 </item>
@@ -912,7 +912,7 @@ Mesh files no longer used:
 	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="snipers"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value="0.45"/>
 </item>
@@ -960,7 +960,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Ammo/Weapons"/>
     <property name="ActionSkillGroup" value="heavyGuns"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -1018,7 +1018,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="shotguns"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -1927,7 +1927,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="upperBody"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -1977,7 +1977,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="upperBody"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -2027,7 +2027,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="upperBody"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -2153,7 +2153,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DegradationMax" value="175,350"/>
 	</property>
-	<property name="ActionSkillGroup" value="Archery"/>
+	<property name="ActionSkillGroup" value="archeryAction"/>
 	<property name="CraftingSkillGroup" value="woodenBowSkill"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
@@ -2200,8 +2200,8 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="240,600"/>
 	</property>
 	<property name="Group" value="Ammo/Weapons"/>
-	<property name="ActionSkillGroup" value="Archery"/>
-	<property name="CraftingSkillGroup" value="crossbowSkill"/>
+	<property name="ActionSkillGroup" value="archeryAction"/>
+	<property name="CraftingSkillGroup" value="crossbowAction"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 </item>
@@ -2254,7 +2254,7 @@ Mesh files no longer used:
 		<property name="Zoom_max_in" value="38"/>
 	</property>
 	<property name="Group" value="Ammo/Weapons"/>
-	<property name="ActionSkillGroup" value="Archery"/>
+	<property name="ActionSkillGroup" value="archeryAction"/>
 	<property name="CraftingSkillGroup" value="compoundBowSkill"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
@@ -2267,7 +2267,7 @@ Mesh files no longer used:
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
 	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="EconomicValue" value="14"/>
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
@@ -2278,7 +2278,7 @@ Mesh files no longer used:
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
 	<property name="Stacknumber" value="500"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="EconomicValue" value="17"/>
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
@@ -2290,7 +2290,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="21"/>
 	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
 	<property name="Group" value="Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="EconomicValue" value="19"/>
 </item>
 
@@ -2299,7 +2299,7 @@ Mesh files no longer used:
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
 	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="EconomicValue" value="19"/>
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
@@ -2316,7 +2316,7 @@ Mesh files no longer used:
 		<property name="EntityDamage" value="3.6,9"/>
 		<property name="BlockDamage" value="5.4,13.5"/>
 	</property>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
 
@@ -2331,7 +2331,7 @@ Mesh files no longer used:
 		<property name="EntityDamage" value="100,150"/>
 		<property name="BlockDamage" value="100,150"/>
 	</property>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
 
@@ -2358,7 +2358,7 @@ Mesh files no longer used:
 		<property name="FlyTime" value="1.2"/>
 		<property name="LifeTime" value="8"/>
 	</property>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
 
@@ -2371,7 +2371,7 @@ Mesh files no longer used:
 	<property name="DropScale" value="4"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="6"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 </item>
 
 <item id="161" name="gasCan">
@@ -2383,7 +2383,7 @@ Mesh files no longer used:
 	<property name="FuelValue" value="2"/>
 	<property name="EconomicValue" value="83"/> <!-- oil barrel 500 -->
 	<property name="EconomicBundleSize" value="100"/>
-	<property name="CraftingSkillGroup" value="chemistry"/>
+	<property name="CraftingSkillGroup" value="chemistryCraft"/>
 	<property name="Group" value="Resources,Chemicals"/>
 </item>
 
@@ -2418,7 +2418,7 @@ Mesh files no longer used:
 		<property name="BlockDamage" value="1,5"/>
 		<property name="ApplyBuff" value=".25,.25" param1="arrowCriticalBleedout"/>
 	</property>
-	<property name="CraftingSkillGroup" value="fletching"/>
+	<property name="CraftingSkillGroup" value="fletchingCraft"/>
 </item>
 
 <item id="165" name="ironArrow">
@@ -2505,7 +2505,7 @@ Mesh files no longer used:
 		<property name="EntityDamage" value="25,45"/>
 		<property name="BlockDamage" value="1,5"/>
 	</property>
-	<property name="CraftingSkillGroup" value="fletching"/>
+	<property name="CraftingSkillGroup" value="fletchingCraft"/>
 	<property name="Group" value="Ammo/Weapons"/>
 </item> 
 
@@ -2540,7 +2540,7 @@ Mesh files no longer used:
 		<property name="ApplyBuff" value=".35,.35" param1="arrowCriticalBleedout"/>
 	</property>
 	<property name="Group" value="Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="fletching"/>
+	<property name="CraftingSkillGroup" value="fletchingCraft"/>
 </item>
 
 <item id="172" name="steelCrossbowBolt">
@@ -2590,7 +2590,7 @@ Mesh files no longer used:
 		<property name="BlockDamage" value="6,11"/>
 		<property name="ApplyBuff" value="0,0" param1="arrowCriticalBleedout"/>
 	</property>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 
 <!-- * * * * * * * * * * explosives / decoys / thrown items * * * * * * * * * * -->
@@ -2630,7 +2630,7 @@ Mesh files no longer used:
 	</property>
 	<property name="ThrowableDecoy" value="true"/>
 	<property name="Group" value="Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="chemistry"/>
+	<property name="CraftingSkillGroup" value="chemistryCraft"/>
 </item>
 
 <item id="181" name="dynamite">
@@ -2663,7 +2663,7 @@ Mesh files no longer used:
 	</property>
 	<property name="ThrowableDecoy" value="true"/>
 	<property name="Group" value="Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="chemistry"/>
+	<property name="CraftingSkillGroup" value="chemistryCraft"/>
 </item>
 
 <item id="183" name="molotovCocktail">
@@ -2706,7 +2706,7 @@ Mesh files no longer used:
 	</property> -->
 	<property name="EconomicValue" value="41"/>
 	<property name="Group" value="Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="chemistry"/>
+	<property name="CraftingSkillGroup" value="chemistryCraft"/>
 </item>
 
 <item id="186" name="flare">
@@ -2802,7 +2802,7 @@ Mesh files no longer used:
 		<property name="BlockDamage" value="3,8"/>
 		<property name="ApplyBuff" value=".3,.3" param1="arrowCriticalBleedout"/>
 	</property>
-    <property name="CraftingSkillGroup" value="fletching"/>
+    <property name="CraftingSkillGroup" value="fletchingCraft"/>
 </item>
 
 <!-- * * * * * * * * * * parts for assembled weapons, tools, and vehicles * * * * * * * * * * -->
@@ -2820,7 +2820,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="750"/>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 	<!-- NOPE <property name="RepairExpMultiplier" value="10"/>
 	<property name="CraftingIngredientExp" value="80"/>-->
 </item>
@@ -3232,7 +3232,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="3000,6000"/>
 	</property>
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 
 <item id="261" name="partsChainsaw_parts">
@@ -3244,7 +3244,7 @@ Mesh files no longer used:
 		<property name="FalloffRange" value="2.35,2.35"/>
 		<property name="DegradationMax" value="3000,6000"/>
 	</property>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 <item id="262" name="partsChainsaw_blade">
 	<property name="Extends" value="partsMaster"/>
@@ -3258,7 +3258,7 @@ Mesh files no longer used:
 		<property name="DismembermentBonus" value="0,0"/>
 		<property name="DegradationMax" value="3000,6000"/>
 	</property>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 	<property name="Group" value="Resources,Tools/Traps"/>
 </item>
 <item id="265" name="partsAuger_parts">
@@ -3270,7 +3270,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DegradationMax" value="3000,6000"/>
 	</property>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 <item id="266" name="partsAuger_blade">
 	<property name="Extends" value="partsMaster"/>
@@ -3282,7 +3282,7 @@ Mesh files no longer used:
 		<!-- <property name="Accuracy" value="1, 0.01"/> -->
 		<property name="DegradationMax" value="3000,6000"/>
 	</property>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 	<property name="Group" value="Resources,Tools/Traps"/>
 </item>
 
@@ -3302,7 +3302,7 @@ Mesh files no longer used:
 	<property class="Action1">
 		<property name="Class" value="SpawnMinibike"/>
 	</property>
-    <property name="CraftingSkillGroup" value="engineering"/>
+    <property name="CraftingSkillGroup" value="engineeringCraft"/>
 	<property name="Group" value="Resources"/>
 </item>
 <item id="270" name="minibikeSeat">
@@ -3319,7 +3319,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="1200,6000"/>
 	</property>
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 <item id="271" name="minibikeWheels">
 	<property name="DescriptionKey" value="minibikePartsGroupDesc"/>
@@ -3337,7 +3337,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="1200,6000"/>
 	</property>
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 <item id="272" name="padlock">
 	<property name="VehicleSlotType" value="lock"/>
@@ -3352,7 +3352,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="1200,6000"/>
 	</property>
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 <item id="273" name="minibikeHandlebars">
 	<property name="DescriptionKey" value="minibikePartsGroupDesc"/>
@@ -3370,7 +3370,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="1200,6000"/>
 	</property>
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 <item id="274" name="shoppingBasketItem">
 	<property name="VehicleSlotType" value="basket"/>
@@ -3401,7 +3401,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="2000,4000"/>
 	</property>
 	<property name="EconomicValue" value="300"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 <item id="277" name="partsNailgun_receiver">
 	<property name="Extends" value="partsMaster"/>
@@ -3413,7 +3413,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="2000,4000"/>
 	</property>
 	<property name="EconomicValue" value="300"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 <item id="278" name="partsNailgun_parts">
 	<property name="Extends" value="partsMaster"/>
@@ -3426,7 +3426,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="2000,4000"/>
 	</property>
 	<property name="EconomicValue" value="300"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 <item id="279" name="partsNailgun_battery">
 	<property name="Extends" value="partsMaster"/>
@@ -3438,7 +3438,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="2000,4000"/>
 	</property>
 	<property name="EconomicValue" value="300"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 
 <item id="280" name="partsCompoundBow_body"> <!-- new icon xxx -->
@@ -3691,8 +3691,8 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="animalHideClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="leatherworking"/>
-	<property name="CraftingSkillGroup" value="leatherworking"/>
+	<property name="ActionSkillGroup" value="leatherworkingCraft"/>
+	<property name="CraftingSkillGroup" value="leatherworkingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -3779,8 +3779,8 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="leatherClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="leatherworking"/>
-	<property name="CraftingSkillGroup" value="leatherworking"/>
+	<property name="ActionSkillGroup" value="leatherworkingCraft"/>
+	<property name="CraftingSkillGroup" value="leatherworkingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -3864,8 +3864,8 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="scrapIronClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="armorSmithing"/>
-	<property name="CraftingSkillGroup" value="armorSmithing"/>
+	<property name="ActionSkillGroup" value="armorSmithingCraft"/>
+	<property name="CraftingSkillGroup" value="armorSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -3950,8 +3950,8 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="ironClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="armorSmithing"/>
-	<property name="CraftingSkillGroup" value="armorSmithing"/>
+	<property name="ActionSkillGroup" value="armorSmithingCraft"/>
+	<property name="CraftingSkillGroup" value="armorSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -4043,8 +4043,8 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="militaryArmorGroupDesc"/>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="armorSmithing"/>
-	<property name="CraftingSkillGroup" value="armorSmithing"/>
+	<property name="ActionSkillGroup" value="armorSmithingCraft"/>
+	<property name="CraftingSkillGroup" value="armorSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="12.8"/>
 </item>
 
@@ -4125,8 +4125,8 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="hazmatClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="armorSmithing"/>
-	<property name="CraftingSkillGroup" value="armorSmithing"/>
+	<property name="ActionSkillGroup" value="armorSmithingCraft"/>
+	<property name="CraftingSkillGroup" value="armorSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -4221,8 +4221,8 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="banditArmorGroupDesc"/>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="armorSmithing"/>
-	<property name="CraftingSkillGroup" value="armorSmithing"/>
+	<property name="ActionSkillGroup" value="armorSmithingCraft"/>
+	<property name="CraftingSkillGroup" value="armorSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -4323,8 +4323,8 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="cowboyHatGroupDesc"/>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="leatherworking"/>
-	<property name="CraftingSkillGroup" value="leatherworking"/>
+	<property name="ActionSkillGroup" value="leatherworkingCraft"/>
+	<property name="CraftingSkillGroup" value="leatherworkingCraft"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -4509,8 +4509,8 @@ Mesh files no longer used:
 		<property name="ShowAltHair" value="true"/>
 	</property>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="armorSmithing"/>
-	<property name="CraftingSkillGroup" value="armorSmithing"/>
+	<property name="ActionSkillGroup" value="armorSmithingCraft"/>
+	<property name="CraftingSkillGroup" value="armorSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value=".7"/>
 </item>
@@ -4541,8 +4541,8 @@ Mesh files no longer used:
 		<property name="ShowAltHair" value="true"/>
 	</property>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="armorSmithing"/>
-	<property name="CraftingSkillGroup" value="armorSmithing"/>
+	<property name="ActionSkillGroup" value="armorSmithingCraft"/>
+	<property name="CraftingSkillGroup" value="armorSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -4575,8 +4575,8 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Clothing"/>
 	<property name="DescriptionKey" value="footballHelmetDesc"/>
-	<property name="ActionSkillGroup" value="armorSmithing"/>
-	<property name="CraftingSkillGroup" value="armorSmithing"/>
+	<property name="ActionSkillGroup" value="armorSmithingCraft"/>
+	<property name="CraftingSkillGroup" value="armorSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -4610,8 +4610,8 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="120,300"/> <!-- altered -->
 	</property>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="armorSmithing"/>
-	<property name="CraftingSkillGroup" value="armorSmithing"/>
+	<property name="ActionSkillGroup" value="armorSmithingCraft"/>
+	<property name="CraftingSkillGroup" value="armorSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="IsDeveloper" value="true"/>
 </item>
@@ -4642,7 +4642,7 @@ Mesh files no longer used:
 		<property name="UISlot" value="Eyewear"/>
 	</property>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="armorSmithing"/>
+	<property name="ActionSkillGroup" value="armorSmithingCraft"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -4692,8 +4692,8 @@ Mesh files no longer used:
 		<property name="UISlot" value="Eyewear"/>
 	</property>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="armorSmithing"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="ActionSkillGroup" value="armorSmithingCraft"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -4780,8 +4780,8 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="animalHidePonchoDesc"/>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="leatherworking"/>
-	<property name="CraftingSkillGroup" value="leatherworking"/>
+	<property name="ActionSkillGroup" value="leatherworkingCraft"/>
+	<property name="CraftingSkillGroup" value="leatherworkingCraft"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -5203,8 +5203,8 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="leatherClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="leatherworking"/>
-	<property name="CraftingSkillGroup" value="leatherworking"/>
+	<property name="ActionSkillGroup" value="leatherworkingCraft"/>
+	<property name="CraftingSkillGroup" value="leatherworkingCraft"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -5249,8 +5249,8 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="pufferCoatGroupDesc"/>
 	<property name="Group" value="Clothing"/>
-	<property name="ActionSkillGroup" value="leatherworking"/>
-	<property name="CraftingSkillGroup" value="leatherworking"/>
+	<property name="ActionSkillGroup" value="leatherworkingCraft"/>
+	<property name="CraftingSkillGroup" value="leatherworkingCraft"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -6077,8 +6077,8 @@ Mesh files no longer used:
 		<property name="Buff" value="splint"/>
 	</property>
 	<property name="Group" value="Science"/>
-	<property name="ActionSkillGroup" value="medicine"/>
-	<property name="CraftingSkillGroup" value="medicine"/>
+	<property name="ActionSkillGroup" value="medicineCraft"/>
+	<property name="CraftingSkillGroup" value="medicineCraft"/>
 	<property name="ActionExp" value="10"/>
 </item>
 
@@ -6107,8 +6107,8 @@ Mesh files no longer used:
 		<property name="Sound_start" value="player_ointment"/>
 	</property>
 	<property name="Group" value="Science"/>
-	<property name="ActionSkillGroup" value="medicine"/>
-	<property name="CraftingSkillGroup" value="medicine"/>
+	<property name="ActionSkillGroup" value="medicineCraft"/>
+	<property name="CraftingSkillGroup" value="medicineCraft"/>
 	<property name="ActionExp" value="10"/>
 </item>
 
@@ -6143,8 +6143,8 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Science,Basics"/>
 	<property name="DescriptionKey" value="bandageDesc"/>
-	<property name="ActionSkillGroup" value="medicine"/>
-	<property name="CraftingSkillGroup" value="medicine"/>
+	<property name="ActionSkillGroup" value="medicineCraft"/>
+	<property name="CraftingSkillGroup" value="medicineCraft"/>
 	<property name="ActionExp" value="10"/>
 	<property name="PickupJournalEntry" value="firstAidTip"/>
 </item>
@@ -6159,7 +6159,7 @@ Mesh files no longer used:
 		<property name="Buff" value="firstAid"/>
 	</property>
 	<property name="DescriptionKey" value="firstAidBandageDesc"/>
-	<property name="CraftingSkillGroup" value="medicine"/>
+	<property name="CraftingSkillGroup" value="medicineCraft"/>
 	<property name="CraftingIngredientExp" value="2"/>
 </item>
 
@@ -6177,7 +6177,7 @@ Mesh files no longer used:
 		<property name="Buff" value="firstAidLarge"/>
 	</property>
 	<property name="DescriptionKey" value="firstAidKitDesc"/>
-	<property name="CraftingSkillGroup" value="medicine"/>
+	<property name="CraftingSkillGroup" value="medicineCraft"/>
 </item>
 
 <item id="661" name="bloodDrawKit">
@@ -6200,8 +6200,8 @@ Mesh files no longer used:
 		<property name="Consume" value="false"/>
 		<property name="Create_item" value="bloodBag"/>
 	</property>
-	<property name="ActionSkillGroup" value="medicine"/>
-	<property name="CraftingSkillGroup" value="medicine"/>
+	<property name="ActionSkillGroup" value="medicineCraft"/>
+	<property name="CraftingSkillGroup" value="medicineCraft"/>
 	<property name="Group" value="Resources"/>
 	<property name="ActionExp" value="10"/>
 </item>
@@ -6224,8 +6224,8 @@ Mesh files no longer used:
 		<property name="Gain_water" value="5"/>
 		<property name="Sound_start" value="player_drinking"/>
 	</property>
-	<property name="ActionSkillGroup" value="medicine"/>
-	<property name="CraftingSkillGroup" value="medicine"/>
+	<property name="ActionSkillGroup" value="medicineCraft"/>
+	<property name="CraftingSkillGroup" value="medicineCraft"/>
 	<property name="CraftingIngredientExp" value="3"/>
 	<property name="Group" value="Science"/>
 	<property name="ActionExp" value="10"/>
@@ -6255,8 +6255,8 @@ Mesh files no longer used:
 		<property name="Sound_start" value="player_painkillers"/>
 		<property name="Debuff" value="dysentery"/>
 	</property>
-	<property name="ActionSkillGroup" value="medicine"/>
-	<property name="CraftingSkillGroup" value="medicine"/>
+	<property name="ActionSkillGroup" value="medicineCraft"/>
+	<property name="CraftingSkillGroup" value="medicineCraft"/>
 	<property name="Group" value="Science"/>
 	<property name="ActionExp" value="10"/>
 </item>
@@ -6287,8 +6287,8 @@ Mesh files no longer used:
 		<property name="Sound_start" value="player_painkillers"/>
 		<property name="Buff" value="painkillerBuff"/>
 	</property>
-	<property name="ActionSkillGroup" value="medicine"/>
-	<property name="CraftingSkillGroup" value="medicine"/>
+	<property name="ActionSkillGroup" value="medicineCraft"/>
+	<property name="CraftingSkillGroup" value="medicineCraft"/>
 	<property name="Group" value="Science"/>
 	<property name="ActionExp" value="5"/>
 </item>
@@ -6323,8 +6323,8 @@ Mesh files no longer used:
 		<property name="Sound_start" value="player_painkillers"/>
 		<property name="Debuff" value="infection,dysentery,dysentery2"/>
 	</property>
-	<property name="ActionSkillGroup" value="medicine"/>
-	<property name="CraftingSkillGroup" value="medicine"/>
+	<property name="ActionSkillGroup" value="medicineCraft"/>
+	<property name="CraftingSkillGroup" value="medicineCraft"/>
 	<property name="Group" value="Science"/>
 	<property name="ActionExp" value="10"/>
 </item>
@@ -6359,8 +6359,8 @@ Mesh files no longer used:
 		<property name="Buff" value="cured"/>
 		<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2"/>
 	</property>
-	<property name="ActionSkillGroup" value="medicine"/>
-	<property name="CraftingSkillGroup" value="medicine"/>
+	<property name="ActionSkillGroup" value="medicineCraft"/>
+	<property name="CraftingSkillGroup" value="medicineCraft"/>
 	<property name="Group" value="Science"/>
 	<property name="ActionExp" value="10"/>
 </item>
@@ -6393,7 +6393,7 @@ Mesh files no longer used:
 		<property name="Gain_wellness" value="10"/>
 		<property name="Buff" value="redPillBuff"/>
 	</property>
-	<property name="ActionSkillGroup" value="medicine"/>
+	<property name="ActionSkillGroup" value="medicineCraft"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Science"/>
 </item>
@@ -6425,7 +6425,7 @@ Mesh files no longer used:
 		<property name="Gain_wellness" value="1000"/>
 		<property name="Buff" value="bluePillBuff"/>
 	</property>
-	<property name="ActionSkillGroup" value="medicine"/>
+	<property name="ActionSkillGroup" value="medicineCraft"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Science"/>
 </item>-->
@@ -6816,7 +6816,7 @@ Mesh files no longer used:
 		<property name="Gain_sickness" value="30"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
-	<property name="CraftingSkillGroup" value="chemistry"/>
+	<property name="CraftingSkillGroup" value="chemistryCraft"/>
 	<property name="CraftingIngredientTime" value="60"/>
 	<property name="CraftingIngredientExp" value="3"/>
 	<property name="Group" value="Food/Cooking"/>
@@ -7527,7 +7527,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunPistol"/>
-		<!-- <property name="Skills_to_gain" value="gunSmithing"/> -->
+		<!-- <property name="Skills_to_gain" value="gunSmithingCraft"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -7537,7 +7537,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gun44Magnum"/>
-		<!-- <property name="Skills_to_gain" value="gunSmithing"/> -->
+		<!-- <property name="Skills_to_gain" value="gunSmithingCraft"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -7546,7 +7546,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunSawedOffPumpShotgun"/>
-		<property name="Skills_to_gain" value="gunSmithing"/>
+		<property name="Skills_to_gain" value="gunSmithingCraft"/>
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item> -->
@@ -7555,7 +7555,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunPumpShotgun,gunSawedOffPumpShotgun"/>
-		<!-- <property name="Skills_to_gain" value="gunSmithing"/> -->
+		<!-- <property name="Skills_to_gain" value="gunSmithingCraft"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -7565,7 +7565,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunMP5"/>
-		<!-- <property name="Skills_to_gain" value="gunSmithing"/> -->
+		<!-- <property name="Skills_to_gain" value="gunSmithingCraft"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -7575,7 +7575,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunAK47"/>
-		<!-- <property name="Skills_to_gain" value="gunSmithing"/> -->
+		<!-- <property name="Skills_to_gain" value="gunSmithingCraft"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -7584,7 +7584,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunHuntingRifle"/>
-		<!-- <property name="Skills_to_gain" value="gunSmithing"/> -->
+		<!-- <property name="Skills_to_gain" value="gunSmithingCraft"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -7594,7 +7594,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunSniperRifle"/>
-		<!-- <property name="Skills_to_gain" value="gunSmithing"/> -->
+		<!-- <property name="Skills_to_gain" value="gunSmithingCraft"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -7604,7 +7604,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunRocketLauncher,rocket,rocketCasing,rocketTip"/>
-		<!-- <property name="Skills_to_gain" value="gunSmithing"/> -->
+		<!-- <property name="Skills_to_gain" value="gunSmithingCraft"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -7640,7 +7640,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="bulletTip,bulletCasing"/>
-		<property name="Skills_to_gain" value="gunSmithing"/>
+		<property name="Skills_to_gain" value="gunSmithingCraft"/>
 	</property>
 </item>
 
@@ -7727,7 +7727,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="shotgunSlug"/>
-		<!-- <property name="Skills_to_gain" value="gunSmithing"/> -->
+		<!-- <property name="Skills_to_gain" value="gunSmithingCraft"/> -->
 	</property>
 </item>
 
@@ -8360,7 +8360,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources,Clothing"/>
 	<property name="CraftingIngredientTime" value="2"/>
 	<property name="Weight" value="5"/>
-	<property name="CraftingSkillGroup" value="leatherworking"/>
+	<property name="CraftingSkillGroup" value="leatherworkingCraft"/>
 </item>
 
 <item id="1314" name="hopsFlower">
@@ -8521,7 +8521,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="15"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientTime" value="2"/>
-	<property name="CraftingSkillGroup" value="chemistry"/>
+	<property name="CraftingSkillGroup" value="chemistryCraft"/>
 	<property name="PickupJournalEntry" value="farmingTip"/>
 </item>
 
@@ -8572,7 +8572,7 @@ Mesh files no longer used:
 	<property name="RepairAmount" value="120"/>
 	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="200"/>
-	<property name="CraftingSkillGroup" value="armorSmithing"/>
+	<property name="CraftingSkillGroup" value="armorSmithingCraft"/>
 	<property name="Group" value="Resources,Clothing"/>
 </item>
 
@@ -8723,7 +8723,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="miscellaneousCrafting"/>
+	<property name="CraftingSkillGroup" value="miscellaneousCraft"/>
 </item>
 
 <item id="1342" name="steelArrowHead">
@@ -8735,7 +8735,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="38"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="miscellaneousCrafting"/>
+	<property name="CraftingSkillGroup" value="miscellaneousCraft"/>
 </item>
 
 <item id="1345" name="coal">
@@ -8772,7 +8772,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="22"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources,Ammo/Weapons,Tools/Traps"/>
-	<property name="CraftingSkillGroup" value="chemistry"/>
+	<property name="CraftingSkillGroup" value="chemistryCraft"/>
 </item>
 
 <item id="1348" name="buckshot">
@@ -8784,7 +8784,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="36"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 </item>
 
 <item id="1349" name="bulletCasing">
@@ -8795,7 +8795,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 
 <item id="1350" name="bulletTip">
@@ -8807,7 +8807,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 </item>
 
 <item id="1353" name="nail">
@@ -8848,7 +8848,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="151"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 </item>
 
 <item id="1355" name="rocketCasing">
@@ -8859,7 +8859,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="77"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 </item>
 
 <item id="1359" name="repairKit">
@@ -8872,7 +8872,7 @@ Mesh files no longer used:
 	<property name="RepairTime" value="2"/>
 	<property name="RepairAmount" value="2500"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="gunSmithing"/>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 </item>
 
 <item id="1360" name="oil">
@@ -8882,7 +8882,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="50"/> <!-- STK resource -->
 	<property name="EconomicValue" value="100"/>
 	<property name="Group" value="Chemicals"/>
-	<property name="CraftingSkillGroup" value="chemistry"/>
+	<property name="CraftingSkillGroup" value="chemistryCraft"/>
 </item>
 
 <item id="1361" name="steelPolish">
@@ -8893,7 +8893,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="EconomicValue" value="35"/>
 	<property name="Group" value="Chemicals"/>
-	<property name="CraftingSkillGroup" value="chemistry"/>
+	<property name="CraftingSkillGroup" value="chemistryCraft"/>
 </item>
 
 <item id="1362" name="paint">
@@ -8905,7 +8905,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="50"/>
-	<property name="CraftingSkillGroup" value="chemistry"/>
+	<property name="CraftingSkillGroup" value="chemistryCraft"/>
 	<property name="PickupJournalEntry" value="paintingTip"/>
 </item>
 
@@ -8942,7 +8942,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="EconomicValue" value="30"/>
 	<property name="Group" value="Chemicals"/>
-	<property name="CraftingSkillGroup" value="chemistry"/>
+	<property name="CraftingSkillGroup" value="chemistryCraft"/>
 </item>
 
 <item id="1367" name="canEmpty">
@@ -9235,7 +9235,7 @@ Mesh files no longer used:
 		<property name="VehicleStartChance" value="0.5,0.99"/>
 		<property name="VehicleTankSize" value="1000, 2000"/>
 	</property>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 
 <item id="1432" name="carBattery">
@@ -9353,7 +9353,7 @@ Mesh files no longer used:
 	<property name="Weight" value="100"/>
 	<property name="EconomicValue" value="405"/>
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="leatherworking"/>
+	<property name="CraftingSkillGroup" value="leatherworkingCraft"/>
 </item>
 
 <item id="1445" name="anvil">
@@ -9375,7 +9375,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="1"/> <!-- STK loot -->
 	<property name="Group" value="Resources"/>
 	<property name="EconomicValue" value="2000"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 
 <item id="1447" name="toolAndDieSet">
@@ -9387,7 +9387,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="1"/> <!-- STK loot -->
 	<property name="EconomicValue" value="2000"/>
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="engineering"/>
+	<property name="CraftingSkillGroup" value="engineeringCraft"/>
 </item>
 
 <item id="1460" name="unit_iron">
@@ -10389,7 +10389,7 @@ Mesh files no longer used:
 			<property name="BlockDamage" value="1,2" />
 		</property>
 		<property name="DescriptionKey" value="WoodSpearDesc" />
-        <property name="ActionSkillGroup" value="Archery" />
+        <property name="ActionSkillGroup" value="archeryAction" />
 		<property name="CraftingSkillGroup" value="WoodSpear" />
 	</item>
 	<item id="1635" name="IronSpear">
@@ -11849,11 +11849,11 @@ Mesh files no longer used:
 	</item>
 	<item id="1779" name="Hunting1">
 		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="Hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
 	</item>
 	<item id="1780" name="Hunting2">
 		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="Hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
 	</item>
 	<item id="1781" name="Engineering1">
 		<property name="Extends" value="Primitive1" />
@@ -11865,19 +11865,19 @@ Mesh files no longer used:
 	</item>
 	<item id="1783" name="Scavenging1">
 		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="Scavenging" />
+		<property name="CraftingSkillGroup" value="scavengingAction" />
 	</item>
 	<item id="1784" name="Scavenging2">
 		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="Scavenging" />
+		<property name="CraftingSkillGroup" value="scavengingAction" />
 	</item>
 	<item id="1785" name="Medicine1">
 		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="Medicine" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 	</item>
 	<item id="1786" name="Medicine2">
 		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="Medicine" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 	</item>
 	<item id="1787" name="GunSmithing1">
 		<property name="Extends" value="Primitive1" />
@@ -11897,11 +11897,11 @@ Mesh files no longer used:
 	</item>
 	<item id="1791" name="LeatherWorking1">
 		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="Leatherworking" />
+		<property name="CraftingSkillGroup" value="leatherworkingCraft" />
 	</item>
 	<item id="1792" name="LeatherWorking2">
 		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="Leatherworking" />
+		<property name="CraftingSkillGroup" value="leatherworkingCraft" />
 	</item>
 	<item id="1793" name="ArmorSmithing1">
 		<property name="Extends" value="Primitive1" />
@@ -12226,9 +12226,9 @@ Mesh files no longer used:
             <property name="Debuff" value="SpiderRash" />
 			<property name="Sound_start" value="UseActions/player_ointment" />
 		</property>
-		<property name="Group" value="Medicine" />
-		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Medicine" />
+		<property name="Group" value="medicineCraft" />
+		<property name="ActionSkillGroup" value="medicineCraft" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 		<property name="ActionExp" value="10" />
 	</item>
 	<item id="1831" name="SuterKit">
@@ -12243,9 +12243,9 @@ Mesh files no longer used:
 			<property name="Create_item" value="SewingNeedle" />
 		</property>
 		<property name="DescriptionKey" value="SuterKitDesc" />
-		<property name="Group" value="Medicine" />
-		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Medicine" />
+		<property name="Group" value="medicineCraft" />
+		<property name="ActionSkillGroup" value="medicineCraft" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 		<property name="ActionExp" value="25" />
 	</item>
 	<item id="1832" name="SanitizingBandage">
@@ -12259,8 +12259,8 @@ Mesh files no longer used:
 			<property name="Debuff" value="bleeding,bearTrap,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4,Swelling" />
 			<property name="Create_item" value="emptyJar" />
 		</property>
-        <property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Medicine" />
+        <property name="ActionSkillGroup" value="medicineCraft" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 		<property name="DescriptionKey" value="SanitizingBandageDesc" />
 	</item>
 	<item id="1833" name="RedHotSteelPipe">
@@ -12284,9 +12284,9 @@ Mesh files no longer used:
 			<property name="Create_item" value="shortSteelPipe" />
 		</property>
 		<property name="DescriptionKey" value="RedHotDesc" />
-		<property name="Group" value="Medicine" />
-		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Medicine" />
+		<property name="Group" value="medicineCraft" />
+		<property name="ActionSkillGroup" value="medicineCraft" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 		<property name="ActionExp" value="25" />
 	</item>
 	<item id="1834" name="RedHotPipe">
@@ -12310,8 +12310,8 @@ Mesh files no longer used:
 		</property>
 		<property name="DescriptionKey" value="AntiVenomDesc" />
 		<property name="CustomIconTint" value="96f91d" />
-        <property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Medicine" />
+        <property name="ActionSkillGroup" value="medicineCraft" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 	</item>
 	<item id="1836" name="Stimulant">
 		<property name="Extends" value="SuterKit" />
@@ -12327,8 +12327,8 @@ Mesh files no longer used:
 		</property>
 		<property name="DescriptionKey" value="StimulantDesc" />
 		<property name="ActionExp" value="10" />
-        <property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Chemistry" />
+        <property name="ActionSkillGroup" value="medicineCraft" />
+		<property name="CraftingSkillGroup" value="chemistryCraft" />
 	</item>
 	<item id="1837" name="SuperPill">
 		<property name="Extends" value="SuterKit" />
@@ -12346,8 +12346,8 @@ Mesh files no longer used:
 		</property>
 		<property name="DescriptionKey" value="SuperPillDesc" />
 		<property name="ActionExp" value="50" />
-        <property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Medicine" />
+        <property name="ActionSkillGroup" value="medicineCraft" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 	</item>
 	<item id="1838" name="PainKillerShot">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/Arrow" />
@@ -12387,8 +12387,8 @@ Mesh files no longer used:
 			<property name="ApplyBuff" value="1, 1" param1="painkillerBuff" />
 		</property>
 		<property name="DescriptionKey" value="DoctorShotDesc" />
-		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Medicine" />
+		<property name="ActionSkillGroup" value="medicineCraft" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 		<property name="ActionExp" value="20" />
 	</item>
 	<item id="1839" name="StimulantShot">
@@ -12454,7 +12454,7 @@ Mesh files no longer used:
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="16" />
 		<property name="Stacknumber" value="50" />
-		<property name="Group" value="Medicine" />
+		<property name="Group" value="medicineCraft" />
 		<property name="CustomIcon" value="ui_game_symbol_PurificationTablets" />
 		<property name="DescriptionKey" value="PurificationDesc" />
 		<property name="CraftingSkillGroup" value="Engineering" />
@@ -12473,8 +12473,8 @@ Mesh files no longer used:
 		</property>
 		<property name="DescriptionKey" value="AntivirialDesc" />
 		<property name="ActionExp" value="50" />
-        <property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Medicine" />
+        <property name="ActionSkillGroup" value="medicineCraft" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 
 	</item>
     <item id="3010" name="Poultice">
@@ -12506,10 +12506,10 @@ Mesh files no longer used:
 			<property name="Sound_start" value="UseActions/player_bandage" />
 			<property name="Debuff" value="Stinger" />
         </property>
-		<property name="Group" value="Medicine" />
+		<property name="Group" value="medicineCraft" />
 		<property name="DescriptionKey" value="PoulticeDesc" />
-		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Medicine" />
+		<property name="ActionSkillGroup" value="medicineCraft" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 		<property name="ActionExp" value="10" />
 
 	</item>
@@ -12683,8 +12683,8 @@ Mesh files no longer used:
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_WellnessJuice" />
 		<property name="DescriptionKey" value="WellnessJuiceDesc" />
-		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Chemistry" />
+		<property name="ActionSkillGroup" value="medicineCraft" />
+		<property name="CraftingSkillGroup" value="chemistryCraft" />
 		<property name="ActionExp" value="25" />
 	</item>
 	<item id="1858" name="AppleJuice">
@@ -12775,8 +12775,8 @@ Mesh files no longer used:
 			<property name="Create_item" value="emptyJar" />
 		</property>
 		<property name="DescriptionKey" value="RedBullDesc" />
-		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Chemistry" />
+		<property name="ActionSkillGroup" value="medicineCraft" />
+		<property name="CraftingSkillGroup" value="chemistryCraft" />
 		<property name="ActionExp" value="5" />
 	</item>
 	<item id="1866" name="BrainShnitzel">
@@ -14232,23 +14232,23 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="CuredLeatherDesc" />
 		<property name="CustomIcon" value="leather" />
 		<property name="CustomIconTint" value="edf4b0" />
-		<property name="CraftingSkillGroup" value="Leatherworking" />
+		<property name="CraftingSkillGroup" value="leatherworkingCraft" />
 	</item>
 	<item id="1976" name="GunOil">
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="leather" />
 		<property name="DescriptionKey" value="GunOilDesc" />
-		<property name="CraftingSkillGroup" value="Chemistry" />
+		<property name="CraftingSkillGroup" value="chemistryCraft" />
 	</item>
 	<item id="1977" name="MeltedRubber">
 		<property name="Extends" value="itemMaster" />
 		<property name="DescriptionKey" value="MeltedRubberDesc" />
-		<property name="CraftingSkillGroup" value="Chemistry" />
+		<property name="CraftingSkillGroup" value="chemistryCraft" />
 	</item>
 	<item id="1978" name="MixedChemicals">
 		<property name="Extends" value="itemMaster" />
 		<property name="DescriptionKey" value="MixedChemicalsDesc" />
-		<property name="CraftingSkillGroup" value="Chemistry" />
+		<property name="CraftingSkillGroup" value="chemistryCraft" />
 	</item>
 	<item id="1979" name="ChooseAProfession">
 		<property name="Extends" value="itemMaster" />
@@ -14259,7 +14259,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="potassiumNitratePowder" />
 		<property name="CustomIconTint" value="ef131e" />
 		<property name="DescriptionKey" value="IncendiaryPowderDesc" />
-		<property name="CraftingSkillGroup" value="Chemistry" />
+		<property name="CraftingSkillGroup" value="chemistryCraft" />
 	</item>
 	<item id="1981" name="stick">
 		<property name="Extends" value="itemMaster" />
@@ -14525,7 +14525,7 @@ Mesh files no longer used:
 	<item id="2012" name="Nitroglycerin">
 		<property name="Extends" value="itemMaster" />
 		<property name="Meshfile" value="Items/Food/honeyPrefab" />
-		<property name="CraftingSkillGroup" value="Chemistry" />
+		<property name="CraftingSkillGroup" value="chemistryCraft" />
 	</item>
 	<item id="2013" name="SharpeningStone">
 		<property name="Extends" value="itemMaster" />
@@ -14560,7 +14560,7 @@ Mesh files no longer used:
 			<property name="DegradationMax" value="1,1" />
 			<property name="DegradationRate" value="5,5" />
 		</property>
-		<property name="Group" value="Medicine" />
+		<property name="Group" value="medicineCraft" />
 		<property name="DescriptionKey" value="AnimalGutsDesc" />
 	</item>
 	<item id="2015" name="SmallKnifeBlade">
@@ -14684,8 +14684,8 @@ Mesh files no longer used:
 		<property class="Action1">
 			<property name="Buff" value="high" />
 		</property>
-        <property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Medicine" />
+        <property name="ActionSkillGroup" value="medicineCraft" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 	</item>
 	<item id="2031" name="DriedTobacco">
 		<property name="Extends" value="TobaccoLeaf" />
@@ -14737,7 +14737,7 @@ Mesh files no longer used:
 		</property>
 		<property name="Group" value="Tools/Traps" />
         <property name="DescriptionKey" value="lockPickDesc" />
-		<property name="ActionSkillGroup" value="Scavenging" />
+		<property name="ActionSkillGroup" value="scavengingAction" />
 		<property name="RepairExpMultiplier" value="0" />
 	</item>
     <item id="2035" name="LockPick">
@@ -15431,67 +15431,67 @@ Mesh files no longer used:
     <item id="3064" name="trophyDeer">
         <property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="trophyDeer" />
-		<property name="CraftingSkillGroup" value="Hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
         <property name="DescriptionKey" value="HuntingDesc" />
 	</item>
     <item id="3065" name="trophyRabbit">
         <property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="trophyRabbit" />
-		<property name="CraftingSkillGroup" value="Hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
         <property name="DescriptionKey" value="HuntingDesc" />
 	</item>
     <item id="3066" name="trophyChicken">
         <property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="trophyChicken" />
-		<property name="CraftingSkillGroup" value="Hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
         <property name="DescriptionKey" value="HuntingDesc" />
 	</item>
     <item id="3067" name="trophyPig">
         <property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="trophyPig" />
-		<property name="CraftingSkillGroup" value="Hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
         <property name="DescriptionKey" value="HuntingDesc" />
 	</item>
     <item id="3068" name="trophyBoar">
         <property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="trophyBoar" />
-		<property name="CraftingSkillGroup" value="Hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
         <property name="DescriptionKey" value="HuntingDesc" />
 	</item>
     <item id="3069" name="trophyBuck">
         <property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="trophyDeer" />
-		<property name="CraftingSkillGroup" value="Hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
         <property name="DescriptionKey" value="HuntingDesc" />
 	</item>
     <item id="3070" name="trophyBear">
         <property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="trophyBear" />
-		<property name="CraftingSkillGroup" value="Hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
         <property name="DescriptionKey" value="HuntingDesc" />
 	</item>
     <item id="3071" name="trophyBobcat">
         <property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="trophyBobcat" />
-		<property name="CraftingSkillGroup" value="Hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
         <property name="DescriptionKey" value="HuntingDesc" />
 	</item>
     <item id="3072" name="trophyCroc">
         <property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="trophyCroc" />
-		<property name="CraftingSkillGroup" value="Hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
         <property name="DescriptionKey" value="HuntingDesc" />
 	</item>
     <item id="3073" name="trophySpider">
         <property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="trophySpider" />
-		<property name="CraftingSkillGroup" value="Hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
         <property name="DescriptionKey" value="HuntingDesc" />
 	</item>
     <item id="3074" name="trophyFish">
         <property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="trophyFish" />
-		<property name="CraftingSkillGroup" value="Hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
         <property name="DescriptionKey" value="HuntingDesc" />
 	</item>
      <item id="3075" name="woodYoyo">
