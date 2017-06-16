@@ -13850,27 +13850,6 @@ Mesh files no longer used:
 			<property name="Blockname" value="plantedCoffee1" />
 		</property>
 	</item>
-	<item id="1955" name="RedwoodSeed">
-		<property name="Extends" value="cornSeed" />
-        <property name="CustomIcon" value="mapleSeed" />
-		<property class="Action1">
-			<property name="Blockname" value="PlantedRedwoodTree" />
-		</property>
-	</item>
-	<item id="1956" name="tomatoSeed">
-		<property name="Extends" value="cornSeed" />
-        <property name="CustomIcon" value="coffeeSeeds" />
-		<property class="Action1">
-			<property name="Blockname" value="plantedTomato" />
-		</property>
-	</item>
-	<item id="1957" name="strawberrySeed">
-		<property name="Extends" value="cornSeed" />
-        <property name="CustomIcon" value="StrawberrySeedJZ" />
-		<property class="Action1">
-			<property name="Blockname" value="plantedTomato" />
-		</property>
-	</item>
 	<item id="1958" name="sunflowerSeed">
 		<property name="Extends" value="cornSeed" />
         <property name="CustomIcon" value="carrotSeed" />
@@ -15435,7 +15414,7 @@ Mesh files no longer used:
         <property name="CustomIcon" value="woodBranch" />
 		<property name="Weight" value="1" />
 	</item>
-    <item id="3061" name="oldFrisbee">
+    <item id="3061" name="plasticFrisbee">
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="Mplastics" />
 		<property name="Weight" value="3" />
@@ -15443,7 +15422,7 @@ Mesh files no longer used:
     <item id="3062" name="honeyComb">
         <property name="Extends" value="itemMaster" />
 	</item>
-    <item id="3063" name="oldKite">
+    <item id="3063" name="plasticKite">
         <property name="Extends" value="itemMaster" />
 		<property name="Material" value="Mplastics" />
 		<property name="Weight" value="2" />

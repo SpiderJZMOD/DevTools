@@ -1008,8 +1008,8 @@ This requires a 50+ food bar:
     <buff id="nutrition_18_Trigger" duration="1" actions="increment(nutrition, 18, 0, 0, 1)"/>
     <buff id="nutrition_19_Trigger" duration="1" actions="increment(nutrition, 19, 0, 0, 1)"/>
     <buff id="nutrition_20_Trigger" duration="1" actions="increment(nutrition, 20, 0, 0, 1)"/>
-    
     <buff id="nutritionFade" buffif="nutrition > 0" debuffif="nutrition lequal 0" actions="increment(nutrition, -1, 60, 0, 0);min(nutrition, 0)"/>
+    <!--JZMOD Malnourished-->
     <buff id="malnourishedTrigger" buffif="nutrition less ??" debuffif="nutrition gequal ??" actions="buff(malnourishTimer)" ondebuff="StopMalnourishTimer" />
 	<buff id="malnourishTimer" actions="increment(malnourished, 1, 60, 0, 0)" />
 	<buff id="StopMalnourishTimer" duration="1" actions="debuff(malnourishTimer)"  />
@@ -1051,5 +1051,26 @@ This requires a 50+ food bar:
     <buff id="pain_19_Trigger" duration="1" actions="increment(pain, 19, 0, 0, 1)"/>
     <buff id="pain_20_Trigger" duration="1" actions="increment(pain, 20, 0, 0, 1)"/>
     <buff id="painFade" buffif="pain > 0" debuffif="pain lequal 0" actions="increment(pain, -1, 60, 0, 0);min(pain, 0)"/>
-   
+    
+    <!--JZMOD Wellness-->
+    <buff id="wellness_1_Trigger" duration="1" actions="increment(@wellness, 1, 0, 0, 1)"/>
+    <buff id="wellness_2_Trigger" duration="1" actions="increment(@wellness, 2, 0, 0, 1)"/>
+    <buff id="wellness_3_Trigger" duration="1" actions="increment(@wellness, 3, 0, 0, 1)"/>
+    <buff id="wellness_4_Trigger" duration="1" actions="increment(@wellness, 4, 0, 0, 1)"/>
+    <buff id="wellness_5_Trigger" duration="1" actions="increment(@wellness, 5, 0, 0, 1)"/>
+    <buff id="wellness_6_Trigger" duration="1" actions="increment(@wellness, 6, 0, 0, 1)"/>
+    <buff id="wellness_7_Trigger" duration="1" actions="increment(@wellness, 7, 0, 0, 1)"/>
+    <buff id="wellness_8_Trigger" duration="1" actions="increment(@wellness, 8, 0, 0, 1)"/>
+    <buff id="wellness_9_Trigger" duration="1" actions="increment(@wellness, 9, 0, 0, 1)"/>
+    <buff id="wellness_10_Trigger" duration="1" actions="increment(@wellness, 10, 0, 0, 1)"/>
+    <buff id="wellness_11_Trigger" duration="1" actions="increment(@wellness, 11, 0, 0, 1)"/>
+    <buff id="wellness_12_Trigger" duration="1" actions="increment(@wellness, 12, 0, 0, 1)"/>
+    <buff id="wellness_13_Trigger" duration="1" actions="increment(@wellness, 13, 0, 0, 1)"/>
+    <buff id="wellness_14_Trigger" duration="1" actions="increment(@wellness, 14, 0, 0, 1)"/>
+    <buff id="wellness_15_Trigger" duration="1" actions="increment(@wellness, 15, 0, 0, 1)"/>
+    <buff id="wellness_16_Trigger" duration="1" actions="increment(@wellness, 16, 0, 0, 1)"/>
+    <buff id="wellness_17_Trigger" duration="1" actions="increment(@wellness, 17, 0, 0, 1)"/>
+    <buff id="wellness_18_Trigger" duration="1" actions="increment(@wellness, 18, 0, 0, 1)"/>
+    <buff id="wellness_19_Trigger" duration="1" actions="increment(@wellness, 19, 0, 0, 1)"/>
+    <buff id="wellness_20_Trigger" duration="1" actions="increment(@wellness, 20, 0, 0, 1)"/>
 </buffs>
