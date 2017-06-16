@@ -4082,27 +4082,27 @@
             <recipe name="electronicParts" unlock_level="3"/>
         </perk>
         <perk name="paintDecorations" icon="paint_brush" description_key="paintGroupDesc" title_key="paintMagazineDecorations" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
-            <requirement skill_level="0" required_skill_name="Miscellaneous Crafting" required_skill_level="1"/>
+            <requirement skill_level="0" required_skill_name="miscellaneousCrafting" required_skill_level="1"/>
             <material_group name="txGroupDecoration" unlock_level="1"/>
         </perk>
         <perk name="paintFaux" icon="paint_brush" description_key="paintGroupDesc" title_key="paintMagazineFaux" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
-            <requirement skill_level="0" required_skill_name="Miscellaneous Crafting" required_skill_level="1"/>
+            <requirement skill_level="0" required_skill_name="miscellaneousCrafting" required_skill_level="1"/>
             <material_group name="txGroupFaux" unlock_level="1"/>
         </perk>
         <perk name="paintMasonry" icon="paint_brush" description_key="paintGroupDesc" title_key="paintMagazineMasonry" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
-            <requirement skill_level="0" required_skill_name="Miscellaneous Crafting" required_skill_level="1"/>
+            <requirement skill_level="0" required_skill_name="miscellaneousCrafting" required_skill_level="1"/>
             <material_group name="txGroupMasonry" unlock_level="1"/>
         </perk>
         <perk name="paintMetal" icon="paint_brush" description_key="paintGroupDesc" title_key="paintMagazineMetal" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
-            <requirement skill_level="0" required_skill_name="Miscellaneous Crafting" required_skill_level="1"/>
+            <requirement skill_level="0" required_skill_name="miscellaneousCrafting" required_skill_level="1"/>
             <material_group name="txGroupMetal" unlock_level="1"/>
         </perk>
         <perk name="paintWallCoverings" icon="paint_brush" description_key="paintGroupDesc" title_key="paintMagazineWallCoverings" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
-            <requirement skill_level="0" required_skill_name="Miscellaneous Crafting" required_skill_level="1"/>
+            <requirement skill_level="0" required_skill_name="miscellaneousCrafting" required_skill_level="1"/>
             <material_group name="txGroupWallCovering" unlock_level="1"/>
         </perk>
         <perk name="paintWoodAndRoofing" icon="paint_brush" description_key="paintGroupDesc" title_key="paintMagazineWoodAndRoofing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
-            <requirement skill_level="0" required_skill_name="Miscellaneous Crafting" required_skill_level="1"/>
+            <requirement skill_level="0" required_skill_name="miscellaneousCrafting" required_skill_level="1"/>
             <material_group name="txGroupWood" unlock_level="1"/>
         </perk>
         <!--
