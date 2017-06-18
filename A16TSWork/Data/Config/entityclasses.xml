@@ -210,7 +210,7 @@
 	<property name="WalkType" value="2"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
-	<property name="HandItem" value="handZombieCop"/>
+	<property name="HandItem" value="handzombieFatCop"/>
 	<property name="MaxHealth" value="750"/>
 	<property name="ExperienceGain" value="2310"/>
 	<property name="LootListOnDeath" value="61"/>
@@ -351,9 +351,17 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<!-- Missing: zombieFootballPlayerRadiated -->
+<entity_class name="zombieFootballPlayerFeral" extends="zombieFootballPlayer">
+	<property name="HandItem" value="handZombieFeral"/>
+	<property name="MaxHealth" value="700"/>
+	<property name="ExperienceGain" value="942"/>
+	<property name="ApproachSpeed" value="1.35"/>
+	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
 
-<!-- Missing: zombieFootballPlayerFeral -->
+<!-- Missing: zombieFootballPlayerRadiated -->
 
 <!-- Missing: zombieFootballPlayerFeralRadiated -->
 
@@ -732,7 +740,7 @@
 	<property name="SoundHurt" value="Enemies/Snow_Zombie_Male/zombiemalesnowpain"/>
 	<property name="SoundDeath" value="Enemies/Snow_Zombie_Male/zombiemalesnowdeath"/>
 	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense"/>
-	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
+	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombieSnowfootstep"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -908,7 +916,7 @@
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="1"/>
-	<property name="HandItem" value="handZombieCop"/>
+	<property name="HandItem" value="handzombieFatCop"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="PhysicsBody" value="zombieFat"/>
 	<property name="RootMotion" value="true"/>
@@ -923,7 +931,7 @@
 <!-- Missing: zombieFatHawaiianRadiated -->
 
 <entity_class name="zombieFatHawaiianFeral" extends="zombieFatHawaiian">
-	<property name="HandItem" value="handZombieCopFeral"/>
+	<property name="HandItem" value="handzombieFatCopFeral"/>
 	<property name="MaxHealth" value="1050"/>
 	<property name="ExperienceGain" value="2887"/>
 	<property name="ApproachSpeed" value="1.35"/>
@@ -937,8 +945,8 @@
 
 <entity_class name="zombieFatCop" extends="zombieTemplateMale">
 	<property name="Mesh" value="Zombies/zombieStandardCopRagdoll"/>
-	<property name="Class" value="EntityZombieCop"/>
-	<property name="HandItem" value="handZombieCop"/>
+	<property name="Class" value="EntityzombieFatCop"/>
+	<property name="HandItem" value="handzombieFatCop"/>
 	<property name="WalkType" value="1"/>
 	<property name="RightHandJointName" value="Jaw"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
@@ -993,7 +1001,7 @@
 <!-- Missing: zombieFatCopRadiated -->
 
 <entity_class name="zombieFatCopFeral" extends="zombieFatCop">
-	<property name="HandItem" value="handZombieCopFeral"/>
+	<property name="HandItem" value="handzombieFatCopFeral"/>
 	<property name="MaxHealth" value="1050"/>
 	<property name="ExperienceGain" value="2887"/>
 	<property name="ApproachSpeed" value="1.35"/>
@@ -1093,7 +1101,7 @@
 <entity_class name="zombieSoldierFeral" extends="zombieSoldier">
 	<property name="MaxHealth" value="750"/>
 	<property name="ExperienceGain" value="2310"/>
-	<property name="HandItem" value="handZombieCopFeral"/>
+	<property name="HandItem" value="handzombieFatCopFeral"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial0" value="entities/zombies/materials/feral_eye"/>
@@ -1879,6 +1887,86 @@
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="7"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="6"/>
 </entity_class>
+<!-- JZMod animals -  All given zombiehands for start -->
+
+<entity_class name="animalStagHostile" extends="animalTemplateHostile">
+	<property name="HasRagdoll" value="true"/>
+	<property name="Mesh" value="Animals/Stag/STAG"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Class" value="EntityAnimalStag"/>
+	<property name="Parent" value="Animals"/>
+	<property name="AvatarController" value="GameObjectAnimalAnimation"/>
+	<property name="Weight" value="70"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="IsEntityAnimal" value="true"/>
+	<property name="PhysicsBody" value="Stag"/>
+	<property name="HandItem" value="handZombie"/>
+	<property name="Faction" value="animals"/>
+	<property name="CanClimbLadders" value="false"/>
+	<property name="MaxHealth" value="50"/>
+	<property name="MaxViewAngle" value="180"/>
+	<property name="WanderSpeed" value="0.7"/>
+	<property name="PanicSpeed" value="2.0"/>
+	<property name="SurfaceCategory" value="organic"/>
+	<property name="ParticleOnDeath" value="blood_death"/>
+	<property name="SoundHurt" value="Animals/stagpain"/>
+	<property name="SoundDeath" value="Animals/stagdeath"/>
+	<property name="TimeStayAfterDeath" value="300"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="ExperienceGain" value="247"/>
+	<property name="CorpseBlock" value="animalGore"/>
+	<property name="CorpseBlockChance" value="1"/>
+	<property name="HasRagdoll" value="true"/>
+	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="9"/>
+	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="9"/>
+	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4"/>
+</entity_class>
+
+<entity_class name="animalRabbitHostile" extends="animalTemplateHostile">
+	<property name="Mesh" value="Animals/Rabbit/RABBIT"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Class" value="EntityAnimalRabbit"/>
+	<property name="Parent" value="Animals"/>
+	<property name="Weight" value="10"/>
+	<property name="MaxHealth" value="10"/>
+	<property name="PhysicsBody" value="rabbit"/>
+	<property name="HandItem" value="handZombie"/>
+	<property name="SoundHurt" value="Animals/rabbitpain"/>
+	<property name="SoundDeath" value="Animals/rabbitdeath"/>
+	<property name="PanicSpeed" value="1.5"/>
+	<property name="CorpseBlockChance" value="0"/>
+	<property name="ExperienceGain" value="173"/>
+	<property name="SwimOffset" value="2"/>
+	<property name="Faction" value="animals"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="DeadBodyHitPoints" value="175"/>
+	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="3"/>
+	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2"/>
+</entity_class>
+
+<entity_class name="animalChickenHostile" extends="animalTemplateHostile">
+	<property name="Mesh" value="Animals/CHICKEN/chickenPrefab"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Class" value="EntityAnimalRabbit"/>
+	<property name="Parent" value="Animals"/>
+	<property name="Weight" value="10"/>
+	<property name="MaxHealth" value="10"/>
+	<property name="PhysicsBody" value="chicken"/>
+	<property name="HandItem" value="handZombie"/>
+	<property name="SoundHurt" value="Animals/Chicken/chickenpain"/>
+	<property name="SoundDeath" value="Animals/Chicken/chickendeath"/>
+	<property name="PanicSpeed" value="1"/>
+	<property name="CorpseBlockChance" value="0"/>
+	<property name="ExperienceGain" value="173"/>
+	<property name="SwimOffset" value="2"/>
+	<property name="Faction" value="animals"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="DeadBodyHitPoints" value="175"/>
+	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="3"/>
+	<drop event="Harvest" name="feather" tool_category="Butcher" count="30"/>
+</entity_class>
+
 
 <!-- VEHICLES -->
 <entity_class name="supplyPlane">
@@ -2943,7 +3031,7 @@
 		<property name="NightApproachSpeed" value="1.77" />
 		<property name="PanicSpeed" value="0.59" />
 	</entity_class>
-    <entity_class name="zombieSoldier" extends="zombieSoldier">
+    <entity_class name="zombieSoldier5" extends="zombieSoldier">
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.25" />
@@ -2951,7 +3039,7 @@
 		<property name="NightApproachSpeed" value="1.9" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
-	<entity_class name="zombieSkateboarder" extends="zombieSkateboarder">
+	<entity_class name="zombieSkateboarder5" extends="zombieSkateboarder">
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.3" />
@@ -3597,42 +3685,42 @@
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
 	<!--JZMOD FERALS-->
-	<entity_class name="zombieWight1" extends="zombieWightFeral">
+	<entity_class name="zombieWightFeral1" extends="zombieWightFeral">
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.2" />
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ApproachSpeed" value="1.35" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
-	<entity_class name="zombieWight3" extends="zombieWightFeral">
+	<entity_class name="zombieWightFeral3" extends="zombieWightFeral">
 		<property name="WalkType" value="3" />
 		<property name="WanderSpeed" value="0.2" />
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ApproachSpeed" value="1.35" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
-	<entity_class name="zombieWight5" extends="zombieWightFeral">
+	<entity_class name="zombieWightFeral5" extends="zombieWightFeral">
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.2" />
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ApproachSpeed" value="1.35" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
-	<entity_class name="zombieWight6" extends="zombieWightFeral">
+	<entity_class name="zombieWightFeral6" extends="zombieWightFeral">
 		<property name="WalkType" value="6" />
 		<property name="WanderSpeed" value="0.2" />
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ApproachSpeed" value="1.35" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
-	<entity_class name="zombieWight7" extends="zombieWightFeral">
+	<entity_class name="zombieWightFeral7" extends="zombieWightFeral">
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.2" />
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ApproachSpeed" value="1.35" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
-	<entity_class name="zombieWight8" extends="zombieWightFeral">
+	<entity_class name="zombieWightFeral8" extends="zombieWightFeral">
 		<property name="WalkType" value="8" />
 		<property name="WanderSpeed" value="0.2" />
 		<property name="NightApproachSpeed" value="1.35" />
@@ -3640,43 +3728,43 @@
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
 	<!-- JZMOD SNOW ZOMBIES -->
-	<entity_class name="zombiesnow1" extends="snowzombie">
+	<entity_class name="zombieSnow1" extends="zombieSnow">
 		<property name="WalkType" value="1" />
 		<property name="ApproachSpeed" value="0.36" />
 		<property name="NightApproachSpeed" value="1.6" />
 	</entity_class>
-	<entity_class name="zombiesnow3" extends="snowzombie">
+	<entity_class name="zombieSnow3" extends="zombieSnow">
 		<property name="WalkType" value="3" />
 		<property name="ApproachSpeed" value="0.24" />
 		<property name="NightApproachSpeed" value="1.55" />
 	</entity_class>
-	<entity_class name="zombiesnow4" extends="snowzombie">
+	<entity_class name="zombieSnow4" extends="zombieSnow">
 		<property name="WalkType" value="4" />
 		<property name="ApproachSpeed" value="1.25" />
 		<property name="NightApproachSpeed" value="1.68" />
 	</entity_class>
-	<entity_class name="zombiesnow5" extends="snowzombie">
+	<entity_class name="zombieSnow5" extends="zombieSnow">
 		<property name="WalkType" value="5" />
 		<property name="ApproachSpeed" value="0.26" />
 		<property name="NightApproachSpeed" value="1.78" />
 	</entity_class>
-	<entity_class name="zombiesnow6" extends="snowzombie">
+	<entity_class name="zombieSnow6" extends="zombieSnow">
 		<property name="WalkType" value="6" />
 		<property name="ApproachSpeed" value="0.35" />
 		<property name="NightApproachSpeed" value="1.85" />
 	</entity_class>
-	<entity_class name="zombiesnow7" extends="snowzombie">
+	<entity_class name="zombieSnow7" extends="zombieSnow">
 		<property name="WalkType" value="7" />
 		<property name="ApproachSpeed" value="0.3" />
 		<property name="NightApproachSpeed" value="1.71" />
 	</entity_class>
-	<entity_class name="zombiesnow8" extends="snowzombie">
+	<entity_class name="zombieSnow8" extends="zombieSnow">
 		<property name="WalkType" value="8" />
 		<property name="ApproachSpeed" value="0.32" />
 		<property name="NightApproachSpeed" value="1.67" />
 	</entity_class>
     <!--JZMOD COP-->
-    <entity_class name="zombieCop2" extends="fatzombiecop">
+    <entity_class name="zombieFatCop2" extends="zombieFatCop">
 		<property name="WalkType" value="2" />
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.38" />
@@ -3684,7 +3772,7 @@
 		<property name="NightApproachSpeed" value="1.8" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
-    <entity_class name="zombieCop3" extends="fatzombiecop">
+    <entity_class name="zombieFatCop3" extends="zombieFatCop">
 		<property name="WalkType" value="3" />
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.27" />
@@ -3692,7 +3780,7 @@
 		<property name="NightApproachSpeed" value="1.56" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
-    <entity_class name="zombieCop5" extends="fatzombiecop">
+    <entity_class name="zombieFatCop5" extends="zombieFatCop">
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.38" />
@@ -3700,7 +3788,7 @@
 		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
-    <entity_class name="zombieCop6" extends="fatzombiecop">
+    <entity_class name="zombieFatCop6" extends="zombieFatCop">
 		<property name="WalkType" value="6" />
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.4" />
@@ -3708,7 +3796,7 @@
 		<property name="NightApproachSpeed" value="1.75" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
-    <entity_class name="zombieCop7" extends="fatzombiecop">
+    <entity_class name="zombieFatCop7" extends="zombieFatCop">
    		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.33" />
@@ -3716,7 +3804,7 @@
 		<property name="NightApproachSpeed" value="1.55" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
-    <entity_class name="zombieCop8" extends="fatzombiecop">
+    <entity_class name="zombieFatCop8" extends="zombieFatCop">
         <property name="CanClimbVertical" value="true" />
 		<property name="WalkType" value="8" />
 		<property name="WanderSpeed" value="0.2" />
