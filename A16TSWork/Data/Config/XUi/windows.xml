@@ -7,7 +7,7 @@
 		<!-- EDIT THE TEXTURE PART TO REMOVE THE SMX "LOGO" OR INSERT YOUR OWN LOGO IF YOU WISH. TO AVOID ISSUES, STICK TO THE SIZE. -->
 		<!-- EDIT THE TEXT PART OF THE LABEL SECTION TO SET A CUSTOM MESSAGE FOR YOUR DEDICATED SERVER - STANDARD COLOR IS GREEN, THIS CAN BE CHANGED IN THE COLOR PART. DON'T OVER-DO IT! -->
 
-		<texture name="SMX" depth="0" size="250,27" texture="@file:Mods\SMX\Textures\Misc\TSlogo.png" material="Materials/Transparent Colored" pos="-320,-6" /> <!-- Online Equivalent: http://i63.tinypic.com/9pw8oz.jpg -->
+		<texture name="SMX" depth="0" size="250,27" texture="@file:Mods\SMX\Textures\Misc\smxenhancedlogo.png" material="Materials/Transparent Colored" pos="-320,-6" /> <!-- Online Equivalent: http://i63.tinypic.com/9pw8oz.jpg -->
 		<label name="SMXServerInfo1" depth="0" size="250,27" text="" font_size="20" effect="outline" color="[green]" justify="center" pos="-610,-8" overflow="resizeheight" />
 
 	</window>
