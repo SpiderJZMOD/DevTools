@@ -81,10 +81,10 @@
 			<window name="dragAndDropItemStack" />
 		</window_group>
 
-<!-- <<< SMX v16b112e r02 START - BY SIRILLION >>> -->
+<!-- <<< SMX v16b119e r01 START - BY SIRILLION >>> -->
 		
 		<window_group name="compass" actionSet="false">
-			<window name="SMXCompass1" anchor="CenterTop" />				<!-- SMX UI -->
+			<window name="SMXCompass1" anchor="CenterTop" /> 				<!-- SMX UI -->
 <!--		<window name="SMXCompass2VALMOD" anchor="CenterTop" /> -->		<!-- VALMOD UI -->
 <!--		<window name="windowCompass" /> -->								<!-- STANDARD UI -->
 			<window name="SMXDayTimeFrame" anchor="LeftTop" />				<!-- SMX & VALMOD UI -->
@@ -93,7 +93,7 @@
 <!--		<window name="SMXLevelXPUF2VALMOD" anchor="LeftTop" /> -->		<!-- VALMOD UI -->
 		</window_group>
 		
-<!-- <<< SMX v16b112e r02 END - BY SIRILLION >>> -->
+<!-- <<< SMX v16b119e r01 END - BY SIRILLION >>> -->
 		
 		<window_group name="toolTip" actionSet="false">
 			<window name="toolTip" />
@@ -112,7 +112,7 @@
 			<window name="windowTimer"/>
 		</window_group>
 
-<!-- <<< SMX v16b112e r02 START - BY SIRILLION >>> -->
+<!-- <<< SMX v16b119e r01 START - BY SIRILLION >>> -->
 		
 		<window_group name="toolbelt" actionSet="false">
 			<window name="SMXToolbelt1" anchor="CenterBottom" />			<!-- SMX UI -->
@@ -130,13 +130,13 @@
 <!--		<window name="HUDLeftStatBars" anchor="LeftBottom" /> -->		<!-- STANDARD UI -->
 			<window name="SMXHudOther" anchor="RightBottom" />				<!-- SMX & VALMOD UI -->
 <!--		<window name="HUDRightStatBars" anchor="RightBottom" /> -->		<!-- STANDARD UI -->
-			<window name="SMXTempFrameUF1" />								<!-- SMX UI -->			<!-- MUST also uncomment/comment the SMXUnitFrame1 -->
-<!--		<window name="SMXTempFrameUF2VALMOD" />	-->						<!-- VALMOD UI -->		<!-- MUST also uncomment/comment the SMXUnitFrame2VALMOD -->
+			<window name="SMXTempFrameUF1" /> 								<!-- SMX UI -->			<!-- MUST also uncomment/comment the SMXUnitFrame1 -->
+<!--		<window name="SMXTempFrameUF2VALMOD" /> -->						<!-- VALMOD UI -->		<!-- MUST also uncomment/comment the SMXUnitFrame2VALMOD -->
 <!--		<window name="windowQuestTracker" anchor="RightTop" /> -->		<!-- STANDARD UI -->
 			<window name="SMXQuestTracker" anchor="RightTop" />				<!-- SMX & VALMOD UI -->
 		</window_group>
 		
-<!-- <<< SMX v16b112e r02 END - BY SIRILLION >>> -->		
+<!-- <<< SMX v16b119e r01 END - BY SIRILLION >>> -->		
 		
 		<window_group name="vehicle" controller="XUiC_VehicleWindowGroup">
 			<window name="windowVehicle"/>
@@ -256,14 +256,14 @@
 			<window name="spawnMenu" />
 		</window_group>
 
-<!-- <<< SMX v16b112e r02 START - BY SIRILLION >>> -->		
+<!-- <<< SMX v16b119e r01 START - BY SIRILLION >>> -->		
 		
 		<window_group name="ingameMenu">
 <!--		<window name="ingameMenu" /> -->
 			<window name="SMXingameMenu" />
 		</window_group>
 		
-<!-- <<< SMX v16b112e r02 END - BY SIRILLION >>> -->
+<!-- <<< SMX v16b119e r01 END - BY SIRILLION >>> -->
 		
 		<window_group name="woPropsSleeperVolume">
 			<window name="woPropsSleeperVolume" />
