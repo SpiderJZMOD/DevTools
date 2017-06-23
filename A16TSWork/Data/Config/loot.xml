@@ -150,7 +150,7 @@
 			<block name="cntSportsBag02" prob="3.3" />
 			<block name="cntPurse01" prob="3.3" />
 			<block name="appleTree" prob="0.2" />
-			<block name="workBurnBarrel" prob="0.2" />
+			<block name="burningBarrel" prob="0.2" />
             <block name="gasTank" prob="0.2" />            
 		</placeholder>
 	<!-- Replace the lootYard with one of the following -->
@@ -534,12 +534,9 @@
 		<item name="turd" count="1,5" prob="100.0" />
 	</lootgroup>
 	<lootgroup name="ammoBig" count="1">
-		<item name="50CalBullet" count="1,6" prob="33.3" />
-		<item name="PersonalRocket" count="1,3" prob="33.3" />
-		<item name="DemoRocket" count="1,3" prob="33.3" />
+		<item name="762mmBullet" count="5,15" prob="6.3" />
 	</lootgroup>
 	<lootgroup name="ammoSmall" count="1">
-		<item name="10mmFireBullet" count="5,25" prob="3.8" />
 		<item name="9mmFireBullet" count="5,25" prob="3.8" />
 		<item name="shotgunFireShell" count="5,15" prob="10.0" />
 		<item name="shotgunSlug" count="5,15" prob="5.0" />
@@ -548,7 +545,6 @@
 		<item name="steelCrossbowBolt" count="3,12" prob="6.3" />
 		<item name="shotgunShell" count="5,15" prob="10.0" />
 		<item name="9mmBullet" count="5,25" prob="10.0" />
-		<item name="10mmBullet" count="5,25" prob="6.3" />
 		<item name="762mmBullet" count="5,15" prob="6.3" />
 		<item name="44MagBullet" count="5,25" prob="7.5" />
 		<item name="steelArrow" count="3,12" prob="5.0" />
@@ -568,10 +564,7 @@
 		<item name="partsPistol_grip" quality="1,350" prob="14.7" />
 		</lootgroup>
 	<lootgroup name="RevolverWeaponParts" count="1">
-		<item name="Revolver_frame" quality="1,350" prob="25.0" />
 		<item name="Revolver_parts" quality="1,350" prob="25.0" />
-		<item name="Revolver_cylinder" quality="1,350" prob="25.0" />
-		<item name="Revolver_grip" quality="1,350" prob="25.0" />
 	</lootgroup>
 	<lootgroup name="PumpShotgunWeaponParts" count="1">
 		<item name="partsPumpShotgun_barrel" quality="1,350" prob="16.7" />
@@ -694,8 +687,8 @@
 <!-- 		<item name="Tomahawk" prob="10.3" quality="200,600" /> -->
 	</lootgroup>
 	<lootgroup name="CompoundBow+ammo" count="all">
-		<item name="CompoundBow" count="1" quality="300,600" />
-		<item name="CarbonArrow" count="20" />
+		<item name="compoundBow" count="1" quality="300,600" />
+		<item name="steelArrow" count="20" />
 	</lootgroup>
 	<lootgroup name="crossbow+ammo" count="all">
 		<item name="crossbow" count="1" quality="300,350" />
@@ -714,7 +707,7 @@
 	</lootgroup> -->
 	<lootgroup name="nailgun+parts" count="1">
 		<!--5%-->
-        <item name="CompactDriver" quality="1,300" prob="2.5" />
+        <item name="welder" quality="1,300" prob="2.5" />
         <item name="nailgun" quality="1,300" prob="2.5" />
 		<!--50%-->
         <item name="partsNailgun_frame" prob="25.0" />
@@ -723,8 +716,8 @@
 		<item name="partsNailgun_receiver" prob="15.0" />
 		<item name="partsNailgun_parts" prob="15.0" />
 		<!--15%-->
-        <item name="CompactDriver_receiver" prob="7.5" />
-        <item name="CompactDriver_parts" prob="7.5" />
+        <item name="welder_receiver" prob="7.5" />
+        <item name="welder_parts" prob="7.5" />
 	</lootgroup>
     <!--<lootgroup name="WeeklyMagazines" count="1">
 		<item name="Miscellaneous Weekly" prob="11.1" />
@@ -749,7 +742,7 @@
 		<item name="Miscellaneous Monthly" prob="11.1" />
     </lootgroup> -->
 	<lootgroup name="TierThreeBooks" count="1">
-		<item name="grenadeLauncherSchematic" prob="3.2" />
+		<!--<item name="grenadeLauncherSchematic" prob="3.2" />-->
 		<item name="rocketLauncherSchematic" prob="3.0" />
 <!-- 	<item name="AdvAssaultRifleSchematics" prob="4.2" />
 		<item name="MachineGunSchematics" prob="4.2" />
@@ -787,11 +780,10 @@
 		<item name="Easy as ...." prob="5.8" /> -->
 		<item name="Wood Shingles Book" prob="5.8" />
 		<item name="Fencing" prob="5.8" />
-		<item name="DuctTapeBook" prob="5.8" />
 	</lootgroup>
 	<lootgroup name="TierOneBooks" count="1">
 		<item name="Red Wood Book" prob="13.5" />
-		<item name="sawedoffPumpShotgunSchematic" prob="9.6" />
+		<!--<item name="sawedoffPumpShotgunSchematic" prob="9.6" />-->
 		<item name="handleBarsSchematic" prob="11.5" />
 		<item name="minibikesForDumbshits" prob="11.5" />
 <!-- 		<item name="Cooking with Eggs" prob="13.5" />
@@ -802,8 +794,8 @@
 	<lootgroup name="GunBooks" count="1">
 		<item name="pistolBook" prob="10.0" />
 		<item name="pumpShotgunSchematic" prob="10.0" />
-		<item name="sawedoffPumpShotgunSchematic" prob="10.0" />
-		<item name="AssaultRifleSchematics" prob="12.5" />
+		<!--<item name="sawedoffPumpShotgunSchematic" prob="10.0" />-->
+		
 		<item name="huntingRifleSchematic" prob="12.5" />
 		<item name="theEnforcerMagazine" prob="15.0" />
 <!-- 		<item name="SubMachineGunSchematics" prob="15.0" /> -->
@@ -817,12 +809,11 @@
 		<item name="gasCan" count="0,300" />
 	</lootgroup>
 	<lootgroup name="militaryammo" count="1">
-		<item name="10mmBullet" count="15,50" prob="6.9" />
 		<item name="762mmBullet" count="12,45" prob="5.2" />
 		<item name="shotgunSlug" count="12,36" prob="3.4" />
 		<item name="mineAirFilter" count="1,2" prob="3.4" />
 		<item name="mineCandyTin" count="1,3" prob="6.9" />
-		<item name="CarbonArrow" count="3,12" prob="10.3" />
+		<item name="steelArrow" count="3,12" prob="10.3" />
 		<item name="mineHubcap" count="1,2" prob="8.6" />
 <!-- 		<item name="pipeBomb" count="1,3" prob="13.8" />
 		<item name="IncendiaryPowder" count="5,30" prob="15.5" />
@@ -835,19 +826,18 @@
 		<item name="forge" count="1" prob="2.5" />
 		<item name="cementMixer" count="1" prob="7.4" />
 		<item name="workbench" count="1" prob="7.4" />
-		<item name="Stove" count="1" prob="7.4" />	
-		<item name="MetalWorkBench" count="1" prob="4.9" />
-		<item name="ResearchDesk" count="1" prob="7.4" />
-		<item name="ArmorTable" count="1" prob="7.4" />
-		<item name="SeedNursery" count="1" prob="7.4" />
-		<item name="BlastFurnace" count="1" prob="0.7" />
-		<item name="StoneMill" count="1" prob="7.4" />
-		<item name="MortarAndPestle" count="1" prob="7.4" />
-		<item name="OilRefinery" count="1" prob="7.4" />
-		<item name="BulletPress" count="1" prob="0.7" />
-		<item name="Anvil" count="1" prob="7.4" />
-		<item name="BatteryPack" count="1" prob="7.4" />
-		<item name="ChickenCoop" count="1" prob="7.4" />
+		<item name="stove" count="1" prob="7.4" />	
+		<item name="metalWorkBench" count="1" prob="4.9" />
+		<item name="researchDesk" count="1" prob="7.4" />
+		<item name="armorTable" count="1" prob="7.4" />
+		<item name="blastFurnace" count="1" prob="0.7" />
+		<item name="stoneMill" count="1" prob="7.4" />
+		<item name="mortarAndPestle" count="1" prob="7.4" />
+		<item name="oilRefinery" count="1" prob="7.4" />
+		<item name="bulletPress" count="1" prob="0.7" />
+		<item name="anvil" count="1" prob="7.4" />
+		<item name="batteryPack" count="1" prob="7.4" />
+		<item name="chickenCoop" count="1" prob="7.4" />
     </lootgroup>
 	<lootgroup name="cannedfood" count="1">
 		<item name="canBeef" prob="5.55" />
@@ -894,7 +884,7 @@
 		<item name="rawMeat" prob="11.2" />
 		<item name="ShamSandwich" prob="11.2" />
 <!-- 		<item name="BrainShnitzel" prob="2.0" /> -->
-		<item name="HoneyGlazedMeat" prob="2.0" />
+		
 		<item name="corn" count="1,2" prob="6.7" />
 		<item name="potato" count="1,2" prob="6.7" />
 		<item name="blueberries" count="1,4" prob="6.7" />
@@ -1054,13 +1044,13 @@
 		<item name="femur" count="1,2" prob="3.5" />
 		<item name="shortMetalPipe" count="1" prob="2.1" />
 		<item name="fishingWeight" count="1,3" prob="3.5" />
-		<item name="Plank" count="1" prob="3.5" />
+		<item name="plank" count="1" prob="3.5" />
 		<item name="glue" count="1,3" prob="4.9" />
 		<item name="nail" count="1,6" prob="4.9" />
 <!-- 		<item name="OldRevolver" prob=".1" />
 		<item name="OldRifle" prob=".1" />
 		<item name="OldAxe" prob=".1" /> -->
-		<item name="NutAndBolt" count="1,6" prob="4.9" />
+		<item name="nutAndBolt" count="1,6" prob="4.9" />
 		<item name="bulletCasing" count="1,10" prob="3.5" />
 		<item name="feather" count="1,3" prob="3.5" />
 		<item group="rottenFood" count="1" prob="5.5" />
@@ -1101,7 +1091,7 @@
 		<item name="glue" count="1,3" prob="6.5" />
 		<item name="nail" count="1,6" prob="8.5" />
 <!-- 		<item name="OldRevolver" prob="1.3" /> -->
-		<item name="NutAndBolt" count="1,6" prob="6.5" />
+		<item name="nutAndBolt" count="1,6" prob="6.5" />
 		<item name="bulletCasing" count="1,10" prob="4.6" />
 		<item name="feather" count="1,3" prob="4.6" />
 		<item group="rottenFood" count="1" prob="7.3" />
@@ -1311,7 +1301,7 @@
 	<lootgroup name="metalpipe_scrap" count="1">
 		<item name="scrapIron" prob="50.0" />
 		<item group="empty" prob="40.0" />
-		<item name="NutAndBolt" prob="10.0" />
+		<item name="nutAndBolt" prob="10.0" />
 	</lootgroup>
 	<lootgroup name="metalpipe" count="all">
 		<item name="shortMetalPipe" />
@@ -1322,9 +1312,7 @@
 		<item name="partsAuger_parts" prob="12.5"/>
 		<item name="partsAuger_blade" prob="12.5"/>
 		<item name="partsChainsaw_blade" prob="12.5"/>
-		
 		<item group="BikeLoot" prob="12.5" />
-		<item name="Crowbar" prob="1.3" />
 		<item name="Wielder" prob="12.5" />
 		<item name="smallGenerator" prob="4.0" />
 		<item name="calipers" prob="2.5" />
@@ -1358,7 +1346,7 @@
 		<item name="rebarFrameBlock" count="10,30" prob="1.6" />
 		<item name="concreteMix" count="100,200" prob="1.6" />
 		<item name="wood" count="50,250" prob="1.6" />
-		<item name="Anvil" count="1" prob="1.6" /> -->
+		<item name="anvil" count="1" prob="1.6" /> 
 		<item name="ironDoor1_v1" prob="1.6" />
 	<!--	<item name="AirCompressor" prob="1.6" />
 		<item name="smallGenerator" prob="4.9" /> -->
@@ -1370,7 +1358,6 @@
 		<item name="toolAndDieSet" prob="1.3" />
 		<item group="rareTools" prob="1.6" />
 		<item group="automotive" prob="3.3" />
-<!--		<item name="Crowbar" prob=".8" /> -->
 		<item name="fertilizer" count="1,3" prob="8.1" />
 		<item name="electricParts" count="4,8" prob="8.1" />
 		<item name="electronicParts" count="1,3" prob="3.3" />
@@ -1732,8 +1719,8 @@
 		<item name="shotgunShell" count="1,12" prob="44.4" />
 	</lootgroup>
 	<lootgroup name="banditsMP5" count="1">
-		<item name="10mmFireBullet" count="1,20" prob="37.5" />
-		<item name="10mmBullet" count="1,20" prob="62.5" />
+		<item name="9mmFireBullet" count="5,24" prob="27.3" />
+		<item name="9mmBullet" count="5,24" prob="72.7" />
 	</lootgroup>
 	<lootgroup name="banditsAK47" count="all">
 		<item name="556mmBullet" count="1,20" />
@@ -1938,7 +1925,7 @@
 	<lootgroup name="airdropCarpenter" count="all">
 		<item name="CircularSaw" />
 		<item name="clawHammer" />
-		<item name="Plank" count="100,300" />
+		<item name="plank" count="100,300" />
 		<item name="glue" count="3,5" />
 		<item name="nail" count="20,60" />
 		<item name="canBeef" />
@@ -1972,8 +1959,7 @@
 	<lootgroup name="airdropFisherman" count="all">
 		<item name="BladderFlaskFull" />
 		<item name="FishingPole" />
-		<item name="bassMeat" count="5" />
-		<item name="salmonMeat" count="5" />
+		<item name="fishFillet" count="10" />
 		<item name="vitamins" />
 		<item name="FishingLine" count="5" />
 		<item name="hook" count="10"  />
@@ -2033,7 +2019,7 @@
 	<lootgroup name="airdropMetal" count="all">
 		<item name="spring" count="2,5"  />
 		<item name="concreteMix" count="50,150"  />
-		<item name="NutAndBolt" count="10,20"  />
+		<item name="nutAndBolt" count="10,20"  />
 		<item name="canBeef" />
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" />
