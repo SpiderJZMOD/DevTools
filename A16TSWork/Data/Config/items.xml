@@ -2674,7 +2674,7 @@ Mesh files no longer used:
 
 <item id="134" name="paintTool">
 	<property name="Meshfile" value="Items/Tools/PaintbrushPrefab"/>
-	<property name="Material" value="hogHair"/>
+	<property name="Material" value="wood"/>
 	<property name="RepairTools" value="wood"/>
 	<property name="HoldType" value="51"/>
 	<property name="DegradationBreaksAfter" value="true"/>
@@ -7522,6 +7522,9 @@ Mesh files no longer used:
 	<property name="HoldType" value="22"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property class="Action1">
+        <property name="Class" value="Eat" />
+		<property name="Delay" value="2.0" />
+		<property name="Use_time" value="..." />
 		<property name="Gain_health" value="0" />
 		<property name="Gain_food" value="10" />
 		<property name="Gain_water" value="-10" />
@@ -10456,7 +10459,17 @@ Mesh files no longer used:
 </item>
 -->
 <!--JZMOD WEAPONS AND WEAPON PARTS-->
-	<item id="1500" name="Silencer">
+    <item id="1500" name="itemMaster">
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+        <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="45" />
+		<property name="Stacknumber" value="5000" />
+		<property name="Weight" value="5" />
+		<property name="Group" value="Resources" />
+		<property name="SellableToTrader" value="false" />
+	</item>
+	<item id="1969" name="Silencer">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="metal" />
@@ -10982,7 +10995,7 @@ Mesh files no longer used:
 		</property>
 	</item>
 	<item id="1589" name="AK47StockScope">
-		<property name="Extends" value="AdvAssault_stock" />
+		<property name="Extends" value="partsAK47_stock" />
 		<property name="DescriptionKey" value="AK47StockScopeDesc" />
 		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 	</item>
@@ -11072,7 +11085,7 @@ Mesh files no longer used:
 		<property name="Group" value="Ammo/Weapons" />
 	</item>
 	<item id="1626" name="DemoRocket">
-		<property name="Extends" value="PersonalRocket" />
+		<property name="Extends" value="rocket" />
 		<property name="DescriptionKey" value="DemoRocketDesc" />
 		<property name="CustomIconTint" value="177c09" />
 		<property class="Action1">
@@ -11592,7 +11605,7 @@ Mesh files no longer used:
         <property name="ActionSkillGroup" value="bladeWeaponsCraft" />
     </item>
 	<item id="1665" name="katanamichonne">
-		<property name="Extends" value="sword2" />
+		<property name="Extends" value="machete" />
 		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 	<!--SDX	<property name="Meshfile" value="#michonnekatana?katana" /> -->
 		<property name="Material" value="Msteel" />
@@ -13987,31 +14000,34 @@ Mesh files no longer used:
 	</item>
 	<!--JZMOD SEEDS-->
 	<item id="1951" name="appleSeed">
-		<property name="Extends" value="cornSeed" />
-		<property class="Action1">
-			<property name="Blockname" value="plantedAppleTree" />
-		</property>
+    <property name="Extends" value="itemMaster" />
+	<property class="Action1">
+		<property name="Class" value="PlaceAsBlock"/>
+		<property name="Delay" value="0.5"/>
+		<property name="Blockname" value="plantedAppleTree" />
+	</property>
+		
 	</item>
 	<item id="1952" name="carrotSeed">
-		<property name="Extends" value="cornSeed" />
+		<property name="Extends" value="appleSeed" />
 		<property class="Action1">
 			<property name="Blockname" value="plantedCarrot" />
 		</property>
 	</item>
 	<item id="1953" name="wheatSeed">
-		<property name="Extends" value="cornSeed" />
+		<property name="Extends" value="appleSeed" />
 		<property class="Action1">
 			<property name="Blockname" value="plantedWheat" />
 		</property>
 	</item>
 	<item id="1954" name="coffeeSeeds">
-		<property name="Extends" value="cornSeed" />
+		<property name="Extends" value="appleSeed" />
 		<property class="Action1">
 			<property name="Blockname" value="plantedCoffee1" />
 		</property>
 	</item>
 	<item id="1958" name="sunflowerSeed">
-		<property name="Extends" value="cornSeed" />
+		<property name="Extends" value="appleSeed" />
         <property name="CustomIcon" value="carrotSeed" />
 		<property class="Action1">
 			<property name="Blockname" value="plantedTomato" />
@@ -14334,16 +14350,7 @@ Mesh files no longer used:
 		</property>
 	</item>
 	<!--JZMOD OTHER-->
-	<item id="1969" name="itemMaster">
-		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-        <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Material" value="organic" />
-		<property name="HoldType" value="45" />
-		<property name="Stacknumber" value="5000" />
-		<property name="Weight" value="5" />
-		<property name="Group" value="Resources" />
-		<property name="SellableToTrader" value="false" />
-	</item>
+	
 	<item id="1970" name="shortSteelPipe">
 		<property name="Meshfile" value="Items/Crafting/Metal/shortMetalPipe" />
 		<property name="Material" value="Msteel" />
@@ -14503,9 +14510,6 @@ Mesh files no longer used:
 	</item>
     <item id="3079" name="cementMix">
         <property name="Extends" value="concreteMix" />
-		<property class="Action1">
-			<property name="Allowed_upgrade_items" value="cementMix" />
-		</property>
 		<property name="ActionSkillGroup" value="concreteBuilding" />
 		<property name="CraftingSkillGroup" value="concreteCraft" />
 	</item>
@@ -14965,9 +14969,6 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 	<!--SDX	<property name="Meshfile" value="#fishes?fish" />
 		<property name="DropMeshfile" value="#fishes?fish" /> -->
-		<property class="Action1">
-			<property name="Blockname" value="fishWall" />
-		</property>
 	</item>
 	<!--JZMOD NPC GUNS -->
     <item id="2058" name="NPCPistol">
@@ -15668,7 +15669,7 @@ Mesh files no longer used:
 		<property name="Material" value="wood" />
 		<property name="FuelValue" value="125" />
 	</item>
-    <item id="132" name="StoneDrill">
+    <item id="3079" name="StoneDrill">
 		<property name="Extends" value="auger" />
 		<property name="CustomIcon" value="auger" />
 		<property name="CustomIconTint" value="d0d0ff" />
@@ -15688,5 +15689,32 @@ Mesh files no longer used:
 			<property name="DamageBonus.hardStone" value="10" />
 		</property>
 		<property name="DescriptionKey" value="augerDesc" />
+	</item>
+    <item id="3080" name="partsAuger_bladeDiamond">
+		<property name="Extends" value="partsMaster" />
+		<property name="CustomIcon" value="partsAuger_blade" />
+		<property name="CustomIconTint" value="b0b0ff" />
+		<property name="PartType" value="Barrel" />
+		<property name="Weight" value="40" />
+		<property class="Attributes">
+			<property name="EntityDamage" value="3,10" />
+			<property name="BlockDamage" value="44,44" />
+			<property name="Accuracy" value="1, 0.01" />
+			<property name="DegradationMax" value="5500,6000" />
+		</property>
+		<property name="Group" value="Resources,Tools/Traps" />
+        <property name="CraftingSkillGroup" value="engineeringCraft" />
+	</item>
+    <item id="3081" name="Revolver_parts">
+		<property name="Extends" value="partsMaster" />
+		<property name="DescriptionKey" value="RevolverPartsDesc" />
+        <property name="CustomIcon" value="parts44Magnum_parts" />
+        <property name="CustomIconTint" value="424041" />
+		<property name="PartType" value="Pump" />
+		<property name="Weight" value="5" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="100,1000" />
+		</property>
+		<property name="EconomicValue" value="1125" />
 	</item>
 </items>
