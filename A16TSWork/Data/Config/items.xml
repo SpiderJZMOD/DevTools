@@ -2005,6 +2005,7 @@ Mesh files no longer used:
 
 <item id="108" name="fireaxeSteel">
 	<property name="Extends" value="fireaxeIron"/>
+    <property name="Material" value="Msteel" />
 	<property name="CustomIcon" value="fireaxeIron"/> <!-- xxx model to be replaced -->
 	<property name="CustomIconTint" value="a0a0ff"/>
 	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
@@ -8684,13 +8685,13 @@ Mesh files no longer used:
 </item>
 -->
 
-<!-- <item id="1002" name="handleBarsSchematic">
+ <item id="1002" name="handleBarsSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="partsHandlebars"/>
 		<property name="Skills_to_gain" value="craftSkillMiscellaneous"/>
 	</property>
-</item>-->
+</item>
 
 <item id="1003" name="minibikesForDumbshits">
 	<property name="Extends" value="schematicMaster"/>
@@ -9426,7 +9427,7 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources"/>
 </item>
-<!--
+
 <item id="1329" name="book">
 	<property name="Meshfile" value="Items/Misc/Book"/>
 	<property name="Material" value="paper"/>
@@ -9436,7 +9437,7 @@ Mesh files no longer used:
 	<property name="Weight" value="20"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 </item>
--->
+
 <item id="1330" name="militaryFiber"> <!-- scrap material -->
 	<property name="Meshfile" value="Items/Crafting/cloth"/>
 	<property name="Material" value="MmilitaryFiber"/>
@@ -14618,7 +14619,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="ui_game_symbol_FanBelt" />
 		<property name="CraftingSkillGroup" value="engineeringCraft" />
 	</item>
-	<item id="2000" name="NutAndBolt">
+	<item id="2000" name="nutAndBolt">
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="metal" />
 		<property name="Weight" value="1" />
@@ -15550,7 +15551,7 @@ Mesh files no longer used:
 		<property name="Material" value="Msteel" />
 		<property name="Weight" value="1" />
 	</item>
-	<item id="3054" name="glassPurfume">
+	<item id="3054" name="glassPerfume">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="glassPurfume" />
 		<property name="DescriptionKey" value="glassPurfumeDesc" />
@@ -15716,5 +15717,16 @@ Mesh files no longer used:
 			<property name="DegradationMax" value="100,1000" />
 		</property>
 		<property name="EconomicValue" value="1125" />
+	</item>
+    <item id="3082" name="scrapCable">
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="45" />
+		<property name="Stacknumber" value="5000" />
+		<property name="Weight" value="5" />
+		<property name="RepairTime" value="20" />
+		<property name="RepairAmount" value="1000" />
+		<property name="Group" value="Resources" />
 	</item>
 </items>
