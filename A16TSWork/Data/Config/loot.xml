@@ -149,7 +149,6 @@
 			<block name="cntSportsBag01" prob="3.3" />
 			<block name="cntSportsBag02" prob="3.3" />
 			<block name="cntPurse01" prob="3.3" />
-			<block name="smallPlainsTree" prob="0.2" />
 			<block name="appleTree" prob="0.2" />
 			<block name="workBurnBarrel" prob="0.2" />
             <block name="gasTank" prob="0.2" />            

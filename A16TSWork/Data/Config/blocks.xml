@@ -7783,7 +7783,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="20" /> </property>
     <drop event="Harvest" name="wood" count="10" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="logCabinBlock" />
+		<property name="ToBlock" value="woodBlock" />
 		<property name="Item" value="narrowLog" />
 		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="5" />
@@ -15745,16 +15745,37 @@ kind of free
 	<property name="DescriptionKey" value="glassGroupDesc"/>
 	<drop event="Destroy" name="brokenGlass" count="1,4"/>
 </block>
-<!--JZMOD ADDED-->
+<!-- JZMOD ADDED-->
 	<!--JZMOD LOOT CONTAINERS-->
-	<block id="17" name="cntSteelGunSafe">
+     <block id="21" name="concreteFormMaster">
+		<property name="Material" value="wood" />
+		<property name="Shape" value="CubeCutoutBackFaces" />
+		<property name="Mesh" value="cutout" />
+		<property name="Texture" value="289,289,65,65,65,65" />
+		<property name="IsDeveloper" value="true" />
+		<property class="RepairItems">
+			<property name="plank" value="10" />
+		</property>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="pouredConcreteMaster" />
+			<property name="Item" value="concreteMix" />
+			<property name="ItemCount" value="20" />
+			<property name="UpgradeHitCount" value="1" />
+		</property>
+		<drop event="Destroy" count="0" />
+		<property name="CraftingSkillGroup" value="rConcreteBuilding" />
+	</block>   
+	<block id="456" name="cntSteelGunSafe">
 		<property name="Extends" value="cntGunSafe" />
 		<property name="CustomIcon" value="ui_game_symbol_SteelGunSafe" />
         <property name="DescriptionKey" value="cntSteelGunSafeDesc" />
 		<property name="Material" value="Msteel" />
-		<property name="Shape" value="ModelEntity" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#hk?WeaponWorkbenchPrefab" />
-		<property name="ModelOffset" value="0,0.2,0" />
+		<property name="ModelOffset" value="0,0.2,0" />-->
 		<property name="LootList" value="10" />
 		<property name="DowngradeBlock" value="cntSteelGunSafeInsecure" />
 		<property class="RepairItems">
@@ -15763,12 +15784,15 @@ kind of free
 		<drop event="Fall" name="scrapMetalPile" count="0" prob="1" stick_chance="1" />
 		<drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
 	</block>
-	<block id="21" name="cntSteelGunSafeInsecure">
+	<block id="1163" name="cntSteelGunSafeInsecure">
 		<property name="Extends" value="cntGunSafeInsecure" />
 		<property name="CustomIcon" value="cntGunSafe" />
-		<property name="Shape" value="ModelEntity" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#hk?WeaponWorkbenchPrefab" />
-		<property name="ModelOffset" value="0,0.2,0" />
+		<property name="ModelOffset" value="0,0.2,0" />-->
 		<property name="Material" value="Msteel" />
 		<property name="LootList" value="10" />
 		<property class="RepairItems">
@@ -15786,11 +15810,11 @@ kind of free
 		<property name="DowngradeBlock" value="StorageChest" />
 		<property name="DescriptionKey" value="cntSecureStorageChestDesc" />
 	</block>
-	<block id="49" name="StorageChest">
+	<block id="67" name="StorageChest">
 		<property name="Extends" value="cntStorageChest" />
 		<property name="LootList" value="10" />
 	</block>
-	<block id="50" name="CrackedMunitionsBox">
+	<block id="68" name="CrackedMunitionsBox">
 		<property name="Extends" value="cntStorageChest" />
 		<property name="Class" value="Loot" />
 		<property name="Shape" value="Ext3dModel" />
@@ -15800,7 +15824,7 @@ kind of free
 		<property name="LootList" value="40" />
 		<property name="DowngradeBlock" value="Cracked Munitions Reset1" />
 	</block>
-	<block id="51" name="Cracked Munitions Reset1">
+	<block id="69" name="Cracked Munitions Reset1">
 		<property name="Extends" value="cntStorageChest" />
         <property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -15811,75 +15835,14 @@ kind of free
 		<property name="UpgradeRated.ToBlock" value="cntMunitionsBox" />
 		<property name="UpgradeRated.Rate" value="60" />
 	</block>
-	<block id="55" name="StorageHealth">
-		<property name="Extends" value="cntStorageHealth" />
-		<property name="CustomIcon" value="cntStorageHealth" />
-		<property name="DowngradeBlock" value="StorageHealthInsecure" />
-	</block>
-	<block id="56" name="StorageAmmo">
-		<property name="Extends" value="cntStorageHealth" />
-		<property name="Texture" value="418" />
-		<property name="CustomIcon" value="cntStorageAmmo" />
-		<property name="DowngradeBlock" value="StorageAmmoInsecure" />
-	</block>
-	<block id="57" name="StorageBuilding">
-		<property name="Extends" value="cntStorageHealth" />
-		<property name="Texture" value="419" />
-		<property name="CustomIcon" value="cntStorageBuilding" />
-		<property name="DowngradeBlock" value="StorageBuildingInsecure" />
-	</block>
-	<block id="58" name="StorageExplosives">
-		<property name="Extends" value="cntStorageHealth" />
-		<property name="Texture" value="420" />
-		<property name="CustomIcon" value="cntStorageExplosives" />
-		<property name="DowngradeBlock" value="StorageExplosivesInsecure" />
-	</block>
-	<block id="59" name="StorageFood">
-		<property name="Extends" value="cntStorageHealth" />
-		<property name="Texture" value="421" />
-		<property name="CustomIcon" value="cntStorageFood" />
-		<property name="DowngradeBlock" value="StorageFoodInsecure" />
-	</block>
-	<block id="60" name="StorageWeapons">
-		<property name="Extends" value="cntStorageHealth" />
-		<property name="Texture" value="422" />
-		<property name="CustomIcon" value="cntStorageWeapons" />
-		<property name="DowngradeBlock" value="StorageWeaponsInsecure" />
-	</block>
-	<block id="61" name="StorageHealthInsecure">
-		<property name="Extends" value="cntStorageHealthInsecure" />
-		<property name="LootList" value="10" />
-	</block>
-	<block id="62" name="StorageAmmoInsecure">
-		<property name="Extends" value="cntStorageHealthInsecure" />
-		<property name="LootList" value="10" />
-		<property name="Texture" value="418" />
-	</block>
-	<block id="63" name="StorageBuildingInsecure">
-		<property name="Extends" value="cntStorageHealthInsecure" />
-		<property name="LootList" value="10" />
-		<property name="Texture" value="419" />
-	</block>
-	<block id="64" name="StorageExplosivesInsecure">
-		<property name="Extends" value="cntStorageHealthInsecure" />
-		<property name="LootList" value="10" />
-		<property name="Texture" value="420" />
-	</block>
-	<block id="65" name="StorageFoodInsecure">
-		<property name="Extends" value="cntStorageHealthInsecure" />
-		<property name="LootList" value="10" />
-		<property name="Texture" value="421" />
-	</block>
-	<block id="66" name="StorageWeaponsInsecure">
-		<property name="Extends" value="cntStorageHealthInsecure" />
-		<property name="LootList" value="10" />
-		<property name="Texture" value="422" />
-	</block>
-	<block id="67" name="StorageSack">
-		<property name="Extends" value="cntStorageHealthInsecure" />
+	<block id="74" name="StorageSack">
+		<property name="Extends" value="cntStorageGenericInsecure" />
 		<property name="Material" value="cloth" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#hflnew?ammoBag" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#hflnew?ammoBag" />-->
 		<property name="Weight" value="20" />
 		<property name="LootList" value="10" />
 		<property class="RepairItems">
@@ -15898,7 +15861,11 @@ kind of free
 		<drop event="Fall" name="woodDebris" count="0" prob="1" stick_chance="1" />
 	</block>
 	<!--JZMOD BLOCKS-->
-	<block id="68" name="BonesPrefab">
+    <block id="75" name="brickMasterPlayer">
+        <property name="Extends" value="brickNoUpgradeMaster"/>
+        <property name="Texture" value="332" />
+    </block>
+	<block id="1155" name="BonesPrefab">
 		<property name="Material" value="organic" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="22" />
@@ -15912,7 +15879,7 @@ kind of free
 		<drop event="Harvest" name="rottingFlesh" count="1" />
 		<drop event="Harvest" name="femur" count="1" />
 	</block>
-	<block id="69" name="DecoyCandyMine">
+	<block id="78" name="DecoyCandyMine">
 		<property name="Material" value="metal" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -15922,7 +15889,7 @@ kind of free
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Tools/Traps" />
 	</block>
-	<block id="70" name="DecoyAirFilterMine">
+	<block id="79" name="DecoyAirFilterMine">
 		<property name="Material" value="metal" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -15932,30 +15899,30 @@ kind of free
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Tools/Traps" />
 	</block>
-	<block id="73" name="keystoneRock">
-		<property name="Extends" value="keystoneSteel" />
+	<block id="80" name="keystoneRock">
+		<property name="Extends" value="keystoneBlock" />
 		<property name="Material" value="stone" />
         <property class="RepairItems">
 			<property name="rockSmall" value="100" />
 		</property>
-        <drop event="Destroy" name="keystoneSteel" count="0" />
-		<drop event="Fall" name="keystoneSteel" count="0" prob="1" stick_chance="0" />
+        <drop event="Destroy" name="keystoneBlock" count="0" />
+		<drop event="Fall" name="keystoneBlock" count="0" prob="1" stick_chance="0" />
         <drop event="Destroy" name="keystoneRock" count="1" />
 		<drop event="Fall" name="keystoneRock" count="1" prob="1" stick_chance="0" />
 	</block>
-	<block id="74" name="keystoneIron">
-		<property name="Extends" value="keystoneSteel" />
+	<block id="81" name="keystoneIron">
+		<property name="Extends" value="keystoneBlock" />
 		<property name="Material" value="Mmetal_hard" />
         <property class="RepairItems">
 			<property name="forgedIron" value="10" />
 		</property>
-	    <drop event="Destroy" name="keystoneSteel" count="0" />
-		<drop event="Fall" name="keystoneSteel" count="0" prob="1" stick_chance="0" />
+	    <drop event="Destroy" name="keystoneBlock" count="0" />
+		<drop event="Fall" name="keystoneBlock" count="0" prob="1" stick_chance="0" />
         <drop event="Destroy" name="keystoneIron" count="1" />
 		<drop event="Fall" name="keystoneIron" count="1" prob="1" stick_chance="0" />
 	</block>
-	<block id="103" name="forgedFrame">
-		<property name="Material" value="MsteelBlock" />
+	<block id="82" name="forgedFrame">
+		<property name="Material" value="Msteel" />
 		<property name="MaxDamage" value="50" />
 		<property name="LightOpacity" value="0" />
 		<property name="Group" value="Building" />
@@ -15978,14 +15945,14 @@ kind of free
 		<property name="CustomIcon" value="scrapIronFrameMaster" />
 		<property name="Group" value="Building" />
 	</block>
-	<block id="104" name="solidforgedFrame">
+	<block id="83" name="solidforgedFrame">
 		<property name="Extends" value="forgedFrame" />
 		<property name="CanPickup" value="false" />
         <property name="MaxDamage" value="500" />
 		<property name="DowngradeBlock" value="scrapSteelPile" />
 	</block>
 	<!--JZMOD TRAPS-->
-	<block id="105" name="SetUpASpikeTrap">
+	<block id="84" name="SetUpASpikeTrap">
 		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -16011,7 +15978,7 @@ kind of free
 		<property name="DescriptionKey" value="SetUpASpikeTrapDesc" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
-	<block id="109" name="RiggedChest"><!--JZMOD MAKE SIMPLE CUDE TRAP FOR PAINTING-->
+	<block id="85" name="RiggedChest"><!--JZMOD MAKE SIMPLE CUDE TRAP FOR PAINTING-->
 		<property name="Class" value="TNT" />
 		<property name="Material" value="wood+wood" />
 		<property name="Shape" value="Ext3dModel" />
@@ -16032,12 +15999,15 @@ kind of free
 	</block>
 	
 	<!--JZMOD WORKSTATIONS-->
-	<block id="1974" name="workStoneMill">
+	<block id="86" name="workStoneMill">
 		<property name="Class" value="Campfire" />
 		<property name="Material" value="stone" />
-		<property name="Shape" value="ModelEntity" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+        <!--SDX	<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#millStone?millStone" />
-		<property name="CustomIcon" value="ui_game_symbol_StoneMill" />
+		<property name="CustomIcon" value="ui_game_symbol_StoneMill" />-->
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="IsTerrainDecoration" value="true" />
@@ -16057,12 +16027,15 @@ kind of free
 		<property name="CraftingSkillGroup" value="Engineering" />
 		<property name="SellableToTrader" value="false" />
 	</block>
-    <block id="1985" name="workStove">
+    <block id="87" name="workStove">
 		<property name="Class" value="Campfire" />
 		<property name="Material" value="Mmetal_thin" />
 		<property name="MultiBlockDim" value="1,2,1" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#oven?oven" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+        <!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#oven?oven" />-->
 		<property name="CustomIcon" value="ui_game_symbol_Stove" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="IsTerrainDecoration" value="true" />
@@ -16088,14 +16061,14 @@ kind of free
 		<property name="EconomicBundleSize" value="1" />
 		<property name="SellableToTrader" value="false" />
 	</block>
-    <block id="442" name="workMetalWorkBench">
-		<property name="Class" value="Machine, Mods" />
-		<property name="powerType" value="Electric" />
-		<property name="debug" value="false" />
-		<property name="TickRate" value="30" />
+    <block id="88" name="workMetalWorkBench">
+		<property name="Class" value="Campfire" />
 		<property name="Material" value="Mmetal_thin" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#metalBench?metalBench" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#metalBench?metalBench" />-->
 		<property name="CustomIcon" value="ui_game_symbol_MetalWorkBench" />
 		<property name="MultiBlockDim" value="2,1,1" />
 		<property name="HeatMapStrength" value="2" />
@@ -16116,12 +16089,15 @@ kind of free
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
    
-	<block id="443" name="workResearchDesk">
+	<block id="89" name="workResearchDesk">
 		<property name="Material" value="wood" />
 		<property name="Stacknumber" value="1" />
 		<property name="Mesh" value="models" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#studyDesk?studyDesk" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#studyDesk?studyDesk" />-->
 		<property name="MultiBlockDim" value="2,1,1" />
 		<property name="CustomIcon" value="cntDesk01" />
 		<property name="Class" value="Campfire" />
@@ -16138,11 +16114,14 @@ kind of free
 		<property name="Group" value="Building" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
-    <block id="447" name="workBlastFurnace">
+    <block id="90" name="workBlastFurnace">
 		<property name="Class" value="Forge" />
 		<property name="Material" value="stone" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#forge1?forge1Prefab" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#forge1?forge1Prefab" />-->
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="ParticleName" value="campfire" />
 		<property name="ParticleOffset" value="0.5,1,0.5" />
@@ -16168,10 +16147,13 @@ kind of free
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
 	</block>
-   <block id="448" name="workOilRefinery">
+   <block id="91" name="workOilRefinery">
 		<property name="Material" value="Mmetal_thin" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#moonshine?moonshinePrefab" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#moonshine?moonshinePrefab" />-->
 		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="15" />
@@ -16190,17 +16172,17 @@ kind of free
 		<property name="Group" value="Tools/Traps" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
-   	<block id="450" name="workBulletPress">
+   	<block id="92" name="workBulletPress">
 		<property name="Material" value="Mmetal_thin" />
 		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#ammoreloder?ammunitionReloader1" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#ammoreloder?ammunitionReloader1" />-->
 		<property name="CustomIcon" value="ui_game_symbol_BulletPress" />
-		<property name="Class" value="Machine, Mods" />
-		<property name="powerType" value="Electric" />
+		<property name="Class" value="Campfire" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
-		<property name="debug" value="false" />
-		<property name="TickRate" value="30" />
 		<property name="Stacknumber" value="1" />
 		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
@@ -16215,10 +16197,13 @@ kind of free
         <drop event="Destroy" count="0" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
-    <block id="451" name="workDryingRack">
+    <block id="93" name="workDryingRack">
 		<property name="Material" value="wood" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#TableMetal1?TableMetal1Prefab" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#TableMetal1?TableMetal1Prefab" />-->
 		<property name="Class" value="Campfire" />
 		<property name="HeatMapStrength" value="1" />
 		<property name="HeatMapTime" value="1200" />
@@ -16236,11 +16221,14 @@ kind of free
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 	</block>
-    <block id="1756" name="workMortarAndPestle">
+    <block id="1150" name="workMortarAndPestle">
 		<property name="DescriptionKey" value="MortarAndPestle1Desc" />
 		<property name="Material" value="stone" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#MortarAndPestle1?MortarAndPestle1Prefab" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#MortarAndPestle1?MortarAndPestle1Prefab" />-->
 		<property name="CustomIcon" value="ui_game_symbol_MortarAndPestle" />
 		<property name="Class" value="Campfire" />
 		<property name="Stacknumber" value="1" />
@@ -16258,11 +16246,14 @@ kind of free
         <property name="DescriptionKey" value="MortarAndPestleDesc" />
 		<property name="Group" value="Basics" />
 	</block>
-    <block id="1959" name="workAnvil">
+    <block id="95" name="workAnvil">
 		<property name="DescriptionKey" value="anvil1Desc" />
 		<property name="Material" value="Mmetal_thin" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#forge1?anvilPrefab" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#forge1?anvilPrefab" />-->
 		<property name="CustomIcon" value="ui_game_symbol_Anvil" />
 		<property name="Class" value="Campfire" />
 		<property name="Group" value="Basics,Building" />
@@ -16278,14 +16269,14 @@ kind of free
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 	</block>
-   <block id="1746" name="workBatteryPack">
-		<property name="Class" value="Machine, Mods" />
-		<property name="powerType" value="Electric" />
-		<property name="debug" value="false" />
-		<property name="TickRate" value="30" />
+   <block id="96" name="workBatteryPack">
+		<property name="Class" value="Campfire" />
 		<property name="Material" value="Mmetal_thin" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#batteries?BatteryBlock" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#batteries?BatteryBlock" />-->
 		<property name="CustomIcon" value="ui_game_symbol_batteryPack" />
         <property name="DescriptionKey" value="workBatteryPackDesc" />
 		<property name="HeatMapStrength" value="1" />
@@ -16303,12 +16294,15 @@ kind of free
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 	</block>
-	<block id="1970" name="workChickenCoop">
+	<block id="97" name="workChickenCoop">
 		<!--empty-->
 		<property name="Material" value="wood" />
-		<property name="Model" value="#ChickenCoop0?ChickenCoop0" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Model" value="#ChickenCoop0?ChickenCoop0" />
+        <property name="Shape" value="ModelEntity" />-->
 		<property name="CustomIcon" value="ui_game_symbol_ChickenCoop" />
-		<property name="Shape" value="ModelEntity" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="CanPickup" value="false" />
 		<property class="UpgradeBlock">
@@ -16323,11 +16317,14 @@ kind of free
         <property name="DescriptionKey" value="ChickenCoopDesc" />
 		<drop event="Destroy" name="workChickenCoop" count="1" />
 	</block>
-	<block id="1971" name="workChickenCoop1">
+	<block id="98" name="workChickenCoop1">
 		<!--egg-->
 		<property name="Material" value="wood" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#ChickenCoop1?ChickenCoop1" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#ChickenCoop1?ChickenCoop1" />-->
 		<property name="CustomIcon" value="ui_game_symbol_ChickenCoop" />
 		<property name="Class" value="Campfire" />
 		<property name="CanPickup" value="false" />
@@ -16345,10 +16342,10 @@ kind of free
 		</property>
 		<drop event="Destroy" name="workChickenCoop1" count="1" />
 	</block>
-	<block id="1972" name="workChickenCoop2">
+	<block id="99" name="workChickenCoop2">
 		<!--Chick-->
 		<property name="Extends" value="workChickenCoop1" />
-		<property name="Model" value="#ChickenCoop2?ChickenCoop2" />
+        <!--SDX<property name="Model" value="#ChickenCoop2?ChickenCoop2" />-->
 		<property name="CustomIcon" value="ui_game_symbol_ChickenCoop" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="workChickenCoop3" />
@@ -16356,12 +16353,15 @@ kind of free
 		</property>
 		<drop event="Destroy" name="workChickenCoop2" count="1" />
 	</block>
-	<block id="1973" name="workChickenCoop3">
+	<block id="100" name="workChickenCoop3">
 		<!--Hen-->
 		<property name="Material" value="wood" />
-		<property name="Model" value="#ChickenCoop3?ChickenCoop3" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--SDX<property name="Model" value="#ChickenCoop3?ChickenCoop3" />
+        <property name="Shape" value="ModelEntity" />-->
 		<property name="CustomIcon" value="ui_game_symbol_ChickenCoop" />
-		<property name="Shape" value="ModelEntity" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="Class" value="Campfire" />
 		<property name="CanPickup" value="false" />
@@ -16374,9 +16374,12 @@ kind of free
 		<drop event="Destroy" name="Hen" count="1" />
 		<drop event="Destroy" name="workChickenCoop" count="1" />
 	</block>
-    <block id="1738" name="workMethaneProducer">
-        <property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#watertank?watertankPrefab" />
+    <block id="101" name="workMethaneProducer">
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+        <!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#watertank?watertankPrefab" />-->
         <property name="Texture" value="284" />
 		<property name="Material" value="Mmetal_thin" />
 		<property name="Class" value="Campfire" />
@@ -16395,7 +16398,7 @@ kind of free
 		<property name="Group" value="Tools/Traps" />
 	</block>
     <!--JZMOD PROFESSION KITS-->
-	<block id="455" name="SoldierSupplies">
+	<block id="102" name="SoldierSupplies">
 		<property name="Class" value="Loot" />
 		<property name="Material" value="MdroppedBackpack" />
 		<property name="Shape" value="Ext3dModel" />
@@ -16407,7 +16410,7 @@ kind of free
 		<drop event="Fall" name="SoldierSupplies" count="1" prob="1" />
 		<property name="CustomIcon" value="cntSuitcase" />
 	</block>
-	<block id="456" name="SoldierProfession">
+	<block id="103" name="SoldierProfession">
 		<property name="Material" value="glass" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -16428,7 +16431,7 @@ kind of free
 		<drop event="Fall" name="SoldierProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="SoldierSupplies" />
 	</block>
-	<block id="457" name="DoctorProfession">
+	<block id="104" name="DoctorProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Doctor" />
@@ -16440,13 +16443,13 @@ kind of free
 		<drop event="Fall" name="DoctorProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="DoctorSupplies" />
 	</block>
-	<block id="458" name="DoctorSupplies">
+	<block id="105" name="DoctorSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="213" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="DoctorSupplies" count="1" prob="1" />
 	</block>
-	<block id="459" name="FarmerProfession">
+	<block id="108" name="FarmerProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Farmer" />
@@ -16458,13 +16461,13 @@ kind of free
 		<drop event="Fall" name="FarmerProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="FarmerSupplies" />
 	</block>
-	<block id="460" name="FarmerSupplies">
+	<block id="109" name="FarmerSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="214" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="FarmerSupplies" count="1" prob="1" />
 	</block>
-	<block id="461" name="ChemistProfession">
+	<block id="110" name="ChemistProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Chemist" />
@@ -16476,13 +16479,13 @@ kind of free
 		<drop event="Fall" name="ScientistsProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="ChemistSupplies" />
 	</block>
-	<block id="462" name="ChemistSupplies">
+	<block id="111" name="ChemistSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="215" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="ChemistSupplies" count="1" prob="1" />
 	</block>
-	<block id="1184" name="CarpenterProfession">
+	<block id="112" name="CarpenterProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Carpenter" />
@@ -16494,13 +16497,13 @@ kind of free
 		<drop event="Fall" name="EngineerProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="CarpenterSupplies" />
 	</block>
-	<block id="1185" name="CarpenterSupplies">
+	<block id="113" name="CarpenterSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="216" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="CarpenterSupplies" count="1" prob="1" />
 	</block>
-	<block id="1186" name="CopProfession">
+	<block id="114" name="CopProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Cop" />
@@ -16512,13 +16515,13 @@ kind of free
 		<drop event="Fall" name="CopProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="CopSupplies" />
 	</block>
-	<block id="1187" name="CopSupplies">
+	<block id="1177" name="CopSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="217" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="CopSupplies" count="1" prob="1" />
 	</block>
-	<block id="1188" name="FishermanProfession">
+	<block id="127" name="FishermanProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Fisherman" />
@@ -16530,13 +16533,13 @@ kind of free
 		<drop event="Fall" name="FishermanProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="FishermanSupplies" />
 	</block>
-	<block id="1189" name="FishermanSupplies">
+	<block id="437" name="FishermanSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="218" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="FishermanSupplies" count="1" prob="1" />
 	</block>
-	<block id="1190" name="ChefProfession">
+	<block id="438" name="ChefProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Chef" />
@@ -16548,13 +16551,13 @@ kind of free
 		<drop event="Fall" name="ChefProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="ChefSupplies" />
 	</block>
-	<block id="1286" name="ChefSupplies">
+	<block id="439" name="ChefSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="219" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="ChefSupplies" count="1" prob="1" />
 	</block>
-	<block id="1287" name="Fitness InstructorProfession">
+	<block id="440" name="Fitness InstructorProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Fitness" />
@@ -16566,13 +16569,13 @@ kind of free
 		<drop event="Fall" name="Fitness InstructorProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="Fitness InstructorSupplies" />
 	</block>
-	<block id="1288" name="Fitness InstructorSupplies">
+	<block id="441" name="Fitness InstructorSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="220" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="Fitness InstructorSupplies" count="1" prob="1" />
 	</block>
-	<block id="1289" name="FiremanProfession">
+	<block id="442" name="FiremanProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Fireman" />
@@ -16584,13 +16587,13 @@ kind of free
 		<drop event="Fall" name="FiremanProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="FiremanSupplies" />
 	</block>
-	<block id="1290" name="FiremanSupplies">
+	<block id="443" name="FiremanSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="221" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="FiremanSupplies" count="1" prob="1" />
 	</block>
-	<block id="1291" name="Construction WorkerProfession">
+	<block id="444" name="Construction WorkerProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Construction" />
@@ -16602,13 +16605,13 @@ kind of free
 		<drop event="Fall" name="Construction WorkerProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="Construction WorkerSupplies" />
 	</block>
-	<block id="1292" name="Construction WorkerSupplies">
+	<block id="445" name="Construction WorkerSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="222" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="Construction WorkerSupplies" count="1" prob="1" />
 	</block>
-	<block id="1293" name="ElectricianProfession">
+	<block id="446" name="ElectricianProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Electrician" />
@@ -16620,13 +16623,13 @@ kind of free
 		<drop event="Fall" name="ElectricianProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="ElectricianSupplies" />
 	</block>
-	<block id="1294" name="ElectricianSupplies">
+	<block id="447" name="ElectricianSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="223" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="ElectricianSupplies" count="1" prob="1" />
 	</block>
-	<block id="1295" name="Metal WorkerProfession">
+	<block id="448" name="Metal WorkerProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Metal" />
@@ -16638,13 +16641,13 @@ kind of free
 		<drop event="Fall" name="Metal WorkerProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="Metal WorkerSupplies" />
 	</block>
-	<block id="1296" name="Metal WorkerSupplies">
+	<block id="449" name="Metal WorkerSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="224" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="Metal WorkerSupplies" count="1" prob="1" />
 	</block>
-	<block id="1297" name="BurglarProfession">
+	<block id="450" name="BurglarProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Burglar" />
@@ -16656,13 +16659,13 @@ kind of free
 		<drop event="Fall" name="BurglarProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="BurglarSupplies" />
 	</block>
-	<block id="1442" name="BurglarSupplies">
+	<block id="451" name="BurglarSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="225" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="BurglarSupplies" count="1" prob="1" />
 	</block>
-	<block id="1443" name="Park RangerProfession">
+	<block id="452" name="Park RangerProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Ranger" />
@@ -16674,13 +16677,13 @@ kind of free
 		<drop event="Fall" name="Park RangerProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="Park RangerSupplies" />
 	</block>
-	<block id="1444" name="Park RangerSupplies">
+	<block id="453" name="Park RangerSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="226" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="Park RangerSupplies" count="1" prob="1" />
 	</block>
-	<block id="1445" name="MechanicProfession">
+	<block id="454" name="MechanicProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Mechanic" />
@@ -16692,26 +16695,26 @@ kind of free
 		<drop event="Fall" name="MechanicProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="MechanicSupplies" />
 	</block>
-	<block id="1955" name="MechanicSupplies">
+	<block id="455" name="MechanicSupplies">
 		<property name="Extends" value="SoldierSupplies" />
 		<property name="LootList" value="227" />
 		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="MechanicSupplies" count="1" prob="1" />
 	</block>
-	<block id="1485" name="scrapSteelPile">
-		<property name="Material" value="Msteel" />
-		<property name="MaxDamage" value="50" />
-		<property name="StabilitySupport" value="false" />
-		<property name="Shape" value="Ext3dModel" />
-		<property name="Mesh" value="models" />
-		<property name="Model" value="OutdoorDecor/scrapmetalblock" param1="main_mesh" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="CustomIcon" value="scrapMetalPile" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<drop event="Harvest" name="scrapSteel" count="30" />
+	<block id="17" name="scrapSteelPile">
+        <property name="Material" value="Msteel" />
+        <property name="MaxDamage" value="50"/>
+        <property name="StabilitySupport" value="false"/>
+        <property name="Shape" value="New"/>
+        <property name="Model" value="broken_girder_beam"/>
+        <property name="Texture" value="571"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="IsDecoration" value="true"/>
+        <property name="Collide" value="melee,bullet,arrow,rocket"/>
+        <drop event="Harvest" name="scrapSteel" count="30" />
 		<drop event="Destroy" name="scrapSteel" count="20" />
 	</block>
-	<block id="1486" name="BikeLoot">
+	<block id="457" name="BikeLoot">
 		<property name="Class" value="Loot" />
 		<property name="Material" value="MdroppedBackpack" />
 		<property name="Texture" value="423" />
@@ -16720,7 +16723,7 @@ kind of free
 		<drop event="Destroy" count="0" />
 		<property name="CustomIcon" value="cntSuitcase" />
 	</block>
-	<block id="1487" name="BikeNABox">
+	<block id="458" name="BikeNABox">
 		<property name="Material" value="glass" />
 		<property name="Texture" value="423" />
 		<property name="CanPickup" value="true" />
@@ -16730,7 +16733,7 @@ kind of free
 		<property name="DowngradeBlock" value="BikeLoot" />
 	</block>
 	<!-- JZMOD NPC CORPSES -->
-	<block id="1488" name="banditLeaderCorpse">
+	<block id="459" name="banditLeaderCorpse">
 		<property name="Class" value="Loot" />
 		<property name="Material" value="organic" />
 		<property name="Shape" value="ModelEntity" />
@@ -16745,52 +16748,52 @@ kind of free
 		<property name="DowngradeBlock" value="GoreBlock1BonesPrefab" />
 		<drop event="Destroy" count="0" />
 	</block>
-	<block id="1489" name="banditPistolCorpse">
+	<block id="460" name="banditPistolCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="LootList" value="201" />
 	</block>
-	<block id="1490" name="bandit44MagnumCorpse">
+	<block id="461" name="bandit44MagnumCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="LootList" value="202" />
 	</block>
-	<block id="1491" name="banditSawedOffPumpShotgunCorpse">
+	<block id="462" name="banditSawedOffPumpShotgunCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="LootList" value="203" />
 	</block>
-	<block id="1492" name="banditPumpShotgunCorpse">
+	<block id="484" name="banditPumpShotgunCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="LootList" value="204" />
 	</block>
-	<block id="1493" name="banditMP5Corpse">
+	<block id="583" name="banditMP5Corpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="LootList" value="205" />
 	</block>
-	<block id="1494" name="banditAK47Corpse">
+	<block id="584" name="banditAK47Corpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="LootList" value="206" />
 	</block>
-	<block id="1495" name="banditHuntingRifleCorpse">
+	<block id="585" name="banditHuntingRifleCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="LootList" value="207" />
 	</block>
-	<block id="1496" name="banditSniperRifleCorpse">
+	<block id="609" name="banditSniperRifleCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="LootList" value="208" />
 	</block>
-	<block id="1497" name="banditRocketLauncherCorpse">
+	<block id="610" name="banditRocketLauncherCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="LootList" value="209" />
 	</block>
-	<block id="1498" name="banditSledgeCorpse">
+	<block id="611" name="banditSledgeCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="LootList" value="210" />
 	</block>
-	<block id="1499" name="FollowerCorpse">
+	<block id="659" name="FollowerCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="LootList" value="211" />
 	</block>
 	<!--JZMOD PLANTS-->
-	<block id="1664" name="plantedAppleTree">
+	<block id="660" name="plantedAppleTree">
 		<property name="Extends" value="treeMasterGrowing" />
 		<property name="Model" value="Entities/Trees/Prefabs/MountainPine1mPrefab" />
 		<property name="Material" value="treeWoodSmall" />
@@ -16804,10 +16807,10 @@ kind of free
         <property name="MaxDamage" value="25" />
 		<drop event="Harvest" name="stick" count="1" prob="1" />
 	</block>
-	<block id="1665" name="smallAppleTree">
+	<block id="661" name="smallAppleTree">
 		<property name="Extends" value="treeMasterGrowing" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#appleTree?appleTree4" />
+       	<!--SDX<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#appleTree?appleTree4" />-->
 		<property name="PlantGrowing.Next" value="appleTree" />
 		<property name="Material" value="treeWoodMedium" />
 		<property name="Collide" value="melee" />
@@ -16817,11 +16820,11 @@ kind of free
         <drop event="Harvest" name="woodBranch" count="10" />
         <drop event="Destroy" name="narrowLog" count="5,8" prob="1" />
 	</block>
-	<block id="1666" name="appleTree">
+	<block id="663" name="appleTree">
 		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#AppleTree1?AppleTree1Prefab" />
+       	<!--SDX<property name="Model" value="#AppleTree1?AppleTree1Prefab" />
+        <property name="Shape" value="ModelEntity" />-->
 		<property name="Material" value="treeWoodSmall" />
-		<property name="Shape" value="ModelEntity" />
 		<property name="BigDecorationRadius" value="4" />
 		<property name="UpwardsCount" value="3" />
 		<property name="ModelOffset" value="0,0,0" />
@@ -16829,145 +16832,148 @@ kind of free
         <drop event="Destroy" name="narrowLog" count="6,14" prob="1" />
 		<drop event="Destroy" name="Apple" count="3,15" prob="1" />
 	</block>
-	<block id="1678" name="plantedTomato">
+	<block id="700" name="plantedTomato">
 		<property name="Extends" value="cropsGrowingMaster" />
 		<property name="Texture" value="296" />
 		<property name="PlantGrowing.Next" value="smallTomato" />
 	</block>
-	<block id="1679" name="smallTomato">
+	<block id="750" name="smallTomato">
 		<property name="Extends" value="cropsGrowingMaster" />
-		<property name="Model" value="#TomatoSprout1?TomatoSprout1Prefab" />
-		<property name="Shape" value="ModelEntity" />
+       	<!--SDX<property name="Model" value="#TomatoSprout1?TomatoSprout1Prefab" />
+		<property name="Shape" value="ModelEntity" />-->
 		<property name="AllowSize" value="0,0,0" />
 		<property name="PlantGrowing.Next" value="tomatoPlant" />
 	</block>
-	<block id="1680" name="tomatoPlant">
+	<block id="805" name="tomatoPlant">
 		<property name="Extends" value="cropsHarvestableMaster" />
-		<property name="Model" value="#TomatoMaturePlant1?TomatoMaturePlant1Prefab" />
-		<property name="Shape" value="ModelEntity" />
+       	<!--SDX<property name="Model" value="#TomatoMaturePlant1?TomatoMaturePlant1Prefab" />
+		<property name="Shape" value="ModelEntity" />-->
 		<drop event="Harvest" name="Tomato" count="1" />
 	</block>
-	<block id="1681" name="plantedStrawberry">
+	<block id="829" name="plantedStrawberry">
 		<property name="Extends" value="plantedTomato" />
 		<property name="Texture" value="296" />
 		<property name="PlantGrowing.Next" value="smallStrawberry" />
 	</block>
-	<block id="1682" name="smallStrawberry">
+	<block id="865" name="smallStrawberry">
 		<property name="Extends" value="plantedTomato" />
-		<property name="Model" value="#strawberry?StrawberryPrefab" />
-		<property name="Shape" value="ModelEntity" />
+        <!--SDX<property name="Model" value="#strawberry?StrawberryPrefab" />
+		<property name="Shape" value="ModelEntity" />-->
 		<property name="PlantGrowing.Next" value="strawberryPlant" />
 	</block>
-	<block id="1683" name="strawberryPlant">
+	<block id="866" name="strawberryPlant">
 		<property name="Extends" value="cropsHarvestableMaster" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#strawberry?StrawberryPrefab1" />
+        <!--sdx<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#strawberry?StrawberryPrefab1" />-->
 		<drop event="Harvest" name="Strawberry" count="1" />
 	</block>
-	<block id="1684" name="plantedCarrot">
+	<block id="867" name="plantedCarrot">
 		<property name="Extends" value="plantedTomato" />
 		<property name="Texture" value="296" />
 		<property name="PlantGrowing.Next" value="smallCarrot" />
 	</block>
-	<block id="1685" name="smallCarrot">
+	<block id="868" name="smallCarrot">
 		<property name="Extends" value="plantedTomato" />
-		<property name="Model" value="#carrot?carrotPrefab" />
-		<property name="Shape" value="ModelEntity" />
+       	<!--sdx<property name="Model" value="#carrot?carrotPrefab" />
+		<property name="Shape" value="ModelEntity" />-->
 		<property name="PlantGrowing.Next" value="carrotPlant" />
 		<property name="ModelOffset" value="0,-0.4,0" />
 	</block>
-	<block id="1686" name="carrotPlant">
+	<block id="904" name="carrotPlant">
 		<property name="Extends" value="cropsHarvestableMaster" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#carrot?carrotPrefab" />
+       	<!--sdx<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#carrot?carrotPrefab" />-->
 		<drop event="Harvest" name="Carrot" count="1" />
 	</block>
-	<block id="1687" name="plantedSugarcane">
+	<block id="905" name="plantedSugarcane">
 		<property name="Extends" value="plantedTomato" />
-		<property name="Model" value="#SugarCane1?SugarCaneClumpSmall1Prefab" />
+        <!--sdx<property name="Model" value="#SugarCane1?SugarCaneClumpSmall1Prefab" />-->
 		<property name="PlantGrowing.Next" value="smallSugarcanePlant" />
 		<property name="ModelOffset" value="0,-0.05,0" />
 	</block>
-	<block id="1688" name="smallSugarcanePlant">
+	<block id="906" name="smallSugarcanePlant">
 		<property name="Extends" value="plantedTomato" />
-		<property name="Model" value="#SugarCane1?SugarCaneClumpMedium1Prefab" />
-		<property name="Shape" value="ModelEntity" />
+        <!--sdx<property name="Model" value="#SugarCane1?SugarCaneClumpMedium1Prefab" />
+		<property name="Shape" value="ModelEntity" />-->
 		<property name="ModelOffset" value="0,-0.1,0" />
 		<property name="PlantGrowing.Next" value="sugarcanePlant" />
 	</block>
-	<block id="1689" name="sugarcanePlant">
+	<block id="950" name="sugarcanePlant">
 		<property name="Extends" value="cropsHarvestableMaster" />
-		<property name="Shape" value="ModelEntity" />
+		<!--sdx<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#SugarCane1?SugarCaneClump1Prefab" />
 		<property name="ModelOffset" value="0,-0.12,0" />
 		<property name="Class" value="MortePlantGrowing, Mods" />
-		<property name="MeshScale" value="1.5,1.5" />
+		<property name="MeshScale" value="1.5,1.5" />-->
 		<drop event="Harvest" name="sugarcanePlant" count="1" />
 	</block>
-	<block id="1954" name="plantedSunflower">
+	<block id="951" name="plantedSunflower">
 		<property name="Extends" value="plantedTomato" />
 		<property name="Texture" value="296" />
 		<property name="PlantGrowing.Next" value="plantedSunflower" />
 	</block>
-	<block id="1690" name="smallSunflower">
+	<block id="952" name="smallSunflower">
 		<property name="Extends" value="plantedTomato" />
-		<property name="Model" value="#sunflower?sunflower" />
-		<property name="Shape" value="ModelEntity" />
+		<!--sdx<property name="Model" value="#sunflower?sunflower" />
+		<property name="Shape" value="ModelEntity" />-->
 		<property name="PlantGrowing.Next" value="sunflower" />
 	</block>
-	<block id="1691" name="sunflower">
+	<block id="953" name="sunflower">
 		<property name="Extends" value="cropsHarvestableMaster" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#sunflower?sunflower" />
+		<!--sdx<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#sunflower?sunflower" />-->
 		<drop event="Harvest" name="SunflowerHead" count="1" />
 	</block>
-	<block id="1692" name="plantedWheat">
+	<block id="954" name="plantedWheat">
 		<property name="Extends" value="plantedTomato" />
-		<property name="Model" value="#WheatSprout1?WheatSprout1Prefab" />
-		<property name="Shape" value="ModelEntity" />
+		<!--sdx<property name="Model" value="#WheatSprout1?WheatSprout1Prefab" />
+		<property name="Shape" value="ModelEntity" />-->
 		<property name="PlantGrowing.Next" value="smallWheatPlant" />
 	</block>
-	<block id="1693" name="smallWheatPlant">
+	<block id="955" name="smallWheatPlant">
 		<property name="Extends" value="plantedTomato" />
-		<property name="Model" value="#WheatSmallPlant1?WheatSmallPlant1Prefab" />
-		<property name="Shape" value="ModelEntity" />
+		<!--sdx<property name="Model" value="#WheatSmallPlant1?WheatSmallPlant1Prefab" />
+		<property name="Shape" value="ModelEntity" />-->
 		<property name="PlantGrowing.Next" value="wheatPlant" />
 	</block>
-	<block id="1694" name="wheatPlant">
+	<block id="956" name="wheatPlant">
 		<property name="Extends" value="cropsHarvestableMaster" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#WheatPlant1?WheatPlant1Prefab" />
+		<!--sdx<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#WheatPlant1?WheatPlant1Prefab" />-->
 		<drop event="Harvest" name="Wheat" count="1" />
 	</block>
-	<block id="1695" name="smallCannabisPlant">
+	<block id="957" name="smallCannabisPlant">
 		<property name="Extends" value="plantedTomato" />
-		<property name="Model" value="#CannabisSmallPlant1?CannabisSmallPlant1Prefab" />
-		<property name="Shape" value="ModelEntity" />
+		<!--sdx<property name="Model" value="#CannabisSmallPlant1?CannabisSmallPlant1Prefab" />
+		<property name="Shape" value="ModelEntity" />-->
 		<property name="PlantGrowing.Next" value="cannabisPlant" />
 	</block>
-	<block id="1696" name="cannabisPlant">
+	<block id="958" name="cannabisPlant">
 		<property name="Extends" value="cropsHarvestableMaster" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#CannabisMaturePlant1?CannabisMaturePlant1Prefab" />
+		<!--sdx<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#CannabisMaturePlant1?CannabisMaturePlant1Prefab" />-->
 		<drop event="Harvest" name="CannabisBub" count="1" />
 	</block>
-	<block id="1697" name="tobaccoPlant">
+	<block id="959" name="tobaccoPlant">
 		<property name="Extends" value="cropsHarvestableMaster" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#TobaccoPlant1?TobaccoPlant1Prefab" />
+		<!--sdx<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#TobaccoPlant1?TobaccoPlant1Prefab" />-->
 		<drop event="Harvest" name="TobaccoLeaf" count="1" />
 	</block>
-	<block id="1725" name="gasTankEmpty">
+	<block id="960" name="gasTankEmpty">
 		<property name="CustomIcon" value="gasTank" />
 		<property name="Material" value="Mmetal_thin" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#gaztank?gaztankPrefab" />
+		<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+        <!--sdx<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#gaztank?gaztankPrefab" />-->
 		<property name="Place" value="TowardsPlacer" />
 		<property name="CanPickup" value="true" />
 		<property name="ModelOffset" value="0,0.5,0" />
 		<property name="DescriptionKey" value="gasTankEmptyDesc" />
 	</block>
-	<block id="1726" name="gasTank">
+	<block id="961" name="gasTank">
 		<property name="Extends" value="gasTankEmpty" />
 		<property name="Class" value="TNT" />
         <property name="CanPickup" value="true" />
@@ -16980,19 +16986,22 @@ kind of free
 		</property>
         <property name="DescriptionKey" value="gasTankDesc" />
 	</block>
-	<block id="1965" name="hardStone">
+	<block id="962" name="hardStone">
 		<property name="Extends" value="stone" />
 		<property name="Material" value="hardStone" />
 		<property name="Texture" value="322" />
 		<property name="CustomIcon" value="stone" />
 	</block>
-	<block id="1975" name="workFermentationBarrel">
+	<block id="963" name="workFermentationBarrel">
         <property name="Material" value="wood" />
         <property name="Place" value="TowardsPlacerInverted" />
 		<property name="CustomIcon" value="ui_game_symbol_Barrel" />
-		<property name="Shape" value="ModelEntity" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--sdx<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#WoodenBarrels?WoodenBarrels" />
-        <property name="MultiBlockDim" value="1,2,1" />
+        <property name="MultiBlockDim" value="1,2,1" />-->
 		<property name="Class" value="Campfire" />
 		<property name="Stacknumber" value="1" />
 		<property class="Workstation">
@@ -17007,12 +17016,15 @@ kind of free
 		<property name="Group" value="Food/Cooking" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
-   <block id="2021" name="workStill">
+   <block id="964" name="workStill">
         <property name="Material" value="Mmetal_thin" />
         <property name="Place" value="TowardsPlacerInverted" />
-		<property name="Shape" value="ModelEntity" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--sdx<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#OilRefinery?OilRefinery" />
-        <property name="MultiBlockDim" value="1,2,1" />
+        <property name="MultiBlockDim" value="1,2,1" />-->
         <property name="CustomIcon" value="ui_game_symbol_workStill" />
 		<property name="Class" value="Campfire" />
 		<property name="ParticleName" value="campfire" />
@@ -17032,7 +17044,7 @@ kind of free
 		<property name="Group" value="Food/Cooking" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
-    <block id="1931" name="cntUSRLockers">
+    <block id="965" name="cntUSRLockers">
         <property name="Material" value="metal" />
 		<property name="Class" value="SecureLoot" />
 		<property name="Shape" value="ModelEntity" />
@@ -17046,7 +17058,7 @@ kind of free
         <drop event="Destroy" count="0" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
-    <block id="1932" name="cntUSRFileCabinet">
+    <block id="966" name="cntUSRFileCabinet">
         <property name="Class" value="SecureLoot" />
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
@@ -17062,7 +17074,7 @@ kind of free
       	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
-    <block id="1933" name="cntUSRFridge">
+    <block id="967" name="cntUSRFridge">
         <property name="Class" value="SecureLoot" />
         <property name="CustomIcon" value="cntFridge" />
 		<property name="Material" value="metal" />
@@ -17077,7 +17089,7 @@ kind of free
 		<drop event="Destroy" name="scrapIron" count="10" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
-    <block id="1934" name="cntUSRBeerCooler">
+    <block id="968" name="cntUSRBeerCooler">
         <property name="Class" value="SecureLoot" />
 		<property name="Material" value="Mmetal_weak" />
 		<property name="Texture" value="191,191,190,191,191,191" />
@@ -17091,12 +17103,15 @@ kind of free
 		<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
-    <block id="1935" name="cntUSRMedicineCabinet">
+    <block id="969" name="cntUSRMedicineCabinet">
 		<property name="CustomIcon" value="cntUSRMedicineCabinet" />
         <property name="Material" value="metal" />
-		<property name="Shape" value="ModelEntity" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--sdx<property name="Shape" value="ModelEntity" />
 		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="Model" value="#lootcontainers?MedicalBoxPrefab" />
+		<property name="Model" value="#lootcontainers?MedicalBoxPrefab" />-->
 		<property name="Class" value="SecureLoot" />
         <property name="SellableToTrader" value="false" />
 		<property name="LootList" value="116" />
@@ -17104,11 +17119,12 @@ kind of free
         <property name="Group" value="Building" />
 		<property name="DowngradeBlock" value="cntEPSMedicineCabinetInsecure" />
 	</block>
-	<block id="1936" name="cntUSRBookcase">
+	<block id="970" name="cntUSRBookcase">
         <property name="CustomIcon" value="cntBookStoreBookcase" />
 		<property name="Class" value="SecureLoot" />
-		<property name="Material" value="wood_weak" />
-		<property name="Shape" value="Half" />
+		<property name="Material" value="wood_weak"/>
+        <property name="Shape" value="New"/>
+        <property name="Model" value="cube_half"/>
 		<property name="Texture" value="67,241,241,241,241,241" />
 		<property name="Place" value="TowardsPlacer90" />
 		<property name="LootList" value="49" />
@@ -17118,7 +17134,7 @@ kind of free
         <property class="RepairItems"> <property name="plank" value="10" />	</property>
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	</block>
-    <block id="1937" name="cntUSRCoffin">
+    <block id="971" name="cntUSRCoffin">
         <property name="Class" value="SecureLoot" />
 		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="Ext3dModel" />
@@ -17132,7 +17148,7 @@ kind of free
     	<property name="DowngradeBlock" value="cntEPSCoffinInsecure" />
 		<property class="RepairItems"> <property name="plank" value="10" /> </property>
 	</block>
-	<block id="1938" name="cntUSRLockersInsecure">
+	<block id="972" name="cntUSRLockersInsecure">
         <property name="Material" value="metal" />
 		<property name="Class" value="Loot" />
 		<property name="Shape" value="ModelEntity" />
@@ -17148,7 +17164,7 @@ kind of free
 		<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
-	<block id="1939" name="cntEPSFileCabinetInsecure">
+	<block id="973" name="cntEPSFileCabinetInsecure">
         <property name="Class" value="Loot" />
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
@@ -17162,7 +17178,7 @@ kind of free
       	<drop event="Destroy" name="scrapIron" count="1,10" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
-    <block id="1940" name="cntEPSFridgeInsecure">
+    <block id="974" name="cntEPSFridgeInsecure">
         <property name="Class" value="Loot" />
         <property name="CustomIcon" value="cntFridge" />
 		<property name="Material" value="metal" />
@@ -17176,7 +17192,7 @@ kind of free
 		<drop event="Destroy" name="scrapIron" count="10" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
-    <block id="1941" name="cntEPSBeerCoolerInsecure">
+    <block id="975" name="cntEPSBeerCoolerInsecure">
         <property name="Class" value="Loot" />
         <property name="CustomIcon" value="cntBeerCooler" />
 		<property name="Material" value="Mmetal_weak" />
@@ -17188,11 +17204,14 @@ kind of free
 		<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
-    <block id="1942" name="cntEPSMedicineCabinetInsecure">
+    <block id="976" name="cntEPSMedicineCabinetInsecure">
         <property name="Material" value="metal" />
-		<property name="Shape" value="ModelEntity" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--sdx<property name="Shape" value="ModelEntity" />
 		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="Model" value="#lootcontainers?MedicalBoxPrefab" />
+		<property name="Model" value="#lootcontainers?MedicalBoxPrefab" />-->
 		<property name="CustomIcon" value="cntUSRMedicineCabinet" />
         <property name="SellableToTrader" value="false" />
 		<property name="Class" value="Loot" />
@@ -17201,11 +17220,13 @@ kind of free
 		<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
-    <block id="1943" name="cntEPSBookcaseInsecure">
+    <block id="977" name="cntEPSBookcaseInsecure">
         <property name="CustomIcon" value="cntBookStoreBookcase" />
 		<property name="Class" value="Loot" />
 		<property name="Material" value="wood_weak" />
-		<property name="Shape" value="Half" />
+		<property name="Material" value="wood_weak"/>
+        <property name="Shape" value="New"/>
+        <property name="Model" value="cube_half"/>
 		<property name="Texture" value="67,241,241,241,241,241" />
 		<property name="Place" value="TowardsPlacer90" />
 		<property name="LootList" value="49" />
@@ -17214,7 +17235,7 @@ kind of free
 		<drop event="Destroy" name="plank" count="3" prob="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	</block>
-    <block id="1944" name="cntEPSCoffinInsecure">
+    <block id="978" name="cntEPSCoffinInsecure">
         <property name="Class" value="Loot" />
         <property name="CustomIcon" value="cntCoffin" />
 		<property name="Material" value="wood_weak" />
@@ -17228,7 +17249,7 @@ kind of free
 		<drop event="Destroy" name="plank" count="2,6" prob="1" />
         <drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	</block>
-    <block id="1002" name="narrowLog">
+    <block id="979" name="narrowLog">
         <property name="Material" value="wood" />
         <property name="Weight" value="200" />
         <property name="CustomIcon" value="powerPoleWoodPillar50" />
@@ -17243,7 +17264,7 @@ kind of free
 		<property name="SellableToTrader" value="false" />
         <drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	</block>
-	<block id="1130" name="choppedStump">
+	<block id="980" name="choppedStump">
 		<property name="Class" value="Loot" />
 		<property name="Material" value="treeWoodSmall" />
 		<property name="Shape" value="ModelEntity" />
@@ -17257,7 +17278,7 @@ kind of free
 		<drop event="Destroy" name="wood" count="12" prob="1" />
         <drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	</block>
-    <block id="1132" name="1x3Planks">
+    <block id="981" name="1x3Planks">
 		<property name="Material" value="wood" />
 		<property name="Shape" value="ModelEntity" />
         <property name="CustomIcon" value="playerSignWood1x3" />
@@ -17268,7 +17289,7 @@ kind of free
 		<property name="Group" value="Basics,Building" />
 		<property name="DescriptionKey" value="PlankGroupDesc" />
 	</block>
-	<block id="1133" name="2x5Planks">
+	<block id="982" name="2x5Planks">
 		<property name="Material" value="wood" />
 		<property name="Shape" value="ModelEntity" />
         <property name="CustomIcon" value="playerSignWood2x5" />
@@ -17280,33 +17301,37 @@ kind of free
         <property name="DescriptionKey" value="PlankGroupDesc" />
 	</block>
 	 <!--JZMOD BRICK FRAMES-->
-    <block id="75" name="BrickFrameBlock">
+    <block id="983" name="BrickFrameBlock">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="brickModernBlock" />
+			<property name="ToBlock" value="brickBlock" />
             <property name="Item" value="bricks" />
             <property name="ItemCount" value="10" />
 		</property>
 		<property name="Group" value="Building" />
         <property name="DescriptionKey" value="brickFrameGroupDesc" />
 	</block>
-    <block id="76" name="BrickFrameRamp">
+    <block id="984" name="BrickFrameRamp">
 		<property name="Extends" value="cobblestoneFrameMaster" />
-		<property name="Shape" value="WedgedBackFaces" />
-		<property name="Place" value="TowardsPlacer90" />
+		<property name="Mesh" value="opaque"/>
+        <property name="UseGlobalUV" value="Local"/>
+        <property name="Shape" value="New"/>
+        <property name="Model" value="ramp_frame"/> <property name="Place" value="TowardsPlacerInverted"/>
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="brickModern01ShinglesRamp" />
+			<property name="ToBlock" value="brickMasterPlayer" />
             <property name="Item" value="bricks" />
             <property name="ItemCount" value="10" />
 		</property>
 		<property name="Group" value="Building" />
         <property name="DescriptionKey" value="brickFrameGroupDesc" />
 	</block>
-    <block id="77" name="BrickFrameStairs">
+    <block id="987" name="BrickFrameStairs">
 		<property name="Extends" value="cobblestoneFrameMaster" />
-		<property name="Shape" value="New" />
-		<property name="Model" value="stairs_filled_cutout" />
-		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="StairsFilledVerticalUV"/> <property name="Place" value="TowardsPlacerInverted"/>
+        <property name="UseGlobalUV" value="Global"/>
+        <property name="Stairs"/>
+        <property name="ImposterExchange" value="imposterRamp" param1="15"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="brickModernStairs25" />
             <property name="Item" value="bricks" />
@@ -17314,85 +17339,95 @@ kind of free
 		</property>
         <property name="DescriptionKey" value="brickFrameGroupDesc" />
 	</block>
-    <block id="1355" name="brickModernStairs25">
-		<property name="Extends" value="brickModernBlock" />
+    <block id="1010" name="brickModernStairs25">
+		<property name="Extends" value="brickStairs25" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="StairsFilled" />
 		<property name="Place" value="TowardsPlacerInverted" />
 	</block>
-    <block id="78" name="BrickModernArrowSlitHalf">
-		<property name="Extends" value="brickModernBlock" />
+    <block id="1011" name="BrickModernArrowSlitHalf">
+		<property name="Extends" value="brickMasterPlayer" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="arrow_slit_half" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DescriptionKey" value="woodArrowSlitGroupDesc" />
     </block>
-    <block id="79" name="BrickFrameWedge">
+    <block id="1012" name="BrickFrameWedge">
 		<property name="Extends" value="cobblestoneFrameMaster" />
-		<property name="Shape" value="Wedged60Full" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="brickModernWedge" />
             <property name="Item" value="bricks" />
             <property name="ItemCount" value="10" />
 		</property>
 	</block>
-    <block id="1369" name="brickModernWedge">
-		<property name="Extends" value="brickModernBlock" />
-		<property name="Shape" value="Wedged60Full" />
+    <block id="1013" name="brickModernWedge">
+		<property name="Extends" value="brickMasterPlayer" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
 	</block>
-	<block id="80" name="BrickFrameWedgeTip">
+	<block id="1014" name="BrickFrameWedgeTip">
 		<property name="Extends" value="cobblestoneFrameMaster" />
-		<property name="Shape" value="Wedged60Tip" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="wedge60_tip"/> <property name="Place" value="TowardsPlacerInverted"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="brickModernWedgeTip" />
             <property name="Item" value="bricks" />
             <property name="ItemCount" value="10" />
 		</property>
 	</block>
-    <block id="1370" name="brickModernWedgeTip">
-		<property name="Extends" value="brickModernBlock" />
-		<property name="Shape" value="Wedged60Tip" />
+    <block id="1015" name="brickModernWedgeTip">
+		<property name="Extends" value="brickMasterPlayer" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="wedge60_tip"/> <property name="Place" value="TowardsPlacerInverted"/>
 	</block>
-	<block id="81" name="BrickFramePlate">
+	<block id="1016" name="BrickFramePlate">
 		<property name="Extends" value="cobblestoneFrameMaster" />
-		<property name="Shape" value="Plate" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="Plate"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="brickModernPlate" />
             <property name="Item" value="bricks" />
             <property name="ItemCount" value="10" />
 		</property>
 	</block>
-    <block id="1375" name="brickModernPlate">
-		<property name="Extends" value="brickModernBlock" />
-		<property name="Shape" value="Plate" />
+    <block id="1017" name="brickModernPlate">
+		<property name="Extends" value="brickMasterPlayer" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="Plate"/>
 	</block>
-	<block id="82" name="BrickFrameCNRFull">
+	<block id="1018" name="BrickFrameCNRFull">
 		<property name="Extends" value="cobblestoneFrameMaster" />
-		<property name="Shape" value="WedgedCornerFull" />
+		<property name="Shape" value="New"/>
+       	<property name="Model" value="ramp_corner"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="brickModernCNRFull" />
             <property name="Item" value="bricks" />
             <property name="ItemCount" value="10" />
 		</property>
 	</block>
-    <block id="1376" name="brickModernCNRFull">
-		<property name="Extends" value="brickModernBlock" />
-		<property name="Shape" value="WedgedCornerFull" />
+    <block id="1019" name="brickModernCNRFull">
+		<property name="Extends" value="brickMasterPlayer" />
+		<property name="Shape" value="New"/>
+       	<property name="Model" value="ramp_corner"/>
 	</block>
-	<block id="83" name="BrickFrameCNRInside">
+	<block id="1020" name="BrickFrameCNRInside">
 		<property name="Extends" value="cobblestoneFrameMaster" />
-		<property name="Shape" value="WedgedInnerFull" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="ramp_inside_corner"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="brickModernCNRInside" />
             <property name="Item" value="bricks" />
             <property name="ItemCount" value="10" />
 		</property>
 	</block>
-    <block id="1395" name="brickModernCNRInside">
-		<property name="Extends" value="brickModernBlock" />
-		<property name="Shape" value="WedgedInnerFull" />
+    <block id="1021" name="brickModernCNRInside">
+		<property name="Extends" value="brickMasterPlayer" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="ramp_inside_corner"/>
 	</block>
-	<block id="84" name="BrickFramePillar100">
+	<block id="1022" name="BrickFramePillar100">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole1m" />
@@ -17402,12 +17437,12 @@ kind of free
             <property name="ItemCount" value="10" />
 		</property>
 	</block>
-    <block id="1396" name="brickModernPillar100">
-		<property name="Extends" value="brickModernBlock" />
+    <block id="1023" name="brickModernPillar100">
+		<property name="Extends" value="brickMasterPlayer" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole1m" />
 	</block>
-	<block id="85" name="BrickFramePillar50">
+	<block id="1024" name="BrickFramePillar50">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole0.5m" />
@@ -17417,26 +17452,28 @@ kind of free
             <property name="ItemCount" value="10" />
 		</property>
 	</block>
-    <block id="1397" name="brickModernPillar50">
-		<property name="Extends" value="brickModernBlock" />
+    <block id="1025" name="brickModernPillar50">
+		<property name="Extends" value="brickMasterPlayer" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole0.5m" />
 	</block>
-	<block id="86" name="BrickFramePole">
+	<block id="1026" name="BrickFramePole">
 		<property name="Extends" value="cobblestoneFrameMaster" />
-		<property name="Shape" value="Pole" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="pole_square"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="brickModernPole" />
             <property name="Item" value="bricks" />
             <property name="ItemCount" value="10" />
 		</property>
 	</block>
-    <block id="1398" name="brickModernPole">
-		<property name="Extends" value="brickModernBlock" />
-		<property name="Shape" value="Pole" />
+    <block id="1027" name="brickModernPole">
+		<property name="Extends" value="brickMasterPlayer" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="pole_square"/>
 	</block>
    	<!--JZMOD Concrete FRAMES-->
-    <block id="87" name="cementFormMaster">
+    <block id="1028" name="cementFormMaster">
 		<property name="Material" value="wood" />
 		<property name="Shape" value="CubeCutoutBackFaces" />
 		<property name="Mesh" value="cutout" />
@@ -17455,65 +17492,74 @@ kind of free
 		<property name="CraftingSkillGroup" value="Concrete" />
         <property name="Group" value="Building" />
 	</block>
-    <block id="99" name="cementFormBlock">
+    <block id="1045" name="cementFormBlock">
 		<property name="Extends" value="cementFormMaster" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteBlock" />
        	</property>
 	</block>
-    <block id="100" name="cementFormRamp">
+    <block id="1046" name="cementFormRamp">
 		<property name="Extends" value="cementFormMaster" />
-		<property name="Shape" value="WedgedBackFaces" />
-		<property name="Place" value="TowardsPlacer90" />
+		<property name="Mesh" value="opaque"/>
+        <property name="UseGlobalUV" value="Local"/>
+        <property name="Shape" value="New"/>
+        <property name="Model" value="ramp_frame"/> <property name="Place" value="TowardsPlacerInverted"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteRamp" />
 		</property>
 	</block>
-    <block id="101" name="cementFormStairs">
+    <block id="1047" name="cementFormStairs">
 		<property name="Extends" value="cementFormMaster" />
-		<property name="Shape" value="New" />
-		<property name="Model" value="stairs_filled_cutout" />
-		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="StairsFilledVerticalUV"/> <property name="Place" value="TowardsPlacerInverted"/>
+        <property name="UseGlobalUV" value="Global"/>
+        <property name="Stairs"/>
+        <property name="ImposterExchange" value="imposterRamp" param1="15"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteStairs25" />
 		</property>
 	</block>
-    <block id="1399" name="cementFormWedge">
+    <block id="1048" name="cementFormWedge">
 		<property name="Extends" value="cementFormMaster" />
-		<property name="Shape" value="Wedged60Full" />
+        <property name="Shape" value="New"/>
+        <property name="Model" value="ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteWedge" />
 		</property>
 	</block>
-	<block id="1407" name="cementFormWedgeTip">
+	<block id="1049" name="cementFormWedgeTip">
 		<property name="Extends" value="cementFormMaster" />
-		<property name="Shape" value="Wedged60Tip" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="wedge60_tip"/> <property name="Place" value="TowardsPlacerInverted"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteWedgeTip" />
 		</property>
 	</block>
-	<block id="1134" name="cementFormPlate">
+	<block id="1050" name="cementFormPlate">
 		<property name="Extends" value="cementFormMaster" />
-		<property name="Shape" value="Plate" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="Plate"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concretePlate" />
 		</property>
 	</block>
-	<block id="1156" name="cementFormCNRFull">
+	<block id="1051" name="cementFormCNRFull">
 		<property name="Extends" value="cementFormMaster" />
-		<property name="Shape" value="WedgedCornerFull" />
+		<property name="Shape" value="New"/>
+       	<property name="Model" value="ramp_corner"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteCNRFull" />
 		</property>
 	</block>
-	<block id="1157" name="cementFormCNRInside">
+	<block id="1052" name="cementFormCNRInside">
 		<property name="Extends" value="cementFormMaster" />
-		<property name="Shape" value="WedgedInnerFull" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="ramp_inside_corner"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteCNRInside" />
 		</property>
 	</block>
-	<block id="1161" name="cementFormPillar100">
+	<block id="1053" name="cementFormPillar100">
 		<property name="Extends" value="cementFormMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole1m" />
@@ -17521,7 +17567,7 @@ kind of free
 			<property name="ToBlock" value="concretePillar100" />
 		</property>
 	</block>
-	<block id="1177" name="cementFormPillar50">
+	<block id="1054" name="cementFormPillar50">
 		<property name="Extends" value="cementFormMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole0.5m" />
@@ -17529,89 +17575,102 @@ kind of free
 			<property name="ToBlock" value="concretePillar50" />
 		</property>
 	</block>
-	<block id="1178" name="cementFormPole">
+	<block id="1078" name="cementFormPole">
 		<property name="Extends" value="cementFormMaster" />
-		<property name="Shape" value="Pole" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="pole_square"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concretePole" />
 		</property>
 	</block>
     <!-- JZMOD REBAR FRAMES -->  
-    <block id="1423" name="rebarFrameStairs">
+    <block id="1079" name="rebarFrameStairs">
 		<property name="Extends" value="rebarFrameMaster" />
-		<property name="Shape" value="New" />
-		<property name="Model" value="stairs_filled_cutout" />
-		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="StairsFilledVerticalUV"/> <property name="Place" value="TowardsPlacerInverted"/>
+        <property name="UseGlobalUV" value="Global"/>
+        <property name="Stairs"/>
+        <property name="ImposterExchange" value="imposterRamp" param1="15"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteFormStairs" />
 		</property>
 	</block>
-    <block id="1452" name="concreteFormStairs">
+    <block id="1080" name="concreteFormStairs">
 		<property name="Extends" value="concreteFormMaster" />
-		<property name="Shape" value="New" />
-		<property name="Model" value="stairs_filled_cutout" />
-		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="StairsFilledVerticalUV"/> <property name="Place" value="TowardsPlacerInverted"/>
+        <property name="UseGlobalUV" value="Global"/>
+        <property name="Stairs"/>
+        <property name="ImposterExchange" value="imposterRamp" param1="15"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="pouredConcreteStairs25" />
 		</property>
 	</block>
-    <block id="1473" name="rebarFrameWedge">
+    <block id="1081" name="rebarFrameWedge">
 		<property name="Extends" value="rebarFrameMaster" />
-		<property name="Shape" value="Wedged60Full" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteFormWedge" />
 		</property>
 	</block>
-    <block id="1474" name="concreteFormWedge">
+    <block id="1082" name="concreteFormWedge">
 		<property name="Extends" value="concreteFormMaster" />
-		<property name="Shape" value="Wedged60Full" />
+        <property name="Shape" value="New"/>
+        <property name="Model" value="ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="pouredConcreteWedge" />
 		</property>
 	</block>
-	<block id="1475" name="rebarFrameWedgeTip">
+	<block id="1083" name="rebarFrameWedgeTip">
 		<property name="Extends" value="rebarFrameMaster" />
-		<property name="Shape" value="Wedged60Tip" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="wedge60_tip"/> <property name="Place" value="TowardsPlacerInverted"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteFormWedgeTip" />
 		</property>
 	</block>
-    <block id="1476" name="concreteFormWedgeTip">
+    <block id="1084" name="concreteFormWedgeTip">
 		<property name="Extends" value="concreteFormMaster" />
-		<property name="Shape" value="Wedged60Tip" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="wedge60_tip"/> <property name="Place" value="TowardsPlacerInverted"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="pouredConcreteWedgeTip" />
 		</property>
 	</block>
-	<block id="1501" name="rebarFramePlate">
+	<block id="1085" name="rebarFramePlate">
 		<property name="Extends" value="rebarFrameMaster" />
-		<property name="Shape" value="Plate" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="Plate"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteFormPlate" />
 		</property>
 	</block>
-    <block id="1504" name="concreteFormPlate">
+    <block id="1086" name="concreteFormPlate">
 		<property name="Extends" value="concreteFormMaster" />
-		<property name="Shape" value="Plate" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="Plate"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="pouredConcreteCTRPlate" />
 		</property>
 	</block>
-	<block id="1506" name="rebarFrameCNRFull">
+	<block id="1087" name="rebarFrameCNRFull">
 		<property name="Extends" value="rebarFrameMaster" />
-		<property name="Shape" value="WedgedCornerFull" />
+		<property name="Shape" value="New"/>
+       	<property name="Model" value="ramp_corner"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteFormCNRFull" />
 		</property>
 	</block>
-    <block id="1507" name="concreteFormCNRFull">
+    <block id="1088" name="concreteFormCNRFull">
 		<property name="Extends" value="concreteFormMaster" />
-		<property name="Shape" value="WedgedCornerFull" />
+		<property name="Shape" value="New"/>
+       	<property name="Model" value="ramp_corner"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteCNRFull" />
 		</property>
 	</block>
-	<block id="1508" name="rebarFramePillar50">
+	<block id="1089" name="rebarFramePillar50">
 		<property name="Extends" value="rebarFrameMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole0.5m" />
@@ -17619,7 +17678,7 @@ kind of free
 			<property name="ToBlock" value="concreteFormPillar50" />
 		</property>
 	</block>
-    <block id="1547" name="concreteFormPillar50">
+    <block id="1090" name="concreteFormPillar50">
 		<property name="Extends" value="concreteFormMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole0.5m" />
@@ -17627,74 +17686,85 @@ kind of free
 			<property name="ToBlock" value="pouredConcretePillar50" />
 		</property>
 	</block>
-	<block id="1714" name="rebarFramePole">
+	<block id="1091" name="rebarFramePole">
 		<property name="Extends" value="rebarFrameMaster" />
-		<property name="Shape" value="Pole" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="pole_square"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="concreteFormPole" />
 		</property>
 	</block>
-    <block id="1715" name="concreteFormPole">
+    <block id="1121" name="concreteFormPole">
 		<property name="Extends" value="concreteFormMaster" />
-		<property name="Shape" value="Pole" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="pole_square"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="pouredConcretePole" />
 		</property>
 	</block>
     <!-- JZMOD STEEL FRAMES -->
-    <block id="1716" name="forgedFrameRamp">
+    <block id="1140" name="forgedFrameRamp">
 		<property name="Extends" value="forgedFrame" />
-		<property name="Shape" value="WedgedBackFaces" />
-		<property name="Place" value="TowardsPlacer90" />
+		<property name="Mesh" value="opaque"/>
+        <property name="UseGlobalUV" value="Local"/>
+        <property name="Shape" value="New"/>
+        <property name="Model" value="ramp_frame"/> <property name="Place" value="TowardsPlacerInverted"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="steelRamp" />
         </property>
 	</block>
-    <block id="1717" name="forgedFrameStairs">
+    <block id="1141" name="forgedFrameStairs">
 		<property name="Extends" value="forgedFrame" />
-		<property name="Shape" value="New" />
-		<property name="Model" value="stairs_filled_cutout" />
-		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="StairsFilledVerticalUV"/> <property name="Place" value="TowardsPlacerInverted"/>
+        <property name="UseGlobalUV" value="Global"/>
+        <property name="Stairs"/>
+        <property name="ImposterExchange" value="imposterRamp" param1="15"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="steelStairs25" />
         </property>
     </block>
-    <block id="1742" name="forgedFrameWedge">
+    <block id="1142" name="forgedFrameWedge">
 		<property name="Extends" value="forgedFrame" />
-		<property name="Shape" value="Wedged60Full" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="steelWedge" />
         </property>
 	</block>
-    <block id="1743" name="forgedFrameWedgeTip">
+    <block id="1147" name="forgedFrameWedgeTip">
 		<property name="Extends" value="forgedFrame" />
-		<property name="Shape" value="Wedged60Tip" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="wedge60_tip"/> <property name="Place" value="TowardsPlacerInverted"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="steelWedgeTip" />
         </property>
 	</block>
-    <block id="1744" name="forgedFramePlate">
+    <block id="1148" name="forgedFramePlate">
 		<property name="Extends" value="forgedFrame" />
-		<property name="Shape" value="Plate" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="Plate"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="steelPlate" />
         </property>
 	</block>
-   <block id="1745" name="forgedFrameCNRFull">
+   <block id="1149" name="forgedFrameCNRFull">
 		<property name="Extends" value="forgedFrame" />
-		<property name="Shape" value="WedgedCornerFull" />
+		<property name="Shape" value="New"/>
+       	<property name="Model" value="ramp_corner"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="steelCNRFull" />
         </property>
 	</block>
-    <block id="1748" name="forgedFrameCNRInside">
+    <block id="1151" name="forgedFrameCNRInside">
 		<property name="Extends" value="forgedFrame" />
-		<property name="Shape" value="WedgedInnerFull" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="ramp_inside_corner"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="steelCNRInside" />
         </property>
 	</block>
-   	<block id="1751" name="forgedFramePillar100">
+   	<block id="1152" name="forgedFramePillar100">
 		<property name="Extends" value="forgedFrame" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole1m" />
@@ -17702,7 +17772,7 @@ kind of free
 			<property name="ToBlock" value="steelPillar100" />
         </property>
 	</block>
-	<block id="1753" name="forgedFramePillar50">
+	<block id="94" name="forgedFramePillar50">
 		<property name="Extends" value="forgedFrame" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole0.5m" />
@@ -17710,18 +17780,22 @@ kind of free
 			<property name="ToBlock" value="steelPillar50" />
         </property>
 	</block>
-    <block id="1754" name="forgedFramePole">
+    <block id="1153" name="forgedFramePole">
 		<property name="Extends" value="forgedFrame" />
-		<property name="Shape" value="Pole" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="pole_square"/>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="steelPole" />
         </property>
 	</block>
-    <block id="445" name="workArmorTable">
+    <block id="1154" name="workArmorTable">
 		<property name="Material" value="wood" />
-		<property name="Shape" value="ModelEntity" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--sdx<property name="Shape" value="ModelEntity" />
 		<property name="Mesh" value="models" />
-		<property name="Model" value="#armorAssambler?armorAssambler" />
+		<property name="Model" value="#armorAssambler?armorAssambler" />-->
 		<property name="CustomIcon" value="ui_game_symbol_ArmorTable" />
 		<property name="Stacknumber" value="1" />
 		<property name="CanPickup" value="false" />
@@ -17738,37 +17812,11 @@ kind of free
 		<property name="Group" value="Clothing" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
 	</block>
-       
+   
 
 </blocks><!-- Block limit: No block can have an ID greater 2047.
-17
-21
-36
-67-69
-74-114
-123
-127
-437-462
-484
-583-585
-609-611
-659-661
-663
-700
-750
-805
-829
-865-868
-904-906
-950-984
-987
-1010-1028
-1045-1054
-1078-1091
-1121
-1140-1142
-1147-1155
-1163
+
+
 1177-1179
 1223-1225
 1254
@@ -17844,4 +17892,4 @@ kind of free
 2027
 2031-2040
 2042-2047
- -->
+-->

@@ -871,10 +871,10 @@ This requires a 50+ food bar:
 	</buff>
 	<!--JZMOD Leg Break-->
 	<buff id="breakLeg" hitmask="leftleg;rightleg" duration="1" actions="buff(brokenLeg)" />
-	<!--JZMOD Stops Zombies from gretting Fast Travel buff on roads-->
+	<!--JZMOD Stops Zombies from gretting Fast Travel buff on roads
 	<buff id="zombieSlow" mutex="isPlayer" duration="2" type="speedmodifier" stack="reset">
 		<modify id="1" stat="speedmodifier" setValue="0.4" />
-	</buff>
+	</buff>-->
     <!--JZMOD Poisonous Bites and Stings-->
     <buff id="AntiVenom" duration="300" actions="debuff(SnakePoisoning);debuff(SnakePoisoning2);debuff(SnakePoisoning3);debuff(SpiderPoisoning);debuff(SpiderPoisoning2);debuff(SpiderPoisoning3);debuff(ScorpionPoisoning);debuff(ScorpionPoisoning2);debuff(ScorpionPoisoning3);debuff(HornetPoisoning);debuff(HornetPoisoning2);debuff(HornetPoisoning3)" name_key="AntiVenom" tooltip_key="I'm Cured!" description_key="You are cured of venom poisoning and immune for a short time." icon="AntiVenom" />
 	<!--Snake-->
@@ -997,30 +997,20 @@ This requires a 50+ food bar:
     <buff id="nutrition_7_Trigger" duration="1" actions="increment(nutrition, 7, 0, 0, 1)"/>
     <buff id="nutrition_8_Trigger" duration="1" actions="increment(nutrition, 8, 0, 0, 1)"/>
     <buff id="nutrition_9_Trigger" duration="1" actions="increment(nutrition, 9, 0, 0, 1)"/>
-    <buff id="nutrition_10_Trigger" duration="1" actions="increment(nutrition, 10, 0, 0, 1)"/>
-    <buff id="nutrition_11_Trigger" duration="1" actions="increment(nutrition, 11, 0, 0, 1)"/>
-    <buff id="nutrition_12_Trigger" duration="1" actions="increment(nutrition, 12, 0, 0, 1)"/>
-    <buff id="nutrition_13_Trigger" duration="1" actions="increment(nutrition, 13, 0, 0, 1)"/>
-    <buff id="nutrition_14_Trigger" duration="1" actions="increment(nutrition, 14, 0, 0, 1)"/>
-    <buff id="nutrition_15_Trigger" duration="1" actions="increment(nutrition, 15, 0, 0, 1)"/>
-    <buff id="nutrition_16_Trigger" duration="1" actions="increment(nutrition, 16, 0, 0, 1)"/>
-    <buff id="nutrition_17_Trigger" duration="1" actions="increment(nutrition, 17, 0, 0, 1)"/>
-    <buff id="nutrition_18_Trigger" duration="1" actions="increment(nutrition, 18, 0, 0, 1)"/>
-    <buff id="nutrition_19_Trigger" duration="1" actions="increment(nutrition, 19, 0, 0, 1)"/>
-    <buff id="nutrition_20_Trigger" duration="1" actions="increment(nutrition, 20, 0, 0, 1)"/>
+
     <buff id="nutritionFade" buffif="nutrition > 0" debuffif="nutrition lequal 0" actions="increment(nutrition, -1, 60, 0, 0);min(nutrition, 0)"/>
     <!--JZMOD Malnourished-->
-    <buff id="malnourishedTrigger" buffif="nutrition less ??" debuffif="nutrition gequal ??" actions="buff(malnourishTimer)" ondebuff="StopMalnourishTimer" />
+    <buff id="malnourishedTrigger" buffif="nutrition less 99" debuffif="nutrition gequal 99" actions="buff(malnourishTimer)" ondebuff="StopMalnourishTimer" />
 	<buff id="malnourishTimer" actions="increment(malnourished, 1, 60, 0, 0)" />
 	<buff id="StopMalnourishTimer" duration="1" actions="debuff(malnourishTimer)"  />
     <buff id="malnourishFade" buffif="malnourished > 0" debuffif="malnourished lequal 0" actions="increment(malnourished, -1, 1, 0, 0);min(malnourished, 0)"/>
 
 	<buff id="notFullBlockerBuff" buffif="food > 0.99" debuffif="food lequal 0.99" actions="buff(fullBuff)"/>
-   
+   <!--
     <buff id="fullBuff" mutex="bleeding,notFullBlockerBuff" requires="goodNutrition3"  buffif="CTRfood > 0" debuffif="CTRfood lequal 0"icon="ui_game_symbol_natural_healing" name_key="fullBuff" description_key="fullBuffDesc" tooltip_key="fullBuffTooltip">
         <modify id="0" stat="health" amount="1" rate="1" />
     </buff>
-    
+    -->
     <buff id="goodNutrition1" actions="increment(malnourished, 1, 60, 0, 0)" />
 	<buff id="goodNutrition2" duration="1" actions="debuff(malnourishTimer)"  />
     <buff id="goodNutrition3" duration="1" actions="debuff(malnourishTimer)"  />
@@ -1073,4 +1063,8 @@ This requires a 50+ food bar:
     <buff id="wellness_18_Trigger" duration="1" actions="increment(@wellness, 18, 0, 0, 1)"/>
     <buff id="wellness_19_Trigger" duration="1" actions="increment(@wellness, 19, 0, 0, 1)"/>
     <buff id="wellness_20_Trigger" duration="1" actions="increment(@wellness, 20, 0, 0, 1)"/>
+
+    <buff id="fightOffEnemy" actions="increment(malnourished, 1, 60, 0, 0)" />
+    
+    
 </buffs>
