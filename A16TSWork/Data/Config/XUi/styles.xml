@@ -1,6 +1,6 @@
 <styles>
 
-<!-- <<< SMX v16b119e r01 START - BY SIRILLION >>> -->
+<!-- <<< SMX v16b112e r02 START - BY SIRILLION >>> -->
 
 	<style name="SMXUnitFrameWindow" type="window">
 		<style_entry name="pos" value="9,20" />
@@ -8,11 +8,11 @@
 		<style_entry name="anchor" value="BottomLeft" />
 	</style>
 
-	<style name="SMXTBItemStack">
-		<style_entry name="select_color" value="[beige]" /> 
-		<style_entry name="press_color" value="[limeGreen]" /> 
-		<style_entry name="final_pressed_color" value="[lightGrey]" /> 
-		<style_entry name="background_color" value="[mediumGrey]" /> 
+	<style name="SMXItemStack">
+		<style_entry name="select_color" value="[beige]" />
+		<style_entry name="press_color" value="[limeGreen]" />
+		<style_entry name="final_pressed_color" value="[lightGrey]" />
+		<style_entry name="background_color" value="[mediumGrey]" />
 		<style_entry name="highlight_color" value="[hoverColor]" /> 
 		<style_entry name="holding_color" value="[white]" />
 		<style_entry name="width" value="82" />
@@ -62,7 +62,6 @@
 		<style_entry name="color" value="[iconColor]" />
 		<style_entry name="tooltip" value="CHARACTER" />
 		<style_entry name="texture" value="Textures/UI/ui_game_compass" />
-<!--	<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\compass.png" /> --><!-- Online Equivalent: --> <!-- WARNING! Do NOT enable. Causes major memory leak! -->
 	</style>
 
 	<style name="SMXDayTimeFrame.window" type="window">
@@ -89,23 +88,8 @@
 		<style_entry name="height" value="15"/>
 		<style_entry name="foregroundlayer" value="true" />
 	</style>
-	
-	<style name="SMXminiMap.window" type="window">
-		<style_entry name="depth" value="1" />
-		<style_entry name="pos" value="-600,600" />
-		<style_entry name="size" value="300,300" />
-		<style_entry name="anchor" value="CenterCenter" />
-	</style>
 
-	<style name="SMXminiMap.texture" type="texture">
-		<style_entry name="depth" value="2" />
-		<style_entry name="pos" value="0,0" />
-		<style_entry name="size" value="300,300" />
-		<style_entry name="anchor" value="CenterCenter" />
-		<style_entry name="texture" value="Textures/map" />
-	</style>
-
-<!-- <<< SMX v16b119e r01 END - BY SIRILLION >>> -->
+<!-- <<< SMX v16b112e r02 END - BY SIRILLION >>> -->
 
 	<global>
 		<!-- 	
