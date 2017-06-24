@@ -368,7 +368,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="rareBooks" count="1">
-			<item name="ak47Schematic"/>
+			<item name="aK47Schematic"/>
 			<item name="augerSchematic"/>
 			<item name="chainsawSchematic"/>
 			<item name="clubSpikedSchematic"/>
@@ -540,7 +540,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 
 		<trader_item_group name="generalResources"> <!-- bundle size -->
 			<item name="wood" count="10,50"/> <!-- 50 -->
-			<item name="yuccaFibers" count="5,40"/> <!-- 50 -->
+			<item name="plantFibers" count="5,40"/> <!-- 50 -->
 			<item name="crushedSand" count="10,40"/> <!-- 50 -->
 			<item name="scrapIron" count="15,80"/> <!-- 10 -->
 			<item name="scrapPlastics" count="30,150"/>
@@ -690,7 +690,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="books" count="1,2" prob="0.6"/>
 			<item group="ammo" count="2,4" prob="2"/>
 			<item group="ammoSupplies" count="1,3"/>
-			<item group="seeds" count="1,4"/>
+			<!-- <item group="seeds" count="1,4"/> -->
 			<item group="cannedfood" count="1,2"/>
 			<item group="foodSupplies" count="1,4"/>
 			<item group="preparedFood" count="1,2"/>

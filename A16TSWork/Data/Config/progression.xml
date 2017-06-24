@@ -44,7 +44,7 @@
                 <add skill_level="70,100" value="41,50" />
             </effect>
         </player_skill>
-        <player_skill name="Athletics" icon="run" description_key="Running faster and longer than the next guy is probably the best skill you can develop in an apocalypse. Improve you run and walk speed by doing your cardio." title_key="Lower Body" exp_to_level="500" group="health" skill_point_cost_per_level="0">
+        <player_skill name="athletics" icon="run" description_key="Running faster and longer than the next guy is probably the best skill you can develop in an apocalypse. Improve you run and walk speed by doing your cardio." title_key="Lower Body" exp_to_level="500" group="health" skill_point_cost_per_level="0">
             <effect name="WalkSpeed">
                 <multiply skill_level="1,10" value="1,1.025" />
                 <multiply skill_level="10,20" value="1.025,1.05" />
@@ -3057,11 +3057,11 @@
         </crafting_skill>
         <!-- JZMOD PERKS-->
         <perk name="freeDiverPerk" icon="run" description_key="sexualTyranosaurusDesc" title_key="Free Diver" max_level="5" skill_point_cost_multiplier="1" skill_point_cost_per_level="3" always_fire="true" group="health">
-            <requirement perk_level="1" required_skill_name="Athletics" required_skill_level="20" />
-            <requirement perk_level="2" required_skill_name="Athletics" required_skill_level="40" />
-            <requirement perk_level="3" required_skill_name="Athletics" required_skill_level="60" />
-            <requirement perk_level="4" required_skill_name="Athletics" required_skill_level="80" />
-            <requirement perk_level="5" required_skill_name="Athletics" required_skill_level="100" />
+            <requirement perk_level="1" required_skill_name="athletics" required_skill_level="20" />
+            <requirement perk_level="2" required_skill_name="athletics" required_skill_level="40" />
+            <requirement perk_level="3" required_skill_name="athletics" required_skill_level="60" />
+            <requirement perk_level="4" required_skill_name="athletics" required_skill_level="80" />
+            <requirement perk_level="5" required_skill_name="athletics" required_skill_level="100" />
             <effect name="BreathHoldDuration">
                 <setvalue perk_level="0" value="20" />
                 <setvalue perk_level="1" value="120" />
@@ -3072,11 +3072,11 @@
             </effect>
         </perk>        
         <perk name="healthNutPerk" icon="run" description_key="healthNutDesc" title_key="healthNut" max_level="5" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" always_fire="true" group="health">
-            <requirement perk_level="1" required_skill_name="Athletics" required_skill_level="20" />
-            <requirement perk_level="2" required_skill_name="Athletics" required_skill_level="40" />
-            <requirement perk_level="3" required_skill_name="Athletics" required_skill_level="60" />
-            <requirement perk_level="4" required_skill_name="Athletics" required_skill_level="80" />
-            <requirement perk_level="5" required_skill_name="Athletics" required_skill_level="100" />
+            <requirement perk_level="1" required_skill_name="athletics" required_skill_level="20" />
+            <requirement perk_level="2" required_skill_name="athletics" required_skill_level="40" />
+            <requirement perk_level="3" required_skill_name="athletics" required_skill_level="60" />
+            <requirement perk_level="4" required_skill_name="athletics" required_skill_level="80" />
+            <requirement perk_level="5" required_skill_name="athletics" required_skill_level="100" />
             <effect name="MinWellness">
                 <add perk_level="0" value="-50" />
                 <add perk_level="1" value="20" />
@@ -3095,11 +3095,11 @@
             </effect>
         </perk>
         <perk name="sexualTyranosaurusPerk" icon="run" description_key="sexualTyranosaurusDesc" title_key="sexualTyranosaurus" max_level="5" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" always_fire="true" group="health">
-            <requirement perk_level="1" required_skill_name="Athletics" required_skill_level="20" />
-            <requirement perk_level="2" required_skill_name="Athletics" required_skill_level="40" />
-            <requirement perk_level="3" required_skill_name="Athletics" required_skill_level="60" />
-            <requirement perk_level="4" required_skill_name="Athletics" required_skill_level="80" />
-            <requirement perk_level="5" required_skill_name="Athletics" required_skill_level="100" />
+            <requirement perk_level="1" required_skill_name="athletics" required_skill_level="20" />
+            <requirement perk_level="2" required_skill_name="athletics" required_skill_level="40" />
+            <requirement perk_level="3" required_skill_name="athletics" required_skill_level="60" />
+            <requirement perk_level="4" required_skill_name="athletics" required_skill_level="80" />
+            <requirement perk_level="5" required_skill_name="athletics" required_skill_level="100" />
             <effect name="StaminaGain">
                 <add perk_level="0" value="0" />
                 <add perk_level="1" value=".1" />
@@ -3110,7 +3110,7 @@
             </effect>
         </perk>
         <perk name="runForestRunPerk" icon="run" description_key="runForestRunDesc" title_key="runForestRun" max_level="5" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" passive_effect="true" group="health">
-            <requirement perk_level="1" required_skill_name="Athletics" required_skill_level="1" />
+            <requirement perk_level="1" required_skill_name="athletics" required_skill_level="1" />
             <requirement perk_level="1" required_player_level="20" />
             <requirement perk_level="2" required_player_level="40" />
             <requirement perk_level="3" required_player_level="60" />
@@ -3347,7 +3347,7 @@
             <recipe name="animalHideLegArmor" unlock_level="1" />
             <recipe name="animalHidePoncho" unlock_level="1" />
         </perk>
-        <perk name="ScrapIronArmorPerk" icon="scrapChestArmor" description_key="Learn to craft Scrap Iron Armor on the armor table using a claw hammer." title_key="Scrap Iron Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="clothing">
+        <perk name="scrapIronArmorPerk" icon="scrapChestArmor" description_key="Learn to craft Scrap Iron Armor on the armor table using a claw hammer." title_key="Scrap Iron Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="clothing">
             <requirement perk_level="1" required_skill_name="armorSmithingCraft" required_skill_level="1" />
             <requirement perk_level="1" required_player_level="15" />
             <recipe name="scrapBoots" unlock_level="1" />
