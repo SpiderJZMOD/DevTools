@@ -1373,7 +1373,7 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="79" name="handZombieCop">
+<item id="79" name="handzombieFatCop">
 	<property name="Extends" value="handMaster"/>
 	<property name="IsDeveloper" value="true"/>
 	<property name="Degradation" value="99999" param1="true"/>
@@ -1648,7 +1648,7 @@ Mesh files no longer used:
 </item>
 
 <item id="93" name="handZombieCopFeral">
-	<property name="Extends" value="handZombieCop"/>
+	<property name="Extends" value="handzombieFatCop"/>
 	<property name="IsDeveloper" value="true"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="40"/>
@@ -2452,7 +2452,7 @@ Mesh files no longer used:
         <property name="DamageBonus.metal" value="1" />
         <property name="DamageBonus.steel" value="0" />
 		<property name="ActionExp" value="1"/>
-        <property name="ActionExpBonusMultiplier" value="5" />
+        <property name="ActionExpBonusMultiplier" value="1" />
 		<property name="ToolCategory.WoodBuilding" value="1" param1="10"  />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
@@ -2473,7 +2473,7 @@ Mesh files no longer used:
 		<property name="DismembermentBaseChance" value="-0.3,-0.1"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
-	<property name="ActionSkillGroup" value="upperBodyAction"/>
+	<property name="ActionSkillGroup" value="woodBuilding"/>
 	<property name="CraftingSkillGroup" value="plankHammerCraft"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>

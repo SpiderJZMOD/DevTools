@@ -988,8 +988,8 @@ group desc for stuff like metal siding
     <drop event="Harvest" name="" count="0" prob="1" tool_category="Disassemble" />
     <drop event="Destroy" name="nutAndBolt" count="1,2" prob=".6" tool_category="Disassemble" />
     <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="scrapIronBuilding" />
-    <drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="SrapIronBuilding" />
+    <drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="SrapIronBuilding" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".6" stick_chance="1" />
     <property name="EconomicValue" value="15"/>
 	<property name="EconomicBundleSize" value="2"/>
@@ -1115,8 +1115,8 @@ group desc for stuff like metal siding
 	<property name="IsDeveloper" value="true"/>
 	<property class="RepairItems"> <property name="metalRivetSheet" value="10"/> </property>
 	<drop event="Harvest" name="scrapSteel" count="5,15" prob="1" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="steelBuilding" />
-    <drop event="Harvest" name="metalRivetSheet" count="5,15" prob="1" tool_category="steelBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="SteelBuilding" />
+    <drop event="Harvest" name="metalRivetSheet" count="5,15" prob="1" tool_category="SteelBuilding" />
   	<drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
 	<drop event="Destroy" count="0"/>
 	<property name="EconomicValue" value="5"/>
@@ -1138,8 +1138,8 @@ group desc for stuff like metal siding
     <drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
     <drop event="Harvest" name="" count="0" prob="1" tool_category="Disassemble" />
     <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="scrapIronBuilding" />
-    <drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="SrapIronBuilding" />
+    <drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="SrapIronBuilding" />
     <drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="EconomicValue" value="20"/>
 </block>
@@ -1162,7 +1162,7 @@ group desc for stuff like metal siding
 		<property name="ToBlock" value="cobblestoneMaster" />
 		<property name="Item" value="cobblestones" />
 		<property name="ItemCount" value="20" />
-		<property name="UpgradeHitCount" value="4" />
+		<property name="UpgradeHitCount" value="3" />
 	</property>
 	<drop event="Destroy" name="stick" count="1,15" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob=".3" stick_chance="1" />
@@ -1180,8 +1180,8 @@ group desc for stuff like metal siding
 	<property name="HarvestOverdamage" value="true"/>
     <drop event="Harvest" name="rockSmall" count="8" />
     <drop event="Destroy" name="rockSmall" count="8" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="cobblestoneBuilding" />
-    <drop event="Destroy" name="cobblestones" count="5,15" prob="1" tool_category="cobblestoneBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="CobblestoneBuilding" />
+    <drop event="Destroy" name="cobblestones" count="5,15" prob="1" tool_category="CobblestoneBuilding" />
     <drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
 	<property name="CraftingSkillGroup" value="cobblestoneBuilding" />
     <property name="EconomicValue" value="14"/>
@@ -1202,8 +1202,8 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="stick" count="25,200" prob="1" />
 	<drop event="Destroy" name="nail" count="1,3" prob=".3" />
     <drop event="Destroy" name="scrapCable" count="1" prob=".1" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="woodBuilding" />
-    <drop event="Harvest" name="plank" count="5,15" prob="1" tool_category="woodBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="WoodBuilding" />
+    <drop event="Harvest" name="plank" count="5,15" prob="1" tool_category="WoodBuilding" />
     <drop event="Harvest" name="" count="0" prob="1" tool_category="Disassemble" />
     <drop event="Destroy" name="nail" count="1,2" prob=".6" tool_category="Disassemble" />
     <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
@@ -1300,8 +1300,8 @@ group desc for stuff like metal siding
 	<property name="HarvestOverdamage" value="true"/>
 	<drop event="Harvest" name="rockSmall" count="8" />
 	<drop event="Destroy" name="rockSmall" count="8" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="cobblestoneBuilding" />
-    <drop event="Destroy" name="cobblestones" count="5,15" prob="1" tool_category="cobblestoneBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="CobblestoneBuilding" />
+    <drop event="Destroy" name="cobblestones" count="5,15" prob="1" tool_category="CobblestoneBuilding" />
 	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
 	<property name="CraftingSkillGroup" value="cobblestoneBuilding" />
     <property name="EconomicValue" value="8"/>
@@ -1346,7 +1346,7 @@ group desc for stuff like metal siding
 		<property name="ToBlock" value="stainlessSteelMaster"/>
 		<property name="Item" value="metalRivetSheet"/>
 		<property name="ItemCount" value="20"/>
-		<property name="UpgradeHitCount" value="4"/>
+		<property name="UpgradeHitCount" value="3"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="HarvestOverdamage" value="true"/>
@@ -1354,8 +1354,8 @@ group desc for stuff like metal siding
     <drop event="Harvest" name="scrapSteel" count="5,15" prob="1" />
     <drop event="Harvest" name="" count="0" prob="1" tool_category="Disassemble" />
     <drop event="Destroy" name="scrapSteel" count="5,15" prob="1" tool_category="Disassemble" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="steelBuilding" />
-    <drop event="Destroy" name="metalRivetSheet" count="5,15" prob="1" tool_category="steelBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="SteelBuilding" />
+    <drop event="Destroy" name="metalRivetSheet" count="5,15" prob="1" tool_category="SteelBuilding" />
     <drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
     <property name="EconomicValue" value="160"/>
 	<property name="DescriptionKey" value="steelBlockGroupDesc"/>
@@ -1433,8 +1433,8 @@ group desc for stuff like metal siding
     <drop event="Destroy" name="scrapCable" count="1" prob=".1" />
     <drop event="Destroy" name="" count="0" prob="1" tool_category="Disassemble" />
     <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
-    <drop event="Harvest" name="" count="1" prob="1" tool_category="brickBuilding" />
-    <drop event="Destroy" name="bricks" count="5,15" prob="1" tool_category="brickBuilding" />
+    <drop event="Harvest" name="" count="1" prob="1" tool_category="BrickBuilding" />
+    <drop event="Destroy" name="bricks" count="5,15" prob="1" tool_category="BrickBuilding" />
     <drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
     <property name="EconomicValue" value="8"/>
 	<property name="EconomicBundleSize" value="20"/>
@@ -1509,8 +1509,8 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
     <drop event="Harvest" name="scrapIron" count="10" prob="1" tool_category="Disassemble" />
     <drop event="Destroy" name="scrapIron" count="5,15" prob="1" tool_category="Disassemble" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="srapIronBuilding" />
-    <drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="srapIronBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="SrapIronBuilding" />
+    <drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="SrapIronBuilding" />
     <drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
     <property name="EconomicValue" value="40"/>
 	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
@@ -1535,7 +1535,7 @@ group desc for stuff like metal siding
 		<property name="ToBlock" value="pouredConcreteMaster"/>
 		<property name="Item" value="plank"/>
 		<property name="ItemCount" value="10"/>
-		<property name="UpgradeHitCount" value="4"/>
+		<property name="UpgradeHitCount" value="3"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<property class="RepairItems"> <property name="shortMetalPipe" value="10"/> </property>
@@ -1581,7 +1581,7 @@ group desc for stuff like metal siding
 		<property name="ToBlock" value="rScrapIronMaster"/>
 		<property name="Item" value="corrugatedMetalSheet"/>
 		<property name="ItemCount" value="20"/>
-		<property name="UpgradeHitCount" value="4"/>
+		<property name="UpgradeHitCount" value="3"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="HarvestOverdamage" value="true"/>
@@ -1589,8 +1589,8 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
     <drop event="Harvest" name="scrapIron" count="10" prob="1" tool_category="Disassemble" />
     <drop event="Destroy" name="scrapIron" count="5,15" prob="1" tool_category="Disassemble" />
-    <drop event="Harvest" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
-    <drop event="Harvest" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
+    <drop event="Harvest" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="SrapIronBuilding" />
+    <drop event="Harvest" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="SrapIronBuilding" />
     <drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="EconomicValue" value="20"/>
 	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
@@ -1616,7 +1616,7 @@ group desc for stuff like metal siding
 		<property name="ToBlock" value="scrapIronMaster"/>
 		<property name="Item" value="corrugatedMetalSheet"/>
 		<property name="ItemCount" value="20"/>
-		<property name="UpgradeHitCount" value="4"/>
+		<property name="UpgradeHitCount" value="3"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Harvest" name="scrapIron" count="10" />
@@ -1626,8 +1626,8 @@ group desc for stuff like metal siding
         <drop event="Harvest" name="scrapIron" count="10" prob="1" tool_category="Disassemble" />
         <drop event="Destroy" name="nutAndBolt" count="1,2" prob=".6" tool_category="Disassemble" />
         <drop event="Destroy" name="scrapCable" count="5,15" prob="1" tool_category="Disassemble" />
-        <drop event="Harvest" name="" count="0" prob="1" tool_category="scrapIronBuilding" />
-        <drop event="Destroy" name="scrapIron" count="15,25" prob="1" tool_category="scrapIronBuilding" />
+        <drop event="Harvest" name="" count="0" prob="1" tool_category="SrapIronBuilding" />
+        <drop event="Destroy" name="scrapIron" count="15,25" prob="1" tool_category="SrapIronBuilding" />
         <drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="EconomicValue" value="15"/>
 	<property name="EconomicBundleSize" value="2"/>
@@ -1646,9 +1646,9 @@ group desc for stuff like metal siding
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Harvest" name="stick" count="25,200" prob="1" />
 	<drop event="Destroy" name="scrapIron" count="1,5" prob=".3" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="woodBuilding" />
-    <drop event="Destroy" name="plank" count="5,15" prob="1" tool_category="woodBuilding" />
-    <drop event="Destroy" name="scrapIron" count="5,15" prob="1" tool_category="woodBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="WoodBuilding" />
+    <drop event="Destroy" name="plank" count="5,15" prob="1" tool_category="WoodBuilding" />
+    <drop event="Destroy" name="scrapIron" count="5,15" prob="1" tool_category="WoodBuilding" />
     <drop event="Harvest" name="" count="0" prob="1" tool_category="Disassemble" />
     <drop event="Destroy" name="scrapIron" count="1,10" prob=".6" tool_category="Disassemble" />
     <drop event="Fall" name="woodDebris" count="1" prob=".3" stick_chance="1" />
@@ -1663,18 +1663,18 @@ group desc for stuff like metal siding
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="119"/> -->
 	<property name="IsDeveloper" value="true"/>
 	<property name="FuelValue" value="300"/>
-	<property class="RepairItems"> <property name="wood" value="10"/> </property>
+	<property class="RepairItems"> <property name="plank" value="10"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rWoodMetalMaster"/>
 		<property name="Item" value="scrapIron"/>
 		<property name="ItemCount" value="20"/>
-		<property name="UpgradeHitCount" value="4"/>
+		<property name="UpgradeHitCount" value="3"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="HarvestOverdamage" value="true"/>
 	<drop event="Harvest" name="stick" count="25,200" prob="1" />
-	<drop event="Harvest" name="" count="0" prob="1" tool_category="woodBuilding" />
-    <drop event="Destroy" name="plank" count="5,15" prob="1" tool_category="woodBuilding" />
+	<drop event="Harvest" name="" count="0" prob="1" tool_category="WoodBuilding" />
+    <drop event="Destroy" name="plank" count="5,15" prob="1" tool_category="WoodBuilding" />
     <drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
     <property name="CraftingSkillGroup" value="woodBuilding" />
 </block>
@@ -1688,18 +1688,18 @@ group desc for stuff like metal siding
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="67"/> -->
 	<property name="FuelValue" value="300"/>
 	<property name="IsDeveloper" value="true"/>
-	<property class="RepairItems"> <property name="wood" value="10"/> </property>
+	<property class="RepairItems"> <property name="plank" value="10"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rWoodMaster"/>
 		<property name="Item" value="plank"/>
 		<property name="ItemCount" value="10"/>
-		<property name="UpgradeHitCount" value="4"/>
+		<property name="UpgradeHitCount" value="3"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<property name="HarvestOverdamage" value="true"/>
 	<drop event="Harvest" name="stick" count="25,200" prob="1" />
-	<drop event="Harvest" name="" count="0" prob="1" tool_category="woodBuilding" />
-    <drop event="Destroy" name="plank" count="5,15" prob="1" tool_category="woodBuilding" />
+	<drop event="Harvest" name="" count="0" prob="1" tool_category="WoodBuilding" />
+    <drop event="Destroy" name="plank" count="5,15" prob="1" tool_category="WoodBuilding" />
     <drop event="Harvest" name="" count="0" prob="1" tool_category="Disassemble" />
     <drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property name="CraftingSkillGroup" value="woodBuilding" />
@@ -1722,20 +1722,20 @@ group desc for stuff like metal siding
 	<property name="IsDeveloper" value="true"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
 	<property name="FuelValue" value="150"/>
-	<property class="RepairItems"> <property name="wood" value="5"/> </property>
+	<property class="RepairItems"> <property name="plank" value="5"/> </property>
 	<!-- <property name="CustomPlaceSound" value="place_block_wood"/>  this works but was too annoying -->
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="woodMaster"/>
 		<property name="Item" value="plank"/>
 		<property name="ItemCount" value="10"/>
-		<property name="UpgradeHitCount" value="4"/>
+		<property name="UpgradeHitCount" value="3"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<drop event="Harvest" name="stick" count="25,200" prob="1" />
 	<drop event="Destroy" name="nail" count="1,3" prob=".3" />
     <drop event="Destroy" name="scrapCable" count="1" prob=".1" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="woodBuilding" />
-    <drop event="Harvest" name="plank" count="5,15" prob="1" tool_category="woodBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="WoodBuilding" />
+    <drop event="Harvest" name="plank" count="5,15" prob="1" tool_category="WoodBuilding" />
     <drop event="Harvest" name="" count="0" prob="1" tool_category="Disassemble" />
     <drop event="Destroy" name="nail" count="1,2" prob=".6" tool_category="Disassemble" />
     <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
@@ -2136,7 +2136,7 @@ group desc for stuff like metal siding
 		<property name="ToBlock" value="pouredRConcretePillar100"/>
 		<property name="Item" value="concreteMix"/>
 		<property name="ItemCount" value="10"/>
-		<property name="UpgradeHitCount" value="4"/>
+		<property name="UpgradeHitCount" value="3"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_concrete"/>
 </block>
@@ -7783,10 +7783,10 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="20" /> </property>
     <drop event="Harvest" name="wood" count="10" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="woodBlock" />
+		<property name="ToBlock" value="logCabin" />
 		<property name="Item" value="narrowLog" />
 		<property name="ItemCount" value="1" />
-		<property name="UpgradeHitCount" value="5" />
+		<property name="UpgradeHitCount" value="3" />
 	</property>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
@@ -15749,9 +15749,12 @@ kind of free
 	<!--JZMOD LOOT CONTAINERS-->
      <block id="21" name="concreteFormMaster">
 		<property name="Material" value="wood" />
-		<property name="Shape" value="CubeCutoutBackFaces" />
-		<property name="Mesh" value="cutout" />
-		<property name="Texture" value="289,289,65,65,65,65" />
+		<property name="Shape" value="New"/>
+        <property name="LightOpacity" value="0"/>
+        <property name="Model" value="cube"/>
+        <property name="Mesh" value="cutout"/>
+        <property name="Frame"/>
+		<property name="Texture" value="289,289,525,525,525,525" />
 		<property name="IsDeveloper" value="true" />
 		<property class="RepairItems">
 			<property name="plank" value="10" />
@@ -17301,7 +17304,228 @@ kind of free
         <property name="DescriptionKey" value="PlankGroupDesc" />
 	</block>
 	 <!--JZMOD BRICK FRAMES-->
-    <block id="983" name="BrickFrameBlock">
+   
+    <block id="1154" name="armorTable">
+		<property name="Material" value="wood" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+		<!--sdx<property name="Shape" value="ModelEntity" />
+		<property name="Mesh" value="models" />
+		<property name="Model" value="#armorAssambler?armorAssambler" />-->
+		<property name="CustomIcon" value="ui_game_symbol_ArmorTable" />
+		<property name="Stacknumber" value="1" />
+		<property name="CanPickup" value="false" />
+		<property name="Class" value="Campfire" />
+		<property name="HeatMapStrength" value="1" />
+		<property name="HeatMapTime" value="1200" />
+		<property name="HeatMapFrequency" value="25" />
+		<property class="Workstation">
+			<property name="Modules" value="output,tools" />
+		</property>
+		<property class="RepairItems"> <property name="plank" value="10" /> </property>
+       	<property name="DescriptionKey" value="ArmorTableDesc" />
+		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
+		<property name="Group" value="Clothing" />
+		<property name="CraftingSkillGroup" value="Primitive Crafting" />
+	</block>
+   <!-- JZMOD BUILDING BLOCKS-->
+   <!-- JZMOD LOG CABIN BUILDING -->
+<block id="1178" name="logCabin">
+	<property name="Extends" value="woodMaster"/>
+	<property name="Texture" value="74,74,43,43,43,43" />
+	<property name="DowngradeBlock" value="woodDebris" prob="0.75"/>
+</block>
+<!-- JZMOD COBBLESTONE BUILDING -->
+<block id="983" name="cobblestoneFrameBlock">
+	<property name="Extends" value="cobblestoneFrameMaster" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="brickBlock" />
+           <property name="Item" value="bricks" />
+           <property name="ItemCount" value="10" />
+		</property>
+		<property name="Group" value="Building" />
+        <property name="DescriptionKey" value="brickFrameGroupDesc" />
+	</block>
+    <block id="984" name="cobblestoneFrameRamp">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Mesh" value="opaque"/>
+        <property name="UseGlobalUV" value="Local"/>
+        <property name="Shape" value="New"/>
+        <property name="Model" value="ramp_frame"/> <property name="Place" value="TowardsPlacerInverted"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickMasterPlayer" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+		<property name="Group" value="Building" />
+        <property name="DescriptionKey" value="brickFrameGroupDesc" />
+	</block>
+    <block id="987" name="cobblestoneFrameStairs">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="StairsFilledVerticalUV"/> <property name="Place" value="TowardsPlacerInverted"/>
+        <property name="UseGlobalUV" value="Global"/>
+        <property name="Stairs"/>
+        <property name="ImposterExchange" value="imposterRamp" param1="15"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernStairs25" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+        <property name="DescriptionKey" value="brickFrameGroupDesc" />
+	</block>
+    <block id="1012" name="cobblestoneFrameWedge">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernWedge" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+ 	<block id="1014" name="cobblestoneFrameWedgeTip">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="wedge60_tip"/> <property name="Place" value="TowardsPlacerInverted"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernWedgeTip" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+  	<block id="1016" name="cobblestoneFramePlate">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="Plate"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernPlate" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+    <block id="1018" name="cobblestoneFrameCNRFull">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New"/>
+       	<property name="Model" value="ramp_corner"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernCNRFull" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+    <block id="1020" name="cobblestoneFrameCNRInside">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="ramp_inside_corner"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernCNRInside" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+    <block id="1022" name="cobblestoneFramePillar100">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New" />
+		<property name="Model" value="Pole1m" />
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernPillar100" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+    <block id="1024" name="cobblestoneFramePillar50">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New" />
+		<property name="Model" value="Pole0.5m" />
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernPillar50" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+   	<block id="1026" name="cobblestoneFramePole">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="pole_square"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernPole" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+     <block id="1012" name="cobblestoneFrameFullCRNBottom">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernWedge" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+ 	<block id="1014" name="cobblestoneFrameInsideCRNBottom">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="wedge60_tip"/> <property name="Place" value="TowardsPlacerInverted"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernWedgeTip" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+  	<block id="1016" name="cobblestoneFrameInsideCRNTip">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="Plate"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernPlate" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+    <block id="1018" name="cobblestoneFrameRampCRNFiller">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New"/>
+       	<property name="Model" value="ramp_corner"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernCNRFull" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+    <block id="1020" name="cobblestoneFrameCRNStairs">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="ramp_inside_corner"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernCNRInside" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+    <block id="1022" name="cobblestoneFrameArch2M">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New" />
+		<property name="Model" value="Pole1m" />
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernPillar100" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+    <block id="1024" name="cobblestoneFrameIncline">
+		<property name="Extends" value="cobblestoneFrameMaster" />
+		<property name="Shape" value="New" />
+		<property name="Model" value="Pole0.5m" />
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="brickModernPillar50" />
+            <property name="Item" value="bricks" />
+            <property name="ItemCount" value="10" />
+		</property>
+	</block>
+     <block id="983" name="BrickFrameBlock">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="brickBlock" />
@@ -17788,36 +18012,12 @@ kind of free
 			<property name="ToBlock" value="steelPole" />
         </property>
 	</block>
-    <block id="1154" name="armorTable">
-		<property name="Material" value="wood" />
-        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
-        <property name="Mesh" value="models"/>
-        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
-		<!--sdx<property name="Shape" value="ModelEntity" />
-		<property name="Mesh" value="models" />
-		<property name="Model" value="#armorAssambler?armorAssambler" />-->
-		<property name="CustomIcon" value="ui_game_symbol_ArmorTable" />
-		<property name="Stacknumber" value="1" />
-		<property name="CanPickup" value="false" />
-		<property name="Class" value="Campfire" />
-		<property name="HeatMapStrength" value="1" />
-		<property name="HeatMapTime" value="1200" />
-		<property name="HeatMapFrequency" value="25" />
-		<property class="Workstation">
-			<property name="Modules" value="output,tools" />
-		</property>
-		<property class="RepairItems"> <property name="plank" value="10" /> </property>
-       	<property name="DescriptionKey" value="ArmorTableDesc" />
-		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
-		<property name="Group" value="Clothing" />
-		<property name="CraftingSkillGroup" value="Primitive Crafting" />
-	</block>
+   <!-- JZMOD BRICK BUILDING -->
    
-
 </blocks><!-- Block limit: No block can have an ID greater 2047.
 
 
-1177-1179
+1179
 1223-1225
 1254
 1259
@@ -17878,7 +18078,7 @@ kind of free
 1677
 1680-1774
 1779-1799
-1916-1623
+1916-1923
 1930
 1932-1950
 1954-1956
