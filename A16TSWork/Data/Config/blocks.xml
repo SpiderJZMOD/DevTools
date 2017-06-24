@@ -5898,7 +5898,7 @@ kind of free
 <block id="591" name="treeDesertShrub">
 	<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
 	<property name="Texture" value="377"/>
-    <drop event="Destroy" name="PlantFibers" count="2" />
+    <drop event="Destroy" name="yuccaFibers" count="2" />
 </block>
 
 <block id="592" name="cntBackpackDropped"> <!-- This is the blue backpack that the player used to drop on death. It is an entity now. -->
@@ -16312,7 +16312,7 @@ kind of free
 			<property name="UpgradeHitCount" value="1" />
 		</property>
 		<property class="RepairItems">
-			<property name="PlantFibers" value="10" />
+			<property name="yuccaFibers" value="10" />
 		</property>
         <property name="DescriptionKey" value="ChickenCoopDesc" />
 		<drop event="Destroy" name="chickenCoop" count="1" />
@@ -16329,7 +16329,7 @@ kind of free
 		<property name="Class" value="Campfire" />
 		<property name="CanPickup" value="false" />
 		<property class="RepairItems">
-			<property name="PlantFibers" value="10" />
+			<property name="yuccaFibers" value="10" />
 		</property>
 		<property class="Workstation">
 			<property name="Modules" value="output" />
@@ -16366,7 +16366,7 @@ kind of free
 		<property name="Class" value="Campfire" />
 		<property name="CanPickup" value="false" />
 		<property class="RepairItems">
-			<property name="PlantFibers" value="10" />
+			<property name="yuccaFibers" value="10" />
 		</property>
 		<property class="Workstation">
 			<property name="Modules" value="output" />
