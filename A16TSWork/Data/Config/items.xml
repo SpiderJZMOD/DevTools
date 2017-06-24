@@ -1782,7 +1782,7 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="103" name="handAnimalVulture">
+<item id="103" name="handAnimalZombieVulture">
 	<property name="Extends" value="handMaster"/>
 	<property name="IsDeveloper" value="true"/>
 	<property name="HoldType" value="35"/>
@@ -2481,7 +2481,7 @@ Mesh files no longer used:
 <item id="128" name="nailgun">
 	<property name="Meshfile" value="Items/Tools/nailgunPrefab"/>
 	<property name="Material" value="metal"/>
-	<property name="RepairTools" value="ScavengedParts"/>
+	<property name="RepairTools" value="scavengedParts"/>
 	<property name="HoldType" value="37"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="weapon_jam"/>
@@ -2536,7 +2536,7 @@ Mesh files no longer used:
 <item id="130" name="chainsaw">
 	<property name="Meshfile" value="Items/Weapons/Melee/Chainsaw/chainsaw"/>
 	<property name="Material" value="metal"/>
-	<property name="RepairTools" value="ScavengedParts"/>
+	<property name="RepairTools" value="scavengedParts"/>
 	<property name="HoldType" value="19"/>
 	<property name="SoundIdle" value="chainsaw_idle"/>
 	<property class="Parts">
@@ -2592,7 +2592,7 @@ Mesh files no longer used:
 <item id="131" name="auger">
 	<property name="Meshfile" value="Items/Tools/augerPrefab"/>
 	<property name="Material" value="metal"/>
-	<property name="RepairTools" value="ScavengedParts"/>
+	<property name="RepairTools" value="scavengedParts"/>
 	<property name="HoldType" value="20"/>
 	<property name="SoundIdle" value="Auger_Idle"/>
 	<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
@@ -3962,7 +3962,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/chassisPrefab"/>
 	<property name="Material" value="metal"/>
     <property name="DegradationBreaksAfter" value="true" />
-	<property name="RepairTools" value="ScavengedParts"/>
+	<property name="RepairTools" value="scavengedParts"/>
 	<property name="HoldType" value="7"/>
 	<property name="EconomicValue" value="220"/>
 	<property class="Attributes">
@@ -3983,7 +3983,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="metal"/>
     <property name="DegradationBreaksAfter" value="true" />
-	<property name="RepairTools" value="ScavengedParts"/>
+	<property name="RepairTools" value="scavengedParts"/>
 	<property name="HoldType" value="45"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Attributes">
@@ -4000,7 +4000,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="metal"/>
     <property name="DegradationBreaksAfter" value="true" />
-	<property name="RepairTools" value="ScavengedParts"/>
+	<property name="RepairTools" value="scavengedParts"/>
 	<property name="HoldType" value="45"/>
 	<property name="Weight" value="30"/>
 	<property name="EconomicValue" value="500"/>
@@ -4018,7 +4018,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="metal"/>
     <property name="DegradationBreaksAfter" value="true" />
-	<property name="RepairTools" value="ScavengedParts"/>
+	<property name="RepairTools" value="scavengedParts"/>
 	<property name="HoldType" value="45"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="150"/>
@@ -4036,7 +4036,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="metal"/>
     <property name="DegradationBreaksAfter" value="true" />
-	<property name="RepairTools" value="ScavengedParts"/>
+	<property name="RepairTools" value="scavengedParts"/>
 	<property name="HoldType" value="45"/>
 	<property class="Attributes">
 		<property name="VehicleSteering" value="2,2"/>
@@ -4055,7 +4055,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="shoppingBasketEmpty"/>
 	<property name="Material" value="metal"/>
     <property name="DegradationBreaksAfter" value="true" />
-	<property name="RepairTools" value="ScavengedParts"/>
+	<property name="RepairTools" value="scavengedParts"/>
 	<property name="HoldType" value="45"/>
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="250"/>
@@ -4173,7 +4173,7 @@ Mesh files no longer used:
 	<property name="Insulation" value="2"/>
 	<property name="Encumbrance" value="0.01"/>
 	<property name="Material" value="plants"/>
-	<property name="RepairTools" value="PlantFibers"/>
+	<property name="RepairTools" value="yuccaFibers"/>
 	<property name="DegradationBreaksAfter" value="true"/>
 	<property name="FuelValue" value="6"/>
 	<property name="EconomicValue" value="5"/>
@@ -5362,7 +5362,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="metal"/>
-	<property name="RepairTools" value="repairKit"/>
+	<property name="RepairTools" value="scavengedParts"/>
 	<property name="HoldType" value="45"/>
 	<property name="EquipSlot" value="Eyes"/>
 	<property name="DegradationBreaksAfter" value="true"/>
@@ -9739,7 +9739,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
 </item>
 
-<item id="1359" name="repairKit">
+<item id="1359" name="scavengedParts">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Msteel"/>
@@ -10120,7 +10120,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="VehicleSlotType" value="engine"/>
 	<property name="Material" value="Msteel"/>
-	<property name="RepairTools" value="ScavengedParts"/>
+	<property name="RepairTools" value="scavengedParts"/>
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Weight" value="100"/>
