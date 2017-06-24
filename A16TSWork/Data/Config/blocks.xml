@@ -988,8 +988,8 @@ group desc for stuff like metal siding
     <drop event="Harvest" name="" count="0" prob="1" tool_category="Disassemble" />
     <drop event="Destroy" name="nutAndBolt" count="1,2" prob=".6" tool_category="Disassemble" />
     <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="SrapIronBuilding" />
-    <drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="SrapIronBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="scrapIronBuilding" />
+    <drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".6" stick_chance="1" />
     <property name="EconomicValue" value="15"/>
 	<property name="EconomicBundleSize" value="2"/>
@@ -1138,8 +1138,8 @@ group desc for stuff like metal siding
     <drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
     <drop event="Harvest" name="" count="0" prob="1" tool_category="Disassemble" />
     <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="SrapIronBuilding" />
-    <drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="SrapIronBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="scrapIronBuilding" />
+    <drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
     <drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="EconomicValue" value="20"/>
 </block>
@@ -1180,8 +1180,8 @@ group desc for stuff like metal siding
 	<property name="HarvestOverdamage" value="true"/>
     <drop event="Harvest" name="rockSmall" count="8" />
     <drop event="Destroy" name="rockSmall" count="8" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="CobblestoneBuilding" />
-    <drop event="Destroy" name="cobblestones" count="5,15" prob="1" tool_category="CobblestoneBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="cobblestoneBuilding" />
+    <drop event="Destroy" name="cobblestones" count="5,15" prob="1" tool_category="cobblestoneBuilding" />
     <drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
 	<property name="CraftingSkillGroup" value="cobblestoneBuilding" />
     <property name="EconomicValue" value="14"/>
@@ -1300,8 +1300,8 @@ group desc for stuff like metal siding
 	<property name="HarvestOverdamage" value="true"/>
 	<drop event="Harvest" name="rockSmall" count="8" />
 	<drop event="Destroy" name="rockSmall" count="8" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="CobblestoneBuilding" />
-    <drop event="Destroy" name="cobblestones" count="5,15" prob="1" tool_category="CobblestoneBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="cobblestoneBuilding" />
+    <drop event="Destroy" name="cobblestones" count="5,15" prob="1" tool_category="cobblestoneBuilding" />
 	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
 	<property name="CraftingSkillGroup" value="cobblestoneBuilding" />
     <property name="EconomicValue" value="8"/>
@@ -1509,8 +1509,8 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
     <drop event="Harvest" name="scrapIron" count="10" prob="1" tool_category="Disassemble" />
     <drop event="Destroy" name="scrapIron" count="5,15" prob="1" tool_category="Disassemble" />
-    <drop event="Harvest" name="" count="0" prob="1" tool_category="SrapIronBuilding" />
-    <drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="SrapIronBuilding" />
+    <drop event="Harvest" name="" count="0" prob="1" tool_category="scrapIronBuilding" />
+    <drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
     <drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
     <property name="EconomicValue" value="40"/>
 	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
@@ -1589,8 +1589,8 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
     <drop event="Harvest" name="scrapIron" count="10" prob="1" tool_category="Disassemble" />
     <drop event="Destroy" name="scrapIron" count="5,15" prob="1" tool_category="Disassemble" />
-    <drop event="Harvest" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="SrapIronBuilding" />
-    <drop event="Harvest" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="SrapIronBuilding" />
+    <drop event="Harvest" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
+    <drop event="Harvest" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
     <drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="EconomicValue" value="20"/>
 	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
@@ -1626,8 +1626,8 @@ group desc for stuff like metal siding
         <drop event="Harvest" name="scrapIron" count="10" prob="1" tool_category="Disassemble" />
         <drop event="Destroy" name="nutAndBolt" count="1,2" prob=".6" tool_category="Disassemble" />
         <drop event="Destroy" name="scrapCable" count="5,15" prob="1" tool_category="Disassemble" />
-        <drop event="Harvest" name="" count="0" prob="1" tool_category="SrapIronBuilding" />
-        <drop event="Destroy" name="scrapIron" count="15,25" prob="1" tool_category="SrapIronBuilding" />
+        <drop event="Harvest" name="" count="0" prob="1" tool_category="scrapIronBuilding" />
+        <drop event="Destroy" name="scrapIron" count="15,25" prob="1" tool_category="scrapIronBuilding" />
         <drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="EconomicValue" value="15"/>
 	<property name="EconomicBundleSize" value="2"/>
@@ -7123,7 +7123,7 @@ kind of free
 </block>
 	<!-- 1 Free -->
 
-<block id="701" name="GoreBlock1Prefab">
+<block id="701" name="goreBlock1Prefab">
 	<property name="Class" value="Gore"/>
 	<property name="IsDeveloper" value="true"/>
 	<property name="Material" value="organic"/>
@@ -7150,7 +7150,7 @@ kind of free
 	<property name="DroppedEntityClass" value="EviseratedRemains"/>
 </block>
 
-<block id="702" name="GoreBlock1BonesPrefab">
+<block id="702" name="goreBlock1BonesPrefab">
 	<property name="Class" value="Gore"/>
 	<property name="IsDeveloper" value="true"/>
 	<property name="Material" value="organic"/>
@@ -15955,7 +15955,7 @@ kind of free
 		<property name="DowngradeBlock" value="scrapSteelPile" />
 	</block>
 	<!--JZMOD TRAPS-->
-	<block id="84" name="SetUpASpikeTrap">
+	<block id="84" name="setUpASpikeTrap">
 		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -15981,7 +15981,7 @@ kind of free
 		<property name="DescriptionKey" value="SetUpASpikeTrapDesc" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
-	<block id="85" name="RiggedChest"><!--JZMOD MAKE SIMPLE CUDE TRAP FOR PAINTING-->
+	<block id="85" name="riggedChest"><!--JZMOD MAKE SIMPLE CUDE TRAP FOR PAINTING-->
 		<property name="Class" value="TNT" />
 		<property name="Material" value="wood+wood" />
 		<property name="Shape" value="Ext3dModel" />
@@ -16143,8 +16143,8 @@ kind of free
 			<property name="InputMaterials" value="steel,iron,coal,clay" />
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_BlastFurnace" />
-		<property name="DescriptionKey" value="BlastFurnaceDesc" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="DescriptionKey" value="blastFurnaceDesc" />
+		<property name="CraftingSkillGroup" value="engineering" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="bellows" count="1" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
@@ -16401,7 +16401,7 @@ kind of free
 		<property name="Group" value="Tools/Traps" />
 	</block>
     <!--JZMOD PROFESSION KITS-->
-	<block id="102" name="SoldierSupplies">
+	<block id="102" name="soldierSupplies">
 		<property name="Class" value="Loot" />
 		<property name="Material" value="MdroppedBackpack" />
 		<property name="Shape" value="Ext3dModel" />
@@ -16410,10 +16410,10 @@ kind of free
 		<property name="LootList" value="212" />
 		<property name="CanPickup" value="false" />
 		<drop event="Destroy" count="0" />
-		<drop event="Fall" name="SoldierSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="1" prob="1" />
 		<property name="CustomIcon" value="cntSuitcase" />
 	</block>
-	<block id="103" name="SoldierProfession">
+	<block id="103" name="soldierProfession">
 		<property name="Material" value="glass" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -16421,288 +16421,288 @@ kind of free
 		<property name="Place" value="TowardsPlacer" />
 		<property name="CanPickup" value="true" />
         <property name="CustomIcon" value="ui_game_symbol_Soldier" />
-		<property name="DescriptionKey" value="ProfessionChoiceDesc" />
+		<property name="DescriptionKey" value="professionChoiceDesc" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="SoldierSupplies" />
-			<property name="Item" value="ProfessionKey" />
+			<property name="ToBlock" value="soldierSupplies" />
+			<property name="Item" value="professionKey" />
 			<property name="ItemCount" value="1" />
 			<property name="UpgradeHitCount" value="1" />
 		</property>
 		<property name="Group" value="Basics" />
 		<drop event="Destroy" count="0" />
-		<property name="CraftingSkillGroup" value="AssaultRifles" />
-		<drop event="Fall" name="SoldierProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="SoldierSupplies" />
+		<property name="CraftingSkillGroup" value="assaultRifles" />
+		<drop event="Fall" name="soldierProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="soldierSupplies" />
 	</block>
-	<block id="104" name="DoctorProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="104" name="doctorProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Doctor" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="DoctorSupplies" />
+			<property name="ToBlock" value="doctorSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Medicine" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="DoctorProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="DoctorSupplies" />
+		<property name="CraftingSkillGroup" value="medicine" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="doctorProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="doctorSupplies" />
 	</block>
-	<block id="105" name="DoctorSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="105" name="doctorSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="213" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="DoctorSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="doctorSupplies" count="1" prob="1" />
 	</block>
-	<block id="108" name="FarmerProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="108" name="farmerProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Farmer" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="FarmerSupplies" />
+			<property name="ToBlock" value="farmerSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Hunting" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="FarmerProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="FarmerSupplies" />
+		<property name="CraftingSkillGroup" value="hunting" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="farmerProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="farmerSupplies" />
 	</block>
-	<block id="109" name="FarmerSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="109" name="farmerSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="214" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="FarmerSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="farmerSupplies" count="1" prob="1" />
 	</block>
-	<block id="110" name="ChemistProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="110" name="chemistProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Chemist" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="ChemistSupplies" />
+			<property name="ToBlock" value="chemistSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Chemistry" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="ScientistsProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="ChemistSupplies" />
+		<property name="CraftingSkillGroup" value="chemistry" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="scientistsProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="chemistSupplies" />
 	</block>
-	<block id="111" name="ChemistSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="111" name="chemistSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="215" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="ChemistSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="chemistSupplies" count="1" prob="1" />
 	</block>
-	<block id="112" name="CarpenterProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="112" name="carpenterProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Carpenter" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="CarpenterSupplies" />
+			<property name="ToBlock" value="carpenterSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Engineering" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="EngineerProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="CarpenterSupplies" />
+		<property name="CraftingSkillGroup" value="engineering" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="engineerProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="carpenterSupplies" />
 	</block>
-	<block id="113" name="CarpenterSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="113" name="carpenterSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="216" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="CarpenterSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="carpenterSupplies" count="1" prob="1" />
 	</block>
-	<block id="114" name="CopProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="114" name="copProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Cop" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="CopSupplies" />
+			<property name="ToBlock" value="copSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Pistols" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="CopProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="CopSupplies" />
+		<property name="CraftingSkillGroup" value="pistols" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="copProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="copSupplies" />
 	</block>
-	<block id="1177" name="CopSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="1177" name="copSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="217" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="CopSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="copSupplies" count="1" prob="1" />
 	</block>
-	<block id="127" name="FishermanProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="127" name="fishermanProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Fisherman" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="FishermanSupplies" />
+			<property name="ToBlock" value="fishermanSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Hunting" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="FishermanProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="FishermanSupplies" />
+		<property name="CraftingSkillGroup" value="hunting" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="fishermanProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="fishermanSupplies" />
 	</block>
-	<block id="437" name="FishermanSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="437" name="fishermanSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="218" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="FishermanSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="fishermanSupplies" count="1" prob="1" />
 	</block>
-	<block id="438" name="ChefProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="438" name="chefProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Chef" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="ChefSupplies" />
+			<property name="ToBlock" value="chefSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Blade Weapons" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="ChefProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="ChefSupplies" />
+		<property name="CraftingSkillGroup" value="blade Weapons" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="chefProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="chefSupplies" />
 	</block>
-	<block id="439" name="ChefSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="439" name="chefSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="219" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="ChefSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="chefSupplies" count="1" prob="1" />
 	</block>
-	<block id="440" name="Fitness InstructorProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="440" name="fitness InstructorProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Fitness" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="Fitness InstructorSupplies" />
+			<property name="ToBlock" value="fitness InstructorSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Athletics" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="Fitness InstructorProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="Fitness InstructorSupplies" />
+		<property name="CraftingSkillGroup" value="athletics" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="fitness InstructorProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="fitness InstructorSupplies" />
 	</block>
-	<block id="441" name="Fitness InstructorSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="441" name="fitness InstructorSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="220" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="Fitness InstructorSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="fitness InstructorSupplies" count="1" prob="1" />
 	</block>
-	<block id="442" name="FiremanProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="442" name="firemanProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Fireman" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="FiremanSupplies" />
+			<property name="ToBlock" value="firemanSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Medicine" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="FiremanProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="FiremanSupplies" />
+		<property name="CraftingSkillGroup" value="medicine" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="firemanProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="firemanSupplies" />
 	</block>
-	<block id="443" name="FiremanSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="443" name="firemanSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="221" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="FiremanSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="firemanSupplies" count="1" prob="1" />
 	</block>
-	<block id="444" name="Construction WorkerProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="444" name="construction WorkerProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Construction" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="Construction WorkerSupplies" />
+			<property name="ToBlock" value="construction WorkerSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Engineering" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="Construction WorkerProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="Construction WorkerSupplies" />
+		<property name="CraftingSkillGroup" value="engineering" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="construction WorkerProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="construction WorkerSupplies" />
 	</block>
-	<block id="445" name="Construction WorkerSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="445" name="construction WorkerSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="222" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="Construction WorkerSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="construction WorkerSupplies" count="1" prob="1" />
 	</block>
-	<block id="446" name="ElectricianProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="446" name="electricianProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Electrician" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="ElectricianSupplies" />
+			<property name="ToBlock" value="electricianSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Engineering" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="ElectricianProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="ElectricianSupplies" />
+		<property name="CraftingSkillGroup" value="engineering" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="electricianProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="electricianSupplies" />
 	</block>
-	<block id="447" name="ElectricianSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="447" name="electricianSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="223" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="ElectricianSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="electricianSupplies" count="1" prob="1" />
 	</block>
-	<block id="448" name="Metal WorkerProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="448" name="metal WorkerProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Metal" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="Metal WorkerSupplies" />
+			<property name="ToBlock" value="metal WorkerSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Engineering" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="Metal WorkerProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="Metal WorkerSupplies" />
+		<property name="CraftingSkillGroup" value="engineering" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="metal WorkerProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="metal WorkerSupplies" />
 	</block>
-	<block id="449" name="Metal WorkerSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="449" name="metal WorkerSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="224" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="Metal WorkerSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="metal WorkerSupplies" count="1" prob="1" />
 	</block>
-	<block id="450" name="BurglarProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="450" name="burglarProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Burglar" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="BurglarSupplies" />
+			<property name="ToBlock" value="burglarSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Scavenging" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="BurglarProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="BurglarSupplies" />
+		<property name="CraftingSkillGroup" value="scavenging" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="burglarProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="burglarSupplies" />
 	</block>
-	<block id="451" name="BurglarSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="451" name="burglarSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="225" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="BurglarSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="burglarSupplies" count="1" prob="1" />
 	</block>
-	<block id="452" name="Park RangerProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="452" name="park RangerProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Ranger" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="Park RangerSupplies" />
+			<property name="ToBlock" value="park RangerSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Archery" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="Park RangerProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="Park RangerSupplies" />
+		<property name="CraftingSkillGroup" value="archery" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="park RangerProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="park RangerSupplies" />
 	</block>
-	<block id="453" name="Park RangerSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="453" name="park RangerSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="226" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="Park RangerSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="park RangerSupplies" count="1" prob="1" />
 	</block>
-	<block id="454" name="MechanicProfession">
-		<property name="Extends" value="SoldierProfession" />
-		<property name="DescriptionKey" value="ProfessionKitDesc" />
+	<block id="454" name="mechanicProfession">
+		<property name="Extends" value="soldierProfession" />
+		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Mechanic" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="MechanicSupplies" />
+			<property name="ToBlock" value="mechanicSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="Engineering" />
-		<drop event="Fall" name="SoldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="MechanicProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="MechanicSupplies" />
+		<property name="CraftingSkillGroup" value="engineering" />
+		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
+		<drop event="Fall" name="mechanicProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="mechanicSupplies" />
 	</block>
-	<block id="455" name="MechanicSupplies">
-		<property name="Extends" value="SoldierSupplies" />
+	<block id="455" name="mechanicSupplies">
+		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="227" />
-		<drop event="Fall" name="SoldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="MechanicSupplies" count="1" prob="1" />
+		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
+		<drop event="Fall" name="mechanicSupplies" count="1" prob="1" />
 	</block>
 	<block id="17" name="scrapSteelPile">
         <property name="Material" value="Msteel" />
@@ -16717,7 +16717,7 @@ kind of free
         <drop event="Harvest" name="scrapSteel" count="30" />
 		<drop event="Destroy" name="scrapSteel" count="20" />
 	</block>
-	<block id="457" name="BikeLoot">
+	<block id="457" name="bikeLoot">
 		<property name="Class" value="Loot" />
 		<property name="Material" value="MdroppedBackpack" />
 		<property name="Texture" value="423" />
@@ -16726,14 +16726,14 @@ kind of free
 		<drop event="Destroy" count="0" />
 		<property name="CustomIcon" value="cntSuitcase" />
 	</block>
-	<block id="458" name="BikeNABox">
+	<block id="458" name="bikeNABox">
 		<property name="Material" value="glass" />
 		<property name="Texture" value="423" />
 		<property name="CanPickup" value="true" />
-		<property name="DescriptionKey" value="BikeNABoxDesc" />
+		<property name="DescriptionKey" value="bikeNABoxDesc" />
 		<property name="Group" value="Basics" />
 		<drop event="Destroy" count="0" />
-		<property name="DowngradeBlock" value="BikeLoot" />
+		<property name="DowngradeBlock" value="bikeLoot" />
 	</block>
 	<!-- JZMOD NPC CORPSES -->
 	<block id="459" name="banditLeaderCorpse">
@@ -16748,7 +16748,7 @@ kind of free
 		<property name="Tag" value="Gore" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="LootList" value="200" />
-		<property name="DowngradeBlock" value="GoreBlock1BonesPrefab" />
+		<property name="DowngradeBlock" value="goreBlock1BonesPrefab" />
 		<drop event="Destroy" count="0" />
 	</block>
 	<block id="460" name="banditPistolCorpse">
@@ -16791,7 +16791,7 @@ kind of free
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="LootList" value="210" />
 	</block>
-	<block id="659" name="FollowerCorpse">
+	<block id="659" name="followerCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="LootList" value="211" />
 	</block>
@@ -16886,7 +16886,7 @@ kind of free
 		<property name="Extends" value="cropsHarvestableMaster" />
        	<!--sdx<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#carrot?carrotPrefab" />-->
-		<drop event="Harvest" name="Carrot" count="1" />
+		<drop event="Harvest" name="carrot" count="1" />
 	</block>
 	<block id="905" name="plantedSugarcane">
 		<property name="Extends" value="plantedTomato" />
@@ -17525,7 +17525,7 @@ kind of free
             <property name="ItemCount" value="10" />
 		</property>
 	</block>
-     <block id="983" name="BrickFrameBlock">
+     <block id="983" name="brickFrameBlock">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="brickBlock" />
@@ -17535,7 +17535,7 @@ kind of free
 		<property name="Group" value="Building" />
         <property name="DescriptionKey" value="brickFrameGroupDesc" />
 	</block>
-    <block id="984" name="BrickFrameRamp">
+    <block id="984" name="brickFrameRamp">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property name="Mesh" value="opaque"/>
         <property name="UseGlobalUV" value="Local"/>
@@ -17549,7 +17549,7 @@ kind of free
 		<property name="Group" value="Building" />
         <property name="DescriptionKey" value="brickFrameGroupDesc" />
 	</block>
-    <block id="987" name="BrickFrameStairs">
+    <block id="987" name="brickFrameStairs">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property name="Shape" value="New"/>
         <property name="Model" value="StairsFilledVerticalUV"/> <property name="Place" value="TowardsPlacerInverted"/>
@@ -17569,14 +17569,14 @@ kind of free
 		<property name="Model" value="StairsFilled" />
 		<property name="Place" value="TowardsPlacerInverted" />
 	</block>
-    <block id="1011" name="BrickModernArrowSlitHalf">
+    <block id="1011" name="brickModernArrowSlitHalf">
 		<property name="Extends" value="brickMasterPlayer" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="arrow_slit_half" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DescriptionKey" value="woodArrowSlitGroupDesc" />
     </block>
-    <block id="1012" name="BrickFrameWedge">
+    <block id="1012" name="brickFrameWedge">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property name="Shape" value="New"/>
         <property name="Model" value="ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
@@ -17591,7 +17591,7 @@ kind of free
 		<property name="Shape" value="New"/>
         <property name="Model" value="ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
 	</block>
-	<block id="1014" name="BrickFrameWedgeTip">
+	<block id="1014" name="brickFrameWedgeTip">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property name="Shape" value="New"/>
         <property name="Model" value="wedge60_tip"/> <property name="Place" value="TowardsPlacerInverted"/>
@@ -17606,7 +17606,7 @@ kind of free
 		<property name="Shape" value="New"/>
         <property name="Model" value="wedge60_tip"/> <property name="Place" value="TowardsPlacerInverted"/>
 	</block>
-	<block id="1016" name="BrickFramePlate">
+	<block id="1016" name="brickFramePlate">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property name="Shape" value="New"/>
         <property name="Model" value="Plate"/>
@@ -17621,7 +17621,7 @@ kind of free
 		<property name="Shape" value="New"/>
         <property name="Model" value="Plate"/>
 	</block>
-	<block id="1018" name="BrickFrameCNRFull">
+	<block id="1018" name="brickFrameCNRFull">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property name="Shape" value="New"/>
        	<property name="Model" value="ramp_corner"/>
@@ -17636,7 +17636,7 @@ kind of free
 		<property name="Shape" value="New"/>
        	<property name="Model" value="ramp_corner"/>
 	</block>
-	<block id="1020" name="BrickFrameCNRInside">
+	<block id="1020" name="brickFrameCNRInside">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property name="Shape" value="New"/>
         <property name="Model" value="ramp_inside_corner"/>
@@ -17651,7 +17651,7 @@ kind of free
 		<property name="Shape" value="New"/>
         <property name="Model" value="ramp_inside_corner"/>
 	</block>
-	<block id="1022" name="BrickFramePillar100">
+	<block id="1022" name="brickFramePillar100">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole1m" />
@@ -17666,7 +17666,7 @@ kind of free
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole1m" />
 	</block>
-	<block id="1024" name="BrickFramePillar50">
+	<block id="1024" name="brickFramePillar50">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole0.5m" />
@@ -17681,7 +17681,7 @@ kind of free
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole0.5m" />
 	</block>
-	<block id="1026" name="BrickFramePole">
+	<block id="1026" name="brickFramePole">
 		<property name="Extends" value="cobblestoneFrameMaster" />
 		<property name="Shape" value="New"/>
         <property name="Model" value="pole_square"/>
