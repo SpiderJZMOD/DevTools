@@ -11648,7 +11648,7 @@ Mesh files no longer used:
 			<property name="DismembermentBaseChance" value="0.007,1" />
 			<property name="DismembermentBonus" value="0.001,1" />
 		</property>
-		<property name="CraftingSkillGroup" value="katanamichonne" />
+		<property name="CraftingSkillGroup" value="bladeWeaponsCraft" />
 		<property name="DescriptionKey" value="katanaMichonneDesc" />
 		<property name="CustomIcon" value="katanaCraft" />
 	</item>
