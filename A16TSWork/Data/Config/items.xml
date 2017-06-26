@@ -10468,7 +10468,7 @@ Mesh files no longer used:
 	</property>
 </item>
 -->
-
+<!--JZMOD ADDED ITEMS -->
 <item id="1500" name="itemMaster">
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
     <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -12260,7 +12260,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="skillBookDesc" />
 	<property name="Group" value="Books" />
 </item>
-<!--JZMOD Skill Magazines -->
+<!--JZMOD XP Magazines -->
 <item id="1749" name="scavengingForDummies">
 	<property name="Meshfile" value="Items/Misc/Book" />
 	<property name="Material" value="paper" />
@@ -12451,10 +12451,181 @@ Mesh files no longer used:
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="paintToolCraft"/>
 </item>
-
-	
-	<!--JZMOD QUEST-->
-	<item id="1797" name="qc_Chemist">
+<!--JZMOD PROFESSION PAGES -->
+<item id="1982" name="professionPage">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="MprofessionPage" />
+   	<property name="Weight" value="1" />
+    <property name="FuelValue" value="5" />
+    <property name="Group" value="Books"/>
+	<property name="DescriptionKey" value="professionPageDesc" />
+</item>
+<item id="1749" name="howToBeACarpenter">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="MprofessionPage" />
+   	<property name="Weight" value="1" />
+    <property name="FuelValue" value="5" />
+    <property name="Group" value="Books"/>
+	<property name="CustomIcon" value="theEnforcerMagazine" />
+	<property name="DescriptionKey" value="howToBeA...Desc" />
+</item>
+<item id="1797" name="howToBeADoctor">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<item id="1797" name="howToBeACop">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<item id="1797" name="howToBeASoldier">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<item id="1797" name="howToBeAFarmer">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<item id="1797" name="howToBeAChemist">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<item id="1797" name="howToBeAChef">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<item id="1797" name="howToBeAFitnessInstructor">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<item id="1797" name="howToBeAFireman">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<item id="1797" name="howToBeAConstructionWorker">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<item id="1797" name="howToBeAElectrician">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<item id="1797" name="howToBeAMetalWorker">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<item id="1797" name="howToBeABurglar">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<item id="1797" name="howToBeARanger">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<item id="1797" name="howToBeAMechanic">
+	<property name="Extends" value="howToBeACarpenter" />
+</item>
+<!-- JZMOD PROFESSION QUEST -->
+<item id="1798" name="qc_Doctor">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startDoctor" />
+	</property>
+</item>
+<item id="1799" name="qc_Carpenter">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startCarpenter" />
+	</property>
+</item>
+<item id="1800" name="qc_Cop">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startCop" />
+	</property>
+</item>
+<item id="1801" name="qc_Soldier">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startSoldier" />
+	</property>
+</item>
+<item id="1802" name="qc_Farmer">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startFarmer" />
+	</property>
+</item>
+<item id="1804" name="qc_Chef">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startChef" />
+	</property>
+</item>
+<item id="1805" name="qc_Fitness_Instructor">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startFitness" />
+	</property>
+</item>
+<item id="1806" name="qc_Construction_Worker">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startConstruction" />
+	</property>
+</item>
+<item id="1807" name="qc_Electrician">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startElectrician" />
+	</property>
+</item>
+<item id="1808" name="qc_Metal_Worker">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startMetal" />
+	</property>
+</item>
+<item id="1809" name="qc_Burglar">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startBurglar" />
+	</property>
+</item>
+<item id="1810" name="qc_Park_Ranger">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startRanger" />
+	</property>
+</item>
+<item id="1811" name="qc_Mechanic">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startMechanic" />
+	</property>
+</item>
+<item id="1812" name="qc_Fireman">
+	<property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
+	<property class="Action1">
+		<property name="QuestGiven" value="startFireman" />
+	</property>
+</item>	
+<!--JZMOD QUEST-->
+<item id="1797" name="qc_Chemist">
 		<property name="Extends" value="challengeQuestMaster" />
         <property name="CustomIcon" value="challengeQuestMaster" />
 		<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -14155,11 +14326,7 @@ Mesh files no longer used:
 		<property name="FuelValue" value="1" />
 		<property name="DescriptionKey" value="stickDesc" />
 	</item>
-	<item id="1982" name="professionPage">
-		<property name="Extends" value="itemMaster" />
-		<property name="Material" value="paper" />
-		<property name="DescriptionKey" value="professionPageDesc" />
-	</item>
+	
 	<item id="1983" name="scubaTankFull">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />

@@ -3689,18 +3689,6 @@
             <recipe name="bioFuel" unlock_level="1" />
             <recipe name="purificationTablets" unlock_level="1" />
         </perk>
-        <perk name="fisherman" icon="Fisherman" description_key="These are the skills a Fisherman starts with. Collect 20 Profession pages to learn another profession" title_key="Fisherman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
-            <recipe name="simplePole" unlock_level="1" />
-            <recipe name="fishingPole" unlock_level="1" />
-            <recipe name="hook" unlock_level="1" />
-            <recipe name="barge" unlock_level="1" />
-            <recipe name="bambooRaft" unlock_level="1" />
-            <recipe name="fishingLure1" unlock_level="1" />
-            <recipe name="fishingLure2" unlock_level="1" />
-            <recipe name="fishingLure3" unlock_level="1" />
-            <recipe name="fishingLure4" unlock_level="1" />
-            <recipe name="fishingLure5" unlock_level="1" />
-        </perk>
         <perk name="chef" icon="Chef" description_key="These are the skills a Chef starts with. Collect 20 Profession pages to learn another profession" title_key="Chef" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
             <recipe name="sharpeningStone" unlock_level="1" />
         </perk>
