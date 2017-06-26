@@ -1,6 +1,6 @@
 <windows>
 
-<!-- <<< SMX v16b113e r03 START - BY SIRILLION >>> -->
+<!-- <<< SMX v16b119e r01 START - BY SIRILLION >>> -->
 
 	<window name="SMX">
 
@@ -838,7 +838,7 @@
 		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
 			
 			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
-			required_tools="anvil,calipers,toolAndDieSet" required_tools_only="true">
+			required_tools="anvil,forgeCrucible,toolAndDieSet" required_tools_only="true">
 				<required_item_stack name="0"/>
 			</grid>		
 			
@@ -2298,12 +2298,12 @@
 			<label depth="2" pos="345,-8" width="300" height="28" text="{timestamp}" color="[lightGrey]" justify="right" upper_case="true" />
 			<label style="header.name" text="{entrytitle}" width="500" />
 		</panel>
-		<rect name="content" pos="0,-46" height="366" depth="1">
-			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="653" height="366" color="[black]" type="sliced" fillcenter="false" />	
+		<rect name="content" pos="0,-46" height="735" depth="1">  
+			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="653" height="735" color="[black]" type="sliced" fillcenter="false" />	<!-- was 366   -->
 			<sprite color="[darkGrey]" type="sliced" />
-			<label depth="3" name="descriptionText" pos="8,-8" text="{entrydescription}" width="630" height="350" font_size="28" />
+			<label depth="3" name="descriptionText" pos="8,-8" text="{entrydescription}" width="630" height="720" font_size="22" /> <!-- was 350   -->
 			<rect visible="{showempty}">
-				<label pos="0,-170" depth="3" name="descriptionText" width="100%" height="65" text="DESCRIPTION NOT AVAILABLE AT THIS TIME." text_key="xuiDescriptionNotAvailable" justify="center" font_size="28" />			
+				<label pos="0,-170" depth="3" name="descriptionText" width="100%" height="65" text="DESCRIPTION NOT AVAILABLE AT THIS TIME." text_key="xuiDescriptionNotAvailable" justify="center" font_size="22" />			
 			</rect>
 		</rect>
 	</window> 
