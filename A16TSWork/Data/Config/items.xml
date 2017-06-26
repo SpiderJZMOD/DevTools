@@ -3491,6 +3491,7 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="gunSmithingCraft"/>
+    <property name="SellableToTrader" value="false" />
 	<!-- NOPE <property name="RepairExpMultiplier" value="10"/>
 	<property name="CraftingIngredientExp" value="80"/>-->
 </item>
@@ -3540,7 +3541,6 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="412"/>
 </item>
-
 <item id="216" name="parts44Magnum_grip">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="parts44MagnumGroupDesc"/>
@@ -9964,7 +9964,7 @@ Mesh files no longer used:
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock" />
 		<property name="Delay" value="0.5" />
-		<property name="Blockname" value="DecoyAirFilterMine" />
+		<property name="Blockname" value="decoyAirFilterMine" />
 	</property>
 </item>
 
@@ -9979,7 +9979,7 @@ Mesh files no longer used:
     <property class="Action1">
         <property name="Class" value="PlaceAsBlock" />
 		<property name="Delay" value="0.5" />
-		<property name="Blockname" value="DecoyCandyMine" />
+		<property name="Blockname" value="decoyCandyMine" />
 	</property>
 </item>
 
@@ -10468,2159 +10468,1990 @@ Mesh files no longer used:
 	</property>
 </item>
 -->
-<!--JZMOD WEAPONS AND WEAPON PARTS-->
-    <item id="1500" name="itemMaster">
-		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-        <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Material" value="organic" />
-		<property name="HoldType" value="45" />
-		<property name="Stacknumber" value="5000" />
-		<property name="Weight" value="5" />
-		<property name="Group" value="Resources" />
-		<property name="SellableToTrader" value="false" />
-	</item>
-	<item id="1969" name="silencer">
-		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="DropMeshfile" value="Items/Misc/sack_dropedPrefab" />
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="45" />
-		<property name="Weight" value="10" />
-		<property name="Stacknumber" value="6" />
-		<property name="Group" value="Ammo/Weapons" />
-		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
-		<property name="CustomIcon" value="ui_game_symbol_Silencer" />
-		<property name="DescriptionKey" value="SilencerDesc" />
-	</item>
-	<item id="1501" name="sniperRifle_scopeFrame">
-		<property name="Extends" value="silencer" />
-<!--sdx <property name="Meshfile" value="#weaponAttach?AcogPrebab" /> 
-		<property name="DropMeshfile" value="#weaponAttach?AcogPrebab" /> -->
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-		<property name="HoldType" value="36" />
-		<property class="Action1">
-			<property name="Class" value="Zoom" />
-			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
-			<property name="Zoom_max_out" value="40" />
-			<property name="Zoom_max_in" value="15" />
-		</property>
-		<property name="DescriptionKey" value="sniperRifle_scopeFrameDesc" />
-	</item>
-	<!--JZMOD CROSSBOWS-->
-	<item id="1503" name="crossbowScope">
-		<property name="Extends" value="crossbow" />
-		<property name="DescriptionKey" value="crossbowScopeDesc" />
-		<property class="Parts">
-			<property name="Stock" value="crossbowStockScope" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Zoom" />
-			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
-			<property name="Zoom_max_out" value="40" />
-			<property name="Zoom_max_in" value="15" />
-		</property>
-	</item>
-	<item id="1504" name="autoCrossbow">
-		<property name="Extends" value="crossbow" />
-		<property name="DescriptionKey" value="autoCrossbowDesc" />
-		<property class="Parts">
-			<property name="Barrel" value="boltCylinder" />
-		</property>
-		<property class="Action0">
-			<property name="Magazine_size" value="6" />
-		</property>
-	</item>
-	<item id="1505" name="crossbow_Parts">
-		<property name="Extends" value="partsMaster" />
-		<property name="DescriptionKey" value="crossbow_PartsDesc" />
-		<property name="CustomIcon" value="parts44Magnum_parts" />
-		<property name="PartType" value="Pump" />
-		<property name="Weight" value="10" />
-		<property class="Attributes">
-			<property name="DegradationRate" value="3,1" />
-			<property name="DegradationMax" value="30,600" />
-		</property>
-		<property name="CraftingSkillGroup" value="crossbowCraft" />
-	</item>
-	<item id="1506" name="crossbow_Limb">
-		<property name="Extends" value="partsMaster" />
-		<property name="DescriptionKey" value="crossbow_LimbDesc" />
-		<property name="PartType" value="Receiver" />
-		<property name="Weight" value="10" />
-		<property class="Attributes">
-			<property name="DegradationMax" value="30,600" />
-		</property>
-		<property name="CraftingSkillGroup" value="crossbowCraft" />
-	</item>
-	<item id="1507" name="crossbow_Stock">
-		<property name="Extends" value="partsMaster" />
-		<property name="DescriptionKey" value="crossbow_StockDesc" />
-		<property name="PartType" value="Stock" />
-		<property name="Weight" value="10" />
-		<property name="FuelValue" value="15" />
-		<property class="Attributes">
-			<property name="DegradationMax" value="30,600" />
-		</property>
-		<property name="CraftingSkillGroup" value="crossbowCraft" />
-	</item>
-	<item id="1508" name="crossbow_Barrel">
-		<property name="Extends" value="partsMaster" />
-		<property name="DescriptionKey" value="crossbow_BarrelDesc" />
-		<property name="PartType" value="Barrel" />
-		<property name="Weight" value="10" />
-		<property class="Attributes">
-			<property name="Accuracy" value="1,0.01" />
-			<property name="DegradationMax" value="30,600" />
-		</property>
-		<property name="CraftingSkillGroup" value="crossbowCraft" />
-	</item>
-	<item id="1509" name="boltCylinder">
-		<property name="Extends" value="crossbow_Barrel" />
-		<property name="DescriptionKey" value="boltCylinderDesc" />
-		<property name="CraftingSkillGroup" value="crossbowCraft" />
-	</item>
-	<item id="1510" name="crossbowStockScope">
-		<property name="Extends" value="crossbow_Stock" />
-		<property name="DescriptionKey" value="crossbowStockScopeDesc" />
-		<property name="CraftingSkillGroup" value="crossbowCraft" />
-	</item>
-	<item id="1511" name="carbonCrossbow">
-		<property name="Extends" value="crossbow" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-		<!--sdx <property name="Meshfile" value="#crossbownew?CrossbowNew" /> -->
-		<property name="CustomIcon" value="ui_game_symbol_CarbonCrossbow" />
-		<property name="DescriptionKey" value="carbonCrossbowDesc" />
-        <property name="Material" value="metal" />
-		<property class="Parts">
-			<property name="Stock" value="carbonCrossbow_Stock" />
-			<property name="Receiver" value="carbonCrossbow_Limb" />
-			<property name="Pump" value="carbonCrossbow_Parts" />
-			<property name="Barrel" value="carbonCrossbow_Barrel" />
-		</property>
-		<property class="Action0">
-			<property name="Magazine_items" value="steelCrossbowBolt, sedativeShot, infectedShot, stimulantShot, painKillerShot" />
-			<property name="Rays_spread" value="0.01" />
-		</property>
-	</item>
-	<item id="1512" name="carbonCrossbow_Parts">
-		<property name="Extends" value="crossbow_Parts" />
-		<property name="CustomIcon" value="parts44Magnum_parts" />
-        <property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
-		<property class="Attributes">
-			<property name="DegradationMax" value="100,1000" />
-		</property>
-		<property name="CraftingSkillGroup" value="crossbowCraft" />
-	</item>
-	<item id="1513" name="carbonCrossbow_Limb">
-		<property name="Extends" value="crossbow_Limb" />
-		<property name="CustomIcon" value="crossbow_Limb" />
-        <property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
-		<property class="Attributes">
-			<property name="DegradationMax" value="100,1000" />
-		</property>
-		<property name="CraftingSkillGroup" value="crossbowCraft" />
-	</item>
-	<item id="1514" name="carbonCrossbow_Stock">
-		<property name="Extends" value="crossbow_Stock" />
-		<property name="CustomIcon" value="crossbow_Stock" />
-        <property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
-		<property class="Attributes">
-			<property name="DegradationMax" value="100,1000" />
-		</property>
-		<property name="CraftingSkillGroup" value="crossbowCraft" />
-	</item>
-	<item id="1515" name="carbonCrossbow_Barrel">
-		<property name="Extends" value="crossbow_Barrel" />
-		<property name="CustomIcon" value="crossbow_Barrel" />
-        <property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
-		<property class="Attributes">
-			<property name="DegradationMax" value="100,1000" />
-		</property>
-		<property name="CraftingSkillGroup" value="crossbowCraft" />
-	</item>
-	<!--JZMOD CRAFTED GUNS-->
-	<item id="1519" name="blunderbussDouble">
-		<property name="Extends" value="blunderbuss" />
-		<property name="DescriptionKey" value="BlunderbussDoubleDesc" />
-		<property class="Action0">
-			<property name="Magazine_size" value="2" />
-		</property>
-        <property name="CraftingSkillGroup" value="craftedGunsCraft" />
-	</item>
-	<item id="1520" name="craftedRifle">
-		<property name="Extends" value="gunHuntingRifle" />
-        <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
-<!--sdx		<property name="HandMeshfile" value="#steampunk?buechse" />
-		<property name="DropMeshfile" value="#steampunk?buechse" /> -->
-		<property name="RepairTools" value="weaponRepairKit" />
-		<property name="HoldType" value="39" />
-        <property name="CrosshairOnAim" value="true" />
-		<property class="Parts">
-			<property name="Stock" value="craftedRifle_stock" />
-			<property name="Receiver" value="craftedRifle_receiver" />
-			<property name="Pump" value="revolver_parts" />
-			<property name="Barrel" value="craftedRifleBarrel" />
-		</property>
-		<property class="Action0">
-			<property name="Delay" value="1" />
-			<property name="Magazine_size" value="1" />
-			<property name="Magazine_items" value="308mmBullet" />
-			<property name="Magazine_item_ray_counts" value="1" />
-			<property name="Magazine_item_ray_spreads" value="0" />
-			<property name="Reload_time" value="3.9" />
-			<property name="Sound_start" value="Weapons/Ranged/Blunderbuss/blunderbuss_fire" />
-			<property name="Sound_reload" value="Weapons/Ranged/Blunderbuss/blunderbuss_reload" />
-			<property name="Particles_muzzle_fire" value="nozzleflash_shotgun" />
-		</property>
-        <property name="CraftingSkillGroup" value="craftedGunsCraft" />
-	</item>
-   	<item id="1521" name="craftedRifle_receiver">
-		<property name="Extends" value="partsMaster" />
-		<property name="DescriptionKey" value="craftedRiflePartsDesc" />
-        <property name="CustomIcon" value="partsHuntingRifle_receiver" />
-		<property name="PartType" value="Receiver" />
-		<property name="Weight" value="10" />
-		<property class="Attributes">
-			<property name="FalloffRange" value="50,80" />
-			<property name="EntityDamage" value="20,60" />
-			<property name="BlockDamage" value="3,5" />
-			<property name="DegradationMax" value="500,1000" />
-		</property>
-		<property name="SellableToTrader" value="false" />
-        <property name="CraftingSkillGroup" value="craftedGunsCraft" />
-	</item>
-	<item id="1522" name="craftedRifle_stock">
-		<property name="Extends" value="partsMaster" />
-		<property name="DescriptionKey" value="craftedRiflePartsDesc" />
-        <property name="CustomIcon" value="partsHuntingRifle_stock" />
-		<property name="PartType" value="Stock" />
-		<property name="Weight" value="10" />
-		<property class="Attributes">
-			<property name="DegradationRate" value="25,25" />
-			<property name="DegradationMax" value="500,1000" />
-		</property>
-		<property name="SellableToTrader" value="false" />
-        <property name="CraftingSkillGroup" value="craftedGunsCraft" />
-	</item>
-    <item id="1523" name="craftedRifleBarrel">
-		<property name="Extends" value="partsMaster" />
-		<property name="DescriptionKey" value="craftedRiflePartsDesc" />
-        <property name="CustomIcon" value="partsHuntingRifle_barrel" />
-		<property name="PartType" value="Barrel" />
-		<property name="Weight" value="20" />
-		<property class="Attributes">
-			<property name="Accuracy" value=".8,0.05" />
-			<property name="DegradationMax" value="500,1000" />
-		</property>
-		<property name="SellableToTrader" value="false" />
-        <property name="CraftingSkillGroup" value="craftedGunsCraft" />
-	</item>
-	<!--JZMOD HANDGUNS-->
-	<item id="1524" name="oldRevolver">
-	<!--sdx <property name="Meshfile" value="#revolver?revolverPrefab" /> -->
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="44" />
-		<property name="Weight" value="10" />
-		<property name="DegradationBreaksAfter" value="true" />
-        <property name="CustomIcon" value="gunRevolver" />
-        <property name="DescriptionKey" value="oldRevolverDesc" />
-		<property name="Stacknumber" value="1" />
-		<property name="Degradation" value="99999" param1="true" />
-		<property name="SoundJammed" value="Weapons/weapon_jam" />
-		<property class="Action0">
-			<property name="Class" value="Ranged" />
-			<property name="Delay" value="0.35" />
-			<property name="Range" value="40" />
-			<property name="Crosshair_min_distance" value="30" />
-			<property name="Crosshair_max_distance" value="50" />
-			<property name="Magazine_size" value="6" />
-			<property name="Magazine_items" value="9mmBullet" />
-			<property name="Magazine_item_ray_counts" value="1" />
-			<property name="Magazine_item_ray_spreads" value="0" />
-			<property name="Reload_time" value="2" />
-			<property name="Bullet_icon" value="pistol" />
-			<property name="Sound_start" value="revolver_fire" />
-			<property name="Sound_repeat" value="" />
-			<property name="Sound_end" value="" />
-			<property name="Sound_empty" value="revolver_emtpy" />
-			<property name="Sound_reload" value="Weapons/Ranged/44Magnum/44magnum_reload" />
-			<property name="Particles_muzzle_fire" value="nozzleflash" />
-			<property name="Particles_muzzle_smoke" value="nozzlesmoke" />
-			<property name="DamageBonus.head" value="60" />
-			<property name="DamageBonus.wood" value="2" />
-			<property name="DamageBonus.plants" value="3" />
-			<property name="DamageBonus.earth" value=".25" />
-			<property name="DamageBonus.metal" value="1" />
-			<property name="DamageBonus.stone" value="1" />
-			<property name="DamageBonus.glass" value="5" />
-			<property name="DamageBonus.cloth" value="25" />
-			<property name="DamageBonus.steel" value="0" />
-			<property name="DamageBonus.hardStone" value="0" />
-			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="1" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Zoom" />
-			<property name="Zoom_max_out" value="35" />
-			<property name="Zoom_max_in" value="35" />
-		</property>
-		<property class="Attributes">
-			<property name="Accuracy" value="1,.03" />
-			<property name="EntityDamage" value="10,18" />
-			<property name="BlockDamage" value="3,5" />
-			<property name="FalloffRange" value="15,45" />
-			<property name="DegradationMax" value="1,50" />
-			<property name="DegradationRate" value="1,1" />
-		</property>
-		<property name="Group" value="Ammo/Weapons" />
-		<property name="ActionSkillGroup" value="Pistols" />
-	</item>
-	<item id="1525" name="oldRifle">
-		<property name="Extends" value="oldRevolver" />
-		<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab" />
-		<property name="CustomIcon" value="gunHuntingRifle" />
-        <property name="DescriptionKey" value="oldRifleDesc" />
-        <property name="HoldType" value="30" />
-		<property name="FuelValue" value="15" />
-		<property name="Stacknumber" value="1" />
-		<property name="Degradation" value="99999" param1="true" />
-		<property name="SoundJammed" value="Weapons/weapon_jam" />
-		<property class="Action0">
-			<property name="Delay" value="0.6" />
-			<property name="Range" value="100" />
-			<property name="Crosshair_min_distance" value="30" />
-			<property name="Crosshair_max_distance" value="100" />
-			<property name="Magazine_size" value="1" />
-			<property name="Magazine_items" value="308mmBullet" />
-			<property name="Magazine_item_ray_counts" value="1" />
-			<property name="Magazine_item_ray_spreads" value="0" />
-			<property name="Reload_time" value="2.75" />
-			<property name="Horde_meter_rate" value=".25" />
-			<property name="Horde_meter_distance" value="20" />
-			<property name="Bullet_icon" value="uzi" />
-			<property name="Sound_start" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_fire" />
-			<property name="Sound_empty" value="Weapons/weapon_empty" />
-			<property name="Sound_reload" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_reload" />
-			<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
-			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-			<property name="DamageBonus.wood" value="1" />
-			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="1" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Zoom" />
-			<property name="Zoom_max_out" value="35" />
-			<property name="Zoom_max_in" value="28" />
-		</property>
-		<property class="Attributes">
-			<property name="Accuracy" value=".75,0.2" />
-			<property name="EntityDamage" value="25,70" />
-			<property name="BlockDamage" value="3,5" />
-			<property name="FalloffRange" value="54,140" />
-			<property name="DegradationMax" value="1,50" />
-			<property name="DegradationRate" value="1,1" />
-		</property>
-		<property name="ActionSkillGroup" value="Rifles" />
-	</item>
-	<item id="1532" name="silencedPistolBarrel">
-		<property name="Extends" value="partsPistol_barrel" />
-		<property name="DescriptionKey" value="silencedPistolBarrelDesc" />
-		<property name="CustomIcon" value="partsPistol_barrel" />
-		<property name="CustomIconTint" value="FD9095" />
-		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
-	</item>
-    <item id="1545" name="44MagnumScope">
-		<property name="Extends" value="gun44Magnum" />
-		<property name="DescriptionKey" value="44MagnumScopeDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_44MagnumScope" />
-		<property class="Parts">
-			<property name="Barrel" value="magnumFrameScope" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Zoom" />
-			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
-			<property name="Zoom_max_out" value="40" />
-			<property name="Zoom_max_in" value="15" />
-		</property>
-	</item>
-	<item id="1546" name="magnumFrameScope">
-		<property name="Extends" value="parts44Magnum_frame" />
-		<property name="DescriptionKey" value="magnumFrameScopeDesc" />
-		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
-	</item>
-	<!--JZMOD HUNTING  RIFLE-->
-	<item id="1547" name="huntingRifleScope">
-		<property name="Extends" value="gunHuntingRifle" />
-		<property name="DescriptionKey" value="huntingRifleScopeDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_huntingRifleScope" />
-		<property class="Parts">
-			<property name="Stock" value="huntingRifleStockScope" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Zoom" />
-			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
-			<property name="Zoom_max_out" value="40" />
-			<property name="Zoom_max_in" value="15" />
-		</property>
-	</item>
-	<item id="1548" name="silencedhuntingRifle">
-		<property name="Extends" value="gunHuntingRifle" />
-		<property name="DescriptionKey" value="silencedhuntingRifleDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_SilencedhuntingRifle" />
-		<property class="Parts">
-			<property name="Barrel" value="silencedHuntingBarrel" />
-		</property>
-		<property class="Action0">
-			<property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
-		</property>
-	</item>
-	<item id="1549" name="huntingRifleSilScope">
-		<property name="Extends" value="gunHuntingRifle" />
-		<property name="DescriptionKey" value="huntingRifleSilScopeDesc" />
-		<property class="Parts">
-			<property name="Stock" value="huntingRifleStockScope" />
-			<property name="Barrel" value="silencedHuntingBarrel" />
-		</property>
-		<property class="Action0">
-			<property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Zoom" />
-			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
-			<property name="Zoom_max_out" value="40" />
-			<property name="Zoom_max_in" value="15" />
-		</property>
-	</item>
-	<item id="1550" name="huntingRifleStockScope">
-		<property name="Extends" value="partsHuntingRifle_stock" />
-		<property name="DescriptionKey" value="huntingRifleStockScopeDesc" />
-		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
-	</item>
-	<item id="1551" name="silencedHuntingBarrel">
-		<property name="Extends" value="partsHuntingRifle_barrel" />
-		<property name="DescriptionKey" value="silencedHuntingBarrelDesc" />
-		<property name="CustomIcon" value="partsHuntingRifle_barrel" />
-		<property name="CustomIconTint" value="FD9095" />
-		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
-	</item>
-	<!--JZMOD Automatic Shotgun
-	<item id="1556" name="automaticShotgun">
-		<property name="Extends" value="gunPumpShotgun" />
-        <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
-		<property name="HandMeshfile" value="#usas?USAS12" />
-		<property name="DropMeshfile" value="#usas?USAS12" />
-		<property name="DescriptionKey" value="USASDesc" />
-		<property name="HoldType" value="6" />
-		<property class="Parts">
-			<property name="Receiver" value="USAS_receiver" />
-			<property name="Pump" value="USAS_parts" />
-			<property name="Barrel" value="USAS_barrel" />
-		</property>
-		<property class="Action0">
-			<property name="Delay" value="0.12" />
-			<property name="auto_fire" value="true" />
-			<property name="Magazine_size" value="20" />
-           	<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
-		</property>
-	</item>
-	<item id="1557" name="USAS_barrel">
-		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="partsPumpShotgun_barrelShort" />
-		<property name="CustomIconTint" value="575757" />
-		<property name="DescriptionKey" value="USASPartsDesc" />
-		<property name="PartType" value="Barrel" />
-		<property name="Weight" value="10" />
-		<property class="Attributes">
-			<property name="Accuracy" value="0.1,0.01" />
-			<property name="DegradationMax" value="800,3600" />
-		</property>
-	</item>
-	<item id="1558" name="USAS_parts">
-		<property name="Extends" value="partsMaster" />
-		<property name="PartType" value="Pump" />
-		<property name="DescriptionKey" value="USASPartsDesc" />
-		<property name="CustomIcon" value="partsAK47_parts" />
-		<property name="CustomIconTint" value="575757" />
-		<property name="Weight" value="10" />
-		<property class="Attributes">
-			<property name="EntityDamage" value="20,30" />
-			<property name="BlockDamage" value="6,25" />
-			<property name="DegradationMax" value="800,3600" />
-		</property>
-	</item>
-	<item id="1559" name="USAS_receiver">
-		<property name="Extends" value="partsMaster" />
-		<property name="PartType" value="Receiver" />
-		<property name="DescriptionKey" value="USASPartsDesc" />
-		<property name="CustomIcon" value="partsAK47_receiver" />
-		<property name="CustomIconTint" value="575757" />
-		<property name="Weight" value="25" />
-		<property class="Attributes">
-			<property name="FalloffRange" value="60,100" />
-			<property name="DegradationMax" value="800,3600" />
-		</property>
-	</item>-->
-	<!--JZMOD ADVANCED ASSULT RIFLE-->
-	<item id="1586" name="silencedAK47">
-		<property name="Extends" value="gunAK47" />
-        <property name="CustomIcon" value="gunAK47" />
-		<property name="DescriptionKey" value="silencedAK47Desc" />
-		<property class="Parts">
-			<property name="Barrel" value="silencedAK47Barrel" />
-		</property>
-		<property class="Action0">
-			<property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
-		</property>
-	</item>
-	<item id="1587" name="scopedAK47">
-		<property name="Extends" value="gunAK47" />
-        <property name="CustomIcon" value="gunAK47" />
-		<property name="DescriptionKey" value="ScopedAK47Desc" />
-		<property class="Parts">
-			<property name="Stock" value="aK47StockScope" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Zoom" />
-			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
-			<property name="Zoom_max_out" value="40" />
-			<property name="Zoom_max_in" value="15" />
-		</property>
-	</item>
-	<item id="1588" name="silentScopedAK47">
-		<property name="Extends" value="gunAK47" />
-        <property name="CustomIcon" value="gunAK47" />
-		<property name="DescriptionKey" value="SilentScopedAK47Desc" />
-		<property class="Parts">
-			<property name="Barrel" value="silencedAK47Barrel" />
-			<property name="Stock" value="aK47StockScope" />
-		</property>
-		<property class="Action0">
-			<property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Zoom" />
-			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
-			<property name="Zoom_max_out" value="40" />
-			<property name="Zoom_max_in" value="15" />
-		</property>
-	</item>
-	<item id="1589" name="aK47StockScope">
-		<property name="Extends" value="partsAK47_stock" />
-		<property name="DescriptionKey" value="aK47StockScopeDesc" />
-		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
-	</item>
-	<item id="1590" name="silencedAK47Barrel">
-		<property name="Extends" value="partsAK47_barrel" />
-		<property name="DescriptionKey" value="silencedAK47BarrelDesc" />
-		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
-	</item>
-	<!--JZMOD AMMO-->
-	<item id="1621" name="9mmFireBullet">
-		<property name="Extends" value="9mmBullet" />
-		<property name="DescriptionKey" value="9mmFireBulletDesc" />
-		<property name="CustomIcon" value="9mmFireBullet" />
-		<property class="Attributes">
-			<property name="GetQualityFromWeapon" value="true" />
-			<property name="ApplyBuff" value="1,1" param1="burning" />
-		</property>
-	</item>
-	<item id="1623" name="shotgunFireShell">
-		<property name="Extends" value="shotgunShell" />
-		<property name="DescriptionKey" value="shotgunFireShellDesc" />
-		<property name="CustomIcon" value="shotgunFireShell" />
-		<property class="Attributes">
-			<property name="GetQualityFromWeapon" value="true" />
-			<property name="ApplyBuff" value="1, 1" param1="burning" />
-		</property>
-		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
-	</item>
-	<item id="1624" name="grenade">
-		<!--SDX <property name="Meshfile" value="#launcher?Grenade_launcher" /> -->
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="3" />
-		<property class="Attributes">
-			<property name="GetQualityFromWeapon" value="true" />
-			<property name="EntityDamage" value="20,50" />
-			<property name="BlockDamage" value="5,20" />
-			<!-- this is not working yet, it uses damage from Action1 -->
-		</property>
-		<property class="Action1">
-			<!-- UseAction -->
-			<property name="Class" value="Projectile" />
-			<property name="Explosion.ParticleIndex" value="4" />
-			<!-- which prefab/particle is used -->
-			<property name="Explosion.RadiusBlocks" value="5" />
-			<!-- damage radius for blocks -->
-			<property name="Explosion.BlockDamage" value="50" />
-			<!-- damage for blocks in the center of the explosion -->
-			<property name="Explosion.RadiusEntities" value="5" />
-			<!-- damage radius for entities -->
-			<property name="Explosion.EntityDamage" value="50" />
-			<!-- damage for entities in the center of the explosion -->
-			<property name="Velocity" value="30" />
-			<property name="FlyTime" value=".25" />
-			<property name="LifeTime" value="8" />
-		</property>
-		<property name="Group" value="Ammo/Weapons" />
-	</item>
-	<item id="1625" name="heGrenade">
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-	<!--SDX 	<property name="Meshfile" value="#launcher?Grenade_launcher" /> -->
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="3" />
-		<property class="Attributes">
-			<property name="GetQualityFromWeapon" value="true" />
-			<property name="EntityDamage" value="25,50" />
-			<property name="BlockDamage" value="45,90" />
-			<!-- this is not working yet, it uses damage from Action1 -->
-		</property>
-		<property class="Action1">
-			<!-- UseAction -->
-			<property name="Class" value="Projectile" />
-			<property name="Explosion.ParticleIndex" value="4" />
-			<!-- which prefab/particle is used -->
-			<property name="Explosion.RadiusBlocks" value="8" />
-			<!-- damage radius for blocks -->
-			<property name="Explosion.BlockDamage" value="150" />
-			<!-- damage for blocks in the center of the explosion -->
-			<property name="Explosion.RadiusEntities" value="10" />
-			<!-- damage radius for entities -->
-			<property name="Explosion.EntityDamage" value="150" />
-			<!-- damage for entities in the center of the explosion -->
-			<property name="Velocity" value="30" />
-			<property name="FlyTime" value=".25" />
-			<property name="LifeTime" value="8" />
-		</property>
-		<property name="Group" value="Ammo/Weapons" />
-	</item>
-	<item id="1626" name="demoRocket">
-		<property name="Extends" value="rocket" />
-		<property name="DescriptionKey" value="DemoRocketDesc" />
-		<property name="CustomIconTint" value="177c09" />
-		<property class="Action1">
-			<property name="Class" value="Projectile" />
-			<property name="Explosion.ParticleIndex" value="4" />
-			<property name="Explosion.RadiusBlocks" value="5" />
-			<property name="Explosion.BlockDamage" value="7" />
-			<property name="Explosion.RadiusEntities" value="1" />
-			<property name="Explosion.EntityDamage" value="25" />
-		</property>
-		<property class="Attributes">
-			<property name="GetQualityFromWeapon" value="true" />
-			<property name="EntityDamage" value="5,10" />
-			<property name="BlockDamage" value="750,2000" />
-			<!-- this is not working yet, it uses damage from Action1 -->
-			<property name="ApplyBuff" value="1, 1" param1="burning" />
-		</property>
-		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
-	</item>
-	<item id="1627" name="308mmBullet">
-		<property name="Extends" value="762mmBullet" />
-		<property name="DescriptionKey" value="308mmBulletDesc" />
-		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
-	</item>
-	<item id="1628" name="556mmBullet">
-		<property name="Extends" value="762mmBullet" />
-		<property name="DescriptionKey" value="5.45mmBulletDesc" />
-		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
-	</item>
-  	<!--JZMOD MELEE WEAPONS -->
-	<item id="1633" name="woodSpear">
-	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-	<!-- SDX	<property name="Meshfile" value="#crudeweapons?woddenSpear" /> 
-		<property name="HandMeshfile" value="#crudeweapons?woddenSpear" />
-		<property name="DropMeshfile" value="#crudeweapons?woddenSpear" /> -->
-		<property name="CustomIcon" value="ui_game_symbol_WoodSpear" />
-        <property name="Material" value="wood" />
-		<property name="HoldType" value="18" />
-		<property name="Stacknumber" value="1" />
-		<property name="SoundDestroy" value="wooddestroy1" />
-		<property name="FuelValue" value="24" />
-		<property name="Weight" value="1" />
-        <property name="CrosshairOnAim" value="true" />
-		<property name="CrosshairUpAfterShot" value="false" />
-		<property class="Action0">
-			<property name="Class" value="Catapult" />
-			<property name="Delay" value="2.2" />
-			<property name="Range" value="3.5" />
-			<property name="Magazine_size" value="1" />
-			<property name="Magazine_items" value="woodJavelin" />
-			<property name="Crosshair_min_distance" value="10" />
-			<property name="Crosshair_max_distance" value="20" />
-			<property name="Reload_time" value="2" />
-			<property name="Bullet_icon" value="uzi" />
-			<property name="Sound_start" value="Weapons/Ranged/Bows/Bow/bow_fire" />
-			<property name="Sound_repeat" value="" />
-			<property name="Sound_end" value="" />
-			<property name="Sound_empty" value="Weapons/weapon_empty" />
-			<property name="Sound_reload" value="Weapons/Ranged/Bows/Bow/bow_reload" />
-			<property name="Sound_draw" value="Weapons/Ranged/Bows/Bow/bow_draw" />
-			<property name="Sound_cancel" value="Weapons/Ranged/Bows/Bow/bow_fire_cancel" />
-			<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
-			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-			<property name="Max_strain_time" value="1" />
-			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="2" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Melee" />
-			<property name="Delay" value="1.8" />
-			<property name="Range" value="3.4" />
-			<property name="Sphere" value="0.1" />
-			<property name="Block_range" value="3" />
-			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="8" />
-			<property name="Buff" value="bleeding,criticalBlunt" />
-			<property name="Buff_chance" value=".2,.2" />
-			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.head" value="40" />
-			<property name="DamageBonus.wood" value="1" />
-			<property name="DamageBonus.earth" value="0.2" />
-			<property name="DamageBonus.metal" value="0" />
-			<property name="DamageBonus.cloth" value="5" />
-			<property name="DamageBonus.steel" value="0" />
-			<property name="DamageBonus.hardStone" value="0" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="4,10" />
-			<property name="BlockDamage" value="1,2" />
-			<property name="DegradationMax" value="50,250" />
-			<property name="DegradationRate" value="5,5" />
-		</property>
-		<property name="Group" value="Ammo/Weapons,Basics" />
-		<property name="DescriptionKey" value="woodSpearDesc" />
-		<property name="ActionSkillGroup" value="bladeWeaponsCraft" />
-		<property name="CraftingSkillGroup" value="woodSpearCraft" />
-	</item>
-	<item id="1634" name="woodJavelin">
-	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-	<!--SDX	<property name="Meshfile" value="#crudeweapons?woddenSpear" />
-		<property name="HandMeshfile" value="#crudeweapons?woddenSpear" />
-		<property name="DropMeshfile" value="#crudeweapons?woddenSpear" /> -->
-        <property name="CustomIcon" value="ui_game_symbol_WoodSpear" />
-		<property name="Material" value="wood" />
-		<property name="HoldType" value="18" />
-		<property name="Stacknumber" value="250" />
-		<property name="FuelValue" value="24" />
-		<property name="Weight" value="1" />
-		<property class="Action1">
-			<property name="Class" value="Projectile" />
-			<property name="Explosion.ParticleIndex" value="0" />
-			<property name="Velocity" value="30" />
-			<property name="FlyTime" value="0.2" />
-			<property name="Gravity" value="-10" />
-			<property name="LifeTime" value="12" />
-			<property name="DamageBonus.head" value="50" />
-			<property name="DamageBonus.glass" value="5" />
-			<property name="DamageBonus.steel" value="0" />
-			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="0" />
-			<property name="DamageBonus.earth" value="0" />
-			<property name="DamageBonus.stone" value="0" />
-			<property name="DamageBonus.metal" value="0" />
-			<property name="DamageBonus.cloth" value="5" />
-			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="3" />
-		</property>
-		<property class="Attributes">
-			<property name="GetQualityFromWeapon" value="true" />
-			<property name="EntityDamage" value="15,25" />
-			<property name="BlockDamage" value="1,2" />
-		</property>
-		<property name="DescriptionKey" value="woodSpearDesc" />
-        <property name="ActionSkillGroup" value="archeryAction" />
-		<property name="CraftingSkillGroup" value="woodSpearCraft" />
-	</item>
-	<item id="1635" name="ironSpear">
-		<property name="Extends" value="woodSpear" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-	<!--SDX 	<property name="Meshfile" value="#spearBronze?spearBronze" />
-		<property name="HandMeshfile" value="#spearBronze?spearBronze" />
-		<property name="DropMeshfile" value="#spearBronze?spearBronze" /> -->
-		<property name="Material" value="metal" />
-        <property name="Weight" value="10" />
-		<property name="RepairTools" value="scrapIron" />
-		<property name="FuelValue" value="24" />
-        <property name="CrosshairOnAim" value="true" />
-		<property name="CrosshairUpAfterShot" value="false" />
-		<property class="Action0">
-			<property name="Magazine_items" value="ironJavelin" />
-		</property>
-		<property class="Action1">
-			<property name="Delay" value="2" />
-			<property name="Stamina_usage" value="9" />
-			<property name="Buff" value="bleeding,criticalBlunt" />
-			<property name="Buff_chance" value=".4,.4" />
-			<property name="DamageBonus.head" value="60" />
-			<property name="DamageBonus.metal" value="1" />
-			<property name="DamageBonus.stone" value="1" />
-		</property>
-        <property class="Attributes">
-			<property name="EntityDamage" value="5,15" />
-			<property name="DegradationMax" value="50,350" />
-		</property>
-		<property name="Group" value="Ammo/Weapons" />
-		<property name="DescriptionKey" value="ironSpearDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_IronSpears" />
-		<property name="CraftingSkillGroup" value="ironSpearCraft" />
-	</item>
-	<item id="1636" name="ironJavelin">
-		<property name="Extends" value="woodJavelin" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-	<!--SDX	<property name="Meshfile" value="#spearBronze?spearBronze" />
-		<property name="HandMeshfile" value="#spearBronze?spearBronze" />
-		<property name="DropMeshfile" value="#spearBronze?spearBronze" /> -->
-		<property name="Material" value="metal" />
-        <property name="Weight" value="10" />
-		<property name="CustomIcon" value="ui_game_symbol_IronSpears" />
-		<property class="Action1">
-			<property name="Gravity" value="-12" />
-			<property name="DamageBonus.metal" value="1" />
-			<property name="DamageBonus.stone" value="1" />
-		</property>
-		<property class="Attributes">
-			<property name="GetQualityFromWeapon" value="true" />
-			<property name="EntityDamage" value="18,30" />
-		</property>
-		<property name="DescriptionKey" value="atlatlsDesc" />
-		<property name="CraftingSkillGroup" value="ironSpearCraft" />
-	</item>
-	<item id="1639" name="oldAxe">
-		<property name="Extends" value="fireaxeIron" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-    <!--SDX    <property name="Meshfile" value="#axe1?AXE5" /> -->
-		<property name="HoldType" value="2" />
-		<property name="RepairTools" value="NoRepair" />
-        <property name="CustomIcon" value="axe05" />
-		<property class="Action0">
-			<property name="Delay" value="1.3" />
-			<property name="Buff" value="bleeding,criticalBlunt" />
-			<property name="Buff_chance" value=".2,.2" />
-			<property name="DamageBonus.head" value="30" />
-			<property name="DamageBonus.wood" value="14" />
-		</property>
-		<property class="Action1">
-			<property name="Delay" value="4" />
-			<property name="Buff" value="bleeding,criticalBlunt" />
-			<property name="Buff_chance" value=".5,.8" />
-			<property name="DamageBonus.head" value="60" />
-			<property name="DamageBonus.wood" value="18" />
-		</property>
-		<property class="Attributes">
-			<property name="DegradationMax" value="25,200" />
-			<property name="DegradationRate" value="1,1" />
-			<property name="DismembermentBaseChance" value="0.08,0.1" />
-			<property name="DismembermentBonus" value="0.0008,0.001" />
-		</property>
-	</item>
-	<item id="1641" name="steakKnife">
-		<property name="Extends" value="huntingKnife" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-	<!--SDX	<property name="Meshfile" value="#CookingKnife?CookingKnife" /> -->
-        <property name="CustomIcon" value="CookingKnife" />
-		<property name="Weight" value="5" />
-		<property class="Action0">
-			<property name="Delay" value="1.2" />
-			<property name="Stamina_usage" value="4" />
-			<property name="Buff" value="bleeding,criticalBlunt" />
-			<property name="Buff_chance" value=".2,.2" />
-			<property name="DamageBonus.head" value="60" />
-			<property name="ToolCategory.Hunter" value="0.50" />
-			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="1" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="4,10" />
-			<property name="BlockDamage" value="2,4" />
-			<property name="DegradationMax" value="25,300" />
-			<property name="DegradationRate" value="5,5" />
-			<property name="DismembermentBaseChance" value="0.005,0.05" />
-			<property name="DismembermentBonus" value="0,0" />
-		</property>
-		<property name="DescriptionKey" value="steakKnifeDesc" />
-		<property name="CraftingSkillGroup" value="bladeSmithingCraft" />
-	</item>
-	<item id="1642" name="oldKnife">
-		<property name="Extends" value="steakKnife" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-	<!--SDX	<property name="Meshfile" value="#CombatKnife?CombatKnife" /> -->
-        <property name="CustomIcon" value="CookingKnife" />
-		<property class="Attributes">
-			<property name="DegradationMax" value="49,50" />
-			<property name="DegradationRate" value="1,1" />
-		</property>
-	</item>
-	<item id="1647" name="bat">
-		<property name="Extends" value="clubMaster" />
-		<property name="DescriptionKey" value="batDesc" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-	<!--SDX	<property name="Meshfile" value="#bat?Bat" /> -->
-        <property name="FuelValue" value="60" />
-		<property name="RepairTools" value="NoRepair" />
-		<property class="Action0">
-			<property name="Delay" value="1.3" />
-			<property name="Stamina_usage" value="6" />
-			<property name="Buff" value="criticalBlunt" />
-			<property name="Buff_chance" value=".35" />
-			<property name="DamageBonus.head" value="45" />
-			<property name="DamageBonus.stone" value=".5" />
-		</property>
-		<property class="Action1">
-			<property name="Delay" value="3.95" />
-			<property name="Stamina_usage" value="9" />
-			<property name="Buff" value="criticalBlunt" />
-			<property name="Buff_chance" value=".45" />
-			<property name="DamageBonus.head" value="68" />
-			<property name="DamageBonus.stone" value=".75" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="10,20" />
-			<property name="BlockDamage" value="3,13" />
-			<property name="DegradationMax" value="300,600" />
-			<property name="DegradationRate" value="3,1" />
-		</property>
-		<property name="DescriptionKey" value="batDesc" />
-	</item>
-    <item id="1650" name="nailedBat">
-		<property name="Extends" value="clubMaster" />
-		<property name="DescriptionKey" value="nailedBatDesc" />
-	<!--SDX	<property name="Meshfile" value="#crudeweapons?nailedBat" /> -->
-        <property name="RepairTools" value="nail" />
-		<property class="Action0">
-			<property name="Delay" value="1.35" />
-			<property name="Stamina_usage" value="8" />
-			<property name="Buff" value="bleeding,criticalBlunt" />
-			<property name="Buff_chance" value=".5,.45" />
-			<property name="DamageBonus.head" value="60" />
-			<property name="DamageBonus.wood" value="4" />
-			<property name="DamageBonus.cloth" value="1" />
-			<property name="DamageBonus.stone" value="1" />
-			<property name="DamageBonus.metal" value="2" />
-			<property name="DamageBonus.earth" value="1" />
-		</property>
-		<property class="Action1">
-			<property name="Delay" value="4.05" />
-			<property name="Stamina_usage" value="12" />
-			<property name="Buff" value="bleeding,criticalBlunt" />
-			<property name="Buff_chance" value=".6,.55" />
-			<property name="DamageBonus.head" value="90" />
-			<property name="DamageBonus.wood" value="5" />
-			<property name="DamageBonus.cloth" value="1.5" />
-			<property name="DamageBonus.stone" value="1.5" />
-			<property name="DamageBonus.metal" value="3" />
-			<property name="DamageBonus.earth" value="1.5" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="15,28" />
-			<property name="BlockDamage" value="3,13" />
-			<property name="DegradationMax" value="300,600" />
-		</property>
-		<property name="DescriptionKey" value="nailedBatDesc" />
-		<property name="CraftingSkillGroup" value="spikedClubsCraft" />
-	</item>
-	<item id="1651" name="lucille">
-		<property name="Extends" value="clubMaster" />
-	<!--SDX	<property name="Meshfile" value="#lucille?lucille" /> -->
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="17" />
-		<property name="Weight" value="15" />
-		<property name="FuelValue" value="30" />
-		<property class="Action0">
-			<property name="Delay" value="1.33" />
-			<property name="Sound_start" value="lucille_swing" />
-			<property name="Stamina_usage" value="8" />
-			<property name="Buff" value="lucilleimpact,bleeding,criticalBlunt" />
-			<property name="Buff_chance" value="1,.3,.45" />
-			<property name="DamageBonus.head" value="60" />
-			<property name="DamageBonus.hardStone" value="10" />
-			<property name="DamageBonus.wood" value="2" />
-			<property name="DamageBonus.steel" value="10" />
-			<property name="DamageBonus.stone" value="1" />
-			<property name="DamageBonus.metal" value="12" />
-		</property>
-		<property class="Action1">
-			<property name="Delay" value="3.98" />
-			<property name="Sound_start" value="lucille_swing" />
-			<property name="Stamina_usage" value="12" />
-			<property name="Buff" value="lucilleimpact,bleeding,criticalBlunt" />
-			<property name="Buff_chance" value="1,.5,.55" />
-			<property name="DamageBonus.head" value="90" />
-			<property name="DamageBonus.hardStone" value="15" />
-			<property name="DamageBonus.wood" value="3" />
-			<property name="DamageBonus.steel" value="15" />
-			<property name="DamageBonus.stone" value="1.5" />
-			<property name="DamageBonus.metal" value="18" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="13,38" />
-			<property name="BlockDamage" value="3,13" />
-			<property name="DegradationMax" value="200,600" />
-		</property>
-		<property name="DescriptionKey" value="lucilleDesc" />
-		<property name="CustomIcon" value="lucille" />
-		<property name="CraftingSkillGroup" value="lucilleCraft" />
-	</item>
-	<item id="1652" name="nightStick">
-		<property name="Extends" value="clubMaster" />
-	<!--SDX	<property name="Meshfile" value="#Baton?Baton" /> -->
-		<property name="Material" value="metal" />
-		<property name="RepairTools" value="shortMetalPipe" />
-		<property name="FuelValue" value="5" />
-		<property name="Weight" value="15" />
-		<property class="Action0">
-			<property name="Delay" value="1.3" />
-			<property name="Stamina_usage" value="8" />
-			<property name="Buff" value="criticalBlunt,breakLeg" />
-			<property name="Buff_chance" value=".3,1" />
-			<property name="DamageBonus.stone" value="0.5" />
-		</property>
-		<property class="Action1">
-			<property name="Delay" value="4.05" />
-			<property name="Stamina_usage" value="12" />
-			<property name="Buff" value="criticalBlunt,breakLeg" />
-			<property name="Buff_chance" value=".4,1" />
-			<property name="DamageBonus.stone" value="0.75" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="10,17" />
-			<property name="BlockDamage" value="3,13" />
-			<property name="DegradationMax" value="100,600" />
-		</property>
-		<property name="DescriptionKey" value="nightStickDesc" />
-		<property name="CraftingSkillGroup" value="nightStickCraft" />
-	</item>
-	<item id="1653" name="shockStick">
-		<property name="Extends" value="clubMaster" />
-	<!--SDX <property name="Meshfile" value="#electric?BatElectric" /> -->
-		<property name="Material" value="metal" />
-		<property name="RepairTools" value="shortMetalPipe" />
-		<property name="FuelValue" value="5" />
-		<property name="Weight" value="15" />
-		<property class="Action0">
-			<property name="Delay" value="1.4" />
-			<property name="Stamina_usage" value="9" />
-			<property name="Buff" value="criticalBlunt,shocked" />
-			<property name="Buff_chance" value="0.3,0.9" />
-			<property name="DamageBonus.stone" value="0.25" />
-		</property>
-		<property class="Action1">
-			<property name="Delay" value="4" />
-			<property name="Buff" value="criticalBlunt,shocked" />
-			<property name="Buff_chance" value="0.4,1" />
-			<property name="DamageBonus.stone" value="0.5" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="9,16" />
-			<property name="BlockDamage" value="2,12" />
-			<property name="DegradationMax" value="100,600" />
-		</property>
-		<property name="DescriptionKey" value="shockStickDesc" />
-		<property name="CraftingSkillGroup" value="shockStickCraft" />
-	</item>
-	<item id="1654" name="clubSteelSpiked">
-		<property name="Extends" value="clubSpiked" />
-		<property name="Material" value="Msteel" />
-		<property name="DescriptionKey" value="clubSteelSpikedDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_clubSteelSpiked" />
-		<property name="Weight" value="40" />
-		<property name="RepairTools" value="shortSteelPipe" />
-		<property class="Action0">
-			<property name="Delay" value="1.35" />
-			<property name="Stamina_usage" value="10" />
-			<property name="Buff" value="bleeding,criticalBlunt" />
-			<property name="Buff_chance" value=".4,.6" />
-			<property name="DamageBonus.metal" value="12" />
-			<property name="DamageBonus.glass" value="5" />
-			<property name="DamageBonus.steel" value="10" />
-			<property name="DamageBonus.hardStone" value="10" />
-			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="10" />
-		</property>
-		<property class="Action1">
-			<property name="Delay" value="4.04" />
-			<property name="Stamina_usage" value="15" />
-			<property name="Buff" value="bleeding,criticalBlunt" />
-			<property name="Buff_chance" value=".6,.7" />
-			<property name="DamageBonus.hardStone" value="15" />
-			<property name="DamageBonus.metal" value="18" />
-			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="10" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="20,40" />
-			<property name="DegradationMax" value="100,600" />
-		</property>
-		<property name="ActionSkillGroup" value="bluntWeaponsCraft" />
-		<property name="CraftingSkillGroup" value="spikedClubsCraft" />
-	</item>
-	<item id="1655" name="tomahawk">
-		<property name="Extends" value="fireaxeIron" />
-		<property name="HoldType" value="2" />
-    <!--SDX    <property name="Meshfile" value="#ZdWeapons?Tomahawk" />
-		<property name="HandMeshfile" value="#ZdWeapons?Tomahawk" />
-		<property name="DropMeshfile" value="#ZdWeapons?Tomahawk" /> -->
-		<property name="RepairTools" value="SharpeningStone" />
-        <property name="DegradationBreaksAfter" value="true" />
-		<property name="FuelValue" value="1" />
-		<property name="Weight" value="200" />
-		<property class="Action0">
-			<property name="Delay" value="1.3" />
-			<property name="Range" value="2.7" />
-            <property name="Stamina_usage" value="6" />
-			<property name="Buff" value="bleeding" />
-			<property name="Buff_chance" value=".5" />
-			<property name="DamageBonus.wood" value="7" />
-			<property name="DamageBonus.head" value="60" />
-            <property name="DamageBonus.glass" value="5" />
-			<property name="DamageBonus.stone" value="1" />
-			<property name="DamageBonus.cloth" value="5" />
-			<property name="DamageBonus.organic" value="10" />
-            <property name="DamageBonus.metal" value="1" />
-            <property name="DamageBonus.earth" value="0.3" />
-            <property name="DamageBonus.steel" value="0" />
-			<property name="DamageBonus.hardStone" value="0" />
-            <property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="4" />
-		</property>
-		<property class="Action1">
-            <property name="Class" value="Melee" />
-			<property name="Delay" value="5.1" />
-			<property name="Range" value="2.7" />
-            <property name="Stamina_usage" value="9" />
-            <property name="Buff" value="bleeding" />
-			<property name="Buff_chance" value=".6" />
-			<property name="DamageBonus.wood" value="9" />
-			<property name="DamageBonus.head" value="90" />
-            <property name="DamageBonus.glass" value="10" />
-			<property name="DamageBonus.stone" value="1.5" />
-			<property name="DamageBonus.cloth" value="15" />
-			<property name="DamageBonus.organic" value="10" />
-            <property name="DamageBonus.metal" value="1.5" />
-            <property name="DamageBonus.earth" value="0.45" />
-            <property name="DamageBonus.steel" value="0" />
-			<property name="DamageBonus.hardStone" value="0" />
-            <property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="4" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="6,15" />
-			<property name="BlockDamage" value="2,5" />
-			<property name="DegradationMax" value="100,600" />
-            <property name="DegradationRate" value="10,5" />
-			<property name="DismembermentBaseChance" value="0.05,0.4" />
-			<property name="DismembermentBonus" value="0.0004,0.005" />
-		</property>
-        <property name="DescriptionKey" value="tomahawkDesc" />
-        <property name="ActionSkillGroup" value="bladeWeaponsCraft" />
-    </item>
-	<item id="1665" name="katanamichonne">
-		<property name="Extends" value="machete" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-	<!--SDX	<property name="Meshfile" value="#michonnekatana?katana" /> -->
-		<property name="Material" value="Msteel" />
-		<property name="RepairTools" value="shortSteelPipe" />
-		<property name="HoldType" value="17" />
-		<property name="Weight" value="1000" />
-		<property class="Action0">
-			<property name="Delay" value="1.5" />
-			<property name="Range" value="2.9" />
-			<property name="Stamina_usage" value="9" />
-			<property name="Buff" value="katanaimpact,bleeding,criticalBlunt" />
-			<property name="Buff_chance" value="1,.8,.5" />
-			<property name="DamageBonus.wood" value="5" />
-			<property name="DamageBonus.head" value="77" />
-			<property name="ToolCategory.Hunter" value=".8" />
-		</property>
-		<property class="Action1">
-			<property name="Delay" value="4.5" />
-			<property name="Range" value="2.9" />
-			<property name="Stamina_usage" value="13" />
-			<property name="Buff" value="katanaimpact,bleeding,criticalBlunt" />
-			<property name="Buff_chance" value="1,.9,.6" />
-			<property name="DamageBonus.wood" value="7.5" />
-			<property name="DamageBonus.head" value="115.5" />
-			<property name="ToolCategory.Hunter" value=".8" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="15,35" />
-			<property name="BlockDamage" value="8,15" />
-			<property name="DismembermentBaseChance" value="0.007,1" />
-			<property name="DismembermentBonus" value="0.001,1" />
-		</property>
-		<property name="CraftingSkillGroup" value="bladeWeaponsCraft" />
-		<property name="DescriptionKey" value="katanaMichonneDesc" />
-		<property name="CustomIcon" value="katanaCraft" />
-	</item>
-    <item id="1993" name="fryingPan">
-		<property name="CustomIcon" value="ui_game_symbol_FryingPan" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-	<!--SDX	<property name="Meshfile" value="#Pan?Pan" /> -->
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="2" />
-		<property name="Stacknumber" value="1" />
-		<property name="RepairTools" value="shortMetalPipe" />
-		<property name="Degradation" value="50" param1="true" />
-		<property name="SoundDestroy" value="wooddestroy1" />
-		<property name="FuelValue" value="5" />
-        <property name="Weight" value="10" />
-		<property name="EconomicValue" value="200" />
-        <property name="SellableToTrader" value="false" />
-		<property class="Action0">
-			<property name="Class" value="Melee" />
-			<property name="Delay" value="1" />
-			<property name="Range" value="1.8" />
-			<property name="Sphere" value="0.9" />
-			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="3" />
-			<property name="DamageBonus.head" value="40" />
-			<property name="DamageBonus.cloth" value="0" />
-			<property name="DamageBonus.glass" value="5" />
-			<property name="DamageBonus.earth" value="0" />
-			<property name="DamageBonus.wood" value="0.1" />
-			<property name="DamageBonus.stone" value="0.5" />
-			<property name="DamageBonus.metal" value="0.1" />
-            <property name="DamageBonus.hardStone" value="0" />
-            <property name="DamageBonus.steel" value="0" />
-            <property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="2" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="5,15" />
-			<property name="BlockDamage" value="1,5" />
-			<property name="DegradationMax" value="100,600" />
-			<property name="DegradationRate" value="3,1" />
-		</property>
-		<property name="Group" value="food/Cooking" />
-		<property name="DescriptionKey" value="fryingPanDesc" />
-        <property name="ActionSkillGroup" value="bluntWeaponsCraft" />
-		<property name="CraftingSkillGroup" value="fryingPanCraft" />
-	</item>
-	<!--JZMOD TOOLS -->
-    <item id="3081" name="cobblestoneHammer">
-	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-	<!--SDX	<property name="Meshfile" value="#stoneHammer?stoneHammer" /> -->
-		<property name="Material" value="stone" />
-		<property name="HoldType" value="32" />
-		<property name="RepairTools" value="rockSmall" />
-		<property name="DegradationBreaksAfter" value="true" />
-		<property name="SoundDestroy" value="wooddestroy1" />
-		<property name="FuelValue" value="5" />
-        <property name="Weight" value="10" />
-		<property name="EconomicValue" value="200" />
-        <property name="SellableToTrader" value="false" />
-		<property class="Action0">
-            <property name="Class" value="Melee" />
-			<property name="Delay" value="0.8" />
-			<property name="Range" value="2.2" />
-			<property name="Block_range" value="4" />
-			<property name="Sphere" value="0.1" />
-			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="4" />
-			<property name="DamageBonus.head" value="5" />
-			<property name="DamageBonus.glass" value="5" />
-			<property name="DamageBonus.steel" value="0" />
-			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.stone" value="10" />
-            <property name="DamageBonus.wood" value="0" />
-			<property name="DamageBonus.metal" value="0" />
-			<property name="DamageBonus.cloth" value="1" />
-            <property name="ToolCategory.CobblestoneBlock" value="1" param1="10" />
-			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="1" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Repair" />
-			<property name="Delay" value="0.5" />
-			<property name="Repair_amount" value="250" />
-            <property name="Sound_start" value="UseActions/repair_block" />
-			<property name="Allowed_upgrade_items" value="cobblestones" />
-			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="1" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="8,20" />
-			<property name="BlockDamage" value="2,10" />
-			<property name="DegradationMax" value="100,600" />
-			<property name="DegradationRate" value="2,1" />
-		</property>
-		<property name="Group" value="Tools/Traps" />
-		<property name="ActionSkillGroup" value="cobblestoneBuilding" />
-		<property name="CraftingSkillGroup" value="cobblestoneCraft" />
-		<property name="RepairExpMultiplier" value="5.5" />
-	</item>
-    <item id="3082" name="brickHammer">
-        <property name="Extends" value="cobblestoneHammer" />
-	<!--SDX	<property name="Meshfile" value="#stonePickaxe?stonePickaxe" /> -->
-		<property class="Action0">
-           <property name="ToolCategory.BrickBlock" value="1" param1="10"/>
-		</property>
-		<property class="Action1">
-			<property name="Allowed_upgrade_items" value="bricks" />
-		</property>
-		<property name="ActionSkillGroup" value="brickBuilding" />
-		<property name="CraftingSkillGroup" value="brickHammerCraft" />
-	</item>
-    <item id="3083" name="concreteSledge">
-        <property name="Extends" value="cobblestoneHammer" />
-		<property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab" />
-		<property name="Material" value="metal" />
-		<property name="RepairTools" value="shortMetalPipe" />
-		<property name="HoldType" value="33" />
-		<property name="SoundDestroy" value="metaldestroy1" />
-		<property name="FuelValue" value="30" />
-		<property class="Action0">
-            <property name="ToolCategory.ConcreteBlock" value="1" param1="10"/>
-		</property>
-		<property class="Action1">
-			<property name="Allowed_upgrade_items" value="cementMix" />
-		</property>
-		<property name="ActionSkillGroup" value="concreteBuilding" />
- 		<property name="CraftingSkillGroup" value="concreteSledgeCraft" />
-	</item>
-    <item id="3084" name="rConcreteSledge">
-        <property name="Extends" value="concreteSledge" />
-		<property class="Action0">
-            <property name="ToolCategory.rConcreteBlock" value="1" param1="10"/>
-		</property>
-		<property class="Action1">
 
+<item id="1500" name="itemMaster">
+	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+	<property name="HoldType" value="45" />
+	<property name="Stacknumber" value="5000" />
+	<property name="Weight" value="5" />
+	<property name="Group" value="Resources" />
+	<property name="SellableToTrader" value="false" />
+</item>
+<item id="1829" name="foodMaster">
+	<property name="Meshfile" value="Items/Misc/parcel" />
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+	<property name="Material" value="organic" />
+	<property name="HoldType" value="31" />
+	<property name="Stacknumber" value="50" />
+	<property name="IsDeveloper" value="true" />
+    <property name="SellableToTrader" value="false" />
+	<property class="Action1">
+		<property name="Class" value="Eat" />
+		<property name="Delay" value="1.0" />
+		<property name="Use_time" value="..." />
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="0" />
+		<property name="Gain_water" value="0" />
+		<property name="Gain_stamina" value="0" />
+		<property name="Gain_wellness" value="0" />
+		<property name="Sound_start" value="UseActions/player_eating" />
+	</property>
+	<property name="Group" value="food/Cooking" />
+</item>
+<!--JZMOD WEAPONS AND WEAPON PARTS-->
+<!--JZMOD CROSSBOWS-->
+<item id="1503" name="crossbowScope">
+	<property name="Extends" value="crossbow" />
+	<property name="DescriptionKey" value="crossbowScopeDesc" />
+	<property class="Parts">
+		<property name="Stock" value="crossbowStockScope" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom" />
+		<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+		<property name="Zoom_max_out" value="40" />
+		<property name="Zoom_max_in" value="15" />
+	</property>
+</item>
+<item id="1504" name="autoCrossbow">
+	<property name="Extends" value="crossbow" />
+	<property name="DescriptionKey" value="autoCrossbowDesc" />
+	<property class="Parts">
+		<property name="Barrel" value="boltCylinder" />
+	</property>
+	<property class="Action0">
+		<property name="Magazine_size" value="6" />
+	</property>
+</item>
+<item id="1505" name="crossbow_Parts">
+	<property name="Extends" value="partsMaster" />
+	<property name="DescriptionKey" value="crossbow_PartsDesc" />
+	<property name="CustomIcon" value="parts44Magnum_parts" />
+	<property name="PartType" value="Pump" />
+    <property name="Weight" value="10" />
+	<property class="Attributes">
+		<property name="DegradationRate" value="3,1" />
+		<property name="DegradationMax" value="30,600" />
+	</property>
+	<property name="CraftingSkillGroup" value="crossbowCraft" />
+</item>
+<item id="1506" name="crossbow_Limb">
+	<property name="Extends" value="partsMaster" />
+	<property name="DescriptionKey" value="crossbow_LimbDesc" />
+	<property name="PartType" value="Receiver" />
+	<property name="Weight" value="10" />
+	<property class="Attributes">
+		<property name="DegradationMax" value="30,600" />
+	</property>
+	<property name="CraftingSkillGroup" value="crossbowCraft" />
+</item>
+<item id="1507" name="crossbow_Stock">
+	<property name="Extends" value="partsMaster" />
+	<property name="DescriptionKey" value="crossbow_StockDesc" />
+	<property name="PartType" value="Stock" />
+	<property name="Weight" value="10" />
+	<property name="FuelValue" value="15" />
+	<property class="Attributes">
+		<property name="DegradationMax" value="30,600" />
+	</property>
+	<property name="CraftingSkillGroup" value="crossbowCraft" />
+</item>
+<item id="1508" name="crossbow_Barrel">
+	<property name="Extends" value="partsMaster" />
+	<property name="DescriptionKey" value="crossbow_BarrelDesc" />
+	<property name="PartType" value="Barrel" />
+	<property name="Weight" value="10" />
+	<property class="Attributes">
+		<property name="Accuracy" value="1,0.01" />
+        <property name="DegradationMax" value="30,600" />
+	</property>
+	<property name="CraftingSkillGroup" value="crossbowCraft" />
+</item>
+<item id="1509" name="boltCylinder">
+	<property name="Extends" value="crossbow_Barrel" />
+	<property name="DescriptionKey" value="boltCylinderDesc" />
+	<property name="CraftingSkillGroup" value="crossbowCraft" />
+	</item>
+<item id="1510" name="crossbowStockScope">
+	<property name="Extends" value="crossbow_Stock" />
+	<property name="DescriptionKey" value="crossbowStockScopeDesc" />
+	<property name="CraftingSkillGroup" value="crossbowCraft" />
+</item>
+<item id="1511" name="carbonCrossbow">
+	<property name="Extends" value="crossbow" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+	<!--sdx <property name="Meshfile" value="#crossbownew?CrossbowNew" /> -->
+	<property name="CustomIcon" value="ui_game_symbol_CarbonCrossbow" />
+	<property name="DescriptionKey" value="carbonCrossbowDesc" />
+    <property name="Material" value="metal" />
+	<property class="Parts">
+		<property name="Stock" value="carbonCrossbow_Stock" />
+		<property name="Receiver" value="carbonCrossbow_Limb" />
+		<property name="Pump" value="carbonCrossbow_Parts" />
+		<property name="Barrel" value="carbonCrossbow_Barrel" />
+	</property>
+	<property class="Action0">
+		<property name="Magazine_items" value="steelCrossbowBolt, sedativeShot, infectedShot, stimulantShot, painKillerShot" />
+		<property name="Rays_spread" value="0.01" />
+	</property>
+</item>
+<item id="1512" name="carbonCrossbow_Parts">
+	<property name="Extends" value="crossbow_Parts" />
+	<property name="CustomIcon" value="parts44Magnum_parts" />
+    <property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
+	<property class="Attributes">
+		<property name="DegradationMax" value="100,1000" />
+	</property>
+	<property name="CraftingSkillGroup" value="crossbowCraft" />
+</item>
+<item id="1513" name="carbonCrossbow_Limb">
+	<property name="Extends" value="crossbow_Limb" />
+	<property name="CustomIcon" value="crossbow_Limb" />
+    <property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
+	<property class="Attributes">
+        <property name="DegradationMax" value="100,1000" />
+	</property>
+	<property name="CraftingSkillGroup" value="crossbowCraft" />
+</item>
+<item id="1514" name="carbonCrossbow_Stock">
+	<property name="Extends" value="crossbow_Stock" />
+	<property name="CustomIcon" value="crossbow_Stock" />
+    <property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
+	<property class="Attributes">
+		<property name="DegradationMax" value="100,1000" />
+	</property>
+	<property name="CraftingSkillGroup" value="crossbowCraft" />
+</item>
+<item id="1515" name="carbonCrossbow_Barrel">
+	<property name="Extends" value="crossbow_Barrel" />
+	<property name="CustomIcon" value="crossbow_Barrel" />
+       <property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
+	<property class="Attributes">
+		<property name="DegradationMax" value="100,1000" />
+	</property>
+	<property name="CraftingSkillGroup" value="crossbowCraft" />
+</item>
+<item id="1969" name="silencer">
+	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="DropMeshfile" value="Items/Misc/sack_dropedPrefab" />
+	<property name="Material" value="metal" />
+	<property name="HoldType" value="45" />
+	<property name="Weight" value="10" />
+	<property name="Stacknumber" value="6" />
+	<property name="Group" value="Ammo/Weapons" />
+	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
+	<property name="CustomIcon" value="ui_game_symbol_Silencer" />
+	<property name="DescriptionKey" value="SilencerDesc" />
+</item>
+<item id="1501" name="sniperRifle_scopeFrame">
+	<property name="Extends" value="silencer" />
+<!--sdx <property name="Meshfile" value="#weaponAttach?AcogPrebab" /> 
+	<property name="DropMeshfile" value="#weaponAttach?AcogPrebab" /> -->
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+	<property name="HoldType" value="36" />
+	<property class="Action1">
+		<property name="Class" value="Zoom" />
+		<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+		<property name="Zoom_max_out" value="40" />
+		<property name="Zoom_max_in" value="15" />
+	</property>
+	<property name="DescriptionKey" value="sniperRifle_scopeFrameDesc" />
+</item>
+<!--JZMOD CRAFTED GUNS-->
+<item id="1519" name="blunderbussDouble">
+	<property name="Extends" value="blunderbuss" />
+	<property name="DescriptionKey" value="BlunderbussDoubleDesc" />
+	<property class="Action0">
+		<property name="Magazine_size" value="2" />
+	</property>
+    <property name="CraftingSkillGroup" value="craftedGunsCraft" />
+</item>
+<item id="1520" name="craftedRifle">
+	<property name="Extends" value="gunHuntingRifle" />
+     <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
+<!--sdx<property name="HandMeshfile" value="#steampunk?buechse" />
+	<property name="DropMeshfile" value="#steampunk?buechse" /> -->
+	<property name="RepairTools" value="weaponRepairKit" />
+	<property name="HoldType" value="39" />
+    <property name="CrosshairOnAim" value="true" />
+	<property class="Parts">
+		<property name="Stock" value="craftedRifle_stock" />
+		<property name="Receiver" value="craftedRifle_receiver" />
+		<property name="Pump" value="revolver_parts" />
+		<property name="Barrel" value="craftedRifleBarrel" />
+	</property>
+	<property class="Action0">
+		<property name="Delay" value="1" />
+		<property name="Magazine_size" value="1" />
+		<property name="Magazine_items" value="308mmBullet" />
+		<property name="Magazine_item_ray_counts" value="1" />
+		<property name="Magazine_item_ray_spreads" value="0" />
+		<property name="Reload_time" value="3.9" />
+		<property name="Sound_start" value="Weapons/Ranged/Blunderbuss/blunderbuss_fire" />
+		<property name="Sound_reload" value="Weapons/Ranged/Blunderbuss/blunderbuss_reload" />
+		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun" />
+		</property>
+    <property name="CraftingSkillGroup" value="craftedGunsCraft" />
+</item>
+<item id="1521" name="craftedRifle_receiver">
+	<property name="Extends" value="partsMaster" />
+	<property name="DescriptionKey" value="craftedRiflePartsDesc" />
+    <property name="CustomIcon" value="partsHuntingRifle_receiver" />
+    <property name="PartType" value="Receiver" />
+	<property name="Weight" value="10" />
+	<property class="Attributes">
+		<property name="FalloffRange" value="50,80" />
+		<property name="EntityDamage" value="20,60" />
+		<property name="BlockDamage" value="3,5" />
+		<property name="DegradationMax" value="500,1000" />
+	</property>
+	<property name="CraftingSkillGroup" value="craftedGunsCraft" />
+</item>
+<item id="1522" name="craftedRifle_stock">
+	<property name="Extends" value="partsMaster" />
+	<property name="DescriptionKey" value="craftedRiflePartsDesc" />
+    <property name="CustomIcon" value="partsHuntingRifle_stock" />
+	<property name="PartType" value="Stock" />
+	<property name="Weight" value="10" />
+	<property class="Attributes">
+		<property name="DegradationRate" value="25,25" />
+		<property name="DegradationMax" value="500,1000" />
+	</property>
+	<property name="CraftingSkillGroup" value="craftedGunsCraft" />
+</item>
+<item id="1523" name="craftedRifleBarrel">
+	<property name="Extends" value="partsMaster" />
+	<property name="DescriptionKey" value="craftedRiflePartsDesc" />
+    <property name="CustomIcon" value="partsHuntingRifle_barrel" />
+	<property name="PartType" value="Barrel" />
+	<property name="Weight" value="20" />
+	<property class="Attributes">
+		<property name="Accuracy" value=".8,0.05" />
+		<property name="DegradationMax" value="500,1000" />
+	</property>
+	<property name="CraftingSkillGroup" value="craftedGunsCraft" />
+</item>
+<!--JZMOD HANDGUNS-->
+<item id="1524" name="oldRevolver">
+<!--sdx <property name="Meshfile" value="#revolver?revolverPrefab" /> -->
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+	<property name="Material" value="metal" />
+	<property name="HoldType" value="44" />
+	<property name="Weight" value="10" />
+	<property name="DegradationBreaksAfter" value="true" />
+       <property name="CustomIcon" value="gunRevolver" />
+       <property name="DescriptionKey" value="oldRevolverDesc" />
+	<property name="Stacknumber" value="1" />
+	<property name="Degradation" value="99999" param1="true" />
+	<property name="SoundJammed" value="Weapons/weapon_jam" />
+	<property class="Action0">
+		<property name="Class" value="Ranged" />
+		<property name="Delay" value="0.35" />
+		<property name="Range" value="40" />
+		<property name="Crosshair_min_distance" value="30" />
+		<property name="Crosshair_max_distance" value="50" />
+		<property name="Magazine_size" value="6" />
+		<property name="Magazine_items" value="9mmBullet" />
+		<property name="Magazine_item_ray_counts" value="1" />
+		<property name="Magazine_item_ray_spreads" value="0" />
+		<property name="Reload_time" value="2" />
+		<property name="Bullet_icon" value="pistol" />
+		<property name="Sound_start" value="revolver_fire" />
+		<property name="Sound_repeat" value="" />
+		<property name="Sound_end" value="" />
+		<property name="Sound_empty" value="revolver_emtpy" />
+		<property name="Sound_reload" value="Weapons/Ranged/44Magnum/44magnum_reload" />
+		<property name="Particles_muzzle_fire" value="nozzleflash" />
+		<property name="Particles_muzzle_smoke" value="nozzlesmoke" />
+		<property name="DamageBonus.head" value="60" />
+		<property name="DamageBonus.wood" value="2" />
+		<property name="DamageBonus.plants" value="3" />
+		<property name="DamageBonus.earth" value=".25" />
+		<property name="DamageBonus.metal" value="1" />
+		<property name="DamageBonus.stone" value="1" />
+		<property name="DamageBonus.glass" value="5" />
+		<property name="DamageBonus.cloth" value="25" />
+		<property name="DamageBonus.steel" value="0" />
+		<property name="DamageBonus.hardStone" value="0" />
+		<property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="1" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom" />
+		<property name="Zoom_max_out" value="35" />
+		<property name="Zoom_max_in" value="35" />
+	</property>
+	<property class="Attributes">
+		<property name="Accuracy" value="1,.03" />
+		<property name="EntityDamage" value="10,18" />
+		<property name="BlockDamage" value="3,5" />
+		<property name="FalloffRange" value="15,45" />
+		<property name="DegradationMax" value="1,50" />
+		<property name="DegradationRate" value="1,1" />
+	</property>
+	<property name="Group" value="Ammo/Weapons" />
+	<property name="ActionSkillGroup" value="Pistols" />
+</item>
+<item id="1525" name="oldRifle">
+	<property name="Extends" value="oldRevolver" />
+	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab" />
+	<property name="CustomIcon" value="gunHuntingRifle" />
+    <property name="DescriptionKey" value="oldRifleDesc" />
+    <property name="HoldType" value="30" />
+	<property name="FuelValue" value="15" />
+	<property name="Stacknumber" value="1" />
+	<property name="Degradation" value="99999" param1="true" />
+	<property name="SoundJammed" value="Weapons/weapon_jam" />
+	<property class="Action0">
+		<property name="Delay" value="0.6" />
+		<property name="Range" value="100" />
+		<property name="Crosshair_min_distance" value="30" />
+		<property name="Crosshair_max_distance" value="100" />
+		<property name="Magazine_size" value="1" />
+		<property name="Magazine_items" value="308mmBullet" />
+		<property name="Magazine_item_ray_counts" value="1" />
+		<property name="Magazine_item_ray_spreads" value="0" />
+		<property name="Reload_time" value="2.75" />
+		<property name="Horde_meter_rate" value=".25" />
+		<property name="Horde_meter_distance" value="20" />
+		<property name="Bullet_icon" value="uzi" />
+		<property name="Sound_start" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_fire" />
+		<property name="Sound_empty" value="Weapons/weapon_empty" />
+		<property name="Sound_reload" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_reload" />
+		<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+		<property name="DamageBonus.wood" value="1" />
+		<property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="1" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom" />
+		<property name="Zoom_max_out" value="35" />
+		<property name="Zoom_max_in" value="28" />
+	</property>
+	<property class="Attributes">
+		<property name="Accuracy" value=".75,0.2" />
+		<property name="EntityDamage" value="25,70" />
+		<property name="BlockDamage" value="3,5" />
+		<property name="FalloffRange" value="54,140" />
+		<property name="DegradationMax" value="1,50" />
+		<property name="DegradationRate" value="1,1" />
+	</property>
+	<property name="ActionSkillGroup" value="Rifles" />
+</item>
+<item id="1532" name="silencedPistolBarrel">
+	<property name="Extends" value="partsPistol_barrel" />
+	<property name="DescriptionKey" value="silencedPistolBarrelDesc" />
+	<property name="CustomIcon" value="partsPistol_barrel" />
+	<property name="CustomIconTint" value="FD9095" />
+	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
+</item>
+<item id="1545" name="44MagnumScope">
+	<property name="Extends" value="gun44Magnum" />
+	<property name="DescriptionKey" value="44MagnumScopeDesc" />
+	<property name="CustomIcon" value="ui_game_symbol_44MagnumScope" />
+	<property class="Parts">
+		<property name="Barrel" value="magnumFrameScope" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom" />
+		<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+		<property name="Zoom_max_out" value="40" />
+		<property name="Zoom_max_in" value="15" />
+	</property>
+</item>
+<item id="1546" name="magnumFrameScope">
+	<property name="Extends" value="parts44Magnum_frame" />
+	<property name="DescriptionKey" value="magnumFrameScopeDesc" />
+	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
+</item>
+<!--JZMOD HUNTING  RIFLE-->
+<item id="1547" name="huntingRifleScope">
+	<property name="Extends" value="gunHuntingRifle" />
+	<property name="DescriptionKey" value="huntingRifleScopeDesc" />
+	<property name="CustomIcon" value="ui_game_symbol_huntingRifleScope" />
+	<property class="Parts">
+		<property name="Stock" value="huntingRifleStockScope" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom" />
+		<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+		<property name="Zoom_max_out" value="40" />
+		<property name="Zoom_max_in" value="15" />
+	</property>
+</item>
+<item id="1548" name="silencedhuntingRifle">
+	<property name="Extends" value="gunHuntingRifle" />
+	<property name="DescriptionKey" value="silencedhuntingRifleDesc" />
+	<property name="CustomIcon" value="ui_game_symbol_SilencedhuntingRifle" />
+	<property class="Parts">
+		<property name="Barrel" value="silencedHuntingBarrel" />
+	</property>
+	<property class="Action0">
+		<property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
+	</property>
+</item>
+<item id="1549" name="huntingRifleSilScope">
+	<property name="Extends" value="gunHuntingRifle" />
+	<property name="DescriptionKey" value="huntingRifleSilScopeDesc" />
+	<property class="Parts">
+		<property name="Stock" value="huntingRifleStockScope" />
+		<property name="Barrel" value="silencedHuntingBarrel" />
+	</property>
+	<property class="Action0">
+		<property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom" />
+		<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+		<property name="Zoom_max_out" value="40" />
+		<property name="Zoom_max_in" value="15" />
+	</property>
+</item>
+<item id="1550" name="huntingRifleStockScope">
+	<property name="Extends" value="partsHuntingRifle_stock" />
+	<property name="DescriptionKey" value="huntingRifleStockScopeDesc" />
+	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
+</item>
+<item id="1551" name="silencedHuntingBarrel">
+	<property name="Extends" value="partsHuntingRifle_barrel" />
+	<property name="DescriptionKey" value="silencedHuntingBarrelDesc" />
+	<property name="CustomIcon" value="partsHuntingRifle_barrel" />
+	<property name="CustomIconTint" value="FD9095" />
+	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
+</item>
+<!--JZMOD RIFLES-->
+<item id="1586" name="silencedAK47">
+	<property name="Extends" value="gunAK47" />
+    <property name="CustomIcon" value="gunAK47" />
+    <property name="DescriptionKey" value="silencedAK47Desc" />
+	<property class="Parts">
+		<property name="Barrel" value="silencedAK47Barrel" />
+	</property>
+	<property class="Action0">
+	<property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
+	</property>
+</item>
+<item id="1587" name="scopedAK47">
+	<property name="Extends" value="gunAK47" />
+    <property name="CustomIcon" value="gunAK47" />
+	<property name="DescriptionKey" value="ScopedAK47Desc" />
+	<property class="Parts">
+		<property name="Stock" value="aK47StockScope" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom" />
+		<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+		<property name="Zoom_max_out" value="40" />
+		<property name="Zoom_max_in" value="15" />
+	</property>
+</item>
+<item id="1588" name="silentScopedAK47">
+	<property name="Extends" value="gunAK47" />
+    <property name="CustomIcon" value="gunAK47" />
+	<property name="DescriptionKey" value="SilentScopedAK47Desc" />
+	<property class="Parts">
+		<property name="Barrel" value="silencedAK47Barrel" />
+		<property name="Stock" value="aK47StockScope" />
+	</property>
+	<property class="Action0">
+		<property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom" />
+		<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+		<property name="Zoom_max_out" value="40" />
+		<property name="Zoom_max_in" value="15" />
+	</property>
+</item>
+<item id="1589" name="aK47StockScope">
+	<property name="Extends" value="partsAK47_stock" />
+	<property name="DescriptionKey" value="aK47StockScopeDesc" />
+	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
+</item>
+<item id="1590" name="silencedAK47Barrel">
+	<property name="Extends" value="partsAK47_barrel" />
+	<property name="DescriptionKey" value="silencedAK47BarrelDesc" />
+	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
+</item>
+<!--JZMOD AMMO-->
+<item id="1621" name="9mmFireBullet">
+	<property name="Extends" value="9mmBullet" />
+	<property name="DescriptionKey" value="9mmFireBulletDesc" />
+	<property name="CustomIcon" value="9mmFireBullet" />
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="ApplyBuff" value="1,1" param1="burning" />
+	</property>
+</item>
+<item id="1623" name="shotgunFireShell">
+	<property name="Extends" value="shotgunShell" />
+	<property name="DescriptionKey" value="shotgunFireShellDesc" />
+	<property name="CustomIcon" value="shotgunFireShell" />
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="ApplyBuff" value="1, 1" param1="burning" />
+	</property>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
+</item>
+<item id="1624" name="grenade">
+	<!--SDX <property name="Meshfile" value="#launcher?Grenade_launcher" /> -->
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+	<property name="Material" value="metal" />
+	<property name="HoldType" value="3" />
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="EntityDamage" value="20,50" />
+		<property name="BlockDamage" value="5,20" />
+		<!-- this is not working yet, it uses damage from Action1 -->
+	</property>
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Class" value="Projectile" />
+		<property name="Explosion.ParticleIndex" value="4" />
+		<!-- which prefab/particle is used -->
+		<property name="Explosion.RadiusBlocks" value="5" />
+		<!-- damage radius for blocks -->
+		<property name="Explosion.BlockDamage" value="50" />
+		<!-- damage for blocks in the center of the explosion -->
+		<property name="Explosion.RadiusEntities" value="5" />
+		<!-- damage radius for entities -->
+		<property name="Explosion.EntityDamage" value="50" />
+		<!-- damage for entities in the center of the explosion -->
+		<property name="Velocity" value="30" />
+		<property name="FlyTime" value=".25" />
+		<property name="LifeTime" value="8" />
+	</property>
+	<property name="Group" value="Ammo/Weapons" />
+</item>
+<item id="1625" name="heGrenade">
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+<!--SDX 	<property name="Meshfile" value="#launcher?Grenade_launcher" /> -->
+	<property name="Material" value="metal" />
+	<property name="HoldType" value="3" />
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="EntityDamage" value="25,50" />
+		<property name="BlockDamage" value="45,90" />
+		<!-- this is not working yet, it uses damage from Action1 -->
+	</property>
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Class" value="Projectile" />
+		<property name="Explosion.ParticleIndex" value="4" />
+		<!-- which prefab/particle is used -->
+		<property name="Explosion.RadiusBlocks" value="8" />
+		<!-- damage radius for blocks -->
+		<property name="Explosion.BlockDamage" value="150" />
+		<!-- damage for blocks in the center of the explosion -->
+		<property name="Explosion.RadiusEntities" value="10" />
+		<!-- damage radius for entities -->
+		<property name="Explosion.EntityDamage" value="150" />
+		<!-- damage for entities in the center of the explosion -->
+		<property name="Velocity" value="30" />
+		<property name="FlyTime" value=".25" />
+		<property name="LifeTime" value="8" />
+	</property>
+	<property name="Group" value="Ammo/Weapons" />
+</item>
+<item id="1626" name="demoRocket">
+	<property name="Extends" value="rocket" />
+	<property name="DescriptionKey" value="DemoRocketDesc" />
+	<property name="CustomIconTint" value="177c09" />
+	<property class="Action1">
+		<property name="Class" value="Projectile" />
+		<property name="Explosion.ParticleIndex" value="4" />
+		<property name="Explosion.RadiusBlocks" value="5" />
+		<property name="Explosion.BlockDamage" value="7" />
+		<property name="Explosion.RadiusEntities" value="1" />
+		<property name="Explosion.EntityDamage" value="25" />
+	</property>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="EntityDamage" value="5,10" />
+		<property name="BlockDamage" value="750,2000" />
+		<!-- this is not working yet, it uses damage from Action1 -->
+		<property name="ApplyBuff" value="1, 1" param1="burning" />
+	</property>
+	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
+</item>
+<item id="1627" name="308mmBullet">
+	<property name="Extends" value="762mmBullet" />
+	<property name="DescriptionKey" value="308mmBulletDesc" />
+	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
+</item>
+<item id="1628" name="556mmBullet">
+	<property name="Extends" value="762mmBullet" />
+	<property name="DescriptionKey" value="5.45mmBulletDesc" />
+	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
+</item>
+ 	<!--JZMOD MELEE WEAPONS -->
+<item id="1633" name="woodSpear">
+    <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+<!-- SDX	<property name="Meshfile" value="#crudeweapons?woddenSpear" /> 
+	<property name="HandMeshfile" value="#crudeweapons?woddenSpear" />
+	<property name="DropMeshfile" value="#crudeweapons?woddenSpear" /> -->
+	<property name="CustomIcon" value="ui_game_symbol_WoodSpear" />
+    <property name="Material" value="wood" />
+	<property name="HoldType" value="18" />
+	<property name="Stacknumber" value="1" />
+	<property name="SoundDestroy" value="wooddestroy1" />
+	<property name="FuelValue" value="24" />
+	<property name="Weight" value="1" />
+    <property name="CrosshairOnAim" value="true" />
+	<property name="CrosshairUpAfterShot" value="false" />
+	<property class="Action0">
+		<property name="Class" value="Catapult" />
+		<property name="Delay" value="2.2" />
+		<property name="Range" value="3.5" />
+		<property name="Magazine_size" value="1" />
+		<property name="Magazine_items" value="woodJavelin" />
+		<property name="Crosshair_min_distance" value="10" />
+		<property name="Crosshair_max_distance" value="20" />
+		<property name="Reload_time" value="2" />
+		<property name="Bullet_icon" value="uzi" />
+		<property name="Sound_start" value="Weapons/Ranged/Bows/Bow/bow_fire" />
+		<property name="Sound_repeat" value="" />
+		<property name="Sound_end" value="" />
+		<property name="Sound_empty" value="Weapons/weapon_empty" />
+		<property name="Sound_reload" value="Weapons/Ranged/Bows/Bow/bow_reload" />
+		<property name="Sound_draw" value="Weapons/Ranged/Bows/Bow/bow_draw" />
+		<property name="Sound_cancel" value="Weapons/Ranged/Bows/Bow/bow_fire_cancel" />
+		<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+		<property name="Max_strain_time" value="1" />
+		<property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="2" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Melee" />
+		<property name="Delay" value="1.8" />
+		<property name="Range" value="3.4" />
+		<property name="Sphere" value="0.1" />
+		<property name="Block_range" value="3" />
+		<property name="Sound_start" value="swoosh" />
+		<property name="Stamina_usage" value="8" />
+		<property name="Buff" value="bleeding,criticalBlunt" />
+		<property name="Buff_chance" value=".2,.2" />
+		<property name="DamageBonus.glass" value="25" />
+		<property name="DamageBonus.head" value="40" />
+		<property name="DamageBonus.wood" value="1" />
+		<property name="DamageBonus.earth" value="0.2" />
+		<property name="DamageBonus.metal" value="0" />
+		<property name="DamageBonus.cloth" value="5" />
+		<property name="DamageBonus.steel" value="0" />
+		<property name="DamageBonus.hardStone" value="0" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="4,10" />
+		<property name="BlockDamage" value="1,2" />
+		<property name="DegradationMax" value="50,250" />
+		<property name="DegradationRate" value="5,5" />
+	</property>
+	<property name="Group" value="Ammo/Weapons,Basics" />
+	<property name="DescriptionKey" value="woodSpearDesc" />
+	<property name="ActionSkillGroup" value="bladeWeaponsCraft" />
+	<property name="CraftingSkillGroup" value="woodSpearCraft" />
+</item>
+<item id="1634" name="woodJavelin">
+<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+<!--SDX	<property name="Meshfile" value="#crudeweapons?woddenSpear" />
+	<property name="HandMeshfile" value="#crudeweapons?woddenSpear" />
+	<property name="DropMeshfile" value="#crudeweapons?woddenSpear" /> -->
+    <property name="CustomIcon" value="ui_game_symbol_WoodSpear" />
+	<property name="Material" value="wood" />
+	<property name="HoldType" value="18" />
+	<property name="Stacknumber" value="250" />
+	<property name="FuelValue" value="24" />
+	<property name="Weight" value="1" />
+	<property class="Action1">
+		<property name="Class" value="Projectile" />
+		<property name="Explosion.ParticleIndex" value="0" />
+		<property name="Velocity" value="30" />
+		<property name="FlyTime" value="0.2" />
+		<property name="Gravity" value="-10" />
+		<property name="LifeTime" value="12" />
+		<property name="DamageBonus.head" value="50" />
+		<property name="DamageBonus.glass" value="5" />
+		<property name="DamageBonus.steel" value="0" />
+		<property name="DamageBonus.hardStone" value="0" />
+		<property name="DamageBonus.wood" value="0" />
+		<property name="DamageBonus.earth" value="0" />
+		<property name="DamageBonus.stone" value="0" />
+		<property name="DamageBonus.metal" value="0" />
+		<property name="DamageBonus.cloth" value="5" />
+		<property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="3" />
+	</property>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="EntityDamage" value="15,25" />
+		<property name="BlockDamage" value="1,2" />
+	</property>
+	<property name="DescriptionKey" value="woodSpearDesc" />
+    <property name="ActionSkillGroup" value="archeryAction" />
+	<property name="CraftingSkillGroup" value="woodSpearCraft" />
+</item>
+<item id="1635" name="ironSpear">
+	<property name="Extends" value="woodSpear" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+<!--SDX 	<property name="Meshfile" value="#spearBronze?spearBronze" />
+	<property name="HandMeshfile" value="#spearBronze?spearBronze" />
+	<property name="DropMeshfile" value="#spearBronze?spearBronze" /> -->
+	<property name="Material" value="metal" />
+    <property name="Weight" value="10" />
+	<property name="RepairTools" value="scrapIron" />
+	<property name="FuelValue" value="24" />
+    <property name="CrosshairOnAim" value="true" />
+	<property name="CrosshairUpAfterShot" value="false" />
+	<property class="Action0">
+    <property name="Magazine_items" value="ironJavelin" />
+	</property>
+	<property class="Action1">
+		<property name="Delay" value="2" />
+		<property name="Stamina_usage" value="9" />
+		<property name="Buff" value="bleeding,criticalBlunt" />
+		<property name="Buff_chance" value=".4,.4" />
+		<property name="DamageBonus.head" value="60" />
+		<property name="DamageBonus.metal" value="1" />
+		<property name="DamageBonus.stone" value="1" />
+	</property>
+    <property class="Attributes">
+		<property name="EntityDamage" value="5,15" />
+		<property name="DegradationMax" value="50,350" />
+	</property>
+	<property name="Group" value="Ammo/Weapons" />
+	<property name="DescriptionKey" value="ironSpearDesc" />
+	<property name="CustomIcon" value="ui_game_symbol_IronSpears" />
+	<property name="CraftingSkillGroup" value="ironSpearCraft" />
+</item>
+<item id="1636" name="ironJavelin">
+	<property name="Extends" value="woodJavelin" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+<!--SDX	<property name="Meshfile" value="#spearBronze?spearBronze" />
+	<property name="HandMeshfile" value="#spearBronze?spearBronze" />
+	<property name="DropMeshfile" value="#spearBronze?spearBronze" /> -->
+	<property name="Material" value="metal" />
+    <property name="Weight" value="10" />
+	<property name="CustomIcon" value="ui_game_symbol_IronSpears" />
+	<property class="Action1">
+		<property name="Gravity" value="-12" />
+		<property name="DamageBonus.metal" value="1" />
+		<property name="DamageBonus.stone" value="1" />
+	</property>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="EntityDamage" value="18,30" />
+	</property>
+	<property name="DescriptionKey" value="atlatlsDesc" />
+	<property name="CraftingSkillGroup" value="ironSpearCraft" />
+</item>
+<item id="1639" name="oldAxe">
+	<property name="Extends" value="fireaxeIron" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+   <!--SDX    <property name="Meshfile" value="#axe1?AXE5" /> -->
+	<property name="HoldType" value="2" />
+	<property name="RepairTools" value="NoRepair" />
+       <property name="CustomIcon" value="axe05" />
+	<property class="Action0">
+		<property name="Delay" value="1.3" />
+		<property name="Buff" value="bleeding,criticalBlunt" />
+		<property name="Buff_chance" value=".2,.2" />
+		<property name="DamageBonus.head" value="30" />
+		<property name="DamageBonus.wood" value="14" />
+	</property>
+	<property class="Action1">
+		<property name="Delay" value="4" />
+		<property name="Buff" value="bleeding,criticalBlunt" />
+		<property name="Buff_chance" value=".5,.8" />
+		<property name="DamageBonus.head" value="60" />
+		<property name="DamageBonus.wood" value="18" />
+	</property>
+	<property class="Attributes">
+		<property name="DegradationMax" value="25,200" />
+		<property name="DegradationRate" value="1,1" />
+		<property name="DismembermentBaseChance" value="0.08,0.1" />
+		<property name="DismembermentBonus" value="0.0008,0.001" />
+	</property>
+</item>
+<item id="1641" name="steakKnife">
+	<property name="Extends" value="huntingKnife" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+<!--SDX	<property name="Meshfile" value="#CookingKnife?CookingKnife" /> -->
+    <property name="CustomIcon" value="CookingKnife" />
+	<property name="Weight" value="5" />
+	<property class="Action0">
+		<property name="Delay" value="1.2" />
+		<property name="Stamina_usage" value="4" />
+		<property name="Buff" value="bleeding,criticalBlunt" />
+		<property name="Buff_chance" value=".2,.2" />
+		<property name="DamageBonus.head" value="60" />
+		<property name="ToolCategory.Hunter" value="0.50" />
+		<property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="1" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="4,10" />
+		<property name="BlockDamage" value="2,4" />
+		<property name="DegradationMax" value="25,300" />
+		<property name="DegradationRate" value="5,5" />
+		<property name="DismembermentBaseChance" value="0.005,0.05" />
+		<property name="DismembermentBonus" value="0,0" />
+	</property>
+	<property name="DescriptionKey" value="steakKnifeDesc" />
+	<property name="CraftingSkillGroup" value="bladeSmithingCraft" />
+</item>
+<item id="1642" name="oldKnife">
+	<property name="Extends" value="steakKnife" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+<!--SDX	<property name="Meshfile" value="#CombatKnife?CombatKnife" /> -->
+    <property name="CustomIcon" value="CookingKnife" />
+	<property class="Attributes">
+		<property name="DegradationMax" value="49,50" />
+		<property name="DegradationRate" value="1,1" />
+	</property>
+</item>
+<item id="1647" name="bat">
+	<property name="Extends" value="clubMaster" />
+	<property name="DescriptionKey" value="batDesc" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+<!--SDX	<property name="Meshfile" value="#bat?Bat" /> -->
+    <property name="FuelValue" value="60" />
+	<property name="RepairTools" value="NoRepair" />
+	<property class="Action0">
+		<property name="Delay" value="1.3" />
+		<property name="Stamina_usage" value="6" />
+		<property name="Buff" value="criticalBlunt" />
+		<property name="Buff_chance" value=".35" />
+		<property name="DamageBonus.head" value="45" />
+		<property name="DamageBonus.stone" value=".5" />
+	</property>
+	<property class="Action1">
+		<property name="Delay" value="3.95" />
+		<property name="Stamina_usage" value="9" />
+		<property name="Buff" value="criticalBlunt" />
+		<property name="Buff_chance" value=".45" />
+		<property name="DamageBonus.head" value="68" />
+		<property name="DamageBonus.stone" value=".75" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="10,20" />
+		<property name="BlockDamage" value="3,13" />
+		<property name="DegradationMax" value="300,600" />
+		<property name="DegradationRate" value="3,1" />
+	</property>
+	<property name="DescriptionKey" value="batDesc" />
+</item>
+   <item id="1650" name="nailedBat">
+	<property name="Extends" value="clubMaster" />
+	<property name="DescriptionKey" value="nailedBatDesc" />
+<!--SDX	<property name="Meshfile" value="#crudeweapons?nailedBat" /> -->
+    <property name="RepairTools" value="nail" />
+	<property class="Action0">
+		<property name="Delay" value="1.35" />
+		<property name="Stamina_usage" value="8" />
+		<property name="Buff" value="bleeding,criticalBlunt" />
+		<property name="Buff_chance" value=".5,.45" />
+		<property name="DamageBonus.head" value="60" />
+		<property name="DamageBonus.wood" value="4" />
+		<property name="DamageBonus.cloth" value="1" />
+		<property name="DamageBonus.stone" value="1" />
+		<property name="DamageBonus.metal" value="2" />
+		<property name="DamageBonus.earth" value="1" />
+	</property>
+	<property class="Action1">
+		<property name="Delay" value="4.05" />
+		<property name="Stamina_usage" value="12" />
+		<property name="Buff" value="bleeding,criticalBlunt" />
+		<property name="Buff_chance" value=".6,.55" />
+		<property name="DamageBonus.head" value="90" />
+		<property name="DamageBonus.wood" value="5" />
+		<property name="DamageBonus.cloth" value="1.5" />
+		<property name="DamageBonus.stone" value="1.5" />
+		<property name="DamageBonus.metal" value="3" />
+		<property name="DamageBonus.earth" value="1.5" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="15,28" />
+		<property name="BlockDamage" value="3,13" />
+		<property name="DegradationMax" value="300,600" />
+	</property>
+	<property name="DescriptionKey" value="nailedBatDesc" />
+	<property name="CraftingSkillGroup" value="spikedClubsCraft" />
+</item>
+<item id="1651" name="lucille">
+	<property name="Extends" value="clubMaster" />
+<!--SDX	<property name="Meshfile" value="#lucille?lucille" /> -->
+	<property name="Material" value="metal" />
+	<property name="HoldType" value="17" />
+	<property name="Weight" value="15" />
+	<property name="FuelValue" value="30" />
+	<property class="Action0">
+		<property name="Delay" value="1.33" />
+		<property name="Sound_start" value="lucille_swing" />
+		<property name="Stamina_usage" value="8" />
+		<property name="Buff" value="lucilleimpact,bleeding,criticalBlunt" />
+		<property name="Buff_chance" value="1,.3,.45" />
+		<property name="DamageBonus.head" value="60" />
+		<property name="DamageBonus.hardStone" value="10" />
+		<property name="DamageBonus.wood" value="2" />
+		<property name="DamageBonus.steel" value="10" />
+		<property name="DamageBonus.stone" value="1" />
+		<property name="DamageBonus.metal" value="12" />
+	</property>
+	<property class="Action1">
+		<property name="Delay" value="3.98" />
+		<property name="Sound_start" value="lucille_swing" />
+		<property name="Stamina_usage" value="12" />
+		<property name="Buff" value="lucilleimpact,bleeding,criticalBlunt" />
+		<property name="Buff_chance" value="1,.5,.55" />
+		<property name="DamageBonus.head" value="90" />
+		<property name="DamageBonus.hardStone" value="15" />
+		<property name="DamageBonus.wood" value="3" />
+		<property name="DamageBonus.steel" value="15" />
+		<property name="DamageBonus.stone" value="1.5" />
+		<property name="DamageBonus.metal" value="18" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="13,38" />
+		<property name="BlockDamage" value="3,13" />
+		<property name="DegradationMax" value="200,600" />
+	</property>
+	<property name="DescriptionKey" value="lucilleDesc" />
+	<property name="CustomIcon" value="lucille" />
+	<property name="CraftingSkillGroup" value="lucilleCraft" />
+</item>
+<item id="1652" name="nightStick">
+	<property name="Extends" value="clubMaster" />
+<!--SDX	<property name="Meshfile" value="#Baton?Baton" /> -->
+	<property name="Material" value="metal" />
+	<property name="RepairTools" value="shortMetalPipe" />
+	<property name="FuelValue" value="5" />
+	<property name="Weight" value="15" />
+	<property class="Action0">
+		<property name="Delay" value="1.3" />
+		<property name="Stamina_usage" value="8" />
+		<property name="Buff" value="criticalBlunt,breakLeg" />
+		<property name="Buff_chance" value=".3,1" />
+		<property name="DamageBonus.stone" value="0.5" />
+	</property>
+	<property class="Action1">
+		<property name="Delay" value="4.05" />
+		<property name="Stamina_usage" value="12" />
+		<property name="Buff" value="criticalBlunt,breakLeg" />
+		<property name="Buff_chance" value=".4,1" />
+		<property name="DamageBonus.stone" value="0.75" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="10,17" />
+		<property name="BlockDamage" value="3,13" />
+		<property name="DegradationMax" value="100,600" />
+	</property>
+	<property name="DescriptionKey" value="nightStickDesc" />
+	<property name="CraftingSkillGroup" value="nightStickCraft" />
+</item>
+<item id="1653" name="shockStick">
+	<property name="Extends" value="clubMaster" />
+<!--SDX <property name="Meshfile" value="#electric?BatElectric" /> -->
+	<property name="Material" value="metal" />
+	<property name="RepairTools" value="shortMetalPipe" />
+	<property name="FuelValue" value="5" />
+	<property name="Weight" value="15" />
+	<property class="Action0">
+		<property name="Delay" value="1.4" />
+		<property name="Stamina_usage" value="9" />
+		<property name="Buff" value="criticalBlunt,shocked" />
+		<property name="Buff_chance" value="0.3,0.9" />
+		<property name="DamageBonus.stone" value="0.25" />
+	</property>
+	<property class="Action1">
+		<property name="Delay" value="4" />
+		<property name="Buff" value="criticalBlunt,shocked" />
+		<property name="Buff_chance" value="0.4,1" />
+		<property name="DamageBonus.stone" value="0.5" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="9,16" />
+		<property name="BlockDamage" value="2,12" />
+		<property name="DegradationMax" value="100,600" />
+	</property>
+	<property name="DescriptionKey" value="shockStickDesc" />
+	<property name="CraftingSkillGroup" value="shockStickCraft" />
+</item>
+<item id="1654" name="clubSteelSpiked">
+	<property name="Extends" value="clubSpiked" />
+	<property name="Material" value="Msteel" />
+	<property name="DescriptionKey" value="clubSteelSpikedDesc" />
+	<property name="CustomIcon" value="ui_game_symbol_clubSteelSpiked" />
+	<property name="Weight" value="40" />
+	<property name="RepairTools" value="shortSteelPipe" />
+	<property class="Action0">
+		<property name="Delay" value="1.35" />
+		<property name="Stamina_usage" value="10" />
+		<property name="Buff" value="bleeding,criticalBlunt" />
+		<property name="Buff_chance" value=".4,.6" />
+		<property name="DamageBonus.metal" value="12" />
+		<property name="DamageBonus.glass" value="5" />
+		<property name="DamageBonus.steel" value="10" />
+		<property name="DamageBonus.hardStone" value="10" />
+		<property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="10" />
+	</property>
+	<property class="Action1">
+		<property name="Delay" value="4.04" />
+		<property name="Stamina_usage" value="15" />
+		<property name="Buff" value="bleeding,criticalBlunt" />
+		<property name="Buff_chance" value=".6,.7" />
+		<property name="DamageBonus.hardStone" value="15" />
+		<property name="DamageBonus.metal" value="18" />
+		<property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="10" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="20,40" />
+		<property name="DegradationMax" value="100,600" />
+	</property>
+	<property name="ActionSkillGroup" value="bluntWeaponsCraft" />
+	<property name="CraftingSkillGroup" value="spikedClubsCraft" />
+</item>
+<item id="1655" name="tomahawk">
+	<property name="Extends" value="fireaxeIron" />
+	<property name="HoldType" value="2" />
+   <!--SDX    <property name="Meshfile" value="#ZdWeapons?Tomahawk" />
+	<property name="HandMeshfile" value="#ZdWeapons?Tomahawk" />
+	<property name="DropMeshfile" value="#ZdWeapons?Tomahawk" /> -->
+	<property name="RepairTools" value="SharpeningStone" />
+    <property name="DegradationBreaksAfter" value="true" />
+	<property name="FuelValue" value="1" />
+	<property name="Weight" value="200" />
+	<property class="Action0">
+		<property name="Delay" value="1.3" />
+		<property name="Range" value="2.7" />
+        <property name="Stamina_usage" value="6" />
+		<property name="Buff" value="bleeding" />
+		<property name="Buff_chance" value=".5" />
+		<property name="DamageBonus.wood" value="7" />
+		<property name="DamageBonus.head" value="60" />
+        <property name="DamageBonus.glass" value="5" />
+		<property name="DamageBonus.stone" value="1" />
+		<property name="DamageBonus.cloth" value="5" />
+		<property name="DamageBonus.organic" value="10" />
+        <property name="DamageBonus.metal" value="1" />
+        <property name="DamageBonus.earth" value="0.3" />
+        <property name="DamageBonus.steel" value="0" />
+        <property name="DamageBonus.hardStone" value="0" />
+        <property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="4" />
+	</property>
+	<property class="Action1">
+        <property name="Class" value="Melee" />
+		<property name="Delay" value="5.1" />
+		<property name="Range" value="2.7" />
+        <property name="Stamina_usage" value="9" />
+        <property name="Buff" value="bleeding" />
+		<property name="Buff_chance" value=".6" />
+		<property name="DamageBonus.wood" value="9" />
+		<property name="DamageBonus.head" value="90" />
+        <property name="DamageBonus.glass" value="10" />
+		<property name="DamageBonus.stone" value="1.5" />
+		<property name="DamageBonus.cloth" value="15" />
+		<property name="DamageBonus.organic" value="10" />
+        <property name="DamageBonus.metal" value="1.5" />
+        <property name="DamageBonus.earth" value="0.45" />
+        <property name="DamageBonus.steel" value="0" />
+		<property name="DamageBonus.hardStone" value="0" />
+        <property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="4" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="6,15" />
+		<property name="BlockDamage" value="2,5" />
+		<property name="DegradationMax" value="100,600" />
+        <property name="DegradationRate" value="10,5" />
+		<property name="DismembermentBaseChance" value="0.05,0.4" />
+		<property name="DismembermentBonus" value="0.0004,0.005" />
+	</property>
+    <property name="DescriptionKey" value="tomahawkDesc" />
+    <property name="ActionSkillGroup" value="bladeWeaponsCraft" />
+</item>
+<item id="1665" name="katana">
+	<property name="Extends" value="machete" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+	<!--SDX	<property name="Meshfile" value="#michonnekatana?katana" /> -->
+	<property name="Material" value="Msteel" />
+	<property name="RepairTools" value="shortSteelPipe" />
+	<property name="HoldType" value="17" />
+	<property name="Weight" value="1000" />
+	<property class="Action0">
+		<property name="Delay" value="1.5" />
+		<property name="Range" value="2.9" />
+		<property name="Stamina_usage" value="9" />
+		<property name="Buff" value="katanaimpact,bleeding,criticalBlunt" />
+		<property name="Buff_chance" value="1,.8,.5" />
+		<property name="DamageBonus.wood" value="5" />
+		<property name="DamageBonus.head" value="77" />
+		<property name="ToolCategory.Hunter" value=".8" />
+	</property>
+	<property class="Action1">
+		<property name="Delay" value="4.5" />
+		<property name="Range" value="2.9" />
+		<property name="Stamina_usage" value="13" />
+		<property name="Buff" value="katanaimpact,bleeding,criticalBlunt" />
+		<property name="Buff_chance" value="1,.9,.6" />
+		<property name="DamageBonus.wood" value="7.5" />
+		<property name="DamageBonus.head" value="115.5" />
+		<property name="ToolCategory.Hunter" value=".8" />
+	</property>
+    <property class="Attributes">
+	<property name="EntityDamage" value="15,35" />
+	<property name="BlockDamage" value="8,15" />
+	<property name="DismembermentBaseChance" value="0.007,1" />
+	<property name="DismembermentBonus" value="0.001,1" />
+	</property>
+	<property name="CraftingSkillGroup" value="bladeWeaponsCraft" />
+	<property name="DescriptionKey" value="katanaMichonneDesc" />
+	<property name="CustomIcon" value="katanaCraft" />
+</item>
+<item id="1993" name="fryingPan">
+	<property name="CustomIcon" value="ui_game_symbol_FryingPan" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+<!--SDX	<property name="Meshfile" value="#Pan?Pan" /> -->
+	<property name="Material" value="metal" />
+	<property name="HoldType" value="2" />
+	<property name="Stacknumber" value="1" />
+	<property name="RepairTools" value="shortMetalPipe" />
+	<property name="Degradation" value="50" param1="true" />
+	<property name="SoundDestroy" value="wooddestroy1" />
+	<property name="FuelValue" value="5" />
+    <property name="Weight" value="10" />
+    <property name="EconomicValue" value="200" />
+    <property name="SellableToTrader" value="false" />
+	<property class="Action0">
+		<property name="Class" value="Melee" />
+		<property name="Delay" value="1" />
+		<property name="Range" value="1.8" />
+		<property name="Sphere" value="0.9" />
+		<property name="Sound_start" value="swoosh" />
+		<property name="Stamina_usage" value="3" />
+		<property name="DamageBonus.head" value="40" />
+		<property name="DamageBonus.cloth" value="0" />
+		<property name="DamageBonus.glass" value="5" />
+		<property name="DamageBonus.earth" value="0" />
+		<property name="DamageBonus.wood" value="0.1" />
+		<property name="DamageBonus.stone" value="0.5" />
+		<property name="DamageBonus.metal" value="0.1" />
+        <property name="DamageBonus.hardStone" value="0" />
+        <property name="DamageBonus.steel" value="0" />
+        <property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="2" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="5,15" />
+		<property name="BlockDamage" value="1,5" />
+		<property name="DegradationMax" value="100,600" />
+		<property name="DegradationRate" value="3,1" />
+	</property>
+	<property name="Group" value="food/Cooking" />
+	<property name="DescriptionKey" value="fryingPanDesc" />
+       <property name="ActionSkillGroup" value="bluntWeaponsCraft" />
+	<property name="CraftingSkillGroup" value="fryingPanCraft" />
+</item>
+<!--JZMOD TOOLS -->
+<item id="3081" name="cobblestoneHammer">
+    <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+<!--SDX	<property name="Meshfile" value="#stoneHammer?stoneHammer" /> -->
+	<property name="Material" value="stone" />
+	<property name="HoldType" value="32" />
+	<property name="RepairTools" value="rockSmall" />
+	<property name="DegradationBreaksAfter" value="true" />
+	<property name="SoundDestroy" value="wooddestroy1" />
+	<property name="FuelValue" value="5" />
+    <property name="Weight" value="10" />
+	<property name="EconomicValue" value="200" />
+    <property name="SellableToTrader" value="false" />
+	<property class="Action0">
+        <property name="Class" value="Melee" />
+		<property name="Delay" value="0.8" />
+		<property name="Range" value="2.2" />
+		<property name="Block_range" value="4" />
+		<property name="Sphere" value="0.1" />
+		<property name="Sound_start" value="swoosh" />
+		<property name="Stamina_usage" value="4" />
+		<property name="DamageBonus.head" value="5" />
+		<property name="DamageBonus.glass" value="5" />
+		<property name="DamageBonus.steel" value="0" />
+		<property name="DamageBonus.hardStone" value="0" />
+		<property name="DamageBonus.stone" value="10" />
+        <property name="DamageBonus.wood" value="0" />
+		<property name="DamageBonus.metal" value="0" />
+		<property name="DamageBonus.cloth" value="1" />
+        <property name="ToolCategory.CobblestoneBlock" value="1" param1="10" />
+		<property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="1" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Repair" />
+		<property name="Delay" value="0.5" />
+		<property name="Repair_amount" value="250" />
+        <property name="Sound_start" value="UseActions/repair_block" />
+		<property name="Allowed_upgrade_items" value="cobblestones" />
+		<property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="1" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="8,20" />
+		<property name="BlockDamage" value="2,10" />
+		<property name="DegradationMax" value="100,600" />
+		<property name="DegradationRate" value="2,1" />
+	</property>
+	<property name="Group" value="Tools/Traps" />
+	<property name="ActionSkillGroup" value="cobblestoneBuilding" />
+	<property name="CraftingSkillGroup" value="cobblestoneCraft" />
+	<property name="RepairExpMultiplier" value="5.5" />
+</item>
+<item id="3082" name="brickHammer">
+       <property name="Extends" value="cobblestoneHammer" />
+<!--SDX	<property name="Meshfile" value="#stonePickaxe?stonePickaxe" /> -->
+	<property class="Action0">
+          <property name="ToolCategory.BrickBlock" value="1" param1="10"/>
+	</property>
+	<property class="Action1">
+		<property name="Allowed_upgrade_items" value="bricks" />
+	</property>
+	<property name="ActionSkillGroup" value="brickBuilding" />
+	<property name="CraftingSkillGroup" value="brickHammerCraft" />
+</item>
+<item id="3083" name="concreteSledge">
+    <property name="Extends" value="cobblestoneHammer" />
+	<property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab" />
+	<property name="Material" value="metal" />
+	<property name="RepairTools" value="shortMetalPipe" />
+	<property name="HoldType" value="33" />
+	<property name="SoundDestroy" value="metaldestroy1" />
+	<property name="FuelValue" value="30" />
+	<property class="Action0">
+           <property name="ToolCategory.ConcreteBlock" value="1" param1="10"/>
+	</property>
+	<property class="Action1">
+	<property name="Allowed_upgrade_items" value="cementMix" />
+	</property>
+	<property name="ActionSkillGroup" value="concreteBuilding" />
+	<property name="CraftingSkillGroup" value="concreteSledgeCraft" />
+</item>
+<item id="3084" name="rConcreteSledge">
+    <property name="Extends" value="concreteSledge" />
+	<property class="Action0">
+           <property name="ToolCategory.rConcreteBlock" value="1" param1="10"/>
+	</property>
+	<property class="Action1">
 			<property name="Allowed_upgrade_items" value="concreteMix" />
-		</property>
-		<property name="ActionSkillGroup" value="rConcreteBuilding" />
- 		<property name="CraftingSkillGroup" value="rConcreteSledgeCraft" />
-	</item>
-	<item id="1670" name="screwdriver">
-		<property name="CustomIcon" value="ui_game_symbol_screwdriver" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-	<!--SDX	<property name="Meshfile" value="#screwdriver?screwdriver" /> -->
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="36" />
-		<property name="Stacknumber" value="1" />
-		<property name="RepairTools" value="shortMetalPipe" />
-		<property name="Degradation" value="350" param1="true" />
-		<property name="FuelValue" value="4" />
-		<property name="SoundDestroy" value="wooddestroy1" />
-		<property name="Weight" value="24" />
-		<property class="Action0">
-			<!-- AttackAction -->
-			<property name="Class" value="Melee" />
-			<property name="Delay" value="1.15" />
-			<property name="Range" value="2.2" />
-			<property name="Block_range" value="4" />
-			<property name="Sphere" value="0.1" />
-			<property name="Sound_start" value="swoosh" />
-			<property name="Sound_harvesting" value="UseActions/wrench_harvest" />
-			<property name="Stamina_usage" value="4" />
-			<property name="DamageBonus.head" value="3" />
-			<property name="DamageBonus.glass" value="5" />
-			<property name="DamageBonus.steel" value="0" />
-			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.stone" value="0.5" />
-			<property name="DamageBonus.wood" value="0.5" />
-			<property name="DamageBonus.metal" value="5" />
-			<property name="DamageBonus.cloth" value="5" />
-			<property name="ToolCategory.Disassemble" value="1" param1="10"/>
-			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="1" />
-		</property>
+	</property>
+	<property name="ActionSkillGroup" value="rConcreteBuilding" />
+	<property name="CraftingSkillGroup" value="rConcreteSledgeCraft" />
+</item>
+<item id="1670" name="screwdriver">
+	<property name="CustomIcon" value="ui_game_symbol_screwdriver" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+<!--SDX	<property name="Meshfile" value="#screwdriver?screwdriver" /> -->
+	<property name="Material" value="metal" />
+	<property name="HoldType" value="36" />
+	<property name="Stacknumber" value="1" />
+	<property name="RepairTools" value="shortMetalPipe" />
+	<property name="Degradation" value="350" param1="true" />
+	<property name="FuelValue" value="4" />
+	<property name="SoundDestroy" value="wooddestroy1" />
+	<property name="Weight" value="24" />
+	<property class="Action0">
+		<!-- AttackAction -->
+		<property name="Class" value="Melee" />
+		<property name="Delay" value="1.15" />
+		<property name="Range" value="2.2" />
+		<property name="Block_range" value="4" />
+		<property name="Sphere" value="0.1" />
+		<property name="Sound_start" value="swoosh" />
+		<property name="Sound_harvesting" value="UseActions/wrench_harvest" />
+		<property name="Stamina_usage" value="4" />
+		<property name="DamageBonus.head" value="3" />
+		<property name="DamageBonus.glass" value="5" />
+		<property name="DamageBonus.steel" value="0" />
+		<property name="DamageBonus.hardStone" value="0" />
+		<property name="DamageBonus.stone" value="0.5" />
+		<property name="DamageBonus.wood" value="0.5" />
+		<property name="DamageBonus.metal" value="5" />
+		<property name="DamageBonus.cloth" value="5" />
+		<property name="ToolCategory.Disassemble" value="1" param1="10"/>
+		<property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="1" />
+	</property>
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Class" value="Repair" />
+		<property name="Delay" value="0.4" />
+		<property name="Repair_amount" value="350" />
+		<property name="Upgrade_hit_offset" value="-2" />
+		<property name="Sound_start" value="UseActions/repair_block" />
+		<property name="Allowed_upgrade_items" value="Plank,scrapIron,forgedIron,fertileDirt,forgedSteel,clayLump,fertileDirt,stick,nail" />
+		<property name="Restricted_upgrade_items" value="concreteMix,cobblestones" />
+		<property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="1" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="4,10" />
+		<property name="BlockDamage" value="2,10" />
+		<property name="DegradationMax" value="100,1400" />
+		<property name="DegradationRate" value="2,1" />
+	</property>
+	<property name="Group" value="Tools/Traps" />
+    <property name="CraftingSkillGroup" value="screwdriverCraft" />
+	<property name="RepairExpMultiplier" value="5.5" />
+    <property name="ActionSkillGroup" value="engineeringCraft" />
+</item>
+<item id="1673" name="oldWrench">
+	<property name="Extends" value="wrench" />
+    <property name="CustomIcon" value="wrench" />
+	<property name="RepairTools" value="NoRepair" />
+	<property class="Attributes">
+		<property name="DegradationMax" value="1,100" />
+		<property name="DegradationRate" value="1,1" />
+	</property>
+</item>
+<item id="1675" name="welder">
+	<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
+<!--SDX	<property name="DropMeshfile" value="#drill?DrillTool" />
+	<property name="HandMeshfile" value="#drill?DrillTool" /> -->
+	<property name="Material" value="metal" />
+	<property name="RepairTools" value="forgedSteel" />
+	<property name="HoldType" value="37" />
+	<property name="Stacknumber" value="1" />
+	<property name="DegradationBreaksAfter" value="false" />
+	<property name="SoundJammed" value="Weapons/weapon_jam" />
+	<property class="Parts">
+		<property name="Stock" value="partsNailgun_frame" />
+		<property name="Receiver" value="welder_receiver" />
+		<property name="Pump" value="welder_parts" />
+		<property name="Barrel" value="partsNailgun_battery" />
+	</property>
+	<property class="Action0">
+		<property name="Class" value="Melee" />
+		<property name="Delay" value=".3" />
+		<property name="Range" value="2.2" />
+		<property name="Block_range" value="4" />
+		<property name="Sphere" value="0.1" />
+		<property name="Sound_start" value="swoosh" />
+		<property name="Sound_harvesting" value="UseActions/wrench_harvest" />
+		<property name="Stamina_usage" value="3" />
+		<property name="DamageBonus.head" value="20" />
+		<property name="DamageBonus.glass" value="5" />
+		<property name="DamageBonus.stone" value="0" />
+		<property name="DamageBonus.wood" value="0" />
+		<property name="DamageBonus.metal" value="5" />
+		<property name="DamageBonus.steel" value="5" />
+		<property name="DamageBonus.hardStone" value="0" />
+		<property name="DamageBonus.earth" value="0" />
+      	<property name="ToolCategory.SteelBlock" value="1" param1="10"/>
+		<property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="5" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Repair" />
+		<property name="Delay" value="0.4" />
+		<property name="Repair_amount" value="350" />
+		<property name="Sound_start" value="UseActions/repair_block" />
+		<property name="Allowed_upgrade_items" value="metalRivetSheet,scrapSteel,forgedSteel" />
+		<property name="ActionExp" value="1" />
+		<property name="ActionExpBonusMultiplier" value="1" />
+	</property>
+	<property name="Group" value="Tools/Traps" />
+	<property name="ActionSkillGroup" value="steelBuilding" />
+	<property name="CraftingSkillGroup" value="steelWelderCraft" />
+    <property name="DescriptionKey" value="compactDriverDesc" />
+	<property name="RepairExpMultiplier" value="2" />
+   </item>
+<item id="1676" name="welder_receiver">
+	<property name="Extends" value="partsNailgun_receiver" />
+       <property name="CustomIcon" value="partsNailgun_receiver" />
+	<property name="DescriptionKey" value="partsNailgunGroupDesc" />
+	<property class="Attributes">
+		<property name="BlockDamage" value="2,10" />
+		<property name="DegradationMax" value="2000,4000" />
+	</property>
+       <property name="CraftingSkillGroup" value="steelWelderCraft" />
+</item>
+<item id="1677" name="welder_parts">
+	<property name="Extends" value="partsNailgun_parts" />
+       <property name="CustomIcon" value="partsNailgun_parts" />
+	<property name="DescriptionKey" value="partsNailgunGroupDesc" />
+	<property class="Attributes">
+		<property name="EntityDamage" value="5,10" />
+		<property name="DegradationMax" value="2000,4000" />
+	</property>
+       <property name="CraftingSkillGroup" value="steelWelderCraft" />
+</item>
+<!--JZMOD ENGINE-->
+<item id="1678" name="exhaust">
+	<property name="PartType" value="Pump" />
+	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+	<property name="Material" value="metal" />
+	<property name="HoldType" value="45" />
+	<property name="Weight" value="75" />
+	<property name="Stacknumber" value="1" />
+	<property name="Group" value="Resources" />
+	<property name="Degradation" value="100" param1="true" />
+	<property name="DescriptionKey" value="exhaustDesc" />
+	<property class="Attributes">
+		<property name="VehicleNoise" value="1,0.1" />
+		<property name="VehicleStartDelayInSeconds" value="1,0.1" />
+		<property name="DegradationMax" value="1000,6000" />
+	</property>
+	<property name="CraftingSkillGroup" value="engineeringCraft" />
+</item>
+<item id="1679" name="engineBlock">
+	<property name="PartType" value="Barrel" />
+	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+	<property name="Material" value="metal" />
+	<property name="HoldType" value="45" />
+	<property name="Weight" value="200" />
+	<property name="Stacknumber" value="1" />
+	<property name="Group" value="Resources" />
+	<property name="Degradation" value="100" param1="true" />
+	<property name="DescriptionKey" value="engineBlockDesc" />
+	<property class="Attributes">
+        <property name="VehicleStartChance" value="0.5,0.99" />
+		<property name="VehicleTankSize" value="1000,2000" />
+		<property name="DegradationMax" value="1000,6000" />
+	</property>
+	<property name="CraftingSkillGroup" value="engineeringCraft" />
+</item>
+<!--JZMOD ARMOR -->
+<item id="1680" name="ironHelmet+Light">
+	<property name="Extends" value="ironHelmet" />
+	<property name="CustomIcon" value="ironHelmet" />
+	<property name="Class" value="ItemClassToggle" />
+	<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+	<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+	<property name="DescriptionKey" value="helmetLightDesc" />
+</item>
+<item id="1681" name="footballHelmet+Light">
+	<property name="Extends" value="footballHelmet" />
+	<property name="CustomIcon" value="footballHelmet" />
+	<property name="Class" value="ItemClassToggle" />
+	<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+	<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+	<property name="DescriptionKey" value="helmetLightDesc" />
+</item>
+<item id="1682" name="militaryHelmet+Light">
+	<property name="Extends" value="militaryHelmet" />
+	<property name="CustomIcon" value="militaryHelmet" />
+	<property name="Class" value="ItemClassToggle" />
+	<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+	<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+	<property name="DescriptionKey" value="helmetLightDesc" />
+</item>
+<item id="1683" name="scrapHelmet+Light">
+	<property name="Extends" value="scrapHelmet" />
+	<property name="CustomIcon" value="scrapHelmet" />
+	<property name="Class" value="ItemClassToggle" />
+	<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+	<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+	<property name="DescriptionKey" value="helmetLightDesc" />
+</item>
+<item id="1690" name="tatteredShirt">
+    <property name="CustomIcon" value="shirt" />
+	<property name="Insulation" value="0" />
+	<property name="Material" value="cloth" />
+	<property name="DegradationBreaksAfter" value="true" />
+	<property name="FuelValue" value="3" />
+	<property name="Weight" value="20" />
+	<property name="SellableToTrader" value="false" />
+	<property name="EquipSlot" value="Chest" />
+	<property name="HoldType" value="45" />
+	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+	<property class="Attributes">
+		<property name="ConcussiveProtection" value="0,0" />
+		<property name="PunctureProtection" value="0,0" />
+		<property name="FireProtection" value="0,0" />
+		<property name="RadiationProtection" value="0,0" />
+		<property name="DegradationMax" value="1,100" />
+	</property>
+	<property class="UMA">
+		<property name="Mesh" value="shirt" />
+		<property name="Overlay0" value="shirt" />
+		<property name="Layer" value="0" />
+		<property name="Mask0" value="chest" param1="inner" />
+		<property name="UISlot" value="Shirt" />
+	</property>
+	<property name="ActionSkillGroup" value="Light Armor" />
+	<property name="DescriptionKey" value="tatteredClothesDesc" />
+</item>
+<item id="1691" name="tatteredPants">
+	<property name="Insulation" value="0" />
+    <property name="CustomIcon" value="denimPants" />
+	<property name="Material" value="cloth" />
+	<property name="DegradationBreaksAfter" value="true" />
+	<property name="FuelValue" value="6" />
+	<property name="Weight" value="30" />
+	<property name="SellableToTrader" value="false" />
+	<property name="EquipSlot" value="Legs" />
+	<property name="HoldType" value="45" />
+	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+	<property class="Attributes">
+		<property name="ConcussiveProtection" value="0,0" />
+		<property name="PunctureProtection" value="0,0" />
+		<property name="FireProtection" value="0,0" />
+		<property name="RadiationProtection" value="0,0" />
+		<property name="DegradationMax" value="1,100" />
+	</property>
+	<property class="UMA">
+		<property name="Mesh" value="clothes_denim_pants" />
+		<property name="Overlay0Tint" value="90,115,125" />
+        <property name="Overlay0" value="pants_01" />
+		<property name="Layer" value="0" />
+		<property name="Mask0" value="legs" param1="inner" />
+		<property name="UISlot" value="Pants" />
+	</property>
+	<property name="ActionSkillGroup" value="Light Armor" />
+	<property name="DescriptionKey" value="tatteredClothesDesc" />
+</item>
+<item id="1692" name="tatteredShoes">
+    <property name="CustomIcon" value="runningShoes" />
+	<property name="Insulation" value="0" />
+	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+	<property name="Material" value="cloth" />
+	<property name="Weight" value="15" />
+	<property name="HoldType" value="45" />
+	<property name="DegradationBreaksAfter" value="true" />
+	<property name="EquipSlot" value="Feet" />
+	<property name="FuelValue" value="3" />
+	<property name="SellableToTrader" value="false" />
+	<property class="Attributes">
+		<property name="ConcussiveProtection" value="0,0" />
+		<property name="PunctureProtection" value="0,0" />
+		<property name="FireProtection" value="0,0" />
+		<property name="RadiationProtection" value="0,0" />
+		<property name="DegradationMax" value="1,100" />
+	</property>
+	<property class="UMA">
+		<property name="Mesh" value="running_shoes" />
+		<property name="Overlay0" value="running_shoes" />
+		<property name="Layer" value="0" />
+		<property name="UISlot" value="Footwear" />
+	</property>
+	<property name="ActionSkillGroup" value="Light Armor" />
+	<property name="DescriptionKey" value="tatteredClothesDesc" />
+</item>
+<!--JZMOD Professions-->
+<item id="1693" name="soldier">
+	<property name="Extends" value="schematicMaster" />
+    <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="soldier" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1694" name="farmer">
+	<property name="Extends" value="schematicMaster" />
+    <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="farmer" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1695" name="chemist">
+	<property name="Extends" value="schematicMaster" />
+    <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="chemist" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1696" name="carpenter">
+	<property name="Extends" value="schematicMaster" />
+    <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="carpenter" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1697" name="cop">
+	<property name="Extends" value="schematicMaster" />
+    <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="cop" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1698" name="doctor">
+	<property name="Extends" value="schematicMaster" />
+    <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="doctor" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1700" name="chef">
+	<property name="Extends" value="schematicMaster" />
+       <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="chef" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1701" name="fitness Instructor">
+	<property name="Extends" value="schematicMaster" />
+       <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="fitness Instructor" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1702" name="fireman">
+	<property name="Extends" value="schematicMaster" />
+       <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="fireman" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1703" name="construction Worker">
+	<property name="Extends" value="schematicMaster" />
+       <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="construction Worker" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1704" name="electrician">
+	<property name="Extends" value="schematicMaster" />
+       <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="electrician" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1705" name="metal Worker">
+	<property name="Extends" value="schematicMaster" />
+       <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="metal Worker" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1706" name="burglar">
+	<property name="Extends" value="schematicMaster" />
+       <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="burglar" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1707" name="park Ranger">
+	<property name="Extends" value="schematicMaster" />
+       <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="park Ranger" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1708" name="mechanic">
+	<property name="Extends" value="schematicMaster" />
+       <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="mechanic" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+<!--JZMOD SKILLBOOKS-->
+<item id="1709" name="handSaw">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="plank" />
+	</property>
+	<property name="DescriptionKey" value="handSawDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1711" name="claiming Your Shit">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="keystoneRock,keystoneIron,keystoneSteel" />
+	</property>
+	<property name="DescriptionKey" value="skillBookDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1719" name="bed Book">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="bed02" />
+	</property>
+	<property name="DescriptionKey" value="skillBookDesc" />
+	<property name="CustomIcon" value="blockbook" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1720" name="camo Net Book">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="camoNetBlock,camoNetRamp,camoNetSheet,camoNetCNRFull" />
+	</property>
+	<property name="DescriptionKey" value="skillBookDesc" />
+	<property name="CustomIcon" value="blockbook" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1724" name="glass Book">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="glassCTRSheet,glassShowerBlock,glassIndustrialCTRPlate,glassIndustrial02CTRPlate,glassBusinessSheet,glassBusinessCTRSheet,glassBusinessBlock" />
+	</property>
+	<property name="DescriptionKey" value="skillBookDesc" />
+	<property name="CustomIcon" value="blockbook" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1734" name="awning Book">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="awningBlock,awningRamp" />
+	</property>
+	<property name="DescriptionKey" value="skillBookDesc" />
+	<property name="CustomIcon" value="blockbook" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1735" name="fencing">
+	<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<!-- UseAction -->
-			<property name="Class" value="Repair" />
-			<property name="Delay" value="0.4" />
-			<property name="Repair_amount" value="350" />
-			<property name="Upgrade_hit_offset" value="-2" />
-			<property name="Sound_start" value="UseActions/repair_block" />
-			<property name="Allowed_upgrade_items" value="Plank,scrapIron,forgedIron,fertileDirt,forgedSteel,clayLump,fertileDirt,stick,nail" />
-			<property name="Restricted_upgrade_items" value="concreteMix,cobblestones" />
-			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="1" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="4,10" />
-			<property name="BlockDamage" value="2,10" />
-			<property name="DegradationMax" value="100,1400" />
-			<property name="DegradationRate" value="2,1" />
-		</property>
-		<property name="Group" value="Tools/Traps" />
-        <property name="CraftingSkillGroup" value="screwdriverCraft" />
-		<property name="RepairExpMultiplier" value="5.5" />
-        <property name="ActionSkillGroup" value="engineeringCraft" />
-	</item>
-	<item id="1673" name="oldWrench">
-		<property name="Extends" value="wrench" />
-        <property name="CustomIcon" value="wrench" />
-		<property name="RepairTools" value="NoRepair" />
-		<property class="Attributes">
-			<property name="DegradationMax" value="1,100" />
-			<property name="DegradationRate" value="1,1" />
-		</property>
-	</item>
-	<item id="1675" name="welder">
-		<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
-	<!--SDX	<property name="DropMeshfile" value="#drill?DrillTool" />
-		<property name="HandMeshfile" value="#drill?DrillTool" /> -->
-		<property name="Material" value="metal" />
-		<property name="RepairTools" value="forgedSteel" />
-		<property name="HoldType" value="37" />
-		<property name="Stacknumber" value="1" />
-		<property name="DegradationBreaksAfter" value="false" />
-		<property name="SoundJammed" value="Weapons/weapon_jam" />
-		<property class="Parts">
-			<property name="Stock" value="partsNailgun_frame" />
-			<property name="Receiver" value="welder_receiver" />
-			<property name="Pump" value="welder_parts" />
-			<property name="Barrel" value="partsNailgun_battery" />
-		</property>
-		<property class="Action0">
-			<property name="Class" value="Melee" />
-			<property name="Delay" value=".3" />
-			<property name="Range" value="2.2" />
-			<property name="Block_range" value="4" />
-			<property name="Sphere" value="0.1" />
-			<property name="Sound_start" value="swoosh" />
-			<property name="Sound_harvesting" value="UseActions/wrench_harvest" />
-			<property name="Stamina_usage" value="3" />
-			<property name="DamageBonus.head" value="20" />
-			<property name="DamageBonus.glass" value="5" />
-			<property name="DamageBonus.stone" value="0" />
-			<property name="DamageBonus.wood" value="0" />
-			<property name="DamageBonus.metal" value="5" />
-			<property name="DamageBonus.steel" value="5" />
-			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.earth" value="0" />
-          	<property name="ToolCategory.SteelBlock" value="1" param1="10"/>
-			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Repair" />
-			<property name="Delay" value="0.4" />
-			<property name="Repair_amount" value="350" />
-			<property name="Sound_start" value="UseActions/repair_block" />
-			<property name="Allowed_upgrade_items" value="metalRivetSheet,scrapSteel,forgedSteel" />
-			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="1" />
-		</property>
-		<property name="Group" value="Tools/Traps" />
-		<property name="ActionSkillGroup" value="steelBuilding" />
-		<property name="CraftingSkillGroup" value="steelWelderCraft" />
-        <property name="DescriptionKey" value="compactDriverDesc" />
-		<property name="RepairExpMultiplier" value="2" />
-    </item>
-	<item id="1676" name="welder_receiver">
-		<property name="Extends" value="partsNailgun_receiver" />
-        <property name="CustomIcon" value="partsNailgun_receiver" />
-		<property name="DescriptionKey" value="partsNailgunGroupDesc" />
-		<property class="Attributes">
-			<property name="BlockDamage" value="2,10" />
-			<property name="DegradationMax" value="2000,4000" />
-		</property>
-        <property name="CraftingSkillGroup" value="steelWelderCraft" />
-	</item>
-	<item id="1677" name="welder_parts">
-		<property name="Extends" value="partsNailgun_parts" />
-        <property name="CustomIcon" value="partsNailgun_parts" />
-		<property name="DescriptionKey" value="partsNailgunGroupDesc" />
-		<property class="Attributes">
-			<property name="EntityDamage" value="5,10" />
-			<property name="DegradationMax" value="2000,4000" />
-		</property>
-        <property name="CraftingSkillGroup" value="steelWelderCraft" />
-	</item>
-    <!--
-    <item id="2079" name="Crowbar">
-		<property name="Meshfile" value="#Crowbar?Crowbar" />
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="2" />
-		<property name="Stacknumber" value="1" />
-		<property name="DegradationBreaksAfter" value="false" />
-		<property name="Degradation" value="99999" param1="true" />
-		<property name="SoundDestroy" value="metaldestroy1" />
-        <property name="SellableToTrader" value="false" />
-		<property class="Action0">
-			<property name="Class" value="Melee" />
-			<property name="Delay" value="1.1" />
-			<property name="Range" value="2.2" />
-			<property name="Block_range" value="4" />
-			<property name="DamageEntity" value="7" />
-			<property name="DamageBlock" value="5" />
-			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="90" />
-			<property name="DamageBonus.head" value="0" />
-			<property name="DamageBonus.glass" value="0" />
-			<property name="DamageBonus.stone" value="0" />
-			<property name="DamageBonus.wood" value="0" />
-			<property name="DamageBonus.metal" value="0" />
-			<property name="DamageBonus.cloth" value="0" />
-            <property name="DamageBonus.steel" value="0" />
-            <property name="DamageBonus.hardStone" value="0" />
-            <property name="DamageBonus.earth" value="0" />
-			<property name="ToolCategory.Crowbar" value="1" />
-		</property>
-        <property class="Action1">
-			<property name="Class" value="Repair" />
-			<property name="Delay" value="0.5" />
-			<property name="Repair_amount" value="0" />
-            <property name="Sound_start" value="UseActions/repair_block" />
-			<property name="Allowed_upgrade_items" value="Crowbar" />
-			<property name="ActionExp" value="0" />
-			<property name="ActionExpBonusMultiplier" value="0" />
-		</property>
-		<property name="Group" value="Tools/Traps" />
-		<property name="CraftingSkillGroup" value="Crowbar" />
-		<property name="DescriptionKey" value="HandDollyDesc" />
-	</item>-->
-	<!--JZMOD ENGINE-->
-	<item id="1678" name="exhaust">
-		<property name="PartType" value="Pump" />
-		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="45" />
-		<property name="Weight" value="75" />
-		<property name="Stacknumber" value="1" />
-		<property name="Group" value="Resources" />
-		<property name="Degradation" value="100" param1="true" />
-		<property name="DescriptionKey" value="exhaustDesc" />
-		<property class="Attributes">
-			<property name="VehicleNoise" value="1,0.1" />
-			<property name="VehicleStartDelayInSeconds" value="1,0.1" />
-			<property name="DegradationMax" value="1000,6000" />
-		</property>
-		<property name="CraftingSkillGroup" value="engineeringCraft" />
-	</item>
-	<item id="1679" name="engineBlock">
-		<property name="PartType" value="Barrel" />
-		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="45" />
-		<property name="Weight" value="200" />
-		<property name="Stacknumber" value="1" />
-		<property name="Group" value="Resources" />
-		<property name="Degradation" value="100" param1="true" />
-		<property name="DescriptionKey" value="engineBlockDesc" />
-		<property class="Attributes">
-            <property name="VehicleStartChance" value="0.5,0.99" />
-			<property name="VehicleTankSize" value="1000,2000" />
-			<property name="DegradationMax" value="1000,6000" />
-		</property>
-		<property name="CraftingSkillGroup" value="engineeringCraft" />
-	</item>
-	<!--JZMOD ARMOR -->
-	<item id="1680" name="ironHelmet+Light">
-		<property name="Extends" value="ironHelmet" />
-		<property name="CustomIcon" value="ironHelmet" />
-		<property name="Class" value="ItemClassToggle" />
-		<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
-		<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
-		<property name="DescriptionKey" value="helmetLightDesc" />
-	</item>
-	<item id="1681" name="footballHelmet+Light">
-		<property name="Extends" value="footballHelmet" />
-		<property name="CustomIcon" value="footballHelmet" />
-		<property name="Class" value="ItemClassToggle" />
-		<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
-		<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
-		<property name="DescriptionKey" value="helmetLightDesc" />
-	</item>
-	<item id="1682" name="militaryHelmet+Light">
-		<property name="Extends" value="militaryHelmet" />
-		<property name="CustomIcon" value="militaryHelmet" />
-		<property name="Class" value="ItemClassToggle" />
-		<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
-		<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
-		<property name="DescriptionKey" value="helmetLightDesc" />
-	</item>
-	<item id="1683" name="scrapHelmet+Light">
-		<property name="Extends" value="scrapHelmet" />
-		<property name="CustomIcon" value="scrapHelmet" />
-		<property name="Class" value="ItemClassToggle" />
-		<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
-		<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
-		<property name="DescriptionKey" value="helmetLightDesc" />
-	</item>
-	<item id="1690" name="tatteredShirt">
-        <property name="CustomIcon" value="shirt" />
-		<property name="Insulation" value="0" />
-		<property name="Material" value="cloth" />
-		<property name="DegradationBreaksAfter" value="true" />
-		<property name="FuelValue" value="3" />
-		<property name="Weight" value="20" />
-		<property name="SellableToTrader" value="false" />
-		<property name="EquipSlot" value="Chest" />
-		<property name="HoldType" value="45" />
-		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property class="Attributes">
-			<property name="ConcussiveProtection" value="0,0" />
-			<property name="PunctureProtection" value="0,0" />
-			<property name="FireProtection" value="0,0" />
-			<property name="RadiationProtection" value="0,0" />
-			<property name="DegradationMax" value="1,100" />
-		</property>
-		<property class="UMA">
-			<property name="Mesh" value="shirt" />
-			<property name="Overlay0" value="shirt" />
-			<property name="Layer" value="0" />
-			<property name="Mask0" value="chest" param1="inner" />
-			<property name="UISlot" value="Shirt" />
-		</property>
-		<property name="ActionSkillGroup" value="Light Armor" />
-		<property name="DescriptionKey" value="tatteredClothesDesc" />
-	</item>
-	<item id="1691" name="tatteredPants">
-		<property name="Insulation" value="0" />
-        <property name="CustomIcon" value="denimPants" />
-		<property name="Material" value="cloth" />
-		<property name="DegradationBreaksAfter" value="true" />
-		<property name="FuelValue" value="6" />
-		<property name="Weight" value="30" />
-		<property name="SellableToTrader" value="false" />
-		<property name="EquipSlot" value="Legs" />
-		<property name="HoldType" value="45" />
-		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property class="Attributes">
-			<property name="ConcussiveProtection" value="0,0" />
-			<property name="PunctureProtection" value="0,0" />
-			<property name="FireProtection" value="0,0" />
-			<property name="RadiationProtection" value="0,0" />
-			<property name="DegradationMax" value="1,100" />
-		</property>
-		<property class="UMA">
-			<property name="Mesh" value="clothes_denim_pants" />
-			<property name="Overlay0Tint" value="90,115,125" />
-			<property name="Overlay0" value="pants_01" />
-			<property name="Layer" value="0" />
-			<property name="Mask0" value="legs" param1="inner" />
-			<property name="UISlot" value="Pants" />
-		</property>
-		<property name="ActionSkillGroup" value="Light Armor" />
-		<property name="DescriptionKey" value="tatteredClothesDesc" />
-	</item>
-	<item id="1692" name="tatteredShoes">
-        <property name="CustomIcon" value="runningShoes" />
-		<property name="Insulation" value="0" />
-		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Material" value="cloth" />
-		<property name="Weight" value="15" />
-		<property name="HoldType" value="45" />
-		<property name="DegradationBreaksAfter" value="true" />
-		<property name="EquipSlot" value="Feet" />
-		<property name="FuelValue" value="3" />
-		<property name="SellableToTrader" value="false" />
-		<property class="Attributes">
-			<property name="ConcussiveProtection" value="0,0" />
-			<property name="PunctureProtection" value="0,0" />
-			<property name="FireProtection" value="0,0" />
-			<property name="RadiationProtection" value="0,0" />
-			<property name="DegradationMax" value="1,100" />
-		</property>
-		<property class="UMA">
-			<property name="Mesh" value="running_shoes" />
-			<property name="Overlay0" value="running_shoes" />
-			<property name="Layer" value="0" />
-			<property name="UISlot" value="Footwear" />
-		</property>
-		<property name="ActionSkillGroup" value="Light Armor" />
-		<property name="DescriptionKey" value="tatteredClothesDesc" />
-	</item>
-	<!--JZMOD Professions-->
-	<item id="1693" name="soldier">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="soldier" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1694" name="farmer">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="farmer" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1695" name="chemist">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="chemist" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1696" name="carpenter">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="carpenter" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1697" name="cop">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="cop" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1698" name="doctor">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="doctor" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1699" name="fisherman">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="fisherman" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1700" name="chef">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="chef" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1701" name="fitness Instructor">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="fitness Instructor" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1702" name="fireman">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="fireman" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1703" name="construction Worker">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="construction Worker" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1704" name="electrician">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="electrician" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1705" name="metal Worker">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="metal Worker" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1706" name="burglar">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="burglar" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1707" name="park Ranger">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="park Ranger" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1708" name="mechanic">
-		<property name="Extends" value="schematicMaster" />
-        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="mechanic" />
-		</property>
-		<property name="DescriptionKey" value="professionDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<!--JZMOD SKILLBOOKS-->
-	<item id="1709" name="circularSaw">
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="plank" />
-		</property>
-		<property name="DescriptionKey" value="handSawDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1710" name="home Brewing">
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="beer,fermentationBarrel" />
-		</property>
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1711" name="claiming Your Shit">
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="keystoneRock,keystoneIron,keystoneSteel" />
-		</property>
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1712" name="chicken Shit!">
-		<property name="Extends" value="schematicMaster" />
-		<property name="CustomIcon" value="blockbook" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="chickenCoop" />
-		</property>
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1715" name="iron Bars Book">
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="ironBars" />
-		</property>
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="CustomIcon" value="blockbook" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1719" name="bed Book">
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="bed02" />
-		</property>
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="CustomIcon" value="blockbook" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1720" name="camo Net Book">
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="camoNetBlock,camoNetRamp,camoNetSheet,camoNetCNRFull" />
-		</property>
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="CustomIcon" value="blockbook" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1721" name="clay Roof Book">
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="clayRoofBlock,clayRoofRamp,clayRoofCNRFull,clayRoofCNRInside" />
-		</property>
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="CustomIcon" value="blockbook" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1723" name="flagstone Book">
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="flagstoneBlock,flagstoneStairs25,cabinFlagstoneRamp,flagstoneArrowSlitHalf" />
-		</property>
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="CustomIcon" value="blockbook" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1724" name="glass Book">
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="glassCTRSheet,glassShowerBlock,glassIndustrialCTRPlate,glassIndustrial02CTRPlate,glassBusinessSheet,glassBusinessCTRSheet,glassBusinessBlock" />
-		</property>
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="CustomIcon" value="blockbook" />
-		<property name="Group" value="Books" />
-	</item>
-<!-- 	<item id="1725" name="red Wood Book">
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="redWoodBlock,redWoodPillar100,redWoodStairs25" />
-		</property>
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="CustomIcon" value="blockbook" />
-		<property name="Group" value="Books" /> 
-	</item> -->
-	<item id="1726" name="duct Book">
-		<property name="Extends" value="schematicMaster" />
-<!-- 		<property class="Action1">
-			<property name="Recipes_to_learn" value="ventDuctBlock,ventDuctRamp" />
-		</property> -->
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="CustomIcon" value="blockbook" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1733" name="wood Shingles Book">
-		<property name="Extends" value="schematicMaster" />
-<!-- 		<property class="Action1">
-			<property name="Recipes_to_learn" value="woodShinglesBlock,woodShinglesCNRFull,woodShinglesGable,woodShinglesPyramid,woodShinglesRamp,woodSupport" />
-		</property> -->
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="CustomIcon" value="blockbook" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1734" name="awning Book">
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="awningBlock,awningRamp" />
-		</property>
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="CustomIcon" value="blockbook" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1735" name="fencing">
-		<property name="Extends" value="schematicMaster" />
-<!-- 		<property class="Action1">
-			<property name="Recipes_to_learn" value="whitePicketFenceSheet,woodFenceFarmSheet,woodFenceSheet,wroughtIronFenceSheet,railingOldWoodSheet" />
-		</property> -->
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="CustomIcon" value="blockbook" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1745" name="doctorBook">
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="antibiotics" />
-		</property>
-		<property name="DescriptionKey" value="doctorBookDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<item id="1746" name="incendiaryAmmoBook">
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Recipes_to_learn" value="shotgunFireShell,9mmFireBullet,incendiaryPowder" />
-		</property>
-		<property name="DescriptionKey" value="skillBookDesc" />
-		<property name="Group" value="Books" />
-	</item>
-	<!--JZMOD Skill Magazines -->
-	<!--
-	<item id="1749" name="Primitive Weekly">
-		<property name="Meshfile" value="Items/Misc/Book" />
-		<property name="Material" value="organic" />
-		<property name="HoldType" value="21" />
-		<property name="Weight" value="5" />
-		<property name="FuelValue" value="5" />
-		<property name="Stacknumber" value="50" />
-		<property name="CraftingSkillGroup" value="Primitive Crafting" />
-		<property name="CustomIcon" value="theEnforcerMagazine" />
-		<property name="DescriptionKey" value="SkillMagazineReadDesc" />
-	</item>
-	<item id="1750" name="Primitive Monthly">
-		<property name="Meshfile" value="Items/Misc/Book" />
-		<property name="Material" value="organic" />
-		<property name="HoldType" value="21" />
-		<property name="Weight" value="5" />
-		<property name="FuelValue" value="5" />
-		<property name="Stacknumber" value="50" />
-		<property name="CustomIcon" value="theEnforcerMagazine" />
-		<property name="DescriptionKey" value="SkillMagazinemonthlyDesc" />
-	</item>
-	<item id="1751" name="Journeyman Weekly">
-		<property name="Extends" value="Primitive Weekly" />
-	</item>
-	<item id="1752" name="Journeyman Monthly">
-		<property name="Extends" value="Primitive Monthly" />
-	</item>
-	<item id="1753" name="Master Craftsman Weekly">
-		<property name="Extends" value="Primitive Weekly" />
-	</item>
-	<item id="1754" name="Master Craftsman Monthly">
-		<property name="Extends" value="Primitive Monthly" />
-	</item>
-	<item id="1755" name="Hunting Weekly">
-		<property name="Extends" value="Primitive Weekly" />
-	</item>
-	<item id="1756" name="Hunting Monthly">
-		<property name="Extends" value="Primitive Monthly" />
-	</item>
-	<item id="1757" name="Engineering Weekly">
-		<property name="Extends" value="Primitive Weekly" />
-	</item>
-	<item id="1758" name="Engineering Monthly">
-		<property name="Extends" value="Primitive Monthly" />
-	</item>
-	<item id="1759" name="Scavenging Weekly">
-		<property name="Extends" value="Primitive Weekly" />
-	</item>
-	<item id="1760" name="Scavenging Monthly">
-		<property name="Extends" value="Primitive Monthly" />
-	</item>
-	<item id="1761" name="Medicine Weekly">
-		<property name="Extends" value="Primitive Weekly" />
-	</item>
-	<item id="1762" name="Medicine Monthly">
-		<property name="Extends" value="Primitive Monthly" />
-	</item>
-	<item id="1763" name="Gun Smithing Weekly">
-		<property name="Extends" value="Primitive Weekly" />
-	</item>
-	<item id="1764" name="Gun Smithing Monthly">
-		<property name="Extends" value="Primitive Monthly" />
-	</item>
-	<item id="1765" name="Tailoring Weekly">
-		<property name="Extends" value="Primitive Weekly" />
-	</item>
-	<item id="1766" name="Tailoring Monthly">
-		<property name="Extends" value="Primitive Monthly" />
-	</item>
-	<item id="1767" name="Leather Working Weekly">
-		<property name="Extends" value="Primitive Weekly" />
-	</item>
-	<item id="1768" name="Leather Working Monthly">
-		<property name="Extends" value="Primitive Monthly" />
-	</item>
-	<item id="1769" name="Armor Smithing Weekly">
-		<property name="Extends" value="Primitive Weekly" />
-	</item>
-	<item id="1770" name="Armor Smithing Monthly">
-		<property name="Extends" value="Primitive Monthly" />
-	</item>
-	<item id="1771" name="Miscellaneous Weekly">
-		<property name="Extends" value="Primitive Weekly" />
-	</item>
-	<item id="1772" name="Miscellaneous Monthly">
-		<property name="Extends" value="Primitive Monthly" />
-	</item>
-	<item id="1773" name="Primitive1">
-		<property name="Meshfile" value="Items/Misc/Book" />
-		<property name="Material" value="paper" />
-		<property name="HoldType" value="21" />
-		<property name="Weight" value="5" />
-		<property name="FuelValue" value="5" />
-		<property name="Stacknumber" value="50" />
-		<property name="CraftingSkillGroup" value="Primitive Crafting" />
-		<property name="CustomIcon" value="theEnforcerMagazine" />
-		<property name="DescriptionKey" value="SkillMagazineDesc" />
-	</item>
-	<item id="1774" name="Primitive2">
-		<property name="Meshfile" value="Items/Misc/Book" />
-		<property name="Material" value="paper" />
-		<property name="HoldType" value="21" />
-		<property name="Weight" value="5" />
-		<property name="FuelValue" value="5" />
-		<property name="Stacknumber" value="50" />
-		<property name="CraftingSkillGroup" value="Primitive Crafting" />
-		<property name="CustomIcon" value="theEnforcerMagazine" />
-		<property name="DescriptionKey" value="SkillMagazineDesc" />
-	</item>
-	<item id="1775" name="Journeyman1">
-		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
-	</item>
-	<item id="1776" name="Journeyman2">
-		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
-	</item>
-	<item id="1777" name="MasterCraftsman1">
-		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="Master Craftsman" />
-	</item>
-	<item id="1778" name="MasterCraftsman2">
-		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="Master Craftsman" />
-	</item>
-	<item id="1779" name="Hunting1">
-		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="huntingCraft" />
-	</item>
-	<item id="1780" name="Hunting2">
-		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="huntingCraft" />
-	</item>
-	<item id="1781" name="Engineering1">
-		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="engineeringCraft" />
-	</item>
-	<item id="1782" name="Engineering2">
-		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="engineeringCraft" />
-	</item>
-	<item id="1783" name="Scavenging1">
-		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="scavengingAction" />
-	</item>
-	<item id="1784" name="Scavenging2">
-		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="scavengingAction" />
-	</item>
-	<item id="1785" name="Medicine1">
-		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="medicineCraft" />
-	</item>
-	<item id="1786" name="Medicine2">
-		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="medicineCraft" />
-	</item>
-	<item id="1787" name="GunSmithing1">
-		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
-	</item>
-	<item id="1788" name="GunSmithing2">
-		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
-	</item>
-	<item id="1789" name="Tailoring1">
-		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="Tailoring" />
-	</item>
-	<item id="1790" name="Tailoring2">
-		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="Tailoring" />
-	</item>
-	<item id="1791" name="LeatherWorking1">
-		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="leatherworkingCraft" />
-	</item>
-	<item id="1792" name="LeatherWorking2">
-		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="leatherworkingCraft" />
-	</item>
-	<item id="1793" name="ArmorSmithing1">
-		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="Armor Smithing" />
-	</item>
-	<item id="1794" name="ArmorSmithing2">
-		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="Armor Smithing" />
-	</item>
-	<item id="1795" name="Miscellaneous1">
-		<property name="Extends" value="Primitive1" />
-		<property name="CraftingSkillGroup" value="miscellaneousCraft" />
-	</item>
-	<item id="1796" name="Miscellaneous2">
-		<property name="Extends" value="Primitive2" />
-		<property name="CraftingSkillGroup" value="miscellaneousCraft" />
-	</item> -->
+		<property name="Recipes_to_learn" value="whitePicketFenceSheet,woodFenceFarmSheet,woodFenceSheet,wroughtIronFenceSheet,railingOldWoodSheet" />
+	</property> 
+	<property name="DescriptionKey" value="skillBookDesc" />
+	<property name="CustomIcon" value="blockbook" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1745" name="doctorBook">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="antibiotics" />
+	</property>
+	<property name="DescriptionKey" value="doctorBookDesc" />
+	<property name="Group" value="Books" />
+</item>
+<item id="1746" name="incendiaryAmmoBook">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="shotgunFireShell,9mmFireBullet,incendiaryPowder" />
+	</property>
+	<property name="DescriptionKey" value="skillBookDesc" />
+	<property name="Group" value="Books" />
+</item>
+<!--JZMOD Skill Magazines -->
+<item id="1749" name="scavengingForDummies">
+	<property name="Meshfile" value="Items/Misc/Book" />
+	<property name="Material" value="paper" />
+	<property name="HoldType" value="21" />
+	<property name="Weight" value="5" />
+    <property name="FuelValue" value="5" />
+	<property name="Stacknumber" value="5000" />
+	<property name="CustomIcon" value="theEnforcerMagazine" />
+	<property name="DescriptionKey" value="SkillMagazineReadDesc" />
+    <property class="Action1">
+		<property name="Class" value="UseOther" />
+		<property name="Delay" value="1.0" />
+		<property name="Use_time" value="..." />
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="0" />
+		<property name="Gain_water" value="0" />
+		<property name="Gain_stamina" value="0" />
+		<property name="Gain_wellness" value="0" />
+		<property name="Sound_start" value="UseActions/player_eating" />
+	</property>
+    <property name="ActionExp" value="10"/>
+    <property name="ActionSkillGroup" value="Scavenging"/>
+</item>
+<item id="1750" name="bluntWeaponsForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="bluntWeaponsAction"/>
+</item>
+<item id="1751" name="bladeWeaponsForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="bladeWeaponsAction"/>
+</item>
+<item id="1752" name="archeryForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="archeryAction"/>
+</item>
+<item id="1753" name="pistolsForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="pistolsAction"/>
+</item>
+<item id="1754" name="shotgunsForDummies">
+<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="shotgunsAction"/>
+</item>
+<item id="1755" name="submachineGunsForDummies">
+	<property name="Extends" value="submachineGunsAction" />
+</item>
+<item id="1756" name="assaultRiflesForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="assaultRiflesAction"/>
+</item>
+<item id="1757" name="snipersForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="snipersAction"/>
+</item>
+<item id="1758" name="heavyGunsForDummies">
+    <property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="heavyGunsAction"/>
+</item>
+<item id="1759" name="medicineForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="medicineCraft"/>
+</item>
+<item id="1760" name="craftedGunsForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="craftedGunsCraft"/>
+</item>
+<item id="1761" name="gunSmithingForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="gunSmithingCraft"/>
+</item>
+<item id="1762" name="engineeringForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="engineeringCraft"/>
+</item>
+<item id="1763" name="chemistryForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="chemistryCraft"/>
+</item>
+<item id="1764" name="tailoringForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="tailoringCraft"/>
+</item>
+<item id="1765" name="leatherworkingForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="leatherworkingCraft"/>
+</item>
+<item id="1766" name="armorSmithingForDummies">
+    <property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="armorSmithingCraft"/>
+</item>
+<item id="1767" name="miscellaneousForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="miscellaneousCraft"/>
+</item>
+<item id="1768" name="woodenBowForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="woodenBowCraft"/>
+</item>
+<item id="1769" name="compoundBowForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="compoundBowCraft"/>
+</item>
+<item id="1770" name="crossbowForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="crossbowCraft"/>
+</item>
+<item id="1771" name="fletchingForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="fletchingCraft"/>
+</item>
+<item id="1772" name="woodSpearForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="woodSpearCraft"/>
+</item>
+<item id="1765" name="ironSpearForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="ironSpearCraft"/>
+</item>
+<item id="1766" name="woodenClubForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="woodenClubCraft"/>
+</item>
+<item id="1767" name="ironClubCraftForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="ironClubCraft"/>
+</item>
+<item id="1768" name="spikedClubsForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="spikedClubsCraft"/>
+</item>
+<item id="1769" name="lucilleForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="lucilleCraft"/>
+</item>
+<item id="1770" name="nightStickForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="nightStickCraft"/>
+</item>
+<item id="1771" name="shockForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="shockCraft"/>
+</item>
+<item id="1772" name="bladeCraftingForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="bladeCraft"/>
+</item>
+<item id="1765" name="huntingKnifesForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="huntingKnifeCraft"/>
+</item>
+<item id="1766" name="machetesForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="macheteCraft"/>
+</item>
+<item id="1767" name="ironFireaxesForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="ironFireaxeCraft"/>
+</item>
+<item id="1768" name="ironPickaxesForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="ironPickaxeCraft"/>
+</item>
+<item id="1769" name="ironShovelsForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="ironShovelCraft"/>
+</item>
+<item id="1770" name="steelFireaxesForDummies">
+<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="steelFireaxeCraft"/>
+</item>
+<item id="1771" name="steelPickaxesForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="steelPickaxeCraft"/>
+</item>
+<item id="1772" name="steelShovelsForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="steelShovelCraft"/>
+</item>
+<item id="1765" name="screwdriversForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="screwdriverCraft"/>
+</item>
+<item id="1766" name="wireToolsForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="wireToolCraft"/>
+</item>
+<item id="1767" name="paintToolsForDummies">
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="paintToolCraft"/>
+</item>
+
 	
 	<!--JZMOD QUEST-->
 	<item id="1797" name="qc_Chemist">
@@ -12669,14 +12500,6 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 		<property class="Action1">
 			<property name="QuestGiven" value="startFarmer" />
-		</property>
-	</item>
-	<item id="1803" name="qc_Fisherman">
-		<property name="Extends" value="challengeQuestMaster" />
-        <property name="CustomIcon" value="challengeQuestMaster" />
-		<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-		<property class="Action1">
-			<property name="QuestGiven" value="startFisherman" />
 		</property>
 	</item>
 	<item id="1804" name="qc_Chef">
@@ -12775,102 +12598,6 @@ Mesh files no longer used:
 			<property name="QuestGiven" value="challenge_AntiVenom" />
 		</property>
 	</item>
-	<item id="1816" name="qc_PlantSeeds">
-		<property name="Extends" value="challengeQuestMaster" />
-        <property name="CustomIcon" value="challengeQuestMaster" />
-		<property name="DescriptionKey" value="qc_ZombieDesc" />
-		<property class="Action1">
-			<property name="QuestGiven" value="challenge_PlantSeeds" />
-		</property>
-	</item>
-	<item id="1817" name="qc_Boe">
-		<property name="Extends" value="challengeQuestMaster" />
-        <property name="CustomIcon" value="challengeQuestMaster" />
-		<property name="DescriptionKey" value="qc_ZombieDesc" />
-		<property class="Action1">
-			<property name="QuestGiven" value="challenge_Boe" />
-		</property>
-	</item>
-	<item id="1818" name="qc_Joe">
-		<property name="Extends" value="challengeQuestMaster" />
-        <property name="CustomIcon" value="challengeQuestMaster" />
-		<property name="DescriptionKey" value="qc_ZombieDesc" />
-		<property class="Action1">
-			<property name="QuestGiven" value="challenge_Joe" />
-		</property>
-	</item>
-	<item id="1819" name="qc_Arlene">
-		<property name="Extends" value="challengeQuestMaster" />
-        <property name="CustomIcon" value="challengeQuestMaster" />
-		<property name="DescriptionKey" value="qc_ZombieDesc" />
-		<property class="Action1">
-			<property name="QuestGiven" value="challenge_Arlene" />
-		</property>
-	</item>
-	<item id="1820" name="qc_Darlene">
-		<property name="Extends" value="challengeQuestMaster" />
-        <property name="CustomIcon" value="challengeQuestMaster" />
-		<property name="DescriptionKey" value="qc_ZombieDesc" />
-		<property class="Action1">
-			<property name="QuestGiven" value="challenge_Darlene" />
-		</property>
-	</item>
-	<item id="1821" name="qc_Marlene">
-		<property name="Extends" value="challengeQuestMaster" />
-        <property name="CustomIcon" value="challengeQuestMaster" />
-		<property name="DescriptionKey" value="qc_ZombieDesc" />
-		<property class="Action1">
-			<property name="QuestGiven" value="challenge_Marlene" />
-		</property>
-	</item>
-	<item id="1822" name="qc_Yo">
-		<property name="Extends" value="challengeQuestMaster" />
-        <property name="CustomIcon" value="challengeQuestMaster" />
-		<property name="DescriptionKey" value="qc_ZombieDesc" />
-		<property class="Action1">
-			<property name="QuestGiven" value="challenge_Yo" />
-		</property>
-	</item>
-	<item id="1823" name="qc_spider">
-		<property name="Extends" value="challengeQuestMaster" />
-        <property name="CustomIcon" value="challengeQuestMaster" />
-		<property name="DescriptionKey" value="qc_ZombieDesc" />
-		<property class="Action1">
-			<property name="QuestGiven" value="challenge_spider" />
-		</property>
-	</item>
-	<item id="1824" name="qc_burnt">
-		<property name="Extends" value="challengeQuestMaster" />
-        <property name="CustomIcon" value="challengeQuestMaster" />
-		<property name="DescriptionKey" value="qc_ZombieDesc" />
-		<property class="Action1">
-			<property name="QuestGiven" value="challenge_burnt" />
-		</property>
-	</item>
-	<item id="1825" name="qc_Nurse">
-		<property name="Extends" value="challengeQuestMaster" />
-        <property name="CustomIcon" value="challengeQuestMaster" />
-		<property name="DescriptionKey" value="qc_ZombieDesc" />
-		<property class="Action1">
-			<property name="QuestGiven" value="challenge_Nurse" />
-		</property>
-	</item>
-	<item id="1826" name="qc_Steve">
-		<property name="Extends" value="challengeQuestMaster" />
-        <property name="CustomIcon" value="challengeQuestMaster" />
-		<property name="DescriptionKey" value="qc_ZombieDesc" />
-		<property class="Action1">
-			<property name="QuestGiven" value="challenge_Steve" />
-		</property>
-	</item>
-	<item id="1827" name="qc_Moe">
-		<property name="Extends" value="challengeQuestMaster" />
-        <property name="CustomIcon" value="challengeQuestMaster" />
-		<property name="DescriptionKey" value="qc_ZombieDesc" />
-		<property class="Action1">
-			<property name="QuestGiven" value="challenge_Moe" />
-		</property>
-	</item>
 	<item id="1828" name="qc_King">
 		<property name="Extends" value="challengeQuestMaster" />
         <property name="CustomIcon" value="challengeQuestMaster" />
@@ -12880,27 +12607,7 @@ Mesh files no longer used:
 		</property>
 	</item>
 	<!--JZMOD DRUGS & FOODS-->
-	<item id="1829" name="foodMaster">
-		<property name="Meshfile" value="Items/Misc/parcel" />
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Material" value="organic" />
-		<property name="HoldType" value="31" />
-		<property name="Stacknumber" value="50" />
-		<property name="IsDeveloper" value="true" />
-        <property name="SellableToTrader" value="false" />
-		<property class="Action1">
-			<property name="Class" value="Eat" />
-			<property name="Delay" value="1.0" />
-			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="0" />
-			<property name="Gain_food" value="0" />
-			<property name="Gain_water" value="0" />
-			<property name="Gain_stamina" value="0" />
-			<property name="Gain_wellness" value="0" />
-			<property name="Sound_start" value="UseActions/player_eating" />
-		</property>
-		<property name="Group" value="food/Cooking" />
-	</item>
+	
     <item id="1830" name="herbalCream">
 		<property name="Meshfile" value="Items/Food/aloeCreamPrefab" />
         <property name="CustomIcon" value="aloeCream" />
