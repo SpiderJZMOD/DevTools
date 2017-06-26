@@ -55,22 +55,22 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!-- Basic Survival 2 - Craft Fiber Rope /> -->
 	<quest id="quest_BasicSurvival9" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival9" subtitle_key="quest_BasicSurvival9_subtitle" description_key="quest_BasicSurvival9_description" icon="ui_game_symbol_hammer" category_key="Quest">
-		<objective type="FetchKeep" id="PlantFibers" value="60" />
-		<objective type="Craft" id="FiberRope" value="30" />
+		<objective type="FetchKeep" id="plantFibers" value="60" />
+		<objective type="Craft" id="fiberRope" value="30" />
 		<reward type="Exp" value="400" />
 	</quest>
 	<!-- Basic Survival 3 - Craft Stone Axe /> -->
 	<quest id="quest_BasicSurvival2" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival2" subtitle_key="quest_BasicSurvival2_subtitle" description_key="quest_BasicSurvival2_description" icon="ui_game_symbol_hammer" category_key="Quest">
 		<objective type="FetchKeep" id="woodBranch" value="2" />
-		<objective type="FetchKeep" id="FiberRope" value="2" />
+		<objective type="FetchKeep" id="fiberRope" value="2" />
 		<objective type="FetchKeep" id="rockSmall" value="5" />
 		<objective type="Craft" id="stoneAxe" value="1" />
 		<reward type="Exp" value="400" />
 	</quest>
 	<!-- Basic Survival 4 - Craft Plant Fiber Clothing /> -->
 	<quest id="quest_BasicSurvival3" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival3" subtitle_key="quest_BasicSurvival3_subtitle" description_key="quest_BasicSurvival3_description" icon="ui_game_symbol_tailoring" category_key="Quest">
-		<objective type="FetchKeep" id="PlantFibers" value="75" />
-		<objective type="FetchKeep" id="FiberRope" value="20" />
+		<objective type="FetchKeep" id="plantFibers" value="75" />
+		<objective type="FetchKeep" id="fiberRope" value="20" />
 		<objective type="Craft" id="plantFiberPants" value="1" />
 		<objective type="Craft" id="plantFiberShirt" value="1" />
 		<objective type="Craft" id="plantFiberHood" value="1" />
@@ -81,18 +81,18 @@ Alternative settings for custom quest creation:
 	<!-- Basic Survival 5 - Craft a Wooden Club /> -->
 	<quest id="quest_BasicSurvival4" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival4" subtitle_key="quest_BasicSurvival4_subtitle" description_key="quest_BasicSurvival4_description" icon="ui_game_symbol_club" category_key="Quest">
 		<objective type="FetchKeep" id="woodBranch" value="10" />
-		<objective type="FetchKeep" id="PlantFibers" value="10" />
-		<objective type="Craft" id="FiberRope" value="5" />
+		<objective type="FetchKeep" id="plantFibers" value="10" />
+		<objective type="Craft" id="fiberRope" value="5" />
 		<objective type="Craft" id="clubWood" value="1" />
 		<reward type="Exp" value="400" />
 	</quest>
 	<!-- Basic Survival 6 - Craft Bow & Arrows /> -->
 	<quest id="quest_BasicSurvival5" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival5" subtitle_key="quest_BasicSurvival5_subtitle" description_key="quest_BasicSurvival5_description" icon="ui_game_symbol_archery" category_key="Quest">
 		<objective type="FetchKeep" id="stick" value="8" />
-		<objective type="FetchKeep" id="PlantFibers" value="6" />
+		<objective type="FetchKeep" id="plantFibers" value="6" />
 		<objective type="FetchKeep" id="feather" value="2" />
 		<objective type="FetchKeep" id="rockSmall" value="2" />
-		<objective type="Craft" id="FiberRope" value="3" />
+		<objective type="Craft" id="fiberRope" value="3" />
 		<objective type="Craft" id="woodenBow" value="1" />
 		<objective type="Craft" id="arrow" value="2" />
 		<reward type="Exp" value="400" />
@@ -124,15 +124,15 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!-- Basic Survival 11 - Craft Campfire /> -->
 	<quest id="quest_BasicSurvival11" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival11" subtitle_key="quest_BasicSurvival11_subtitle" description_key="quest_BasicSurvival11_description" icon="ui_game_symbol_campfire" category_key="Quest">
-		<objective type="FetchKeep" id="PlantFibers" value="3" />
+		<objective type="FetchKeep" id="plantFibers" value="3" />
 		<objective type="FetchKeep" id="rockSmall" value="16" />
-		<objective type="Craft" id="workcampfire" value="1" />
-		<objective type="BlockPlace" id="workcampfire" value="1" />
+		<objective type="Craft" id="campfire" value="1" />
+		<objective type="BlockPlace" id="campfire" value="1" />
 		<reward type="Exp" value="400" />
 	</quest>
 	<!-- Basic Survival 12 - Craft Stone Shovel /> -->
 	<quest id="quest_BasicSurvival12" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival12" subtitle_key="quest_BasicSurvival12_subtitle" description_key="quest_BasicSurvival12_description" icon="ui_game_symbol_tool" category_key="Quest">
-		<objective type="FetchKeep" id="FiberRope" value="3" />
+		<objective type="FetchKeep" id="fiberRope" value="3" />
 		<objective type="FetchKeep" id="rockSmall" value="3" />
 		<objective type="FetchKeep" id="woodBranch" value="3" />
 		<objective type="Craft" id="stoneShovel" value="1" />
@@ -181,27 +181,27 @@ Alternative settings for custom quest creation:
 	<!-- Basic Survival 19 - Craft and place Spikes /> -->
 	<quest id="quest_BasicSurvival19" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival19" subtitle_key="quest_BasicSurvival19_subtitle" description_key="quest_BasicSurvival19_description" icon="ui_game_symbol_weapon_smithing" category_key="Quest">
 		<objective type="FetchKeep" id="stick" value="200" />
-		<objective type="Craft" id="SetUpASpikeTrap" value="10" />
-		<objective type="BlockPlace" id="SetUpASpikeTrap" value="10" />
-		<objective type="BlockUpgrade" id="SetUpASpikeTrap" value="10" />
+		<objective type="Craft" id="setUpASpikeTrap" value="10" />
+		<objective type="BlockPlace" id="setUpASpikeTrap" value="10" />
+		<objective type="BlockUpgrade" id="setUpASpikeTrap" value="10" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!-- Basic Survival 20 - Craft Hay Bales /> -->
 	<quest id="quest_BasicSurvival20" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival20" subtitle_key="quest_BasicSurvival20_subtitle" description_key="quest_BasicSurvival20_description" icon="ui_game_symbol_map_house" category_key="Quest">
-		<objective type="FetchKeep" id="PlantFibers" value="40" />
+		<objective type="FetchKeep" id="plantFibers" value="40" />
 		<objective type="Craft" id="hayBaleBlock" value="4" />
 		<reward type="Exp" value="400" />
 	</quest>
 	<!-- Basic Survival 21 - Cure and Dry Leather /> -->
 	<quest id="quest_BasicSurvival21" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival21" subtitle_key="quest_BasicSurvival21_subtitle" description_key="quest_BasicSurvival21_description" icon="ui_game_symbol_armor_leather" category_key="Quest">
 		<objective type="FetchKeep" id="animalHide" value="4" />
-		<objective type="FetchKeep" id="BrainMatter" value="4" />
+		<objective type="FetchKeep" id="brainMatter" value="4" />
 		<objective type="FetchKeep" id="coal" value="4" />
-		<objective type="FetchKeep" id="CuredLeather" value="4" />
+		<objective type="FetchKeep" id="curedLeather" value="4" />
 		<objective type="FetchKeep" id="stick" value="10" />
-		<objective type="Craft" id="workDryingRack" value="1" />
-		<objective type="BlockPlace" id="workDryingRack" value="1" />
+		<objective type="Craft" id="DryingRack" value="1" />
+		<objective type="BlockPlace" id="DryingRack" value="1" />
 		<objective type="FetchKeep" id="leather" value="4" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
@@ -370,17 +370,17 @@ Alternative settings for custom quest creation:
 		<reward type="Quest" id="challenge_Doctor4" />
 	</quest>
 	<quest id="challenge_Doctor" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_description" icon="ui_game_symbol_Doctor" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<objective type="Craft" id="PainKillerShot" value="1" />
-		<objective type="Craft" id="StimulantShot" value="1" />
-		<objective type="Craft" id="InfectedShot" value="1" />
-		<objective type="Craft" id="SedativeShot" value="1" />
+		<objective type="Craft" id="painKillerShot" value="1" />
+		<objective type="Craft" id="stimulantShot" value="1" />
+		<objective type="Craft" id="infectedShot" value="1" />
+		<objective type="Craft" id="sedativeShot" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Doctor2" name_key="challenge_Profession" subtitle_key="challenge_Doctor2_subtitle" description_key="challenge_Doctor2_offer" icon="ui_game_symbol_Doctor" repeatable="false" category_key="challenge" offer_key="challenge_Doctor2_offer" difficulty="easy">
 		<objective type="Craft" id="painkillers" value="1" />
 		<objective type="Craft" id="antibiotics" value="1" />
-		<objective type="Craft" id="SuperPill" value="1" />
+		<objective type="Craft" id="superPill" value="1" />
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
@@ -393,7 +393,7 @@ Alternative settings for custom quest creation:
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Doctor4" name_key="challenge_Profession" subtitle_key="challenge_Doctor4_subtitle" description_key="challenge_Doctor4_offer" icon="ui_game_symbol_Doctor" repeatable="false" category_key="challenge" offer_key="challenge_Doctor4_offer" difficulty="easy">
-		<objective type="FetchKeep" id="DoctorBook" value="1" />
+		<objective type="FetchKeep" id="doctorBook" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
@@ -429,7 +429,7 @@ Alternative settings for custom quest creation:
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Carpenter4" name_key="challenge_Profession" subtitle_key="challenge_Carpenter4_subtitle" description_key="challenge_Carpenter4_offer" icon="ui_game_symbol_Carpenter" repeatable="false" category_key="challenge" offer_key="challenge_Carpenter4_offer" difficulty="easy">
-		<objective type="Craft" id="Plank" value="250" />
+		<objective type="Craft" id="plank" value="250" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
@@ -437,17 +437,11 @@ Alternative settings for custom quest creation:
 	<quest id="StartFarmer" name_key="challenge_Profession" subtitle_key="Farmers Quest" description_key="challenge_all_offer" icon="ui_game_symbol_Farmer" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="OldRifle" value="600" />
         <reward type="Quest" id="challenge_Farmer" />
-		<reward type="Quest" id="challenge_Farmer2" />
 		<reward type="Quest" id="challenge_Farmer3" />
 		<reward type="Quest" id="challenge_Farmer4" />
 	</quest>
 	<quest id="challenge_Farmer" name_key="challenge_Profession" subtitle_key="challenge_Farmer_subtitle" description_key="challenge_Farmer_offer" icon="ui_game_symbol_Farmer" repeatable="false" category_key="challenge" offer_key="challenge_Farmer_offer" difficulty="easy">
 		<objective type="Craft" id="hoeIron" value="1" />
-		<reward type="Exp" value="400" />
-		<reward type="SkillPoints" value="1" />
-	</quest>
-	<quest id="challenge_Farmer2" name_key="challenge_Profession" subtitle_key="challenge_Farmer2_subtitle" description_key="challenge_Farmer2_offer" icon="ui_game_symbol_Farmer" repeatable="false" category_key="challenge" offer_key="challenge_Farmer2_offer" difficulty="easy">
-		<objective type="Craft" id="workSeedNursery" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
@@ -460,10 +454,9 @@ Alternative settings for custom quest creation:
 		<objective type="Craft" id="cornSeed" value="1" />
 		<objective type="Craft" id="potatoSeed" value="1" />
 		<objective type="Craft" id="blueberrySeed" value="1" />
-		<objective type="Craft" id="CarrotSeed" value="1" />
-		<objective type="Craft" id="SunflowerSeed" value="1" />
-		<objective type="Craft" id="WheatSeed" value="1" />
-		<objective type="Craft" id="AppleSeed" value="1" />
+		<objective type="Craft" id="carrotSeed" value="1" />
+		<objective type="Craft" id="wheatSeed" value="1" />
+		<objective type="Craft" id="appleSeed" value="1" />
 		<objective type="Craft" id="yuccaSeed" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
@@ -476,8 +469,6 @@ Alternative settings for custom quest creation:
 		<objective type="Craft" id="cottonSeed" value="1" />
 		<objective type="Craft" id="goldenrodSeed" value="1" />
 		<objective type="Craft" id="chrysanthemumSeed" value="1" />
-		<objective type="Craft" id="TomatoSeed" value="1" />
-		<objective type="Craft" id="StrawberrySeed" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
@@ -489,7 +480,7 @@ Alternative settings for custom quest creation:
 		<reward type="Quest" id="challenge_Cop3" />
 	</quest>
 	<quest id="challenge_Cop" name_key="challenge_Profession" subtitle_key="challenge_Cop_subtitle" description_key="challenge_Cop_offer" icon="ui_game_symbol_Cop" repeatable="false" category_key="challenge" offer_key="challenge_Cop_offer" difficulty="easy">
-		<objective type="Craft" id="GunOil" value="10" />
+		<objective type="Craft" id="gunOil" value="10" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
@@ -499,7 +490,7 @@ Alternative settings for custom quest creation:
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Cop3" name_key="challenge_Profession" subtitle_key="challenge_Cop3_subtitle" description_key="challenge_Cop3_offer" icon="ui_game_symbol_Cop" repeatable="false" category_key="challenge" offer_key="challenge_Cop3_offer" difficulty="easy">
-		<objective type="Craft" id="NightStick" value="1" />
+		<objective type="Craft" id="nightStick" value="1" />
 		<reward type="Exp" value="1200" />
 		<reward type="SkillPoints" value="3" />
 	</quest>
@@ -512,7 +503,7 @@ Alternative settings for custom quest creation:
 		<reward type="Quest" id="challenge_Soldier4" />
 	</quest>
 	<quest id="challenge_Soldier" name_key="challenge_Profession" subtitle_key="challenge_Soldier_subtitle" description_key="challenge_Soldier_offer" icon="ui_game_symbol_Soldier" repeatable="false" category_key="challenge" offer_key="challenge_Soldier_offer" difficulty="easy">
-		<objective type="Craft" id="Grubs" value="20" />
+		<objective type="Craft" id="grubs" value="20" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
@@ -544,17 +535,17 @@ Alternative settings for custom quest creation:
 		<reward type="Quest" id="challenge_Scientist5" />
 	</quest>
 	<quest id="challenge_Scientist" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_Chemist" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
-		<objective type="Craft" id="PurificationTablets" value="10" />
+		<objective type="Craft" id="purificationTablets" value="10" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Scientist2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_Chemist" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
-		<objective type="Craft" id="RedBull" value="6" />
+		<objective type="Craft" id="redBull" value="6" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Scientist3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_Chemist" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
-		<objective type="Craft" id="MixedChemicals" value="5" />
+		<objective type="Craft" id="mixedChemicals" value="5" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
@@ -604,7 +595,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Chef-->
 	<quest id="StartChef" name_key="challenge_Profession" subtitle_key="Chefs Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="FryingPan" value="600" />
+		<reward type="Item" id="fryingPan" value="600" />
         <reward type="Quest" id="challenge_Chef" />
 		<reward type="Quest" id="challenge_Chef2" />
 		<reward type="Quest" id="challenge_Chef3" />
@@ -613,35 +604,34 @@ Alternative settings for custom quest creation:
 	<quest id="challenge_Chef" name_key="challenge_Profession" subtitle_key="challenge_Chef_subtitle" description_key="challenge_Chef_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_Chef_offer" difficulty="easy">
 		<objective type="Craft" id="canMeat" value="1" />
 		<objective type="Craft" id="cornBread" value="1" />
-		<objective type="Craft" id="FriedEggOmelet" value="1" />
+		<objective type="Craft" id="friedEggOmelet" value="1" />
 		<objective type="Craft" id="baconAndEggs" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Chef2" name_key="challenge_Profession" subtitle_key="challenge_Chef2_subtitle" description_key="challenge_Chef2_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_Chef2_offer" difficulty="easy">
 		<objective type="Craft" id="blueberryPie" value="1" />
-		<objective type="Craft" id="ApplePie" value="1" />
-		<objective type="Craft" id="CarrotCake" value="1" />
+		<objective type="Craft" id="applePie" value="1" />
+		<objective type="Craft" id="carrotCake" value="1" />
 		<objective type="Craft" id="Bread" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Chef3" name_key="challenge_Profession" subtitle_key="challenge_Chef3_subtitle" description_key="challenge_Chef3_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_Chef3_offer" difficulty="easy">
-		<objective type="Craft" id="FishChowder" value="1" />
-		<objective type="Craft" id="BearStew" value="1" />
+		<objective type="Craft" id="bearStew" value="1" />
 		<objective type="Craft" id="vegetableStew" value="1" />
 		<objective type="Craft" id="beer" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Chef4" name_key="challenge_Profession" subtitle_key="challenge_Chef4_subtitle" description_key="challenge_Chef4_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_Chef4_offer" difficulty="easy">
-		<objective type="Craft" id="BrainShnitzel" value="1" />
-		<objective type="Craft" id="FishNChips" value="1" />
+		<objective type="Craft" id="brainShnitzel" value="1" />
+		<objective type="Craft" id="fishNChips" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Chef5" name_key="challenge_Profession" subtitle_key="challenge_Chef5_subtitle" description_key="challenge_Chef5_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_Chef5_offer" difficulty="easy">
-		<objective type="Craft" id="SharpeningStone" value="10" />
+		<objective type="Craft" id="sharpeningStone" value="10" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
@@ -659,18 +649,18 @@ Alternative settings for custom quest creation:
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Fitness2" name_key="challenge_Profession" subtitle_key="challenge_Fitness2_subtitle" description_key="challenge_Fitness2_offer" icon="ui_game_symbol_Fitness" repeatable="false" category_key="challenge" offer_key="challenge_Fitness2_offer" difficulty="easy">
-		<objective type="Craft" id="RedBull" value="12" />
+		<objective type="Craft" id="redBull" value="12" />
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Fitness3" name_key="challenge_Profession" subtitle_key="challenge_Fitness3_subtitle" description_key="challenge_Fitness3_offer" icon="ui_game_symbol_Fitness" repeatable="false" category_key="challenge" offer_key="challenge_Fitness3_offer" difficulty="easy">
-		<objective type="Craft" id="WellnessJuice" value="5" />
+		<objective type="Craft" id="wellnessJuice" value="5" />
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!--Fireman-->
 	<quest id="StartFireman" name_key="challenge_Profession" subtitle_key="Firemans Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Fireman" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldAxe" value="600" />
+		<reward type="Item" id="oldAxe" value="600" />
         <reward type="Quest" id="challenge_Fireman" />
 		<reward type="Quest" id="challenge_Fireman2" />
 		<reward type="Quest" id="challenge_Fireman3" />
@@ -692,7 +682,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Construction Worker-->
 	<quest id="StartConstruction" name_key="challenge_Profession" subtitle_key="Construction Workers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Construction" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldWrench" value="600" />
+		<reward type="Item" id="oldWrench" value="600" />
         <reward type="Quest" id="challenge_Construction" />
 		<reward type="Quest" id="challenge_Construction2" />
 		<reward type="Quest" id="challenge_Construction3" />
