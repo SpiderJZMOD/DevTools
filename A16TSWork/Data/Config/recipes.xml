@@ -8,6 +8,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- <recipe name="militaryFiber" count="1" tooltip="ttScrapMetalBrass">
 	<wildcard_forge_category />
 </recipe> -->
+    <recipe name="professionPage" count="1" tooltip="ttScrapMetalBrass">
+		<wildcard_forge_category />
+	</recipe>
 	<recipe name="scrapRubber" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
 	</recipe>

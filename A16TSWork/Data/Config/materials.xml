@@ -1165,13 +1165,13 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="MaxDamage" value="500" />
 </material>
 <!-- JZMOD SKILL BOOKS -->
-<material id="MskillPaper">
-    <property name="damage_category" value="cloth" />
-    <property name="surface_category" value="cloth" />
+<material id="MprofessionPage">
+    <property name="damage_category" value="paper" />
+    <property name="surface_category" value="paper" />
     <property name="forge_category" value="skillPaper" />
     <property name="Hardness" type="float" value="1" />
-    <property name="stepsound" value="wood" />
-    <property name="stability_glue" value="24" />
+    <property name="stepsound" value="paper" />
+    <property name="stability_glue" value="0" />
     <property name="Mass" type="int" value="6" />
     <property name="MaxDamage" value="1" />
 </material>
