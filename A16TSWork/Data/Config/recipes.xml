@@ -754,51 +754,51 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="stick" count="20" />
 		<ingredient name="fiberRope" count="1" />
 	</recipe>
-	<recipe name="cobblestoneFrameBlock" count="1" craft_area="workbench" craft_tool="circularSaw" craft_time="5" craft_exp_gain="5">
+	<recipe name="cobblestoneFrameBlock" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="5" craft_exp_gain="5">
 		<ingredient name="stick" count="20" />
 		<ingredient name="fiberRope" count="1" />
 	</recipe>
-	<recipe name="cobblestoneFrameRamp" count="1" craft_area="workbench" craft_tool="circularSaw" craft_time="5" craft_exp_gain="5">
+	<recipe name="cobblestoneFrameRamp" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="5" craft_exp_gain="5">
 		<ingredient name="stick" count="20" />
 		<ingredient name="fiberRope" count="1" />
 	</recipe>
-	<recipe name="cobblestoneFrameWedge" count="1" craft_area="workbench" craft_tool="circularSaw" craft_time="5" craft_exp_gain="5">
+	<recipe name="cobblestoneFrameWedge" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="5" craft_exp_gain="5">
 		<ingredient name="stick" count="20" />
 		<ingredient name="fiberRope" count="1" />
 	</recipe>
-	<recipe name="cobblestoneFrameWedgeTip" count="1" craft_area="workbench" craft_tool="circularSaw" craft_time="5" craft_exp_gain="5">
+	<recipe name="cobblestoneFrameWedgeTip" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="5" craft_exp_gain="5">
 		<ingredient name="stick" count="20" />
 		<ingredient name="fiberRope" count="1" />
 	</recipe>
-	<recipe name="cobblestoneFramePlate" count="1" craft_area="workbench" craft_tool="circularSaw" craft_time="5" craft_exp_gain="5">
+	<recipe name="cobblestoneFramePlate" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="5" craft_exp_gain="5">
 		<ingredient name="stick" count="20" />
 		<ingredient name="fiberRope" count="1" />
 	</recipe>
-	<recipe name="cobblestoneFrameCNRFull" count="1" craft_area="workbench" craft_tool="circularSaw" craft_time="5" craft_exp_gain="5">
+	<recipe name="cobblestoneFrameCNRFull" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="5" craft_exp_gain="5">
 		<ingredient name="stick" count="20" />
 		<ingredient name="fiberRope" count="1" />
 	</recipe>
-	<recipe name="cobblestoneFrameCNRInside" count="1" craft_area="workbench" craft_tool="circularSaw" craft_time="5" craft_exp_gain="5">
+	<recipe name="cobblestoneFrameCNRInside" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="5" craft_exp_gain="5">
 		<ingredient name="stick" count="20" />
 		<ingredient name="fiberRope" count="1" />
 	</recipe>
-	<recipe name="cobblestoneFramePillar100" count="1" craft_area="workbench" craft_tool="circularSaw" craft_time="5" craft_exp_gain="5">
+	<recipe name="cobblestoneFramePillar100" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="5" craft_exp_gain="5">
 		<ingredient name="stick" count="20" />
 		<ingredient name="fiberRope" count="1" />
 	</recipe>
-	<recipe name="cobblestoneFramePillar50" count="1" craft_area="workbench" craft_tool="circularSaw" craft_time="5" craft_exp_gain="5">
+	<recipe name="cobblestoneFramePillar50" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="5" craft_exp_gain="5">
 		<ingredient name="stick" count="20" />
 		<ingredient name="fiberRope" count="1" />
 	</recipe>
-	<recipe name="cobblestoneFramePole" count="1" craft_area="workbench" craft_tool="circularSaw" craft_time="5" craft_exp_gain="5">
+	<recipe name="cobblestoneFramePole" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="5" craft_exp_gain="5">
 		<ingredient name="stick" count="20" />
 		<ingredient name="fiberRope" count="1" />
 	</recipe>
-	<recipe name="cobblestoneFrameStairs25" count="1" craft_area="workbench" craft_tool="circularSaw" craft_time="5" craft_exp_gain="5">
+	<recipe name="cobblestoneFrameStairs25" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="5" craft_exp_gain="5">
 		<ingredient name="stick" count="20" />
 		<ingredient name="fiberRope" count="1" />
 	</recipe>
-	<recipe name="cobblestoneArrowSlitHalf" count="1" craft_area="workbench" craft_tool="circularSaw" craft_time="5" craft_exp_gain="5">
+	<recipe name="cobblestoneArrowSlitHalf" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cobblestones" count="10" />
 		<ingredient name="stick" count="20" />
 		<ingredient name="fiberRope" count="1" />
@@ -1106,7 +1106,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="goldenrodPlant" count="1" />
 	</recipe>
 	<recipe name="grainAlcohol" count="1" craft_area="still" craft_time="300" craft_exp_gain="20">
-		<ingredient name="sugarcanePlant" count="1" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
 	<recipe name="grainAlcohol" count="1" craft_area="still" craft_time="300" craft_exp_gain="20">
@@ -2800,7 +2799,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_iron" count="100" />
 		<ingredient name="unit_clay" count="5" />
 	</recipe>
-	<recipe name="katanamichonne" count="1" craft_area="anvil" craft_tool="clawHammer" craft_exp_gain="30" craft_time="30">
+	<recipe name="katana" count="1" craft_area="anvil" craft_tool="clawHammer" craft_exp_gain="30" craft_time="30">
 		<ingredient name="swordBlade" count="1" />
 		<ingredient name="leather" count="2" />
 		<ingredient name="plank" count="1" />
@@ -2840,7 +2839,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="parts44Magnum_frame" count="1" />
 	</recipe>
     <recipe name="mead" count="15" craft_area="fermentationBarrel" craft_time="1950" craft_exp_gain="0">
-		<ingredient name="sugarcanePlant" count="15" />
 		<ingredient name="foodHoney" count="5" />
 		<ingredient name="bottledWater" count="30" />
 	</recipe>
@@ -3009,7 +3007,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="goldenrodPlant" count="1" />
 		<ingredient name="chrysanthemumPlant" count="1" />
 		<ingredient name="aloePlant" count="1" />
-		<ingredient name="sugarcanePlant" count="3" />
 	</recipe>
 	<recipe name="redDenimPants" count="1" craft_area="armorTable" craft_tool="sewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="10" />
@@ -3373,10 +3370,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="blueberries" count="5" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
-	<recipe name="plank" count="10" craft_area="workbench" craft_tool="circularSaw" craft_time="3" craft_exp_gain="5">
+	<recipe name="plank" count="10" craft_area="workbench" craft_tool="handSaw" craft_time="3" craft_exp_gain="5">
 		<ingredient name="narrowLog" count="1" />		
 	</recipe>
-	<recipe name="plank" count="20" craft_area="workbench" craft_tool="circularSaw" craft_time="3" craft_exp_gain="5">
+	<recipe name="plank" count="20" craft_area="workbench" craft_tool="handSaw" craft_time="3" craft_exp_gain="5">
 		<ingredient name="woodLogPillar100" count="1" />		
 	</recipe>
 	<recipe name="plank" count="10" craft_time="5" craft_exp_gain="5">
