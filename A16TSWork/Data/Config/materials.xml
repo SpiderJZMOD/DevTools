@@ -1175,5 +1175,29 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
     <property name="Mass" type="int" value="6" />
     <property name="MaxDamage" value="1" />
 </material>
-
+<!-- JZMOD FOOD SERVINGS -->
+<material id="Mfruit">
+	<property name="surface_category" value="organic" />
+    <property name="forge_category" value="fruit" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="Mass" type="int" value="1" />
+</material>
+<material id="Mveggie">
+	<property name="surface_category" value="organic" />
+    <property name="forge_category" value="veggie" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="Mass" type="int" value="1" />
+</material>
+<material id="Mgrain">
+	<property name="surface_category" value="organic" />
+    <property name="forge_category" value="grain" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="Mass" type="int" value="1" />
+</material>
+<material id="Mprotein">
+	<property name="surface_category" value="organic" />
+    <property name="forge_category" value="protein" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="Mass" type="int" value="1" />
+</material>
 </materials>

@@ -5,9 +5,21 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipes>
 <!-- * * * * * * * * * * * * scrap and forge-emptying recipes * * * * * * * * * * * * -->
 
-<!-- <recipe name="militaryFiber" count="1" tooltip="ttScrapMetalBrass">
+    <recipe name="militaryFiber" count="1" tooltip="ttScrapMetalBrass">
 	<wildcard_forge_category />
-</recipe> -->
+    </recipe> 
+    <recipe name="fruitServing" count="1" tooltip="ttScrapMetalBrass">
+		<wildcard_forge_category />
+	</recipe>
+    <recipe name="grainServing" count="1" tooltip="ttScrapMetalBrass">
+		<wildcard_forge_category />
+	</recipe>
+    <recipe name="veggieServing" count="1" tooltip="ttScrapMetalBrass">
+		<wildcard_forge_category />
+	</recipe>
+    <recipe name="proteinServing" count="1" tooltip="ttScrapMetalBrass">
+		<wildcard_forge_category />
+	</recipe>
     <recipe name="professionPage" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
 	</recipe>
@@ -2653,10 +2665,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="flour" count="1" craft_area="stoneMill" craft_time="5" craft_exp_gain="2">
 		<ingredient name="wheat" count="4" />
 	</recipe>
-	<recipe name="foodHoney" count="1" craft_time="10" craft_exp_gain="3">
-		<ingredient name="honeyResidue" count="4" />
-		<ingredient name="emptyJar" count="1" />
-	</recipe>
 	<recipe name="footballHelmet+Light" count="1" craft_area="armorTable" craft_time="15" craft_exp_gain="25">
 		<ingredient name="ductTape" count="1" />
 		<ingredient name="flashlight02" count="1" />
@@ -2806,10 +2814,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="swordBlade" count="1" />
 		<ingredient name="leather" count="2" />
 		<ingredient name="plank" count="1" />
-	</recipe>
-	<recipe name="large1stAidKit" count="1" craft_time="15" craft_exp_gain="50">
-		<ingredient name="firstAidKit" count="1" />
-		<ingredient name="splint" count="1" />
 	</recipe>
 	<recipe name="largeKnifeBlade" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="30" craft_exp_gain="5">
 		<ingredient name="unit_iron" count="100" />
@@ -3234,12 +3238,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="sutures" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="0">
 		<ingredient name="sinew" count="1" />
 		<ingredient name="bottledWater" count="1" />
-	</recipe>
-	<recipe name="superPill" count="2" craft_area="chemistryStation" craft_tool="mortarAndPestle" craft_time="30" craft_exp_gain="50">
-		<ingredient name="hangingMoss" count="1" />
-		<ingredient name="mixedChemicals" count="1" />
-		<ingredient name="antibiotics" count="1" />
-		<ingredient name="painkillers" count="1" />
 	</recipe>
 	<recipe name="sweatshirt" count="1" craft_area="armorTable" craft_tool="sewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="8" />
