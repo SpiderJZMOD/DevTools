@@ -16404,7 +16404,7 @@ kind of free
 		</property>
 		<property name="Group" value="Basics" />
 		<drop event="Destroy" count="0" />
-		<property name="CraftingSkillGroup" value="assaultRifles" />
+		<property name="CraftingSkillGroup" value="assaultRiflesAction" />
 		<drop event="Fall" name="soldierProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="soldierSupplies" />
 	</block>
@@ -16415,7 +16415,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="doctorSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="medicine" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
 		<drop event="Fall" name="doctorProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="doctorSupplies" />
@@ -16433,7 +16433,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="farmerSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="hunting" />
+		<property name="CraftingSkillGroup" value="huntingCraft" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
 		<drop event="Fall" name="farmerProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="farmerSupplies" />
@@ -16451,7 +16451,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="chemistSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="chemistry" />
+		<property name="CraftingSkillGroup" value="chemistryCraft" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
 		<drop event="Fall" name="scientistsProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="chemistSupplies" />
@@ -16469,7 +16469,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="carpenterSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="engineering" />
+		<property name="CraftingSkillGroup" value="engineeringCraft" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
 		<drop event="Fall" name="engineerProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="carpenterSupplies" />
@@ -16487,7 +16487,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="copSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="pistols" />
+		<property name="CraftingSkillGroup" value="pistolsAction" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
 		<drop event="Fall" name="copProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="copSupplies" />
@@ -16498,24 +16498,6 @@ kind of free
 		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="copSupplies" count="1" prob="1" />
 	</block>
-	<block id="127" name="fishermanProfession">
-		<property name="Extends" value="soldierProfession" />
-		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Fisherman" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="fishermanSupplies" />
-		</property>
-		<property name="CraftingSkillGroup" value="hunting" />
-		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="fishermanProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="fishermanSupplies" />
-	</block>
-	<block id="437" name="fishermanSupplies">
-		<property name="Extends" value="soldierSupplies" />
-		<property name="LootList" value="218" />
-		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="fishermanSupplies" count="1" prob="1" />
-	</block>
 	<block id="438" name="chefProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
@@ -16523,7 +16505,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="chefSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="blade Weapons" />
+		<property name="CraftingSkillGroup" value="bladeWeaponsAction" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
 		<drop event="Fall" name="chefProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="chefSupplies" />
@@ -16559,7 +16541,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="firemanSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="medicine" />
+		<property name="CraftingSkillGroup" value="medicineCraft" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
 		<drop event="Fall" name="firemanProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="firemanSupplies" />
@@ -16577,7 +16559,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="construction WorkerSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="engineering" />
+		<property name="CraftingSkillGroup" value="engineeringCraft" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
 		<drop event="Fall" name="construction WorkerProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="construction WorkerSupplies" />
@@ -16595,7 +16577,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="electricianSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="engineering" />
+		<property name="CraftingSkillGroup" value="engineeringCraft" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
 		<drop event="Fall" name="electricianProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="electricianSupplies" />
@@ -16613,7 +16595,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="metal WorkerSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="engineering" />
+		<property name="CraftingSkillGroup" value="engineeringCraft" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
 		<drop event="Fall" name="metal WorkerProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="metal WorkerSupplies" />
@@ -16649,7 +16631,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="park RangerSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="archery" />
+		<property name="CraftingSkillGroup" value="archeryAction" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
 		<drop event="Fall" name="park RangerProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="park RangerSupplies" />
@@ -16667,7 +16649,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="mechanicSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="engineering" />
+		<property name="CraftingSkillGroup" value="engineeringCraft" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
 		<drop event="Fall" name="mechanicProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="mechanicSupplies" />
@@ -16770,7 +16752,7 @@ kind of free
 		<property name="LootList" value="211" />
 	</block>
 	<!--JZMOD PLANTS-->
-	<block id="660" name="plantedAppleTree">
+	<block id="660" name="appleSeed">
 		<property name="Extends" value="treeMasterGrowing" />
 		<property name="Model" value="Entities/Trees/Prefabs/MountainPine1mPrefab" />
 		<property name="Material" value="treeWoodSmall" />
@@ -16809,7 +16791,7 @@ kind of free
         <drop event="Destroy" name="narrowLog" count="6,14" prob="1" />
 		<drop event="Destroy" name="Apple" count="3,15" prob="1" />
 	</block>
-	<block id="700" name="plantedCarrot">
+	<block id="700" name="carrotSeed">
 		<property name="Extends" value="cropsHarvestableMaster" />
 		<property name="Texture" value="296" />
 		<property name="PlantGrowing.Next" value="smallCarrot" />
@@ -16827,7 +16809,7 @@ kind of free
 		<property name="Model" value="#carrot?carrotPrefab" />-->
 		<drop event="Harvest" name="carrot" count="1" />
 	</block>
-	<block id="829" name="plantedWheat">
+	<block id="829" name="wheatSeed">
 		<property name="Extends" value="cropsHarvestableMaster" />
 		<!--sdx<property name="Model" value="#WheatSprout1?WheatSprout1Prefab" />
 		<property name="Shape" value="ModelEntity" />-->
