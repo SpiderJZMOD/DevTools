@@ -16426,23 +16426,23 @@ kind of free
 		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="doctorSupplies" count="1" prob="1" />
 	</block>
-	<block id="107" name="farmerProfession">
+	<block id="107" name="bouncerProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Farmer" />
+        <property name="CustomIcon" value="ui_game_symbol_Bouncer" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="farmerSupplies" />
+			<property name="ToBlock" value="bouncerSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="huntingCraft" />
+		<property name="CraftingSkillGroup" value="upperBody" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="farmerProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="farmerSupplies" />
+		<drop event="Fall" name="bouncerProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="bouncerSupplies" />
 	</block>
-	<block id="108" name="farmerSupplies">
+	<block id="108" name="bouncerSupplies">
 		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="214" />
 		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="farmerSupplies" count="1" prob="1" />
+		<drop event="Fall" name="bouncerSupplies" count="1" prob="1" />
 	</block>
 	<block id="109" name="chemistProfession">
 		<property name="Extends" value="soldierProfession" />
