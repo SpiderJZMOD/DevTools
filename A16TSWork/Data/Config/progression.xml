@@ -345,6 +345,68 @@
             <!--upgrade material-->
         </action_skill>
         <!-- JZMOD CRAFTING SKILLS-->
+        <crafting_skill name="cookingCraft" icon="huntingSkill" description_key="Learn to cook more filling and nutritious food." title_key="Cooking" group="crafting">
+            <recipe name="cornMeal" unlock_level="5" />
+            <recipe name="cornBread" unlock_level="5" />
+            <recipe name="flour" unlock_level="5" />
+            <recipe name="bread" unlock_level="5" />
+            <recipe name="goldenRodTea" unlock_level="10" />
+            <recipe name="redTea" unlock_level="10" />
+            <recipe name="baconAndEggs" unlock_level="15" />
+            <recipe name="friedEggOmelet" unlock_level="15" />
+            <recipe name="fruitServing" unlock_level="20" />
+            <recipe name="grainServing" unlock_level="20" />
+            <recipe name="veggieServing" unlock_level="20" />
+            <recipe name="proteinServing" unlock_level="20" />
+            <recipe name="fruitSaladSmall" unlock_level="20" />
+            <recipe name="fruitSaladMedium" unlock_level="20" />
+            <recipe name="fruitSaladLarge" unlock_level="20" />
+            <recipe name="veggieSaladSmall" unlock_level="20" />
+            <recipe name="veggieSaladMedium" unlock_level="20" />
+            <recipe name="veggieSaladLarge" unlock_level="20" />
+            <recipe name="kabobSmall" unlock_level="25" />
+            <recipe name="kabobMedium" unlock_level="25" />
+            <recipe name="kabobLarge" unlock_level="25" />
+            <recipe name="fruitJuice" unlock_level="30" />
+            <recipe name="vegetableStew" unlock_level="35" />
+            <recipe name="bearStew" unlock_level="35" />
+            <recipe name="heartyStew" unlock_level="35" />
+            <recipe name="applePie" unlock_level="40" />
+            <recipe name="carrotCake" unlock_level="40" />
+            <recipe name="blueberryPie" unlock_level="40" />
+            <recipe name="foodPrepTable" unlock_level="45" />
+            <recipe name="simpleMealSmall" unlock_level="45" />
+            <recipe name="simpleMealMedium" unlock_level="45" />
+            <recipe name="simpleMealLarge" unlock_level="45" />
+            <recipe name="megaCrush" unlock_level="50" />
+            <recipe name="honeyGlazedMeatSmall" unlock_level="55" />
+            <recipe name="honeyGlazedMeatMedium" unlock_level="55" />
+            <recipe name="honeyGlazedMeatLarge" unlock_level="55" />
+            <recipe name="beer" unlock_level="60" />
+            <recipe name="mead" unlock_level="60" />
+            <recipe name="grainAlcohol" unlock_level="60" />
+            <recipe name="goodMealSmall" unlock_level="65" />
+            <recipe name="goodMealMedium" unlock_level="65" />
+            <recipe name="goodMealLarge" unlock_level="65" />
+            <recipe name="fishNChips" unlock_level="70" />
+            <recipe name="brainShnitzel" unlock_level="75" />
+            <recipe name="wellnessJuice" unlock_level="80" />
+            <recipe name="healthyMealSmall" unlock_level="90" />
+            <recipe name="healthyMealMedium" unlock_level="90" />
+            <recipe name="healthyMealLarge" unlock_level="90" />
+            <effect name="CraftingTime">
+                <multiply skill_level="1,10" value="1,0.975" />
+                <multiply skill_level="10,20" value="0.975,0.95" />
+                <multiply skill_level="20,30" value="0.95,0.925" />
+                <multiply skill_level="30,40" value="0.925,0.9" />
+                <multiply skill_level="40,50" value="0.9,0.875" />
+                <multiply skill_level="50,60" value="0.875,0.85" />
+                <multiply skill_level="60,70" value="0.85,0.825" />
+                <multiply skill_level="70,80" value="0.825,0.8" />
+                <multiply skill_level="80,90" value="0.8,0.775" />
+                <multiply skill_level="90,100" value="0.775,0.75" />
+            </effect>
+        </crafting_skill>
         <crafting_skill name="huntingCraft" icon="huntingSkill" description_key="Learn to craft better Hunting knifes and fishing lures." title_key="huntingCraft" group="crafting">
             <effect name="CraftingTime">
                 <multiply skill_level="1,10" value="1,0.975" />
@@ -2933,8 +2995,24 @@
                 <!-- =10 points at QL 600 -->
             </effect>
         </crafting_skill>
-        
         <!-- JZMOD PERKS-->
+        <perk name="farmingPerk" icon="run" description_key="Farming Skill" title_key="Farming" max_level="15" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="health">
+            <recipe name="hoeIron" unlock_level="1" />
+            <recipe name="plantedCotton1" unlock_level="2" />
+            <recipe name="plantedPotato1" unlock_level="3" />
+            <recipe name="plantedGoldenrod1" unlock_level="4" />
+            <recipe name="plantedCorn1" unlock_level="5" />
+            <recipe name="plantedChrysanthemum1" unlock_level="6" />
+            <recipe name="carrotSeed" unlock_level="7" />
+            <recipe name="wheatSeed" unlock_level="8" />
+            <recipe name="appleSeed" unlock_level="9" />
+            <recipe name="plantedMushroom1" unlock_level="10" />
+            <recipe name="plantedBlueberry1" unlock_level="11" />
+            <recipe name="plantedYucca1" unlock_level="12" />
+            <recipe name="plantedAloe1" unlock_level="13" />
+            <recipe name="fertilizer" unlock_level="14" />
+            <recipe name="qc_Eucalyptus" unlock_level="15" />
+       </perk>     
         <perk name="freeDiverPerk" icon="run" description_key="sexualTyranosaurusDesc" title_key="Free Diver" max_level="5" skill_point_cost_multiplier="1" skill_point_cost_per_level="3" always_fire="true" group="health">
             <requirement perk_level="1" required_skill_name="Athletics" required_skill_level="20" />
             <requirement perk_level="2" required_skill_name="Athletics" required_skill_level="40" />
@@ -3176,11 +3254,6 @@
             <requirement perk_level="1" required_player_level="1" />
             <requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="40" />
             <recipe name="oilRefinery" unlock_level="1" />
-        </perk>
-        <perk name="bioFuelPerk" icon="bioFuel" description_key="Learn to process Bio Fuel in a refinery" title_key="Bio Fuel" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
-            <requirement perk_level="1" required_player_level="1" />
-            <requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="40" />
-            <recipe name="bioFuel" unlock_level="1" />
         </perk>
         <perk name="oilPerk" icon="oil" description_key="Learn to process oil in a refinery" title_key="Oil" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
             <requirement perk_level="1" required_player_level="1" />
@@ -3459,10 +3532,9 @@
             <recipe name="dynamite" unlock_level="1" />
             <recipe name="tnt" unlock_level="1" />
         </perk>
-        <perk name="grainAlcoholPerk" icon="grainAlcohol" description_key="Learn to distill Grain Alcohol in the still" title_key="Grain Alcohol" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+        <perk name="stillPerk" icon="grainAlcohol" description_key="Learn to craft a still" title_key="Still" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
             <requirement perk_level="1" required_skill_name="chemistryCraft" required_skill_level="3" />
-            <recipe name="workStill" unlock_level="1" />
-            <recipe name="grainAlcohol" unlock_level="1" />
+            <recipe name="still" unlock_level="1" />
         </perk>
         <perk name="ironArrowsPerk" icon="ironArrow" description_key="Learn to craft Iron Arrow heads in the forge using an anvil and crossbow bolts" title_key="Iron Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
             <requirement perk_level="1" required_skill_name="fletchingCraft" required_skill_level="25" />
@@ -3538,16 +3610,6 @@
         <perk name="purificationTabletsPerk" icon="PurificationTablets" description_key="Learn to craft Purification Tablets to clean water on the go" title_key="Purification Tablets" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="health">
             <recipe name="purificationTablets" unlock_level="1" />
         </perk>
-        <perk name="goldenRodTeaPerk" icon="goldenRodTea" description_key="Learn to brew healthy GoldenRod Tea on the campfire" title_key="GoldenRod Tea" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
-            <recipe name="goldenRodTea" unlock_level="1" />
-        </perk>
-        <perk name="redTeaPerk" icon="redTea" description_key="Learn to brew healthy Red Tea on the campfire" title_key="Red Tea" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
-            <recipe name="redTea" unlock_level="1" />
-        </perk>
-        <perk name="wellnessJuicePerk" icon="WellnessJuice" description_key="Learn to brew Wellness Juice on the campfire" title_key="Wellness Juice" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
-            <requirement perk_level="1" required_skill_name="chemistryCraft" required_skill_level="50" />
-            <recipe name="wellnessJuice" unlock_level="1" />
-        </perk>
         <perk name="tallowPerk" icon="tallow" description_key="Learn to craft Tallow on the Campfire in a Pot" title_key="Tallow" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
             <requirement perk_level="1" required_skill_name="chemistryCraft" required_skill_level="2" />
             <recipe name="tallow" unlock_level="1" />
@@ -3584,22 +3646,18 @@
         </perk>
         <!--JZMOD PROFESSIONS-->
         <perk name="carpenter" icon="Carpenter" description_key="These are the skills a Carpenter starts with. Collect 20 Profession pages to learn another profession" title_key="Carpenter" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
-            <recipe name="woodFrameBlock" unlock_level="1" />
-            <recipe name="woodFrameCNRFull" unlock_level="1" />
-            <recipe name="woodFrameCNRInside" unlock_level="1" />
-            <recipe name="woodFrameWedge" unlock_level="1" />
-            <recipe name="woodFrameRamp" unlock_level="1" />
-            <recipe name="woodStairs25" unlock_level="1" />
-            <recipe name="woodPillar100" unlock_level="1" />
-            <recipe name="woodPlate" unlock_level="1" />
-            <recipe name="woodPole" unlock_level="1" />
-            <recipe name="woodArrowSlitHalf" unlock_level="1" />
-            <recipe name="clawHammer" unlock_level="1" />
-            <recipe name="plank" unlock_level="1" />
-            <effect name="HarvestCount">
-                <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="2" />
-            </effect>
+            <recipe name="woodFrameBlock" unlock_level="2" />
+            <recipe name="woodFrameCNRFull" unlock_level="2" />
+            <recipe name="woodFrameCNRInside" unlock_level="2" />
+            <recipe name="woodFrameWedge" unlock_level="2" />
+            <recipe name="woodFrameRamp" unlock_level="2" />
+            <recipe name="woodStairs25" unlock_level="2" />
+            <recipe name="woodPillar100" unlock_level="2" />
+            <recipe name="powerPoleWoodPillar50" unlock_level="2" />
+            <recipe name="woodPlate" unlock_level="2" />
+            <recipe name="woodPole" unlock_level="2" />
+            <recipe name="woodArrowSlitHalf" unlock_level="2" />
+            <!--upgrade material-->
             <effect name="CraftingTime">
                 <multiply perk_level="0" value="1" />
                 <multiply perk_level="1" value="0.9" />
@@ -3614,7 +3672,6 @@
             <recipe name="infectedShot" unlock_level="1" />
             <recipe name="sedativeShot" unlock_level="1" />
             <recipe name="firstAidKit" unlock_level="1" />
-            <recipe name="large1stAidKit" unlock_level="1" />
             <recipe name="firstAidBandage" unlock_level="1" />
             <recipe name="aloeCream" unlock_level="1" />
             <recipe name="antibiotics" unlock_level="1" />
@@ -3625,11 +3682,7 @@
             <recipe name="weaponRepairKit" unlock_level="1" />
             <effect name="DismembermentChance">
                 <add perk_level="0" value="0" />
-                <add perk_level="1" value="0.25" />
-            </effect>
-            <effect name="EntityDamage">
-                <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="1.05" />
+                <add perk_level="1" value="0.1" />
             </effect>
             <effect name="ReloadSpeed">
                 <multiply perk_level="0" value="1" />
@@ -3645,39 +3698,12 @@
             <recipe name="mineCookingPot" unlock_level="1" />
             <effect name="DismembermentChance">
                 <add perk_level="0" value="0" />
-                <add perk_level="1" value="0.30" />
-            </effect>
-            <effect name="EntityDamage">
-                <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="1.1" />
+                <add perk_level="1" value="0.15" />
             </effect>
             <effect name="ReloadSpeed">
                 <multiply perk_level="0" value="1" />
                 <multiply perk_level="1" value="0.9" />
             </effect>
-        </perk>
-        <perk name="farmer" icon="Farmer" description_key="These are the skills a farmer starts with. Collect 20 Profession pages to learn another profession" title_key="Farmer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
-            <recipe name="seedNursery" unlock_level="1" />
-            <recipe name="stoneHoe" unlock_level="1" />
-            <recipe name="hoeIron" unlock_level="1" />
-            <recipe name="fertilizer" unlock_level="1" />
-            <recipe name="appleSeed" unlock_level="1" />
-            <recipe name="hopSeed" unlock_level="1" />
-            <recipe name="aloeSeed" unlock_level="1" />
-            <recipe name="mushroomSeed" unlock_level="1" />
-            <recipe name="carrotSeed" unlock_level="1" />
-            <recipe name="wheatSeed" unlock_level="1" />
-            <recipe name="coffeeSeeds" unlock_level="1" />
-            <recipe name="strawberrySeed" unlock_level="1" />
-            <recipe name="sunflowerSeed" unlock_level="1" />
-            <recipe name="cornSeed" unlock_level="1" />
-            <recipe name="potatoSeed" unlock_level="1" />
-            <recipe name="blueberrySeed" unlock_level="1" />
-            <recipe name="cottonSeed" unlock_level="1" />
-            <recipe name="goldenrodSeed" unlock_level="1" />
-            <recipe name="yuccaSeed" unlock_level="1" />
-            <recipe name="chrysanthemumSeed" unlock_level="1" />
-            <recipe name="tomatoSeed" unlock_level="1" />
         </perk>
         <perk name="chemist" icon="Chemist" description_key="These are the skills a Chemist starts with. Collect 20 Profession pages to learn another profession" title_key="Chemist" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
             <recipe name="redBull" unlock_level="1" />
@@ -3691,23 +3717,68 @@
         </perk>
         <perk name="chef" icon="Chef" description_key="These are the skills a Chef starts with. Collect 20 Profession pages to learn another profession" title_key="Chef" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
             <recipe name="sharpeningStone" unlock_level="1" />
+            <recipe name="cornMeal" unlock_level="1" />
+            <recipe name="cornBread" unlock_level="1" />
+            <recipe name="flour" unlock_level="1" />
+            <recipe name="bread" unlock_level="1" />
+            <recipe name="goldenRodTea" unlock_level="1" />
+            <recipe name="redTea" unlock_level="1" />
+            <recipe name="baconAndEggs" unlock_level="1" />
+            <recipe name="friedEggOmelet" unlock_level="1" />
+            <recipe name="fruitServing" unlock_level="1" />
+            <recipe name="grainServing" unlock_level="1" />
+            <recipe name="veggieServing" unlock_level="1" />
+            <recipe name="proteinServing" unlock_level="1" />
+            <recipe name="fruitSaladSmall" unlock_level="1" />
+            <recipe name="fruitSaladMedium" unlock_level="1" />
+            <recipe name="fruitSaladLarge" unlock_level="1" />
+            <recipe name="veggieSaladSmall" unlock_level="1" />
+            <recipe name="veggieSaladMedium" unlock_level="1" />
+            <recipe name="veggieSaladLarge" unlock_level="1" />
+            <recipe name="kabobSmall" unlock_level="1" />
+            <recipe name="kabobMedium" unlock_level="1" />
+            <recipe name="kabobLarge" unlock_level="1" />
+            <recipe name="fruitJuice" unlock_level="1" />
+            <recipe name="vegetableStew" unlock_level="1" />
+            <recipe name="bearStew" unlock_level="1" />
+            <recipe name="heartyStew" unlock_level="1" />
+            <recipe name="applePie" unlock_level="1" />
+            <recipe name="carrotCake" unlock_level="1" />
+            <recipe name="blueberryPie" unlock_level="1" />
+            <recipe name="foodPrepTable" unlock_level="1" />
+            <recipe name="simpleMealSmall" unlock_level="1" />
+            <recipe name="simpleMealMedium" unlock_level="1" />
+            <recipe name="simpleMealLarge" unlock_level="1" />
+            <recipe name="megaCrush" unlock_level="1" />
+            <recipe name="honeyGlazedMeatSmall" unlock_level="1" />
+            <recipe name="honeyGlazedMeatMedium" unlock_level="1" />
+            <recipe name="honeyGlazedMeatLarge" unlock_level="1" />
+            <recipe name="beer" unlock_level="1" />
+            <recipe name="mead" unlock_level="1" />
+            <recipe name="grainAlcohol" unlock_level="1" />
+            <recipe name="goodMealSmall" unlock_level="1" />
+            <recipe name="goodMealMedium" unlock_level="1" />
+            <recipe name="goodMealLarge" unlock_level="1" />
+            <recipe name="fishNChips" unlock_level="1" />
+            <recipe name="brainShnitzel" unlock_level="1" />
+            <recipe name="wellnessJuice" unlock_level="1" />
+            <recipe name="healthyMealSmall" unlock_level="1" />
+            <recipe name="healthyMealMedium" unlock_level="1" />
+            <recipe name="healthyMealLarge" unlock_level="1" />
         </perk>
-        <perk name="fitness Instructor" icon="Fitness" description_key="These are the skills a Fitness Instructor starts with. Collect 20 Profession pages to learn another profession" title_key="Fitness Instructor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
+        <perk name="fitnessInstructor" icon="Fitness" description_key="These are the skills a Fitness Instructor starts with. Collect 20 Profession pages to learn another profession" title_key="Fitness Instructor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
             <recipe name="redBull" unlock_level="1" />
             <recipe name="wellnessJuice" unlock_level="1" />
             <recipe name="goldenRodTea" unlock_level="1" />
             <recipe name="redTea" unlock_level="1" />
+            <recipe name="fruitJuice" unlock_level="1" />
             <effect name="MaxStamina">
                 <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="1.1" />
+                <multiply perk_level="1" value="1.05" />
             </effect>
             <effect name="StaminaDegradation">
                 <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="0.9" />
-            </effect>
-            <effect name="MaxSpeed">
-                <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="1.1" />
+                <multiply perk_level="1" value="0.95" />
             </effect>
             <effect name="WalkSpeed">
                 <multiply perk_level="0" value="1" />
@@ -3724,70 +3795,89 @@
         </perk>
         <perk name="fireman" icon="Fireman" description_key="These are the skill a Fireman starts with. Collect 20 Profession pages to learn another profession" title_key="Fireman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
             <recipe name="aloeCream" unlock_level="1" />
-            <recipe name="fireaxeIron" unlock_level="1" />
-            <recipe name="fireaxeSteel" unlock_level="1" />
+            <recipe name="firstAidBandage" unlock_level="1" />
+            <recipe name="oldFiremanAxe" unlock_level="1" />
+            <recipe name="molotovCocktail" unlock_level="1" />
             <effect name="MaxStamina">
                 <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="1.1" />
+                <multiply perk_level="1" value="1.05" />
             </effect>
             <effect name="BlockDamage">
                 <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="1.2" />
+                <multiply perk_level="1" value="1.1" />
             </effect>
         </perk>
-        <perk name="construction Worker" icon="Construction" description_key="These are the skills a Construction Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Construction Worker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
-            <recipe name="wrench" unlock_level="1" />
+        <perk name="ironWorker" icon="Construction" description_key="These are the skills a Construction Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Iron Worker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
             <recipe name="scrapIronFrameBlock" unlock_level="1" />
+            <recipe name="scrapIronFrameRamp" unlock_level="1" />
+            <recipe name="scrapIronStairs25" unlock_level="1" />
+            <recipe name="scrapIronArrowSlitHalf" unlock_level="1" />
+            <recipe name="scrapIronFrameWedge" unlock_level="1" />
+            <recipe name="scrapIronFrameWedgeTip" unlock_level="1" />
+            <recipe name="scrapIronFramePlate" unlock_level="1" />
             <recipe name="scrapIronFrameCNRFull" unlock_level="1" />
             <recipe name="scrapIronFrameCNRInside" unlock_level="1" />
-            <recipe name="scrapIronFrameRamp" unlock_level="1" />
-            <recipe name="scrapIronFrameWedge" unlock_level="1" />
-            <recipe name="scrapIronStairs25" unlock_level="1" />
+            <recipe name="scrapIronFramePillar100" unlock_level="1" />
+            <recipe name="scrapIronFramePillar50" unlock_level="1" />
+            <recipe name="scrapIronFramePole" unlock_level="1" />
             <recipe name="rScrapIronPlate" unlock_level="1" />
-            <recipe name="scrapIronSheet" unlock_level="1" />
-            <recipe name="scrapIronArrowSlitHalf" unlock_level="1" />
             <effect name="BlockDamage">
                 <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="1.1" />
+                <multiply perk_level="1" value="1.05" />
             </effect>
         </perk>
         <perk name="electrician" icon="Electrician" description_key="These are the skills a Electrician starts with. Collect 20 Profession pages to learn another profession" title_key="Electrician" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
-            <recipe name="screwdriver" unlock_level="1" />
+            <recipe name="wireTool" unlock_level="1"/>
             <recipe name="shockStick" unlock_level="1" />
-            <recipe name="powerCeilingLight01" unlock_level="1" />
-            <recipe name="powerPorchLight04" unlock_level="1" />
-            <recipe name="powerPorchLight01" unlock_level="1" />
-            <recipe name="powerCeilingLight02" unlock_level="1" />
-            <recipe name="powerCeilingLight07" unlock_level="1" />
-            <recipe name="powerStreetLight01" unlock_level="1" />
-            <recipe name="powerIndustrialLight01" unlock_level="1" />
-            <effect name="HarvestCount">
-                <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="1.15" />
-            </effect>
+            <recipe name="electricwirerelay" unlock_level="1"/>
+            <recipe name="ceilingLight01_player" unlock_level="1"/>
+            <recipe name="porchLight01_player" unlock_level="1"/>
+            <recipe name="wallLight01_player" unlock_level="1"/>
+            <recipe name="ceilingLight02_player" unlock_level="1"/>
+            <recipe name="industrialLight01_player" unlock_level="1"/>
+            <recipe name="ceilingLight07_player" unlock_level="1"/>
+            <recipe name="spotlightPlayer" unlock_level="1"/>
+            <recipe name="speaker" unlock_level="1"/>
+            <recipe name="switch" unlock_level="1"/>
+            <recipe name="pressureplate" unlock_level="1"/>
+            <recipe name="tripwirepost" unlock_level="1"/>
+            <recipe name="electrictimerrelay" unlock_level="1"/>
+            <recipe name="pressureplateLong" unlock_level="1"/>
+            <recipe name="motionsensor" unlock_level="1"/>
+            <recipe name="electricfencepost" unlock_level="1"/>
+            <recipe name="generatorbank" unlock_level="1"/>
+            <recipe name="batterybank" unlock_level="1"/>
             <effect name="CraftingTime">
                 <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="0.9" />
+                <multiply perk_level="1" value="0.95" />
             </effect>
             <effect name="RepairQualityLoss">
                 <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="0.9" />
+                <multiply perk_level="1" value="0.95" />
             </effect>
         </perk>
-        <perk name="metal Worker" icon="Metal" description_key="These are the skills a Metal Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Metal Worker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
-            <recipe name="forge" unlock_level="1" />
-            <recipe name="bellows" unlock_level="1" />
-            <recipe name="rebarFrameBlock" unlock_level="1" />
-            <recipe name="rebarFrameCNRInside" unlock_level="1" />
-            <recipe name="rebarFramePillar100" unlock_level="1" />
-            <recipe name="rebarFrameRamp" unlock_level="1" />
-            <effect name="BlockDamage">
+        <perk name="steelWelder" icon="Metal" description_key="These are the skills a Metal Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Steel Welder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
+            <recipe name="forgedFrameBlock" unlock_level="1" />
+            <recipe name="forgedFrameRamp" unlock_level="1" />
+            <recipe name="forgedStairs25" unlock_level="1" />
+            <recipe name="forgedArrowSlitHalf" unlock_level="1" />
+            <recipe name="forgedFrameWedge" unlock_level="1" />
+            <recipe name="forgedFrameWedgeTip" unlock_level="1" />
+            <recipe name="forgedFramePlate" unlock_level="1" />
+            <recipe name="forgedFrameCNRFull" unlock_level="1" />
+            <recipe name="forgedFrameCNRInside" unlock_level="1" />
+            <recipe name="forgedFramePillar100" unlock_level="1" />
+            <recipe name="forgedFramePillar50" unlock_level="1" />
+            <recipe name="forgedFramePole" unlock_level="1" />
+            <recipe name="forgedIronPlate" unlock_level="1" />
+            <recipe name="forgedIronSheet" unlock_level="1" />
+            <effect name="RepairTime">
                 <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="1.1" />
+                <multiply skill_level="1" value="0.95" />
             </effect>
         </perk>
-        <perk name="burglar" icon="Burglar" description_key="These are the skills a Burglar starts with. Collect 20 Profession pages to learn another profession" title_key="Burglar" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
-            <recipe name="ironShiv" unlock_level="1" />
+        <perk name="thief" icon="Burglar" description_key="These are the skills a thief starts with. Collect 20 Profession pages to learn another profession" title_key="Thief" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
+            <recipe name="huntingknife" unlock_level="1" />
             <recipe name="lockPick" unlock_level="1" />
             <effect name="TreasureRadius">
                 <setvalue perk_level="0" value="10" />
@@ -3807,7 +3897,6 @@
             </effect>
         </perk>
         <perk name="parkRanger" icon="Ranger" description_key="These are the skills a Park Ranger starts with. Collect 20 Profession pages to learn another profession" title_key="Park Ranger" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
-            <recipe name="bearTrap" unlock_level="1" />
             <recipe name="woodSpear" unlock_level="1" />
             <recipe name="woodJavelin" unlock_level="1" />
             <recipe name="setUpASpikeTrap" unlock_level="1" />
@@ -3817,14 +3906,38 @@
         <perk name="mechanic" icon="Mechanic" description_key="These are the skills a Mechanic starts with. Collect 20 Profession pages to learn another profession" title_key="Mechanic" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
             <recipe name="auger" unlock_level="1" />
             <recipe name="chainsaw" unlock_level="1" />
-            <recipe name="wrench" unlock_level="1" />
-            <effect name="HarvestCount">
-                <multiply perk_level="0" value="1" />
-                <multiply perk_level="1" value="1.15" />
-            </effect>
+            <recipe name="generatorbank" unlock_level="1"/>
             <effect name="CraftingTime">
                 <multiply perk_level="0" value="1" />
                 <multiply perk_level="1" value="0.9" />
+            </effect>
+        </perk>
+         <perk name="mason" icon="Metal" description_key="These are the skills a mason starts with. Collect 20 Profession pages to learn another profession" title_key="Mason" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
+            <recipe name="BrickFrameBlock" unlock_level="1" />
+            <recipe name="BrickFrameRamp" unlock_level="1" />
+            <recipe name="BrickFrameStairs" unlock_level="1" />
+            <recipe name="BrickModernArrowSlitHalf" unlock_level="1" />
+            <recipe name="BrickFrameWedge" unlock_level="1" />
+            <recipe name="BrickFrameWedgeTip" unlock_level="1" />
+            <recipe name="BrickFramePlate" unlock_level="1" />
+            <recipe name="BrickFrameCNRFull" unlock_level="1" />
+            <recipe name="BrickFrameCNRInside" unlock_level="1" />
+            <recipe name="BrickFramePillar100" unlock_level="1" />
+            <recipe name="BrickFramePillar50" unlock_level="1" />
+            <recipe name="BrickFramePole" unlock_level="1" />
+            <effect name="RepairTime">
+                <multiply perk_level="0" value="1" />
+                <multiply skill_level="1" value="0.95" />
+            </effect>
+        </perk>
+        <perk name="bouncer" icon="Mechanic" description_key="These are the skills a Bouncer starts with. Collect 20 Profession pages to learn another profession" title_key="Bouncer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
+            <recipe name="brassKnuckles" unlock_level="1" />
+            <recipe name="beer" unlock_level="1" />
+            <recipe name="mead" unlock_level="1" />
+            <recipe name="grainAlcohol" unlock_level="1" />
+            <effect name="StaminaDegradation">
+                <multiply perk_level="0" value="1" />
+                <multiply perk_level="1" value="0.95" />
             </effect>
         </perk>
         <perk name="badMechanic" icon="resource" description_key="badMechanicDesc" title_key="badMechanic" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="tools">

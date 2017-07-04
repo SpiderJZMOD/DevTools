@@ -1471,17 +1471,7 @@
 		<item name="soldier" />
 		<item name="aK47Schematic" />
 		<item name="308mmBullet" count="19" />
-		<item name="qc_Soldier" />
-		<item name="qc_King" />
-	</lootgroup>
-	<lootgroup name="farmer" count="all">
-		<item name="canBeef" />
-		<item name="bottledWater" />
-		<item name="keystoneRock" />
-		<item name="painkillers" />
-        <item name="308mmBullet" count="19" />
-		<item name="farmer" />
-		<item name="qc_Farmer" />
+		<!--<item name="qc_Soldier" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="chemist" count="all">
@@ -1491,7 +1481,7 @@
 		<item name="painkillers" />
 		<item name="stimulant" count="6" />
 		<item name="chemist" />
-		<item name="qc_Chemist" />
+		<!--<item name="qc_Chemist" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="carpenter" count="all">
@@ -1500,7 +1490,7 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="carpenter" />
-		<item name="qc_Carpenter" />
+		<!--<item name="qc_Carpenter" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="cop" count="all">
@@ -1511,7 +1501,7 @@
 		<item name="painkillers" />
         <item name="cop" />
 		<item name="9mmBullet" count="16" />
-		<item name="qc_Cop" />
+		<!--<item name="qc_Cop" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="doctor" count="all">
@@ -1520,18 +1510,7 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" count="6" />
 		<item name="doctor" />
-		<item name="qc_Doctor" />
-		<item name="qc_King" />
-	</lootgroup>
-	<lootgroup name="fisherman" count="all">
-		<item name="canBeef" />
-		<item name="bottledWater" />
-		<item name="keystoneRock" />
-		<item name="painkillers" />
-		<item name="fisherman" />
-		<item name="fishingLine" />
-		<item name="hook" />
-		<item name="qc_Fisherman" />
+		<!--<item name="qc_Doctor" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="chef" count="all">
@@ -1540,7 +1519,7 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="chef" />
-		<item name="qc_Chef" />
+		<!--<item name="qc_Chef" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="fitness Instructor" count="all">
@@ -1549,7 +1528,7 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="fitness Instructor" />
-		<item name="qc_Fitness_Instructor" />
+		<!--<item name="qc_Fitness_Instructor" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="fireman" count="all">
@@ -1558,7 +1537,7 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="fireman" />
-		<item name="qc_Fireman" />
+		<!--<item name="qc_Fireman" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="construction Worker" count="all">
@@ -1567,7 +1546,7 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="construction Worker" />
-		<item name="qc_Construction_Worker" />
+		<!--<item name="qc_Construction_Worker" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="electrician" count="all">
@@ -1576,7 +1555,7 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="electrician" />
-		<item name="qc_Electrician" />
+		<!--<item name="qc_Electrician" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="metal Worker" count="all">
@@ -1585,7 +1564,7 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="metal Worker" />
-		<item name="qc_Metal_Worker" />
+	<!--	<item name="qc_Metal_Worker" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="burglar" count="all">
@@ -1595,7 +1574,7 @@
 		<item name="painkillers" />
 		<item name="lockPick" count="50" />
 		<item name="burglar" />
-		<item name="qc_Burglar" />
+		<!--<item name="qc_Burglar" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="park Ranger" count="all">
@@ -1605,7 +1584,7 @@
         <item name="painkillers" />
 		<item name="308mmBullet" count="19" />
 		<item name="park Ranger" />
-		<item name="qc_Park_Ranger" />
+		<!--<item name="qc_Park_Ranger" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="mechanic" count="all">
@@ -1615,7 +1594,16 @@
 		<item name="painkillers" />
 		<item name="minibikesForDumbshits" />
 		<item name="mechanic" />
-		<item name="qc_Mechanic" />
+		<!--<item name="qc_Mechanic" />-->
+		<item name="qc_King" />
+	</lootgroup>
+    <lootgroup name="bouncer" count="all">
+		<item name="canBeef" />
+		<item name="bottledWater" />
+		<item name="keystoneRock" />
+		<item name="painkillers" />
+		<item name="bouncer" />
+		<!--<item name="qc_Bouncer" />-->
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="bikeNABox" count="all">
@@ -2978,9 +2966,9 @@
 	<lootcontainer id="213" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="doctor" count="1" />
 	</lootcontainer>
-	<!-- Farmer Loot  -->
+    <!-- Bouncer Loot  -->
 	<lootcontainer id="214" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
-		<item group="farmer" count="1" />
+		<item group="bouncer" count="1" />
 	</lootcontainer>
 	<!-- Chemist Loot  -->
 	<lootcontainer id="215" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
@@ -2993,10 +2981,6 @@
 	<!-- Cop Loot  -->
 	<lootcontainer id="217" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="cop" count="1" />
-	</lootcontainer>
-	<!-- Fisherman Loot  -->
-	<lootcontainer id="218" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
-		<item group="fisherman" count="1" />
 	</lootcontainer>
 	<!-- Chef Loot  -->
 	<lootcontainer id="219" count="1" size="5,5" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
