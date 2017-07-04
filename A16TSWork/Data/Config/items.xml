@@ -10471,7 +10471,7 @@ Mesh files no longer used:
 </item>
 -->
 <!--JZMOD ADDED ITEMS -->
-<item id="1500" name="itemMaster">
+<item id="1505" name="itemMaster">
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
     <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
     <property name="Material" value="organic" />
@@ -10481,7 +10481,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources" />
 	<property name="SellableToTrader" value="false" />
 </item>
-<item id="1829" name="foodMaster">
+<item id="1506" name="foodMaster">
 	<property name="Meshfile" value="Items/Misc/parcel" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="organic" />
@@ -10504,7 +10504,7 @@ Mesh files no longer used:
 </item>
 <!--JZMOD WEAPONS AND WEAPON PARTS-->
 <!--JZMOD CROSSBOWS-->
-<item id="1503" name="crossbowScope">
+<item id="1507" name="crossbowScope">
 	<property name="Extends" value="crossbow" />
 	<property name="DescriptionKey" value="crossbowScopeDesc" />
 	<property class="Parts">
@@ -10517,7 +10517,7 @@ Mesh files no longer used:
 		<property name="Zoom_max_in" value="15" />
 	</property>
 </item>
-<item id="1504" name="autoCrossbow">
+<item id="1508" name="autoCrossbow">
 	<property name="Extends" value="crossbow" />
 	<property name="DescriptionKey" value="autoCrossbowDesc" />
 	<property class="Parts">
@@ -10527,7 +10527,7 @@ Mesh files no longer used:
 		<property name="Magazine_size" value="6" />
 	</property>
 </item>
-<item id="1505" name="crossbow_Parts">
+<item id="1509" name="crossbow_Parts">
 	<property name="Extends" value="partsMaster" />
 	<property name="DescriptionKey" value="crossbow_PartsDesc" />
 	<property name="CustomIcon" value="parts44Magnum_parts" />
@@ -10539,7 +10539,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="crossbowCraft" />
 </item>
-<item id="1506" name="crossbow_Limb">
+<item id="1510" name="crossbow_Limb">
 	<property name="Extends" value="partsMaster" />
 	<property name="DescriptionKey" value="crossbow_LimbDesc" />
 	<property name="PartType" value="Receiver" />
@@ -10549,7 +10549,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="crossbowCraft" />
 </item>
-<item id="1507" name="crossbow_Stock">
+<item id="1511" name="crossbow_Stock">
 	<property name="Extends" value="partsMaster" />
 	<property name="DescriptionKey" value="crossbow_StockDesc" />
 	<property name="PartType" value="Stock" />
@@ -10560,7 +10560,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="crossbowCraft" />
 </item>
-<item id="1508" name="crossbow_Barrel">
+<item id="1512" name="crossbow_Barrel">
 	<property name="Extends" value="partsMaster" />
 	<property name="DescriptionKey" value="crossbow_BarrelDesc" />
 	<property name="PartType" value="Barrel" />
@@ -10571,17 +10571,17 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="crossbowCraft" />
 </item>
-<item id="1509" name="boltCylinder">
+<item id="1513" name="boltCylinder">
 	<property name="Extends" value="crossbow_Barrel" />
 	<property name="DescriptionKey" value="boltCylinderDesc" />
 	<property name="CraftingSkillGroup" value="crossbowCraft" />
-	</item>
-<item id="1510" name="crossbowStockScope">
+</item>
+<item id="1514" name="crossbowStockScope">
 	<property name="Extends" value="crossbow_Stock" />
 	<property name="DescriptionKey" value="crossbowStockScopeDesc" />
 	<property name="CraftingSkillGroup" value="crossbowCraft" />
 </item>
-<item id="1511" name="carbonCrossbow">
+<item id="1515" name="carbonCrossbow">
 	<property name="Extends" value="crossbow" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 	<!--sdx <property name="Meshfile" value="#crossbownew?CrossbowNew" /> -->
@@ -10599,7 +10599,7 @@ Mesh files no longer used:
 		<property name="Rays_spread" value="0.01" />
 	</property>
 </item>
-<item id="1512" name="carbonCrossbow_Parts">
+<item id="1516" name="carbonCrossbow_Parts">
 	<property name="Extends" value="crossbow_Parts" />
 	<property name="CustomIcon" value="parts44Magnum_parts" />
     <property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
@@ -10608,7 +10608,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="crossbowCraft" />
 </item>
-<item id="1513" name="carbonCrossbow_Limb">
+<item id="1517" name="carbonCrossbow_Limb">
 	<property name="Extends" value="crossbow_Limb" />
 	<property name="CustomIcon" value="crossbow_Limb" />
     <property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
@@ -10617,7 +10617,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="crossbowCraft" />
 </item>
-<item id="1514" name="carbonCrossbow_Stock">
+<item id="1518" name="carbonCrossbow_Stock">
 	<property name="Extends" value="crossbow_Stock" />
 	<property name="CustomIcon" value="crossbow_Stock" />
     <property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
@@ -10626,7 +10626,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="crossbowCraft" />
 </item>
-<item id="1515" name="carbonCrossbow_Barrel">
+<item id="1519" name="carbonCrossbow_Barrel">
 	<property name="Extends" value="crossbow_Barrel" />
 	<property name="CustomIcon" value="crossbow_Barrel" />
        <property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
@@ -10635,7 +10635,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="crossbowCraft" />
 </item>
-<item id="1969" name="silencer">
+<item id="1520" name="silencer">
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_dropedPrefab" />
 	<property name="Material" value="metal" />
@@ -10647,7 +10647,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="ui_game_symbol_Silencer" />
 	<property name="DescriptionKey" value="SilencerDesc" />
 </item>
-<item id="1501" name="sniperRifle_scopeFrame">
+<item id="1521" name="sniperRifle_scopeFrame">
 	<property name="Extends" value="silencer" />
 <!--sdx <property name="Meshfile" value="#weaponAttach?AcogPrebab" /> 
 	<property name="DropMeshfile" value="#weaponAttach?AcogPrebab" /> -->
@@ -10662,7 +10662,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="sniperRifle_scopeFrameDesc" />
 </item>
 <!--JZMOD CRAFTED GUNS-->
-<item id="1519" name="blunderbussDouble">
+<item id="1522" name="blunderbussDouble">
 	<property name="Extends" value="blunderbuss" />
 	<property name="DescriptionKey" value="BlunderbussDoubleDesc" />
 	<property class="Action0">
@@ -10670,7 +10670,7 @@ Mesh files no longer used:
 	</property>
     <property name="CraftingSkillGroup" value="craftedGunsCraft" />
 </item>
-<item id="1520" name="craftedRifle">
+<item id="1523" name="craftedRifle">
 	<property name="Extends" value="gunHuntingRifle" />
      <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 <!--sdx<property name="HandMeshfile" value="#steampunk?buechse" />
@@ -10697,7 +10697,7 @@ Mesh files no longer used:
 		</property>
     <property name="CraftingSkillGroup" value="craftedGunsCraft" />
 </item>
-<item id="1521" name="craftedRifle_receiver">
+<item id="1524" name="craftedRifle_receiver">
 	<property name="Extends" value="partsMaster" />
 	<property name="DescriptionKey" value="craftedRiflePartsDesc" />
     <property name="CustomIcon" value="partsHuntingRifle_receiver" />
@@ -10711,7 +10711,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="craftedGunsCraft" />
 </item>
-<item id="1522" name="craftedRifle_stock">
+<item id="1525" name="craftedRifle_stock">
 	<property name="Extends" value="partsMaster" />
 	<property name="DescriptionKey" value="craftedRiflePartsDesc" />
     <property name="CustomIcon" value="partsHuntingRifle_stock" />
@@ -10723,7 +10723,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="craftedGunsCraft" />
 </item>
-<item id="1523" name="craftedRifleBarrel">
+<item id="1526" name="craftedRifleBarrel">
 	<property name="Extends" value="partsMaster" />
 	<property name="DescriptionKey" value="craftedRiflePartsDesc" />
     <property name="CustomIcon" value="partsHuntingRifle_barrel" />
@@ -10736,7 +10736,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftedGunsCraft" />
 </item>
 <!--JZMOD HANDGUNS-->
-<item id="1524" name="oldRevolver">
+<item id="1527" name="oldRevolver">
 <!--sdx <property name="Meshfile" value="#revolver?revolverPrefab" /> -->
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 	<property name="Material" value="metal" />
@@ -10796,7 +10796,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons" />
 	<property name="ActionSkillGroup" value="Pistols" />
 </item>
-<item id="1525" name="oldRifle">
+<item id="1528" name="oldRifle">
 	<property name="Extends" value="oldRevolver" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab" />
 	<property name="CustomIcon" value="gunHuntingRifle" />
@@ -10843,14 +10843,14 @@ Mesh files no longer used:
 	</property>
 	<property name="ActionSkillGroup" value="Rifles" />
 </item>
-<item id="1532" name="silencedPistolBarrel">
+<item id="1529" name="silencedPistolBarrel">
 	<property name="Extends" value="partsPistol_barrel" />
 	<property name="DescriptionKey" value="silencedPistolBarrelDesc" />
 	<property name="CustomIcon" value="partsPistol_barrel" />
 	<property name="CustomIconTint" value="FD9095" />
 	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 </item>
-<item id="1545" name="44MagnumScope">
+<item id="1530" name="44MagnumScope">
 	<property name="Extends" value="gun44Magnum" />
 	<property name="DescriptionKey" value="44MagnumScopeDesc" />
 	<property name="CustomIcon" value="ui_game_symbol_44MagnumScope" />
@@ -10864,13 +10864,13 @@ Mesh files no longer used:
 		<property name="Zoom_max_in" value="15" />
 	</property>
 </item>
-<item id="1546" name="magnumFrameScope">
+<item id="1531" name="magnumFrameScope">
 	<property name="Extends" value="parts44Magnum_frame" />
 	<property name="DescriptionKey" value="magnumFrameScopeDesc" />
 	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 </item>
 <!--JZMOD HUNTING  RIFLE-->
-<item id="1547" name="huntingRifleScope">
+<item id="1532" name="huntingRifleScope">
 	<property name="Extends" value="gunHuntingRifle" />
 	<property name="DescriptionKey" value="huntingRifleScopeDesc" />
 	<property name="CustomIcon" value="ui_game_symbol_huntingRifleScope" />
@@ -10884,7 +10884,7 @@ Mesh files no longer used:
 		<property name="Zoom_max_in" value="15" />
 	</property>
 </item>
-<item id="1548" name="silencedhuntingRifle">
+<item id="1533" name="silencedhuntingRifle">
 	<property name="Extends" value="gunHuntingRifle" />
 	<property name="DescriptionKey" value="silencedhuntingRifleDesc" />
 	<property name="CustomIcon" value="ui_game_symbol_SilencedhuntingRifle" />
@@ -10895,7 +10895,7 @@ Mesh files no longer used:
 		<property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
 	</property>
 </item>
-<item id="1549" name="huntingRifleSilScope">
+<item id="1534" name="huntingRifleSilScope">
 	<property name="Extends" value="gunHuntingRifle" />
 	<property name="DescriptionKey" value="huntingRifleSilScopeDesc" />
 	<property class="Parts">
@@ -10912,12 +10912,12 @@ Mesh files no longer used:
 		<property name="Zoom_max_in" value="15" />
 	</property>
 </item>
-<item id="1550" name="huntingRifleStockScope">
+<item id="1535" name="huntingRifleStockScope">
 	<property name="Extends" value="partsHuntingRifle_stock" />
 	<property name="DescriptionKey" value="huntingRifleStockScopeDesc" />
 	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 </item>
-<item id="1551" name="silencedHuntingBarrel">
+<item id="1536" name="silencedHuntingBarrel">
 	<property name="Extends" value="partsHuntingRifle_barrel" />
 	<property name="DescriptionKey" value="silencedHuntingBarrelDesc" />
 	<property name="CustomIcon" value="partsHuntingRifle_barrel" />
@@ -10925,7 +10925,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 </item>
 <!--JZMOD RIFLES-->
-<item id="1586" name="silencedAK47">
+<item id="1537" name="silencedAK47">
 	<property name="Extends" value="gunAK47" />
     <property name="CustomIcon" value="gunAK47" />
     <property name="DescriptionKey" value="silencedAK47Desc" />
@@ -10936,7 +10936,7 @@ Mesh files no longer used:
 	<property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
 	</property>
 </item>
-<item id="1587" name="scopedAK47">
+<item id="1538" name="scopedAK47">
 	<property name="Extends" value="gunAK47" />
     <property name="CustomIcon" value="gunAK47" />
 	<property name="DescriptionKey" value="ScopedAK47Desc" />
@@ -10950,7 +10950,7 @@ Mesh files no longer used:
 		<property name="Zoom_max_in" value="15" />
 	</property>
 </item>
-<item id="1588" name="silentScopedAK47">
+<item id="1539" name="silentScopedAK47">
 	<property name="Extends" value="gunAK47" />
     <property name="CustomIcon" value="gunAK47" />
 	<property name="DescriptionKey" value="SilentScopedAK47Desc" />
@@ -10968,18 +10968,18 @@ Mesh files no longer used:
 		<property name="Zoom_max_in" value="15" />
 	</property>
 </item>
-<item id="1589" name="aK47StockScope">
+<item id="1540" name="aK47StockScope">
 	<property name="Extends" value="partsAK47_stock" />
 	<property name="DescriptionKey" value="aK47StockScopeDesc" />
 	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 </item>
-<item id="1590" name="silencedAK47Barrel">
+<item id="1541" name="silencedAK47Barrel">
 	<property name="Extends" value="partsAK47_barrel" />
 	<property name="DescriptionKey" value="silencedAK47BarrelDesc" />
 	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 </item>
 <!--JZMOD AMMO-->
-<item id="1621" name="9mmFireBullet">
+<item id="1542" name="9mmFireBullet">
 	<property name="Extends" value="9mmBullet" />
 	<property name="DescriptionKey" value="9mmFireBulletDesc" />
 	<property name="CustomIcon" value="9mmFireBullet" />
@@ -10988,7 +10988,7 @@ Mesh files no longer used:
 		<property name="ApplyBuff" value="1,1" param1="burning" />
 	</property>
 </item>
-<item id="1623" name="shotgunFireShell">
+<item id="1543" name="shotgunFireShell">
 	<property name="Extends" value="shotgunShell" />
 	<property name="DescriptionKey" value="shotgunFireShellDesc" />
 	<property name="CustomIcon" value="shotgunFireShell" />
@@ -10998,7 +10998,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 </item>
-<item id="1624" name="grenade">
+<item id="1544" name="grenade">
 	<!--SDX <property name="Meshfile" value="#launcher?Grenade_launcher" /> -->
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 	<property name="Material" value="metal" />
@@ -11028,7 +11028,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
 </item>
-<item id="1625" name="heGrenade">
+<item id="1545" name="heGrenade">
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 <!--SDX 	<property name="Meshfile" value="#launcher?Grenade_launcher" /> -->
 	<property name="Material" value="metal" />
@@ -11058,7 +11058,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
 </item>
-<item id="1626" name="demoRocket">
+<item id="1546" name="demoRocket">
 	<property name="Extends" value="rocket" />
 	<property name="DescriptionKey" value="DemoRocketDesc" />
 	<property name="CustomIconTint" value="177c09" />
@@ -11079,18 +11079,18 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 </item>
-<item id="1627" name="308mmBullet">
+<item id="1547" name="308mmBullet">
 	<property name="Extends" value="762mmBullet" />
 	<property name="DescriptionKey" value="308mmBulletDesc" />
 	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 </item>
-<item id="1628" name="556mmBullet">
+<item id="1548" name="556mmBullet">
 	<property name="Extends" value="762mmBullet" />
 	<property name="DescriptionKey" value="5.45mmBulletDesc" />
 	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 </item>
  	<!--JZMOD MELEE WEAPONS -->
-<item id="1633" name="woodSpear">
+<item id="1549" name="woodSpear">
     <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 <!-- SDX	<property name="Meshfile" value="#crudeweapons?woddenSpear" /> 
 	<property name="HandMeshfile" value="#crudeweapons?woddenSpear" />
@@ -11157,7 +11157,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="bladeWeaponsCraft" />
 	<property name="CraftingSkillGroup" value="woodSpearCraft" />
 </item>
-<item id="1634" name="woodJavelin">
+<item id="1550" name="woodJavelin">
 <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 <!--SDX	<property name="Meshfile" value="#crudeweapons?woddenSpear" />
 	<property name="HandMeshfile" value="#crudeweapons?woddenSpear" />
@@ -11196,7 +11196,7 @@ Mesh files no longer used:
     <property name="ActionSkillGroup" value="archeryAction" />
 	<property name="CraftingSkillGroup" value="woodSpearCraft" />
 </item>
-<item id="1635" name="ironSpear">
+<item id="1551" name="ironSpear">
 	<property name="Extends" value="woodSpear" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 <!--SDX 	<property name="Meshfile" value="#spearBronze?spearBronze" />
@@ -11229,7 +11229,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="ui_game_symbol_IronSpears" />
 	<property name="CraftingSkillGroup" value="ironSpearCraft" />
 </item>
-<item id="1636" name="ironJavelin">
+<item id="1552" name="ironJavelin">
 	<property name="Extends" value="woodJavelin" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 <!--SDX	<property name="Meshfile" value="#spearBronze?spearBronze" />
@@ -11250,7 +11250,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="atlatlsDesc" />
 	<property name="CraftingSkillGroup" value="ironSpearCraft" />
 </item>
-<item id="1639" name="oldAxe">
+<item id="1553" name="oldAxe">
 	<property name="Extends" value="fireaxeIron" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
    <!--SDX    <property name="Meshfile" value="#axe1?AXE5" /> -->
@@ -11278,7 +11278,7 @@ Mesh files no longer used:
 		<property name="DismembermentBonus" value="0.0008,0.001" />
 	</property>
 </item>
-<item id="1641" name="steakKnife">
+<item id="1554" name="steakKnife">
 	<property name="Extends" value="huntingKnife" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 <!--SDX	<property name="Meshfile" value="#CookingKnife?CookingKnife" /> -->
@@ -11305,7 +11305,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="steakKnifeDesc" />
 	<property name="CraftingSkillGroup" value="bladeSmithingCraft" />
 </item>
-<item id="1642" name="oldKnife">
+<item id="1555" name="oldKnife">
 	<property name="Extends" value="steakKnife" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 <!--SDX	<property name="Meshfile" value="#CombatKnife?CombatKnife" /> -->
@@ -11315,7 +11315,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1" />
 	</property>
 </item>
-<item id="1647" name="bat">
+<item id="1556" name="bat">
 	<property name="Extends" value="clubMaster" />
 	<property name="DescriptionKey" value="batDesc" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
@@ -11346,7 +11346,7 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="batDesc" />
 </item>
-   <item id="1650" name="nailedBat">
+   <item id="1557" name="nailedBat">
 	<property name="Extends" value="clubMaster" />
 	<property name="DescriptionKey" value="nailedBatDesc" />
 <!--SDX	<property name="Meshfile" value="#crudeweapons?nailedBat" /> -->
@@ -11383,7 +11383,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="nailedBatDesc" />
 	<property name="CraftingSkillGroup" value="spikedClubsCraft" />
 </item>
-<item id="1651" name="lucille">
+<item id="1558" name="lucille">
 	<property name="Extends" value="clubMaster" />
 <!--SDX	<property name="Meshfile" value="#lucille?lucille" /> -->
 	<property name="Material" value="metal" />
@@ -11425,7 +11425,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="lucille" />
 	<property name="CraftingSkillGroup" value="lucilleCraft" />
 </item>
-<item id="1652" name="nightStick">
+<item id="1559" name="nightStick">
 	<property name="Extends" value="clubMaster" />
 <!--SDX	<property name="Meshfile" value="#Baton?Baton" /> -->
 	<property name="Material" value="metal" />
@@ -11454,7 +11454,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="nightStickDesc" />
 	<property name="CraftingSkillGroup" value="nightStickCraft" />
 </item>
-<item id="1653" name="shockStick">
+<item id="1560" name="shockStick">
 	<property name="Extends" value="clubMaster" />
 <!--SDX <property name="Meshfile" value="#electric?BatElectric" /> -->
 	<property name="Material" value="metal" />
@@ -11482,7 +11482,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="shockStickDesc" />
 	<property name="CraftingSkillGroup" value="shockStickCraft" />
 </item>
-<item id="1654" name="clubSteelSpiked">
+<item id="1561" name="clubSteelSpiked">
 	<property name="Extends" value="clubSpiked" />
 	<property name="Material" value="Msteel" />
 	<property name="DescriptionKey" value="clubSteelSpikedDesc" />
@@ -11518,7 +11518,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="bluntWeaponsCraft" />
 	<property name="CraftingSkillGroup" value="spikedClubsCraft" />
 </item>
-<item id="1655" name="tomahawk">
+<item id="1562" name="tomahawk">
 	<property name="Extends" value="fireaxeIron" />
 	<property name="HoldType" value="2" />
    <!--SDX    <property name="Meshfile" value="#ZdWeapons?Tomahawk" />
@@ -11578,7 +11578,7 @@ Mesh files no longer used:
     <property name="DescriptionKey" value="tomahawkDesc" />
     <property name="ActionSkillGroup" value="bladeWeaponsCraft" />
 </item>
-<item id="1665" name="katana">
+<item id="1563" name="katana">
 	<property name="Extends" value="machete" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 	<!--SDX	<property name="Meshfile" value="#michonnekatana?katana" /> -->
@@ -11616,7 +11616,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="katanaMichonneDesc" />
 	<property name="CustomIcon" value="katanaCraft" />
 </item>
-<item id="1993" name="fryingPan">
+<item id="1564" name="fryingPan">
 	<property name="CustomIcon" value="ui_game_symbol_FryingPan" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 <!--SDX	<property name="Meshfile" value="#Pan?Pan" /> -->
@@ -11661,7 +11661,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="fryingPanCraft" />
 </item>
 <!--JZMOD TOOLS -->
-<item id="3081" name="cobblestoneHammer">
+<item id="1565" name="cobblestoneHammer">
     <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 <!--SDX	<property name="Meshfile" value="#stoneHammer?stoneHammer" /> -->
 	<property name="Material" value="stone" />
@@ -11713,7 +11713,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="cobblestoneCraft" />
 	<property name="RepairExpMultiplier" value="5.5" />
 </item>
-<item id="3082" name="brickHammer">
+<item id="1566" name="brickHammer">
        <property name="Extends" value="cobblestoneHammer" />
 <!--SDX	<property name="Meshfile" value="#stonePickaxe?stonePickaxe" /> -->
 	<property class="Action0">
@@ -11725,7 +11725,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="brickBuilding" />
 	<property name="CraftingSkillGroup" value="brickHammerCraft" />
 </item>
-<item id="3083" name="concreteSledge">
+<item id="1567" name="concreteSledge">
     <property name="Extends" value="cobblestoneHammer" />
 	<property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab" />
 	<property name="Material" value="metal" />
@@ -11742,7 +11742,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="concreteBuilding" />
 	<property name="CraftingSkillGroup" value="concreteSledgeCraft" />
 </item>
-<item id="3084" name="rConcreteSledge">
+<item id="1568" name="rConcreteSledge">
     <property name="Extends" value="concreteSledge" />
 	<property class="Action0">
            <property name="ToolCategory.rConcreteBlock" value="1" param1="10"/>
@@ -11753,7 +11753,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="rConcreteBuilding" />
 	<property name="CraftingSkillGroup" value="rConcreteSledgeCraft" />
 </item>
-<item id="1670" name="screwdriver">
+<item id="1569" name="screwdriver">
 	<property name="CustomIcon" value="ui_game_symbol_screwdriver" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
 <!--SDX	<property name="Meshfile" value="#screwdriver?screwdriver" /> -->
@@ -11810,7 +11810,7 @@ Mesh files no longer used:
 	<property name="RepairExpMultiplier" value="5.5" />
     <property name="ActionSkillGroup" value="engineeringCraft" />
 </item>
-<item id="1673" name="oldWrench">
+<item id="1570" name="oldWrench">
 	<property name="Extends" value="wrench" />
     <property name="CustomIcon" value="wrench" />
 	<property name="RepairTools" value="NoRepair" />
@@ -11819,7 +11819,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1" />
 	</property>
 </item>
-<item id="1675" name="welder">
+<item id="1571" name="welder">
 	<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 <!--SDX	<property name="DropMeshfile" value="#drill?DrillTool" />
 	<property name="HandMeshfile" value="#drill?DrillTool" /> -->
@@ -11871,7 +11871,7 @@ Mesh files no longer used:
     <property name="DescriptionKey" value="compactDriverDesc" />
 	<property name="RepairExpMultiplier" value="2" />
    </item>
-<item id="1676" name="welder_receiver">
+<item id="1572" name="welder_receiver">
 	<property name="Extends" value="partsNailgun_receiver" />
        <property name="CustomIcon" value="partsNailgun_receiver" />
 	<property name="DescriptionKey" value="partsNailgunGroupDesc" />
@@ -11881,7 +11881,7 @@ Mesh files no longer used:
 	</property>
        <property name="CraftingSkillGroup" value="steelWelderCraft" />
 </item>
-<item id="1677" name="welder_parts">
+<item id="1573" name="welder_parts">
 	<property name="Extends" value="partsNailgun_parts" />
        <property name="CustomIcon" value="partsNailgun_parts" />
 	<property name="DescriptionKey" value="partsNailgunGroupDesc" />
@@ -11892,7 +11892,7 @@ Mesh files no longer used:
        <property name="CraftingSkillGroup" value="steelWelderCraft" />
 </item>
 <!--JZMOD ENGINE-->
-<item id="1678" name="exhaust">
+<item id="1574" name="exhaust">
 	<property name="PartType" value="Pump" />
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -11910,7 +11910,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="engineeringCraft" />
 </item>
-<item id="1679" name="engineBlock">
+<item id="1575" name="engineBlock">
 	<property name="PartType" value="Barrel" />
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -11929,7 +11929,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="engineeringCraft" />
 </item>
 <!--JZMOD ARMOR -->
-<item id="1680" name="ironHelmet+Light">
+<item id="1576" name="ironHelmet+Light">
 	<property name="Extends" value="ironHelmet" />
 	<property name="CustomIcon" value="ironHelmet" />
 	<property name="Class" value="ItemClassToggle" />
@@ -11937,7 +11937,7 @@ Mesh files no longer used:
 	<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
 	<property name="DescriptionKey" value="helmetLightDesc" />
 </item>
-<item id="1681" name="footballHelmet+Light">
+<item id="1577" name="footballHelmet+Light">
 	<property name="Extends" value="footballHelmet" />
 	<property name="CustomIcon" value="footballHelmet" />
 	<property name="Class" value="ItemClassToggle" />
@@ -11945,7 +11945,7 @@ Mesh files no longer used:
 	<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
 	<property name="DescriptionKey" value="helmetLightDesc" />
 </item>
-<item id="1682" name="militaryHelmet+Light">
+<item id="1578" name="militaryHelmet+Light">
 	<property name="Extends" value="militaryHelmet" />
 	<property name="CustomIcon" value="militaryHelmet" />
 	<property name="Class" value="ItemClassToggle" />
@@ -11953,7 +11953,7 @@ Mesh files no longer used:
 	<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
 	<property name="DescriptionKey" value="helmetLightDesc" />
 </item>
-<item id="1683" name="scrapHelmet+Light">
+<item id="1579" name="scrapHelmet+Light">
 	<property name="Extends" value="scrapHelmet" />
 	<property name="CustomIcon" value="scrapHelmet" />
 	<property name="Class" value="ItemClassToggle" />
@@ -11961,7 +11961,7 @@ Mesh files no longer used:
 	<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
 	<property name="DescriptionKey" value="helmetLightDesc" />
 </item>
-<item id="1690" name="tatteredShirt">
+<item id="1580" name="tatteredShirt">
     <property name="CustomIcon" value="shirt" />
 	<property name="Insulation" value="0" />
 	<property name="Material" value="cloth" />
@@ -11990,7 +11990,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Light Armor" />
 	<property name="DescriptionKey" value="tatteredClothesDesc" />
 </item>
-<item id="1691" name="tatteredPants">
+<item id="1581" name="tatteredPants">
 	<property name="Insulation" value="0" />
     <property name="CustomIcon" value="denimPants" />
 	<property name="Material" value="cloth" />
@@ -12020,7 +12020,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Light Armor" />
 	<property name="DescriptionKey" value="tatteredClothesDesc" />
 </item>
-<item id="1692" name="tatteredShoes">
+<item id="1582" name="tatteredShoes">
     <property name="CustomIcon" value="runningShoes" />
 	<property name="Insulation" value="0" />
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -12049,7 +12049,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="tatteredClothesDesc" />
 </item>
 <!--JZMOD Professions-->
-<item id="1693" name="soldier">
+<item id="1583" name="soldier">
 	<property name="Extends" value="schematicMaster" />
     <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12058,7 +12058,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1694" name="farmer">
+<item id="1584" name="farmer">
 	<property name="Extends" value="schematicMaster" />
     <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12067,7 +12067,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1695" name="chemist">
+<item id="1585" name="chemist">
 	<property name="Extends" value="schematicMaster" />
     <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12076,7 +12076,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1696" name="carpenter">
+<item id="1586" name="carpenter">
 	<property name="Extends" value="schematicMaster" />
     <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12085,7 +12085,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1697" name="cop">
+<item id="1587" name="cop">
 	<property name="Extends" value="schematicMaster" />
     <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12094,7 +12094,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1698" name="doctor">
+<item id="1588" name="doctor">
 	<property name="Extends" value="schematicMaster" />
     <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12103,7 +12103,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1700" name="chef">
+<item id="1589" name="chef">
 	<property name="Extends" value="schematicMaster" />
        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12112,7 +12112,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1701" name="fitness Instructor">
+<item id="1590" name="fitness Instructor">
 	<property name="Extends" value="schematicMaster" />
        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12121,7 +12121,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1702" name="fireman">
+<item id="1591" name="fireman">
 	<property name="Extends" value="schematicMaster" />
        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12130,7 +12130,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1703" name="construction Worker">
+<item id="1592" name="construction Worker">
 	<property name="Extends" value="schematicMaster" />
        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12139,7 +12139,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1704" name="electrician">
+<item id="1593" name="electrician">
 	<property name="Extends" value="schematicMaster" />
        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12148,7 +12148,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1705" name="metal Worker">
+<item id="1594" name="metal Worker">
 	<property name="Extends" value="schematicMaster" />
        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12157,7 +12157,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1706" name="burglar">
+<item id="1595" name="burglar">
 	<property name="Extends" value="schematicMaster" />
        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12166,7 +12166,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1707" name="park Ranger">
+<item id="1596" name="park Ranger">
 	<property name="Extends" value="schematicMaster" />
        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12175,7 +12175,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1708" name="mechanic">
+<item id="1597" name="mechanic">
 	<property name="Extends" value="schematicMaster" />
        <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
 	<property class="Action1">
@@ -12185,7 +12185,7 @@ Mesh files no longer used:
 	<property name="Group" value="Books" />
 </item>
 <!--JZMOD SKILLBOOKS-->
-<item id="1709" name="handSaw">
+<item id="1598" name="handSaw">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Skills_to_gain" value="plank" />
@@ -12193,7 +12193,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="handSawDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1711" name="claiming Your Shit">
+<item id="1599" name="claiming Your Shit">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="keystoneRock,keystoneIron,keystoneSteel" />
@@ -12201,7 +12201,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="skillBookDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1719" name="bed Book">
+<item id="1600" name="bed Book">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="bed02" />
@@ -12210,7 +12210,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="blockbook" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1720" name="camo Net Book">
+<item id="1601" name="camo Net Book">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="camoNetBlock,camoNetRamp,camoNetSheet,camoNetCNRFull" />
@@ -12219,7 +12219,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="blockbook" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1724" name="glass Book">
+<item id="1602" name="glass Book">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="glassCTRSheet,glassShowerBlock,glassIndustrialCTRPlate,glassIndustrial02CTRPlate,glassBusinessSheet,glassBusinessCTRSheet,glassBusinessBlock" />
@@ -12228,7 +12228,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="blockbook" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1734" name="awning Book">
+<item id="1603" name="awning Book">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="awningBlock,awningRamp" />
@@ -12237,7 +12237,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="blockbook" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1735" name="fencing">
+<item id="1604" name="fencing">
 	<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
 		<property name="Recipes_to_learn" value="whitePicketFenceSheet,woodFenceFarmSheet,woodFenceSheet,wroughtIronFenceSheet,railingOldWoodSheet" />
@@ -12246,7 +12246,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="blockbook" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1745" name="doctorBook">
+<item id="1605" name="doctorBook">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="antibiotics" />
@@ -12254,7 +12254,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="doctorBookDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1746" name="incendiaryAmmoBook">
+<item id="1506" name="incendiaryAmmoBook">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="shotgunFireShell,9mmFireBullet,incendiaryPowder" />
@@ -12263,7 +12263,7 @@ Mesh files no longer used:
 	<property name="Group" value="Books" />
 </item>
 <!--JZMOD XP Magazines -->
-<item id="1749" name="scavengingForDummies">
+<item id="1607" name="scavengingForDummies">
 	<property name="Meshfile" value="Items/Misc/Book" />
 	<property name="Material" value="paper" />
 	<property name="HoldType" value="21" />
@@ -12286,175 +12286,175 @@ Mesh files no longer used:
     <property name="ActionExp" value="10"/>
     <property name="ActionSkillGroup" value="Scavenging"/>
 </item>
-<item id="1750" name="bluntWeaponsForDummies">
+<item id="1608" name="bluntWeaponsForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="bluntWeaponsAction"/>
 </item>
-<item id="1751" name="bladeWeaponsForDummies">
+<item id="1609" name="bladeWeaponsForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="bladeWeaponsAction"/>
 </item>
-<item id="1752" name="archeryForDummies">
+<item id="1610" name="archeryForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="archeryAction"/>
 </item>
-<item id="1753" name="pistolsForDummies">
+<item id="1611" name="pistolsForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="pistolsAction"/>
 </item>
-<item id="1754" name="shotgunsForDummies">
+<item id="1612" name="shotgunsForDummies">
 <property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="shotgunsAction"/>
 </item>
-<item id="1755" name="submachineGunsForDummies">
+<item id="1613" name="submachineGunsForDummies">
 	<property name="Extends" value="submachineGunsAction" />
 </item>
-<item id="1756" name="assaultRiflesForDummies">
+<item id="1614" name="assaultRiflesForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="assaultRiflesAction"/>
 </item>
-<item id="1757" name="snipersForDummies">
+<item id="1615" name="snipersForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="snipersAction"/>
 </item>
-<item id="1758" name="heavyGunsForDummies">
+<item id="1616" name="heavyGunsForDummies">
     <property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="heavyGunsAction"/>
 </item>
-<item id="1759" name="medicineForDummies">
+<item id="1617" name="medicineForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="medicineCraft"/>
 </item>
-<item id="1760" name="craftedGunsForDummies">
+<item id="1618" name="craftedGunsForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="craftedGunsCraft"/>
 </item>
-<item id="1761" name="gunSmithingForDummies">
+<item id="1619" name="gunSmithingForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="gunSmithingCraft"/>
 </item>
-<item id="1762" name="engineeringForDummies">
+<item id="1620" name="engineeringForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="engineeringCraft"/>
 </item>
-<item id="1763" name="chemistryForDummies">
+<item id="1621" name="chemistryForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="chemistryCraft"/>
 </item>
-<item id="1764" name="tailoringForDummies">
+<item id="1622" name="tailoringForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="tailoringCraft"/>
 </item>
-<item id="1765" name="leatherworkingForDummies">
+<item id="1623" name="leatherworkingForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="leatherworkingCraft"/>
 </item>
-<item id="1766" name="armorSmithingForDummies">
+<item id="1624" name="armorSmithingForDummies">
     <property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="armorSmithingCraft"/>
 </item>
-<item id="1767" name="miscellaneousForDummies">
+<item id="1625" name="miscellaneousForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="miscellaneousCraft"/>
 </item>
-<item id="1768" name="woodenBowForDummies">
+<item id="1626" name="woodenBowForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="woodenBowCraft"/>
 </item>
-<item id="1769" name="compoundBowForDummies">
+<item id="1627" name="compoundBowForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="compoundBowCraft"/>
 </item>
-<item id="1770" name="crossbowForDummies">
+<item id="1628" name="crossbowForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="crossbowCraft"/>
 </item>
-<item id="1771" name="fletchingForDummies">
+<item id="1629" name="fletchingForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="fletchingCraft"/>
 </item>
-<item id="1772" name="woodSpearForDummies">
+<item id="1630" name="woodSpearForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="woodSpearCraft"/>
 </item>
-<item id="1765" name="ironSpearForDummies">
+<item id="1631" name="ironSpearForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="ironSpearCraft"/>
 </item>
-<item id="1766" name="woodenClubForDummies">
+<item id="1632" name="woodenClubForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="woodenClubCraft"/>
 </item>
-<item id="1767" name="ironClubCraftForDummies">
+<item id="1633" name="ironClubCraftForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="ironClubCraft"/>
 </item>
-<item id="1768" name="spikedClubsForDummies">
+<item id="1634" name="spikedClubsForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="spikedClubsCraft"/>
 </item>
-<item id="1769" name="lucilleForDummies">
+<item id="1635" name="lucilleForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="lucilleCraft"/>
 </item>
-<item id="1770" name="nightStickForDummies">
+<item id="1636" name="nightStickForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="nightStickCraft"/>
 </item>
-<item id="1771" name="shockForDummies">
+<item id="1637" name="shockForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="shockCraft"/>
 </item>
-<item id="1772" name="bladeCraftingForDummies">
+<item id="1638" name="bladeCraftingForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="bladeCraft"/>
 </item>
-<item id="1765" name="huntingKnifesForDummies">
+<item id="1639" name="huntingKnifesForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="huntingKnifeCraft"/>
 </item>
-<item id="1766" name="machetesForDummies">
+<item id="1640" name="machetesForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="macheteCraft"/>
 </item>
-<item id="1767" name="ironFireaxesForDummies">
+<item id="1641" name="ironFireaxesForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="ironFireaxeCraft"/>
 </item>
-<item id="1768" name="ironPickaxesForDummies">
+<item id="1642" name="ironPickaxesForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="ironPickaxeCraft"/>
 </item>
-<item id="1769" name="ironShovelsForDummies">
+<item id="1643" name="ironShovelsForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="ironShovelCraft"/>
 </item>
-<item id="1770" name="steelFireaxesForDummies">
+<item id="1644" name="steelFireaxesForDummies">
 <property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="steelFireaxeCraft"/>
 </item>
-<item id="1771" name="steelPickaxesForDummies">
+<item id="1645" name="steelPickaxesForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="steelPickaxeCraft"/>
 </item>
-<item id="1772" name="steelShovelsForDummies">
+<item id="1646" name="steelShovelsForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="steelShovelCraft"/>
 </item>
-<item id="1765" name="screwdriversForDummies">
+<item id="1647" name="screwdriversForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="screwdriverCraft"/>
 </item>
-<item id="1766" name="wireToolsForDummies">
+<item id="1648" name="wireToolsForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="wireToolCraft"/>
 </item>
-<item id="1767" name="paintToolsForDummies">
+<item id="1649" name="paintToolsForDummies">
 	<property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="paintToolCraft"/>
 </item>
 <!--JZMOD PROFESSION PAGES -->
-<item id="1982" name="professionPage">
+<item id="1650" name="professionPage">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="MprofessionPage" />
    	<property name="Weight" value="1" />
@@ -12462,7 +12462,7 @@ Mesh files no longer used:
     <property name="Group" value="Books"/>
 	<property name="DescriptionKey" value="professionPageDesc" />
 </item>
-<item id="1749" name="howToBeACarpenter">
+<item id="1651" name="howToBeACarpenter">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="MprofessionPage" />
    	<property name="Weight" value="1" />
@@ -12471,50 +12471,50 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="theEnforcerMagazine" />
 	<property name="DescriptionKey" value="howToBeA...Desc" />
 </item>
-<item id="1797" name="howToBeADoctor">
+<item id="1652" name="howToBeADoctor">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<item id="1797" name="howToBeACop">
+<item id="1653" name="howToBeACop">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<item id="1797" name="howToBeASoldier">
+<item id="1654" name="howToBeASoldier">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<item id="1797" name="howToBeAFarmer">
+<item id="1655" name="howToBeAFarmer">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<item id="1797" name="howToBeAChemist">
+<item id="1656" name="howToBeAChemist">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<item id="1797" name="howToBeAChef">
+<item id="1657" name="howToBeAChef">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<item id="1797" name="howToBeAFitnessInstructor">
+<item id="1658" name="howToBeAFitnessInstructor">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<item id="1797" name="howToBeAFireman">
+<item id="1659" name="howToBeAFireman">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<item id="1797" name="howToBeAConstructionWorker">
+<item id="1660" name="howToBeAConstructionWorker">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<item id="1797" name="howToBeAElectrician">
+<item id="1661" name="howToBeAElectrician">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<item id="1797" name="howToBeAMetalWorker">
+<item id="1662" name="howToBeAMetalWorker">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<item id="1797" name="howToBeABurglar">
+<item id="1663" name="howToBeABurglar">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<item id="1797" name="howToBeARanger">
+<item id="1664" name="howToBeARanger">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<item id="1797" name="howToBeAMechanic">
+<item id="1665" name="howToBeAMechanic">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
 <!-- JZMOD PROFESSION QUEST -->
-<item id="1798" name="qc_Doctor">
+<item id="1666" name="qc_Doctor">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12522,7 +12522,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startDoctor" />
 	</property>
 </item>
-<item id="1799" name="qc_Carpenter">
+<item id="1667" name="qc_Carpenter">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12530,7 +12530,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startCarpenter" />
 	</property>
 </item>
-<item id="1800" name="qc_Cop">
+<item id="1668" name="qc_Cop">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12538,7 +12538,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startCop" />
 	</property>
 </item>
-<item id="1801" name="qc_Soldier">
+<item id="1669" name="qc_Soldier">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12546,7 +12546,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startSoldier" />
 	</property>
 </item>
-<item id="1802" name="qc_Farmer">
+<item id="1670" name="qc_Farmer">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12554,7 +12554,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startFarmer" />
 	</property>
 </item>
-<item id="1804" name="qc_Chef">
+<item id="1671" name="qc_Chef">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12562,7 +12562,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startChef" />
 	</property>
 </item>
-<item id="1805" name="qc_Fitness_Instructor">
+<item id="1672" name="qc_Fitness_Instructor">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12570,7 +12570,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startFitness" />
 	</property>
 </item>
-<item id="1806" name="qc_Construction_Worker">
+<item id="1673" name="qc_Construction_Worker">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12578,7 +12578,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startConstruction" />
 	</property>
 </item>
-<item id="1807" name="qc_Electrician">
+<item id="1674" name="qc_Electrician">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12586,7 +12586,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startElectrician" />
 	</property>
 </item>
-<item id="1808" name="qc_Metal_Worker">
+<item id="1675" name="qc_Metal_Worker">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12594,7 +12594,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startMetal" />
 	</property>
 </item>
-<item id="1809" name="qc_Burglar">
+<item id="1676" name="qc_Burglar">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12602,7 +12602,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startBurglar" />
 	</property>
 </item>
-<item id="1810" name="qc_Park_Ranger">
+<item id="1677" name="qc_Park_Ranger">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12610,7 +12610,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startRanger" />
 	</property>
 </item>
-<item id="1811" name="qc_Mechanic">
+<item id="1678" name="qc_Mechanic">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12618,7 +12618,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startMechanic" />
 	</property>
 </item>
-<item id="1812" name="qc_Fireman">
+<item id="1679" name="qc_Fireman">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12626,7 +12626,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startFireman" />
 	</property>
 </item>	
-<item id="1797" name="qc_Chemist">
+<item id="1680" name="qc_Chemist">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12634,7 +12634,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startScientist" />
 	</property>
 </item>
-<item id="1798" name="qc_Doctor">
+<item id="1681" name="qc_Doctor">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12642,7 +12642,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startDoctor" />
 	</property>
 </item>
-<item id="1799" name="qc_Carpenter">
+<item id="1682" name="qc_Carpenter">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12650,7 +12650,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startCarpenter" />
 	</property>
 </item>
-<item id="1800" name="qc_Cop">
+<item id="1683" name="qc_Cop">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12658,7 +12658,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startCop" />
 	</property>
 </item>
-<item id="1801" name="qc_Soldier">
+<item id="1684" name="qc_Soldier">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12666,7 +12666,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startSoldier" />
 	</property>
 </item>
-<item id="1802" name="qc_Farmer">
+<item id="1685" name="qc_Farmer">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12674,7 +12674,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startFarmer" />
 	</property>
 </item>
-<item id="1804" name="qc_Chef">
+<item id="1686" name="qc_Chef">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12682,7 +12682,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startChef" />
 	</property>
 </item>
-<item id="1805" name="qc_Fitness_Instructor">
+<item id="1687" name="qc_Fitness_Instructor">
     <property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12690,7 +12690,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startFitness" />
 	</property>
 </item>
-<item id="1806" name="qc_Construction_Worker">
+<item id="1688" name="qc_Construction_Worker">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12698,7 +12698,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startConstruction" />
 	</property>
 </item>
-<item id="1807" name="qc_Electrician">
+<item id="1689" name="qc_Electrician">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12706,7 +12706,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startElectrician" />
 	</property>
 </item>
-<item id="1808" name="qc_Metal_Worker">
+<item id="1690" name="qc_Metal_Worker">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12714,7 +12714,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startMetal" />
 	</property>
 </item>
-<item id="1809" name="qc_Burglar">
+<item id="1691" name="qc_Burglar">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12722,7 +12722,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startBurglar" />
 	</property>
 </item>
-<item id="1810" name="qc_Park_Ranger">
+<item id="1692" name="qc_Park_Ranger">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12730,7 +12730,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startRanger" />
 	</property>
 </item>
-<item id="1811" name="qc_Mechanic">
+<item id="1693" name="qc_Mechanic">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12738,7 +12738,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startMechanic" />
 	</property>
 </item>
-<item id="1812" name="qc_Fireman">
+<item id="1694" name="qc_Fireman">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12747,7 +12747,7 @@ Mesh files no longer used:
 	</property>
 </item>
 <!-- JZMOD QUEST -->
-<item id="1813" name="qc_Hen">
+<item id="1695" name="qc_Hen">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ZombieDesc" />
@@ -12755,7 +12755,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="challenge_Hen" />
 	</property>
 </item>
-<item id="1814" name="qc_Vorpal">
+<item id="1696" name="qc_Vorpal">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ZombieDesc" />
@@ -12763,7 +12763,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="challenge_InfectedAnimals" />
 	</property>
 </item>
-<item id="1815" name="qc_AntiVenom">
+<item id="1697" name="qc_AntiVenom">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ZombieDesc" />
@@ -12771,7 +12771,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="challenge_AntiVenom" />
 	</property>
 </item>
-<item id="1828" name="qc_King">
+<item id="1698" name="qc_King">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ZombieDesc" />
@@ -12780,11 +12780,11 @@ Mesh files no longer used:
 	</property>
 </item>
 <!--JZMOD DRUGS & FOODS-->
-<item id="1830" name="herbalCream">
+<item id="1699" name="herbalCream">
     <property name="Extends" value="aloeCream" />
 	<property name="CustomIcon" value="aloeCream" /> <property name="CustomIconTint" value="7c5706" />
 </item>
-<item id="1831" name="sutureKit">
+<item id="1700" name="sutureKit">
 	<property name="Extends" value="foodMaster" />
 	<property name="Meshfile" value="Items/Health/gauze" />
 	<property name="HoldType" value="16" />
@@ -12801,7 +12801,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="medicineCraft" />
 	<property name="ActionExp" value="25" />
 </item>
-<item id="1832" name="sanitizingBandage">
+<item id="1701" name="sanitizingBandage">
 	<property name="Extends" value="sutureKit" />
 	<property name="Stacknumber" value="5" />
 	<property name="FuelValue" value="1" />
@@ -12813,7 +12813,7 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="sanitizingBandageDesc" />
 </item>
-<item id="1833" name="redHotSteelPipe">
+<item id="1702" name="redHotSteelPipe">
 	<property name="Meshfile" value="Items/Crafting/Metal/shortMetalPipe" />
 	<property name="Material" value="Msteel" />
 	<property name="HoldType" value="16" />
@@ -12838,14 +12838,14 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="medicineCraft" />
 	<property name="ActionExp" value="25" />
 </item>
-<item id="1834" name="redHotPipe">
+<item id="1703" name="redHotPipe">
 	<property name="Extends" value="redHotSteelPipe" />
 	<property name="Material" value="metal" />
        <property class="Action1">
            <property name="Create_item" value="shortMetalPipe" />
 	</property>
 </item>
-<item id="1835" name="antiVenom">
+<item id="1704" name="antiVenom">
 	<property name="Extends" value="sutureKit" />
 	<property name="Meshfile" value="Items/Health/painkillersPrefab" />
 	<property name="Stacknumber" value="15" />
@@ -12858,7 +12858,7 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="antiVenomDesc" />
 </item>
-<item id="1836" name="stimulant">
+<item id="1705" name="stimulant">
 	<property name="Extends" value="sutureKit" />
 	<property name="Meshfile" value="Items/Health/painkillersPrefab" />
 	<property name="HoldType" value="16" />
@@ -12874,7 +12874,7 @@ Mesh files no longer used:
 	<property name="ActionExp" value="10" />
    	<property name="CraftingSkillGroup" value="chemistryCraft" />
 </item>
-<item id="1838" name="painKillerShot">
+<item id="1706" name="painKillerShot">
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/Arrow" />
 	<property name="DropMeshfile" value="Items/Misc/arrow_dropped" />
 	<property name="HandMeshfile" value="Items/Misc/arrow_hand" />
@@ -12916,7 +12916,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="medicineCraft" />
 	<property name="ActionExp" value="20" />
 </item>
-<item id="1839" name="stimulantShot">
+<item id="1707" name="stimulantShot">
 	<property name="Extends" value="painKillerShot" />
 	<property class="Action1">
 		<property name="Buff" value="stimulant,useStim" />
@@ -12927,7 +12927,7 @@ Mesh files no longer used:
 		<property name="ApplyBuff" value="1, 1" param1="useStim" />
 	</property>
 </item>
-<item id="1840" name="infectedShot">
+<item id="1708" name="infectedShot">
     <property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/Arrow" />
 	<property name="DropMeshfile" value="Items/Misc/arrow_dropped" />
 	<property name="HandMeshfile" value="Items/Misc/arrow_hand" />
@@ -12958,14 +12958,14 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="medicineCraft" />
 	<property name="ActionExp" value="20" />
 </item>
-<item id="1841" name="sedativeShot">
+<item id="1709" name="sedativeShot">
 	<property name="Extends" value="infectedShot" />
 	<property class="Attributes">
 		<property name="ApplyBuff" value="1, 1" param1="sedative" />
 	</property>
 	<property name="DescriptionKey" value="sedativeShotDesc" />
 </item>
-<item id="1843" name="purificationTablets">
+<item id="1710" name="purificationTablets">
     <property name="Extends" value="itemMaster" />
 	<property name="Meshfile" value="Items/Health/painkillersPrefab" />
 	<property name="HoldType" value="16" />
@@ -12975,7 +12975,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="purificationDesc" />
 	<property name="CraftingSkillGroup" value="engineeringCraft" />
 </item>
-<item id="1844" name="antivirialMeds">
+<item id="1711" name="antivirialMeds">
 	<property name="Extends" value="itemMaster" />
 	<property name="Meshfile" value="Items/Health/painkillersPrefab" />
 	<property name="HoldType" value="16" />
@@ -12991,7 +12991,7 @@ Mesh files no longer used:
     <property name="ActionSkillGroup" value="medicineCraft" />
 	<property name="CraftingSkillGroup" value="medicineCraft" />
 	</item>
- <item id="3010" name="poultice">
+<item id="1712" name="poultice">
     <property name="Meshfile" value="Items/Health/gauze" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="cloth" />
@@ -13008,7 +13008,7 @@ Mesh files no longer used:
         <property name="Create_item" value="emptyJar" />
 		<property name="Sound_start" value="UseActions/player_bandage" />
 		<property name="Debuff" value="stinger" />
-       </property>
+    </property>
 	<property class="Action1">
 		<property name="Class" value="Eat" />
 		<property name="Delay" value="1.0" />
@@ -13027,7 +13027,7 @@ Mesh files no longer used:
 	<property name="ActionExp" value="10" /> 
 </item>
 <!-- JZMOD FOOD-->
-<item id="1829" name="foodMaster">
+<item id="1713" name="foodMaster">
 	<property name="Meshfile" value="Items/Misc/parcel" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="organic" />
@@ -13048,7 +13048,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="food/Cooking" />
 </item>
-<item id="1829" name="fruitServing">
+<item id="1714" name="fruitServing">
     <property name="Extends" value="foodMaster" />
 	<property name="Material" value="Mfruit" />
     <property name="Weight" value="1" />
@@ -13061,7 +13061,7 @@ Mesh files no longer used:
 		<property name="Gain_wellness" value="0" />
     </property>
 </item>
-<item id="1829" name="grainServing">
+<item id="1715" name="grainServing">
     <property name="Extends" value="fruitServing" />
  	<property name="Material" value="Mgrain" />
 	<property class="Action1">
@@ -13072,7 +13072,7 @@ Mesh files no longer used:
 		<property name="Gain_wellness" value="0" />
 	</property>
 </item>
-<item id="1829" name="veggieServing">
+<item id="1716" name="veggieServing">
     <property name="Extends" value="fruitServing" />
 	<property name="Material" value="Mveggie" />
 	<property class="Action1">
@@ -13083,7 +13083,7 @@ Mesh files no longer used:
 		<property name="Gain_wellness" value="0" />
 	</property>
 </item>
-<item id="1829" name="proteinServing">
+<item id="1717" name="proteinServing">
     <property name="Extends" value="fruitServing" />
 	<property name="Material" value="Mprotein" />
 	<property class="Action1">
@@ -13094,7 +13094,7 @@ Mesh files no longer used:
 		<property name="Gain_wellness" value="0" />
 	</property>
 </item>
-<item id="1845" name="venisonTenderloin">
+<item id="1718" name="venisonTenderloin">
 	<property name="Extends" value="foodMaster" />
 	<property name="Meshfile" value="Items/Food/meat_venison" />
     <property name="Material" value="Mprotein" />
@@ -13111,7 +13111,7 @@ Mesh files no longer used:
 	<property name="Smell" value="ExLargeSmell" />
 	<property name="DescriptionKey" value="venisonDesc" />
 </item>
-<item id="1846" name="friedEggOmelet">
+<item id="1719" name="friedEggOmelet">
 	<property name="Extends" value="foodMaster" />
 	<property name="Stacknumber" value="50" />
 	<property class="Action1">
@@ -13124,7 +13124,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="Fried Egg Omelet" />
 	<property name="DescriptionKey" value="eggOmeletDesc" />
 </item>
-<item id="1847" name="bearFlank">
+<item id="1720" name="bearFlank">
 	<property name="Extends" value="foodMaster" />
 	<property name="Meshfile" value="Items/Food/meat_venison" />
 	<property name="HoldType" value="7" />
@@ -13142,7 +13142,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="BearMeat" />
 	<property name="DescriptionKey" value="bearMeatDesc" />
 </item>
-<item id="1848" name="bearStew">
+<item id="1721" name="bearStew">
 	<property name="Extends" value="foodMaster" />
 	<property name="Meshfile" value="Items/Food/venison_stew" />
 	<property name="HoldType" value="23" />
@@ -13158,7 +13158,7 @@ Mesh files no longer used:
 	<property name="Smell" value="exLargeSmell" />
 	<property name="DescriptionKey" value="meatStewDesc" />
 </item>
-<item id="1852" name="apple">
+<item id="1722" name="apple">
 	<property name="Extends" value="foodMaster" />
 	<property name="Material" value="Mfruit" />
     <property name="Weight" value="1" />
@@ -13171,7 +13171,7 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="appleDesc" />
 </item>
-<item id="1853" name="carrot">
+<item id="1723" name="carrot">
 	<property name="Extends" value="foodMaster" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
     <property name="Material" value="Mveggie" />
@@ -13182,7 +13182,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="1" />
 	</property>
 </item>
-<item id="1854" name="tomato">
+<item id="1724" name="tomato">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="Tomato1" />
 	<property name="Material" value="Mveggie" />
@@ -13195,7 +13195,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="1" />
 	</property>
 </item>
-<item id="1855" name="applePie">
+<item id="1725" name="applePie">
 	<property name="Extends" value="foodMaster" />
 	<property name="DescriptionKey" value="pieDesc" />
 	<property class="Action1">
@@ -13207,7 +13207,7 @@ Mesh files no longer used:
 		<property name="Create_item" value="emptyJar" />
 	</property>
 </item>
-<item id="1856" name="carrotCake">
+<item id="1726" name="carrotCake">
 	<property name="Extends" value="foodMaster" />
 	<property name="DescriptionKey" value="carrotCakeDesc" />
 	<property class="Action1">
@@ -13219,7 +13219,7 @@ Mesh files no longer used:
 		<property name="Create_item" value="emptyJar" />
 	</property>
 </item>
-<item id="1857" name="wellnessJuice">
+<item id="1727" name="wellnessJuice">
 	<property name="Extends" value="foodMaster" />
 	<property name="Meshfile" value="Items/Food/coffeePrefab" />
 	<property name="HoldType" value="3" />
@@ -13238,7 +13238,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="chemistryCraft" />
 	<property name="ActionExp" value="25" />
 </item>
-<item id="1858" name="fruitJuice">
+<item id="1728" name="fruitJuice">
 	<property name="Extends" value="foodMaster" />
 	<property name="Meshfile" value="Items/Food/coffeePrefab" />
 	<property name="HoldType" value="3" />
@@ -13266,7 +13266,7 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="fruitJuiceDesc" />
 </item>
-<item id="1861" name="shamSandwich">
+<item id="1729" name="shamSandwich">
 	<property name="Extends" value="foodMaster" />
 	<property name="DescriptionKey" value="shamSandwichDesc" />
 	<property class="Action1">
@@ -13277,19 +13277,19 @@ Mesh files no longer used:
 		<property name="Buff" value="stuffed1,eatFood_2_Trigger" />
 	</property>
 </item>
-<item id="1862" name="bread">
+<item id="1730" name="bread">
 	<property name="Extends" value="foodMaster" />
 	<property name="DescriptionKey" value="BreadDesc" />
     <property class="Action1">
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="-4" />
-           <property name="Gain_stamina" value="-10" />
+        <property name="Gain_stamina" value="-10" />
 		<property name="Gain_wellness" value="0.1" />
 		<property name="Buff" value="stuffed1" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 	</property>
 </item>
-<item id="1863" name="flour">
+<item id="1731" name="flour">
 	<property name="Meshfile" value="Items/Misc/parcel" />
 	<property name="Material" value="Mgrain" />
     <property name="Weight" value="1" />
@@ -13297,7 +13297,7 @@ Mesh files no longer used:
 	<property name="Group" value="food/Cooking" />
 	<property name="DescriptionKey" value="flourDesc" />
 </item>
-<item id="1864" name="grubs">
+<item id="1732" name="grubs">
 	<property name="Extends" value="foodMaster" />
     <property name="Material" value="Mprotein" />
     <property name="Weight" value="1" />
@@ -13306,10 +13306,10 @@ Mesh files no longer used:
 	<property class="Action1">
 		<property name="Gain_food" value="7" />
 		<property name="Gain_water" value="3" />
-           <property name="Gain_stamina" value="-15" />
+        <property name="Gain_stamina" value="-15" />
 	</property>
 </item>
-<item id="1865" name="redBull">
+<item id="1733" name="redBull">
 	<property name="Extends" value="foodMaster" />
 	<property name="Meshfile" value="Items/Food/can_plain" />
 	<property name="HoldType" value="3" />
@@ -13326,7 +13326,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="chemistryCraft" />
 	<property name="ActionExp" value="5" />
 </item>
-<item id="1866" name="brainShnitzel">
+<item id="1734" name="brainShnitzel">
 	<property name="Extends" value="foodMaster" />
 	<property name="Stacknumber" value="50" />
 	<property class="Action1">
@@ -13339,7 +13339,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="brainShnitzelDesc" />
 	<property name="Smell" value="largeSmell" />
 </item>
-<item id="1867" name="venomSack">
+<item id="1735" name="venomSack">
 	<property name="Meshfile" value="Items/Misc/parce" />
 	<property name="Material" value="organic" />
 	<property name="HoldType" value="31" />
@@ -13347,7 +13347,7 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="0aa004" />
 	<property name="DescriptionKey" value="venomSackDesc" />
 </item>
-<item id="1868" name="porkBelly">
+<item id="1736" name="porkBelly">
 	<property name="Extends" value="foodMaster" />
 	<property name="Meshfile" value="Items/Food/meat_pork" />
 	<property name="HoldType" value="21" />
@@ -13364,7 +13364,7 @@ Mesh files no longer used:
 	<property name="Smell" value="exLargeSmell" />
 	<property name="DescriptionKey" value="porkDesc" />
 </item>
-<item id="1869" name="fishNChips">
+<item id="1737" name="fishNChips">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_food" value="28" />
@@ -13376,7 +13376,7 @@ Mesh files no longer used:
 	<property name="Smell" value="largeSmell" />
 	<property name="DescriptionKey" value="fishNChipsDesc" />
 </item>
-<item id="1872" name="fishFillet">
+<item id="1738" name="fishFillet">
 	<property name="Extends" value="foodMaster" />
 	<property name="Material" value="Mprotein" />
     <property name="Weight" value="2" />
@@ -13388,21 +13388,21 @@ Mesh files no longer used:
 		<property name="Gain_stamina" value="-10" />
 		<property name="Gain_sickness" value="30" />
 		<property name="Buff" value="foodPoisoning" />
-           <property name="Gain_wellness" value="-0.1" />
+        <property name="Gain_wellness" value="-0.1" />
 	</property>
 	<property name="Smell" value="largeSmell" />
 </item>
-<item id="3005" name="mead">
-       <property name="Extends" value="beer" />
-       <property name="CustomIcon" value="beer" />
-       <property name="CustomIconTint" value="af8d05" />
+<item id="1739" name="mead">
+    <property name="Extends" value="beer" />
+    <property name="CustomIcon" value="beer" />
+    <property name="CustomIconTint" value="af8d05" />
 	<property class="Action1">
 		<property name="Gain_stamina" value="60" />
 		<property name="Gain_wellness" value="0.2" />
 	</property>
 </item>
 <!--JZMOD Flask -->
-<item id="1876" name="bladderFlaskFull"><!-- JZMOD TODO/BACKGROUND COLOR TO TELL FULLNESS ON ICON -->
+<item id="1740" name="bladderFlaskFull"><!-- JZMOD TODO/BACKGROUND COLOR TO TELL FULLNESS ON ICON -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="organic" />
@@ -13437,7 +13437,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="FlaskDesc" />
 	<property name="CraftingSkillGroup" value="miscellaneousCraft" />
 </item>
-<item id="1877" name="bladderFlask5">
+<item id="1741" name="bladderFlask5">
 	<property name="Extends" value="bladderFlaskFull" />
 	<property class="Action0">
 		<property name="Create_item" value="bladderFlask4" />
@@ -13446,7 +13446,7 @@ Mesh files no longer used:
 		<property name="Create_item" value="bladderFlask4" />
 	</property>
 </item>
-<item id="1878" name="bladderFlask4">
+<item id="1742" name="bladderFlask4">
 	<property name="Extends" value="bladderFlaskFull" />
 	<property class="Action0">
 		<property name="Create_item" value="bladderFlask3" />
@@ -13455,7 +13455,7 @@ Mesh files no longer used:
 		<property name="Create_item" value="bladderFlask3" />
 	</property>
 </item>
-<item id="1879" name="bladderFlask3">
+<item id="1743" name="bladderFlask3">
 	<property name="Extends" value="bladderFlaskFull" />
 	<property class="Action0">
 		<property name="Create_item" value="bladderFlask2" />
@@ -13464,7 +13464,7 @@ Mesh files no longer used:
 		<property name="Create_item" value="bladderFlask2" />
 	</property>
 </item>
-<item id="1880" name="bladderFlask2">
+<item id="1744" name="bladderFlask2">
 	<property name="Extends" value="bladderFlaskFull" />
 	<property class="Action0">
 		<property name="Create_item" value="bladderFlask1" />
@@ -13473,7 +13473,7 @@ Mesh files no longer used:
 		<property name="Create_item" value="bladderFlask1" />
 	</property>
 </item>
-<item id="1881" name="bladderFlask1">
+<item id="1745" name="bladderFlask1">
 	<property name="Extends" value="bladderFlaskFull" />
 	<property class="Action0">
 		<property name="Create_item" value="bladderFlaskEmpty" />
@@ -13482,7 +13482,7 @@ Mesh files no longer used:
 		<property name="Create_item" value="bladderFlaskEmpty" />
 	</property>
 </item>
-<item id="1882" name="bladderFlaskEmpty">
+<item id="1746" name="bladderFlaskEmpty">
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="HoldType" value="3" />
@@ -13493,7 +13493,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="emptyFlaskDesc" />
 	<property name="CraftingSkillGroup" value="engineeringCraft" />
 </item>
-<item id="1886" name="fruitSaladSmall">
+<item id="1747" name="fruitSaladSmall">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -13504,7 +13504,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="fruitSalad" />
 	<property name="DescriptionKey" value="fruitSaladDesc" />
 </item>
-<item id="1887" name="fruitSaladMedium">
+<item id="1748" name="fruitSaladMedium">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -13515,7 +13515,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="fruitSalad" />
 	<property name="DescriptionKey" value="fruitSaladDesc" />
 </item>
-<item id="1888" name="fruitSaladLarge">
+<item id="1749" name="fruitSaladLarge">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -13526,7 +13526,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="fruitSalad" />
 	<property name="DescriptionKey" value="fruitSaladDesc" />
 </item>
-	<item id="1894" name="veggieSaladSmall">
+<item id="1750" name="veggieSaladSmall">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -13537,7 +13537,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="VeggieSalad" />
 	<property name="DescriptionKey" value="veggieSaladDesc" />
 </item>
-<item id="1895" name="veggieSaladMedium">
+<item id="1751" name="veggieSaladMedium">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -13548,7 +13548,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="VeggieSalad" />
 	<property name="DescriptionKey" value="veggieSaladDesc" />
 </item>
-<item id="1896" name="veggieSaladLarge">
+<item id="1752" name="veggieSaladLarge">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -13559,7 +13559,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="VeggieSalad" />
 	<property name="DescriptionKey" value="veggieSaladDesc" />
 </item>
-<item id="1905" name="charredSandwich">
+<item id="1753" name="charredSandwich">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="ShamSandwich" />
 	<property name="Smell" value="largeSmell" />
@@ -13572,7 +13572,7 @@ Mesh files no longer used:
 		<property name="Buff" value="nutrition_1_Trigger,stuffed4,eatFood_3_Trigger" />
 	</property>
 </item>
-<item id="1906" name="grilledSandwich">
+<item id="1754" name="grilledSandwich">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="ShamSandwich" />
 	<property name="Smell" value="mediumSmell" />
@@ -13585,7 +13585,7 @@ Mesh files no longer used:
 		<property name="Buff" value="nutrition_1_Trigger,stuffed4,eatFood_4_Trigger" />
 	</property>
 </item>
-<item id="1907" name="boiledSandwich">
+<item id="1755" name="boiledSandwich">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="ShamSandwich" />
 	<property name="Smell" value="smallSmell" />
@@ -13599,7 +13599,7 @@ Mesh files no longer used:
 		<property name="Buff" value="stuffed5,eatFood_5_Trigger" />
 	</property>
 </item>
-<item id="1908" name="simpleMealSmall">
+<item id="1756" name="simpleMealSmall">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="StirFry" />
 	<property class="Action1">
@@ -13611,7 +13611,7 @@ Mesh files no longer used:
 		<property name="Buff" value="nutrition_1_Trigger,stuffed2,eatFood_4_Trigger" />
 	</property>
 </item>
-<item id="1909" name="simpleMealMedium">
+<item id="1757" name="simpleMealMedium">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="StirFry" />
 	<property class="Action1">
@@ -13623,11 +13623,11 @@ Mesh files no longer used:
 		<property name="Buff" value="nutrition_2_Trigger,stuffed4,eatFood_8_Trigger" />
 	</property>
 </item>
-<item id="1910" name="simpleMealLarge">
+<item id="1758" name="simpleMealLarge">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="StirFry" />
 	<property class="Action1">
-			<property name="Gain_health" value="0" />
+		<property name="Gain_health" value="0" />
 		<property name="Gain_food" value="60" />
 		<property name="Gain_water" value="3" />
 		<property name="Gain_stamina" value="-99" />
@@ -13636,7 +13636,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
-<item id="1911" name="goodMealSmall">
+<item id="1759" name="goodMealSmall">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="StirFry" />
 	<property class="Action1">
@@ -13648,7 +13648,7 @@ Mesh files no longer used:
 		<property name="Buff" value="nutrition_2_Trigger,stuffed2,eatFood_5_Trigger" />
 	</property>
 </item>
-<item id="1912" name="goodMealMedium">
+<item id="1760" name="goodMealMedium">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="StirFry" />
 	<property class="Action1">
@@ -13661,7 +13661,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
-<item id="1913" name="goodMealSmall">
+<item id="1761" name="goodMealSmall">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="StirFry" />
 	<property class="Action1">
@@ -13674,7 +13674,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
-<item id="1914" name="healthyMealSmall">
+<item id="1762" name="healthyMealSmall">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="StirFry" />
 	<property class="Action1">
@@ -13686,7 +13686,7 @@ Mesh files no longer used:
 		<property name="Buff" value="nutrition_3_Trigger,stuffed3,eatFood_6_Trigger" />
 	</property>
 </item>
-<item id="1915" name="healthyMealMedium">
+<item id="1763" name="healthyMealMedium">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="StirFry" />
 	<property class="Action1">
@@ -13699,7 +13699,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
-<item id="1916" name="healthyMealLarge">
+<item id="1764" name="healthyMealLarge">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="StirFry" />
 	<property class="Action1">
@@ -13712,7 +13712,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
-<item id="1919" name="honeyGlazedMeatSmall">
+<item id="1765" name="honeyGlazedMeatSmall">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -13726,7 +13726,7 @@ Mesh files no longer used:
 	<property name="Smell" value="mediumSmell" />
 	<property name="CustomIcon" value="HoneyGlazedMeat" />
 </item>
-<item id="1920" name="honeyGlazedMeatMedium">
+<item id="1766" name="honeyGlazedMeatMedium">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -13739,7 +13739,7 @@ Mesh files no longer used:
 	<property name="Smell" value="mediumSmell" />
 	<property name="CustomIcon" value="FruitGlazedMeats" />
 </item>
-<item id="1921" name="honeyGlazedMeatLarge">
+<item id="1767" name="honeyGlazedMeatLarge">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -13752,7 +13752,7 @@ Mesh files no longer used:
 	<property name="Smell" value="mediumSmell" />
 	<property name="CustomIcon" value="FruitGlazedMeats" />
 </item>
-<item id="1933" name="kabobSmall">
+<item id="1768" name="kabobSmall">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -13765,7 +13765,7 @@ Mesh files no longer used:
 	<property name="Smell" value="mediumSmell" />
 	<property name="CustomIcon" value="Kabob" />
 </item>
-<item id="1934" name="kabobMedium">
+<item id="1769" name="kabobMedium">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -13778,7 +13778,7 @@ Mesh files no longer used:
 	<property name="Smell" value="mediumSmell" />
 	<property name="CustomIcon" value="Kabob" />
 </item>
-<item id="1935" name="kabobLarge">
+<item id="1770" name="kabobLarge">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -13791,7 +13791,7 @@ Mesh files no longer used:
 	<property name="Smell" value="mediumSmell" />
 	<property name="CustomIcon" value="Kabob" />
 </item>
-<item id="1947" name="venisonSteak">
+<item id="1771" name="venisonSteak">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -13803,7 +13803,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
-<item id="1948" name="strawberry">
+<item id="1772" name="strawberry">
 	<property name="Extends" value="foodMaster" />
     <property name="Material" value="Mfruit" />
     <property name="Weight" value="1" />
@@ -13812,14 +13812,14 @@ Mesh files no longer used:
 		<property name="Gain_food" value="1" />
 	</property>
 </item>
-<item id="1949" name="handFullOfSeeds">
+<item id="1773" name="handFullOfSeeds">
 	<property name="Extends" value="foodMaster" />
 	<property class="Action1">
 		<property name="Gain_water" value="-4" />
 		<property name="Gain_food" value="3" />
 	</property>
 </item>
-<item id="1950" name="canUnlabeled">
+<item id="1774" name="canUnlabeled">
 	<property name="Meshfile" value="Items/Food/can_misoPrefab" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="5" />
@@ -13842,7 +13842,7 @@ Mesh files no longer used:
 	<property name="Group" value="food/Cooking" />
 </item>
 <!--JZMOD ATTACKS-->
-<item id="1959" name="rabbitAttack">
+<item id="1775" name="rabbitAttack">
     <property name="Extends" value="handMaster" />
     <property name="IsDeveloper" value="true"/>
 	<property class="Action0">
@@ -13865,7 +13865,7 @@ Mesh files no longer used:
         <property name="DamageBonus.steel" value="1" />
 	</property>
 </item>
-<item id="1960" name="handFattyZombie">
+<item id="1776" name="handFattyZombie">
 	<property name="Extends" value="handzombieFatCop"/>
 	<property name="IsDeveloper" value="true"/>
 	<property class="Action0">
@@ -13892,7 +13892,7 @@ Mesh files no longer used:
 		<property name="Reload_time" value="2"/>
 	</property>
 </item>
-<item id="1961" name="FattyVomitProjectile">
+<item id="1777" name="FattyVomitProjectile">
     <property name="Extends" value="projectileZombieVomit"/>
 	<property name="IsDeveloper" value="true"/>
 	<property class="Action1">
@@ -13916,7 +13916,7 @@ Mesh files no longer used:
 			<property name="ApplyBuff" value="1, 1" param1="acid" />
 	</property>
 </item>
-<item id="1962" name="bruteBash">
+<item id="1778" name="bruteBash">
 	<property name="Extends" value="handMaster" />
     <property name="IsDeveloper" value="true" />
 	<property class="Action0">
@@ -13942,7 +13942,7 @@ Mesh files no longer used:
 		<property name="Buff" value="bruteCharge" />
 	</property>
 </item>
-<item id="1963" name="charredHand">
+<item id="1779" name="charredHand">
 	<property name="Extends" value="handMaster" />
     <property name="IsDeveloper" value="true" />
 	<property class="Action0">
@@ -13969,7 +13969,7 @@ Mesh files no longer used:
 		<property name="Buff" value="charredFlame" />
 	</property>
 </item>
-<item id="3076" name="handBoomer">
+<item id="1780" name="handBoomer">
     <property name="Extends" value="handMaster"/>
     <property name="IsDeveloper" value="true"/>
     <property class="Action0">
@@ -13994,7 +13994,7 @@ Mesh files no longer used:
         <property name="Buff_chance" value="1"/>
     </property>
 </item>
-<item id="3077" name="handBuck">
+<item id="1781" name="handBuck">
     <property name="Extends" value="handMaster" />
 	<property name="IsDeveloper" value="true" />
 	<property name="HoldType" value="46" />
@@ -14012,7 +14012,7 @@ Mesh files no longer used:
 	</property>
 </item>
 <!--JZMOD OTHER-->
-<item id="1970" name="shortSteelPipe">
+<item id="1782" name="shortSteelPipe">
 	<property name="Meshfile" value="Items/Crafting/Metal/shortMetalPipe" />
 	<property name="Material" value="Msteel" />
 	<property name="Stacknumber" value="5000" />
@@ -14025,12 +14025,12 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="engineeringCraft" />
 	<property name="SellableToTrader" value="false" />
 </item>
-<item id="1971" name="ink Pen">
+<item id="1783" name="ink Pen">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="Mplastics" />
 	<property name="DescriptionKey" value="inkPenDesc" />
 </item>
-<item id="1973" name="weaponRepairKit">
+<item id="1784" name="weaponRepairKit">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Stacknumber" value="5000" />
@@ -14042,12 +14042,12 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="repairKit" />
 	<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 </item>
-<item id="1974" name="brainMatter">
+<item id="1785" name="brainMatter">
 	<property name="Extends" value="itemMaster" />
 	<property name="DescriptionKey" value="brainMatterDesc" />
 	<property name="Smell" value="exLargeSmell" />
 </item>
-<item id="1975" name="curedLeather">
+<item id="1786" name="curedLeather">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="leather" />
 	<property name="DescriptionKey" value="curedLeatherDesc" />
@@ -14055,34 +14055,34 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="edf4b0" />
 	<property name="CraftingSkillGroup" value="leatherworkingCraft" />
 </item>
-<item id="1976" name="gunOil">
+<item id="1787" name="gunOil">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="leather" />
 	<property name="DescriptionKey" value="gunOilDesc" />
 	<property name="CraftingSkillGroup" value="chemistryCraft" />
 </item>
-<item id="1977" name="meltedRubber">
+<item id="1788" name="meltedRubber">
 	<property name="Extends" value="itemMaster" />
 	<property name="DescriptionKey" value="meltedRubberDesc" />
 	<property name="CraftingSkillGroup" value="chemistryCraft" />
 </item>
-<item id="1978" name="mixedChemicals">
+<item id="1789" name="mixedChemicals">
 	<property name="Extends" value="itemMaster" />
 	<property name="DescriptionKey" value="mixedChemicalsDesc" />
 	<property name="CraftingSkillGroup" value="chemistryCraft" />
 </item>
-<item id="1979" name="chooseAProfession">
+<item id="1790" name="chooseAProfession">
 	<property name="Extends" value="itemMaster" />
 	<property name="DescriptionKey" value="chooseAProfessionDesc" />
 </item>
-<item id="1980" name="incendiaryPowder">
+<item id="1791" name="incendiaryPowder">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="potassiumNitratePowder" />
 	<property name="CustomIconTint" value="ef131e" />
 	<property name="DescriptionKey" value="incendiaryPowderDesc" />
 	<property name="CraftingSkillGroup" value="chemistryCraft" />
 </item>
-<item id="1981" name="stick">
+<item id="1792" name="stick">
 	<property name="Extends" value="itemMaster" />
     <property name="Material" value="wood" />
     <property name="Weight" value="1" />
@@ -14090,7 +14090,7 @@ Mesh files no longer used:
 	<property name="FuelValue" value="1" />
 	<property name="DescriptionKey" value="stickDesc" />
 </item>
-<item id="1983" name="scubaTankFull">
+<item id="1793" name="scubaTankFull">
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="organic" />
@@ -14113,20 +14113,20 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="scubaTankFullDesc" />
 	<property name="CraftingSkillGroup" value="engineeringCraft" />
 </item>
-<item id="1984" name="blankSkillBook">
+<item id="1794" name="blankSkillBook">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="paper" />
 	<property name="CustomIcon" value="schematicMaster" />
 	<property name="CustomIconTint" value="FD9095" />
 	<property name="DescriptionKey" value="blankSkillBookDesc" />
 </item>
-<item id="1985" name="scubaTankEmpty">
+<item id="1795" name="scubaTankEmpty">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Stacknumber" value="6" />
 	<property name="DescriptionKey" value="scubaTankEmptyDesc" />
 </item>
-<item id="1986" name="plank">
+<item id="1796" name="plank">
     <property name="Extends" value="itemMaster" />
     <property name="Material" value="wood" />
     <property name="Weight" value="4" />
@@ -14135,7 +14135,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="ui_game_symbol_Plank" />
 	<property name="DescriptionKey" value="plankDesc" />
 </item>
-<item id="3080" name="bricks">
+<item id="1797" name="bricks">
 	<property name="Meshfile" value="Items/Crafting/rock_smallPrefab" />
     <property name="DropMeshfile" value="Items/Crafting/rock_smallPrefab" />
 	<property name="Material" value="stone" />
@@ -14157,19 +14157,19 @@ Mesh files no longer used:
     <property name="ActionSkillGroup" value="brickBuilding" />
 	<property name="CraftingSkillGroup" value="brickBuilding" />
 </item>
-<item id="3079" name="cementMix">
+<item id="1798" name="cementMix">
     <property name="Extends" value="concreteMix" />
 	<property name="ActionSkillGroup" value="concreteBuilding" />
 	<property name="CraftingSkillGroup" value="concreteCraft" />
 </item>
-<item id="1987" name="airCompressor">
+<item id="1799" name="airCompressor">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Stacknumber" value="1" />
 	<property name="Weight" value="80" />
 	<property name="DescriptionKey" value="airCompressorDesc" />
 </item>
-<item id="1988" name="babyChicken">
+<item id="1800" name="babyChicken">
 	<property name="Extends" value="itemMaster" />
 	<property name="Stacknumber" value="1" />
 	<property name="DescriptionKey" value="babyChickenDesc" />
@@ -14182,7 +14182,7 @@ Mesh files no longer used:
 		<property name="Allowed_upgrade_items" value="babyChicken" />
 	</property>
 </item>
-<item id="1989" name="hen">
+<item id="1801" name="hen">
 	<property name="Extends" value="itemMaster" />
 	<property name="Stacknumber" value="1" />
 	<property name="DescriptionKey" value="henDesc" />
@@ -14195,20 +14195,20 @@ Mesh files no longer used:
 		<property name="Allowed_upgrade_items" value="hen" />
 	</property>
 </item>
-<item id="1990" name="sewingNeedle">
+<item id="1802" name="sewingNeedle">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="1" />
 	<property name="DescriptionKey" value="sewingNeedleDesc" />
 </item>
-<item id="1991" name="leatherNeedle">
+<item id="1803" name="leatherNeedle">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="1" />
 	<property name="DescriptionKey" value="leatherNeedleDesc" />
 	<property name="CraftingSkillGroup" value="engineeringCraft" />
 </item>
-<item id="1994" name="fiberRope">
+<item id="1804" name="fiberRope">
 	<property name="Extends" value="itemMaster" />
 	<property name="Meshfile" value="Items/Crafting/plant_fibers" />
 	<property name="Weight" value="1" />
@@ -14220,7 +14220,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="fiberRopeDesc" />
 	<property name="CraftingSkillGroup" value="miscellaneousCraft" />
 </item>
-<item id="1995" name="professionKey">
+<item id="1805" name="professionKey">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Stacknumber" value="1" />
@@ -14238,12 +14238,12 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="keyDesc" />
 </item>
-<item id="1996" name="zincPowder">
+<item id="1806" name="zincPowder">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="potassiumNitratePowder" />
 	<property name="DescriptionKey" value="zincPowderDesc" />
 </item>
-<item id="1997" name="keystoneRock">
+<item id="1807" name="keystoneRock">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="stone" />
 	<property class="Action1">
@@ -14254,12 +14254,12 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="keystoneRock" />
 	<property name="DescriptionKey" value="KeystoneDesc" />
 </item>
-<item id="1998" name="alternator">
+<item id="1808" name="alternator">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="DescriptionKey" value="alternatorDesc" />
 </item>
-<item id="1999" name="fanBelt">
+<item id="1809" name="fanBelt">
 	<property name="Extends" value="itemMaster" />
     <property name="Material" value="Mrubber" />
     <property name="Weight" value="2" />
@@ -14267,7 +14267,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="ui_game_symbol_FanBelt" />
 	<property name="CraftingSkillGroup" value="engineeringCraft" />
 </item>
-<item id="2000" name="nutAndBolt">
+<item id="1810" name="nutAndBolt">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="1" />
@@ -14275,7 +14275,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="ui_game_symbol_NutAndBolt" />
 	<property name="CraftingSkillGroup" value="engineeringCraft" />
 </item>
-<item id="2001" name="deadBattery">
+<item id="1811" name="deadBattery">
 	<property name="Extends" value="itemMaster" />
 	<property name="DropMeshfile" value="Items/Misc/car_battery" />
 	<property name="Meshfile" value="Items/Misc/car_battery" />
@@ -14284,50 +14284,50 @@ Mesh files no longer used:
 	<property name="Weight" value="160" />
 	<property name="DescriptionKey" value="batteryTip" />
 </item>
-<item id="2002" name="lightBulb">
+<item id="1812" name="lightBulb">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="glass" />
 </item>
-<item id="2003" name="animalBladder">
+<item id="1813" name="animalBladder">
 	<property name="Extends" value="itemMaster" />
 	<property name="Stacknumber" value="500" />
 	<property name="DescriptionKey" value="fiberRopeDesc" />
 </item>
-<item id="2004" name="sinew">
+<item id="1814" name="sinew">
 	<property name="Extends" value="itemMaster" />
 	<property name="RepairTime" value="2.5" />
 	<property name="RepairAmount" value="30" />
 	<property name="DescriptionKey" value="sinewDesc" />
 </item>
-<item id="2005" name="boneMeal">
+<item id="1815" name="boneMeal">
 	<property name="Extends" value="itemMaster" />
 	<property name="DescriptionKey" value="boneMealDesc" />
 	<property name="CustomIcon" value="potassiumNitratePowder" />
 	<property name="CustomIconTint" value="662909" />
 </item>
-<item id="2006" name="fishingLine">
+<item id="1816" name="fishingLine">
 	<property name="Extends" value="itemMaster" />
 	<property name="DescriptionKey" value="fishingLineDesc" />
 </item>
-<item id="2007" name="bowString">
+<item id="1817" name="bowString">
 	<property name="Extends" value="itemMaster" />
 	<property name="RepairAmount" value="300" />
 	<property name="DescriptionKey" value="bowStringDesc" />
 </item>
-<item id="2008" name="lashing">
+<item id="1818" name="lashing">
 	<property name="Extends" value="itemMaster" />
 	<property name="DescriptionKey" value="lashingDesc" />
 </item>
-<item id="2009" name="sutures">
+<item id="1819" name="sutures">
 	<property name="Extends" value="itemMaster" />
 	<property name="DescriptionKey" value="suturesDesc" />
 </item>
-<item id="2010" name="hoof">
+<item id="1820" name="hoof">
 	<property name="Extends" value="itemMaster" />
 	<property name="Stacknumber" value="500" />
 	<property name="DescriptionKey" value="hoofDesc" />
 </item>
-<item id="2011" name="scrapSteel">
+<item id="1821" name="scrapSteel">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="scrapIron" />
 	<property name="CustomIconTint" value="9b9999" />
@@ -14335,12 +14335,12 @@ Mesh files no longer used:
     <property name="Weight" value="1" />
 	<property name="MeltTimePerUnit" value="0.5" />
 </item>
-<item id="2012" name="nitroglycerin">
+<item id="1822" name="nitroglycerin">
 	<property name="Extends" value="itemMaster" />
 	<property name="Meshfile" value="Items/Food/honeyPrefab" />
 	<property name="CraftingSkillGroup" value="chemistryCraft" />
 </item>
-<item id="2013" name="sharpeningStone">
+<item id="1823" name="sharpeningStone">
 	<property name="Extends" value="itemMaster" />
 	<property name="Meshfile" value="Items/Crafting/rock_smallPrefab" />
 	<property name="Material" value="stone" />
@@ -14348,7 +14348,7 @@ Mesh files no longer used:
 	<property name="RepairTime" value="10" />
 	<property name="RepairAmount" value="300" />
 </item>
-<item id="2014" name="animalGuts">
+<item id="1824" name="animalGuts">
 	<property name="Extends" value="itemMaster" />
 	<property name="Meshfile" value="Items/Food/meat_rabbit" />
 	<property name="HoldType" value="21" />
@@ -14376,49 +14376,49 @@ Mesh files no longer used:
 	<property name="Group" value="Science" />
 	<property name="DescriptionKey" value="animalGutsDesc" />
 </item>
-<item id="2015" name="smallKnifeBlade">
+<item id="1825" name="smallKnifeBlade">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="50" />
 	<property name="DescriptionKey" value="huntingKnifeBladeDesc" />
 	<property name="CraftingSkillGroup" value="bladeSmithingCraft" />
 </item>
-<item id="2016" name="largeKnifeBlade">
+<item id="1826" name="largeKnifeBlade">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="100" />
 	<property name="DescriptionKey" value="huntingKnifeBladeDesc" />
 	<property name="CraftingSkillGroup" value="bladeSmithingCraft" />
 </item>
-<item id="2017" name="swordBlade">
+<item id="1827" name="swordBlade">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="1000" />
 	<property name="DescriptionKey" value="huntingKnifeBladeDesc" />
 	<property name="CraftingSkillGroup" value="bladeSmithingCraft" />
 </item>
-<item id="2018" name="ironPickaxeHead">
+<item id="1828" name="ironPickaxeHead">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="100" />
 	<property name="DescriptionKey" value="huntingKnifeBladeDesc" />
 	<property name="CraftingSkillGroup" value="ironPickaxeCraft" />
 </item>
-<item id="2019" name="ironFireaxeHead">
+<item id="1829" name="ironFireaxeHead">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="100" />
 	<property name="DescriptionKey" value="huntingKnifeBladeDesc" />
 	<property name="CraftingSkillGroup" value="ironFireaxeCraft" />
 </item>
-<item id="2020" name="ironShovelHead">
+<item id="1830" name="ironShovelHead">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="100" />
     <property name="DescriptionKey" value="huntingKnifeBladeDesc" />
 	<property name="CraftingSkillGroup" value="ironShovelCraft" />
 </item>
-<item id="2021" name="steelPickaxeHead">
+<item id="1831" name="steelPickaxeHead">
 	<property name="Extends" value="itemMaster" />
     <property name="CustomIcon" value="IronPickaxeHead" />
 	<property name="Material" value="Msteel" />
@@ -14426,7 +14426,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="huntingKnifeBladeDesc" />
 	<property name="CraftingSkillGroup" value="steelPickaxeCraft" />
 </item>
-<item id="2022" name="steelFireaxeHead">
+<item id="1832" name="steelFireaxeHead">
 	<property name="Extends" value="itemMaster" />
     <property name="CustomIcon" value="IronFireaxeHead" />
 	<property name="Material" value="Msteel" />
@@ -14434,7 +14434,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="huntingKnifeBladeDesc" />
 	<property name="CraftingSkillGroup" value="steelFireaxeCraft" />
 </item>
-<item id="2023" name="steelShovelHead">
+<item id="1833" name="steelShovelHead">
 	<property name="Extends" value="itemMaster" />
     <property name="CustomIcon" value="IronShovelHead" />
 	<property name="Material" value="Msteel" />
@@ -14443,7 +14443,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="huntingKnifeBladeDesc" />
 	<property name="CraftingSkillGroup" value="steelShovelCraft" />
 </item>
-<item id="2024" name="spearHead">
+<item id="1834" name="spearHead">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
     <property name="SellableToTrader" value="false" />
@@ -14451,7 +14451,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="huntingKnifeBladeDesc" />
 	<property name="CraftingSkillGroup" value="ironSpearCraft" />
 </item>
-<item id="2025" name="hammerHead">
+<item id="1835" name="hammerHead">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="10" />
@@ -14459,7 +14459,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="huntingKnifeBladeDesc" />
 	<property name="CraftingSkillGroup" value="clawHammerCraft" />
 </item>
-<item id="2027" name="cannabisBub">
+<item id="1836" name="cannabisBub">
 	<property name="Extends" value="itemMaster" />
     <property name="CustomIcon" value="cannabisPlant" />
 	<property name="Stacknumber" value="5000" />
@@ -14468,7 +14468,7 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="1" />
 	<property name="DescriptionKey" value="cannabisBubDesc" />
 </item>
-<item id="2028" name="sunflowerHead">
+<item id="1837" name="sunflowerHead">
 	<property name="Extends" value="itemMaster" />
     <property name="CustomIcon" value="sunflower" />
 	<property name="Stacknumber" value="5000" />
@@ -14477,7 +14477,7 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="1" />
 	<property name="DescriptionKey" value="sunflowerHeadDesc" />
 </item>
-<item id="2029" name="tobaccoLeaf">
+<item id="1838" name="tobaccoLeaf">
 	<property name="Extends" value="itemMaster" />
     <property name="CustomIcon" value="tobaccoPlant" />
     <property name="SellableToTrader" value="false" />
@@ -14486,7 +14486,7 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="1" />
 	<property name="DescriptionKey" value="tobaccoLeafsDesc" />
 </item>
-<item id="2030" name="joint">
+<item id="1839" name="joint">
 	<property name="Extends" value="cigar" />
 	<property name="Stacknumber" value="20" />
     <property name="SellableToTrader" value="false" />
@@ -14500,7 +14500,7 @@ Mesh files no longer used:
     <property name="ActionSkillGroup" value="medicineCraft" />
 	<property name="CraftingSkillGroup" value="medicineCraft" />
 </item>
-<item id="2033" name="wheat">
+<item id="1840" name="wheat">
 	<property name="Extends" value="itemMaster" />
 	<property name="Stacknumber" value="5000" />
 	<property name="EconomicValue" value="5" />
@@ -14508,7 +14508,7 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="1" />
 	<property name="DescriptionKey" value="cannabisBubDesc" />
 </item>
-<item id="2034" name="lockPickGun">
+<item id="1841" name="lockPickGun">
     <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
     <!--SDX   <property name="Meshfile" value="#lockPick?lockPick" /> -->
 	<property name="HoldType" value="1" />
@@ -14539,7 +14539,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="scavengingAction" />
 	<property name="RepairExpMultiplier" value="0" />
 </item>
-<item id="2035" name="lockPick">
+<item id="1842" name="lockPick">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="Msteel" />
 	<property name="Stacknumber" value="5000" />
@@ -14547,25 +14547,25 @@ Mesh files no longer used:
     <property name="CustomIcon" value="LockPickJZ" />
 	<property name="DescriptionKey" value="lockpickBubDesc" />
 </item>
-<item id="2038" name="earthworm">
+<item id="1843" name="earthworm">
 	<property name="Extends" value="itemMaster" />
 	<property name="DescriptionKey" value="earthwormDesc" />
 </item>
 <!--JZMOD UNITS-->
-<item id="2040" name="unit_coal">
+<item id="1844" name="unit_coal">
 	<property name="Extends" value="unit_iron" />
 	<property name="CustomIcon" value="coal" />
 	<property name="Material" value="forgecoal" />
 	<property name="IsDeveloper" value="true" />
 </item>
-<item id="2041" name="unit_steel">
+<item id="1845" name="unit_steel">
 	<property name="Extends" value="unit_iron" />
 	<property name="CustomIcon" value="scrapIron" />
 	<property name="Material" value="Msteel" />
 	<property name="IsDeveloper" value="true" />
 </item>
 <!--JZMOD NPC GUNS -->
-<item id="2058" name="npcPistol">
+<item id="1846" name="npcPistol">
 	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab" />
 	<property name="Material" value="metal" />
 	<property name="RepairTools" value="weaponRepairKit" />
@@ -14604,7 +14604,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1" />
 	</property>
 </item>
-   <item id="2059" name="npcMagnum">
+   <item id="1847" name="npcMagnum">
 	<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 	<property name="Material" value="metal" />
 	<property name="RepairTools" value="weaponRepairKit" />
@@ -14643,7 +14643,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1" />
 	</property>
 </item>
-<item id="2060" name="npcSawedOffPumpShotgun">
+<item id="1848" name="npcSawedOffPumpShotgun">
 	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/SawedOffPumpShotgunPrefab" />
 	<property name="Material" value="metal" />
 	<property name="RepairTools" value="weaponRepairKit" />
@@ -14684,7 +14684,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1" />
 	</property>
 </item>
-<item id="2064" name="npcAK47">
+<item id="1849" name="npcAK47">
 	<property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab" />
 	<property name="Material" value="metal" />
 	<property name="RepairTools" value="weaponRepairKit" />
@@ -14729,7 +14729,7 @@ Mesh files no longer used:
 	</property>
 </item>
 <!-- JZMOD NPC AMMO -->
-<item id="2067" name="npc9mmBullet">
+<item id="1850" name="npc9mmBullet">
 	<property name="IsDeveloper" value="true" />
 	<property name="Candrop" value="false" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/9mm_bulletPrefab" />
@@ -14742,7 +14742,7 @@ Mesh files no longer used:
 		<property name="ApplyBuff" value="1,1" param1="banditBonus" />
 	</property>
 </item>
-<item id="2068" name="npc44MagBullet">
+<item id="1851" name="npc44MagBullet">
 	<property name="Extends" value="npc9mmBullet" />
   	<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44_roundPrefab" />
 	<property class="Attributes">
@@ -14750,16 +14750,16 @@ Mesh files no longer used:
 		<property name="ApplyBuff" value="1,1" param1="banditBonus" />
 	</property>
 </item>
-<item id="2070" name="npc762mmBullet">
+<item id="1852" name="npc762mmBullet">
 	<property name="Extends" value="npc9mmBullet" />
   	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bulletPrefab" />
 </item>
-<item id="2071" name="npcShotgunShell">
+<item id="1853" name="npcShotgunShell">
 	<property name="Extends" value="npc9mmBullet" />
   	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
 </item>
 <!-- JZMOD NPC MELEE WEAPONS-->
-<item id="2073" name="npcSledgeHammer">
+<item id="1854" name="npcSledgeHammer">
 	<property name="Extends" value="sledgehammer" />
     <property name="CustomIcon" value="unused" />
 	<property name="IsDeveloper" value="true" />
@@ -14776,7 +14776,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1"/>
 	</property>
 </item>
-<item id="2074" name="npcClubSpiked">
+<item id="1855" name="npcClubSpiked">
 	<property name="Extends" value="clubSpiked" />
     <property name="CustomIcon" value="unused" />
 	<property name="SellableToTrader" value="false" />
@@ -14792,7 +14792,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1"/>
 	</property>
 </item>
-<item id="2075" name="npcClubWood">
+<item id="1856" name="npcClubWood">
 	<property name="Extends" value="clubWood" />
     <property name="CustomIcon" value="unused" />
 	<property name="SellableToTrader" value="false" />
@@ -14808,7 +14808,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1"/>
 	</property>
 </item>
-<item id="2076" name="npcFireaxeSteel">
+<item id="1857" name="npcFireaxeSteel">
 	<property name="Extends" value="fireaxeSteel" />
     <property name="CustomIcon" value="unused" />
 	<property name="SellableToTrader" value="false" />
@@ -14824,7 +14824,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1"/>
 	</property>
 </item>
-<item id="2077" name="npcMachete">
+<item id="1858" name="npcMachete">
 	<property name="Extends" value="machete" />
     <property name="CustomIcon" value="unused" />
 	<property name="SellableToTrader" value="false" />
@@ -14843,7 +14843,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1"/>
 	</property>
 </item>
-<item id="2078" name="npcHuntingKnife">
+<item id="1859" name="npcHuntingKnife">
 	<property name="Extends" value="huntingKnife" />
     <property name="CustomIcon" value="unused" />
 	<property name="SellableToTrader" value="false" />
@@ -14862,7 +14862,7 @@ Mesh files no longer used:
 	<property name="Candrop" value="false" />
 	<property name="IsDeveloper" value="true" />
 </item>
-<item id="3004" name="scrapRubber">
+<item id="1860" name="scrapRubber">
     <property name="Extends" value="itemMaster" />
 	<property name="DescriptionKey" value="scrapRubberDesc" />
     <property name="CustomIcon" value="cobblestones" />
@@ -14871,322 +14871,322 @@ Mesh files no longer used:
 	<property name="Weight" value="1" />
 </item>
 <!--JZMOD XYTH JUNK ITEMS-->
-<item id="3011" name="ironSoldier">
+<item id="1861" name="ironSoldier">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="ironSoldier" />
 	<property name="DescriptionKey" value="ironSoldierDesc" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3012" name="ironPaperClips">
+<item id="1862" name="ironPaperClips">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="ironPaperClips" />
 	<property name="DescriptionKey" value="ironPaperClipsDesc" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3013" name="ironWeight">
+<item id="1863" name="ironWeight">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="ironWeight" />
 	<property name="DescriptionKey" value="ironWeightDesc" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="60" />
 </item>
-<item id="3014" name="ironHinge">
+<item id="1864" name="ironHinge">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="ironHinge" />
 	<property name="DescriptionKey" value="ironHingeDesc" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3015" name="leadMusketBalls">
+<item id="1865" name="leadMusketBalls">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="leadMusketBalls" />
 	<property name="DescriptionKey" value="leadMusketBallsDesc" />
 	<property name="Material" value="lead" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3016" name="leadSolder">
+<item id="1866" name="leadSolder">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="leadSolder" />
 	<property name="DescriptionKey" value="leadSolderDesc" />
 	<property name="Material" value="lead" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3017" name="leadSoldier">
+<item id="1867" name="leadSoldier">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="leadSoldier" />
 	<property name="DescriptionKey" value="leadSoldierDesc" />
 	<property name="Material" value="lead" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3018" name="brassHinge">
+<item id="1868" name="brassHinge">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="brassHinge" />
 	<property name="DescriptionKey" value="brassHingeDesc" />
 	<property name="Material" value="brass" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3019" name="brassMonkey">
+<item id="1869" name="brassMonkey">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="brassMonkey" />
 	<property name="DescriptionKey" value="brassMonkeyDesc" />
 	<property name="Material" value="brass" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3020" name="brassCowBell">
+<item id="1870" name="brassCowBell">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="brassCowBell" />
 	<property name="DescriptionKey" value="brassCowBellDesc" />
 	<property name="Material" value="brass" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3021" name="brassKnuckles">
+<item id="1871" name="brassKnuckles">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="brassKnuckles" />
 	<property name="DescriptionKey" value="brassKnucklesDesc" />
 	<property name="Material" value="brass" />
 	<property name="Weight" value="3" />
 </item>
-<item id="3022" name="stonePlate">
+<item id="1872" name="stonePlate">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="stonePlate" />
 	<property name="DescriptionKey" value="stonePlateDesc" />
 	<property name="Material" value="stone" />
 	<property name="Weight" value="15" />
 </item>
-<item id="3023" name="stonePaperWeight">
+<item id="1873" name="stonePaperWeight">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="stonePaperWeight" />
 	<property name="DescriptionKey" value="stonePaperWeightDesc" />
 	<property name="Material" value="stone" />
 	<property name="Weight" value="25" />
 </item>
-<item id="3024" name="stoneStatue">
+<item id="1874" name="stoneStatue">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="stoneStatue" />
 	<property name="DescriptionKey" value="stoneStatueDesc" />
 	<property name="Material" value="stone" />
 	<property name="Weight" value="30" />
 </item>
-<item id="3025" name="woodSoldier">
+<item id="1875" name="woodSoldier">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="woodSoldier" />
 	<property name="DescriptionKey" value="woodSoldierDesc" />
 	<property name="Material" value="wood" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3026" name="woodWhistle">
+<item id="1876" name="woodWhistle">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="woodWhistle" />
 	<property name="DescriptionKey" value="woodWhistleDesc" />
 	<property name="Material" value="wood" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3027" name="woodSpoon">
+<item id="1877" name="woodSpoon">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="woodSpoon" />
 	<property name="DescriptionKey" value="woodSpoonDesc" />
 	<property name="Material" value="wood" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3028" name="paperPlayingCards">
+<item id="1878" name="paperPlayingCards">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="paperPlayingCards" />
 	<property name="DescriptionKey" value="paperPlayingCardsDesc" />
 	<property name="Material" value="paper" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3029" name="paperNews">
+<item id="1879" name="paperNews">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="paperNews" />
 	<property name="DescriptionKey" value="paperNewsDesc" />
 	<property name="Material" value="paper" />
 	<property name="Weight" value="3" />
 </item>
-<item id="3030" name="paperToilet">
+<item id="1880" name="paperToilet">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="paperToilet" />
 	<property name="DescriptionKey" value="paperToiletDesc" />
 	<property name="Material" value="paper" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3031" name="paperGoggles">
+<item id="1881" name="paperGoggles">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="paperGoggles" />
 	<property name="DescriptionKey" value="paperGogglesDesc" />
 	<property name="Material" value="paper" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3032" name="clothTeddyBear">
+<item id="1882" name="clothTeddyBear">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="clothTeddyBearJZ" />
 	<property name="DescriptionKey" value="clothTeddyBearDesc" />
 	<property name="Material" value="cloth" />
 	<property name="Weight" value="10" />
 </item>
-<item id="3033" name="clothRags">
+<item id="1883" name="clothRags">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="clothRags" />
 	<property name="DescriptionKey" value="clothRagsDesc" />
 	<property name="Material" value="cloth" />
 	<property name="Weight" value="10" />
 </item>
-<item id="3034" name="clothRug">
+<item id="1884" name="clothRug">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="clothRug" />
 	<property name="DescriptionKey" value="clothRugDesc" />
 	<property name="Material" value="cloth" />
 	<property name="Weight" value="25" />
 </item>
-<item id="3035" name="plasticCds">
+<item id="1885" name="plasticCds">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="plasticCds" />
 	<property name="DescriptionKey" value="plasticCdsDesc" />
 	<property name="Material" value="Mplastics" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3036" name="plasticSoldier">
+<item id="1886" name="plasticSoldier">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="plasticSoldier" />
 	<property name="DescriptionKey" value="plasticSoldierDesc" />
     <property name="Material" value="Mplastics" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3037" name="plasticLegos">
+<item id="1887" name="plasticLegos">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="plasticLegos" />
 	<property name="DescriptionKey" value="plasticLegosDesc" />
 	<property name="Material" value="Mplastics" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3038" name="electronic3ds">
+<item id="1888" name="electronic3ds">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="electronic3ds" />
 	<property name="DescriptionKey" value="electronic3dsDesc" />
 	<property name="Material" value="MelectronicParts" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3039" name="electronicCellPhone">
+<item id="1889" name="electronicCellPhone">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="electronicCellPhone" />
 	<property name="DescriptionKey" value="electronicCellPhoneDesc" />
 	<property name="Material" value="MelectronicParts" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3040" name="electronicClockRadio">
+<item id="1890" name="electronicClockRadio">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="electronicClockRadio" />
 	<property name="DescriptionKey" value="electronicClockRadioDesc" />
 	<property name="Material" value="MelectronicParts" />
 	<property name="Weight" value="3" />
 </item>
-<item id="3041" name="electricShaver">
+<item id="1891" name="electricShaver">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="electricShaver" />
 	<property name="DescriptionKey" value="electricShaverDesc" />
 	<property name="Material" value="MelectricParts" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3042" name="electricToyMotor">
+<item id="1892" name="electricToyMotor">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="electricToyMotor" />
 	<property name="DescriptionKey" value="electricToyMotorDesc" />
 	<property name="Material" value="MelectricParts" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3043" name="electricToaster">
+<item id="1893" name="electricToaster">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="electricToaster" />
 	<property name="DescriptionKey" value="electricToasterDesc" />
 	<property name="Material" value="MelectricParts" />
 	<property name="Weight" value="3" />
 </item>
-<item id="3044" name="mechanicalKeyPad">
+<item id="1894" name="mechanicalKeyPad">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="mechanicalKeyPad" />
 	<property name="DescriptionKey" value="mechanicalKeyPadDesc" />
 	<property name="Material" value="MmechanicalParts" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3045" name="mechanicalOldWatch">
+<item id="1895" name="mechanicalOldWatch">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="mechanicalOldWatch" />
 	<property name="DescriptionKey" value="mechanicalOldWatchDesc" />
 	<property name="Material" value="MmechanicalParts" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3046" name="mechanicalTypeWriter">
+<item id="1896" name="mechanicalTypeWriter">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="mechanicalTypeWriter" />
 	<property name="DescriptionKey" value="mechanicalTypeWriterDesc" />
 	<property name="Material" value="MmechanicalParts" />
 	<property name="Weight" value="4" />
 </item>
-<item id="3047" name="rubberDoll">
+<item id="1897" name="rubberDoll">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="rubberDoll" />
 	<property name="DescriptionKey" value="rubberDollDesc" />
 	<property name="Material" value="Mrubber" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3048" name="rubberDuck">
+<item id="1898" name="rubberDuck">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="rubberDuck" />
 	<property name="DescriptionKey" value="rubberDuckDesc" />
     <property name="Material" value="Mrubber" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3049" name="rubberChicken">
+<item id="1899" name="rubberChicken">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="rubberChicken" />
 	<property name="DescriptionKey" value="rubberChickenDesc" />
 	<property name="Material" value="Mrubber" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3050" name="rubberBands">
+<item id="1900" name="rubberBands">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="rubberBands" />
 	<property name="DescriptionKey" value="rubberBandsDesc" />
 	<property name="Material" value="Mrubber" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3051" name="steelHinge">
+<item id="1901" name="steelHinge">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="steelHinge" />
 	<property name="DescriptionKey" value="steelHingeDesc" />
 	<property name="Material" value="Msteel" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3052" name="steelSpoon">
+<item id="1902" name="steelSpoon">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="steelSpoon" />
 	<property name="DescriptionKey" value="steelSpoonDesc" />
 	<property name="Material" value="Msteel" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3053" name="steelBracelet">
+<item id="1903" name="steelBracelet">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="steelBracelet" />
 	<property name="DescriptionKey" value="steelBraceletDesc" />
 	<property name="Material" value="Msteel" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3054" name="glassPerfume">
+<item id="1904" name="glassPerfume">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="glassPurfume" />
 	<property name="DescriptionKey" value="glassPurfumeDesc" />
 	<property name="Material" value="glass" />
 	<property name="Weight" value="10" />
 </item>
-<item id="3055" name="glassCompact">
+<item id="1905" name="glassCompact">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="glassCompact" />
 	<property name="DescriptionKey" value="glassCompactDesc" />
 	<property name="Material" value="glass" />
 	<property name="Weight" value="10" />
 </item>
-<item id="3056" name="glassFrame">
+<item id="1906" name="glassFrame">
 	<property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="glassFrame" />
 	<property name="DescriptionKey" value="glassFrameDesc" />
@@ -15194,92 +15194,92 @@ Mesh files no longer used:
 	<property name="Material" value="glass" />
 	<property name="Weight" value="10" />
 </item>
-<item id="3060" name="woodBranch">
+<item id="1907" name="woodBranch">
     <property name="Extends" value="itemMaster" />
 	<property name="Material" value="wood" />
     <property name="FuelValue" value="1" />
     <property name="CustomIcon" value="woodBranch" />
 	<property name="Weight" value="1" />
 </item>
-<item id="3061" name="plasticFrisbee">
+<item id="1908" name="plasticFrisbee">
 	<property name="Extends" value="itemMaster" />
 	<property name="Material" value="Mplastics" />
 	<property name="Weight" value="3" />
 </item>
-<item id="3062" name="honeyComb">
+<item id="1909" name="honeyComb">
     <property name="Extends" value="itemMaster" />
 </item>
-<item id="3063" name="plasticKite">
+<item id="1910" name="plasticKite">
     <property name="Extends" value="itemMaster" />
     <property name="Material" value="Mplastics" />
 	<property name="Weight" value="2" />
 </item>
-<item id="3075" name="woodYoyo">
+<item id="1911" name="woodYoyo">
     <property name="Extends" value="itemMaster" />
 	<property name="Material" value="wood" />
 	<property name="Weight" value="2" />
 </item>
 <!-- JZMOD HUNTING TROPHYS -->
-<item id="3064" name="trophyDeer">
+<item id="1912" name="trophyDeer">
     <property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="trophyDeer" />
 	<property name="CraftingSkillGroup" value="huntingCraft" />
     <property name="DescriptionKey" value="HuntingDesc" />
 </item>
-<item id="3065" name="trophyRabbit">
+<item id="1913" name="trophyRabbit">
     <property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="trophyRabbit" />
 	<property name="CraftingSkillGroup" value="huntingCraft" />
     <property name="DescriptionKey" value="HuntingDesc" />
 </item>
-<item id="3066" name="trophyChicken">
+<item id="1914" name="trophyChicken">
     <property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="trophyChicken" />
 	<property name="CraftingSkillGroup" value="huntingCraft" />
     <property name="DescriptionKey" value="HuntingDesc" />
 </item>
-<item id="3067" name="trophyPig">
+<item id="1915" name="trophyPig">
     <property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="trophyPig" />
 	<property name="CraftingSkillGroup" value="huntingCraft" />
     <property name="DescriptionKey" value="HuntingDesc" />
 </item>
-<item id="3068" name="trophyBoar">
+<item id="1916" name="trophyBoar">
     <property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="trophyBoar" />
 	<property name="CraftingSkillGroup" value="huntingCraft" />
     <property name="DescriptionKey" value="HuntingDesc" />
 </item>
-<item id="3069" name="trophyBuck">
+<item id="1917" name="trophyBuck">
     <property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="trophyDeer" />
 	<property name="CraftingSkillGroup" value="huntingCraft" />
     <property name="DescriptionKey" value="HuntingDesc" />
 </item>
-<item id="3070" name="trophyBear">
+<item id="1918" name="trophyBear">
     <property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="trophyBear" />
 	<property name="CraftingSkillGroup" value="huntingCraft" />
     <property name="DescriptionKey" value="HuntingDesc" />
 </item>
-<item id="3074" name="trophyWolf">
+<item id="1919" name="trophyWolf">
     <property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="trophyFish" />
 	<property name="CraftingSkillGroup" value="huntingCraft" />
     <property name="DescriptionKey" value="HuntingDesc" />
 </item>
-<item id="3074" name="trophyDireWolf">
+<item id="1920" name="trophyDireWolf">
     <property name="Extends" value="itemMaster" />
 	<property name="CustomIcon" value="trophyFish" />
 	<property name="CraftingSkillGroup" value="huntingCraft" />
     <property name="DescriptionKey" value="HuntingDesc" />
 </item>
-<item id="3078" name="fireWood">
+<item id="1921" name="fireWood">
     <property name="Extends" value="itemMaster" />
 	<property name="Material" value="wood" />
 	<property name="FuelValue" value="125" />
 </item>
-<item id="3079" name="stoneDrill">
+<item id="1922" name="stoneDrill">
 	<property name="Extends" value="auger" />
 	<property name="CustomIcon" value="auger" /> <property name="CustomIconTint" value="d0d0ff" />
 	<property class="Parts">
@@ -15298,7 +15298,7 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="augerDesc" />
 </item>
-<item id="3080" name="partsAuger_bladeDiamond">
+<item id="1923" name="partsAuger_bladeDiamond">
 	<property name="Extends" value="partsMaster" />
 	<property name="CustomIcon" value="partsAuger_blade" /> <property name="CustomIconTint" value="b0b0ff" />
 	<property name="PartType" value="Barrel" />
@@ -15312,7 +15312,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources,Tools/Traps" />
     <property name="CraftingSkillGroup" value="engineeringCraft" />
 </item>
-<item id="3081" name="revolver_parts">
+<item id="1924" name="revolver_parts">
 	<property name="Extends" value="partsMaster" />
 	<property name="DescriptionKey" value="revolverPartsDesc" />
     <property name="CustomIcon" value="parts44Magnum_parts" /> <property name="CustomIconTint" value="424041" />
@@ -15322,7 +15322,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="100,1000" />
 	</property>
 </item>
-<item id="3082" name="scrapCable">
+<item id="1925" name="scrapCable">
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="metal" />
@@ -15332,5 +15332,17 @@ Mesh files no longer used:
 	<property name="RepairTime" value="20" />
 	<property name="RepairAmount" value="1000" />
 	<property name="Group" value="Resources" />
+</item>
+
+
+
+<item id="1926" name="bouncer">
+	<property name="Extends" value="schematicMaster" />
+    <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="bouncer" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
 </item>
 </items>
