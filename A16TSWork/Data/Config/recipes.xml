@@ -986,10 +986,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cloth" count="1" />
 		<ingredient name="tallow" count="1" />
 	</recipe>
-	<recipe name="foodYuccaJuice" count="1" craft_time="20" craft_exp_gain="5">
-		<ingredient name="foodYuccaFruit" count="6" />
-		<ingredient name="emptyJar" count="1" />
-	</recipe>
 	<recipe name="forestGround" count="1" craft_area="cementMixer" craft_time="5" craft_exp_gain="5">
 		<ingredient name="dirtFragment" count="12" />
 	</recipe>
@@ -2124,10 +2120,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="foodHoney" count="2" craft_time="30" craft_exp_gain="5">
 		<ingredient name="honeyComb" count="1" />
 	</recipe>
-	<recipe name="appleJuice" count="1" craft_time="20" craft_exp_gain="5">
-		<ingredient name="apple" count="6" />
-		<ingredient name="emptyJar" count="1" />
-	</recipe>
 	<recipe name="applePie" count="1" craft_area="stove" craft_tool="cookingGrill" craft_time="20" craft_exp_gain="0">
 		<ingredient name="flour" count="1" />
 		<ingredient name="egg" count="1" />
@@ -2206,10 +2198,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cloth" count="10" />
 		<ingredient name="fiberRope" count="5" />
 		<ingredient name="coal" count="5" />
-	</recipe>
-	<recipe name="blueBerryJuice" count="1" craft_time="20" craft_exp_gain="5">
-		<ingredient name="blueberries" count="8" />
-		<ingredient name="emptyJar" count="1" />
 	</recipe>
 	<recipe name="bladderFlaskEmpty" count="1" craft_area="armorTable" craft_tool="leatherNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="animalBladder" count="1" />
@@ -2294,12 +2282,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="fiberRope" count="5" />
 		<ingredient name="dirtFragment" count="5" />
 	</recipe>
-	<recipe name="canMeat" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="0">
-		<ingredient name="rawMeat" count="1" />
-		<ingredient name="bottledWater" count="1" />
-		<ingredient name="canEmpty" count="1" />
-		<ingredient name="scrapLead" count="2" />
-	</recipe>
 	<recipe name="carBattery" count="1" craft_area="batteryPack" craft_tool="scrapCable" craft_time="300" craft_exp_gain="0">
 		<ingredient name="deadBattery" count="1" />
 	</recipe>
@@ -2318,10 +2300,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="carrot" count="1" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
-	<recipe name="carrotJuice" count="1" craft_time="20" craft_exp_gain="5">
-		<ingredient name="carrot" count="6" />
-		<ingredient name="emptyJar" count="1" />
-	</recipe>
 	<recipe name="chainsawSchematic" count="1" craft_area="researchDesk" craft_time="300" craft_exp_gain="100">
 		<ingredient name="partsHandlebars" count="1" />
 		<ingredient name="smallEngine" count="1" />
@@ -2339,24 +2317,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="chefProfession" count="1" craft_area="researchDesk" craft_time="30" craft_exp_gain="1000">
 		<ingredient name="professionPage" count="20" />
 	</recipe>
-	<recipe name="charredFish" count="1" craft_area="campfire" craft_time="10" craft_tool="stick" craft_exp_gain="0">
-		<ingredient name="fishFillet" count="1" />
-	</recipe>
 	<recipe name="chemistProfession" count="1" craft_time="5" craft_exp_gain="1000">
 		<ingredient name="chooseAProfession" count="1" />
 	</recipe>
 	<recipe name="chemistProfession" count="1" craft_area="researchDesk" craft_time="30" craft_exp_gain="1000">
 		<ingredient name="professionPage" count="20" />
 	</recipe>
-	<recipe name="chicken Shit!" count="1" craft_area="researchDesk" craft_time="10" craft_exp_gain="25">
-		<ingredient name="chickenCoop" count="1" />
-		<ingredient name="blankSkillBook" count="1" />
-	</recipe>
-	<recipe name="cigarette" count="1" craft_time="5" craft_exp_gain="5">
-		<ingredient name="driedTobacco" count="1" />
-		<ingredient name="paper" count="1" />
-	</recipe>
-  	<recipe name="claiming Your Shit" count="1" craft_area="researchDesk" craft_time="10" craft_exp_gain="100">
+	<recipe name="claiming Your Shit" count="1" craft_area="researchDesk" craft_time="10" craft_exp_gain="100">
 		<ingredient name="keystoneRock" count="1" />
 		<ingredient name="blankSkillBook" count="1" />
 	</recipe>
@@ -2577,12 +2544,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="meltedRubber" count="3" />
 		<ingredient name="scrapCable" count="5" />
 	</recipe>
-	<recipe name="farmerProfession" count="1" craft_time="5" craft_exp_gain="1000">
-		<ingredient name="chooseAProfession" count="1" />
-	</recipe>
-	<recipe name="farmerProfession" count="1" craft_area="researchDesk" craft_time="30" craft_exp_gain="1000">
-		<ingredient name="professionPage" count="20" />
-	</recipe>
 	<recipe name="feather" count="30" craft_area="chickenCoop3" craft_time="5400" craft_exp_gain="0">
 		<ingredient name="corn" count="15" />
 		<ingredient name="bottledWater" count="1" />
@@ -2611,19 +2572,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="femur" count="1" craft_time="2" craft_exp_gain="50">
 		<ingredient name="trophyBear" count="1" />
 	</recipe>
-    <recipe name="femur" count="1" craft_time="2" craft_exp_gain="50">
-		<ingredient name="trophyBobcat" count="1" />
-	</recipe>
-    <recipe name="femur" count="1" craft_time="2" craft_exp_gain="50">
-		<ingredient name="trophyCroc" count="1" />
-	</recipe>
-    <recipe name="femur" count="1" craft_time="2" craft_exp_gain="30">
-		<ingredient name="trophySpider" count="1" />
-	</recipe>
-    <recipe name="femur" count="1" craft_time="2" craft_exp_gain="15">
-		<ingredient name="trophyFish" count="1" />
-	</recipe>
-	<recipe name="fiberRope" count="1" craft_time="2" craft_exp_gain="1">
+    <recipe name="fiberRope" count="1" craft_time="2" craft_exp_gain="1">
 		<ingredient name="plantFibers" count="2" />
 	</recipe>
 	<recipe name="firemanProfession" count="1" craft_time="5" craft_exp_gain="1000">
@@ -2639,12 +2588,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="fireWood" count="1" craft_area="dryingRack" craft_time="60" craft_exp_gain="0">
 		<ingredient name="stick" count="85" />
         <ingredient name="animalFat" count="1" />
-	</recipe>
-	<recipe name="fishermanProfession" count="1" craft_time="5" craft_exp_gain="1000">
-		<ingredient name="chooseAProfession" count="1" />
-	</recipe>
-	<recipe name="fishermanProfession" count="1" craft_area="researchDesk" craft_time="30" craft_exp_gain="1000">
-		<ingredient name="professionPage" count="20" />
 	</recipe>
 	<recipe name="fishNChips" count="1" craft_area="stove" craft_tool="fryingPan" craft_time="25" craft_exp_gain="0">
 		<ingredient name="fishFillet" count="2" />
@@ -2696,9 +2639,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="gasTankEmpty" count="1" craft_time="600" craft_exp_gain="0">
 		<ingredient name="gasTank" count="1" />
 	</recipe>
-	<recipe name="grilledFish" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="15" craft_exp_gain="0">
-		<ingredient name="fishFillet" count="1" />
-	</recipe>
 	<recipe name="grilledSandwich" count="1" craft_time="5" craft_exp_gain="0">
 		<ingredient name="bread" count="1" />
 		<ingredient name="grilledMeat" count="1" />
@@ -2729,13 +2669,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="goldenrodPlant" count="1" />
         <ingredient name="zincPowder" count="2" />
 		<ingredient name="forestFlower" count="1" />
-	</recipe>
-	<recipe name="home Brewing" count="1" craft_area="researchDesk" craft_time="10" craft_exp_gain="100">
-		<ingredient name="beer" count="12" />
-		<ingredient name="blankSkillBook" count="1" />
-	</recipe>
-	<recipe name="hook" count="1" craft_area="anvil" craft_tool="clawHammer" craft_time="5" craft_exp_gain="5">
-		<ingredient name="scrapLead" count="5" />
 	</recipe>
 	<recipe name="huntingRifleSchematic" count="1" craft_area="researchDesk" craft_time="10" craft_exp_gain="100">
 		<ingredient name="partsHuntingRifle_barrel" count="1" />
@@ -2777,7 +2710,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="infectedShot" count="3" craft_time="6" craft_exp_gain="3">
 		<ingredient name="feather" count="3" />
-		<ingredient name="superPill" count="1" />
 		<ingredient name="scrapIron" count="3" />
 		<ingredient name="stick" count="3" />
 	</recipe>
@@ -3481,34 +3413,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="shortMetalPipe" count="10" />
 		<ingredient name="meltedRubber" count="1" />
 		<ingredient name="mechanicalParts" count="2" />
-	</recipe>
-	<recipe name="nPCPistol" count="1" craft_area="notuse">
-		<ingredient name="flashlight02" count="0" />
-		<ingredient name="partsPistol_parts" count="1" />
-		<ingredient name="partsPistol_barrel" count="1" />
-		<ingredient name="partsPistol_receiver" count="1" />
-		<ingredient name="partsPistol_grip" count="1" />
-	</recipe>
-	<recipe name="nPCMagnum" count="1" craft_area="notuse">
-		<ingredient name="flashlight02" count="0" />
-		<ingredient name="partsPistol_parts" count="1" />
-		<ingredient name="partsPistol_barrel" count="1" />
-		<ingredient name="partsPistol_receiver" count="1" />
-		<ingredient name="partsPistol_grip" count="1" />
-	</recipe>
-	<recipe name="nPCSawedOffPumpShotgun" count="1" craft_area="notuse">
-		<ingredient name="flashlight02" count="0" />
-		<ingredient name="partsPistol_parts" count="1" />
-		<ingredient name="partsPistol_barrel" count="1" />
-		<ingredient name="partsPistol_receiver" count="1" />
-		<ingredient name="partsPistol_grip" count="1" />
-	</recipe>
-	<recipe name="nPCAK47" count="1" craft_area="notuse">
-		<ingredient name="flashlight02" count="0" />
-		<ingredient name="partsPistol_parts" count="1" />
-		<ingredient name="partsPistol_barrel" count="1" />
-		<ingredient name="partsPistol_receiver" count="1" />
-		<ingredient name="partsPistol_grip" count="1" />
 	</recipe>
 	<recipe name="forgeCrucible" count="1" craft_area="workbench">
 		<ingredient name="forgedIron" count="40"/>
