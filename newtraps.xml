@@ -1,0 +1,178 @@
+<block id="2031" name="catapultTrap">
+	<property name="Class" value="JumpPad"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="CustomIcon" value="pressureplate"/>
+	<property name="Model" value="Entities/Electrical/pressure_platePrefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterPlate" param1="143"/>
+	<property name="CanPickup" value="false"/>
+	<property name="RequiredPower" value="0"/>
+	<property name="Damage" value="5" />
+	<property name="Damage_received" value="5" />
+	<property name="Group" value="Science"/>
+	<property class="RepairItems">
+		<property name="forgedIron" value="8"/>
+		<property name="mechanicalParts" value="1"/>
+		<property name="electricParts" value="1"/>
+		<property name="spring" value="1"/>
+	</property>
+	<property name="BuffsWhenWalkedOn" value="shockedBuff"/>
+	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="spring" count="0,1" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0" />
+	<drop event="Destroy" name="Catapult" count="1" tool_category="Disassemble" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="50"/>
+	<property name="EconomicValue" value="124"/>
+</block>
+
+<block id="2032" name="electricPost">
+	<property name="Class" value="ElectricWire"/>
+	<property name="Material" value="Mmetal_weak"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="CustomIcon" value="electricwirerelay"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="DamageReceived" value="0.5"/>
+	<property name="Model" value="Entities/Electrical/relayPrefab"/> <property name="HandleFace" value="Bottom"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="OnlySimpleRotations" value="false"/>
+	<property name="ImposterExchange" value="imposterPlate" param1="143"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="RequiredPower" value="5"/>
+	<property name="Buff" value="shockedBuff"/>
+	<property name="BuffChance" value="1"/>
+	<property name="Group" value="Science"/>
+	<property class="RepairItems">
+		<property name="forgedIron" value="4"/>
+		<property name="electricParts" value="1"/>
+	</property>
+	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="5,40"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="62"/>
+</block>
+
+<block id="2033" name="ceilingfanTrap">
+	<property name="Class" value="BladeTrap"/>
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="Damage" value="20"/>
+	<property name="DamageReceived" value="4"/>
+	<property name="BreakingPercentage" value="0.5"/>
+	<property name="BrokenPercentage" value="0.25"/>
+	<property name="ImpactSound" value="bladetrap_impact"/>
+	<property name="StartSound" value="bladetrap_startup"/>
+	<property name="StopSound" value="bladetrap_stop"/>
+	<property name="RunningSound" value="bladetrap_fire_lp"/>
+	<property name="RunningSoundBreaking" value="bladetrap_dm1_lp"/>
+	<property name="RunningSoundBroken" value="bladetrap_dm2_lp"/>
+	<property name="MaxDamage" value="2000"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Electrical/trap_spinning_bladePrefab"/> <property name="HandleFace" value="Bottom"/>
+	<property name="ModelOffset" value="0,.75,0"/>
+	<property name="MultiBlockDim" value="3,1,3"/>
+	<property name="ImposterExchange" value="imposterPlate" param1="111"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="RequiredPower" value="20"/>
+	<property name="EconomicValue" value="444"/>
+	<property name="Group" value="Science"/>
+	<property name="ActivationDistance" value="6"/>
+	<property class="RepairItems">
+		<property name="forgedSteel" value="16"/>
+		<property name="mechanicalParts" value="5"/>
+		<property name="electricParts" value="3"/>
+	</property>
+	<drop event="Harvest" name="mechanicalParts" count="1,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="1,3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="20,100"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="TakeDelay" value="10"/>
+	<property name="EconomicValue" value="444"/>
+</block>
+
+<block id="2034" name="mrFusion">
+	<property name="Class" value="BatteryBank"/>
+	<property name="Material" value="Mmetal_weak"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Entities/Electrical/pressure_platePrefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="HandleFace" value="Bottom"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="DescriptionKey" value="powerSourceDesc"/>
+	<property name="MaxPower" value="1000"/>
+	<property name="InputPerTick" value="20"/>
+	<property name="ChargePerInput" value="1"/>
+	<property name="OutputPerStack" value="100"/>
+	<property name="OutputPerCharge" value="90"/>
+	<property name="SlotItem" value=""/>
+	<property name="Group" value="Science"/>
+	<property class="RepairItems">
+		<property name="forgedIron" value="8"/>
+		<property name="electricParts" value="6"/>
+		<property name="electronicParts" value="2"/>
+		<property name="scrapPlastics" value="4"/>
+	</property>
+	<drop event="Harvest" name="scrapIron" count="120" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="forgedIron" count="3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="2,3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="1,2" prob="0.6" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="EconomicValue" value="4000"/>
+</block>
+
+<block id="2035" name="fuelcell">
+	<property name="Class" value="BatteryBank"/>
+	<property name="Material" value="Mmetal_weak"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Entities/Electrical/pressure_plate_longPrefab"/>
+	<property name="ModelOffset" value="0,1,0"/>
+	<property name="MultiBlockDim" value="5,1,1"/>
+	<property name="HandleFace" value="Top"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="DescriptionKey" value="powerSourceDesc"/>
+	<property name="MaxPower" value="24000"/>
+	<property name="InputPerTick" value="1"/>
+	<property name="ChargePerInput" value="1"/>
+	<property name="OutputPerStack" value="4000"/>
+	<property name="OutputPerCharge" value="90"/>
+	<property name="SlotItem" value="cutDiamond"/>
+	<property name="Group" value="Science"/>
+	<property class="RepairItems">
+		<property name="forgedIron" value="8"/>
+		<property name="electricParts" value="6"/>
+		<property name="electronicParts" value="2"/>
+		<property name="scrapPlastics" value="4"/>
+	</property>
+	<drop event="Harvest" name="scrapIron" count="120" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="forgedIron" count="3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="2,3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="1,2" prob="0.6" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="EconomicValue" value="4000"/>
+</block>

@@ -1,6 +1,6 @@
 <windows>
 
-<!-- <<< SMX v16b119e r01 START - BY SIRILLION >>> -->
+<!-- <<< SMX v16b129e r01 START - BY SIRILLION >>> -->
 
 	<window name="SMX">
 
@@ -2063,19 +2063,19 @@
 	</window>
 	
 	<!--#$-IGS BEGIN: Adding cursor area. Expanding the quest offer window to accommodate other lanugagues longer descriptions-$#-->
-	<window name="windowTip" width="603" height="363" pos="-300, 150" controller="TipWindow" anchor="CenterCenter" pivot="center" depth="15" cursor_area="true">
+	<window name="windowTip" width="903" height="363" pos="-450,-25" controller="TipWindow" anchor="CenterCenter" pivot="center" depth="15" cursor_area="true">
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header" >
 			<sprite depth="2" name="windowIcon" style="icon32px" pos="4,-5" sprite="ui_game_symbol_pen"/>
-			<label style="header.name" text="{tiptitle}" width="550" />
+			<label style="header.name" text="{tiptitle}" width="850" />
 		</panel>
 		<rect name="content" pos="0,-46" height="319" depth="1" pivot="center">
-			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="603" color="[black]" type="sliced" fillcenter="false" />	
+			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="903" color="[black]" type="sliced" fillcenter="false" />	
 			<sprite color="[darkGrey]" type="sliced" />
-			<label depth="3" name="descriptionText" pos="8,-8" text="{tiptext}" width="590" font_size="30" overflow="resizeheight" />
+			<label depth="3" name="descriptionText" pos="8,-8" text="{tiptext}" width="890" font_size="24" overflow="resizeheight" />
 			
 			<rect name="btnContinue" depth="3" pos="0, -277" height="42" >
 				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
-				<sprite depth="2" name="background" pos="3,-3" sprite="menu_empty" width="224" height="32" color="[darkGrey]" type="sliced" />
+				<sprite depth="2" name="background" pos="3,-3" sprite="menu_empty" width="524" height="32" color="[darkGrey]" type="sliced" />
 				<rect depth="3" pos="0,0" height="42">
 					<button name="clickable" sprite="menu_empty" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0"/>
 					
