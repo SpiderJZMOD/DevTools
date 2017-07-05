@@ -285,5 +285,149 @@
 			<window name="prefabList" />
 		</window_group>
 		
-	</ruleset>
+	
+    <!--JZMOD ADDED-->
+		<window_group name="workstation_bulletPress" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowCombine" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_oilRefinery" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_blastFurnace" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowFuel" />
+			<window name="windowBlastInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_dryingRack" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_torch" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowFuel" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_burnBarrel" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_chickenCoop1" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_chickenCoop2" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_chickenCoop3" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_researchDesk" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_armorTable" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowToolsArmorTable" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_metalWorkBench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowToolsMetalWorkBench" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_mortarAndPestle" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_anvil" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowToolsAnvil" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_stove" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowToolsStove" />
+			<window name="lowerwindowOutput" />
+			<window name="windowFuel" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_stoneMill" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_methaneProducer" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+        <window_group name="workstation_fermentationBarrel" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+        <window_group name="workstation_still" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowFuel" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+    </ruleset>
 </xui>
