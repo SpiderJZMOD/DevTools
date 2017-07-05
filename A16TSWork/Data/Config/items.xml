@@ -15318,9 +15318,6 @@ Mesh files no longer used:
 	<property name="RepairAmount" value="1000" />
 	<property name="Group" value="Resources" />
 </item>
-
-
-
 <item id="1926" name="bouncer">
 	<property name="Extends" value="schematicMaster" />
     <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
@@ -15330,4 +15327,28 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
+
+<item id="1927" name="Mold">
+    <property name="Extends" value="itemMaster" />
+    <property name="CustomIcon" value="ui_game_symbol_Mold" />
+</item>
+<item id="1928" name="Tools">
+    <property name="Extends" value="itemMaster" />
+    <property name="CustomIcon" value="ui_game_symbol_Tools" />
+</item>
+<item id="1929" name="CookingUtensil">
+    <property name="Extends" value="itemMaster" />
+    <property name="CustomIcon" value="ui_game_symbol_CookingUtensil" />
+</item>
+
+<item id="1930" name="mason">
+	<property name="Extends" value="schematicMaster" />
+    <property name="CustomIcon" value="ui_game_symbol_ProfessionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="mason" />
+	</property>
+	<property name="DescriptionKey" value="professionDesc" />
+	<property name="Group" value="Books" />
+</item>
+
 </items>

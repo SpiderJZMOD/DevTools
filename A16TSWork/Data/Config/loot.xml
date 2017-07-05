@@ -1576,6 +1576,15 @@
 		<!--<item name="qc_Bouncer" />-->
 		<item name="qc_King" />
 	</lootgroup>
+    <lootgroup name="mason" count="all">
+		<item name="canBeef" />
+		<item name="bottledWater" />
+		<item name="keystoneRock" />
+		<item name="painkillers" />
+		<item name="mason" />
+		<!--<item name="qc_Mason" />-->
+		<item name="qc_King" />
+	</lootgroup>
 	<lootgroup name="bikeNABox" count="all">
 		<item name="minibikeWheels" count="1" />
 		<item name="carBattery" count="1" />
@@ -2939,6 +2948,10 @@
 	<!-- Cop Loot  -->
 	<lootcontainer id="217" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="cop" count="1" />
+	</lootcontainer>
+    <!-- Mason Loot  -->
+	<lootcontainer id="218" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+		<item group="mason" count="1" />
 	</lootcontainer>
 	<!-- Chef Loot  -->
 	<lootcontainer id="219" count="1" size="5,5" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
