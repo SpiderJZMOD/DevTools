@@ -28,10 +28,10 @@
 	<quest id="quest_BasicSurvival1" group_name_key="quest_BasicSurvival" name="Basic Survival 1/9" name_key="quest_BasicSurvival1" subtitle="Choose your profession" subtitle_key="quest_BasicSurvival1_subtitle" description_key="quest_BasicSurvival1_description" icon="ui_game_symbol_book" category_key="Quest" offer_key="quest_BasicSurvival_offer">
 		<action type="ShowTip" value="tutorialTipQuest02" />
 		<action type="TrackQuest" />
-		<objective type="FetchKeep" id="KeystoneRock" value="1" />
-        <reward type="Item" id="TatteredShoes" value="600" />
-        <reward type="Item" id="TatteredPants" value="600" />
-        <reward type="Item" id="TatteredShirt" value="600" />
+		<objective type="FetchKeep" id="keystoneRock" value="1" />
+        <reward type="Item" id="tatteredShoes" value="600" />
+        <reward type="Item" id="tatteredPants" value="600" />
+        <reward type="Item" id="tatteredShirt" value="600" />
        	<reward type="Quest" id="quest_BasicSurvival2" />
 		<reward type="Quest" id="quest_BasicSurvival3" />
 		<reward type="Quest" id="quest_BasicSurvival4" />
@@ -52,18 +52,28 @@
 		<reward type="Quest" id="quest_BasicSurvival19" />
 		<reward type="Quest" id="quest_BasicSurvival20" />
 		<reward type="Quest" id="quest_BasicSurvival21" />
+        <reward type="Quest" id="quest_BasicSurvival22" />
+        <reward type="Quest" id="quest_BasicSurvival23" />
+        <reward type="Quest" id="quest_BasicSurvival24" />
+        <reward type="Quest" id="quest_BasicSurvival25" />
+        <reward type="Quest" id="quest_BasicSurvival26" />
+        <reward type="Quest" id="quest_BasicSurvival27" />
+        <reward type="Quest" id="quest_BasicSurvival28" />
+        <reward type="Quest" id="quest_BasicSurvival29" />
+        <reward type="Quest" id="quest_BasicSurvival30" />
+        <reward type="Quest" id="quest_BasicSurvival31" />
 		<reward type="Exp" value="400" />
 		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!-- Basic Survival 2 - Craft Fiber Rope /> -->
-	<quest id="quest_BasicSurvival9" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival9" subtitle_key="quest_BasicSurvival9_subtitle" description_key="quest_BasicSurvival9_description" icon="ui_game_symbol_hammer" category_key="Quest">
+	<quest id="quest_BasicSurvival2" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival9" subtitle_key="quest_BasicSurvival9_subtitle" description_key="quest_BasicSurvival9_description" icon="ui_game_symbol_hammer" category_key="Quest">
 		<objective type="FetchKeep" id="plantFibers" value="60" />
 		<objective type="Craft" id="fiberRope" value="30" />
 		<reward type="Exp" value="400" />
 	</quest>
 	<!-- Basic Survival 3 - Craft Stone Axe /> -->
-	<quest id="quest_BasicSurvival2" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival2" subtitle_key="quest_BasicSurvival2_subtitle" description_key="quest_BasicSurvival2_description" icon="ui_game_symbol_hammer" category_key="Quest">
+	<quest id="quest_BasicSurvival3" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival2" subtitle_key="quest_BasicSurvival2_subtitle" description_key="quest_BasicSurvival2_description" icon="ui_game_symbol_hammer" category_key="Quest">
 		<objective type="FetchKeep" id="woodBranch" value="2" />
 		<objective type="FetchKeep" id="fiberRope" value="2" />
 		<objective type="FetchKeep" id="rockSmall" value="5" />
@@ -71,7 +81,7 @@
 		<reward type="Exp" value="400" />
 	</quest>
 	<!-- Basic Survival 4 - Craft Plant Fiber Clothing /> -->
-	<quest id="quest_BasicSurvival3" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival3" subtitle_key="quest_BasicSurvival3_subtitle" description_key="quest_BasicSurvival3_description" icon="ui_game_symbol_tailoring" category_key="Quest">
+	<quest id="quest_BasicSurvival4" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival3" subtitle_key="quest_BasicSurvival3_subtitle" description_key="quest_BasicSurvival3_description" icon="ui_game_symbol_tailoring" category_key="Quest">
 		<objective type="FetchKeep" id="plantFibers" value="75" />
 		<objective type="FetchKeep" id="fiberRope" value="20" />
 		<objective type="Craft" id="plantFiberPants" value="1" />
@@ -82,7 +92,7 @@
 		<reward type="Exp" value="400" />
 	</quest>
 	<!-- Basic Survival 5 - Craft a Wooden Club /> -->
-	<quest id="quest_BasicSurvival4" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival4" subtitle_key="quest_BasicSurvival4_subtitle" description_key="quest_BasicSurvival4_description" icon="ui_game_symbol_club" category_key="Quest">
+	<quest id="quest_BasicSurvival5" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival4" subtitle_key="quest_BasicSurvival4_subtitle" description_key="quest_BasicSurvival4_description" icon="ui_game_symbol_club" category_key="Quest">
 		<objective type="FetchKeep" id="woodBranch" value="10" />
 		<objective type="FetchKeep" id="plantFibers" value="10" />
 		<objective type="Craft" id="fiberRope" value="5" />
@@ -90,7 +100,7 @@
 		<reward type="Exp" value="400" />
 	</quest>
 	<!-- Basic Survival 6 - Craft Bow & Arrows /> -->
-	<quest id="quest_BasicSurvival5" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival5" subtitle_key="quest_BasicSurvival5_subtitle" description_key="quest_BasicSurvival5_description" icon="ui_game_symbol_archery" category_key="Quest">
+	<quest id="quest_BasicSurvival6" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival5" subtitle_key="quest_BasicSurvival5_subtitle" description_key="quest_BasicSurvival5_description" icon="ui_game_symbol_archery" category_key="Quest">
 		<objective type="FetchKeep" id="stick" value="8" />
 		<objective type="FetchKeep" id="plantFibers" value="6" />
 		<objective type="FetchKeep" id="feather" value="2" />
@@ -113,8 +123,8 @@
 		<reward type="Exp" value="400" />
 	</quest>
 	<!-- Basic Survival 9 - Kill Zombie /> -->
-	<quest id="quest_BasicSurvival6" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival6" subtitle_key="quest_BasicSurvival6_subtitle" description_key="quest_BasicSurvival6_description" icon="ui_game_symbol_zombie" category_key="Quest">
-		<objective type="ZombieKill" value="2" />
+	<quest id="quest_BasicSurvival9" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival6" subtitle_key="quest_BasicSurvival6_subtitle" description_key="quest_BasicSurvival6_description" icon="ui_game_symbol_zombie" category_key="Quest">
+		<objective type="ZombieKill" value="3" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
@@ -203,11 +213,79 @@
 		<objective type="FetchKeep" id="coal" value="4" />
 		<objective type="FetchKeep" id="curedLeather" value="4" />
 		<objective type="FetchKeep" id="stick" value="10" />
-		<objective type="Craft" id="DryingRack" value="1" />
-		<objective type="BlockPlace" id="DryingRack" value="1" />
+		<objective type="Craft" id="dryingRack" value="1" />
+		<objective type="BlockPlace" id="dryingRack" value="1" />
 		<objective type="FetchKeep" id="leather" value="4" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
+	</quest>
+    <!-- Basic Survival 22 - Craft and use Blunderbuss /> -->
+	<quest id="quest_BasicSurvival22" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="Quest">
+		<objective type="Craft" id="blunderbuss" value="1" />
+		<objective type="FetchKeep" id="blunderbussAmmo" value="5" />
+		<objective type="ZombieKill" value="3" />
+		<requirement type="Holding" id="blunderbuss" />
+		<reward type="Exp" value="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+    <!-- Basic Survival 23 - Craft and use craftedRifle /> -->
+	<quest id="quest_BasicSurvival23" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="Quest">
+		<objective type="Craft" id="craftedRifle" value="1" />
+		<objective type="FetchKeep" id="308mmBullet" value="5" />
+		<objective type="ZombieKill" value="3" />
+		<requirement type="Holding" id="craftedRifle" />
+		<reward type="Exp" value="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+    <!-- Basic Survival 24 - Build Planks /> -->
+	<quest id="quest_BasicSurvival24" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="Quest">
+		<objective type="Craft" id="1x3Planks" value="1" />
+		<objective type="Craft" id="2x5Planks" value="1" />
+		<objective type="BlockPlace" id="1x3Planks" value="1" />
+        <objective type="BlockPlace" id="2x5Planks" value="1" />
+		<reward type="Exp" value="400" />
+	</quest>
+    <!-- Basic Survival 25 - Wood Building /> -->
+	<quest id="quest_BasicSurvival25" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="Quest">
+		<objective type="Craft" id="clawHammer" value="1" />
+		<reward type="ShowTip" value="woodBuildingTip" stage="aftercomplete" />
+		<reward type="Exp" value="400" />
+	</quest>
+    <!-- Basic Survival 26 - Cobblestone Building /> -->
+	<quest id="quest_BasicSurvival26" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="Quest">
+		<objective type="Craft" id="cobblestoneHammer" value="1" />
+		<reward type="ShowTip" value="cobblestoneBuildingTip" stage="aftercomplete" />
+		<reward type="Exp" value="400" />
+	</quest>
+    <!-- Basic Survival 27 - Brick Building /> -->
+	<quest id="quest_BasicSurvival27" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="Quest">
+		<objective type="Craft" id="brickHammer" value="1" />
+		<reward type="ShowTip" value="brickBuildingTip" stage="aftercomplete" />
+		<reward type="Exp" value="400" />
+	</quest>
+    <!-- Basic Survival 28 - Concrete Building /> -->
+	<quest id="quest_BasicSurvival28" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="Quest">
+		<objective type="Craft" id="concreteSledge" value="1" />
+		<reward type="ShowTip" value="concreteBuildingTip" stage="aftercomplete" />
+		<reward type="Exp" value="400" />
+	</quest>
+    <!-- Basic Survival 29 - rConcrete Building /> -->
+	<quest id="quest_BasicSurvival29" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="Quest">
+		<objective type="Craft" id="rConcreteSledge" value="1" />
+		<reward type="ShowTip" value="rConcreteBuildingTip" stage="aftercomplete" />
+		<reward type="Exp" value="400" />
+	</quest>
+    <!-- Basic Survival 30 - Iron Building /> -->
+	<quest id="quest_BasicSurvival30" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="Quest">
+		<objective type="Craft" id="wrench" value="1" />
+		<reward type="ShowTip" value="scrapIronBuildingTip" stage="aftercomplete" />
+		<reward type="Exp" value="400" />
+	</quest>
+    <!-- Basic Survival 31 - Steel Building /> -->
+	<quest id="quest_BasicSurvival31" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="Quest">
+		<objective type="Craft" id="welder" value="1" />
+		<reward type="ShowTip" value="steelBuildingTip" stage="aftercomplete" />
+		<reward type="Exp" value="400" />
 	</quest>
 	<!-- CHALLENGES -->
 	<quest id="challenge_silenceofthelambs" name_key="challenge_silenceofthelambs" subtitle_key="challenge_silenceofthelambs_subtitle" description_key="challenge_silenceofthelambs_offer" icon="ui_game_symbol_zombie"
@@ -425,8 +503,8 @@
 		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
 	</quest>
 
-<!--JZMOD PROFESSION QUEST CHAINS-->
-	<!--Doctor-->
+<!--JZMOD PROFESSION QUEST CHAINS
+	Doctor
 	<quest id="StartDoctor" name_key="challenge_Profession" subtitle_key="Doctors Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Doctor" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Doctor" />
 		<reward type="Quest" id="challenge_Doctor2" />
@@ -461,7 +539,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<!--Carpenter-->
+	Carpenter
 	<quest id="StartCarpenter" name_key="challenge_Profession" subtitle_key="Carpenters Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Carpenter" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="OldHammer" value="600" />
         <reward type="Quest" id="challenge_Carpenter" />
@@ -497,7 +575,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<!--Cop-->
+	Cop
 	<quest id="StartCop" name_key="challenge_Profession" subtitle_key="Cops Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Cop" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="OldRevolver" value="600" />
         <reward type="Quest" id="challenge_Cop" />
@@ -519,7 +597,7 @@
 		<reward type="Exp" value="1200" />
 		<reward type="SkillPoints" value="3" />
 	</quest>
-	<!--Soldier-->
+	Soldier
 	<quest id="StartSoldier" name_key="challenge_Profession" subtitle_key="Soldiers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Soldier" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="OldRifle" value="600" />
         <reward type="Quest" id="challenge_Soldier" />
@@ -551,7 +629,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<!--Scientist-->
+	Scientist
 	<quest id="StartScientist" name_key="challenge_Profession" subtitle_key="Chemists Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Chemist" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Scientist" />
 		<reward type="Quest" id="challenge_Scientist2" />
@@ -586,7 +664,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<!--Chef-->
+Chef
 	<quest id="StartChef" name_key="challenge_Profession" subtitle_key="Chefs Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="fryingPan" value="600" />
         <reward type="Quest" id="challenge_Chef" />
@@ -628,7 +706,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<!--Fitness Instructor-->
+	Fitness Instructor
 	<quest id="StartFitness" name_key="challenge_Profession" subtitle_key="Fitness Instructors Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Fitness" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="TPXBat" value="300" />
         <reward type="Quest" id="challenge_Fitness" />
@@ -651,7 +729,7 @@
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-	<!--Fireman-->
+	Fireman
 	<quest id="StartFireman" name_key="challenge_Profession" subtitle_key="Firemans Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Fireman" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="oldAxe" value="600" />
         <reward type="Quest" id="challenge_Fireman" />
@@ -673,7 +751,7 @@
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-	<!--Construction Worker-->
+	Construction Worker
 	<quest id="StartConstruction" name_key="challenge_Profession" subtitle_key="Construction Workers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Construction" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="oldWrench" value="600" />
         <reward type="Quest" id="challenge_Construction" />
@@ -702,7 +780,7 @@
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-	<!--Electrician-->
+	Electrician
 	<quest id="StartElectrician" name_key="challenge_Profession" subtitle_key="Electriciana Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Electrician" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="OldWrench" value="600" />
         <reward type="Quest" id="challenge_Electrician" />
@@ -731,7 +809,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<!--Metal Worker-->
+	Metal Worker
 	<quest id="StartMetal" name_key="challenge_Profession" subtitle_key="Metal Workers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Metal" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="OldWrench" value="600" />
         <reward type="Quest" id="challenge_Metal" />
@@ -755,7 +833,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<!--Burglar-->
+	Burglar
 	<quest id="StartBurglar" name_key="challenge_Profession" subtitle_key="Burglars Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Burglar" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="LockPickGun" value="300" />
         <reward type="Quest" id="challenge_Burglar" />
@@ -778,7 +856,7 @@
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-	<!--Park Ranger-->
+	Park Ranger
 	<quest id="StartRanger" name_key="challenge_Profession" subtitle_key="Park Rangers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Ranger" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="OldRifle" value="600" />
         <reward type="Quest" id="challenge_Ranger" />
@@ -813,7 +891,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<!--Mechanic-->
+	Mechanic
 	<quest id="StartMechanic" name_key="challenge_Profession" subtitle_key="Mechanics Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="OldWrench" value="600" />
         <reward type="Quest" id="challenge_Mechanic" />
@@ -841,6 +919,6 @@
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-
+-->
 
 </quests>

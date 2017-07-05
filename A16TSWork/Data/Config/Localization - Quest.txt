@@ -45,7 +45,7 @@ RewardSkill_keyword,,Keywords,KgNone,Skill,Compétence,Fertigkeit,,Habilidad
 RewardSkillPoint_keyword,,Keywords,KgNone,Skill Point,Point de compétence,Fertigkeitspunkt,,Punto de habilidad
 requirementGroupFireaxe,,Requirement Group,KgNone,Holding Fire Axe,Tenir une hache de pompier,Feueraxt halten,,Sostener un hacha de incendio
 requirementGroupShotgun,,Requirement Group,KgNone,Holding Shotgun,Tenir un fusil à pompe,Schrotflinte halten,,Sostener una escopeta
-tutorialTipQuest01,,Popup Tip,,"This is it. Humanities extinction event. Everyone you've ever known and loved is dead... or worse trying to eat anyone that’s left. In the end there’s a good chance that you too will end up as a mindless creature and that's the truth you’re learning to die with. So what do you do with what you have left? Give up and lay down and die? Go savage and lose what’s left of your humanity long before your flesh goes cold or will you push back against the horde of undead and rebuild this world to its former glory. Only one thing is for certain…. It will certainly end with the flesh being ripped off your bones as you scream on in horror. Die well my friend\n\nSpider",,,,
+tutorialTipQuest01,,Popup Tip,,"Welcome Survivor,\n\nForget what you know about 7 Days to Die it will not help you here. Approach this Mod from a fresh perspective or you will surely be eaten by the horde or surcome to the elements. You will now step into the life of one of the few humans left alive after the outbreak. Humanity will live or die upon your struggle. Prepare to experience the meaning of TRUE SURVIVAL. Die well my friend\n\nSpider",,,,
 tutorialTipQuest02,,Popup Tip,KgNone,"True Survival Notes!\n\n1)Zombies take much more damage in their heads and very little everywhere else.\n\n2)Zombies can run in the shadows even during the day.\n\n3)Wood and Stone materials will not hurt Iron and Iron materials will not hurt Steel materials.\n\n4)To read all the True Survival Mod Notes check your journal often.",,,,
 skillPointTip,,Popup Tip,KgNone,"True Survival Notes!\n\n1)Perks that unlock recipes will state in their descriptions if the item is crafted on a workbench and if it requires a tool.\n\n2)Extra professions can be learned by collecting 20 profession pages and crafting a profession kit.\n\n3)Hard Stone-After about 6 layers of normal stone rock under the soil of the biome you will find HardStone. It has the color of bedrock but does not chime when hit. This stone is very hard and can only be hurt by Steel Tools, Stone Drills and Explosives that contains Nitroglycerin.",,,,
 quest_BasicSurvival,,,,Basic Survival,,,,
@@ -419,3 +419,12 @@ triggerDelayDurationTip,,Popup Tip,,"If you have a triggering component such as 
 triggerDelayDurationTip_title,,Popup Tip,,Trigger Delay and Duration,,,,
 landClaimTip,,Popup Tip,,"A land claim grants a hardness modifier to all blocks in your claim area. This hardness modifier applies to any attacks or damage to blocks by enemy players. When placing a block inside your land claim you will see a placement preview in a green color. You can also pickup and move electrical components and work stations inside your claim. Electrical Items outside of your claim can be cut and wired by strangers. Block placement colors are as follows: Green inside your claim, Yellow inside your friends claim, White everywhere else, Red cannot place block.",,,,
 landClaimTip_title,,Popup Tip,,Land Claim,,,,
+
+woodBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
+cobblestoneBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
+brickBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
+concreteBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
+rConcreteBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
+scrapIronBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
+steelBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
+
