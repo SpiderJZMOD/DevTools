@@ -12303,11 +12303,12 @@ Mesh files no longer used:
     <property name="ActionSkillGroup" value="pistolsAction"/>
 </item>
 <item id="1612" name="shotgunsForDummies">
-<property name="Extends" value="scavengingForDummies" />
+    <property name="Extends" value="scavengingForDummies" />
     <property name="ActionSkillGroup" value="shotgunsAction"/>
 </item>
 <item id="1613" name="submachineGunsForDummies">
-	<property name="Extends" value="submachineGunsAction" />
+	<property name="Extends" value="scavengingForDummies" />
+    <property name="ActionSkillGroup" value="submachineGunsAction"/>
 </item>
 <item id="1614" name="assaultRiflesForDummies">
 	<property name="Extends" value="scavengingForDummies" />
@@ -12513,7 +12514,7 @@ Mesh files no longer used:
 <item id="1665" name="howToBeAMechanic">
 	<property name="Extends" value="howToBeACarpenter" />
 </item>
-<!-- JZMOD PROFESSION QUEST -->
+<!-- JZMOD PROFESSION QUEST 
 <item id="1666" name="qc_Doctor">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
@@ -12544,14 +12545,6 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
 		<property name="QuestGiven" value="startSoldier" />
-	</property>
-</item>
-<item id="1670" name="qc_Farmer">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startFarmer" />
 	</property>
 </item>
 <item id="1671" name="qc_Chef">
@@ -12586,7 +12579,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startElectrician" />
 	</property>
 </item>
-<item id="1675" name="qc_Metal_Worker">
+<item id="1675" name="qc_Welder">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12594,7 +12587,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startMetal" />
 	</property>
 </item>
-<item id="1676" name="qc_Burglar">
+<item id="1676" name="qc_Thief">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12666,14 +12659,6 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startSoldier" />
 	</property>
 </item>
-<item id="1685" name="qc_Farmer">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startFarmer" />
-	</property>
-</item>
 <item id="1686" name="qc_Chef">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
@@ -12690,7 +12675,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startFitness" />
 	</property>
 </item>
-<item id="1688" name="qc_Construction_Worker">
+<item id="1688" name="qc_Iron_Worker">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
@@ -12746,7 +12731,7 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="startFireman" />
 	</property>
 </item>
-<!-- JZMOD QUEST -->
+ JZMOD QUEST 
 <item id="1695" name="qc_Hen">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
@@ -12770,7 +12755,7 @@ Mesh files no longer used:
 	<property class="Action1">
 		<property name="QuestGiven" value="challenge_AntiVenom" />
 	</property>
-</item>
+</item>-->
 <item id="1698" name="qc_King">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
@@ -12976,7 +12961,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="engineeringCraft" />
 </item>
 <item id="1711" name="antivirialMeds">
-	<property name="Extends" value="itemMaster" />
+	<property name="Extends" value="foodMaster" />
 	<property name="Meshfile" value="Items/Health/painkillersPrefab" />
 	<property name="HoldType" value="16" />
 	<property name="CustomIcon" value="antibiotics" /> <property name="CustomIconTint" value="25e008" />
