@@ -707,7 +707,7 @@
 	</lootgroup> -->
 	<lootgroup name="nailgun+parts" count="1">
 		<!--5%-->
-        <item name="welder" quality="1,300" prob="2.5" />
+        <item name="welderTool" quality="1,300" prob="2.5" />
         <item name="nailgun" quality="1,300" prob="2.5" />
 		<!--50%-->
         <item name="partsNailgun_frame" prob="25.0" />
@@ -1280,7 +1280,7 @@
 		<item name="partsAuger_blade" prob="12.5"/>
 		<item name="partsChainsaw_blade" prob="12.5"/>
 		<item group="bikeLoot" prob="12.5" />
-		<item name="welder" prob="12.5" />
+		<item name="welderTool" prob="12.5" />
 		<item name="calipers" prob="2.5" />
 		<item name="toolAndDieSet" prob="1.3" />
 		<item name="lightBulb" prob="7.5"/>
@@ -1317,7 +1317,7 @@
 		<item group="bikeLoot" prob="4.9" />
 		<item group="nailgun+parts" prob="3.3" />
 		<item name="calipers" prob="3.3" />
-		<item name="welder" prob="1.6" /> 
+		<item name="welderTool" prob="1.6" /> 
 		<item name="toolAndDieSet" prob="1.3" />
 		<item group="rareTools" prob="1.6" />
 		<item group="automotive" prob="3.3" />
@@ -1441,7 +1441,7 @@
 		<item name="soldier" />
 		<item name="aK47Schematic" />
 		<item name="308mmBullet" count="19" />
-		<!--<item name="qc_Soldier" />-->
+		<item name="qc_Soldier" />
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="chemist" count="all">
@@ -1451,7 +1451,7 @@
 		<item name="painkillers" />
 		<item name="stimulant" count="6" />
 		<item name="chemist" />
-		<!--<item name="qc_Chemist" />-->
+		<item name="qc_Chemist" />
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="carpenter" count="all">
@@ -1460,7 +1460,7 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="carpenter" />
-		<!--<item name="qc_Carpenter" />-->
+		<item name="qc_Carpenter" />
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="cop" count="all">
@@ -1471,16 +1471,19 @@
 		<item name="painkillers" />
         <item name="cop" />
 		<item name="9mmBullet" count="16" />
-		<!--<item name="qc_Cop" />-->
+		<item name="qc_Cop" />
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="doctor" count="all">
 		<item name="canBeef" />
 		<item name="bottledWater" />
 		<item name="keystoneRock" />
-		<item name="painkillers" count="6" />
+		<item name="sutureKit" count="1" />
+        <item name="painKillerShot" count="2" />
+        <item name="stimulantShot" count="2" />
+        <item name="aloeCream" count="2" />
 		<item name="doctor" />
-		<!--<item name="qc_Doctor" />-->
+		<item name="qc_Doctor" />
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="chef" count="all">
@@ -1489,7 +1492,7 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="chef" />
-		<!--<item name="qc_Chef" />-->
+		<item name="qc_Chef" />
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="fitness Instructor" count="all">
@@ -1498,7 +1501,7 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="fitness Instructor" />
-		<!--<item name="qc_Fitness_Instructor" />-->
+		<item name="qc_FitnessInstructor" />
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="fireman" count="all">
@@ -1507,16 +1510,16 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="fireman" />
-		<!--<item name="qc_Fireman" />-->
+		<item name="qc_Fireman" />
 		<item name="qc_King" />
 	</lootgroup>
-	<lootgroup name="construction Worker" count="all">
+	<lootgroup name="ironWorker" count="all">
 		<item name="canBeef" />
 		<item name="bottledWater" />
 		<item name="keystoneRock" />
 		<item name="painkillers" />
-		<item name="construction Worker" />
-		<!--<item name="qc_Construction_Worker" />-->
+		<item name="ironWorker" />
+		<item name="qc_IronWorker" />
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="electrician" count="all">
@@ -1525,26 +1528,26 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="electrician" />
-		<!--<item name="qc_Electrician" />-->
+		<item name="qc_Electrician" />
 		<item name="qc_King" />
 	</lootgroup>
-	<lootgroup name="metal Worker" count="all">
+	<lootgroup name="steelWelder" count="all">
 		<item name="canBeef" />
 		<item name="bottledWater" />
 		<item name="keystoneRock" />
 		<item name="painkillers" />
-		<item name="metal Worker" />
-	<!--	<item name="qc_Metal_Worker" />-->
+		<item name="steelWelder" />
+	    <item name="qc_SteelWelder" />
 		<item name="qc_King" />
 	</lootgroup>
-	<lootgroup name="burglar" count="all">
+	<lootgroup name="thief" count="all">
 		<item name="canBeef" />
 		<item name="bottledWater" />
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="lockPick" count="50" />
-		<item name="burglar" />
-		<!--<item name="qc_Burglar" />-->
+		<item name="thief" />
+		<item name="qc_Thief" />
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="park Ranger" count="all">
@@ -1554,7 +1557,7 @@
         <item name="painkillers" />
 		<item name="308mmBullet" count="19" />
 		<item name="park Ranger" />
-		<!--<item name="qc_Park_Ranger" />-->
+		<item name="qc_Park_Ranger" />
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="mechanic" count="all">
@@ -1564,7 +1567,7 @@
 		<item name="painkillers" />
 		<item name="minibikesForDumbshits" />
 		<item name="mechanic" />
-		<!--<item name="qc_Mechanic" />-->
+		<item name="qc_Mechanic" />
 		<item name="qc_King" />
 	</lootgroup>
     <lootgroup name="bouncer" count="all">
@@ -1573,7 +1576,7 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="bouncer" />
-		<!--<item name="qc_Bouncer" />-->
+		<item name="qc_Bouncer" />
 		<item name="qc_King" />
 	</lootgroup>
     <lootgroup name="mason" count="all">
@@ -1582,7 +1585,7 @@
 		<item name="keystoneRock" />
 		<item name="painkillers" />
 		<item name="mason" />
-		<!--<item name="qc_Mason" />-->
+		<item name="qc_Mason" />
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="bikeNABox" count="all">
@@ -2926,67 +2929,67 @@
 		<item group="backpacks" prob="1" />
 	</lootcontainer>
 	<!-- Soldier Loot  -->
-	<lootcontainer id="212" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="212" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="soldier" count="1" />
 	</lootcontainer>
 	<!-- Doctor Loot  -->
-	<lootcontainer id="213" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="213" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="doctor" count="1" />
 	</lootcontainer>
     <!-- Bouncer Loot  -->
-	<lootcontainer id="214" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="214" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="bouncer" count="1" />
 	</lootcontainer>
 	<!-- Chemist Loot  -->
-	<lootcontainer id="215" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="215" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="chemist" count="1" />
 	</lootcontainer>
 	<!-- Carpenter Loot  -->
-	<lootcontainer id="216" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="216" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="carpenter" count="1" />
 	</lootcontainer>
 	<!-- Cop Loot  -->
-	<lootcontainer id="217" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="217" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="cop" count="1" />
 	</lootcontainer>
     <!-- Mason Loot  -->
-	<lootcontainer id="218" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="218" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="mason" count="1" />
 	</lootcontainer>
 	<!-- Chef Loot  -->
-	<lootcontainer id="219" count="1" size="5,5" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="219" count="1" size="5,5" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="chef" count="1" />
 	</lootcontainer>
 	<!-- Fitness Instructor Loot  -->
-	<lootcontainer id="220" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="220" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="fitness Instructor" count="1" />
 	</lootcontainer>
 	<!-- Fireman Loot  -->
-	<lootcontainer id="221" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="221" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="fireman" count="1" />
 	</lootcontainer>
-	<!-- Construction Worker Loot  -->
-	<lootcontainer id="222" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
-		<item group="construction Worker" count="1" />
+	<!-- Iron Worker Loot  -->
+	<lootcontainer id="222" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+		<item group="ironWorker" count="1" />
 	</lootcontainer>
 	<!-- Electrician Loot  -->
-	<lootcontainer id="223" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="223" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="electrician" count="1" />
 	</lootcontainer>
-	<!-- Metal Worker Loot  -->
-	<lootcontainer id="224" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
-		<item group="metal Worker" count="1" />
+	<!-- Steel Welder Loot  -->
+	<lootcontainer id="224" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+		<item group="steelWelder" count="1" />
 	</lootcontainer>
-	<!-- Burglar Loot  -->
-	<lootcontainer id="225" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
-		<item group="burglar" count="1" />
+	<!-- Thief Loot  -->
+	<lootcontainer id="225" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+		<item group="thief" count="1" />
 	</lootcontainer>
 	<!-- Park Ranger Loot  -->
-	<lootcontainer id="226" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="226" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="park Ranger" count="1" />
 	</lootcontainer>
 	<!-- Mechanic Loot  -->
-	<lootcontainer id="227" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="227" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="mechanic" count="1" />
 	</lootcontainer>
 	<!--1st Responder Loot-->

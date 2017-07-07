@@ -16552,23 +16552,23 @@ kind of free
 		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="firemanSupplies" count="1" prob="1" />
 	</block>
-	<block id="444" name="constructionWorkerProfession">
+	<block id="444" name="ironWorkerProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Construction" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="constructionWorkerSupplies" />
+			<property name="ToBlock" value="ironWorkerSupplies" />
 		</property>
 		<property name="CraftingSkillGroup" value="engineeringCraft" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="construction WorkerProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="constructionWorkerSupplies" />
+		<drop event="Fall" name="ironWorkerProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="ironWorkerSupplies" />
 	</block>
-	<block id="445" name="constructionWorkerSupplies">
+	<block id="445" name="ironWorkerSupplies">
 		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="222" />
 		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="constructionWorkerSupplies" count="1" prob="1" />
+		<drop event="Fall" name="ironWorkerSupplies" count="1" prob="1" />
 	</block>
 	<block id="446" name="electricianProfession">
 		<property name="Extends" value="soldierProfession" />
@@ -16588,41 +16588,41 @@ kind of free
 		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
 		<drop event="Fall" name="electricianSupplies" count="1" prob="1" />
 	</block>
-	<block id="448" name="metalWorkerProfession">
+	<block id="448" name="steelWelderProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Metal" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="metalWorkerSupplies" />
+			<property name="ToBlock" value="steelWelderSupplies" />
 		</property>
 		<property name="CraftingSkillGroup" value="engineeringCraft" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="metalWorkerProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="metalWorkerSupplies" />
+		<drop event="Fall" name="steelWelderProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="steelWelderSupplies" />
 	</block>
-	<block id="449" name="metalWorkerSupplies">
+	<block id="449" name="steelWelderSupplies">
 		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="224" />
 		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="metalWorkerSupplies" count="1" prob="1" />
+		<drop event="Fall" name="steelWelderSupplies" count="1" prob="1" />
 	</block>
-	<block id="450" name="burglarProfession">
+	<block id="450" name="thiefProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
         <property name="CustomIcon" value="ui_game_symbol_Burglar" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="burglarSupplies" />
+			<property name="ToBlock" value="thiefSupplies" />
 		</property>
 		<property name="CraftingSkillGroup" value="scavenging" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
-		<drop event="Fall" name="burglarProfession" count="1" prob="1" />
-		<property name="DowngradeBlock" value="burglarSupplies" />
+		<drop event="Fall" name="thiefProfession" count="1" prob="1" />
+		<property name="DowngradeBlock" value="thiefSupplies" />
 	</block>
-	<block id="451" name="burglarSupplies">
+	<block id="451" name="thiefSupplies">
 		<property name="Extends" value="soldierSupplies" />
 		<property name="LootList" value="225" />
 		<drop event="Fall" name="soldierSupplies" count="0" prob="1" />
-		<drop event="Fall" name="burglarSupplies" count="1" prob="1" />
+		<drop event="Fall" name="thiefSupplies" count="1" prob="1" />
 	</block>
 	<block id="452" name="parkRangerProfession">
 		<property name="Extends" value="soldierProfession" />
