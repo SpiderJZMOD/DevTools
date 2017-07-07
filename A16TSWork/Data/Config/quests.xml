@@ -502,14 +502,53 @@
 
 		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
 	</quest>
-
-<!--JZMOD PROFESSION QUEST CHAINS
-	Doctor
+    <quest id="challenge_Killer" name_key="challenge_Killer" subtitle_key="challenge_Killer_subtitle" description_key="challenge_Killer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Killer_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_Slayer" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_Slayer" name_key="challenge_Killer" subtitle_key="challenge_Killer_subtitle" description_key="challenge_Killer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Killer_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_King" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_King" name_key="challenge_Killer" subtitle_key="challenge_Killer_subtitle" description_key="challenge_Killer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Killer_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_Killer4" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_Killer4" name_key="challenge_Slayer" subtitle_key="challenge_Slayer_subtitle" description_key="challenge_Slayer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Slayer_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_Killer5" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_Killer5" name_key="challenge_Slayer" subtitle_key="challenge_Slayer_subtitle" description_key="challenge_Slayer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Slayer_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_Killer6" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_Killer6" name_key="challenge_Slayer" subtitle_key="challenge_Slayer_subtitle" description_key="challenge_Slayer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Slayer_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_Killer7" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_Killer7" name_key="challenge_King" subtitle_key="challenge_King_subtitle" description_key="challenge_King_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_King_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_Killer8" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_Killer8" name_key="challenge_King" subtitle_key="challenge_King_subtitle" description_key="challenge_King_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_King_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+   
+<!--JZMOD PROFESSION QUEST CHAINS-->
+	<!--Doctor-->
 	<quest id="StartDoctor" name_key="challenge_Profession" subtitle_key="Doctors Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Doctor" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Quest" id="challenge_Doctor" />
+		<!--<reward type="Quest" id="challenge_Doctor" />
 		<reward type="Quest" id="challenge_Doctor2" />
 		<reward type="Quest" id="challenge_Doctor3" />
-		<reward type="Quest" id="challenge_Doctor4" />
+		<reward type="Quest" id="challenge_Doctor4" />-->
 	</quest>
 	<quest id="challenge_Doctor" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_description" icon="ui_game_symbol_Doctor" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<objective type="Craft" id="painKillerShot" value="1" />
@@ -539,13 +578,13 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	Carpenter
+	<!--Carpenter-->
 	<quest id="StartCarpenter" name_key="challenge_Profession" subtitle_key="Carpenters Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Carpenter" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldHammer" value="600" />
-        <reward type="Quest" id="challenge_Carpenter" />
+		<reward type="Item" id="clawHammer" value="300" />
+        <!--<reward type="Quest" id="challenge_Carpenter" />
 		<reward type="Quest" id="challenge_Carpenter2" />
 		<reward type="Quest" id="challenge_Carpenter3" />
-		<reward type="Quest" id="challenge_Carpenter4" />
+		<reward type="Quest" id="challenge_Carpenter4" />-->
 	</quest>
 	<quest id="challenge_Carpenter" name_key="challenge_Profession" subtitle_key="challenge_Carpenter_subtitle" description_key="challenge_Carpenter_offer" icon="ui_game_symbol_Carpenter" repeatable="false" category_key="challenge" offer_key="challenge_Carpenter_offer" difficulty="easy">
 		<objective type="Craft" id="woodFrameBlock" value="50" />
@@ -575,12 +614,12 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	Cop
+	<!--Cop-->
 	<quest id="StartCop" name_key="challenge_Profession" subtitle_key="Cops Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Cop" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="OldRevolver" value="600" />
-        <reward type="Quest" id="challenge_Cop" />
+        <!--<reward type="Quest" id="challenge_Cop" />
 		<reward type="Quest" id="challenge_Cop2" />
-		<reward type="Quest" id="challenge_Cop3" />
+		<reward type="Quest" id="challenge_Cop3" />-->
 	</quest>
 	<quest id="challenge_Cop" name_key="challenge_Profession" subtitle_key="challenge_Cop_subtitle" description_key="challenge_Cop_offer" icon="ui_game_symbol_Cop" repeatable="false" category_key="challenge" offer_key="challenge_Cop_offer" difficulty="easy">
 		<objective type="Craft" id="gunOil" value="10" />
@@ -597,13 +636,13 @@
 		<reward type="Exp" value="1200" />
 		<reward type="SkillPoints" value="3" />
 	</quest>
-	Soldier
+	<!--Soldier-->
 	<quest id="StartSoldier" name_key="challenge_Profession" subtitle_key="Soldiers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Soldier" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="OldRifle" value="600" />
-        <reward type="Quest" id="challenge_Soldier" />
+        <!--<reward type="Quest" id="challenge_Soldier" />
 		<reward type="Quest" id="challenge_Soldier2" />
 		<reward type="Quest" id="challenge_Soldier3" />
-		<reward type="Quest" id="challenge_Soldier4" />
+		<reward type="Quest" id="challenge_Soldier4" />-->
 	</quest>
 	<quest id="challenge_Soldier" name_key="challenge_Profession" subtitle_key="challenge_Soldier_subtitle" description_key="challenge_Soldier_offer" icon="ui_game_symbol_Soldier" repeatable="false" category_key="challenge" offer_key="challenge_Soldier_offer" difficulty="easy">
 		<objective type="Craft" id="grubs" value="20" />
@@ -629,13 +668,13 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	Scientist
+	<!--Scientist-->
 	<quest id="StartScientist" name_key="challenge_Profession" subtitle_key="Chemists Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Chemist" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Quest" id="challenge_Scientist" />
+		<!--<reward type="Quest" id="challenge_Scientist" />
 		<reward type="Quest" id="challenge_Scientist2" />
 		<reward type="Quest" id="challenge_Scientist3" />
 		<reward type="Quest" id="challenge_Scientist4" />
-		<reward type="Quest" id="challenge_Scientist5" />
+		<reward type="Quest" id="challenge_Scientist5" />-->
 	</quest>
 	<quest id="challenge_Scientist" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_Chemist" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
 		<objective type="Craft" id="purificationTablets" value="10" />
@@ -664,13 +703,13 @@
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-Chef
+    <!--Chef-->
 	<quest id="StartChef" name_key="challenge_Profession" subtitle_key="Chefs Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="fryingPan" value="600" />
-        <reward type="Quest" id="challenge_Chef" />
+		<reward type="Item" id="oldKnife" value="600" />
+        <!--<reward type="Quest" id="challenge_Chef" />
 		<reward type="Quest" id="challenge_Chef2" />
 		<reward type="Quest" id="challenge_Chef3" />
-		<reward type="Quest" id="challenge_Chef4" />
+		<reward type="Quest" id="challenge_Chef4" />-->
 	</quest>
 	<quest id="challenge_Chef" name_key="challenge_Profession" subtitle_key="challenge_Chef_subtitle" description_key="challenge_Chef_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_Chef_offer" difficulty="easy">
 		<objective type="Craft" id="canMeat" value="1" />
@@ -706,12 +745,12 @@ Chef
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	Fitness Instructor
+	<!--Fitness Instructor-->
 	<quest id="StartFitness" name_key="challenge_Profession" subtitle_key="Fitness Instructors Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Fitness" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="TPXBat" value="300" />
-        <reward type="Quest" id="challenge_Fitness" />
+		<reward type="Item" id="bat" value="300" />
+        <!--<reward type="Quest" id="challenge_Fitness" />
 		<reward type="Quest" id="challenge_Fitness2" />
-		<reward type="Quest" id="challenge_Fitness3" />
+		<reward type="Quest" id="challenge_Fitness3" />-->
 	</quest>
 	<quest id="challenge_Fitness" name_key="challenge_Profession" subtitle_key="challenge_Fitness_subtitle" description_key="challenge_Fitness_offer" icon="ui_game_symbol_Fitness" repeatable="false" category_key="challenge" offer_key="challenge_Fitness_offer" difficulty="easy">
 		<objective type="Craft" id="goldenRodTea" value="15" />
@@ -729,12 +768,12 @@ Chef
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-	Fireman
+	<!--Fireman-->
 	<quest id="StartFireman" name_key="challenge_Profession" subtitle_key="Firemans Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Fireman" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="oldAxe" value="600" />
-        <reward type="Quest" id="challenge_Fireman" />
+        <!--<reward type="Quest" id="challenge_Fireman" />
 		<reward type="Quest" id="challenge_Fireman2" />
-		<reward type="Quest" id="challenge_Fireman3" />
+		<reward type="Quest" id="challenge_Fireman3" />-->
 	</quest>
 	<quest id="challenge_Fireman" name_key="challenge_Profession" subtitle_key="challenge_Fireman_subtitle" description_key="challenge_Fireman_offer" icon="ui_game_symbol_Fireman" repeatable="false" category_key="challenge" offer_key="challenge_Fireman_offer" difficulty="easy">
 		<objective type="Craft" id="aloeCream" value="20" />
@@ -751,12 +790,12 @@ Chef
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-	Construction Worker
-	<quest id="StartConstruction" name_key="challenge_Profession" subtitle_key="Construction Workers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Construction" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="oldWrench" value="600" />
-        <reward type="Quest" id="challenge_Construction" />
+	<!--Iron Worker-->
+	<quest id="startIronWorker" name_key="challenge_Profession" subtitle_key="Construction Workers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Construction" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
+		<reward type="Item" id="wrench" value="300" />
+        <!--<reward type="Quest" id="challenge_Construction" />
 		<reward type="Quest" id="challenge_Construction2" />
-		<reward type="Quest" id="challenge_Construction3" />
+		<reward type="Quest" id="challenge_Construction3" />-->
 	</quest>
 	<quest id="challenge_Construction" name_key="challenge_Profession" subtitle_key="challenge_Construction_subtitle" description_key="challenge_Construction_offer" icon="ui_game_symbol_Construction" repeatable="false" category_key="challenge" offer_key="challenge_Construction_offer" difficulty="easy">
 		<objective type="Craft" id="wrench" value="1" />
@@ -780,13 +819,13 @@ Chef
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-	Electrician
+	<!--Electrician-->
 	<quest id="StartElectrician" name_key="challenge_Profession" subtitle_key="Electriciana Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Electrician" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldWrench" value="600" />
-        <reward type="Quest" id="challenge_Electrician" />
+		<reward type="Item" id="wireTool" value="300" />
+        <!--<reward type="Quest" id="challenge_Electrician" />
 		<reward type="Quest" id="challenge_Electrician2" />
 		<reward type="Quest" id="challenge_Electrician3" />
-		<reward type="Quest" id="challenge_Electrician4" />
+		<reward type="Quest" id="challenge_Electrician4" />-->
 	</quest>
 	<quest id="challenge_Electrician" name_key="challenge_Profession" subtitle_key="challenge_Electrician_subtitle" description_key="challenge_Electrician_offer" icon="ui_game_symbol_Electrician" repeatable="false" category_key="challenge" offer_key="challenge_Electrician_offer" difficulty="easy">
 		<objective type="Craft" id="screwdriver" value="1" />
@@ -809,12 +848,12 @@ Chef
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	Metal Worker
-	<quest id="StartMetal" name_key="challenge_Profession" subtitle_key="Metal Workers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Metal" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldWrench" value="600" />
-        <reward type="Quest" id="challenge_Metal" />
+	<!--Welder-->
+	<quest id="StartSteelWelder" name_key="challenge_Profession" subtitle_key="Metal Workers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Metal" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
+		<reward type="Item" id="welderTool" value="300" />
+        <!--<reward type="Quest" id="challenge_Metal" />
 		<reward type="Quest" id="challenge_Metal2" />
-		<reward type="Quest" id="challenge_Metal3" />
+		<reward type="Quest" id="challenge_Metal3" />-->
 	</quest>
 	<quest id="challenge_Metal" name_key="challenge_Profession" subtitle_key="challenge_Metal_subtitle" description_key="challenge_Metal_offer" icon="ui_game_symbol_Metal" repeatable="false" category_key="challenge" offer_key="challenge_Metal_offer" difficulty="easy">
 		<objective type="Craft" id="workforge" value="1" />
@@ -833,12 +872,12 @@ Chef
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	Burglar
-	<quest id="StartBurglar" name_key="challenge_Profession" subtitle_key="Burglars Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Burglar" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="LockPickGun" value="300" />
-        <reward type="Quest" id="challenge_Burglar" />
+	<!--Burglar-->
+	<quest id="StartThief" name_key="challenge_Profession" subtitle_key="Burglars Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Burglar" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
+		<reward type="Item" id="lockPickGun" value="600" />
+        <!--<reward type="Quest" id="challenge_Burglar" />
 		<reward type="Quest" id="challenge_Burglar2" />
-		<reward type="Quest" id="challenge_Burglar3" />
+		<reward type="Quest" id="challenge_Burglar3" />-->
 	</quest>
 	<quest id="challenge_Burglar" name_key="challenge_Profession" subtitle_key="challenge_Burglar_subtitle" description_key="challenge_Burglar_offer" icon="ui_game_symbol_Burglar" repeatable="false" category_key="challenge" offer_key="challenge_Burglar_offer" difficulty="easy">
 		<objective type="Craft" id="ironShiv" value="1" />
@@ -856,14 +895,14 @@ Chef
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-	Park Ranger
+	<!--Park Ranger-->
 	<quest id="StartRanger" name_key="challenge_Profession" subtitle_key="Park Rangers Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Ranger" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="OldRifle" value="600" />
-        <reward type="Quest" id="challenge_Ranger" />
+        <!--<reward type="Quest" id="challenge_Ranger" />
 		<reward type="Quest" id="challenge_Ranger2" />
 		<reward type="Quest" id="challenge_Ranger3" />
 		<reward type="Quest" id="challenge_Ranger4" />
-		<reward type="Quest" id="challenge_Ranger5" />
+		<reward type="Quest" id="challenge_Ranger5" />-->
 	</quest>
 	<quest id="challenge_Ranger" name_key="challenge_Profession" subtitle_key="challenge_Ranger_subtitle" description_key="challenge_Ranger_offer" icon="ui_game_symbol_Ranger" repeatable="false" category_key="challenge" offer_key="challenge_Ranger_offer" difficulty="easy">
 		<objective type="Craft" id="PurificationTablets" value="1" />
@@ -891,13 +930,13 @@ Chef
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	Mechanic
+	<!--Mechanic-->
 	<quest id="StartMechanic" name_key="challenge_Profession" subtitle_key="Mechanics Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="OldWrench" value="600" />
-        <reward type="Quest" id="challenge_Mechanic" />
+        <!--<reward type="Quest" id="challenge_Mechanic" />
 		<reward type="Quest" id="challenge_Mechanic2" />
 		<reward type="Quest" id="challenge_Mechanic3" />
-		<reward type="Quest" id="challenge_Mechanic4" />
+		<reward type="Quest" id="challenge_Mechanic4" />-->
 	</quest>
 	<quest id="challenge_Mechanic" name_key="challenge_Profession" subtitle_key="challenge_Mechanic_subtitle" description_key="challenge_Mechanic_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_Mechanic_offer" difficulty="easy">
 		<objective type="Craft" id="wrench" value="1" />
@@ -919,6 +958,14 @@ Chef
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
--->
+    <!--Bouncer-->
+	<quest id="StartBouncer" name_key="challenge_Profession" subtitle_key="Bouncer Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
+		<reward type="Item" id="brassKnuckles" value="300" />
+    </quest>
+    <!--Mason-->
+	<quest id="StartMason" name_key="challenge_Profession" subtitle_key="Mason Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
+		<reward type="Item" id="brickHammer" value="300" />
+    </quest>
+	
 
 </quests>
