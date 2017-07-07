@@ -6901,8 +6901,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="10"/>
 		<property name="Gain_food" value="0"/>
 		<property name="Gain_water" value="0"/>
-        <property name="Debuff" value="spiderRash" />
-		<property name="Sound_start" value="player_ointment"/>
+      	<property name="Sound_start" value="player_ointment"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
@@ -6911,8 +6910,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="10"/>
 		<property name="Gain_food" value="0"/>
 		<property name="Gain_water" value="0"/>
-        <property name="Debuff" value="spiderRash" />
-		<property name="Sound_start" value="player_ointment"/>
+       	<property name="Sound_start" value="player_ointment"/>
 	</property>
 	<property name="Group" value="Science"/>
 	<property name="ActionSkillGroup" value="medicineCraft"/>
@@ -7158,7 +7156,6 @@ Mesh files no longer used:
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_wellness" value="0"/>
 		<property name="Sound_start" value="player_painkillers"/>
-		<property name="Buff" value="cured"/>
 		<property name="Debuff" value="bioInfection,bioInfection2,bioInfection3,dysentery,dysentery2" />
 	</property>
 	<property class="Action1">
@@ -7170,7 +7167,6 @@ Mesh files no longer used:
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_wellness" value="0"/>
 		<property name="Sound_start" value="player_painkillers"/>
-		<property name="Buff" value="cured"/>
 		<property name="Debuff" value="bioInfection,bioInfection2,bioInfection3,dysentery,dysentery2" />
 	</property>
 	<property name="ActionSkillGroup" value="medicineCraft"/>
@@ -7292,8 +7288,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="5" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_stamina" value="40" />
-			<property name="Gain_wellness" value="0.2" />
-			<property name="Buff" value="stuffed2" />
+			<property name="Buff" value="wellness_2_Trigger" />
 			<property name="Create_item" value="emptyJar" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
 	</property>
@@ -7349,9 +7344,8 @@ Mesh files no longer used:
 		<property name="Gain_water" value="15"/>
 		<property name="Gain_food" value="0"/>
 		<property name="Gain_stamina" value="30"/>
-		<property name="Gain_wellness" value="0.1"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="yuccaJuiceCooling,stuffed1" />
+		<property name="Buff" value="yuccaJuiceCooling,wellness_1_Trigger" />
 		<property name="Create_item" value="emptyJar"/>
 	</property>
 	<property name="Group" value="food/Cooking"/>
@@ -7640,10 +7634,9 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="5"/>
-		<property name="Buff" value="stuffed1"/>
+		<property name="Buff" value="wellness_1_Trigger"/>
 		<property name="Gain_water" value="-4"/>
         <property name="Gain_stamina" value="-10"/>
-		<property name="Gain_wellness" value="0.1"/>
 		<property name="Sound_start" value="player_eating"/>
         <property name="Create_item" value="emptyJar"/> 
 	</property>
@@ -7766,10 +7759,9 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="9"/>
-		<property name="Buff" value="eatFood_1_Trigger,stuffed3"/>
+		<property name="Buff" value="eatFood_1_Trigger,wellness_3_Trigger"/>
 		<property name="Gain_water" value="-5"/>
         <property name="Gain_stamina" value="-25"/>
-		<property name="Gain_wellness" value="0.3"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<property name="Smell" value="largeSmell"/>
@@ -7789,10 +7781,9 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="11"/>
-		<property name="Buff" value="eatFood_2_Trigger,stuffed3"/>
+		<property name="Buff" value="eatFood_2_Trigger,wellness_3_Trigger"/>
 		<property name="Gain_water" value="-5"/>
         <property name="Gain_stamina" value="-25"/>
-		<property name="Gain_wellness" value="0.3"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<property name="Smell" value="mediumSmell"/>
@@ -7812,10 +7803,9 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="13"/>
-		<property name="Buff" value="eatFood_3_Trigger,stuffed4"/>
+		<property name="Buff" value="eatFood_3_Trigger,wellness_4_Trigger"/>
 		<property name="Gain_water" value="6"/>
         <property name="Gain_stamina" value="-30"/>
-		<property name="Gain_wellness" value="0.4"/>
 		<property name="Sound_start" value="player_eating"/>
 		<property name="Create_item" value="emptyJar"/> 
 	</property>
@@ -7837,15 +7827,13 @@ Mesh files no longer used:
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="18"/>
 		<property name="Gain_water" value="10"/>
-		<property name="Gain_wellness" value="0.4"/>
 		<property name="Sound_start" value="player_drinking"/>
         <property name="Create_item" value="emptyJar"/> 
-		<property name="Buff" value="nutrition_1_Trigger,stuffed4,stewWarming,eatFood_6_Trigger"/>
+		<property name="Buff" value="nutrition_1_Trigger,wellness_4_Trigger,stewWarming,eatFood_6_Trigger"/>
 	</property>
 	<property name="Smell" value="exLargeSmell"/>
 	<property name="Group" value="food/Cooking"/>
 </item>
-
 
 <item id="750" name="potato">
 	<property name="Meshfile" value="Items/Food/vegetable_potatoPrefab"/>
@@ -7994,8 +7982,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="11"/>
         <property name="Gain_water" value="2"/>
         <property name="Gain_stamina" value="-25"/>
-		<property name="Buff" value="eatFood_2_Trigger,stuffed4"/>
-		<property name="Gain_wellness" value="0.4"/>
+		<property name="Buff" value="eatFood_2_Trigger,wellness_4_Trigger"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<property name="Smell" value="largeSmell"/>
@@ -8040,9 +8027,8 @@ Mesh files no longer used:
 		<property name="Gain_food" value="16"/>
 		<property name="Gain_water" value="13"/>
         <property name="Gain_stamina" value="-35"/>
-		<property name="Gain_wellness" value="0.1"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="stewWarming,eatFood_12_Trigger,stuffed1"/>
+		<property name="Buff" value="stewWarming,eatFood_12_Trigger,wellness_1_Trigger"/>
 		<property name="Create_item" value="emptyJar"/> 
 	</property>
 	<property name="Group" value="food/Cooking"/>
@@ -11394,7 +11380,7 @@ Mesh files no longer used:
 		<property name="Delay" value="1.33" />
 		<property name="Sound_start" value="lucille_swing" />
 		<property name="Stamina_usage" value="8" />
-		<property name="Buff" value="lucilleimpact,bleeding,criticalBlunt" />
+		<property name="Buff" value="bleeding,criticalBlunt" />
 		<property name="Buff_chance" value="1,.3,.45" />
 		<property name="DamageBonus.head" value="60" />
 		<property name="DamageBonus.hardStone" value="10" />
@@ -11407,7 +11393,7 @@ Mesh files no longer used:
 		<property name="Delay" value="3.98" />
 		<property name="Sound_start" value="lucille_swing" />
 		<property name="Stamina_usage" value="12" />
-		<property name="Buff" value="lucilleimpact,bleeding,criticalBlunt" />
+		<property name="Buff" value="bleeding,criticalBlunt" />
 		<property name="Buff_chance" value="1,.5,.55" />
 		<property name="DamageBonus.head" value="90" />
 		<property name="DamageBonus.hardStone" value="15" />
@@ -11590,7 +11576,7 @@ Mesh files no longer used:
 		<property name="Delay" value="1.5" />
 		<property name="Range" value="2.9" />
 		<property name="Stamina_usage" value="9" />
-		<property name="Buff" value="katanaimpact,bleeding,criticalBlunt" />
+		<property name="Buff" value="bleeding,criticalBlunt" />
 		<property name="Buff_chance" value="1,.8,.5" />
 		<property name="DamageBonus.wood" value="5" />
 		<property name="DamageBonus.head" value="77" />
@@ -11600,7 +11586,7 @@ Mesh files no longer used:
 		<property name="Delay" value="4.5" />
 		<property name="Range" value="2.9" />
 		<property name="Stamina_usage" value="13" />
-		<property name="Buff" value="katanaimpact,bleeding,criticalBlunt" />
+		<property name="Buff" value="bleeding,criticalBlunt" />
 		<property name="Buff_chance" value="1,.9,.6" />
 		<property name="DamageBonus.wood" value="7.5" />
 		<property name="DamageBonus.head" value="115.5" />
@@ -12793,7 +12779,7 @@ Mesh files no longer used:
 	<property name="Weight" value="5" />
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
-		<property name="Debuff" value="bleeding,bearTrap,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,infectedWound,dirtyBandage4,swelling" />
+		<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,infectedWound,dirtyBandage4" />
 		<property name="Create_item" value="emptyJar" />
 	</property>
 	<property name="DescriptionKey" value="sanitizingBandageDesc" />
@@ -12967,8 +12953,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="antibiotics" /> <property name="CustomIconTint" value="25e008" />
 	<property class="Action1">
 		<property name="Sound_start" value="UseActions/player_painkillers" />
-		<property name="Buff" value="cured,antibiotic" />
-		<property name="Debuff" value="infection,infection1,infection2,infection3,infection4" />
+		<property name="Buff" value="antiViralMedDose" />
 	</property>
     <property name="Group" value="Science" />
 	<property name="DescriptionKey" value="AntivirialDesc" />
@@ -12992,8 +12977,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="0" />
         <property name="Create_item" value="emptyJar" />
 		<property name="Sound_start" value="UseActions/player_bandage" />
-		<property name="Debuff" value="stinger" />
-    </property>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat" />
 		<property name="Delay" value="1.0" />
@@ -13003,8 +12987,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="0" />
         <property name="Create_item" value="emptyJar" />
 		<property name="Sound_start" value="UseActions/player_bandage" />
-		<property name="Debuff" value="stinger" />
-    </property>
+	</property>
 	<property name="Group" value="Science" />
 	<property name="DescriptionKey" value="poulticeDesc" />
 	<property name="ActionSkillGroup" value="medicineCraft" />
@@ -13103,8 +13086,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="6" />
 		<property name="Gain_water" value="3" />
 		<property name="Gain_stamina" value="-15" />
-		<property name="Gain_wellness" value="0.1" />
-		<property name="Buff" value="stuffed2,eatFood_1_Trigger" />
+		<property name="Buff" value="wellness_1_Trigger,eatFood_1_Trigger" />
 	</property>
 	<property name="CustomIcon" value="Fried Egg Omelet" />
 	<property name="DescriptionKey" value="eggOmeletDesc" />
@@ -13135,8 +13117,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="23" />
 		<property name="Gain_water" value="12" />
 		<property name="Gain_stamina" value="-50" />
-		<property name="Gain_wellness" value="0.6" />
-		<property name="Buff" value="nutrition_1_Trigger,stuffed6,eatFood_12_Trigger" />
+		<property name="Buff" value="nutrition_1_Trigger,wellness_6_Trigger,eatFood_12_Trigger" />
 		<property name="Create_item" value="emptyJar" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
 	</property>
@@ -13187,8 +13168,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="10" />
 		<property name="Gain_water" value="-4" />
 		<property name="Gain_stamina" value="-20" />
-		<property name="Gain_wellness" value="0.3" />
-		<property name="Buff" value="nutrition_1_Trigger,stuffed3,eatFood_5_Trigger" />
+		<property name="Buff" value="nutrition_1_Trigger,wellness_3_Trigger,eatFood_5_Trigger" />
 		<property name="Create_item" value="emptyJar" />
 	</property>
 </item>
@@ -13199,8 +13179,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="10" />
 		<property name="Gain_water" value="-4" />
 		<property name="Gain_stamina" value="-20" />
-		<property name="Gain_wellness" value="0.3" />
-		<property name="Buff" value="nutrition_1_Trigger,stuffed3,eatFood_5_Trigger" />
+		<property name="Buff" value="nutrition_1_Trigger,wellness_3_Trigger,eatFood_5_Trigger" />
 		<property name="Create_item" value="emptyJar" />
 	</property>
 </item>
@@ -13213,9 +13192,8 @@ Mesh files no longer used:
 		<property name="Gain_water" value="40" />
 		<property name="Gain_stamina" value="100" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
-		<property name="Buff" value="staminaBoost,stuffed10" />
+		<property name="Buff" value="staminaBoost,wellness_10_Trigger" />
 		<property name="Create_item" value="emptyJar" />
-		<property name="Gain_wellness" value="1" />
 	</property>
 	<property name="CustomIcon" value="ui_game_symbol_WellnessJuice" />
 	<property name="DescriptionKey" value="wellnessJuiceDesc" />
@@ -13246,8 +13224,7 @@ Mesh files no longer used:
 		<property name="Gain_stamina" value="40" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
 		<property name="Create_item" value="emptyJar" />
-		<property name="Gain_wellness" value=".2" />
-		<property name="Buff" value="stuffed1" />
+		<property name="Buff" value="wellness_2_Trigger" />
 	</property>
 	<property name="DescriptionKey" value="fruitJuiceDesc" />
 </item>
@@ -13259,7 +13236,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="-7" />
 		<property name="Gain_stamina" value="-35" />
 		<property name="Gain_wellness" value="0.15" />
-		<property name="Buff" value="stuffed1,eatFood_2_Trigger" />
+		<property name="Buff" value="wellness_1.5_Trigger,eatFood_2_Trigger" />
 	</property>
 </item>
 <item id="1730" name="bread">
@@ -13269,8 +13246,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="-4" />
         <property name="Gain_stamina" value="-10" />
-		<property name="Gain_wellness" value="0.1" />
-		<property name="Buff" value="stuffed1" />
+		<property name="Buff" value="wellness_1_Trigger" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 	</property>
 </item>
@@ -13319,7 +13295,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="1" />
 		<property name="Gain_stamina" value="-60" />
 		<property name="Gain_wellness" value="1" />
-		<property name="Buff" value="nutrition_1_Trigger,stuffed10,eatFood_20_Trigger" />
+		<property name="Buff" value="nutrition_1_Trigger,wellness_10_Trigger,eatFood_20_Trigger" />
 	</property>
 	<property name="DescriptionKey" value="brainShnitzelDesc" />
 	<property name="Smell" value="largeSmell" />
@@ -13355,8 +13331,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="28" />
 		<property name="Gain_water" value="-5" />
 		<property name="Gain_stamina" value="-10" />
-		<property name="Gain_wellness" value="0.4" />
-		<property name="Buff" value="stuffed4,eatFood_18_Trigger" />
+		<property name="Buff" value="wellness_4_Trigger,eatFood_18_Trigger" />
 	</property>
 	<property name="Smell" value="largeSmell" />
 	<property name="DescriptionKey" value="fishNChipsDesc" />
@@ -13553,8 +13528,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="16" />
 		<property name="Gain_water" value="-7" />
 		<property name="Gain_stamina" value="-35" />
-		<property name="Gain_wellness" value="0.4" />
-		<property name="Buff" value="nutrition_1_Trigger,stuffed4,eatFood_3_Trigger" />
+		<property name="Buff" value="nutrition_1_Trigger,wellness_4_Trigger,eatFood_3_Trigger" />
 	</property>
 </item>
 <item id="1754" name="grilledSandwich">
@@ -13566,8 +13540,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="18" />
 		<property name="Gain_water" value="-7" />
 		<property name="Gain_stamina" value="-40" />
-		<property name="Gain_wellness" value="0.4" />
-		<property name="Buff" value="nutrition_1_Trigger,stuffed4,eatFood_4_Trigger" />
+		<property name="Buff" value="nutrition_1_Trigger,wellness_4_Trigger,eatFood_4_Trigger" />
 	</property>
 </item>
 <item id="1755" name="boiledSandwich">
@@ -13580,8 +13553,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="4" />
 		<property name="Gain_stamina" value="-40" />
 		<property name="Create_item" value="emptyJar" />
-		<property name="Gain_wellness" value="0.5" />
-		<property name="Buff" value="stuffed5,eatFood_5_Trigger" />
+		<property name="Buff" value="wellness_5_Trigger,eatFood_5_Trigger" />
 	</property>
 </item>
 <item id="1756" name="simpleMealSmall">
@@ -13592,8 +13564,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="20" />
 		<property name="Gain_water" value="1" />
 		<property name="Gain_stamina" value="-40" />
-		<property name="Gain_wellness" value="0.4" />
-		<property name="Buff" value="nutrition_1_Trigger,stuffed2,eatFood_4_Trigger" />
+		<property name="Buff" value="nutrition_1_Trigger,wellness_4_Trigger,eatFood_4_Trigger" />
 	</property>
 </item>
 <item id="1757" name="simpleMealMedium">
@@ -13604,8 +13575,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="40" />
 		<property name="Gain_water" value="2" />
 		<property name="Gain_stamina" value="-80" />
-		<property name="Gain_wellness" value="0.8" />
-		<property name="Buff" value="nutrition_2_Trigger,stuffed4,eatFood_8_Trigger" />
+		<property name="Buff" value="nutrition_2_Trigger,wellness_8_Trigger,eatFood_8_Trigger" />
 	</property>
 </item>
 <item id="1758" name="simpleMealLarge">
@@ -13616,8 +13586,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="60" />
 		<property name="Gain_water" value="3" />
 		<property name="Gain_stamina" value="-99" />
-		<property name="Gain_wellness" value="1.2" />
-		<property name="Buff" value="nutrition_3_Trigger,stuffed6,eatFood_12_Trigger" />
+		<property name="Buff" value="nutrition_3_Trigger,wellness_12_Trigger,eatFood_12_Trigger" />
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
@@ -13629,8 +13598,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="30" />
 		<property name="Gain_water" value="2" />
 		<property name="Gain_stamina" value="-60" />
-		<property name="Gain_wellness" value="0.5" />
-		<property name="Buff" value="nutrition_2_Trigger,stuffed2,eatFood_5_Trigger" />
+		<property name="Buff" value="nutrition_2_Trigger,wellness_5_Trigger,eatFood_5_Trigger" />
 	</property>
 </item>
 <item id="1760" name="goodMealMedium">
@@ -13641,8 +13609,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="60" />
 		<property name="Gain_water" value="4" />
 		<property name="Gain_stamina" value="-99" />
-		<property name="Gain_wellness" value="1" />
-		<property name="Buff" value="nutrition_3_Trigger,stuffed5,eatFood_10_Trigger" />
+        <property name="Buff" value="nutrition_3_Trigger,wellness_10_Trigger,eatFood_10_Trigger" />
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
@@ -13654,8 +13621,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="90" />
 		<property name="Gain_water" value="6" />
 		<property name="Gain_stamina" value="-99" />
-		<property name="Gain_wellness" value="1.5" />
-		<property name="Buff" value="nutrition_4_Trigger,stuffed7,eatFood_15_Trigger" />
+		<property name="Buff" value="nutrition_4_Trigger,wellness_15_Trigger,eatFood_15_Trigger" />
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
@@ -13667,8 +13633,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="40" />
 		<property name="Gain_water" value="3" />
 		<property name="Gain_stamina" value="-80" />
-		<property name="Gain_wellness" value="0.6" />
-		<property name="Buff" value="nutrition_3_Trigger,stuffed3,eatFood_6_Trigger" />
+		<property name="Buff" value="nutrition_3_Trigger,wellness_6_Trigger,eatFood_6_Trigger" />
 	</property>
 </item>
 <item id="1763" name="healthyMealMedium">
@@ -13679,8 +13644,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="80" />
 		<property name="Gain_water" value="6" />
 		<property name="Gain_stamina" value="-99" />
-		<property name="Gain_wellness" value="1.2" />
-		<property name="Buff" value="nutrition_4_Trigger,stuffed6,eatFood_12_Trigger" />
+		<property name="Buff" value="nutrition_4_Trigger,wellness_12_Trigger,eatFood_12_Trigger" />
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
@@ -13692,8 +13656,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="100" />
 		<property name="Gain_water" value="9" />
 		<property name="Gain_stamina" value="-99" />
-		<property name="Gain_wellness" value="2" />
-		<property name="Buff" value="nutrition_5_Trigger,stuffed10,eatFood_18_Trigger" />
+		<property name="Buff" value="nutrition_5_Trigger,wellness_20_Trigger,eatFood_18_Trigger" />
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
@@ -13705,8 +13668,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="2" />
 		<property name="Gain_stamina" value="-30" />
 		<property name="Create_item" value="emptyJar" />
-		<property name="Gain_wellness" value="0.6" />
-		<property name="Buff" value="stuffed6,eatFood_2_Trigger" />
+		<property name="Buff" value="wellness_6_Trigger,eatFood_2_Trigger" />
 	</property>
 	<property name="Smell" value="mediumSmell" />
 	<property name="CustomIcon" value="HoneyGlazedMeat" />
@@ -13718,8 +13680,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="20" />
 		<property name="Gain_water" value="7" />
 		<property name="Gain_stamina" value="-40" />
-		<property name="Gain_wellness" value="0.6" />
-		<property name="Buff" value="nutrition_1_Trigger,stuffed6,eatFood_6_Trigger" />
+		<property name="Buff" value="nutrition_1_Trigger,wellness_6_Trigger,eatFood_6_Trigger" />
 	</property>
 	<property name="Smell" value="mediumSmell" />
 	<property name="CustomIcon" value="FruitGlazedMeats" />
@@ -13731,8 +13692,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="27" />
 		<property name="Gain_water" value="14" />
 		<property name="Gain_stamina" value="-55" />
-		<property name="Gain_wellness" value="0.6" />
-		<property name="Buff" value="nutrition_1_Trigger,stuffed6,eatFood_12_Trigger" />
+		<property name="Buff" value="nutrition_1_Trigger,wellness_6_Trigger,eatFood_12_Trigger" />
 	</property>
 	<property name="Smell" value="mediumSmell" />
 	<property name="CustomIcon" value="FruitGlazedMeats" />
@@ -13744,8 +13704,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="10" />
 		<property name="Gain_water" value="3" />
 		<property name="Gain_stamina" value="-20" />
-		<property name="Gain_wellness" value="0.4" />
-		<property name="Buff" value="nutrition_1_Trigger,stuffed4,eatFood_2_Trigger" />
+		<property name="Buff" value="nutrition_1_Trigger,wellness_4_Trigger,eatFood_2_Trigger" />
 	</property>
 	<property name="Smell" value="mediumSmell" />
 	<property name="CustomIcon" value="Kabob" />
@@ -13757,8 +13716,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="16" />
 		<property name="Gain_water" value="7" />
 		<property name="Gain_stamina" value="-35" />
-		<property name="Gain_wellness" value="0.4" />
-		<property name="Buff" value="nutrition_1_Trigger,stuffed4,eatFood_6_Trigger" />
+		<property name="Buff" value="nutrition_1_Trigger,wellness_4_Trigger,eatFood_6_Trigger" />
 	</property>
 	<property name="Smell" value="mediumSmell" />
 	<property name="CustomIcon" value="Kabob" />
@@ -13770,8 +13728,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="23" />
 		<property name="Gain_water" value="13" />
 		<property name="Gain_stamina" value="-50" />
-		<property name="Gain_wellness" value="0.4" />
-		<property name="Buff" value="nutrition_1_Trigger,stuffed4,eatFood_12_Trigger" />
+		<property name="Buff" value="nutrition_1_Trigger,wellness_4_Trigger,eatFood_12_Trigger" />
 	</property>
 	<property name="Smell" value="mediumSmell" />
 	<property name="CustomIcon" value="Kabob" />
@@ -13783,8 +13740,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="13" />
 		<property name="Gain_water" value="-5" />
 		<property name="Gain_stamina" value="-6" />
-		<property name="Gain_wellness" value="0.8" />
-		<property name="Buff" value="stuffed8,eatFood_7_Trigger" />
+		<property name="Buff" value="wellness_8_Trigger,eatFood_7_Trigger" />
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
