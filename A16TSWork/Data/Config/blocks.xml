@@ -1454,7 +1454,6 @@ group desc for stuff like metal siding
 	<property name="MaxDamage" value="1000"/>
 	<property name="Texture" value="169"/>
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="46"/>
-
 	<property name="MergeInto" value="flagstone" param1="46,46,46,46,46,46" />
 	--><!-- "169,169,169,169,169,169" -->
 	<property name="IsDeveloper" value="true"/>
@@ -15881,7 +15880,7 @@ kind of free
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Tools/Traps" />
 	</block>
-	<block id="80" name="keystoneRock">
+	<block id="80" name="keystoneStone">
 		<property name="Extends" value="keystoneBlock" />
 		<property name="Material" value="stone" />
         <property class="RepairItems">
@@ -16378,9 +16377,10 @@ kind of free
 	<block id="103" name="soldierSupplies">
 		<property name="Class" value="Loot" />
 		<property name="Material" value="MdroppedBackpack" />
-		<property name="Shape" value="Ext3dModel" />
-		<property name="Mesh" value="models" />
-		<property name="Model" value="LootContainers/suitcase" param1="main_mesh" />
+		<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/suitcase" param1="main_mesh"/>
+        <property name="IsTerrainDecoration" value="true"/>
 		<property name="LootList" value="212" />
 		<property name="CanPickup" value="false" />
 		<drop event="Destroy" count="0" />
@@ -16389,11 +16389,11 @@ kind of free
 	</block>
 	<block id="104" name="soldierProfession">
 		<property name="Material" value="glass" />
-		<property name="Shape" value="Ext3dModel" />
-		<property name="Mesh" value="models" />
-		<property name="Model" value="LootContainers/suitcase" param1="main_mesh" />
-		<property name="Place" value="TowardsPlacer" />
-		<property name="CanPickup" value="true" />
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="LootContainers/suitcase" param1="main_mesh"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="CanPickup" value="true" />
         <property name="CustomIcon" value="ui_game_symbol_Soldier" />
 		<property name="DescriptionKey" value="professionChoiceDesc" />
 		<property class="UpgradeBlock">

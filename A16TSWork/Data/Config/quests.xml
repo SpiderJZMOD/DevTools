@@ -283,7 +283,7 @@
 	</quest>
     <!-- Basic Survival 31 - Steel Building /> -->
 	<quest id="quest_BasicSurvival31" group_name_key="quest_BasicSurvival" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="Quest">
-		<objective type="Craft" id="welder" value="1" />
+		<objective type="Craft" id="weldertool" value="1" />
 		<reward type="ShowTip" value="steelBuildingTip" stage="aftercomplete" />
 		<reward type="Exp" value="400" />
 	</quest>

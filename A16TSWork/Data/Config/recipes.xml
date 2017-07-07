@@ -2324,7 +2324,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="professionPage" count="20" />
 	</recipe>
 	<recipe name="claiming Your Shit" count="1" craft_area="researchDesk" craft_time="10" craft_exp_gain="100">
-		<ingredient name="keystoneRock" count="1" />
+		<ingredient name="keystoneStone" count="1" />
 		<ingredient name="blankSkillBook" count="1" />
 	</recipe>
 	<recipe name="clubSteelSpiked" count="1" craft_area="metalWorkBench" craft_time="30" craft_exp_gain="30">
