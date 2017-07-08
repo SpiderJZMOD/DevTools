@@ -7187,20 +7187,20 @@ Mesh files no longer used:
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_painkillers"/>
-		<property name="Gain_food" value="-10"/>
-		<property name="Gain_water" value="-10"/>
-		<property name="Gain_wellness" value="10"/>
-		<property name="Buff" value="redPillBuff"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0"/>
+		<property name="Buff" value="nutrition_5_Trigger"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_painkillers"/>
-		<property name="Gain_food" value="-10"/>
-		<property name="Gain_water" value="-10"/>
-		<property name="Gain_wellness" value="10"/>
-		<property name="Buff" value="redPillBuff"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0"/>
+		<property name="Buff" value="nutrition_5_Trigger"/>
 	</property>
 	<property name="ActionSkillGroup" value="medicineCraft"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -12172,11 +12172,11 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1596" name="park Ranger">
+<item id="1596" name="parkRanger">
 	<property name="Extends" value="schematicMaster" />
        <property name="CustomIcon" value="ui_game_symbol_professionSkill" />
 	<property class="Action1">
-		<property name="Skills_to_gain" value="park Ranger" />
+		<property name="Skills_to_gain" value="parkRanger" />
 	</property>
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
@@ -12526,7 +12526,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startDoctor" />
+		<property name="QuestGiven" value="StartDoctor" />
 	</property>
 </item>
 <item id="1667" name="qc_Carpenter">
@@ -12534,7 +12534,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startCarpenter" />
+		<property name="QuestGiven" value="StartCarpenter" />
 	</property>
 </item>
 <item id="1668" name="qc_Cop">
@@ -12542,7 +12542,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startCop" />
+		<property name="QuestGiven" value="StartCop" />
 	</property>
 </item>
 <item id="1669" name="qc_Soldier">
@@ -12550,7 +12550,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startSoldier" />
+		<property name="QuestGiven" value="StartSoldier" />
 	</property>
 </item>
 <item id="1670" name="qc_Bouncer">
@@ -12558,7 +12558,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startBouncer" />
+		<property name="QuestGiven" value="StartBouncer" />
 	</property>
 </item>
 <item id="1671" name="qc_Chef">
@@ -12566,7 +12566,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startChef" />
+		<property name="QuestGiven" value="StartChef" />
 	</property>
 </item>
 <item id="1672" name="qc_FitnessInstructor">
@@ -12574,7 +12574,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startFitness" />
+		<property name="QuestGiven" value="StartFitness" />
 	</property>
 </item>
 <item id="1673" name="qc_IronWorker">
@@ -12582,7 +12582,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startIronWorker" />
+		<property name="QuestGiven" value="StartIronWorker" />
 	</property>
 </item>
 <item id="1674" name="qc_Electrician">
@@ -12590,7 +12590,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startElectrician" />
+		<property name="QuestGiven" value="StartElectrician" />
 	</property>
 </item>
 <item id="1675" name="qc_SteelWelder">
@@ -12609,12 +12609,12 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="StartThief" />
 	</property>
 </item>
-<item id="1677" name="qc_Park_Ranger">
+<item id="1677" name="qc_ParkRanger">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startRanger" />
+		<property name="QuestGiven" value="StartRanger" />
 	</property>
 </item>
 <item id="1678" name="qc_Mechanic">
@@ -12622,7 +12622,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startMechanic" />
+		<property name="QuestGiven" value="StartMechanic" />
 	</property>
 </item>
 <item id="1679" name="qc_Fireman">
@@ -12630,7 +12630,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startFireman" />
+		<property name="QuestGiven" value="StartFireman" />
 	</property>
 </item>	
 <item id="1680" name="qc_Chemist">
@@ -12638,39 +12638,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startScientist" />
-	</property>
-</item>
-<item id="1681" name="qc_Doctor">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startDoctor" />
-	</property>
-</item>
-<item id="1682" name="qc_Carpenter">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startCarpenter" />
-	</property>
-</item>
-<item id="1683" name="qc_Cop">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startCop" />
-	</property>
-</item>
-<item id="1684" name="qc_Soldier">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startSoldier" />
+		<property name="QuestGiven" value="StartScientist" />
 	</property>
 </item>
 <item id="1685" name="qc_Mason">
@@ -12678,79 +12646,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startMason" />
-	</property>
-</item>
-<item id="1686" name="qc_Chef">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startChef" />
-	</property>
-</item>
-<item id="1687" name="qc_Fitness_Instructor">
-    <property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startFitness" />
-	</property>
-</item>
-<item id="1688" name="qc_Iron_Worker">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startIronWorker" />
-	</property>
-</item>
-<item id="1689" name="qc_Electrician">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startElectrician" />
-	</property>
-</item>
-<item id="1690" name="qc_Metal_Worker">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startMetal" />
-	</property>
-</item>
-<item id="1691" name="qc_Burglar">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startBurglar" />
-	</property>
-</item>
-<item id="1692" name="qc_Park_Ranger">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startRanger" />
-	</property>
-</item>
-<item id="1693" name="qc_Mechanic">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startMechanic" />
-	</property>
-</item>
-<item id="1694" name="qc_Fireman">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startFireman" />
+		<property name="QuestGiven" value="StartMason" />
 	</property>
 </item>
  <!--JZMOD QUEST 
