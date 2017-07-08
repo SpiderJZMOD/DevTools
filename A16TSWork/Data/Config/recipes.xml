@@ -1560,18 +1560,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 			<ingredient name="partsNailgun_parts" count="1" />
 			<ingredient name="partsNailgun_battery" count="1" />
 		</recipe>
-		<recipe name="officeChair01" count="1">
-			<ingredient name="leather" count="5"/>
-			<ingredient name="cottonPlant" count="10"/>
-			<ingredient name="mechanicalParts" count="2"/>
-			<ingredient name="forgedIron" count="3"/>
-		</recipe>	
 		<recipe name="oilBarrel" count="1" craft_time="10" craft_exp_gain="5">
-				<ingredient name="gasCan" count="600" />
-			</recipe>
-		<recipe name="oldChair" count="1">
-			<ingredient name="nail" count="10"/>
-			<ingredient name="plank" count="6"/>
+			<ingredient name="gasCan" count="600" />
 		</recipe>
 		<recipe name="paintTool" count="1">
 			<ingredient name="plank" count="2"/>

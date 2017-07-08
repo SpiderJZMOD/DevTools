@@ -1495,7 +1495,7 @@
 		<item name="qc_Chef" />
 		<item name="qc_King" />
 	</lootgroup>
-	<lootgroup name="fitness Instructor" count="all">
+	<lootgroup name="fitnessInstructor" count="all">
 		<item name="canBeef" />
 		<item name="bottledWater" />
 		<item name="keystoneRock" />
@@ -1550,14 +1550,14 @@
 		<item name="qc_Thief" />
 		<item name="qc_King" />
 	</lootgroup>
-	<lootgroup name="park Ranger" count="all">
+	<lootgroup name="parkRanger" count="all">
 		<item name="canBeef" />
 		<item name="bottledWater" />
 		<item name="keystoneRock" />
         <item name="painkillers" />
 		<item name="308mmBullet" count="19" />
-		<item name="park Ranger" />
-		<item name="qc_Park_Ranger" />
+		<item name="parkRanger" />
+		<item name="qc_ParkRanger" />
 		<item name="qc_King" />
 	</lootgroup>
 	<lootgroup name="mechanic" count="all">
@@ -2011,7 +2011,7 @@
 		<item name="emptyJar" count="1,2" prob="23.1" />
 	</lootcontainer>
 	<!-- lootcontainer 5 ovens and stove -->
-	<lootcontainer id="5" count="0,2" size="4,3" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="5">
+    <lootcontainer id="5" count="0,2" size="4,3" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="5">
 		<item name="cookingPot" count="1,2" prob="16.1" />
 		<item name="fryingPan" count="1,2" prob="12.9" />
 		<item name="scrapIron" count="1,2" prob="22.6" />
@@ -2081,19 +2081,15 @@
 </lootcontainer>
 	<!-- lootcontainer 14 misc metal container mailbox-->
 	<lootcontainer id="14" count="0,2" size="4,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="3">
-		<item name="paper" count="1,10" prob="36.1" />
+        <item name="paper" count="1,10" prob="36.1" />
 		<item name="book" prob="28.9" />
 		<item group="books" prob="2.5" />
-		<!--<item group="monthlyMagazines" prob="10.8" />
-		<item group="WeeklyMagazines" prob="18.1" />-->
 		<item name="pipeBomb" count="1,2" prob="3.6" />
 	</lootcontainer>
 	<!-- lootcontainer 15 free - was generic zombie  let in for a16 testing -->
 	<lootcontainer id="15" count="0" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
 	<item name="cobweb" count="1,2"/>
 	</lootcontainer>
-	
-	
 	<!-- lootcontainer 16 metal garbage can-->
 	<lootcontainer id="16" count="0,2" size="4,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="5">
 		<item group="garbage" />
@@ -2949,7 +2945,7 @@
 		<item group="carpenter" count="1" />
 	</lootcontainer>
 	<!-- Cop Loot  -->
-	<lootcontainer id="217" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="217" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest"> <!--buff="nutrition_35_Trigger"-->
 		<item group="cop" count="1" />
 	</lootcontainer>
     <!-- Mason Loot  -->
@@ -2962,7 +2958,7 @@
 	</lootcontainer>
 	<!-- Fitness Instructor Loot  -->
 	<lootcontainer id="220" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
-		<item group="fitness Instructor" count="1" />
+		<item group="fitnessInstructor" count="1" />
 	</lootcontainer>
 	<!-- Fireman Loot  -->
 	<lootcontainer id="221" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
@@ -2986,7 +2982,7 @@
 	</lootcontainer>
 	<!-- Park Ranger Loot  -->
 	<lootcontainer id="226" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
-		<item group="park Ranger" count="1" />
+		<item group="parkRanger" count="1" />
 	</lootcontainer>
 	<!-- Mechanic Loot  -->
 	<lootcontainer id="227" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
