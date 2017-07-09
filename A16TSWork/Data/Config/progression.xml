@@ -3130,11 +3130,6 @@
             <recipe name="silencedPistolBarrel" unlock_level="1" />
             <recipe name="silencedPistol" unlock_level="1" />
         </perk>
-        <perk name="blunderbussPerk" icon="blunderbuss" description_key="Learn to craft a make shift firearm and ammo. /nLevel 2 - Learn how to conect two Blunderbusses to make a double barrel version" title_key="Blunderbuss" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="firearms">
-            <requirement perk_level="1" required_player_level="5" />
-            <recipe name="blunderbuss" unlock_level="1" />
-            <recipe name="blunderbussAmmo" unlock_level="1" />
-		</perk>
         <perk name="slugPerk" icon="shotgunSlug" description_key="Learn to craft Shotgun Slugs with a bullet press" title_key="Slug" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
             <recipe name="shotgunSlug" unlock_level="1" />
         </perk>

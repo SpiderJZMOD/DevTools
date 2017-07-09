@@ -3998,7 +3998,7 @@ Mesh files no longer used:
 	<property name="VehicleSlotType" value="wheel"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="metal"/>
+	<property name="Material" value="Mrubber"/>
     <property name="DegradationBreaksAfter" value="true" />
 	<property name="RepairTools" value="scavengedParts"/>
 	<property name="HoldType" value="45"/>
@@ -7187,20 +7187,20 @@ Mesh files no longer used:
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_painkillers"/>
-		<property name="Gain_food" value="-10"/>
-		<property name="Gain_water" value="-10"/>
-		<property name="Gain_wellness" value="10"/>
-		<property name="Buff" value="redPillBuff"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0"/>
+		<property name="Buff" value="nutrition_5_Trigger"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_painkillers"/>
-		<property name="Gain_food" value="-10"/>
-		<property name="Gain_water" value="-10"/>
-		<property name="Gain_wellness" value="10"/>
-		<property name="Buff" value="redPillBuff"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0"/>
+		<property name="Buff" value="nutrition_5_Trigger"/>
 	</property>
 	<property name="ActionSkillGroup" value="medicineCraft"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -7224,19 +7224,12 @@ Mesh files no longer used:
 		<property name="Gain_wellness" value="1000"/>
 		<property name="Buff" value="bluePillBuff"/>
 	</property>
-	<property class="Action1">
-		<property name="Class" value="Eat"/>
-		<property name="Delay" value="1.0"/>
-		<property name="Use_time" value="..."/>
-		<property name="Sound_start" value="player_painkillers"/>
-		<property name="Gain_food" value="1000"/>
-		<property name="Gain_water" value="1000"/>
-		<property name="Gain_wellness" value="1000"/>
-		<property name="Buff" value="bluePillBuff"/>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="LearnRecipe"/>
+		<property name="Delay" value="1"/>
+		<property name="Skills_to_gain" value="cookingCraft,cookingCraft,cookingCraft,cookingCraft,cookingCraftcooking" />
+		<property name="Sound_start" value="recipe_unlocked"/>
 	</property>
-	<property name="ActionSkillGroup" value="medicineCraft"/>
-	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="Group" value="Science"/>
 </item>
 
 <item id="671" name="brokenGlass"> <!-- scrap material -->
@@ -7296,7 +7289,8 @@ Mesh files no longer used:
 
 <item id="701" name="foodYuccaFruit">
 	<property name="Meshfile" value="Items/Food/fruit_yucca"/>
-	<property name="Material" value="plants"/>
+	<property name="Material" value="Mfruit"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="14"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="5"/>
@@ -7316,7 +7310,7 @@ Mesh files no longer used:
 </item>
 
 
-<item id="702" name="foodYuccaJuice">
+<item id="702" name="veggieJuice">
 	<property name="Meshfile" value="Items/Food/yucca_juicePrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="3"/>
@@ -7352,8 +7346,8 @@ Mesh files no longer used:
 
 <item id="706" name="canBeef">
 	<property name="Meshfile" value="Items/Food/can_beefPrefab"/>
-	<property name="Material" value="metal"/>
-	<property name="Weight" value="5"/>
+	<property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="60"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -7390,6 +7384,8 @@ Mesh files no longer used:
 
 <item id="711" name="canCatfood">
 	<property name="Extends" value="canBeef"/>
+    <property name="Material" value="metal"/>
+	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="Meshfile" value="Items/Food/can_catfoodPrefab"/>
 	<property class="Action1">
@@ -7415,6 +7411,8 @@ Mesh files no longer used:
 
 <item id="713" name="canChili">
 	<property name="Extends" value="canCatfood"/>
+    <property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
 	<property name="Meshfile" value="Items/Food/can_chiliPrefab"/>
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -7441,6 +7439,8 @@ Mesh files no longer used:
 
 <item id="715" name="canPasta">
 	<property name="Extends" value="canMiso"/>
+    <property name="Material" value="Mgrain"/>
+	<property name="Weight" value="1"/>
 	<property name="Meshfile" value="Items/Food/can_pastaPrefab"/>
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -7453,6 +7453,8 @@ Mesh files no longer used:
 
 <item id="716" name="canPeas">
 	<property name="Extends" value="canMiso"/>
+    <property name="Material" value="Mveggie"/>
+	<property name="Weight" value="1"/>
 	<property name="Meshfile" value="Items/Food/can_peasPrefab"/>
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -7465,6 +7467,8 @@ Mesh files no longer used:
 
 <item id="717" name="canPears">
 	<property name="Extends" value="canMiso"/>
+    <property name="Material" value="Mfruit"/>
+	<property name="Weight" value="1"/>
 	<property name="Meshfile" value="Items/Food/can_pearsPrefab"/>
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -7500,6 +7504,8 @@ Mesh files no longer used:
 
 <item id="720" name="canTuna">
 	<property name="Extends" value="canMiso"/>
+    <property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
 	<property name="Meshfile" value="Items/Food/can_tunaPrefab"/>
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -7512,8 +7518,8 @@ Mesh files no longer used:
 
 <item id="723" name="canHam">
 	<property name="Meshfile" value="Items/Food/can_hamPrefab"/>
-	<property name="Material" value="metal"/>
-	<property name="Weight" value="5"/>
+	<property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="80"/>
 	<property name="HoldType" value="22"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -7526,7 +7532,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="-10" />
 		<property name="Gain_wellness" value="-0.1" />
 		<property name="Gain_stamina" value="-20" />
-		<property name="Sound_start" value="UseActions/player_eating" />
+		<property name="Sound_start" value="player_eating" />
 		<property name="Create_item" value="canEmpty" />
 	</property>
 	<property name="Group" value="food/Cooking"/>
@@ -7562,7 +7568,8 @@ Mesh files no longer used:
 
 <item id="727" name="corn">
 	<property name="Meshfile" value="Items/Food/vegetable_corn"/>
-	<property name="Material" value="plants"/>
+	<property name="Material" value="Mveggie"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="15"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
@@ -7602,7 +7609,8 @@ Mesh files no longer used:
 
 <item id="729" name="cornMeal">
 	<property name="Meshfile" value="Items/Food/cornmealPrefab"/>
-	<property name="Material" value="organic"/>
+	<property name="Material" value="Mgrain"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="21"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="11"/>
@@ -7670,7 +7678,7 @@ Mesh files no longer used:
 	<property name="Group" value="food/Cooking"/>
 </item>
 
-<item id="732" name="shamSandwich">
+<item id="732" name="moldyShamSandwich">
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -7679,6 +7687,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
+    <property name="CustomIcon" value="shamSandwich"/>
 	<property name="CraftingIngredientTime" value="30"/>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
@@ -7697,7 +7706,8 @@ Mesh files no longer used:
 
 <item id="735" name="rawMeat">
 	<property name="Meshfile" value="Items/Misc/raw_meatPrefab"/>
-	<property name="Material" value="organic"/>
+	<property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="20"/>
@@ -7836,7 +7846,8 @@ Mesh files no longer used:
 
 <item id="750" name="potato">
 	<property name="Meshfile" value="Items/Food/vegetable_potatoPrefab"/>
-	<property name="Material" value="plants"/>
+	<property name="Material" value="Mveggie"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
@@ -7858,7 +7869,8 @@ Mesh files no longer used:
 
 <item id="751" name="blueberries">
 	<property name="Meshfile" value="Items/Food/blueberriesPrefab"/>
-	<property name="Material" value="plants"/>
+	<property name="Material" value="Mfruit"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="23"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
@@ -7880,7 +7892,8 @@ Mesh files no longer used:
 
 <item id="752" name="egg">
 	<property name="Meshfile" value="Items/Food/eggPrefab"/>
-	<property name="Material" value="organic"/>
+	<property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="23"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
@@ -7992,8 +8005,9 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
-	<property name="Material" value="plants"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
+    <property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="5"/>
@@ -8393,14 +8407,13 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
 
-<!-- <item id="923" name="sawedoffPumpShotgunSchematic">
+<item id="923" name="sawedoffPumpShotgunSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunSawedOffPumpShotgun"/>
-		<property name="Skills_to_gain" value="gunSmithingCraft"/>
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
-</item> -->
+</item> 
 
 <item id="924" name="pumpShotgunSchematic">
 	<property name="Extends" value="schematicMaster"/>
@@ -9333,7 +9346,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="1" />
 			<property name="Gain_sickness" value="0" />
-			<property name="Sound_start" value="UseActions/player_eating" />
+			<property name="Sound_start" value="player_eating" />
 			<property name="Buff" value="dysentery,brainFreeze" />
 			<property name="Buff_chance" value="0.05,1" />
 		</property>
@@ -9730,7 +9743,7 @@ Mesh files no longer used:
 <item id="1359" name="scavengedParts">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="CustomIcon" value="PartsAuger_parts" />
+	<property name="CustomIcon" value="partsAuger_parts" />
 	<property name="Material" value="Msteel"/>
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="5000"/> <!-- STK repairKit -->
@@ -11157,7 +11170,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Ammo/Weapons,Basics" />
 	<property name="DescriptionKey" value="woodSpearDesc" />
-	<property name="ActionSkillGroup" value="bladeWeaponsCraft" />
+	<property name="ActionSkillGroup" value="bladeWeaponsAction" />
 	<property name="CraftingSkillGroup" value="woodSpearCraft" />
 </item>
 <item id="1550" name="woodJavelin">
@@ -11256,10 +11269,10 @@ Mesh files no longer used:
 <item id="1553" name="oldAxe">
 	<property name="Extends" value="fireaxeIron" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-   <!--SDX    <property name="Meshfile" value="#axe1?AXE5" /> -->
+    <!--SDX    <property name="Meshfile" value="#axe1?AXE5" /> -->
 	<property name="HoldType" value="2" />
 	<property name="RepairTools" value="NoRepair" />
-       <property name="CustomIcon" value="ui_game_symbol_axe02" />
+    <property name="CustomIcon" value="ui_game_symbol_axe02" />
 	<property class="Action0">
 		<property name="Delay" value="1.3" />
 		<property name="Buff" value="bleeding,criticalBlunt" />
@@ -11521,66 +11534,18 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="bluntWeaponsCraft" />
 	<property name="CraftingSkillGroup" value="spikedClubsCraft" />
 </item>
-<item id="1562" name="tomahawk">
+<item id="1562" name="firemanAxe">
 	<property name="Extends" value="fireaxeIron" />
-	<property name="HoldType" value="2" />
-	<property name="CustomIcon" value="ui_game_symbol_tomahawk" />
-   <!--SDX    <property name="Meshfile" value="#ZdWeapons?Tomahawk" />
-	<property name="HandMeshfile" value="#ZdWeapons?Tomahawk" />
-	<property name="DropMeshfile" value="#ZdWeapons?Tomahawk" /> -->
-	<property name="RepairTools" value="SharpeningStone" />
-    <property name="DegradationBreaksAfter" value="true" />
-	<property name="FuelValue" value="1" />
-	<property name="Weight" value="200" />
 	<property class="Action0">
-		<property name="Delay" value="1.3" />
-		<property name="Range" value="2.7" />
-        <property name="Stamina_usage" value="6" />
-		<property name="Buff" value="bleeding" />
-		<property name="Buff_chance" value=".5" />
-		<property name="DamageBonus.wood" value="7" />
-		<property name="DamageBonus.head" value="60" />
-        <property name="DamageBonus.glass" value="5" />
-		<property name="DamageBonus.stone" value="1" />
-		<property name="DamageBonus.cloth" value="5" />
-		<property name="DamageBonus.organic" value="10" />
-        <property name="DamageBonus.metal" value="1" />
-        <property name="DamageBonus.earth" value="0.3" />
-        <property name="DamageBonus.steel" value="0" />
-        <property name="DamageBonus.hardStone" value="0" />
-        <property name="ActionExp" value="1" />
-		<property name="ActionExpBonusMultiplier" value="4" />
+		<property name="ToolCategory.Door" value="0" param1="25"/>
 	</property>
 	<property class="Action1">
-        <property name="Class" value="Melee" />
-		<property name="Delay" value="5.1" />
-		<property name="Range" value="2.7" />
-        <property name="Stamina_usage" value="9" />
-        <property name="Buff" value="bleeding" />
-		<property name="Buff_chance" value=".6" />
-		<property name="DamageBonus.wood" value="9" />
-		<property name="DamageBonus.head" value="90" />
-        <property name="DamageBonus.glass" value="10" />
-		<property name="DamageBonus.stone" value="1.5" />
-		<property name="DamageBonus.cloth" value="15" />
-		<property name="DamageBonus.organic" value="10" />
-        <property name="DamageBonus.metal" value="1.5" />
-        <property name="DamageBonus.earth" value="0.45" />
-        <property name="DamageBonus.steel" value="0" />
-		<property name="DamageBonus.hardStone" value="0" />
-        <property name="ActionExp" value="1" />
-		<property name="ActionExpBonusMultiplier" value="4" />
+        <property name="ToolCategory.Door" value="0" param1="25"/>
 	</property>
-	<property class="Attributes">
-		<property name="EntityDamage" value="6,15" />
-		<property name="BlockDamage" value="2,5" />
-		<property name="DegradationMax" value="100,600" />
-        <property name="DegradationRate" value="10,5" />
-		<property name="DismembermentBaseChance" value="0.05,0.4" />
-		<property name="DismembermentBonus" value="0.0004,0.005" />
-	</property>
-    <property name="DescriptionKey" value="tomahawkDesc" />
-    <property name="ActionSkillGroup" value="bladeWeaponsCraft" />
+    <property name="CustomIcon" value="ui_game_symbol_tomahawk" />
+	<property name="DescriptionKey" value="firemanAxeDesc" />
+    <property name="ActionSkillGroup" value="bladeWeaponsAction" />
+    <property name="CraftingSkillGroup" value="firemanAxeCraft" />
 </item>
 <item id="1563" name="katana">
 	<property name="Extends" value="machete" />
@@ -11616,7 +11581,7 @@ Mesh files no longer used:
 	<property name="DismembermentBaseChance" value="0.007,1" />
 	<property name="DismembermentBonus" value="0.001,1" />
 	</property>
-	<property name="CraftingSkillGroup" value="bladeWeaponsCraft" />
+	<property name="CraftingSkillGroup" value="katanaCraft" />
 	<property name="DescriptionKey" value="katanaMichonneDesc" />
 	<property name="CustomIcon" value="ui_game_symbol_katanamichonne" />
 </item>
@@ -12172,11 +12137,11 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1596" name="park Ranger">
+<item id="1596" name="parkRanger">
 	<property name="Extends" value="schematicMaster" />
        <property name="CustomIcon" value="ui_game_symbol_professionSkill" />
 	<property class="Action1">
-		<property name="Skills_to_gain" value="park Ranger" />
+		<property name="Skills_to_gain" value="parkRanger" />
 	</property>
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
@@ -12199,15 +12164,15 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="handSawDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1599" name="claiming Your Shit">
+<item id="1599" name="claimingYourShit">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="keystoneRock,keystoneIron,keystoneSteel" />
+		<property name="Recipes_to_learn" value="keystoneStone,keystoneIron,keystoneSteel" />
 	</property>
 	<property name="DescriptionKey" value="skillBookDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1600" name="bed Book">
+<item id="1600" name="bedBook">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="bed02" />
@@ -12216,7 +12181,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="ui_game_symbol_blockbook" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1601" name="camo Net Book">
+<item id="1601" name="camoNetBook">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="camoNetBlock,camoNetRamp,camoNetSheet,camoNetCNRFull" />
@@ -12225,7 +12190,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="ui_game_symbol_blockbook" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1602" name="glass Book">
+<item id="1602" name="glassBook">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="glassCTRSheet,glassShowerBlock,glassIndustrialCTRPlate,glassIndustrial02CTRPlate,glassBusinessSheet,glassBusinessCTRSheet,glassBusinessBlock" />
@@ -12234,7 +12199,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="ui_game_symbol_blockbook" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1603" name="awning Book">
+<item id="1603" name="awningBook">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="awningBlock,awningRamp" />
@@ -12526,7 +12491,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startDoctor" />
+		<property name="QuestGiven" value="StartDoctor" />
 	</property>
 </item>
 <item id="1667" name="qc_Carpenter">
@@ -12534,7 +12499,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startCarpenter" />
+		<property name="QuestGiven" value="StartCarpenter" />
 	</property>
 </item>
 <item id="1668" name="qc_Cop">
@@ -12542,7 +12507,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startCop" />
+		<property name="QuestGiven" value="StartCop" />
 	</property>
 </item>
 <item id="1669" name="qc_Soldier">
@@ -12550,7 +12515,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startSoldier" />
+		<property name="QuestGiven" value="StartSoldier" />
 	</property>
 </item>
 <item id="1670" name="qc_Bouncer">
@@ -12558,7 +12523,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startBouncer" />
+		<property name="QuestGiven" value="StartBouncer" />
 	</property>
 </item>
 <item id="1671" name="qc_Chef">
@@ -12566,7 +12531,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startChef" />
+		<property name="QuestGiven" value="StartChef" />
 	</property>
 </item>
 <item id="1672" name="qc_FitnessInstructor">
@@ -12574,7 +12539,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startFitness" />
+		<property name="QuestGiven" value="StartFitness" />
 	</property>
 </item>
 <item id="1673" name="qc_IronWorker">
@@ -12582,7 +12547,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startIronWorker" />
+		<property name="QuestGiven" value="StartIronWorker" />
 	</property>
 </item>
 <item id="1674" name="qc_Electrician">
@@ -12590,7 +12555,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startElectrician" />
+		<property name="QuestGiven" value="StartElectrician" />
 	</property>
 </item>
 <item id="1675" name="qc_SteelWelder">
@@ -12609,12 +12574,12 @@ Mesh files no longer used:
 		<property name="QuestGiven" value="StartThief" />
 	</property>
 </item>
-<item id="1677" name="qc_Park_Ranger">
+<item id="1677" name="qc_ParkRanger">
 	<property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startRanger" />
+		<property name="QuestGiven" value="StartRanger" />
 	</property>
 </item>
 <item id="1678" name="qc_Mechanic">
@@ -12622,7 +12587,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startMechanic" />
+		<property name="QuestGiven" value="StartMechanic" />
 	</property>
 </item>
 <item id="1679" name="qc_Fireman">
@@ -12630,7 +12595,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startFireman" />
+		<property name="QuestGiven" value="StartFireman" />
 	</property>
 </item>	
 <item id="1680" name="qc_Chemist">
@@ -12638,39 +12603,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startScientist" />
-	</property>
-</item>
-<item id="1681" name="qc_Doctor">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startDoctor" />
-	</property>
-</item>
-<item id="1682" name="qc_Carpenter">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startCarpenter" />
-	</property>
-</item>
-<item id="1683" name="qc_Cop">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startCop" />
-	</property>
-</item>
-<item id="1684" name="qc_Soldier">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startSoldier" />
+		<property name="QuestGiven" value="StartScientist" />
 	</property>
 </item>
 <item id="1685" name="qc_Mason">
@@ -12678,79 +12611,7 @@ Mesh files no longer used:
     <property name="CustomIcon" value="challengeQuestMaster" />
 	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
 	<property class="Action1">
-		<property name="QuestGiven" value="startMason" />
-	</property>
-</item>
-<item id="1686" name="qc_Chef">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startChef" />
-	</property>
-</item>
-<item id="1687" name="qc_Fitness_Instructor">
-    <property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startFitness" />
-	</property>
-</item>
-<item id="1688" name="qc_Iron_Worker">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startIronWorker" />
-	</property>
-</item>
-<item id="1689" name="qc_Electrician">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startElectrician" />
-	</property>
-</item>
-<item id="1690" name="qc_Metal_Worker">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startMetal" />
-	</property>
-</item>
-<item id="1691" name="qc_Burglar">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startBurglar" />
-	</property>
-</item>
-<item id="1692" name="qc_Park_Ranger">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startRanger" />
-	</property>
-</item>
-<item id="1693" name="qc_Mechanic">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startMechanic" />
-	</property>
-</item>
-<item id="1694" name="qc_Fireman">
-	<property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="challengeQuestMaster" />
-	<property name="DescriptionKey" value="qc_ProfessionGroupDesc" />
-	<property class="Action1">
-		<property name="QuestGiven" value="startFireman" />
+		<property name="QuestGiven" value="StartMason" />
 	</property>
 </item>
  <!--JZMOD QUEST 
@@ -13171,10 +13032,13 @@ Mesh files no longer used:
 		<property name="Gain_water" value="1" />
 		<property name="Gain_stamina" value="1" />
 	</property>
+    <property name="CustomIcon" value="ui_game_symbol_apple" />
 	<property name="DescriptionKey" value="appleDesc" />
 </item>
 <item id="1723" name="carrot">
 	<property name="Extends" value="foodMaster" />
+    <property name="Material" value="Mveggie" />
+    <property name="Weight" value="1" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
     <property name="Material" value="Mveggie" />
     <property name="Weight" value="1" />
@@ -13186,6 +13050,8 @@ Mesh files no longer used:
 </item>
 <item id="1724" name="tomato">
 	<property name="Extends" value="foodMaster" />
+    <property name="Material" value="Mveggie" />
+    <property name="Weight" value="1" />
 	<property name="CustomIcon" value="ui_game_symbol_tomato1" />
 	<property name="Material" value="Mveggie" />
     <property name="Weight" value="1" />
@@ -13279,6 +13145,7 @@ Mesh files no longer used:
 <item id="1730" name="bread">
 	<property name="Extends" value="foodMaster" />
 	<property name="DescriptionKey" value="BreadDesc" />
+    <property name="CustomIcon" value="ui_game_symbol_bread" />
     <property class="Action1">
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="-4" />
@@ -13651,7 +13518,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
-<item id="1761" name="goodMealSmall">
+<item id="1761" name="goodMealLarge">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="ui_game_symbol_stirFry" />
 	<property class="Action1">
@@ -14236,7 +14103,7 @@ Mesh files no longer used:
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock" />
 		<property name="Delay" value="0.5" />
-		<property name="Blockname" value="keystoneRock" />
+		<property name="Blockname" value="keystoneStone" />
 	</property>
 	<property name="CustomIcon" value="keystoneRock" />
 	<property name="DescriptionKey" value="KeystoneDesc" />
@@ -14958,11 +14825,59 @@ Mesh files no longer used:
 	<property name="Weight" value="2" />
 </item>
 <item id="1871" name="brassKnuckles">
-	<property name="Extends" value="itemMaster" />
-	<property name="CustomIcon" value="ui_game_symbol_brassKnuckles" />
-	<property name="DescriptionKey" value="brassKnucklesDesc" />
-	<property name="Material" value="brass" />
+	<property name="Extends" value="clubMaster"/>
+  	<property name="Material" value="brass" />
 	<property name="Weight" value="3" />
+	<property name="HoldType" value="2"/>
+    <property name="DegradationBreaksAfter" value="true" />
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="FuelValue" value="0"/>
+    <property name="SellableToTrader" value="false"/>
+    <property class="Action0"> 
+		<property name="Delay" value="0.75"/>
+		<property name="Range" value="2.5"/>
+		<property name="Block_range" value="2.5"/>
+		<property name="Stamina_usage" value="4"/>
+		<property name="DamageBonus.head" value="20"/>
+		<property name="DamageBonus.glass" value="20"/> 
+		<property name="DamageBonus.organic" value="1" />            
+        <property name="DamageBonus.cloth" value="0.5" />
+        <property name="DamageBonus.earth" value="0.5" />
+        <property name="DamageBonus.stone" value="0.5" />
+        <property name="DamageBonus.hardStone" value="0" />
+        <property name="DamageBonus.wood" value="1" />
+        <property name="DamageBonus.metal" value="1" />
+        <property name="DamageBonus.steel" value="0" />
+        <property name="ActionExp" value="1"/>
+		<property name="ActionExpBonusMultiplier" value="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="5"/>
+	</property>
+    <property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="5"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="0"/>
+        <property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="-10"/>
+        <property name="Sound_start" value="SlowSwoosh"/>
+		<property name="Buff" value="fightOffEnemy"/>
+		<property name="Consume" value="false"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="5,10"/>
+		<property name="BlockDamage" value="10,20"/>
+		<property name="DegradationMax" value="50,600"/>
+		<property name="DegradationRate" value="5,1"/>
+	</property>
+    <property name="CustomIcon" value="ui_game_symbol_brassKnuckles" />
+	<property name="DescriptionKey" value="brassKnucklesDesc" />
+	<property name="ActionSkillGroup" value="upperBody"/>
+	<property name="CraftingSkillGroup" value="brassKnucklesCraft"/>
+	<property name="RepairExpMultiplier" value="5.5"/> 
+  
+	
+	
 </item>
 <item id="1872" name="stonePlate">
 	<property name="Extends" value="itemMaster" />
@@ -15383,6 +15298,47 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
+</item>
+
+<item id="1931" name="craftedGunsSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="blunderbuss,craftedRifle"/>
+	</property>
+</item>
+<item id="1932" name="moldyFruit">
+    <property name="Extends" value="moldyShamSandwich"/>  
+	<property name="CustomIcon" value="shamSandwich"/>
+	
+</item>
+<item id="1933" name="moldyVeggies">
+	<property name="Extends" value="moldyShamSandwich"/>  
+	<property name="CustomIcon" value="shamSandwich"/>
+</item>
+<item id="1934" name="unit_veggie">
+	<property name="Extends" value="unit_iron" />
+	<property name="CustomIcon" value="scrapIron" />
+	<property name="Material" value="Mveggie" />
+	<property name="IsDeveloper" value="true" />
+</item>
+<item id="1935" name="unit_fruit">
+	<property name="Extends" value="unit_iron" />
+	<property name="CustomIcon" value="scrapIron" />
+	<property name="Material" value="Mfruit" />
+	<property name="IsDeveloper" value="true" />
+</item>
+<item id="1936" name="unit_grain">
+	<property name="Extends" value="unit_iron" />
+	<property name="CustomIcon" value="scrapIron" />
+	<property name="Material" value="Mgrain" />
+	<property name="IsDeveloper" value="true" />
+</item>
+<item id="1937" name="unit_protein">
+	<property name="Extends" value="unit_iron" />
+	<property name="CustomIcon" value="scrapIron" />
+	<property name="Material" value="Mprotein" />
+	<property name="IsDeveloper" value="true" />
 </item>
 
 </items>

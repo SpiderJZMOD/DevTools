@@ -19,7 +19,6 @@
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
 			<window name="windowToolsCampfire" />
-			<window name="windowFuel" />
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
@@ -56,7 +55,7 @@
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
-			<window name="windowFuel" />
+            <window name="windowToolsChemistryStation" />
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
@@ -299,6 +298,7 @@
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />
+            <window name="windowFuel" />
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
@@ -391,13 +391,14 @@
 			<window name="lowerwindowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<window_group name="workstation_stove" controller="XUiC_WorkstationWindowGroup">
-			<window name="windowCraftingList" />
+		<window_group name="workstation_prepTable" controller="XUiC_WorkstationWindowGroup">
+            <window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />
-			<window name="windowToolsStove" />
-			<window name="lowerwindowOutput" />
+            <window name="windowToolsPrepTable" />
 			<window name="windowFuel" />
+			<window name="windowPrepTableInput" />
+			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		<window_group name="workstation_stoneMill" controller="XUiC_WorkstationWindowGroup">
