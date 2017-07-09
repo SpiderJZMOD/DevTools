@@ -4852,3 +4852,4 @@ forgeCrucible,items,Item,New,Crucible,,,,
 forgeCrucibleDesc,items,Item,New,A crucible upgrade is required to craft steel bars and bulletproof glass in a forge. Learn the recipe by buying the Steel Smithing perk.,,,,
 macheteCraftingName,progression,Perk,New,Machete Crafting,,,,
 macheteCraftingDesc,progression,Perk,New,Learn to craft a machete at a workbench.,,,,
+xuiFoodPrep,UI,Menu,KgNone,Food Storage,Fonte,Schmelzung,,Fundición

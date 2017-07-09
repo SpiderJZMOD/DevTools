@@ -3998,7 +3998,7 @@ Mesh files no longer used:
 	<property name="VehicleSlotType" value="wheel"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="metal"/>
+	<property name="Material" value="Mrubber"/>
     <property name="DegradationBreaksAfter" value="true" />
 	<property name="RepairTools" value="scavengedParts"/>
 	<property name="HoldType" value="45"/>
@@ -7224,19 +7224,12 @@ Mesh files no longer used:
 		<property name="Gain_wellness" value="1000"/>
 		<property name="Buff" value="bluePillBuff"/>
 	</property>
-	<property class="Action1">
-		<property name="Class" value="Eat"/>
-		<property name="Delay" value="1.0"/>
-		<property name="Use_time" value="..."/>
-		<property name="Sound_start" value="player_painkillers"/>
-		<property name="Gain_food" value="1000"/>
-		<property name="Gain_water" value="1000"/>
-		<property name="Gain_wellness" value="1000"/>
-		<property name="Buff" value="bluePillBuff"/>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="LearnRecipe"/>
+		<property name="Delay" value="1"/>
+		<property name="Skills_to_gain" value="cookingCraft,cookingCraft,cookingCraft,cookingCraft,cookingCraftcooking" />
+		<property name="Sound_start" value="recipe_unlocked"/>
 	</property>
-	<property name="ActionSkillGroup" value="medicineCraft"/>
-	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="Group" value="Science"/>
 </item>
 
 <item id="671" name="brokenGlass"> <!-- scrap material -->
@@ -7296,7 +7289,8 @@ Mesh files no longer used:
 
 <item id="701" name="foodYuccaFruit">
 	<property name="Meshfile" value="Items/Food/fruit_yucca"/>
-	<property name="Material" value="plants"/>
+	<property name="Material" value="Mfruit"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="14"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="5"/>
@@ -7352,8 +7346,8 @@ Mesh files no longer used:
 
 <item id="706" name="canBeef">
 	<property name="Meshfile" value="Items/Food/can_beefPrefab"/>
-	<property name="Material" value="metal"/>
-	<property name="Weight" value="5"/>
+	<property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="60"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -7390,6 +7384,8 @@ Mesh files no longer used:
 
 <item id="711" name="canCatfood">
 	<property name="Extends" value="canBeef"/>
+    <property name="Material" value="metal"/>
+	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="Meshfile" value="Items/Food/can_catfoodPrefab"/>
 	<property class="Action1">
@@ -7415,6 +7411,8 @@ Mesh files no longer used:
 
 <item id="713" name="canChili">
 	<property name="Extends" value="canCatfood"/>
+    <property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
 	<property name="Meshfile" value="Items/Food/can_chiliPrefab"/>
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -7441,6 +7439,8 @@ Mesh files no longer used:
 
 <item id="715" name="canPasta">
 	<property name="Extends" value="canMiso"/>
+    <property name="Material" value="Mgrain"/>
+	<property name="Weight" value="1"/>
 	<property name="Meshfile" value="Items/Food/can_pastaPrefab"/>
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -7453,6 +7453,8 @@ Mesh files no longer used:
 
 <item id="716" name="canPeas">
 	<property name="Extends" value="canMiso"/>
+    <property name="Material" value="Mveggie"/>
+	<property name="Weight" value="1"/>
 	<property name="Meshfile" value="Items/Food/can_peasPrefab"/>
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -7465,6 +7467,8 @@ Mesh files no longer used:
 
 <item id="717" name="canPears">
 	<property name="Extends" value="canMiso"/>
+    <property name="Material" value="Mfruit"/>
+	<property name="Weight" value="1"/>
 	<property name="Meshfile" value="Items/Food/can_pearsPrefab"/>
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -7500,6 +7504,8 @@ Mesh files no longer used:
 
 <item id="720" name="canTuna">
 	<property name="Extends" value="canMiso"/>
+    <property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
 	<property name="Meshfile" value="Items/Food/can_tunaPrefab"/>
 	<property class="Action1">
 		<property name="Gain_health" value="0" />
@@ -7512,8 +7518,8 @@ Mesh files no longer used:
 
 <item id="723" name="canHam">
 	<property name="Meshfile" value="Items/Food/can_hamPrefab"/>
-	<property name="Material" value="metal"/>
-	<property name="Weight" value="5"/>
+	<property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="80"/>
 	<property name="HoldType" value="22"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -7562,7 +7568,8 @@ Mesh files no longer used:
 
 <item id="727" name="corn">
 	<property name="Meshfile" value="Items/Food/vegetable_corn"/>
-	<property name="Material" value="plants"/>
+	<property name="Material" value="Mveggie"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="15"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
@@ -7602,7 +7609,8 @@ Mesh files no longer used:
 
 <item id="729" name="cornMeal">
 	<property name="Meshfile" value="Items/Food/cornmealPrefab"/>
-	<property name="Material" value="organic"/>
+	<property name="Material" value="Mgrain"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="21"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="11"/>
@@ -7698,7 +7706,8 @@ Mesh files no longer used:
 
 <item id="735" name="rawMeat">
 	<property name="Meshfile" value="Items/Misc/raw_meatPrefab"/>
-	<property name="Material" value="organic"/>
+	<property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="20"/>
@@ -7837,7 +7846,8 @@ Mesh files no longer used:
 
 <item id="750" name="potato">
 	<property name="Meshfile" value="Items/Food/vegetable_potatoPrefab"/>
-	<property name="Material" value="plants"/>
+	<property name="Material" value="Mveggie"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
@@ -7859,7 +7869,8 @@ Mesh files no longer used:
 
 <item id="751" name="blueberries">
 	<property name="Meshfile" value="Items/Food/blueberriesPrefab"/>
-	<property name="Material" value="plants"/>
+	<property name="Material" value="Mfruit"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="23"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
@@ -7881,7 +7892,8 @@ Mesh files no longer used:
 
 <item id="752" name="egg">
 	<property name="Meshfile" value="Items/Food/eggPrefab"/>
-	<property name="Material" value="organic"/>
+	<property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
 	<property name="HoldType" value="23"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
@@ -7993,8 +8005,9 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
-	<property name="Material" value="plants"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Material" value="Mprotein"/>
+	<property name="Weight" value="1"/>
+    <property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="5"/>
@@ -9730,7 +9743,7 @@ Mesh files no longer used:
 <item id="1359" name="scavengedParts">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="CustomIcon" value="PartsAuger_parts" />
+	<property name="CustomIcon" value="partsAuger_parts" />
 	<property name="Material" value="Msteel"/>
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="5000"/> <!-- STK repairKit -->
@@ -13019,10 +13032,13 @@ Mesh files no longer used:
 		<property name="Gain_water" value="1" />
 		<property name="Gain_stamina" value="1" />
 	</property>
+    <property name="CustomIcon" value="ui_game_symbol_apple" />
 	<property name="DescriptionKey" value="appleDesc" />
 </item>
 <item id="1723" name="carrot">
 	<property name="Extends" value="foodMaster" />
+    <property name="Material" value="Mveggie" />
+    <property name="Weight" value="1" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
     <property name="Material" value="Mveggie" />
     <property name="Weight" value="1" />
@@ -13034,6 +13050,8 @@ Mesh files no longer used:
 </item>
 <item id="1724" name="tomato">
 	<property name="Extends" value="foodMaster" />
+    <property name="Material" value="Mveggie" />
+    <property name="Weight" value="1" />
 	<property name="CustomIcon" value="ui_game_symbol_tomato1" />
 	<property name="Material" value="Mveggie" />
     <property name="Weight" value="1" />
@@ -13500,7 +13518,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Smell" value="mediumSmell" />
 </item>
-<item id="1761" name="goodMealSmall">
+<item id="1761" name="goodMealLarge">
 	<property name="Extends" value="foodMaster" />
 	<property name="CustomIcon" value="ui_game_symbol_stirFry" />
 	<property class="Action1">
@@ -15298,4 +15316,29 @@ Mesh files no longer used:
 	<property name="Extends" value="moldyShamSandwich"/>  
 	<property name="CustomIcon" value="shamSandwich"/>
 </item>
+<item id="1934" name="unit_veggie">
+	<property name="Extends" value="unit_iron" />
+	<property name="CustomIcon" value="scrapIron" />
+	<property name="Material" value="Mveggie" />
+	<property name="IsDeveloper" value="true" />
+</item>
+<item id="1935" name="unit_fruit">
+	<property name="Extends" value="unit_iron" />
+	<property name="CustomIcon" value="scrapIron" />
+	<property name="Material" value="Mfruit" />
+	<property name="IsDeveloper" value="true" />
+</item>
+<item id="1936" name="unit_grain">
+	<property name="Extends" value="unit_iron" />
+	<property name="CustomIcon" value="scrapIron" />
+	<property name="Material" value="Mgrain" />
+	<property name="IsDeveloper" value="true" />
+</item>
+<item id="1937" name="unit_protein">
+	<property name="Extends" value="unit_iron" />
+	<property name="CustomIcon" value="scrapIron" />
+	<property name="Material" value="Mprotein" />
+	<property name="IsDeveloper" value="true" />
+</item>
+
 </items>
