@@ -11,14 +11,26 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="fruitServing" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
 	</recipe>
+    <recipe name="fruitServing" count="1" craft_area="prepTable" material_based="true" craft_time = "1" craft_exp_gain="0">
+		<ingredient name="unit_fruit" count="1"/>
+	</recipe>
     <recipe name="grainServing" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
+	</recipe>
+    <recipe name="grainServing" count="1" craft_area="prepTable" material_based="true" craft_time = "1" craft_exp_gain="0">
+		<ingredient name="unit_grain" count="1"/>
 	</recipe>
     <recipe name="veggieServing" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
 	</recipe>
+    <recipe name="veggieServing" count="1" craft_area="prepTable" material_based="true" craft_time = "1" craft_exp_gain="0">
+		<ingredient name="unit_veggie" count="1"/>
+	</recipe>
     <recipe name="proteinServing" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
+	</recipe>
+    <recipe name="proteinServing" count="1" craft_area="prepTable" material_based="true" craft_time = "1" craft_exp_gain="0">
+		<ingredient name="unit_protein" count="1"/>
 	</recipe>
     <recipe name="professionPage" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
@@ -36,7 +48,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<wildcard_forge_category />
 	</recipe>
 	<recipe name="mechanicalParts" count="1" tooltip="ttScrapMetalBrass">
-			<wildcard_forge_category />
+		<wildcard_forge_category />
 	</recipe>
 	<recipe name="brokenGlass" count="1" tooltip="ttScrapMetalBrass" >
 		<wildcard_forge_category />
@@ -293,7 +305,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cornMeal" count="1" />
 		<ingredient name="tallow" count="1" />
 	</recipe>
-	<recipe name="blueberryPie" count="1" craft_area="stove" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
+	<recipe name="blueberryPie" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="blueberries" count="1" />
 		<ingredient name="egg" count="1" />
 		<ingredient name="cornMeal" count="1" />
@@ -892,7 +904,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="scrapIron" count="40" />
 		<ingredient name="scrapLead" count="5" />
 	</recipe>
-	<recipe name="cornBread" count="1" craft_area="stove" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
+	<recipe name="cornBread" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="cornMeal" count="1" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
@@ -1349,109 +1361,108 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="cntLockers" count="1" craft_area="workbench" craft_time="5">
 			<ingredient name="forgedIron" count="2"/>
 	</recipe>
-		<recipe name="machete" count="1">
-			<ingredient name="forgedIron" count="20"/>
-			<ingredient name="plank" count="10"/>
-		</recipe>
-		<recipe name="bearStew" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="0">
-			<ingredient name="rawMeat" count="1" />
-			<ingredient name="potato" count="1" />
-			<ingredient name="corn" count="1" />
-			<ingredient name="flour" count="1" />
-			<ingredient name="bottledWater" count="1" />
-		</recipe>
-		<recipe name="metalReinforcedWoodDrawBridge" count="1" craft_area="workbench" craft_tool="wrench" craft_time="5" craft_exp_gain="500">
-			<ingredient name="forgedIron" count="100" />
-			<ingredient name="plank" count="2000" />
-			<ingredient name="spring" count="20" />
-			<ingredient name="nail" count="50" />
-			<ingredient name="nutAndBolt" count="20" />
-			<ingredient name="mechanicalParts" count="30" />
-			<ingredient name="scrapCable" count="40" />
-		</recipe>
-		<recipe name="metalSignLetter_a" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_b" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_c" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_d" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_e" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_f" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_g" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_h" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_i" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_j" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_k" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_l" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_m" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_n" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_o" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_p" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_q" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_r" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_s" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_t" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_u" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_v" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_w" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_x" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_y" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalSignLetter_z" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
-			<ingredient name="scrapIron" count="15" />
-		</recipe>
-		<recipe name="metalTrussingBlock" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="5" craft_exp_gain="5">
-			<ingredient name="unit_iron" count="100" />
-			<ingredient name="unit_clay" count="5" />
-		</recipe>
-		<recipe name="metalTrussingRamp" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="5" craft_exp_gain="5">
+	<recipe name="machete" count="1">
+		<ingredient name="forgedIron" count="20"/>
+		<ingredient name="plank" count="10"/>
+	</recipe>
+	<recipe name="bearStew" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="0">
+		<ingredient name="bearFlank" count="1" />
+		<ingredient name="veggieServing" count="2" />
+		<ingredient name="flour" count="1" />
+		<ingredient name="bottledWater" count="1" />
+	</recipe>
+	<recipe name="metalReinforcedWoodDrawBridge" count="1" craft_area="workbench" craft_tool="wrench" craft_time="5" craft_exp_gain="500">
+		<ingredient name="forgedIron" count="100" />
+		<ingredient name="plank" count="2000" />
+		<ingredient name="spring" count="20" />
+		<ingredient name="nail" count="50" />
+		<ingredient name="nutAndBolt" count="20" />
+		<ingredient name="mechanicalParts" count="30" />
+		<ingredient name="scrapCable" count="40" />
+	</recipe>
+	<recipe name="metalSignLetter_a" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_b" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_c" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_d" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_e" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_f" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_g" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_h" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_i" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_j" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_k" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_l" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_m" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_n" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_o" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_p" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+    </recipe>
+	<recipe name="metalSignLetter_q" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_r" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_s" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_t" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_u" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_v" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_w" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_x" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_y" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalSignLetter_z" count="1" craft_area="forge" craft_tool="toolAndDieSet" craft_time="5" craft_exp_gain="2">
+		<ingredient name="scrapIron" count="15" />
+	</recipe>
+	<recipe name="metalTrussingBlock" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="5" craft_exp_gain="5">
+		<ingredient name="unit_iron" count="100" />
+		<ingredient name="unit_clay" count="5" />
+	</recipe>
+	<recipe name="metalTrussingRamp" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="5" craft_exp_gain="5">
 			<ingredient name="unit_iron" count="100" />
 			<ingredient name="unit_clay" count="5" />
 		</recipe>
@@ -1929,12 +1940,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="vegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="0">
 		<ingredient name="flour" count="1" />
-		<ingredient name="potato" count="1" />
-		<ingredient name="corn" count="1" />
-		<ingredient name="carrot" count="1" />
-		<ingredient name="tomato" count="5" />
+		<ingredient name="veggieServing" count="3" />
+        <ingredient name="bottledWater" count="1" />
 	</recipe>
-	<recipe name="whitePicketFenceSheet" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="5" craft_exp_gain="5">
+    <recipe name="whitePicketFenceSheet" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="5" craft_exp_gain="5">
 		<ingredient name="plank" count="5" />
 	</recipe>
 	<recipe name="window03Wood" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="5" craft_exp_gain="5">
@@ -2054,6 +2063,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_iron" count="15" />
 		<ingredient name="unit_clay" count="1" />
 	</recipe>
+    <!-- JZMOD ADDED -->
     <recipe name="1x3Planks" count="1" craft_exp_gain="10" craft_time="5">
 		<ingredient name="nail" count="10" />
         <ingredient name="plank" count="30" />
@@ -2097,7 +2107,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="foodHoney" count="2" craft_time="30" craft_exp_gain="5">
 		<ingredient name="honeyComb" count="1" />
 	</recipe>
-	<recipe name="applePie" count="1" craft_area="stove" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
+	<recipe name="applePie" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="flour" count="1" />
 		<ingredient name="egg" count="1" />
 		<ingredient name="apple" count="1" />
@@ -2163,7 +2173,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="carrot" count="1" />
 		<ingredient name="flour" count="1" />
 	</recipe>
-
     <recipe name="methaneProducer" count="1" craft_area="metalWorkBench" craft_time="5" craft_exp_gain="20">
 		<ingredient name="scrapIron" count="50" />
 		<ingredient name="mechanicalParts" count="1" />
@@ -2210,11 +2219,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="ink Pen" count="1" />
 		<ingredient name="book" count="1" />
 	</recipe>
-	<recipe name="bread" count="1" craft_area="stove" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
+	<recipe name="bread" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="flour" count="1" />
 		<ingredient name="egg" count="1" />
 	</recipe>
-	<recipe name="brainShnitzel" count="1" craft_area="stove" craft_tool="fryingPan" craft_time="5" craft_exp_gain="0">
+	<recipe name="brainShnitzel" count="1" craft_area="campfire" craft_tool="fryingPan" craft_time="5" craft_exp_gain="0">
 		<ingredient name="animalFat" count="1" />
 		<ingredient name="brainMatter" count="3" />
 		<ingredient name="egg" count="1" />
@@ -2243,7 +2252,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="emptyJar" count="1" />
 		<ingredient name="scrapCable" count="1" />
 	</recipe>
-	<recipe name="boiledSandwich" count="1" craft_time="5" craft_exp_gain="0">
+	<recipe name="boiledSandwich" count="1" craft_time="5" >
 		<ingredient name="bread" count="1" />
 		<ingredient name="boiledMeat" count="1" />
 	</recipe>
@@ -2265,7 +2274,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="carpenterProfession" count="1" craft_area="researchDesk" craft_time="5" craft_exp_gain="1000">
 		<ingredient name="professionPage" count="20" />
 	</recipe>
-	<recipe name="carrotCake" count="1" craft_area="stove" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
+	<recipe name="carrotCake" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="flour" count="1" />
 		<ingredient name="egg" count="1" />
 		<ingredient name="carrot" count="1" />
@@ -2514,7 +2523,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="corn" count="15" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
-	<recipe name="feather" count="1" craft_area="stove" craft_tool="fryingPan" craft_time="5" craft_exp_gain="0">
+	<recipe name="feather" count="1" craft_area="campfire" craft_tool="fryingPan" craft_time="5" craft_exp_gain="0">
 		<ingredient name="scrapPlastics" count="2" />
 	</recipe>
     <recipe name="femur" count="1" craft_time="2" craft_exp_gain="25">
@@ -2555,7 +2564,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="stick" count="85" />
         <ingredient name="animalFat" count="1" />
 	</recipe>
-	<recipe name="fishNChips" count="1" craft_area="stove" craft_tool="fryingPan" craft_time="25" craft_exp_gain="0">
+	<recipe name="fishNChips" count="1" craft_area="campfire" craft_tool="fryingPan" craft_time="25" craft_exp_gain="0">
 		<ingredient name="fishFillet" count="2" />
 		<ingredient name="potato" count="2" />
 		<ingredient name="animalFat" count="1" />
@@ -2588,6 +2597,24 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="egg" count="1" />
 		<ingredient name="mushrooms" count="1" />
 	</recipe>
+    <recipe name="fruitSaladSmall" count="1" craft_time="20" >
+		<ingredient name="fruitServing" count="2" />
+	</recipe>
+    <recipe name="fruitSaladSmall" count="1" craft_area="prepTable" craft_tool="steakKnife" material_based="true" craft_time="5" >
+		<ingredient name="unit_fruit" count="2" />
+	</recipe>
+    <recipe name="fruitSaladMedium" count="1" craft_time="20" >
+		<ingredient name="fruitServing" count="3" />
+	</recipe>
+    <recipe name="fruitSaladMedium" count="1" craft_area="prepTable" craft_tool="steakKnife" material_based="true" craft_time="5" >
+		<ingredient name="unit_fruit" count="3" />
+	</recipe>
+    <recipe name="fruitSaladLarge" count="1" craft_time="20" >
+		<ingredient name="fruitServing" count="4" />
+	</recipe>
+    <recipe name="fruitSaladLarge" count="1" craft_area="prepTable" craft_tool="steakKnife" material_based="true" craft_time="5" >
+		<ingredient name="unit_fruit" count="4" />
+	</recipe>
 	<recipe name="fryingPan" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="10" craft_exp_gain="5">
 		<ingredient name="unit_clay" count="5" />
 		<ingredient name="unit_iron" count="200" />
@@ -2605,14 +2632,58 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="gasTankEmpty" count="1" craft_time="600" craft_exp_gain="0">
 		<ingredient name="gasTank" count="1" />
 	</recipe>
-	<recipe name="grilledSandwich" count="1" craft_time="5" craft_exp_gain="0">
+    <recipe name="goodMealSmall" count="1" craft_area="prepTable" craft_tool="cookingGrill" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="1" />
+        <ingredient name="unit_grain" count="1" />
+        <ingredient name="unit_veggie" count="1" />
+	</recipe>
+    <recipe name="goodMealSmall" count="1" craft_area="prepTable" craft_tool="cookingGrill" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="1" />
+        <ingredient name="unit_grain" count="1" />
+        <ingredient name="unit_fruit" count="1" />
+	</recipe>
+    <recipe name="goodMealSmall" count="1" craft_area="prepTable" craft_tool="cookingGrill" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="1" />
+        <ingredient name="unit_veggie" count="1" />
+        <ingredient name="unit_fruit" count="1" />
+	</recipe>
+    <recipe name="goodMealMedium" count="1" craft_area="prepTable" craft_tool="cookingGrill" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="2" />
+        <ingredient name="unit_grain" count="2" />
+        <ingredient name="unit_veggie" count="2" />
+	</recipe>
+    <recipe name="goodMealMedium" count="1" craft_area="prepTable" craft_tool="cookingGrill" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="2" />
+        <ingredient name="unit_grain" count="2" />
+        <ingredient name="unit_fruit" count="2" />
+	</recipe>
+    <recipe name="goodMealMedium" count="1" craft_area="prepTable" craft_tool="cookingGrill" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="2" />
+        <ingredient name="unit_veggie" count="2" />
+        <ingredient name="unit_fruit" count="2" />
+	</recipe>
+    <recipe name="goodMealLarge" count="1" craft_area="prepTable" craft_tool="cookingGrill" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="3" />
+        <ingredient name="unit_grain" count="3" />
+        <ingredient name="unit_veggie" count="3" />
+	</recipe>
+    <recipe name="goodMealLarge" count="1" craft_area="prepTable" craft_tool="cookingGrill" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="3" />
+        <ingredient name="unit_grain" count="3" />
+        <ingredient name="unit_fruit" count="3" />
+	</recipe>
+    <recipe name="goodMealLarge" count="1" craft_area="prepTable" craft_tool="cookingGrill" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="3" />
+        <ingredient name="unit_veggie" count="3" />
+        <ingredient name="unit_fruit" count="3" />
+	</recipe>
+    <recipe name="grilledSandwich" count="1" craft_time="5" craft_exp_gain="0">
 		<ingredient name="bread" count="1" />
 		<ingredient name="grilledMeat" count="1" />
 	</recipe>
 	<recipe name="grubs" count="1" craft_time="5" craft_exp_gain="2">
 		<ingredient name="dirtFragment" count="40" />
 	</recipe>
-
 	<recipe name="gunOil" count="1" craft_area="oilRefinery" craft_time="30" craft_exp_gain="10">
 		<ingredient name="tallow" count="2" />
 		<ingredient name="zincPowder" count="10" />
@@ -2620,6 +2691,30 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="hammerHead" count="1" craft_area="forge" material_based="true" craft_time="5" craft_exp_gain="2">
 		<ingredient name="unit_iron" count="10" />
 		<ingredient name="unit_clay" count="3" />
+	</recipe>
+    <recipe name="healthyMealSmall" count="1" craft_area="prepTable" craft_tool="cookingPot" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="1" />
+        <ingredient name="unit_grain" count="1" />
+        <ingredient name="unit_veggie" count="1" />
+        <ingredient name="unit_fruit" count="1" />
+	</recipe>
+    <recipe name="healthyMealMedium" count="1" craft_area="prepTable" craft_tool="cookingPot" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="2" />
+        <ingredient name="unit_grain" count="2" />
+        <ingredient name="unit_veggie" count="2" />
+        <ingredient name="unit_fruit" count="2" />
+	</recipe>
+    <recipe name="healthyMealLarge" count="1" craft_area="prepTable" craft_tool="cookingPot" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="3" />
+        <ingredient name="unit_grain" count="3" />
+        <ingredient name="unit_veggie" count="3" />
+        <ingredient name="unit_fruit" count="3" />
+	</recipe>
+   <recipe name="heartyStew" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="5" >
+		<ingredient name="proteinServing" count="1" />
+		<ingredient name="veggieServing" count="2" />
+        <ingredient name="flour" count="1" />
+        <ingredient name="bottledWater" count="1" />
 	</recipe>
 	<recipe name="hen" count="1" craft_area="chickenCoop2" craft_time="21600" craft_exp_gain="0">
 		<ingredient name="corn" count="50" />
@@ -2912,10 +3007,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="redHotPipe" count="1" craft_area="campfire" craft_time="5" craft_exp_gain="10">
 		<ingredient name="shortMetalPipe" count="1" />
 	</recipe>
-	<recipe name="redHotSteelPipe" count="1" craft_area="stove" craft_time="10" craft_exp_gain="10">
+	<recipe name="redHotSteelPipe" count="1" craft_area="campfire" craft_time="10" craft_exp_gain="10">
 		<ingredient name="shortSteelPipe" count="1" />
 	</recipe>
-	<recipe name="redHotPipe" count="1" craft_area="stove" craft_time="10" craft_exp_gain="10">
+	<recipe name="redHotPipe" count="1" craft_area="campfire" craft_time="10" craft_exp_gain="10">
 		<ingredient name="shortMetalPipe" count="1" />
 	</recipe>
 	<recipe name="riggedChest" count="1" craft_time="30" craft_exp_gain="10">
@@ -3028,7 +3123,43 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="partsHuntingRifle_receiver" count="1" />
 		<ingredient name="partsHuntingRifle_parts" count="1" />
 	</recipe>
-	<recipe name="skullCap" count="1" craft_area="armorTable" craft_tool="sewingNeedle" craft_time="5" craft_exp_gain="5">
+    <recipe name="simpleMealSmall" count="1" craft_area="prepTable" craft_tool="fryingPan" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="1" />
+        <ingredient name="unit_fruit" count="1" />
+	</recipe>
+    <recipe name="simpleMealSmall" count="1" craft_area="prepTable" craft_tool="fryingPan" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="1" />
+        <ingredient name="unit_veggie" count="1" />
+	</recipe>
+    <recipe name="simpleMealSmall" count="1" craft_area="prepTable" craft_tool="fryingPan" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="1" />
+        <ingredient name="unit_grain" count="1" />
+	</recipe>
+    <recipe name="simpleMealMedium" count="1" craft_area="prepTable" craft_tool="fryingPan" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="2" />
+        <ingredient name="unit_fruit" count="2" />
+	</recipe>
+    <recipe name="simpleMealMedium" count="1" craft_area="prepTable" craft_tool="fryingPan" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="2" />
+        <ingredient name="unit_veggie" count="2" />
+	</recipe>
+    <recipe name="simpleMealMedium" count="1" craft_area="prepTable" craft_tool="fryingPan" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="2" />
+        <ingredient name="unit_grain" count="2" />
+	</recipe>
+    <recipe name="simpleMealLarge" count="1" craft_area="prepTable" craft_tool="fryingPan" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="3" />
+        <ingredient name="unit_fruit" count="3" />
+	</recipe>
+    <recipe name="simpleMealLarge" count="1" craft_area="prepTable" craft_tool="fryingPan" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="3" />
+        <ingredient name="unit_veggie" count="3" />
+	</recipe>
+    <recipe name="simpleMealLarge" count="1" craft_area="prepTable" craft_tool="fryingPan" material_based="true" craft_time="5" >
+		<ingredient name="unit_protein" count="3" />
+        <ingredient name="unit_grain" count="3" />
+	</recipe>
+    <recipe name="skullCap" count="1" craft_area="armorTable" craft_tool="sewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="3" />
 		<ingredient name="fiberRope" count="1" />
 		<ingredient name="coal" count="1" />
@@ -3257,6 +3388,24 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cloth" count="6" />
 		<ingredient name="fiberRope" count="3" />
 	</recipe>
+    <recipe name="veggieSaladSmall" count="1" craft_time="20" >
+		<ingredient name="veggieServing" count="2" />
+	</recipe>
+    <recipe name="veggieSaladSmall" count="1" craft_area="prepTable" craft_tool="steakKnife" material_based="true" craft_time="5" >
+		<ingredient name="unit_veggie" count="2" />
+	</recipe>
+    <recipe name="veggieSaladMedium" count="1" craft_time="20" >
+		<ingredient name="veggieServing" count="3" />
+	</recipe>
+    <recipe name="veggieSaladMedium" count="1" craft_area="prepTable" craft_tool="steakKnife" material_based="true" craft_time="5" >
+		<ingredient name="unit_veggie" count="3" />
+	</recipe>
+    <recipe name="veggieSaladLarge" count="1" craft_time="20" >
+		<ingredient name="veggieServing" count="4" />
+	</recipe>
+    <recipe name="veggieSaladLarge" count="1" craft_area="prepTable" craft_tool="steakKnife" material_based="true" craft_time="5" >
+		<ingredient name="unit_veggie" count="4" />
+	</recipe>
 	<recipe name="venisonSteak" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="venisonTenderloin" count="1" />
 		<ingredient name="mushrooms" count="1" />
@@ -3368,12 +3517,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="stoneMill" count="1" craft_area="forge" material_based="true" craft_time="300" craft_exp_gain="25">
 		<ingredient name="unit_clay" count="50" />
 		<ingredient name="unit_stone" count="250" />
-	</recipe>
-	<recipe name="stove" count="1" craft_area="anvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="75">
-		<ingredient name="scrapIron" count="100" />
-		<ingredient name="shortMetalPipe" count="6" />
-		<ingredient name="mechanicalParts" count="2" />
-		<ingredient name="nutAndBolt" count="4" />
 	</recipe>
 	<recipe name="wrench" count="1" craft_area="anvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="10">
 		<ingredient name="shortMetalPipe" count="10" />

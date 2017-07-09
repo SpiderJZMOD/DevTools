@@ -594,7 +594,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 <material id="Msteel">
 	<property name="damage_category" value="metal" />
 	<property name="surface_category" value="metal" />
-	<property name="forge_category" value="iron" />
+	<property name="forge_category" value="steel" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="metal" />
 	<property name="stability_glue" value="320" />
@@ -607,7 +607,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 <material id="MstainlessSteel">
 	<property name="damage_category" value="metal" />
 	<property name="surface_category" value="metal" />
-	<property name="forge_category" value="iron" />
+	<property name="forge_category" value="steel" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="metal" />
 	<property name="stability_glue" value="320" />

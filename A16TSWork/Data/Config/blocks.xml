@@ -15980,20 +15980,18 @@ kind of free
 		<property name="CraftingSkillGroup" value="Engineering" />
 		<property name="SellableToTrader" value="false" />
 	</block>
-    <block id="87" name="stove">
-		<property name="Class" value="Campfire" />
+    <block id="87" name="prepTable">
+  		<property name="Class" value="Forge" />
 		<property name="Material" value="Mmetal_thin" />
-		<property name="MultiBlockDim" value="1,2,1" />
-        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
-        <property name="Mesh" value="models"/>
-        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
-        <!--SDX<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#oven?oven" />-->
-		<property name="CustomIcon" value="ui_game_symbol_Stove" />
+		<property name="Shape" value="New"/>
+        <property name="Model" value="counter"/>
+        <property name="IsDecoration" value="true"/>
+        <property name="Texture" value="346,345,266,345,345,345"/>
+       	<property name="CustomIcon" value="ui_game_symbol_Stove" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="IsTerrainDecoration" value="true" />
-		<property name="ParticleName" value="campfire" />
-		<property name="ParticleOffset" value="0.5,0,0.5" />
+		<property name="ParticleName" value="burning_barrel"/>
+        <property name="ParticleOffset" value="0.5,0,0.5"/>
 		<property name="Stacknumber" value="1" />
 		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
@@ -16001,11 +15999,12 @@ kind of free
 		<property name="MaxDamage" value="100" />
 		<property name="BuffsWhenWalkedOn" value="blockBurn3Trigger" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
-		<property class="Workstation">
-			<property name="CraftingAreaRecipes" value="campfire,stove" />
-			<property name="Modules" value="tools,output,fuel,input" />
+        <property class="Workstation">
+			<property name="CraftingAreaRecipes" value="prepTable" />
+			<property name="Modules" value="tools,output,material_input,fuel" />
+			<property name="InputMaterials" value="fruit,grain,veggie,protein" />
 		</property>
-		<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
+        <property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
         <drop event="Destroy" count="0" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="DescriptionKey" value="workStoveDesc" />
