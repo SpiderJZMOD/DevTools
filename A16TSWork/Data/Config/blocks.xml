@@ -3096,7 +3096,7 @@ group desc for stuff like metal siding
 	<property name="BuffsWhenWalkedOn" value="blockBurn3Trigger"/>
 	<property name="ActiveRadiusEffects" value="+heatSource(3)"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input"/>
+		<property name="Modules" value="tools,output,input,fuel"/>
 		<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	</property>
 	<property class="RepairItems"> <property name="rockSmall" value="8"/> </property>
@@ -4308,7 +4308,7 @@ group desc for stuff like metal siding
 	<property name="HeatMapFrequency" value="25"/>
 	<property name="ActiveRadiusEffects" value="+heatSource(3)"/>
 	<property class="Workstation">
-		<property name="Modules" value="output,input"/>
+		<property name="Modules" value="output,input,fuel"/>
 	</property>
 	<property class="RepairItems">
 		<property name="forgedIron" value="10"/>
@@ -5482,7 +5482,7 @@ kind of free
 	<property name="ActiveRadiusEffects" value="+heatSource(3)"/>
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="forge"/>
-		<property name="Modules" value="tools,output,material_input"/>
+		<property name="Modules" value="tools,output,material_input,fuel"/>
 		<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
 	</property>
 	<property class="RepairItems">
@@ -13809,7 +13809,7 @@ kind of free
 	<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
 	<property name="Stacknumber" value="1"/>
 	<property class="Workstation">
-		<property name="Modules" value="output"/>
+		<property name="Modules" value="output,fuel"/>
 		<property name="CraftingAreaRecipes" value="player,workbench"/>
 	</property>
 	<property class="RepairItems">
@@ -15969,7 +15969,7 @@ kind of free
 		<property name="HeatMapTime" value="1200" />
 		<property name="MaxDamage" value="100" />
 		<property class="Workstation">
-			<property name="Modules" value="output,input" />
+			<property name="Modules" value="output,input,fuel" />
 		</property>
 		<property class="RepairItems"> <property name="rockSmall" value="100" /> </property>
 		<drop event="Harvest" name="rockSmall" count="10" />
@@ -16033,7 +16033,7 @@ kind of free
 		</property>
        	<property name="Group" value="Building" />
 		<property class="Workstation">
-			<property name="Modules" value="tools,output" />
+			<property name="Modules" value="tools,output,fuel" />
 		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
@@ -16058,7 +16058,7 @@ kind of free
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
 		<property class="Workstation">
-			<property name="Modules" value="output" />
+			<property name="Modules" value="output,fuel" />
 		</property>
 		<property class="RepairItems"> <property name="plank" value="10" /> </property>
         <property name="DescriptionKey" value="ResearchDeskDesc" />
@@ -16114,7 +16114,7 @@ kind of free
 		<property name="Class" value="Campfire" />
 		<property name="Stacknumber" value="1" />
 		<property class="Workstation">
-			<property name="Modules" value="output" />
+			<property name="Modules" value="output,fuel" />
 		</property>
 		<property class="RepairItems"> <property name="forgedIron" value="20" /> </property>
         <property name="CustomIcon" value="ui_game_symbol_OilRefinery" />
@@ -16141,7 +16141,7 @@ kind of free
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
 		<property class="Workstation">
-			<property name="Modules" value="output" />
+			<property name="Modules" value="output,fuel" />
 		</property>
         <property class="RepairItems"> <property name="scrapIron" value="50" /> </property>
        	<property name="DescriptionKey" value="BulletPressDesc" />
@@ -16191,7 +16191,7 @@ kind of free
 		<property name="CraftingSkillGroup" value="Engineering" />
 		<property class="RepairItems"> <property name="rockSmall" value="50" /> </property>
        	<property class="Workstation">
-			<property name="Modules" value="output" />
+			<property name="Modules" value="output,fuel" />
 		</property>
         <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
@@ -16215,39 +16215,14 @@ kind of free
 		<property name="HeatMapFrequency" value="25" />
 		<property name="Stacknumber" value="1" />
 		<property class="Workstation">
-			<property name="Modules" value="tools,output" />
+			<property name="Modules" value="tools,output,fuel" />
 		</property>
         <property class="RepairItems"> <property name="scrapIron" value="50" /> </property>
         <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 	</block>
-   <block id="96" name="batteryPack">
-		<property name="Class" value="Campfire" />
-		<property name="Material" value="Mmetal_thin" />
-        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
-        <property name="Mesh" value="models"/>
-        <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
-		<!--SDX<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#batteries?BatteryBlock" />-->
-		<property name="CustomIcon" value="ui_game_symbol_batteryPack" />
-        <property name="DescriptionKey" value="workBatteryPackDesc" />
-		<property name="HeatMapStrength" value="1" />
-		<property name="HeatMapTime" value="1200" />
-		<property name="HeatMapFrequency" value="25" />
-		<property name="Stacknumber" value="1" />
-		<property class="RepairItems">
-			<property name="forgedIron" value="10" />
-		</property>
-       	<property name="Group" value="Building" />
-		<property class="Workstation">
-			<property name="Modules" value="tools,output" />
-		</property>
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" count="0" />
-	</block>
-	<block id="97" name="chickenCoop">
+  	<block id="97" name="chickenCoop">
 		<!--empty-->
 		<property name="Material" value="wood" />
         <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
@@ -16790,7 +16765,7 @@ kind of free
 		<property name="ModelOffset" value="0,0,0" />
         <drop event="Harvest" name="woodBranch" count="15" />
         <drop event="Destroy" name="narrowLog" count="6,14" prob="1" />
-		<drop event="Destroy" name="Apple" count="3,15" prob="1" />
+		<drop event="Destroy" name="apple" count="3,15" prob="1" />
 	</block>
 	<block id="700" name="carrotSeed">
 		<property name="Extends" value="cropsHarvestableMaster" />
@@ -17120,7 +17095,7 @@ kind of free
     <block id="964" name="narrowLog">
         <property name="Material" value="wood" />
         <property name="Weight" value="200" />
-        <property name="CustomIcon" value="powerPoleWoodPillar50" />
+        <property name="CustomIcon" value="woodPillar50" />
 		<property name="MaxDamage" value="400" />
 		<property name="Class" value="Trunk" />
 		<property name="Shape" value="New" />

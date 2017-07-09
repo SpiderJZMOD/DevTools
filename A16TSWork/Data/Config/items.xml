@@ -7316,7 +7316,7 @@ Mesh files no longer used:
 </item>
 
 
-<item id="702" name="foodYuccaJuice">
+<item id="702" name="veggieJuice">
 	<property name="Meshfile" value="Items/Food/yucca_juicePrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="3"/>
@@ -7526,7 +7526,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="-10" />
 		<property name="Gain_wellness" value="-0.1" />
 		<property name="Gain_stamina" value="-20" />
-		<property name="Sound_start" value="UseActions/player_eating" />
+		<property name="Sound_start" value="player_eating" />
 		<property name="Create_item" value="canEmpty" />
 	</property>
 	<property name="Group" value="food/Cooking"/>
@@ -7670,7 +7670,7 @@ Mesh files no longer used:
 	<property name="Group" value="food/Cooking"/>
 </item>
 
-<item id="732" name="shamSandwich">
+<item id="732" name="moldyShamSandwich">
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -7679,6 +7679,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
+    <property name="CustomIcon" value="shamSandwich"/>
 	<property name="CraftingIngredientTime" value="30"/>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
@@ -8393,14 +8394,13 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
 
-<!-- <item id="923" name="sawedoffPumpShotgunSchematic">
+<item id="923" name="sawedoffPumpShotgunSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunSawedOffPumpShotgun"/>
-		<property name="Skills_to_gain" value="gunSmithingCraft"/>
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
-</item> -->
+</item> 
 
 <item id="924" name="pumpShotgunSchematic">
 	<property name="Extends" value="schematicMaster"/>
@@ -9333,7 +9333,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="1" />
 			<property name="Gain_sickness" value="0" />
-			<property name="Sound_start" value="UseActions/player_eating" />
+			<property name="Sound_start" value="player_eating" />
 			<property name="Buff" value="dysentery,brainFreeze" />
 			<property name="Buff_chance" value="0.05,1" />
 		</property>
@@ -11157,7 +11157,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Ammo/Weapons,Basics" />
 	<property name="DescriptionKey" value="woodSpearDesc" />
-	<property name="ActionSkillGroup" value="bladeWeaponsCraft" />
+	<property name="ActionSkillGroup" value="bladeWeaponsAction" />
 	<property name="CraftingSkillGroup" value="woodSpearCraft" />
 </item>
 <item id="1550" name="woodJavelin">
@@ -11256,10 +11256,10 @@ Mesh files no longer used:
 <item id="1553" name="oldAxe">
 	<property name="Extends" value="fireaxeIron" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
-   <!--SDX    <property name="Meshfile" value="#axe1?AXE5" /> -->
+    <!--SDX    <property name="Meshfile" value="#axe1?AXE5" /> -->
 	<property name="HoldType" value="2" />
 	<property name="RepairTools" value="NoRepair" />
-       <property name="CustomIcon" value="ui_game_symbol_axe02" />
+    <property name="CustomIcon" value="ui_game_symbol_axe02" />
 	<property class="Action0">
 		<property name="Delay" value="1.3" />
 		<property name="Buff" value="bleeding,criticalBlunt" />
@@ -11521,66 +11521,18 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="bluntWeaponsCraft" />
 	<property name="CraftingSkillGroup" value="spikedClubsCraft" />
 </item>
-<item id="1562" name="tomahawk">
+<item id="1562" name="firemanAxe">
 	<property name="Extends" value="fireaxeIron" />
-	<property name="HoldType" value="2" />
-	<property name="CustomIcon" value="ui_game_symbol_tomahawk" />
-   <!--SDX    <property name="Meshfile" value="#ZdWeapons?Tomahawk" />
-	<property name="HandMeshfile" value="#ZdWeapons?Tomahawk" />
-	<property name="DropMeshfile" value="#ZdWeapons?Tomahawk" /> -->
-	<property name="RepairTools" value="SharpeningStone" />
-    <property name="DegradationBreaksAfter" value="true" />
-	<property name="FuelValue" value="1" />
-	<property name="Weight" value="200" />
 	<property class="Action0">
-		<property name="Delay" value="1.3" />
-		<property name="Range" value="2.7" />
-        <property name="Stamina_usage" value="6" />
-		<property name="Buff" value="bleeding" />
-		<property name="Buff_chance" value=".5" />
-		<property name="DamageBonus.wood" value="7" />
-		<property name="DamageBonus.head" value="60" />
-        <property name="DamageBonus.glass" value="5" />
-		<property name="DamageBonus.stone" value="1" />
-		<property name="DamageBonus.cloth" value="5" />
-		<property name="DamageBonus.organic" value="10" />
-        <property name="DamageBonus.metal" value="1" />
-        <property name="DamageBonus.earth" value="0.3" />
-        <property name="DamageBonus.steel" value="0" />
-        <property name="DamageBonus.hardStone" value="0" />
-        <property name="ActionExp" value="1" />
-		<property name="ActionExpBonusMultiplier" value="4" />
+		<property name="ToolCategory.Door" value="0" param1="25"/>
 	</property>
 	<property class="Action1">
-        <property name="Class" value="Melee" />
-		<property name="Delay" value="5.1" />
-		<property name="Range" value="2.7" />
-        <property name="Stamina_usage" value="9" />
-        <property name="Buff" value="bleeding" />
-		<property name="Buff_chance" value=".6" />
-		<property name="DamageBonus.wood" value="9" />
-		<property name="DamageBonus.head" value="90" />
-        <property name="DamageBonus.glass" value="10" />
-		<property name="DamageBonus.stone" value="1.5" />
-		<property name="DamageBonus.cloth" value="15" />
-		<property name="DamageBonus.organic" value="10" />
-        <property name="DamageBonus.metal" value="1.5" />
-        <property name="DamageBonus.earth" value="0.45" />
-        <property name="DamageBonus.steel" value="0" />
-		<property name="DamageBonus.hardStone" value="0" />
-        <property name="ActionExp" value="1" />
-		<property name="ActionExpBonusMultiplier" value="4" />
+        <property name="ToolCategory.Door" value="0" param1="25"/>
 	</property>
-	<property class="Attributes">
-		<property name="EntityDamage" value="6,15" />
-		<property name="BlockDamage" value="2,5" />
-		<property name="DegradationMax" value="100,600" />
-        <property name="DegradationRate" value="10,5" />
-		<property name="DismembermentBaseChance" value="0.05,0.4" />
-		<property name="DismembermentBonus" value="0.0004,0.005" />
-	</property>
-    <property name="DescriptionKey" value="tomahawkDesc" />
-    <property name="ActionSkillGroup" value="bladeWeaponsCraft" />
+    <property name="CustomIcon" value="ui_game_symbol_tomahawk" />
+	<property name="DescriptionKey" value="firemanAxeDesc" />
+    <property name="ActionSkillGroup" value="bladeWeaponsAction" />
+    <property name="CraftingSkillGroup" value="firemanAxeCraft" />
 </item>
 <item id="1563" name="katana">
 	<property name="Extends" value="machete" />
@@ -11616,7 +11568,7 @@ Mesh files no longer used:
 	<property name="DismembermentBaseChance" value="0.007,1" />
 	<property name="DismembermentBonus" value="0.001,1" />
 	</property>
-	<property name="CraftingSkillGroup" value="bladeWeaponsCraft" />
+	<property name="CraftingSkillGroup" value="katanaCraft" />
 	<property name="DescriptionKey" value="katanaMichonneDesc" />
 	<property name="CustomIcon" value="ui_game_symbol_katanamichonne" />
 </item>
@@ -12199,15 +12151,15 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="handSawDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1599" name="claiming Your Shit">
+<item id="1599" name="claimingYourShit">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="keystoneRock,keystoneIron,keystoneSteel" />
+		<property name="Recipes_to_learn" value="keystoneStone,keystoneIron,keystoneSteel" />
 	</property>
 	<property name="DescriptionKey" value="skillBookDesc" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1600" name="bed Book">
+<item id="1600" name="bedBook">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="bed02" />
@@ -12216,7 +12168,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="ui_game_symbol_blockbook" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1601" name="camo Net Book">
+<item id="1601" name="camoNetBook">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="camoNetBlock,camoNetRamp,camoNetSheet,camoNetCNRFull" />
@@ -12225,7 +12177,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="ui_game_symbol_blockbook" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1602" name="glass Book">
+<item id="1602" name="glassBook">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="glassCTRSheet,glassShowerBlock,glassIndustrialCTRPlate,glassIndustrial02CTRPlate,glassBusinessSheet,glassBusinessCTRSheet,glassBusinessBlock" />
@@ -12234,7 +12186,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="ui_game_symbol_blockbook" />
 	<property name="Group" value="Books" />
 </item>
-<item id="1603" name="awning Book">
+<item id="1603" name="awningBook">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="awningBlock,awningRamp" />
@@ -13175,6 +13127,7 @@ Mesh files no longer used:
 <item id="1730" name="bread">
 	<property name="Extends" value="foodMaster" />
 	<property name="DescriptionKey" value="BreadDesc" />
+    <property name="CustomIcon" value="ui_game_symbol_bread" />
     <property class="Action1">
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="-4" />
@@ -14854,11 +14807,59 @@ Mesh files no longer used:
 	<property name="Weight" value="2" />
 </item>
 <item id="1871" name="brassKnuckles">
-	<property name="Extends" value="itemMaster" />
-	<property name="CustomIcon" value="ui_game_symbol_brassKnuckles" />
-	<property name="DescriptionKey" value="brassKnucklesDesc" />
-	<property name="Material" value="brass" />
+	<property name="Extends" value="clubMaster"/>
+  	<property name="Material" value="brass" />
 	<property name="Weight" value="3" />
+	<property name="HoldType" value="2"/>
+    <property name="DegradationBreaksAfter" value="true" />
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="FuelValue" value="0"/>
+    <property name="SellableToTrader" value="false"/>
+    <property class="Action0"> 
+		<property name="Delay" value="0.75"/>
+		<property name="Range" value="2.5"/>
+		<property name="Block_range" value="2.5"/>
+		<property name="Stamina_usage" value="4"/>
+		<property name="DamageBonus.head" value="20"/>
+		<property name="DamageBonus.glass" value="20"/> 
+		<property name="DamageBonus.organic" value="1" />            
+        <property name="DamageBonus.cloth" value="0.5" />
+        <property name="DamageBonus.earth" value="0.5" />
+        <property name="DamageBonus.stone" value="0.5" />
+        <property name="DamageBonus.hardStone" value="0" />
+        <property name="DamageBonus.wood" value="1" />
+        <property name="DamageBonus.metal" value="1" />
+        <property name="DamageBonus.steel" value="0" />
+        <property name="ActionExp" value="1"/>
+		<property name="ActionExpBonusMultiplier" value="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="5"/>
+	</property>
+    <property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="5"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="0"/>
+        <property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="-10"/>
+        <property name="Sound_start" value="SlowSwoosh"/>
+		<property name="Buff" value="fightOffEnemy"/>
+		<property name="Consume" value="false"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="5,10"/>
+		<property name="BlockDamage" value="10,20"/>
+		<property name="DegradationMax" value="50,600"/>
+		<property name="DegradationRate" value="5,1"/>
+	</property>
+    <property name="CustomIcon" value="ui_game_symbol_brassKnuckles" />
+	<property name="DescriptionKey" value="brassKnucklesDesc" />
+	<property name="ActionSkillGroup" value="upperBody"/>
+	<property name="CraftingSkillGroup" value="brassKnucklesCraft"/>
+	<property name="RepairExpMultiplier" value="5.5"/> 
+  
+	
+	
 </item>
 <item id="1872" name="stonePlate">
 	<property name="Extends" value="itemMaster" />
@@ -15281,4 +15282,20 @@ Mesh files no longer used:
 	<property name="Group" value="Books" />
 </item>
 
+<item id="1931" name="craftedGunsSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="blunderbuss,craftedRifle"/>
+	</property>
+</item>
+<item id="1932" name="moldyFruit">
+    <property name="Extends" value="moldyShamSandwich"/>  
+	<property name="CustomIcon" value="shamSandwich"/>
+	
+</item>
+<item id="1933" name="moldyVeggies">
+	<property name="Extends" value="moldyShamSandwich"/>  
+	<property name="CustomIcon" value="shamSandwich"/>
+</item>
 </items>
