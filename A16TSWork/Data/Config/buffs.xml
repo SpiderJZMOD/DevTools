@@ -129,7 +129,7 @@ built-in buff variables:
 <buff id="isPlayer" buffif="+full > 0" />
 
 <!-- This buff is called on the first time the player spawns into the game and on respawning the player after each death. Can not add buffs. -->
-<buff id="initvars" duration="1" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0)"/>
+<buff id="initvars" duration="1" actions="setvar(nutrition,1);setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0)"/>
 
 <buff id="bleeding" duration="60" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
@@ -851,7 +851,8 @@ This requires a 50+ food bar:
     <buff id="nutrition_35_Trigger" duration="1" actions="increment(nutrition, 35, 0, 0, 1)"/>
     <buff id="nutritionFade" buffif="nutrition greater 0" debuffif="nutrition less 1" actions="increment(nutrition, -1, 750, 0, 0);min(nutrition, 0)" />
     <!--JZMOD GOOD NUTRITION-->
-    <buff id="goodNutrition1Tag" buffif="nutrition greater 14" debuffif="nutrition lequal 14" actions="setvar(malnourished, 0)" />
+    <buff id="goodNutrition1Tag" buffif="nutrition greater 14" debuffif="nutrition lequal 14" actions="buff(malnourishedReset)" />
+    <buff id="malnourishedReset" requires="malnourished gequal 1" actions="setvar(malnourished, 0)" />
     <buff id="goodNutrition1" mutex="goodNutrition2,goodNutrition3" buffif="nutrition greater 14" debuffif="nutrition lequal 14" name_key="Good Diet" tooltip_key="Feeling Good!" description_key="Your eating a more balanced diet now and can benifit from wellness and health gains from foods." icon="ui_game_symbol_limp" />
 	<buff id="goodNutrition2Tag" buffif="nutrition greater 24" debuffif="nutrition lequal 24" />
     <buff id="goodNutrition2" mutex="goodNutrition3" buffif="nutrition greater 24" debuffif="nutrition lequal 24" name_key="Balanced Diet" actions="debuff(goodNutrition1)" type="staminaup" tooltip_key="Feeling Great!" description_key="Your eating a very balanced diet now because of this you can regain stamina quicker and heal from injurys faster now." icon="ui_game_symbol_limp" >
