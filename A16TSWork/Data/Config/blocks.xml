@@ -15910,7 +15910,7 @@ kind of free
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh" />
-		<property name="CustomIcon" value="ui_game_symbol_SetUpASpikeTrap" />
+		<property name="CustomIcon" value="ui_game_symbol_trapSpikes01" />
 		<property name="Collide" value="movement,melee,bullet,rocket" />
 		<property name="FuelValue" value="15" />
 		<property name="CustomIcon" value="trapSpikesNew" />
@@ -15937,6 +15937,7 @@ kind of free
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="LootContainers/chest01" param1="main_mesh" />
+		<property name="CustomIcon" value="ui_game_symbol_secureStorageChest" />
 		<property name="Place" value="TowardsPlacer" />
 		<property name="Group" value="Tools/Traps" />
 		<property class="Explosion">
@@ -15959,8 +15960,8 @@ kind of free
         <property name="Mesh" value="models"/>
         <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
         <!--SDX	<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#millStone?millStone" />
-		<property name="CustomIcon" value="ui_game_symbol_StoneMill" />-->
+		<property name="Model" value="#millStone?millStone" /> -->
+		<property name="CustomIcon" value="ui_game_symbol_stoneMill" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="IsTerrainDecoration" value="true" />
@@ -15987,7 +15988,7 @@ kind of free
         <property name="Model" value="counter"/>
         <property name="IsDecoration" value="true"/>
         <property name="Texture" value="346,345,266,345,345,345"/>
-       	<property name="CustomIcon" value="ui_game_symbol_Stove" />
+       	<property name="CustomIcon" value="ui_game_symbol_stove" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="ParticleName" value="burning_barrel"/>
@@ -16021,7 +16022,7 @@ kind of free
         <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
 		<!--SDX<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#metalBench?metalBench" />-->
-		<property name="CustomIcon" value="ui_game_symbol_MetalWorkBench" />
+		<property name="CustomIcon" value="ui_game_symbol_metalWorkBench" />
 		<property name="MultiBlockDim" value="2,1,1" />
 		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
@@ -16091,7 +16092,7 @@ kind of free
 			<property name="Modules" value="output,fuel,material_input" />
 			<property name="InputMaterials" value="steel,iron,coal,clay" />
 		</property>
-		<property name="CustomIcon" value="ui_game_symbol_BlastFurnace" />
+		<property name="CustomIcon" value="ui_game_symbol_blastFurnace" />
 		<property name="DescriptionKey" value="blastFurnaceDesc" />
 		<property name="CraftingSkillGroup" value="engineering" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
@@ -16116,8 +16117,8 @@ kind of free
 			<property name="Modules" value="output,fuel" />
 		</property>
 		<property class="RepairItems"> <property name="forgedIron" value="20" /> </property>
-        <property name="CustomIcon" value="ui_game_symbol_OilRefinery" />
-		<property name="DescriptionKey" value="OilRefineryDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_oilRefinery" />
+		<property name="DescriptionKey" value="oilRefineryDesc" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="bellows" count="1" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
@@ -16132,7 +16133,7 @@ kind of free
         <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
 		<!--SDX<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#ammoreloder?ammunitionReloader1" />-->
-		<property name="CustomIcon" value="ui_game_symbol_BulletPress" />
+		<property name="CustomIcon" value="ui_game_symbol_bulletPress" />
 		<property name="Class" value="Campfire" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
 		<property name="Stacknumber" value="1" />
@@ -16165,8 +16166,8 @@ kind of free
 			<property name="Modules" value="output" />
 		</property>
 		<property class="RepairItems"> <property name="stick" value="50" /> </property>
-        <property name="DescriptionKey" value="DryingRackDesc" />
-		<property name="CustomIcon" value="DryingRack" />
+        <property name="DescriptionKey" value="dryingRackDesc" />
+		<property name="CustomIcon" value="ui_game_symbol_dryingRack" />
 		<property name="Group" value="Clothing" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
@@ -16181,7 +16182,7 @@ kind of free
         <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
 		<!--SDX<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#MortarAndPestle1?MortarAndPestle1Prefab" />-->
-		<property name="CustomIcon" value="ui_game_symbol_MortarAndPestle" />
+		<property name="CustomIcon" value="ui_game_symbol_mortarAndPestle" />
 		<property name="Class" value="Campfire" />
 		<property name="Stacknumber" value="1" />
 		<property name="HeatMapStrength" value="1" />
@@ -16195,7 +16196,7 @@ kind of free
         <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
-        <property name="DescriptionKey" value="MortarAndPestleDesc" />
+        <property name="DescriptionKey" value="mortarAndPestleDesc" />
 		<property name="Group" value="Basics" />
 	</block>
     <block id="95" name="anvil">
@@ -16206,7 +16207,7 @@ kind of free
         <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
 		<!--SDX<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#forge1?anvilPrefab" />-->
-		<property name="CustomIcon" value="ui_game_symbol_Anvil" />
+		<property name="CustomIcon" value="ui_game_symbol_anvil" />
 		<property name="Class" value="Campfire" />
 		<property name="Group" value="Basics,Building" />
 		<property name="HeatMapStrength" value="2" />
@@ -16229,7 +16230,7 @@ kind of free
         <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
 		<!--SDX<property name="Model" value="#ChickenCoop0?ChickenCoop0" />
         <property name="Shape" value="ModelEntity" />-->
-		<property name="CustomIcon" value="ui_game_symbol_ChickenCoop" />
+		<property name="CustomIcon" value="ui_game_symbol_chickenCoop" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="CanPickup" value="false" />
 		<property class="UpgradeBlock">
@@ -16241,7 +16242,7 @@ kind of free
 		<property class="RepairItems">
 			<property name="plantFibers" value="10" />
 		</property>
-        <property name="DescriptionKey" value="ChickenCoopDesc" />
+        <property name="DescriptionKey" value="chickenCoopDesc" />
 		<drop event="Destroy" name="chickenCoop" count="1" />
 	</block>
 	<block id="98" name="chickenCoop1">
@@ -16252,7 +16253,7 @@ kind of free
         <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
 		<!--SDX<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#ChickenCoop1?ChickenCoop1" />-->
-		<property name="CustomIcon" value="ui_game_symbol_ChickenCoop" />
+		<property name="CustomIcon" value="ui_game_symbol_chickenCoop" />
 		<property name="Class" value="Campfire" />
 		<property name="CanPickup" value="false" />
 		<property class="RepairItems">
@@ -16273,7 +16274,7 @@ kind of free
 		<!--Chick-->
 		<property name="Extends" value="chickenCoop1" />
         <!--SDX<property name="Model" value="#ChickenCoop2?ChickenCoop2" />-->
-		<property name="CustomIcon" value="ui_game_symbol_ChickenCoop" />
+		<property name="CustomIcon" value="ui_game_symbol_chickenCoop" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="chickenCoop3" />
 			<property name="Item" value="Hen" />
@@ -16288,7 +16289,7 @@ kind of free
         <property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
 		<!--SDX<property name="Model" value="#ChickenCoop3?ChickenCoop3" />
         <property name="Shape" value="ModelEntity" />-->
-		<property name="CustomIcon" value="ui_game_symbol_ChickenCoop" />
+		<property name="CustomIcon" value="ui_game_symbol_chickenCoop" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="Class" value="Campfire" />
 		<property name="CanPickup" value="false" />
@@ -16311,7 +16312,7 @@ kind of free
 		<property name="Material" value="Mmetal_thin" />
 		<property name="Class" value="Campfire" />
 		<property name="Stacknumber" value="1" />
-        <property name="CustomIcon" value="ui_game_symbol_workBiogasDigester" />
+        <property name="CustomIcon" value="ui_game_symbol_methaneProducer" />
 	    <property name="ModelOffset" value="0,0.5,0" />
 		<property class="RepairItems"> <property name="scrapIron" value="50" /> </property>
         <property class="Workstation">
@@ -16332,7 +16333,7 @@ kind of free
 		<!--sdx<property name="Shape" value="ModelEntity" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="#armorAssambler?armorAssambler" />-->
-		<property name="CustomIcon" value="ui_game_symbol_ArmorTable" />
+		<property name="CustomIcon" value="ui_game_symbol_armorTable" />
 		<property name="Stacknumber" value="1" />
 		<property name="CanPickup" value="false" />
 		<property name="Class" value="Campfire" />
@@ -16343,7 +16344,7 @@ kind of free
 			<property name="Modules" value="output,tools,fuel" />
 		</property>
 		<property class="RepairItems"> <property name="plank" value="10" /> </property>
-       	<property name="DescriptionKey" value="ArmorTableDesc" />
+       	<property name="DescriptionKey" value="armorTableDesc" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Clothing" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
@@ -16369,7 +16370,7 @@ kind of free
         <property name="Model" value="LootContainers/suitcase" param1="main_mesh"/>
         <property name="IsTerrainDecoration" value="true"/>
         <property name="CanPickup" value="true" />
-        <property name="CustomIcon" value="ui_game_symbol_Soldier" />
+        <property name="CustomIcon" value="ui_game_symbol_soldier" />
 		<property name="DescriptionKey" value="professionChoiceDesc" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="soldierSupplies" />
@@ -16386,7 +16387,7 @@ kind of free
 	<block id="105" name="doctorProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Doctor" />
+        <property name="CustomIcon" value="ui_game_symbol_doctor" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="doctorSupplies" />
 		</property>
@@ -16404,7 +16405,7 @@ kind of free
 	<block id="107" name="bouncerProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Bouncer" />
+        <property name="CustomIcon" value="ui_game_symbol_bouncer" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="bouncerSupplies" />
 		</property>
@@ -16422,7 +16423,7 @@ kind of free
 	<block id="109" name="chemistProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Chemist" />
+        <property name="CustomIcon" value="ui_game_symbol_chemist" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="chemistSupplies" />
 		</property>
@@ -16440,7 +16441,7 @@ kind of free
 	<block id="111" name="carpenterProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Carpenter" />
+        <property name="CustomIcon" value="ui_game_symbol_carpenter" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="carpenterSupplies" />
 		</property>
@@ -16458,7 +16459,7 @@ kind of free
 	<block id="113" name="copProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Cop" />
+        <property name="CustomIcon" value="ui_game_symbol_cop" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="copSupplies" />
 		</property>
@@ -16476,7 +16477,7 @@ kind of free
 	<block id="438" name="chefProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Chef" />
+        <property name="CustomIcon" value="ui_game_symbol_chef" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="chefSupplies" />
 		</property>
@@ -16494,7 +16495,7 @@ kind of free
 	<block id="440" name="fitnessInstructorProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Fitness" />
+        <property name="CustomIcon" value="ui_game_symbol_fitness" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="fitnessInstructorSupplies" />
 		</property>
@@ -16512,7 +16513,7 @@ kind of free
 	<block id="442" name="firemanProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Fireman" />
+        <property name="CustomIcon" value="ui_game_symbol_fireman" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="firemanSupplies" />
 		</property>
@@ -16530,7 +16531,7 @@ kind of free
 	<block id="444" name="ironWorkerProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Construction" />
+        <property name="CustomIcon" value="ui_game_symbol_construction" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="ironWorkerSupplies" />
 		</property>
@@ -16548,7 +16549,7 @@ kind of free
 	<block id="446" name="electricianProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Electrician" />
+        <property name="CustomIcon" value="ui_game_symbol_electrician" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="electricianSupplies" />
 		</property>
@@ -16566,7 +16567,7 @@ kind of free
 	<block id="448" name="steelWelderProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Metal" />
+        <property name="CustomIcon" value="ui_game_symbol_metal" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="steelWelderSupplies" />
 		</property>
@@ -16584,7 +16585,7 @@ kind of free
 	<block id="450" name="thiefProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Burglar" />
+        <property name="CustomIcon" value="ui_game_symbol_burglar" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="thiefSupplies" />
 		</property>
@@ -16602,7 +16603,7 @@ kind of free
 	<block id="452" name="parkRangerProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Ranger" />
+        <property name="CustomIcon" value="ui_game_symbol_ranger" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="parkRangerSupplies" />
 		</property>
@@ -16620,7 +16621,7 @@ kind of free
 	<block id="454" name="mechanicProfession">
 		<property name="Extends" value="soldierProfession" />
 		<property name="DescriptionKey" value="professionKitDesc" />
-        <property name="CustomIcon" value="ui_game_symbol_Mechanic" />
+        <property name="CustomIcon" value="ui_game_symbol_mechanic" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="mechanicSupplies" />
 		</property>
@@ -16850,7 +16851,7 @@ kind of free
 			<property name="Modules" value="output" />
 		</property>
         <property class="RepairItems"> <property name="plank" value="20" /> </property>
-       	<property name="DescriptionKey" value="workFermentationBarrelDesc" />
+       	<property name="DescriptionKey" value="fermentationBarrelDesc" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="plank" count="3,10" tool_category="Disassemble" />
 		<drop event="Destroy" name="woodDebris" count="1" />
@@ -16867,7 +16868,7 @@ kind of free
 		<!--sdx<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#OilRefinery?OilRefinery" />
         <property name="MultiBlockDim" value="1,2,1" />-->
-        <property name="CustomIcon" value="ui_game_symbol_workStill" />
+        <property name="CustomIcon" value="ui_game_symbol_still" />
 		<property name="Class" value="Campfire" />
 		<property name="ParticleName" value="campfire" />
 		<property name="ParticleOffset" value="0.5,0,0.5" />
@@ -16879,7 +16880,7 @@ kind of free
 			<property name="Modules" value="output,fuel" />
 		</property>
         <property class="RepairItems"> <property name="scrapIron" value="50" /> </property>
-       	<property name="DescriptionKey" value="workStillDesc" />
+       	<property name="DescriptionKey" value="stillDesc" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="3,10" tool_category="Disassemble" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0" stick_chance=".75" />
@@ -17094,7 +17095,7 @@ kind of free
     <block id="964" name="narrowLog">
         <property name="Material" value="wood" />
         <property name="Weight" value="200" />
-        <property name="CustomIcon" value="woodPillar50" />
+        <property name="CustomIcon" value="ui_game_symbol_narrowLog" />
 		<property name="MaxDamage" value="400" />
 		<property name="Class" value="Trunk" />
 		<property name="Shape" value="New" />
@@ -17756,7 +17757,7 @@ kind of free
 <block id="1458" name="masonProfession">
 	<property name="Extends" value="soldierProfession" />
 	<property name="DescriptionKey" value="professionKitDesc" />
-    <property name="CustomIcon" value="ui_game_symbol_Mason" />
+    <property name="CustomIcon" value="ui_game_symbol_mason" />
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="masonSupplies" />
 	</property>
