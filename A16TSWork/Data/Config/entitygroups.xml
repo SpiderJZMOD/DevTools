@@ -152,6 +152,15 @@
 		<entity name="zombieFatHawaiian" />
 	</entitygroup>
 
+    <entitygroup name="Survivors">
+        <entity name="zombieSpider"/>
+		<entity name="zombieBoe" prob="0.1"/>
+		<entity name="zombieJoe" prob="0.1"/>
+		<entity name="zombieSteve" prob="0.1"/>
+		<entity name="zombieMoe" prob="0.1"/>
+		<entity name="zombieYo" prob="0.1"/>
+    </entitygroup>
+    
 	<entitygroup name="ZombiesHoard">
 		<entity name="zombieSpider"/>
 		<entity name="zombieBoe" prob="0.1"/>

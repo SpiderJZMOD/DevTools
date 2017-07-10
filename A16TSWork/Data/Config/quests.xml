@@ -63,6 +63,7 @@
         <reward type="Quest" id="quest_BasicSurvival29" />
         <reward type="Quest" id="quest_BasicSurvival30" />
         <reward type="Quest" id="quest_BasicSurvival31" />
+        <reward type="Quest" id="quest_BasicSurvival32" />
 		<reward type="Exp" value="400" />
 		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
 		<reward type="SkillPoints" value="1" />
@@ -287,6 +288,113 @@
 		<objective type="Craft" id="welderTool" value="1" />
 		<reward type="ShowTip" value="steelBuildingTip" stage="aftercomplete" />
 		<reward type="Exp" value="400" />
+	</quest>
+    <!-- Basic Survival 31 - Farming Chain Starter /> -->
+    <quest id="quest_BasicSurvival32" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockPlace" id="treePlantedMountainPine1m" value="10" />
+        <objective type="BlockPlace" id="treePlantedMaple1m" value="10" />
+        <objective type="BlockPlace" id="treePlantedWinterPine1m" value="10" />
+        <reward type="ShowTip" value="FarmingTip" stage="aftercomplete" />
+    	<reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <reward type="Quest" id="quest_Farming1" />
+	</quest>
+	<!-- Farming Quest Chain -->
+    <quest id="quest_Farming1" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="hoeIron" value="1" />
+        <reward type="Item" id="farmersAlmanac" />
+		<reward type="Quest" id="quest_Farming2" />
+		<reward type="Exp" value="400" />
+	</quest>
+    <quest id="quest_Farming2" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="plantedCotton1" value="50" />
+        <objective type="BlockPlace" id="plantedCotton1" value="50" />
+       	<reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <reward type="Quest" id="quest_Farming3" />
+	</quest>
+    <quest id="quest_Farming3" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="plantedPotato1" value="50" />
+        <objective type="BlockPlace" id="plantedPotato1" value="50" />
+       	<reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <reward type="Quest" id="quest_Farming4" />
+	</quest>
+    <quest id="quest_Farming4" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="plantedGoldenrod1" value="100" />
+        <objective type="BlockPlace" id="plantedGoldenrod1" value="100" />
+       	<reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <reward type="Quest" id="quest_Farming5" />
+	</quest>
+    <quest id="quest_Farming5" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="plantedCorn1" value="100" />
+        <objective type="BlockPlace" id="plantedCorn1" value="100" />
+       	<reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <reward type="Quest" id="quest_Farming6" />
+	</quest>
+    <quest id="quest_Farming6" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="plantedChrysanthemum1" value="100" />
+        <objective type="BlockPlace" id="plantedChrysanthemum1" value="100" />
+       	<reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <reward type="Quest" id="quest_Farming7" />
+	</quest>
+    <quest id="quest_Farming7" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="carrotSeed" value="100" />
+        <objective type="BlockPlace" id="carrotSeed" value="100" />
+       	<reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <reward type="Quest" id="quest_Farming8" />
+	</quest>
+    <quest id="quest_Farming8" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="wheatSeed" value="100" />
+        <objective type="BlockPlace" id="wheatSeed" value="100" />
+       	<reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <reward type="Quest" id="quest_Farming9" />
+	</quest>
+    <quest id="quest_Farming9" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="appleSeed" value="100" />
+        <objective type="BlockPlace" id="appleSeed" value="100" />
+       	<reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <reward type="Quest" id="quest_Farming10" />
+	</quest>
+    <quest id="quest_Farming10" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="plantedMushroom1" value="100" />
+        <objective type="BlockPlace" id="plantedMushroom1" value="100" />
+       	<reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <reward type="Quest" id="quest_Farming11" />
+	</quest>
+    <quest id="quest_Farming11" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="plantedBlueberry1" value="100" />
+        <objective type="BlockPlace" id="plantedBlueberry1" value="100" />
+       	<reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <reward type="Quest" id="quest_Farming12" />
+	</quest>
+    <quest id="quest_Farming12" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="plantedYucca1" value="100" />
+        <objective type="BlockPlace" id="plantedYucca1" value="100" />
+       	<reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <reward type="Quest" id="quest_Farming13" />
+	</quest>
+    <quest id="quest_Farming13" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="plantedAloe1" value="100" />
+        <objective type="BlockPlace" id="plantedAloe1" value="100" />
+       	<reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <reward type="Quest" id="quest_Farming14" />
+	</quest>
+    <quest id="quest_Farming14" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="fertilizer" value="500" />
+        <reward type="Item" id="farmersAlmanac" />
+        <reward type="Exp" value="400" />
+        <!--<reward type="Quest" id="quest_TheCure" />-->
 	</quest>
 	<!-- CHALLENGES -->
 	<quest id="challenge_silenceofthelambs" name_key="challenge_silenceofthelambs" subtitle_key="challenge_silenceofthelambs_subtitle" description_key="challenge_silenceofthelambs_offer" icon="ui_game_symbol_zombie"

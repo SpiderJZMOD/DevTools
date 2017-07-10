@@ -15340,5 +15340,127 @@ Mesh files no longer used:
 	<property name="Material" value="Mprotein" />
 	<property name="IsDeveloper" value="true" />
 </item>
-
+<item id="1938" name="plasticCondom">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="Mplastics" />
+	<property name="CustomIcon" value="ui_game_symbol_plasticCondom" />
+	<property name="Weight" value="1" />
+</item>
+<item id="1939" name="plasticHairBrush">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="Mplastics" />
+	<property name="CustomIcon" value="ui_game_symbol_plasticHairBrush" />
+	<property name="Weight" value="2" />
+</item>
+<item id="1940" name="clothOldBlanket">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="cloth" />
+	<property name="CustomIcon" value="ui_game_symbol_clothOldBlanket" />
+	<property name="Weight" value="10" />
+</item>
+<item id="1941" name="electricBrokenIPod">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="MelectricParts" />
+	<property name="CustomIcon" value="ui_game_symbol_electricBrokenIPod" />
+	<property name="Weight" value="1" />
+</item>
+<item id="1942" name="electricBrokenIPad">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="MelectricParts" />
+	<property name="CustomIcon" value="ui_game_symbol_electricBrokenIPad" />
+	<property name="Weight" value="4" />
+</item>
+<item id="1943" name="electricBrokenLapTop">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="MelectricParts" />
+	<property name="CustomIcon" value="ui_game_symbol_electricBrokenLapTop" />
+	<property name="Weight" value="8" />
+</item>
+<item id="1944" name="rubberOldRainBoot">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="Mrubber" />
+	<property name="CustomIcon" value="ui_game_symbol_rubberOldRainBoot" />
+	<property name="Weight" value="3" />
+</item>
+<item id="1945" name="clothOldShoe">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="cloth" />
+	<property name="CustomIcon" value="ui_game_symbol_clothOldShoe" />
+	<property name="Weight" value="1" />
+</item>
+<item id="1946" name="plasticToothBrush">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="Mplastics" />
+	<property name="CustomIcon" value="ui_game_symbol_plasticToothBrush" />
+	<property name="Weight" value="1" />
+</item>
+<item id="1947" name="clothChewedDogCollar">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="cloth" />
+	<property name="CustomIcon" value="ui_game_symbol_clothChewedDogCollar" />
+	<property name="Weight" value="5" />
+</item>
+<item id="1948" name="glassEye">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="glass" />
+	<property name="CustomIcon" value="ui_game_symbol_glassEye" />
+	<property name="Weight" value="1" />
+</item>
+<item id="1949" name="electronicBlackVibrator">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="MelectronicParts" />
+	<property name="CustomIcon" value="ui_game_symbol_electronicBlackVibrator" />
+	<property name="Weight" value="2" />
+</item>
+<item id="1950" name="ironHairSpray">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="metal" />
+	<property name="CustomIcon" value="ui_game_symbol_ironHairSpray" />
+	<property name="Weight" value="2" />
+</item>
+<item id="1951" name="steelDogBowl">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="Msteel" />
+	<property name="CustomIcon" value="ui_game_symbol_steelDogBowl" />
+	<property name="Weight" value="2" />
+</item>
+<item id="1952" name="glassWaterBong">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="glass" />
+	<property name="CustomIcon" value="ui_game_symbol_glassWaterBong" />
+	<property name="Weight" value="4" />
+</item>
+<item id="1953" name="stoneCrackedAshTray">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="stone" />
+	<property name="CustomIcon" value="ui_game_symbol_stoneCrackedAshTray" />
+	<property name="Weight" value="2" />
+</item>
+<item id="1954" name="plasticLighter">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="Mplastics" />
+	<property name="CustomIcon" value="ui_game_symbol_plasticLighter" />
+	<property name="Weight" value="1" />
+</item>
+<item id="1955" name="paperMatches">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="paper" />
+	<property name="CustomIcon" value="ui_game_symbol_paperMatches" />
+	<property name="Weight" value="1" />
+</item>
+<item id="1956" name="electricBlender">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="MelectricParts" />
+	<property name="CustomIcon" value="ui_game_symbol_electricBlender" />
+	<property name="Weight" value="3" />
+</item>
+<item id="1957" name="farmersAlmanac">
+	<property name="Extends" value="schematicMaster" />
+    <property name="CustomIcon" value="ui_game_symbol_professionSkill" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="farmingPerk" />
+	</property>
+	<property name="DescriptionKey" value="farmersAlmanacDesc" />
+	<property name="Group" value="Books" />
+</item>
 </items>
