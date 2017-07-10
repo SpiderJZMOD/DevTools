@@ -16880,7 +16880,7 @@ kind of free
 			<property name="Modules" value="output,fuel" />
 		</property>
         <property class="RepairItems"> <property name="scrapIron" value="50" /> </property>
-       	<property name="DescriptionKey" value="workStillDesc" />
+       	<property name="DescriptionKey" value="stillDesc" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="3,10" tool_category="Disassemble" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0" stick_chance=".75" />
