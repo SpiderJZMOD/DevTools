@@ -3011,7 +3011,7 @@
             <recipe name="plantedYucca1" unlock_level="12" />
             <recipe name="plantedAloe1" unlock_level="13" />
             <recipe name="fertilizer" unlock_level="14" />
-            <recipe name="qc_Eucalyptus" unlock_level="15" />
+            <!--<recipe name="qc_Eucalyptus" unlock_level="15" />-->
        </perk>     
         <perk name="freeDiverPerk" icon="ui_game_symbol_freeDiver" description_key="sexualTyranosaurusDesc" title_key="Free Diver" max_level="5" skill_point_cost_multiplier="1" skill_point_cost_per_level="3" always_fire="true" group="health">
             <requirement perk_level="1" required_skill_name="Athletics" required_skill_level="20" />
