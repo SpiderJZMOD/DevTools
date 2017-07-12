@@ -13770,7 +13770,7 @@ Mesh files no longer used:
 		<property name="DamageEntity" value="20" />
 		<property name="DamageBlock" value="3000" />
 		<property name="Buff" value="bleeding,scratch,bite,stunned" />
-		<property name="Buff_chance" value="0.2,1,0.5,0.4" />
+		<property name="Buff_chance" value="0.2,2,0.5,0.4" />
 		<property name="DamageBonus.wood" value="10" />
 		<property name="DamageBonus.stone" value="10" />
 		<property name="DamageBonus.metal" value="10" />
