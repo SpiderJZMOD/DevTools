@@ -8,6 +8,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="militaryFiber" count="1" tooltip="ttScrapMetalBrass">
 	<wildcard_forge_category />
     </recipe> 
+    <recipe name="bioMass" count="1" tooltip="ttScrapMetalBrass">
+		<wildcard_forge_category />
+	</recipe>
     <recipe name="fruitServing" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
 	</recipe>
@@ -962,6 +965,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="fertilizer" count="1"  craft_time="60" craft_exp_gain="0">
 		<ingredient name="turd" count="1" />
 		<ingredient name="boneMeal" count="1" />
+        <ingredient name="bioMass" count="1" />
 		<ingredient name="potassiumNitratePowder" count="10" />
 		<ingredient name="dirtFragment" count="3" />
 	</recipe>
@@ -2622,7 +2626,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="gasTank" count="1" craft_area="methaneProducer" craft_time="300" craft_exp_gain="0">
 		<ingredient name="gasTankEmpty" count="1" />
         <ingredient name="turd" count="2" />
-        <ingredient name="rottingFlesh" count="10" />
+        <ingredient name="bioMass" count="10" />
 	</recipe>
 	<recipe name="gasTankEmpty" count="1" craft_area="metalWorkBench" craft_tool="welderTool" craft_time="10" craft_exp_gain="10">
 		<ingredient name="scrapLead" count="5" />

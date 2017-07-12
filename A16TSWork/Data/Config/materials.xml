@@ -1200,4 +1200,10 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Hardness" type="float" value="1" />
 	<property name="Mass" type="int" value="1" />
 </material>
+<material id="MbioMass">
+	<property name="surface_category" value="organic" />
+    <property name="forge_category" value="bioMass" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="Mass" type="int" value="1" />
+</material>
 </materials>

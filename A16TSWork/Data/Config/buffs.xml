@@ -843,12 +843,12 @@ This requires a 50+ food bar:
         <modify id="2" stat="health" setValue="500"/>
     </buff>
     <!--JZMOD Nutrition-->
-    <buff id="nutrition_1_Trigger" duration="1" actions="increment(nutrition, 1, 0, 0, 1)"/>
-    <buff id="nutrition_2_Trigger" duration="1" actions="increment(nutrition, 2, 0, 0, 1)"/>
-    <buff id="nutrition_3_Trigger" duration="1" actions="increment(nutrition, 3, 0, 0, 1)"/>
-    <buff id="nutrition_4_Trigger" duration="1" actions="increment(nutrition, 4, 0, 0, 1)"/>
-    <buff id="nutrition_5_Trigger" duration="2" actions="increment(nutrition, 5, 0, 0, 1)" />
-    <buff id="nutrition_35_Trigger" duration="1" actions="increment(nutrition, 35, 0, 0, 1)"/>
+    <buff id="nutrition_1_Trigger" duration="1.5" name_key="1 Nutrition" actions="increment(nutrition, 1, 0, 0, 1)" />
+    <buff id="nutrition_2_Trigger" duration="1" name_key="2 Nutrition" actions="increment(nutrition, 2, 0, 0, 1)"/>
+    <buff id="nutrition_3_Trigger" duration="1" name_key="3 Nutrition" actions="increment(nutrition, 3, 0, 0, 1)"/>
+    <buff id="nutrition_4_Trigger" duration="1" name_key="4 Nutrition" actions="increment(nutrition, 4, 0, 0, 1)"/>
+    <buff id="nutrition_5_Trigger" duration="1" name_key="5 Nutrition" actions="increment(nutrition, 5, 0, 0, 1)" />
+    <buff id="nutrition_35_Trigger" duration="1"  actions="increment(nutrition, 35, 0, 0, 1)"/>
     <buff id="nutritionFade" buffif="nutrition greater 0" debuffif="nutrition less 1" actions="increment(nutrition, -1, 750, 0, 0);min(nutrition, 0)"  />
     <!--JZMOD NUTRITION RESTART AFTER RESPAWN -->
     <buff id="nutritionAfterDeath" mutex="nutritionFade,malnourishTimer" buffif="food less 0.99" actions="buff(malnourishTimer)"  />

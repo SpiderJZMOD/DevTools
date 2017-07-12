@@ -3437,7 +3437,8 @@ Mesh files no longer used:
 
 <item id="191" name="turd">
 	<property name="Meshfile" value="Items/Crafting/clayPrefab"/>
-	<property name="Material" value="organic"/>
+	<property name="Material" value="MbioMass"/>
+    <property name="Weight" value="3"/>
 	<property name="HoldType" value="40"/>
 	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
@@ -7654,7 +7655,8 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
-	<property name="Material" value="organic"/>
+	<property name="Material" value="MbioMass"/>
+    <property name="Weight" value="1" />
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -7682,7 +7684,8 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
-	<property name="Material" value="organic"/>
+	<property name="Material" value="MbioMass"/>
+    <property name="Weight" value="2" />
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -7731,7 +7734,8 @@ Mesh files no longer used:
 
 <item id="736" name="rottingFlesh">
 	<property name="Meshfile" value="Items/Food/meat_rabbit"/>
-	<property name="Material" value="organic"/>
+	<property name="Material" value="MbioMass"/>
+    <property name="Weight" value="3"/>
 	<property name="HoldType" value="21"/>
 	<property name="Stacknumber" value="100"/> <!-- STK food -->
 	<property name="EconomicValue" value="5"/>
@@ -13732,13 +13736,13 @@ Mesh files no longer used:
 	</property>
 	<property class="Action1"> 
 		<property name="Class" value="Vomit"/>
-		<property name="Delay" value="0.35"/>
+		<property name="Delay" value="0.150"/>
 		<property name="Range" value="200"/>
 		<property name="Magazine_items" value="fattyVomitProjectile"/>
-		<property name="Reload_time" value="2"/>
+        <property name="Reload_time" value="2"/>
 	</property>
 </item>
-<item id="1777" name="FattyVomitProjectile">
+<item id="1777" name="fattyVomitProjectile">
     <property name="Extends" value="projectileZombieVomit"/>
 	<property name="IsDeveloper" value="true"/>
 	<property class="Action1">
@@ -13759,7 +13763,7 @@ Mesh files no longer used:
         <property name="DamageBonus.steel" value="5" />
 	</property>
     <property class="Attributes">
-			<property name="ApplyBuff" value="1, 1" param1="acid" />
+			<property name="ApplyBuff" value="1, 1" param1="smelly" />
 	</property>
 </item>
 <item id="1778" name="bruteBash">
@@ -15289,7 +15293,6 @@ Mesh files no longer used:
     <property name="Extends" value="itemMaster" />
     <property name="CustomIcon" value="ui_game_symbol_cookingUtensil" />
 </item>
-
 <item id="1930" name="mason">
 	<property name="Extends" value="schematicMaster" />
     <property name="CustomIcon" value="ui_game_symbol_professionSkill" />
@@ -15299,7 +15302,6 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="professionDesc" />
 	<property name="Group" value="Books" />
 </item>
-
 <item id="1931" name="craftedGunsSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
@@ -15309,11 +15311,13 @@ Mesh files no longer used:
 </item>
 <item id="1932" name="moldyFruit">
     <property name="Extends" value="moldyShamSandwich"/>  
+    <property name="Weight" value="1" />
 	<property name="CustomIcon" value="shamSandwich"/>
 	
 </item>
 <item id="1933" name="moldyVeggies">
-	<property name="Extends" value="moldyShamSandwich"/>  
+	<property name="Extends" value="moldyShamSandwich"/>
+    <property name="Weight" value="1" />    
 	<property name="CustomIcon" value="shamSandwich"/>
 </item>
 <item id="1934" name="unit_veggie">
@@ -15456,11 +15460,196 @@ Mesh files no longer used:
 </item>
 <item id="1957" name="farmersAlmanac">
 	<property name="Extends" value="schematicMaster" />
-    <property name="CustomIcon" value="ui_game_symbol_professionSkill" />
+    <property name="CustomIcon" value="ui_game_symbol_farmersAlmanac" />
 	<property class="Action1">
 		<property name="Skills_to_gain" value="farmingPerk" />
 	</property>
 	<property name="DescriptionKey" value="farmersAlmanacDesc" />
 	<property name="Group" value="Books" />
+</item>
+<item id="1958" name="steelFork">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="Msteel" />
+	<property name="CustomIcon" value="ui_game_symbol_steelFork" />
+	<property name="Weight" value="1" />
+</item>
+<item id="1959" name="steelSpoon">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="Msteel" />
+	<property name="CustomIcon" value="ui_game_symbol_steelSpoon" />
+	<property name="Weight" value="1" />
+</item>
+<item id="1960" name="steelButterKnife">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="Msteel" />
+	<property name="CustomIcon" value="ui_game_symbol_steelButterKnife" />
+	<property name="Weight" value="1" />
+</item>
+<item id="1961" name="plasticShoppingBag">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="Mplastics" />
+	<property name="CustomIcon" value="ui_game_symbol_plasticShoppingBag" />
+	<property name="Weight" value="1" />
+</item>
+<item id="1962" name="bioMass">
+    <property name="Extends" value="foodMaster" />
+	<property name="Material" value="MbioMass" />
+    <property name="Weight" value="1" />
+	<property name="Stacknumber" value="5000" />
+    <property name="CustomIcon" value="ui_game_symbol_bioMass" />
+    <property class="Action1">
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="5" />
+		<property name="Gain_water" value="-5" />
+		<property name="Gain_stamina" value="-60" />
+		<property name="Buff" value="foodPoisoning"/>
+		<property name="Buff_chance" value="1"/>
+        <property name="Gain_wellness" value="-0.5" />
+		<property name="Sound_start" value="player_eating"/>
+    </property>
+</item>
+<item id="1963" name="cereal">
+    <property name="Extends" value="foodMaster" />
+	<property name="Material" value="Mgrain" />
+    <property name="Weight" value="4" />
+	<property name="Stacknumber" value="5000" />
+    <property name="CustomIcon" value="ui_game_symbol_cereal" />
+    <property class="Action1">
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="0" />
+		<property name="Gain_water" value="0" />
+		<property name="Gain_stamina" value="0" />
+		<!--<property name="Buff" value=""/>
+		<property name="Buff_chance" value="1"/>-->
+        <property name="Gain_wellness" value="0" />
+		<property name="Sound_start" value="player_eating"/>
+    </property>
+</item>
+<item id="1964" name="chips">
+    <property name="Extends" value="foodMaster" />
+	<property name="Material" value="Mgrain" />
+    <property name="Weight" value="1" />
+	<property name="Stacknumber" value="5000" />
+    <property name="CustomIcon" value="ui_game_symbol_chips" />
+    <property class="Action1">
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="0" />
+		<property name="Gain_water" value="0" />
+		<property name="Gain_stamina" value="0" />
+		<!--<property name="Buff" value=""/>
+		<property name="Buff_chance" value="1"/>-->
+        <property name="Gain_wellness" value="0" />
+		<property name="Sound_start" value="player_eating"/>
+    </property>
+</item>
+<item id="1965" name="deadRat">
+    <property name="Extends" value="foodMaster" />
+	<property name="Material" value="MbioMass" />
+    <property name="Weight" value="1" />
+	<property name="Stacknumber" value="5000" />
+    <property name="CustomIcon" value="ui_game_symbol_deadRat" />
+    <property class="Action1">
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="5" />
+		<property name="Gain_water" value="-5" />
+		<property name="Gain_stamina" value="-10" />
+		<property name="Buff" value="foodPoisoning"/>
+		<property name="Buff_chance" value="0.5"/>
+        <property name="Gain_wellness" value="-0.3" />
+		<property name="Sound_start" value="player_eating"/>
+    </property>
+</item>
+<item id="1966" name="peanutButter">
+    <property name="Extends" value="foodMaster" />
+	<property name="Material" value="Mprotein" />
+    <property name="Weight" value="2" />
+	<property name="Stacknumber" value="5000" />
+    <property name="CustomIcon" value="ui_game_symbol_peanutButter" />
+    <property class="Action1">
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="0" />
+		<property name="Gain_water" value="0" />
+		<property name="Gain_stamina" value="0" />
+		<!--<property name="Buff" value=""/>
+		<property name="Buff_chance" value="1"/>-->
+        <property name="Gain_wellness" value="0" />
+		<property name="Sound_start" value="player_eating"/>
+    </property>
+</item>
+<item id="1967" name="oatMeal">
+    <property name="Extends" value="foodMaster" />
+	<property name="Material" value="Mgrain" />
+    <property name="Weight" value="4" />
+	<property name="Stacknumber" value="5000" />
+    <property name="CustomIcon" value="ui_game_symbol_oatMeal" />
+    <property class="Action1">
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="0" />
+		<property name="Gain_water" value="0" />
+		<property name="Gain_stamina" value="0" />
+		<!--<property name="Buff" value=""/>
+		<property name="Buff_chance" value="1"/>-->
+        <property name="Gain_wellness" value="0" />
+		<property name="Sound_start" value="player_eating"/>
+    </property>
+</item>
+<item id="1968" name="mreSmall">
+    <property name="Extends" value="foodMaster" />
+	<property name="Material" value="organic" />
+    <property name="Stacknumber" value="5000" />
+    <property name="CustomIcon" value="ui_game_symbol_mreSmall" />
+    <property class="Action1">
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="0" />
+		<property name="Gain_water" value="0" />
+		<property name="Gain_stamina" value="0" />
+		<!--<property name="Buff" value=""/>
+		<property name="Buff_chance" value="1"/>-->
+        <property name="Gain_wellness" value="0" />
+		<property name="Sound_start" value="player_eating"/>
+    </property>
+</item>
+<item id="1969" name="mreMedium">
+    <property name="Extends" value="foodMaster" />
+	<property name="Material" value="organic" />
+    <property name="Stacknumber" value="5000" />
+    <property name="CustomIcon" value="ui_game_symbol_mreMedium" />
+    <property class="Action1">
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="0" />
+		<property name="Gain_water" value="0" />
+		<property name="Gain_stamina" value="0" />
+		<!--<property name="Buff" value=""/>
+		<property name="Buff_chance" value="1"/>-->
+        <property name="Gain_wellness" value="0" />
+		<property name="Sound_start" value="player_eating"/>
+    </property>
+</item>
+<item id="1970" name="mreLarge">
+    <property name="Extends" value="foodMaster" />
+	<property name="Material" value="organic" />
+    <property name="Stacknumber" value="5000" />
+    <property name="CustomIcon" value="ui_game_symbol_mreLarge" />
+    <property class="Action1">
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="0" />
+		<property name="Gain_water" value="0" />
+		<property name="Gain_stamina" value="0" />
+		<!--<property name="Buff" value=""/>
+		<property name="Buff_chance" value="1"/>-->
+        <property name="Gain_wellness" value="0" />
+		<property name="Sound_start" value="player_eating"/>
+    </property>
+</item>
+<item id="1971" name="ironScissors">
+	<property name="Extends" value="itemMaster" />
+	<property name="Material" value="metal" />
+	<property name="CustomIcon" value="ui_game_symbol_ironScissors" />
+	<property name="Weight" value="1" />
+</item>
+<item id="1972" name="charcoal">
+    <property name="Extends" value="coal" />
+	<property name="FuelValue" value="100"/>
+    <property name="CustomIcon" value="ui_game_symbol_charcoal" />
 </item>
 </items>
