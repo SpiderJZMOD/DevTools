@@ -834,10 +834,10 @@ This requires a 50+ food bar:
 		<modify id="0" stat="coretemp" modifyValue="-3" />
     </buff>
     <!--JZMOD ZOBIE BOMBERS-->
-    <buff id="suicideBomber" duration="1" ffcheck="true" castsound="malehateattack" onexpired="suicideBomberCharge">
+    <buff id="suicideBomber" duration="1.5" ffcheck="true" castsound="malehateattack" onexpired="suicideBomberCharge">
         <modify id="0" stat="health" setValue="50"/>
     </buff>
-    <buff id="suicideBomberCharge" duration="20" ffcheck="true" actions="attach(ParticleEffects/p_onFire, @impact)">
+    <buff id="suicideBomberCharge" duration="20" ffcheck="true" >
         <modify id="0" stat="speedmodifier" modifyMaxValue="2.0"/>
         <modify id="1" stat="speedmodifier" mulValue="2.0"/>
         <modify id="2" stat="health" setValue="500"/>
@@ -849,8 +849,10 @@ This requires a 50+ food bar:
     <buff id="nutrition_4_Trigger" duration="1" actions="increment(nutrition, 4, 0, 0, 1)"/>
     <buff id="nutrition_5_Trigger" duration="2" actions="increment(nutrition, 5, 0, 0, 1)" />
     <buff id="nutrition_35_Trigger" duration="1" actions="increment(nutrition, 35, 0, 0, 1)"/>
-    <buff id="nutritionFade" buffif="nutrition greater 0" debuffif="nutrition less 1" actions="increment(nutrition, -1, 750, 0, 0);min(nutrition, 0)" />
-    <!--JZMOD GOOD NUTRITION-->
+    <buff id="nutritionFade" buffif="nutrition greater 0" debuffif="nutrition less 1" actions="increment(nutrition, -1, 750, 0, 0);min(nutrition, 0)"  />
+    <!--JZMOD NUTRITION RESTART AFTER RESPAWN -->
+    <buff id="nutritionAfterDeath" mutex="nutritionFade,malnourishTimer" buffif="food less 0.99" actions="buff(malnourishTimer)"  />
+        <!--JZMOD GOOD NUTRITION-->
     <buff id="goodNutrition1Tag" buffif="nutrition greater 14" debuffif="nutrition lequal 14" actions="buff(malnourishedReset)" />
     <buff id="malnourishedReset" requires="malnourished gequal 1" actions="setvar(malnourished, 0)" />
     <buff id="goodNutrition1" mutex="goodNutrition2,goodNutrition3" buffif="nutrition greater 14" debuffif="nutrition lequal 14" name_key="Good Diet" tooltip_key="Feeling Good!" description_key="Your eating a more balanced diet now and can benifit from wellness and health gains from foods." icon="ui_game_symbol_limp" />
@@ -868,7 +870,7 @@ This requires a 50+ food bar:
     </buff>
     <!--JZMOD Malnourished Timer-->
     <buff id="malnourishedTrigger" buffif="nutrition less 15" debuffif="nutrition gequal 15" actions="buff(malnourishTimer)" ondebuff="stopMalnourishTimer" />
-	<buff id="malnourishTimer" actions="increment(malnourished, 1, 60, 0, 0)" />
+	<buff id="malnourishTimer" actions="increment(malnourished, 1, 60, 0, 0)" stack="discard" name_key="timer taster" icon="ui_game_symbol_limp"/>
 	<buff id="stopMalnourishTimer" duration="1" actions="debuff(malnourishTimer)"  />
     <!--JZMOD BAD NUTRITION-->
     <buff id="malnourished1Tag" buffif="malnourished greater 179" debuffif="malnourished lequal 179" />
