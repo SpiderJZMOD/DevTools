@@ -15281,15 +15281,15 @@ Mesh files no longer used:
 	<property name="Group" value="Books" />
 </item>
 
-<item id="1927" name="Molds">
+<item id="1927" name="molds">
     <property name="Extends" value="itemMaster" />
     <property name="CustomIcon" value="ui_game_symbol_mold" />
 </item>
-<item id="1928" name="Tools">
+<item id="1928" name="tools">
     <property name="Extends" value="itemMaster" />
     <property name="CustomIcon" value="ui_game_symbol_tools" />
 </item>
-<item id="1929" name="CookingUtensils">
+<item id="1929" name="cookingUtensils">
     <property name="Extends" value="itemMaster" />
     <property name="CustomIcon" value="ui_game_symbol_cookingUtensil" />
 </item>

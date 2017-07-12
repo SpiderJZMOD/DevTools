@@ -840,7 +840,7 @@
 		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
 			
 			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
-			required_tools="Mold,Mold,Tools" required_tools_only="false">
+			required_tools="mold,mold,tools" required_tools_only="false">
 				<required_item_stack name="0"/>
 			</grid>		
 			
@@ -869,7 +869,7 @@
 		
 		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
 			
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="CookingUtensils,CookingUtensils,CookingUtensils" required_tools_only="false">
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="cookingUtensils,cookingUtensils,cookingUtensils" required_tools_only="false">
 				<required_item_stack name="0"/>
 			</grid>		
 			
@@ -3168,84 +3168,84 @@
     <!-- JZMOD ADDED -->
 	<window name="windowToolsChickenCoop" width="228" height="79" anchor="CenterTop" panel="Right">
 		<panel style="header.panel">
-			<sprite style="header.icon" sprite="ui_game_symbol_cookware" />
+			<sprite style="header.icon" sprite="ui_game_symbol_chickenCoop" />
 			<label style="header.name" text="TOOLS" />
 		</panel>
 		<panel name="content" depth="0" pos="0,-46" backgroundcolor="[black]">
-			<grid name="inventory" rows="1" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="Hen" required_tools_only="true">
+			<grid name="inventory" rows="1" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="hen" required_tools_only="true">
 				<required_item_stack name="0" />
 			</grid>
 		</panel>
 	</window>
 	<window name="windowToolsArmorTable" width="228" height="79" anchor="CenterTop" panel="Right">
 		<panel style="header.panel">
-			<sprite style="header.icon" sprite="ui_game_symbol_cookware" />
+			<sprite style="header.icon" sprite="ui_game_symbol_armorTable" />
 			<label style="header.name" text="TOOLS" />
 		</panel>
 		<panel name="content" depth="0" pos="0,-46" backgroundcolor="[black]">
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="Tools,Tools,Tools" required_tools_only="false">
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="tools,tools,tools" required_tools_only="false">
 				<required_item_stack name="0" />
 			</grid>
 		</panel>
 	</window>
-	<window name="windowToolsWorkWorkBench" width="228" height="79" anchor="CenterTop" panel="Right">
+	<window name="windowToolsWorkBench" width="228" height="79" anchor="CenterTop" panel="Right">
 		<panel style="header.panel">
-			<sprite style="header.icon" sprite="ui_game_symbol_cookware" />
+			<sprite style="header.icon" sprite="ui_game_symbol_workbench" />
 			<label style="header.name" text="TOOLS" />
 		</panel>
 		<panel name="content" depth="0" pos="0,-46" backgroundcolor="[black]">
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="Tools,Tools,Tools" required_tools_only="false">
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="tools,tools,tools" required_tools_only="false">
 				<required_item_stack name="0" />
 			</grid>
 		</panel>
 	</window>
 	<window name="windowToolsMetalWorkBench" width="228" height="79" anchor="CenterTop" panel="Right">
 		<panel style="header.panel">
-			<sprite style="header.icon" sprite="ui_game_symbol_cookware" />
+			<sprite style="header.icon" sprite="ui_game_symbol_metalWorkbench" />
 			<label style="header.name" text="TOOLS" />
 		</panel>
 		<panel name="content" depth="0" pos="0,-46" backgroundcolor="[black]">
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="Tools,Tools,Tools" required_tools_only="false">
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="tools,tools,tools" required_tools_only="false">
 				<required_item_stack name="0" />
 			</grid>
 		</panel>
 	</window>
 	<window name="windowToolsChemistryStation" width="228" height="79" anchor="CenterTop" panel="Right">
 		<panel style="header.panel">
-			<sprite style="header.icon" sprite="ui_game_symbol_cookware" />
+			<sprite style="header.icon" sprite="ui_game_symbol_chemistryStation" />
 			<label style="header.name" text="TOOLS" />
 		</panel>
 		<panel name="content" depth="0" pos="0,-46" backgroundcolor="[black]">
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="CookingUtensils,Tools,Tools" required_tools_only="false">
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="cookingUtensils,tools,tools" required_tools_only="false">
 				<required_item_stack name="0" />
 			</grid>
 		</panel>
 	</window>
 	<window name="windowToolsAnvil" width="228" height="79" anchor="CenterTop" panel="Right">
 		<panel style="header.panel">
-			<sprite style="header.icon" sprite="ui_game_symbol_cookware" />
+			<sprite style="header.icon" sprite="ui_game_symbol_anvil" />
 			<label style="header.name" text="TOOLS" />
 		</panel>
 		<panel name="content" depth="0" pos="0,-46" backgroundcolor="[black]">
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="Tools,Tools,Tools" required_tools_only="false">
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="tools,tools,tools" required_tools_only="false">
 				<required_item_stack name="0" />
 			</grid>
 		</panel>
 	</window>
 	<window name="windowToolsStove" width="228" height="121" panel="Right">
 		<panel style="header.panel">
-			<sprite style="header.icon" sprite="ui_game_symbol_cookware" />
+			<sprite style="header.icon" sprite="ui_game_symbol_stove" />
 			<label style="header.name" text="TOOLS" text_key="xuiTools" />
 		</panel>
 		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="CookingUtensils,CookingUtensils,CookingUtensils" required_tools_only="false">
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="cookingUtensils,cookingUtensils,cookingUtensils" required_tools_only="false">
 				<required_item_stack name="0" />
 			</grid>
 		</rect>
 	</window>
     <window name="windowPrepTableInput" width="228" height="204" panel="Right" controller="WorkstationMaterialInputWindow" materials_accepted="fruit,grain,veggie,protein" valid_materials_color="[green]" invalid_materials_color="[red]">
 		<panel style="header.panel">
-			<sprite style="header.icon" sprite="ui_game_symbol_cookware" />
+			<sprite style="header.icon" sprite="ui_game_symbol_prepTable" />
 			<label style="header.name" text="INPUT" text_key="Food Storage" />
 		</panel>
 		<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="153" color="[black]" type="sliced" fillcenter="false" on_press="true" />
@@ -3267,7 +3267,7 @@
 			<label style="header.name" text="Utensils" />
 		</panel>
 		<panel name="content" depth="0" pos="0,-46" backgroundcolor="[black]">
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="CookingUtensils,CookingUtensils,CookingUtensils" required_tools_only="false">
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="cookingUtensils,cookingUtensils,cookingUtensils" required_tools_only="false">
 				<required_item_stack name="0" />
 			</grid>
 		</panel>
