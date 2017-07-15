@@ -1082,7 +1082,7 @@ If you do not declare them, the decorations of the main biome are used.
 			</layers>
 			<!-- Decorations Main: Plains -->
 			<decorations>
-				<decoration type="block" blockname="lootForest" prob="0.00025" />
+				<decoration type="block" blockname="lootForestHelper" prob="0.00025" />
 				<decoration type="prefab" name="rock_form02" prob="0.0001" rotatemax="7" />
 				<decoration type="prefab" name="rock_form01" prob="0.001" rotatemax="7" />
 				<decoration type="prefab" name="resource_coal_pile" prob=".0001" rotatemax="7" />
@@ -1753,7 +1753,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="stalagmite03" prob="0.0002" rotatemax="7" />
 				<decoration type="block" blockname="stalagmite04" prob="0.0002" rotatemax="7" />
 				<decoration type="prefab" name="street_light_02" prob="0.00125" />
-				<decoration type="prefab" name="power_pole_01" prob="0.00025" />
+				<!-- <decoration type="prefab" name="power_pole_01" prob="0.00025" /> -->
 				<decoration type="prefab" name="sign_slow" prob="0.00025" />
 				<decoration type="prefab" name="sign_speed_25" prob="0.00025" />
 				<decoration type="prefab" name="sign_speed_35" prob="0.00025" />
@@ -1815,13 +1815,13 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="cntTrashPile01" prob="0.00035" rotatemax="7" />
 					<decoration type="block" blockname="cntTrashPile08" prob="0.00035" rotatemax="7" />
 					<decoration type="block" blockname="lootBurntForestHelper" prob="0.0001" />
-					<decoration type="block" blockname="cntCorpseLoot01" prob="0.0001" rotatemax="7" />
-					<decoration type="block" blockname="cntCorpseLoot02" prob="0.0003" rotatemax="7" />
+				<!-- 	<decoration type="block" blockname="cntCorpseLoot01" prob="0.0001" rotatemax="7" />
+					<decoration type="block" blockname="cntCorpseLoot02" prob="0.0003" rotatemax="7" /> -->
 					<decoration type="block" blockname="tire" prob="0.001" rotatemax="3" />
 					<decoration type="block" blockname="cinderBlocks01" prob="0.0005" rotatemax="7" />
 					<decoration type="block" blockname="cinderBlocks02" prob="0.0005" rotatemax="7" />
 					<decoration type="block" blockname="cinderBlocks03" prob="0.0005" rotatemax="7" />
-					<decoration type="block" blockname="cntCar03Damage2" prob="0.005" rotatemax="3" />
+					<decoration type="block" blockname="cntCar03SedanDamage2" prob="0.005" rotatemax="3" />
 					<decoration type="prefab" name="houseburnt_deco1" prob="0.07" />
 					<decoration type="prefab" name="houseburnt_deco2" prob="0.07" />
 					<decoration type="prefab" name="waste_rubble_bldg_01" prob="0.02" />
@@ -2304,7 +2304,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="rock01" prob=".001" rotatemax="3" />
 					<decoration type="block" blockname="rock02" prob=".001" rotatemax="3" />
 					<decoration type="block" blockname="rock04" prob=".001" rotatemax="3" />
-					<decoration type="block" blockname="cntCorpseLoot02" prob=".006" rotatemax="3" />
+				<!-- 	<decoration type="block" blockname="cntCorpseLoot02" prob=".006" rotatemax="3" /> -->
 					<decoration type="prefab" name="waste_rubble_bldg_01" prob="0.03" />
 					<decoration type="prefab" name="waste_rubble_bldg_02" prob="0.03" />
 					<decoration type="prefab" name="waste_rubble_bldg_03" prob="0.03" />
@@ -2314,7 +2314,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="prefab" name="waste_rubble_bldg_06" prob="0.015" />
 					<decoration type="prefab" name="waste_rubble_bldg_07" prob="0.015" />
 					<decoration type="prefab" name="waste_rubble_bldg_08" prob="0.015" />
-					<decoration type="block" blockname="BonesPrefab" prob=".009" rotatemax="3" />
+					<decoration type="block" blockname="bonesPrefab" prob=".009" rotatemax="3" />
 					<decoration type="block" blockname="emberPile4" prob=".001" rotatemax="3" />
 					<decoration type="block" blockname="emberPile3" prob=".001" rotatemax="3" />
 					<decoration type="block" blockname="scrapMetalPile" prob="0.017" rotatemax="3" />
@@ -2477,7 +2477,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="plantedCornDead" prob="0.004" />
 				<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.15" />
 				<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
-				<decoration type="prefab" name="power_pole_01" prob="0.00025" />
+				<!-- <decoration type="prefab" name="power_pole_01" prob="0.00025" /> -->
 				<decoration type="prefab" name="sign_slow" prob="0.00025" />
 				<decoration type="prefab" name="sign_speed_25" prob="0.00025" />
 				<decoration type="prefab" name="sign_speed_35" prob="0.00025" />
