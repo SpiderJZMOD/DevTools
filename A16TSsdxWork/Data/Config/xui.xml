@@ -1,0 +1,434 @@
+<xui>
+	<ruleset name="default" scale="1.255" stackpanel_scale="1.05">
+	
+		<window_group name="crafting" controller="XUiC_CraftingWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+		</window_group>
+		
+		<window_group name="character" controller="XUiC_CharacterSheetWindowGroup">
+			<window name="CharacterFrameWindow"/>
+			<window name="buffInfoPanel"/>
+			<window name="PlayerStatsWindow" />
+			<window name="ActiveBuffsWindow" />
+		</window_group>		
+		
+		<window_group name="workstation_campfire" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_forge" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsForge" />
+			<window name="windowFuel" />
+			<window name="windowForgeInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_cementMixer" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>		
+		
+		<window_group name="workstation_workbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<window name="windowCombine" />
+		</window_group>				
+
+		<window_group name="workstation_chemistryStation" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+            <window name="windowToolsChemistryStation" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="looting" left_panel_valign_top="false" controller="XUiC_LootWindowGroup">
+			<window name="windowLooting"/>
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="creative" controller="XUiC_CreativeWindowGroup">
+			<window name="windowCreative" />
+		</window_group>
+		
+		<!--#$-IGS BEGIN: Needed to disable input in new system -$#-->
+		<window_group name="backpack" actionSet="false">	
+			<window name="itemInfoPanel"/>
+			<window name="emptyInfoPanel" />
+			<window name="windowBackpack"/>
+		</window_group>
+		
+		<window_group name="dragAndDrop" actionSet="false">
+			<window name="dragAndDropItemStack" />
+		</window_group>
+
+<!-- <<< SMX v16b112e r02 START - BY SIRILLION >>> -->
+		
+		<window_group name="compass" actionSet="false">
+			<window name="SMXCompass1" anchor="CenterTop" />				<!-- SMX UI -->
+<!--		<window name="SMXCompass2VALMOD" anchor="CenterTop" /> -->		<!-- VALMOD UI -->
+<!--		<window name="windowCompass" /> -->								<!-- STANDARD UI -->
+			<window name="SMXDayTimeFrame" anchor="LeftTop" />				<!-- SMX & VALMOD UI -->
+			<window name="SMX" anchor="RightTop" />							<!-- SMX UI -->
+			<window name="SMXLevelXPUF1" anchor="LeftTop" />				<!-- SMX UI -->
+<!--		<window name="SMXLevelXPUF2VALMOD" anchor="LeftTop" /> -->		<!-- VALMOD UI -->
+		</window_group>
+		
+<!-- <<< SMX v16b112e r02 END - BY SIRILLION >>> -->
+		
+		<window_group name="toolTip" actionSet="false">
+			<window name="toolTip" />
+			<window name="popupMenu" />
+		</window_group>
+		
+		<window_group name="tipWindow">
+			<window name="windowTip" />
+		</window_group>
+		
+		<window_group name="questOffer">
+			<window name="windowQuestOffer" />
+		</window_group>
+		
+		<window_group name="timer">
+			<window name="windowTimer"/>
+		</window_group>
+
+<!-- <<< SMX v16b112e r02 START - BY SIRILLION >>> -->
+		
+		<window_group name="toolbelt" actionSet="false">
+			<window name="SMXToolbelt1" anchor="CenterBottom" />			<!-- SMX UI -->
+<!--		<window name="SMXToolbelt2VALMOD" anchor="CenterBottom" /> -->	<!-- VALMOD UI -->		<!-- MUST also uncomment/comment the SMXToolbeltNumbersVALMOD -->
+<!--		<window name="SMXToolbeltNumbersVALMOD" /> -->					<!-- VALMOD UI -->		<!-- MUST also uncomment/comment the SMXToolbelt2VALMOD -->
+<!--		<window name="windowToolbelt" anchor="CenterBottom" /> -->		<!-- STANDARD UI -->
+			<window name="SMXUnitFrame1" anchor="LeftBottom" /> 			<!-- SMX UI -->			<!-- MUST also uncomment/comment the SMXTempFrameUF1 -->
+<!--		<window name="SMXUnitFrame2VALMOD" anchor="LeftBottom" /> -->	<!-- VALMOD UI -->		<!-- MUST also uncomment/comment the SMXTempFrameUF2VALMOD -->
+<!--		<window name="ZombieKillTrackerVALMOD" /> -->					<!-- VALMOD UI -->
+<!--		<window name="SMXBuffFrame1" anchor="LeftBottom" /> -->			<!-- SMX UI -->			<!-- Standard Buff Frames - BIG -->
+<!-- 		<window name="SMXBuffFrame2" anchor="LeftBottom" />	-->			<!-- SMX UI -->			<!-- Standard Buff Frames - SMALL -->
+<!--		<window name="SMXBuffFrame3" anchor="LeftBottom" />	-->			<!-- SMX UI -->			<!-- Enhanced Buff Frames - BIG -->
+			<window name="SMXBuffFrame4" anchor="LeftBottom" />				<!-- SMX UI -->			<!-- Enhanced Buff Frames - SMALL -->
+<!--		<window name="SMXBuffFrame5VALMOD" anchor="LeftBottom" /> -->	<!-- VALMOD UI -->
+<!--		<window name="HUDLeftStatBars" anchor="LeftBottom" /> -->		<!-- STANDARD UI -->
+			<window name="SMXHudOther" anchor="RightBottom" />				<!-- SMX & VALMOD UI -->
+<!--		<window name="HUDRightStatBars" anchor="RightBottom" /> -->		<!-- STANDARD UI -->
+			<window name="SMXTempFrameUF1" />								<!-- SMX UI -->			<!-- MUST also uncomment/comment the SMXUnitFrame1 -->
+<!--		<window name="SMXTempFrameUF2VALMOD" />	-->						<!-- VALMOD UI -->		<!-- MUST also uncomment/comment the SMXUnitFrame2VALMOD -->
+<!--		<window name="windowQuestTracker" anchor="RightTop" /> -->		<!-- STANDARD UI -->
+			<window name="SMXQuestTracker" anchor="RightTop" />				<!-- SMX & VALMOD UI -->
+		</window_group>
+		
+<!-- <<< SMX v16b112e r02 END - BY SIRILLION >>> -->		
+		
+		<window_group name="vehicle" controller="XUiC_VehicleWindowGroup">
+			<window name="windowVehicle"/>
+			<window name="windowNonPagingHeader" />
+			<window name="windowVehicleStats" />
+			<window name="windowVehicleStorage" />
+		</window_group>
+		
+		<window_group name="windowpaging" actionSet="false">
+			<window name="windowPagingHeader" anchor="CenterTop"/>
+		</window_group>
+
+		<window_group name="map">
+			<window name="mapTrackingPopup" />			<!-- keep this on top -->			
+			<window name="mapAreaSetWaypoint" />		<!-- keep this on top -->
+			<window name="mapAreaChooseWaypoint" />		<!-- keep this on top -->
+			<window name="mapAreaEnterWaypointName" />	<!-- keep this on top -->
+			<window name="mapArea" />
+			<window name="mapTracking" />
+			<window name="mapInvites" />
+		</window_group>
+		
+		<window_group name="players">
+			<window name="players" />
+		</window_group>
+		
+		<window_group name="assemble" controller="XUiC_AssembleWindowGroup">
+			<window name="windowAssemble" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="radial" actionSet="keyboard">
+			<window name="windowRadial"/>
+		</window_group>
+		
+		<window_group name="skills" controller="XUiC_SkillWindowGroup">
+			<window name="windowSkillList"/>
+			<window name="windowSkillInfo"/>
+			<!-- <window name="windowSkillStats"/> -->
+		</window_group>
+		<!--#$-IGS END-$#-->
+		
+		<window_group name="quests" controller="XUiC_QuestWindowGroup">
+			<window name="windowQuestList" />
+			<window name="windowQuestDescription" />
+			<window name="windowQuestObjectives" />
+			<window name="windowQuestRewards" />
+		</window_group>
+		
+		<window_group name="journal" controller="XUiC_JournalWindowGroup">
+			<window name="windowJournalList" />
+			<window name="windowJournalEntryDescription" />
+		</window_group>
+		
+		<window_group name="profiles">
+			<window name="windowArchetypePreview"/>
+		</window_group>
+		
+		<window_group name="archetypes" controller="XUiC_ArchetypesWindowGroup" stack_panel_y_offset="332">
+			<window name="windowArchetypePreview2"/>
+			<window name="windowSliders"/>
+			<window name="windowColorPicker"/>
+		</window_group>
+		
+		<!--#$-IGS BEGIN: Adding window to hold gampad callouts -$#-->
+		<window_group name="CalloutGroup"  actionSet="false">
+			<window name="GamepadCallouts" />
+		</window_group>
+		<!--*#$-IGS END.-$#-->
+
+		<window_group name="trader" controller="XUiC_TraderWindowGroup">
+			<window name="windowTrader"/>
+			<window name="windowNonPagingHeader" />
+			<window name="serviceInfoPanel"/>
+		</window_group>
+		
+		<window_group name="sign">
+			<window name="windowSignEdit" />
+		</window_group>
+		
+		<window_group name="powersource" controller="XUiC_PowerSourceWindowGroup">
+			<window name="windowPowerSourceStats" />
+			<window name="windowPowerSourceSlots" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="powertrigger" controller="XUiC_PowerTriggerWindowGroup">
+			<window name="windowPowerTriggerOptions" />
+			<window name="windowPowerCameraControlPreview" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="powerrangedtrap" controller="XUiC_PowerRangedTrapWindowGroup">
+			<window name="windowPowerRangedTrapOptions" />
+			<window name="windowPowerTrapSlots" />
+			<window name="windowPowerCameraControlPreview" />
+			<window name="windowNonPagingHeader" />
+			
+		</window_group>
+		
+		<window_group name="powercamera" controller="XUiC_PowerCameraWindowGroup" actionSet="controller">
+			<window name="windowPowerCameraControl" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="powerspotlight" controller="XUiC_PoweredSpotlightWindowGroup">
+			<window name="windowPowerCameraControlPreview" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="materials">
+			<window name="windowMaterials" />
+			<window name="windowMaterialInfo" />
+		</window_group>
+
+		<window_group name="spawnMenu">
+			<window name="spawnMenu" />
+		</window_group>
+
+<!-- <<< SMX v16b112e r02 START - BY SIRILLION >>> -->		
+		
+		<window_group name="ingameMenu">
+<!--		<window name="ingameMenu" /> -->
+			<window name="SMXingameMenu" />
+		</window_group>
+		
+<!-- <<< SMX v16b112e r02 END - BY SIRILLION >>> -->
+		
+		<window_group name="woPropsSleeperVolume">
+			<window name="woPropsSleeperVolume" />
+		</window_group>
+		
+		<window_group name="editorPanelSelector">
+			<window name="editorPanelSelector" />
+		</window_group>
+		
+		<window_group name="ingameDebugMenu">
+			<window name="ingameDebugMenu" />
+		</window_group>
+		
+		<window_group name="levelTools">
+			<window name="levelTools" />
+		</window_group>
+		
+		<window_group name="prefabList">
+			<window name="prefabList" />
+		</window_group>
+		
+	
+    <!--JZMOD ADDED-->
+		<window_group name="workstation_bulletPress" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowCombine" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_oilRefinery" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+            <window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_blastFurnace" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowFuel" />
+			<window name="windowBlastInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_dryingRack" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_torch" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowFuel" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_burnBarrel" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_chickenCoop1" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_chickenCoop2" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_chickenCoop3" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_researchDesk" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_armorTable" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowToolsArmorTable" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_metalWorkBench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowToolsMetalWorkBench" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_mortarAndPestle" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_anvil" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowToolsAnvil" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_prepTable" controller="XUiC_WorkstationWindowGroup">
+            <window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+            <window name="windowToolsPrepTable" />
+			<window name="windowFuel" />
+			<window name="windowPrepTableInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_stoneMill" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_methaneProducer" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+        <window_group name="workstation_fermentationBarrel" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+        <window_group name="workstation_still" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowFuel" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+    </ruleset>
+</xui>
