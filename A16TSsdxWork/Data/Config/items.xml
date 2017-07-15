@@ -1943,7 +1943,7 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="tazasStoneaxeDesc" />
 		<property name="Extends" value="stoneAxe" />
 		<property name="EconomicValue" value="200" />
-		<property name="CustomIcon" value="ui_game_symbol_stoneAxe" />
+		<property name="CustomIcon" value="stoneAxe" />
 		<property name="CustomIconTint" value="ffb0b0" />
 		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
@@ -1986,7 +1986,7 @@ Mesh files no longer used:
 	</item>
 	<item id="107" name="fireaxeIron">
 		<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_fireaxeIron" />
+		<property name="CustomIcon" value="fireaxeIron" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="shortMetalPipe" />
 		<property name="HoldType" value="17" />
@@ -2058,7 +2058,7 @@ Mesh files no longer used:
 	<item id="108" name="fireaxeSteel">
 		<property name="Extends" value="fireaxeIron" />
 		<property name="Material" value="Msteel" />
-		<property name="CustomIcon" value="ui_game_symbol_fireaxeSteel" />
+		<property name="CustomIcon" value="fireaxeSteel" />
 		<!-- xxx model to be replaced -->
 		<!-- <property name="CustomIconTint" value="a0a0ff"/> -->
 		<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab" />
@@ -2096,7 +2096,6 @@ Mesh files no longer used:
 	</item>
 	<item id="113" name="pickaxeIron">
 		<property name="Meshfile" value="Items/Tools/pickaxe_ironPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_pickaxeIron" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="shortMetalPipe" />
 		<property name="HoldType" value="32" />
@@ -2167,7 +2166,7 @@ Mesh files no longer used:
 	<item id="114" name="pickaxeSteel">
 		<property name="Extends" value="pickaxeIron" />
 		<property name="Meshfile" value="Items/Tools/pickaxe_steelPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_pickaxeSteel" />
+		<property name="CustomIcon" value="pickaxeSteel" />
 		<property name="HoldType" value="4" />
 		<property name="RepairTools" value="shortSteelPipe" />
 		<property name="EconomicValue" value="760" />
@@ -2210,7 +2209,6 @@ Mesh files no longer used:
 	</item>
 	<item id="117" name="stoneShovel">
 		<property name="Meshfile" value="Items/Tools/stone_shovelPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_stoneShovel" />
 		<property name="Material" value="stone" />
 		<property name="RepairTools" value="rockSmall" />
 		<property name="HoldType" value="18" />
@@ -2272,7 +2270,6 @@ Mesh files no longer used:
 	</item>
 	<item id="118" name="shovelIron">
 		<property name="Meshfile" value="Items/Tools/shovel_ironPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_ironShovel" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="shortMetalPipe" />
 		<property name="HoldType" value="18" />
@@ -2336,7 +2333,7 @@ Mesh files no longer used:
 	<item id="119" name="shovelSteel">
 		<property name="Extends" value="shovelIron" />
 		<property name="Meshfile" value="Items/Tools/shovel_steelPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_steelShovel" />
+		<property name="CustomIcon" value="steelShovel" />
 		<property name="CustomIconTint" value="a0a0ff" />
 		<property name="RepairTools" value="shortSteelPipe" />
 		<property name="EconomicValue" value="760" />
@@ -2365,7 +2362,6 @@ Mesh files no longer used:
 	</item>
 	<item id="122" name="hoeIron">
 		<property name="Meshfile" value="Items/Tools/hoe_ironPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_ironHoe" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="shortMetalPipe" />
 		<property name="HoldType" value="50" />
@@ -2424,7 +2420,6 @@ Mesh files no longer used:
 	</item>
 	<item id="126" name="wrench">
 		<property name="Meshfile" value="Items/Tools/wrenchPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_wrench" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="shortMetalPipe" />
 		<property name="HoldType" value="29" />
@@ -2483,7 +2478,6 @@ Mesh files no longer used:
 	</item>
 	<item id="127" name="clawHammer">
 		<property name="Meshfile" value="Items/Tools/hammerPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_clawHammer" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="shortMetalPipe" />
 		<property name="HoldType" value="32" />
@@ -2541,7 +2535,6 @@ Mesh files no longer used:
 	</item>
 	<item id="128" name="nailgun">
 		<property name="Meshfile" value="Items/Tools/nailgunPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_nailgun" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="scavengedParts" />
 		<property name="HoldType" value="37" />
@@ -2600,7 +2593,6 @@ Mesh files no longer used:
 	</item>
 	<item id="130" name="chainsaw">
 		<property name="Meshfile" value="Items/Weapons/Melee/Chainsaw/chainsaw" />
-		<property name="CustomIcon" value="ui_game_symbol_chainsaw" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="scavengedParts" />
 		<property name="HoldType" value="19" />
@@ -2659,7 +2651,6 @@ Mesh files no longer used:
 	</item>
 	<item id="131" name="auger">
 		<property name="Meshfile" value="Items/Tools/augerPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_auger" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="scavengedParts" />
 		<property name="HoldType" value="20" />
@@ -2718,7 +2709,6 @@ Mesh files no longer used:
 	</item>
 	<item id="133" name="wireTool">
 		<property name="Meshfile" value="Items/Tools/wire_strippersPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_wireTool" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="forgedSteel" />
 		<property name="HoldType" value="52" />
@@ -2745,7 +2735,6 @@ Mesh files no longer used:
 	</item>
 	<item id="134" name="paintTool">
 		<property name="Meshfile" value="Items/Tools/PaintbrushPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_paintTool" />
 		<property name="Material" value="wood" />
 		<property name="RepairTools" value="wood" />
 		<property name="HoldType" value="51" />
@@ -2789,7 +2778,6 @@ Mesh files no longer used:
 	<!-- * * * * * * * * * * bows, crossbows * * * * * * * * * * -->
 	<item id="145" name="woodenBow">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/WoodenBowPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_woodenBow" />
 		<property name="Material" value="wood" />
 		<property name="RepairTools" value="FiberRope" />
 		<property name="HoldType" value="27" />
@@ -2851,7 +2839,6 @@ Mesh files no longer used:
 	</item>
 	<item id="146" name="crossbow">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_crossbow" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="scrapIron" />
 		<property name="HoldType" value="26" />
@@ -2909,7 +2896,6 @@ Mesh files no longer used:
 	<item id="147" name="compoundBow">
 		<!-- new icon xxx -->
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/CompoundBow/CompoundBowPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_compoundBow" />
 		<property name="Material" value="Mplastics" />
 		<property name="RepairTools" value="BowString" />
 		<property name="HoldType" value="53" />
@@ -2966,7 +2952,6 @@ Mesh files no longer used:
 	<!-- * * * * * * * * * * ammunition / arrows / bolts / fuel * * * * * * * * * * -->
 	<item id="150" name="9mmBullet">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/9mm_bulletPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_9mmBullet" />
 		<property name="Material" value="brass" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="5000" />
@@ -2988,7 +2973,6 @@ Mesh files no longer used:
 -->
 	<item id="152" name="44MagBullet">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44_roundPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_44MagBullet" />
 		<property name="Material" value="brass" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="5000" />
@@ -2999,7 +2983,6 @@ Mesh files no longer used:
 	</item>
 	<item id="153" name="762mmBullet">
 		<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bulletPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_762mmBullet" />
 		<property name="Material" value="brass" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="5000" />
@@ -3010,7 +2993,6 @@ Mesh files no longer used:
 	</item>
 	<item id="156" name="shotgunShell">
 		<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_shotgunShell" />
 		<property name="Material" value="lead" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="5000" />
@@ -3027,7 +3009,6 @@ Mesh files no longer used:
 	</item>
 	<item id="157" name="shotgunSlug">
 		<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_shotgunSlug" />
 		<property name="Material" value="brass" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="5000" />
@@ -3043,7 +3024,6 @@ Mesh files no longer used:
 	</item>
 	<item id="159" name="rocket">
 		<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_rocket" />
 		<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="3" />
@@ -3077,7 +3057,6 @@ Mesh files no longer used:
 	</item>
 	<item id="160" name="blunderbussAmmo">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_blunderbussAmmo" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="45" />
@@ -3090,7 +3069,6 @@ Mesh files no longer used:
 	</item>
 	<item id="161" name="gasCan">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_gasCan" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="HoldType" value="45" />
 		<property name="Material" value="MFuelBarrel" />
@@ -3105,7 +3083,6 @@ Mesh files no longer used:
 	</item>
 	<item id="164" name="arrow">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/Arrow" />
-		<property name="CustomIcon" value="ui_game_symbol_arrow" />
 		<property name="DropMeshfile" value="Items/Misc/arrow_dropped" />
 		<property name="HandMeshfile" value="Items/Misc/arrow_hand" />
 		<property name="HoldType" value="32" />
@@ -3146,7 +3123,6 @@ Mesh files no longer used:
 	</item>
 	<item id="165" name="ironArrow">
 		<property name="Extends" value="arrow" />
-		<property name="CustomIcon" value="ui_game_symbol_ironArrow" />
 		<property name="Material" value="metal" />
 		<property name="EconomicValue" value="25" />
 		<property name="EconomicBundleSize" value="5" />
@@ -3174,7 +3150,6 @@ Mesh files no longer used:
 	</item>
 	<item id="166" name="steelArrow">
 		<property name="Extends" value="ironArrow" />
-		<property name="CustomIcon" value="ui_game_symbol_steelArrow" />
 		<property name="EconomicValue" value="53" />
 		<property name="EconomicBundleSize" value="5" />
 		<property class="Action1">
@@ -3201,7 +3176,6 @@ Mesh files no longer used:
 	<item id="167" name="flamingArrow">
 		<property name="Extends" value="ironArrow" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/flamingArrowPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_flamingArrow" />
 		<property name="DropMeshfile" value="Items/Misc/arrow_flaming_dropped" />
 		<property name="HandMeshfile" value="Items/Misc/arrow_flaming_hand" />
 		<property name="UsableUnderwater" value="false" />
@@ -3221,7 +3195,6 @@ Mesh files no longer used:
 	</item>
 	<item id="170" name="crossbowBolt">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_crossbowBolt" />
 		<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_droppedPrefab" />
 		<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_handPrefab" />
 		<property name="HoldType" value="32" />
@@ -3259,7 +3232,6 @@ Mesh files no longer used:
 	</item>
 	<item id="171" name="ironCrossbowBolt">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_ironCrossbowBolt" />
 		<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_droppedPrefab" />
 		<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_handPrefab" />
 		<property name="HoldType" value="32" />
@@ -3300,7 +3272,6 @@ Mesh files no longer used:
 	<item id="172" name="steelCrossbowBolt">
 		<property name="Extends" value="ironCrossbowBolt" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_steelCrossbowBolt" />
 		<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_dropped_steelPrefab" />
 		<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_hand_steelPrefab" />
 		<property name="EconomicValue" value="53" />
@@ -3329,7 +3300,6 @@ Mesh files no longer used:
 	<item id="173" name="explodingCrossbowBolt">
 		<property name="Extends" value="ironCrossbowBolt" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltExplosivePrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_explodingCrossbowBolt" />
 		<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_dropped_explosivePrefab" />
 		<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_hand_explosivePrefab" />
 		<property name="FuelValue" value="12" />
@@ -3367,7 +3337,6 @@ Mesh files no longer used:
 	<item id="180" name="pipeBomb">
 		<property name="Class" value="ItemClassTimeBomb" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/PipeBomb/PipeBombPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_pipeBomb" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="25" />
 		<property name="Stacknumber" value="50" />
@@ -3452,7 +3421,6 @@ Mesh files no longer used:
 		<property name="Class" value="ItemClassTimeBomb" />
 		<property name="Material" value="organic" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/Molotov/molotovPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_molotovCocktail" />
 		<property name="HoldType" value="54" />
 		<property name="DropScale" value="2" />
 		<property name="ThrowableDecoy" value="true" />
@@ -3496,7 +3464,6 @@ Mesh files no longer used:
 	<item id="186" name="flare">
 		<property name="Class" value="ItemClassTimeBomb" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/PipeBomb/PipeBombPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_flare" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="25" />
 		<property name="Stacknumber" value="40" />
@@ -3533,7 +3500,6 @@ Mesh files no longer used:
 	<item id="190" name="rockSmall">
 		<!-- scrap material -->
 		<property name="Meshfile" value="Items/Crafting/rock_smallPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_rockSmall" />
 		<property name="Material" value="stone" />
 		<property name="HoldType" value="40" />
 		<property name="Stacknumber" value="5000" />
@@ -3558,7 +3524,6 @@ Mesh files no longer used:
 	</item>
 	<item id="191" name="turd">
 		<property name="Meshfile" value="Items/Crafting/clayPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_turd" />
 		<property name="Material" value="MbioMass" />
 		<property name="Weight" value="3" />
 		<property name="HoldType" value="40" />
@@ -3582,7 +3547,6 @@ Mesh files no longer used:
 	</item>
 	<item id="192" name="steelDart">
 		<property name="Extends" value="ironArrow" param1="HandMeshfile" />
-		<property name="CustomIcon" value="ui_game_symbol_steelDart" />
 		<property name="Meshfile" value="Entities/Electrical/steel_dartPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="EconomicValue" value="25" />
@@ -3621,7 +3585,6 @@ Mesh files no longer used:
 	</item>
 	<item id="210" name="partsPistol_grip">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsPistol_grip" />
 		<property name="DescriptionKey" value="partsPistolGroupDesc" />
 		<property name="PartType" value="Stock" />
 		<property name="Weight" value="10" />
@@ -3633,7 +3596,6 @@ Mesh files no longer used:
 	</item>
 	<item id="211" name="partsPistol_receiver">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsPistol_receiver" />
 		<property name="DescriptionKey" value="partsPistolGroupDesc" />
 		<property name="PartType" value="Receiver" />
 		<property name="Weight" value="20" />
@@ -3645,7 +3607,6 @@ Mesh files no longer used:
 	</item>
 	<item id="212" name="partsPistol_parts">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsPistol_parts" />
 		<property name="DescriptionKey" value="partsPistolGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="10" />
@@ -3657,7 +3618,6 @@ Mesh files no longer used:
 	</item>
 	<item id="213" name="partsPistol_barrel">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsPistol_barrel" />
 		<property name="DescriptionKey" value="partsPistolGroupDesc" />
 		<property name="PartType" value="Barrel" />
 		<property name="Weight" value="10" />
@@ -3670,7 +3630,6 @@ Mesh files no longer used:
 	</item>
 	<item id="216" name="parts44Magnum_grip">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_parts44Magnum_grip" />
 		<property name="DescriptionKey" value="parts44MagnumGroupDesc" />
 		<property name="PartType" value="Stock" />
 		<property name="Weight" value="15" />
@@ -3682,7 +3641,6 @@ Mesh files no longer used:
 	</item>
 	<item id="217" name="parts44Magnum_cylinder">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_parts44Magnum_cylinder" />
 		<property name="DescriptionKey" value="parts44MagnumGroupDesc" />
 		<property name="PartType" value="Receiver" />
 		<property name="Weight" value="10" />
@@ -3694,7 +3652,6 @@ Mesh files no longer used:
 	</item>
 	<item id="218" name="parts44Magnum_parts">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_parts44Magnum_parts" />
 		<property name="DescriptionKey" value="parts44MagnumGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="10" />
@@ -3706,7 +3663,6 @@ Mesh files no longer used:
 	</item>
 	<item id="219" name="parts44Magnum_frame">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_parts44Magnum_frame" />
 		<property name="DescriptionKey" value="parts44MagnumGroupDesc" />
 		<property name="PartType" value="Barrel" />
 		<property name="Weight" value="20" />
@@ -3719,7 +3675,6 @@ Mesh files no longer used:
 	</item>
 	<item id="222" name="partsPumpShotgun_stockShort">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsPumpShotgun_stockShort" />
 		<property name="DescriptionKey" value="partsPumpShotgunShortGroupDesc" />
 		<property name="PartType" value="Stock" />
 		<property name="Material" value="wood" />
@@ -3733,7 +3688,6 @@ Mesh files no longer used:
 	</item>
 	<item id="223" name="partsPumpShotgun_receiver">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsPumpShotgun_receiver" />
 		<property name="DescriptionKey" value="commonShotgunPartsGroupDesc" />
 		<property name="PartType" value="Receiver" />
 		<property name="Weight" value="25" />
@@ -3745,7 +3699,6 @@ Mesh files no longer used:
 	</item>
 	<item id="224" name="partsPumpShotgun_parts">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsPumpShotgun_parts" />
 		<property name="DescriptionKey" value="commonShotgunPartsGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="15" />
@@ -3757,7 +3710,6 @@ Mesh files no longer used:
 	</item>
 	<item id="225" name="partsPumpShotgun_barrelShort">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsPumpShotgun_barrelShort" />
 		<property name="DescriptionKey" value="partsPumpShotgunShortGroupDesc" />
 		<property name="PartType" value="Barrel" />
 		<property name="Weight" value="20" />
@@ -3768,7 +3720,6 @@ Mesh files no longer used:
 	</item>
 	<item id="226" name="partsPumpShotgun_stock">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsPumpShotgun_stock" />
 		<property name="DescriptionKey" value="partsPumpShotgunGroupDesc" />
 		<property name="PartType" value="Stock" />
 		<property name="Material" value="wood" />
@@ -3782,7 +3733,6 @@ Mesh files no longer used:
 	</item>
 	<item id="227" name="partsPumpShotgun_barrel">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsPumpShotgun_barrel" />
 		<property name="DescriptionKey" value="partsPumpShotgunGroupDesc" />
 		<property name="PartType" value="Barrel" />
 		<property name="Weight" value="30" />
@@ -3793,7 +3743,6 @@ Mesh files no longer used:
 	</item>
 	<item id="230" name="partsMP5_stock">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsMP5_stock" />
 		<property name="DescriptionKey" value="partsMP5GroupDesc" />
 		<property name="PartType" value="Stock" />
 		<property name="Weight" value="25" />
@@ -3805,7 +3754,6 @@ Mesh files no longer used:
 	</item>
 	<item id="231" name="partsMP5_receiver">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsMP5_receiver" />
 		<property name="DescriptionKey" value="partsMP5GroupDesc" />
 		<property name="PartType" value="Receiver" />
 		<property name="Weight" value="25" />
@@ -3817,7 +3765,7 @@ Mesh files no longer used:
 	</item>
 	<item id="232" name="partsMP5_parts">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_parts44Magnum_parts" />
+		<property name="CustomIcon" value="parts44Magnum_parts" />
 		<!-- xxx -->
 		<property name="DescriptionKey" value="partsMP5GroupDesc" />
 		<property name="PartType" value="Pump" />
@@ -3831,7 +3779,6 @@ Mesh files no longer used:
 	</item>
 	<item id="233" name="partsMP5_barrel">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsMP5_barrel" />
 		<property name="DescriptionKey" value="partsMP5GroupDesc" />
 		<property name="PartType" value="Barrel" />
 		<property name="Weight" value="25" />
@@ -3844,7 +3791,6 @@ Mesh files no longer used:
 	</item>
 	<item id="236" name="partsAK47_stock">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsMP5_stock" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 		<property name="PartType" value="Stock" />
 		<property name="Weight" value="30" />
@@ -3857,7 +3803,6 @@ Mesh files no longer used:
 	</item>
 	<item id="237" name="partsAK47_receiver">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsMP5_receiver" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 		<property name="PartType" value="Receiver" />
 		<property name="Weight" value="30" />
@@ -3869,7 +3814,6 @@ Mesh files no longer used:
 	</item>
 	<item id="238" name="partsAK47_parts">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsMP5_parts" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="15" />
@@ -3882,7 +3826,7 @@ Mesh files no longer used:
 	</item>
 	<item id="239" name="partsAK47_barrel">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsPistol_barrel" />
+		<property name="CustomIcon" value="partsPistol_barrel" />
 		<!-- xxx -->
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 		<property name="PartType" value="Barrel" />
@@ -3896,7 +3840,6 @@ Mesh files no longer used:
 	</item>
 	<item id="242" name="partsHuntingRifle_stock">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsHuntingRifle_stock" />
 		<property name="DescriptionKey" value="partsHuntingRifleGroupDesc" />
 		<property name="PartType" value="Stock" />
 		<property name="Material" value="wood" />
@@ -3910,7 +3853,6 @@ Mesh files no longer used:
 	</item>
 	<item id="243" name="partsHuntingRifle_receiver">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsHuntingRifle_receiver" />
 		<property name="DescriptionKey" value="partsHuntingRifleGroupDesc" />
 		<property name="PartType" value="Receiver" />
 		<property name="Weight" value="30" />
@@ -3921,7 +3863,7 @@ Mesh files no longer used:
 	</item>
 	<item id="244" name="partsHuntingRifle_parts">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsHuntingRifle_parts" />
+		<property name="CustomIcon" value="partsPistol_parts" />
 		<property name="DescriptionKey" value="partsHuntingRifleGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="15" />
@@ -3933,7 +3875,6 @@ Mesh files no longer used:
 	</item>
 	<item id="245" name="partsHuntingRifle_barrel">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsHuntingRifle_barrel" />
 		<property name="DescriptionKey" value="partsHuntingRifleGroupDesc" />
 		<property name="PartType" value="Barrel" />
 		<property name="Weight" value="35" />
@@ -3945,7 +3886,6 @@ Mesh files no longer used:
 	</item>
 	<item id="248" name="partsSniperRifle_stock">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsSniperRifle_stock" />
 		<property name="DescriptionKey" value="partsSniperRifleGroupDesc" />
 		<property name="PartType" value="Stock" />
 		<property name="Weight" value="30" />
@@ -3959,7 +3899,6 @@ Mesh files no longer used:
 	</item>
 	<item id="249" name="partsSniperRifle_receiver">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsSniperRifle_receiver" />
 		<property name="DescriptionKey" value="partsSniperRifleGroupDesc" />
 		<property name="PartType" value="Receiver" />
 		<property name="Weight" value="30" />
@@ -3971,7 +3910,7 @@ Mesh files no longer used:
 	</item>
 	<item id="250" name="partsSniperRifle_parts">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsSniperRifle_parts" />
+		<property name="CustomIcon" value="partsPistol_parts" />
 		<property name="DescriptionKey" value="partsSniperRifleGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="15" />
@@ -3984,7 +3923,6 @@ Mesh files no longer used:
 	</item>
 	<item id="251" name="partsSniperRifle_barrel">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsSniperRifle_barrel" />
 		<property name="DescriptionKey" value="partsSniperRifleGroupDesc" />
 		<property name="PartType" value="Barrel" />
 		<property name="Weight" value="40" />
@@ -3997,7 +3935,6 @@ Mesh files no longer used:
 	</item>
 	<item id="254" name="partsRocketLauncher_stock">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsRocketLauncher_stock" />
 		<property name="DescriptionKey" value="partsRocketLauncherGroupDesc" />
 		<property name="PartType" value="Stock" />
 		<property name="Weight" value="35" />
@@ -4009,7 +3946,6 @@ Mesh files no longer used:
 	</item>
 	<item id="255" name="partsRocketLauncher_receiver">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsRocketLauncher_receiver" />
 		<property name="DescriptionKey" value="partsRocketLauncherGroupDesc" />
 		<property name="PartType" value="Receiver" />
 		<property name="Weight" value="35" />
@@ -4021,7 +3957,6 @@ Mesh files no longer used:
 	</item>
 	<item id="256" name="partsRocketLauncher_parts">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsRocketLauncher_parts" />
 		<property name="DescriptionKey" value="partsRocketLauncherGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="20" />
@@ -4033,7 +3968,6 @@ Mesh files no longer used:
 	</item>
 	<item id="257" name="partsRocketLauncher_barrel">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsRocketLauncher_barrel" />
 		<property name="DescriptionKey" value="partsRocketLauncherGroupDesc" />
 		<property name="PartType" value="Barrel" />
 		<property name="Weight" value="45" />
@@ -4047,7 +3981,6 @@ Mesh files no longer used:
 	</item>
 	<item id="260" name="partsHandlebars">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsHandlebars" />
 		<property name="PartType" value="Pump" />
 		<property name="EconomicValue" value="306" />
 		<property class="Attributes">
@@ -4060,7 +3993,7 @@ Mesh files no longer used:
 	</item>
 	<item id="261" name="partsChainsaw_parts">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsChainsaw_parts" />
+		<property name="CustomIcon" value="partsChainsaw_parts" />
 		<!-- xxx -->
 		<property name="PartType" value="Stock" />
 		<property name="Weight" value="10" />
@@ -4072,7 +4005,6 @@ Mesh files no longer used:
 	</item>
 	<item id="262" name="partsChainsaw_blade">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsChainsaw_blade" />
 		<property name="PartType" value="Barrel" />
 		<property name="Weight" value="50" />
 		<property class="Attributes">
@@ -4088,7 +4020,6 @@ Mesh files no longer used:
 	</item>
 	<item id="265" name="partsAuger_parts">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsAuger_parts" />
 		<property name="PartType" value="Stock" />
 		<property name="Weight" value="10" />
 		<property class="Attributes">
@@ -4100,7 +4031,6 @@ Mesh files no longer used:
 	</item>
 	<item id="266" name="partsAuger_blade">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsAuger_blade" />
 		<property name="PartType" value="Barrel" />
 		<property name="Weight" value="40" />
 		<property class="Attributes">
@@ -4116,7 +4046,6 @@ Mesh files no longer used:
 		<property name="VehicleSlotType" value="chassis" />
 		<property name="HoldingItemHidden" value="true" />
 		<property name="Meshfile" value="Items/Misc/chassisPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_minibikeChassis" />
 		<property name="Material" value="metal" />
 		<property name="DegradationBreaksAfter" value="true" />
 		<property name="RepairTools" value="scavengedParts" />
@@ -4135,7 +4064,6 @@ Mesh files no longer used:
 	</item>
 	<item id="270" name="minibikeSeat">
 		<property name="DescriptionKey" value="minibikePartsGroupDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_minibikeSeat" />
 		<property name="VehicleSlotType" value="seat" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -4153,7 +4081,6 @@ Mesh files no longer used:
 	</item>
 	<item id="271" name="minibikeWheels">
 		<property name="DescriptionKey" value="minibikePartsGroupDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_minibikeWheels" />
 		<property name="VehicleSlotType" value="wheel" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -4190,7 +4117,6 @@ Mesh files no longer used:
 	</item>
 	<item id="273" name="minibikeHandlebars">
 		<property name="DescriptionKey" value="minibikePartsGroupDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_minibikeHandlebars" />
 		<property name="VehicleSlotType" value="handlebars" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -4213,7 +4139,7 @@ Mesh files no longer used:
 		<property name="VehicleSlotType" value="basket" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_shoppingBasketEmpty" />
+		<property name="CustomIcon" value="shoppingBasketEmpty" />
 		<property name="Material" value="metal" />
 		<property name="DegradationBreaksAfter" value="true" />
 		<property name="RepairTools" value="scavengedParts" />
@@ -4229,7 +4155,6 @@ Mesh files no longer used:
 	</item>
 	<item id="276" name="partsNailgun_frame">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsNailgun_frame" />
 		<property name="DescriptionKey" value="partsNailgunGroupDesc" />
 		<property name="PartType" value="Stock" />
 		<property name="Material" value="Mplastics" />
@@ -4243,7 +4168,6 @@ Mesh files no longer used:
 	</item>
 	<item id="277" name="partsNailgun_receiver">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsNailgun_receiver" />
 		<property name="DescriptionKey" value="partsNailgunGroupDesc" />
 		<property name="PartType" value="Receiver" />
 		<property name="Material" value="metal" />
@@ -4256,7 +4180,6 @@ Mesh files no longer used:
 	</item>
 	<item id="278" name="partsNailgun_parts">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsNailgun_parts" />
 		<property name="DescriptionKey" value="partsNailgunGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Material" value="metal" />
@@ -4270,7 +4193,6 @@ Mesh files no longer used:
 	</item>
 	<item id="279" name="partsNailgun_battery">
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsNailgun_battery" />
 		<property name="DescriptionKey" value="partsNailgunGroupDesc" />
 		<property name="PartType" value="Barrel" />
 		<property name="Material" value="lead" />
@@ -4285,7 +4207,6 @@ Mesh files no longer used:
 		<!-- new icon xxx -->
 		<property name="Extends" value="partsMaster" />
 		<property name="DescriptionKey" value="partsCompoundBowGroupDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_partsCompoundBow_body" />
 		<property name="PartType" value="Stock" />
 		<property name="Material" value="Mplastics" />
 		<property name="Weight" value="20" />
@@ -4298,7 +4219,6 @@ Mesh files no longer used:
 	<item id="281" name="partsCompoundBow_grip">
 		<!-- new icon xxx -->
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsCompoundBow_grip" />
 		<property name="DescriptionKey" value="partsCompoundBowGroupDesc" />
 		<property name="PartType" value="Receiver" />
 		<property name="Material" value="Mplastics" />
@@ -4312,7 +4232,6 @@ Mesh files no longer used:
 	<item id="282" name="partsCompoundBow_parts">
 		<!-- new icon xxx -->
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsCompoundBow_parts" />
 		<property name="DescriptionKey" value="partsCompoundBowGroupDesc" />
 		<property name="PartType" value="Pump" />
 		<property name="Material" value="Mplastics" />
@@ -4327,7 +4246,6 @@ Mesh files no longer used:
 	<item id="283" name="partsCompoundBow_string">
 		<!-- new icon xxx -->
 		<property name="Extends" value="partsMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_partsCompoundBow_string" />
 		<property name="DescriptionKey" value="partsCompoundBowGroupDesc" />
 		<property name="PartType" value="Barrel" />
 		<property name="Material" value="Mplastics" />
@@ -4352,7 +4270,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Legs" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_plantFiberPants" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Attributes">
 			<property name="ConcussiveProtection" value="0.065,0.11" />
@@ -4378,7 +4295,6 @@ Mesh files no longer used:
 	<item id="351" name="plantFiberShirt">
 		<!-- plantFiberClothes -->
 		<property name="Extends" value="plantFiberPants" />
-		<property name="CustomIcon" value="ui_game_symbol_plantFiberShirt" />
 		<property name="FuelValue" value="6" />
 		<property name="EquipSlot" value="Chest" />
 		<property class="UMA">
@@ -4391,7 +4307,6 @@ Mesh files no longer used:
 	<item id="352" name="plantFiberHood">
 		<!-- plantFiberClothes -->
 		<property name="Extends" value="plantFiberPants" />
-		<property name="CustomIcon" value="ui_game_symbol_plantFiberHood" />
 		<property name="Waterproof" value="0.05" />
 		<property name="FuelValue" value="3" />
 		<property name="EquipSlot" value="Head" />
@@ -4407,7 +4322,6 @@ Mesh files no longer used:
 	<item id="353" name="plantFiberShoes">
 		<!-- plantFiberClothes -->
 		<property name="Extends" value="plantFiberPants" />
-		<property name="CustomIcon" value="ui_game_symbol_plantFiberShoes" />
 		<property name="FuelValue" value="3" />
 		<property name="EquipSlot" value="Feet" />
 		<property class="UMA">
@@ -4420,7 +4334,6 @@ Mesh files no longer used:
 	<item id="354" name="plantFiberGloves">
 		<!-- plantFiberClothes -->
 		<property name="Extends" value="plantFiberPants" />
-		<property name="CustomIcon" value="ui_game_symbol_plantFiberGloves" />
 		<property name="FuelValue" value="3" />
 		<property name="EquipSlot" value="Hands" />
 		<property class="UMA">
@@ -4442,7 +4355,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Feet" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_clothBoots" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Attributes">
 			<property name="ConcussiveProtection" value="0.125,0.25" />
@@ -4467,7 +4379,6 @@ Mesh files no longer used:
 	<item id="358" name="clothPants">
 		<!-- clothArmor -->
 		<property name="Extends" value="clothBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_clothPants" />
 		<property name="FuelValue" value="8" />
 		<property name="EconomicValue" value="48" />
 		<property name="EquipSlot" value="Legs" />
@@ -4481,7 +4392,6 @@ Mesh files no longer used:
 	<item id="359" name="clothJacket">
 		<!-- clothArmor -->
 		<property name="Extends" value="clothBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_clothJacket" />
 		<property name="FuelValue" value="5" />
 		<property name="EconomicValue" value="48" />
 		<property name="EquipSlot" value="Chest" />
@@ -4495,7 +4405,6 @@ Mesh files no longer used:
 	<item id="360" name="clothHat">
 		<!-- clothArmor -->
 		<property name="Extends" value="clothBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_clothHat" />
 		<property name="FuelValue" value="3" />
 		<property name="EquipSlot" value="Head" />
 		<property class="UMA">
@@ -4510,7 +4419,6 @@ Mesh files no longer used:
 	<item id="361" name="clothGloves">
 		<!-- clothArmor -->
 		<property name="Extends" value="clothBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_clothGloves" />
 		<property name="FuelValue" value="1" />
 		<property name="EquipSlot" value="Hands" />
 		<property class="UMA">
@@ -4532,7 +4440,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Feet" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_animalHideBoots" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Attributes">
 			<property name="ConcussiveProtection" value="0.07,0.35" />
@@ -4557,7 +4464,6 @@ Mesh files no longer used:
 	<item id="365" name="animalHideLegArmor">
 		<!-- hideArmor -->
 		<property name="Extends" value="animalHideBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_animalHideLegArmor" />
 		<property name="FuelValue" value="40" />
 		<property name="EconomicValue" value="240" />
 		<property name="EquipSlot" value="Legs" />
@@ -4574,7 +4480,6 @@ Mesh files no longer used:
 	<item id="366" name="animalHideChestArmor">
 		<!-- hideArmor -->
 		<property name="Extends" value="animalHideBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_animalChestArmor" />
 		<property name="FuelValue" value="40" />
 		<property name="EconomicValue" value="240" />
 		<property name="EquipSlot" value="Chest" />
@@ -4588,7 +4493,6 @@ Mesh files no longer used:
 	<item id="367" name="animalHideHood">
 		<!-- hideArmor -->
 		<property name="Extends" value="animalHideBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_animalHideHood" />
 		<property name="FuelValue" value="20" />
 		<property name="EquipSlot" value="Head" />
 		<property class="UMA">
@@ -4603,7 +4507,6 @@ Mesh files no longer used:
 	<item id="368" name="animalHideGloves">
 		<!-- hideArmor -->
 		<property name="Extends" value="animalHideBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_animalHideGloves" />
 		<property name="FuelValue" value="20" />
 		<property name="EquipSlot" value="Hands" />
 		<property class="UMA">
@@ -4625,7 +4528,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Feet" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_leatherBoots" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Attributes">
 			<property name="ConcussiveProtection" value="0.152,0.38" />
@@ -4650,7 +4552,6 @@ Mesh files no longer used:
 	<item id="371" name="leatherGloves">
 		<!-- leatherArmor -->
 		<property name="Extends" value="leatherBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_leatherGloves" />
 		<property name="FuelValue" value="20" />
 		<property name="EquipSlot" value="Hands" />
 		<property class="UMA">
@@ -4663,7 +4564,6 @@ Mesh files no longer used:
 	<item id="372" name="leatherPants">
 		<!-- leatherArmor -->
 		<property name="Extends" value="leatherBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_leatherPants" />
 		<property name="FuelValue" value="40" />
 		<property name="EconomicValue" value="264" />
 		<property name="EquipSlot" value="Legs" />
@@ -4677,7 +4577,6 @@ Mesh files no longer used:
 	<item id="373" name="leatherJacket">
 		<!-- leatherArmor -->
 		<property name="Extends" value="leatherBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_leatherJacket" />
 		<property name="FuelValue" value="40" />
 		<property name="EconomicValue" value="264" />
 		<property name="EquipSlot" value="Chest" />
@@ -4691,7 +4590,6 @@ Mesh files no longer used:
 	<item id="374" name="leatherHood">
 		<!-- leatherArmor -->
 		<property name="Extends" value="leatherBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_leatherHood" />
 		<property name="FuelValue" value="20" />
 		<property name="EquipSlot" value="Head" />
 		<property class="UMA">
@@ -4715,7 +4613,6 @@ Mesh files no longer used:
 		<property name="EconomicValue" value="214" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_scrapBoots" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Attributes">
 			<property name="ConcussiveProtection" value="0.228,0.57" />
@@ -4740,7 +4637,6 @@ Mesh files no longer used:
 	<item id="378" name="scrapLegArmor">
 		<!-- scrapArmor -->
 		<property name="Extends" value="scrapBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_scrapLegArmor" />
 		<property name="FuelValue" value="8" />
 		<property name="EconomicValue" value="470" />
 		<property name="EquipSlot" value="Legs" />
@@ -4754,7 +4650,6 @@ Mesh files no longer used:
 	<item id="379" name="scrapChestArmor">
 		<!-- scrapArmor -->
 		<property name="Extends" value="scrapBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_scrapChestArmor" />
 		<property name="FuelValue" value="30" />
 		<property name="EconomicValue" value="470" />
 		<property name="EquipSlot" value="Chest" />
@@ -4768,7 +4663,6 @@ Mesh files no longer used:
 	<item id="380" name="scrapHelmet">
 		<!-- scrapArmor -->
 		<property name="Extends" value="scrapBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_scrapHelmet" />
 		<property name="FuelValue" value="8" />
 		<property name="EquipSlot" value="Head" />
 		<property class="UMA">
@@ -4784,7 +4678,6 @@ Mesh files no longer used:
 	<item id="381" name="scrapGloves">
 		<!-- scrapArmor -->
 		<property name="Extends" value="scrapBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_scrapGloves" />
 		<property name="FuelValue" value="8" />
 		<property name="EquipSlot" value="Hands" />
 		<property class="UMA">
@@ -4806,7 +4699,6 @@ Mesh files no longer used:
 		<property name="EconomicValue" value="460" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_ironBoots" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Attributes">
 			<property name="ConcussiveProtection" value="0.26,0.65" />
@@ -4831,7 +4723,6 @@ Mesh files no longer used:
 	<item id="384" name="ironLegArmor">
 		<!-- ironArmor -->
 		<property name="Extends" value="ironBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_ironLegArmor" />
 		<property name="FuelValue" value="12" />
 		<property name="EconomicValue" value="700" />
 		<property name="EquipSlot" value="Legs" />
@@ -4845,7 +4736,6 @@ Mesh files no longer used:
 	<item id="385" name="ironChestArmor">
 		<!-- ironArmor -->
 		<property name="Extends" value="ironBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_ironChestArmor" />
 		<property name="FuelValue" value="12" />
 		<property name="EconomicValue" value="700" />
 		<property name="EquipSlot" value="Chest" />
@@ -4859,7 +4749,6 @@ Mesh files no longer used:
 	<item id="386" name="ironHelmet">
 		<!-- ironArmor -->
 		<property name="Extends" value="ironBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_ironHelmet" />
 		<property name="FuelValue" value="12" />
 		<property name="EquipSlot" value="Head" />
 		<property class="UMA">
@@ -4882,7 +4771,6 @@ Mesh files no longer used:
 	<item id="387" name="ironGloves">
 		<!-- ironArmor -->
 		<property name="Extends" value="ironBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_ironGloves" />
 		<property name="FuelValue" value="12" />
 		<property name="EquipSlot" value="Hands" />
 		<property class="UMA">
@@ -4904,7 +4792,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Hands" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_militaryGloves" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Attributes">
 			<property name="ConcussiveProtection" value="0.28,0.7" />
@@ -4929,7 +4816,6 @@ Mesh files no longer used:
 	<item id="391" name="militaryHelmet">
 		<!-- militaryArmor -->
 		<property name="Extends" value="militaryGloves" />
-		<property name="CustomIcon" value="ui_game_symbol_militaryHelmet" />
 		<property name="EquipSlot" value="Head" />
 		<property class="UMA">
 			<property name="Mesh" value="gear_kevlar_helmet" />
@@ -4942,7 +4828,6 @@ Mesh files no longer used:
 	<item id="392" name="militaryBoots">
 		<!-- militaryArmor -->
 		<property name="Extends" value="militaryGloves" />
-		<property name="CustomIcon" value="ui_game_symbol_militaryBoots" />
 		<property name="EquipSlot" value="Feet" />
 		<property class="UMA">
 			<property name="Mesh" value="armor_kevlar_boots" />
@@ -4954,7 +4839,6 @@ Mesh files no longer used:
 	<item id="393" name="militaryLegArmor">
 		<!-- militaryArmor -->
 		<property name="Extends" value="militaryGloves" />
-		<property name="CustomIcon" value="ui_game_symbol_militaryLegArmor" />
 		<property name="Weight" value="10" />
 		<property name="EconomicValue" value="3200" />
 		<property name="EquipSlot" value="Legs" />
@@ -4968,7 +4852,6 @@ Mesh files no longer used:
 	<item id="394" name="militaryVest">
 		<!-- militaryArmor -->
 		<property name="Extends" value="militaryGloves" />
-		<property name="CustomIcon" value="ui_game_symbol_militaryVest" />
 		<property name="Weight" value="10" />
 		<property name="EconomicValue" value="3200" />
 		<property name="EquipSlot" value="Chest" />
@@ -4991,7 +4874,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Feet" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_hazmatBoots" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Attributes">
 			<property name="ConcussiveProtection" value="0.08,0.2" />
@@ -5016,7 +4898,6 @@ Mesh files no longer used:
 	<item id="398" name="hazmatPants">
 		<!-- hazMatArmor -->
 		<property name="Extends" value="hazmatBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_hazmatPants" />
 		<property name="Weight" value="10" />
 		<property name="EconomicValue" value="3200" />
 		<property name="EquipSlot" value="Legs" />
@@ -5032,7 +4913,6 @@ Mesh files no longer used:
 		<!-- hazMatArmor -->
 		<!-- is now a hazMatJacket -->
 		<property name="Extends" value="hazmatBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_hazmatShirt" />
 		<property name="Insulation" value="10" />
 		<property name="Waterproof" value="0.45" />
 		<property name="Weight" value="10" />
@@ -5048,7 +4928,6 @@ Mesh files no longer used:
 	<item id="400" name="hazmatGloves">
 		<!-- hazMatArmor -->
 		<property name="Extends" value="hazmatBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_hazmatGloves" />
 		<property name="EquipSlot" value="Hands" />
 		<property class="UMA">
 			<property name="Mesh" value="armor_hazmat_hands" />
@@ -5060,7 +4939,6 @@ Mesh files no longer used:
 	<item id="401" name="hazmatMask">
 		<!-- hazMatArmor -->
 		<property name="Extends" value="hazmatBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_hazmatGloves" />
 		<property name="EquipSlot" value="Head" />
 		<property class="UMA">
 			<property name="Mesh" value="armor_hazmat_head" />
@@ -5093,7 +4971,6 @@ Mesh files no longer used:
 		<property name="EconomicValue" value="460" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_heavyBanditGloves" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Attributes">
 			<property name="ConcussiveProtection" value="0.26,0.65" />
@@ -5118,7 +4995,6 @@ Mesh files no longer used:
 	<item id="403" name="heavyBanditGasmask">
 		<!-- banditArmor -->
 		<property name="Extends" value="heavyBanditGloves" />
-		<property name="CustomIcon" value="ui_game_symbol_heavyBanditGasmask" />
 		<property name="EquipSlot" value="Face" />
 		<property class="UMA">
 			<property name="Mesh" value="armor_heavy_bandit_gasmask" />
@@ -5134,7 +5010,6 @@ Mesh files no longer used:
 	<item id="404" name="heavyBanditBoots">
 		<!-- banditArmor -->
 		<property name="Extends" value="heavyBanditGloves" />
-		<property name="CustomIcon" value="ui_game_symbol_heavyBanditBoots" />
 		<property name="EquipSlot" value="Feet" />
 		<property class="UMA">
 			<property name="Mesh" value="armor_heavy_bandit_feet" />
@@ -5146,7 +5021,6 @@ Mesh files no longer used:
 	<item id="405" name="heavyBanditLegArmor">
 		<!-- banditArmor -->
 		<property name="Extends" value="heavyBanditGloves" />
-		<property name="CustomIcon" value="ui_game_symbol_heavyBanditLegArmor" />
 		<property name="Weight" value="150" />
 		<property name="EconomicValue" value="700" />
 		<property name="EquipSlot" value="Legs" />
@@ -5160,7 +5034,6 @@ Mesh files no longer used:
 	<item id="406" name="heavyBanditChestArmor">
 		<!-- banditArmor -->
 		<property name="Extends" value="heavyBanditGloves" />
-		<property name="CustomIcon" value="ui_game_symbol_heavyBanditChestArmor" />
 		<property name="Weight" value="150" />
 		<property name="EconomicValue" value="700" />
 		<property name="EquipSlot" value="Chest" />
@@ -5174,7 +5047,6 @@ Mesh files no longer used:
 	<item id="408" name="leatherHoodBlack">
 		<!-- leatherArmor -->
 		<property name="Extends" value="leatherHood" />
-		<property name="CustomIcon" value="ui_game_symbol_leatherHoodBlack" />
 		<property name="Weight" value="25" />
 		<!-- weight because loot only -->
 		<property name="CustomIcon" value="leatherHood" />
@@ -5198,7 +5070,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Head" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_cowboyHat" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Degradation" value="100" param1="true" />
 		<property class="Action1">
@@ -5233,7 +5104,6 @@ Mesh files no longer used:
 	</item>
 	<item id="451" name="blackCowboyHat">
 		<property name="Extends" value="cowboyHat" />
-		<property name="CustomIcon" value="ui_game_symbol_blackCowboyHat" />
 		<property name="CustomIcon" value="cowboyHat" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property name="HoldType" value="7" />
@@ -5245,7 +5115,7 @@ Mesh files no longer used:
 	<item id="452" name="plantFiberHat">
 		<!-- plantFiberClothes -->
 		<property name="Extends" value="plantFiberPants" param1="DescriptionKey" />
-		<property name="CustomIcon" value="ui_game_symbol_cowboyHat" />
+		<property name="CustomIcon" value="cowboyHat" />
 		<property name="CustomIconTint" value="227,206,164" />
 		<property name="Insulation" value="-10" />
 		<property name="Waterproof" value="0.05" />
@@ -5265,7 +5135,6 @@ Mesh files no longer used:
 		<property name="Insulation" value="-5" />
 		<property name="Waterproof" value="0.05" />
 		<property name="Meshfile" value="Items/Clothing/Head/PrefabBallcap" />
-		<property name="CustomIcon" value="ui_game_symbol_ballCap" />
 		<property name="Material" value="cloth" />
 		<property name="RepairTools" value="cloth" />
 		<property name="HoldType" value="7" />
@@ -5310,7 +5179,6 @@ Mesh files no longer used:
 		<property name="Insulation" value="5" />
 		<property name="Waterproof" value="0.1" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_skullCap" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="cloth" />
 		<property name="RepairTools" value="cloth" />
@@ -5353,7 +5221,7 @@ Mesh files no longer used:
 	</item>
 	<item id="457" name="skullCapRed">
 		<property name="Extends" value="skullCap" />
-		<property name="CustomIcon" value="ui_game_symbol_skullCap" />
+		<property name="CustomIcon" value="skullCap" />
 		<property name="CustomIconTint" value="172,33,50" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="172,33,50" />
@@ -5361,7 +5229,7 @@ Mesh files no longer used:
 	</item>
 	<item id="458" name="skullCapBlue">
 		<property name="Extends" value="skullCap" />
-		<property name="CustomIcon" value="ui_game_symbol_skullCap" />
+		<property name="CustomIcon" value="skullCap" />
 		<property name="CustomIconTint" value="110,173,255" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="110,173,255" />
@@ -5369,7 +5237,7 @@ Mesh files no longer used:
 	</item>
 	<item id="459" name="skullCapGreen">
 		<property name="Extends" value="skullCap" />
-		<property name="CustomIcon" value="ui_game_symbol_skullCap" />
+		<property name="CustomIcon" value="skullCap" />
 		<property name="CustomIconTint" value="51,92,65" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="51,92,65" />
@@ -5377,7 +5245,7 @@ Mesh files no longer used:
 	</item>
 	<item id="460" name="skullCapBrown">
 		<property name="Extends" value="skullCap" />
-		<property name="CustomIcon" value="ui_game_symbol_skullCap" />
+		<property name="CustomIcon" value="skullCap" />
 		<property name="CustomIconTint" value="132,105,84" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="132,105,84" />
@@ -5385,7 +5253,7 @@ Mesh files no longer used:
 	</item>
 	<item id="461" name="skullCapBlack">
 		<property name="Extends" value="skullCap" />
-		<property name="CustomIcon" value="ui_game_symbol_skullCap" />
+		<property name="CustomIcon" value="skullCap" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="87,87,87" />
@@ -5395,7 +5263,6 @@ Mesh files no longer used:
 		<property name="Waterproof" value="0.15" />
 		<property name="Class" value="ItemClassToggle" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_miningHelmet" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="forgedIron" />
@@ -5433,7 +5300,6 @@ Mesh files no longer used:
 	<item id="465" name="swatHelmet">
 		<property name="Waterproof" value="0.15" />
 		<property name="Meshfile" value="Items/Clothing/Head/swatHelmetPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_swatHelmet" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="forgedIron" />
 		<property name="HoldType" value="7" />
@@ -5465,7 +5331,6 @@ Mesh files no longer used:
 	<item id="466" name="footballHelmet">
 		<property name="Waterproof" value="0.15" />
 		<property name="Meshfile" value="Items/Clothing/Head/fb_helmet" />
-		<property name="CustomIcon" value="ui_game_symbol_footballHelmet" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="forgedIron" />
 		<property name="HoldType" value="7" />
@@ -5499,7 +5364,7 @@ Mesh files no longer used:
 	</item>
 	<item id="467" name="footballHelmetZU">
 		<property name="Extends" value="footballHelmet" />
-		<property name="CustomIcon" value="ui_game_symbol_footballHelmet" />
+		<property name="CustomIcon" value="footballHelmet" />
 		<property name="CustomIconTint" value="107,12,12" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="350,800" />
@@ -5510,7 +5375,6 @@ Mesh files no longer used:
 	</item>
 	<item id="469" name="gasMask">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_gasMask" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="45" />
@@ -5536,7 +5400,6 @@ Mesh files no longer used:
 	</item>
 	<item id="471" name="shades">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_shades" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="forgedIron" />
@@ -5567,7 +5430,6 @@ Mesh files no longer used:
 	</item>
 	<item id="472" name="aviatorGoggles">
 		<property name="Extends" value="shades" />
-		<property name="CustomIcon" value="ui_game_symbol_aviatorGoggles" />
 		<property class="UMA">
 			<property name="Mesh" value="aviator_goggles" />
 			<property name="Overlay0" value="aviator_goggles" />
@@ -5575,7 +5437,6 @@ Mesh files no longer used:
 	</item>
 	<item id="473" name="goggles">
 		<property name="Extends" value="shades" />
-		<property name="CustomIcon" value="ui_game_symbol_goggles" />
 		<property class="UMA">
 			<property name="Mesh" value="gear_goggles" />
 			<property name="Overlay0" value="gear_goggles" />
@@ -5584,7 +5445,6 @@ Mesh files no longer used:
 	<item id="474" name="nightvisionGoggles">
 		<property name="Class" value="ItemClassToggle" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_nightvisionGoggles" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="scavengedParts" />
@@ -5620,7 +5480,7 @@ Mesh files no longer used:
 	</item>
 	<item id="475" name="shadesBlack">
 		<property name="Extends" value="shades" />
-		<property name="CustomIcon" value="ui_game_symbol_shades" />
+		<property name="CustomIcon" value="shades" />
 		<property name="CustomIconTint" value="80,80,80" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="80,80,80" />
@@ -5629,7 +5489,6 @@ Mesh files no longer used:
 	</item>
 	<item id="476" name="eyeglasses">
 		<property name="Extends" value="shades" />
-		<property name="CustomIcon" value="ui_game_symbol_eyeglasses" />
 		<property class="UMA">
 			<property name="Mesh" value="unisex_specs" />
 			<property name="Overlay0" value="unisex_specs" />
@@ -5638,7 +5497,6 @@ Mesh files no longer used:
 	</item>
 	<item id="477" name="cigar">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_cigar" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="cloth" />
 		<property name="HoldType" value="45" />
@@ -5668,7 +5526,6 @@ Mesh files no longer used:
 	</item>
 	<item id="478" name="cigarette">
 		<property name="Extends" value="cigar" />
-		<property name="CustomIcon" value="ui_game_symbol_cigarette" />
 		<property name="Stacknumber" value="20" />
 		<property class="UMA">
 			<property name="Mesh" value="cigarette" />
@@ -5678,7 +5535,6 @@ Mesh files no longer used:
 	</item>
 	<item id="479" name="nerdGlasses">
 		<property name="Extends" value="shades" />
-		<property name="CustomIcon" value="ui_game_symbol_nerdGlasses" />
 		<property class="UMA">
 			<property name="Mesh" value="specs" />
 			<property name="Overlay0" value="specs" />
@@ -5688,7 +5544,6 @@ Mesh files no longer used:
 		<property name="Insulation" value="-20" />
 		<property name="Waterproof" value="0.45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_animalHidePoncho" />
 		<property name="HoldType" value="45" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="leather" />
@@ -5722,7 +5577,6 @@ Mesh files no longer used:
 	<item id="482" name="bandana">
 		<!-- bandanaMaster -->
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_bandana" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="cloth" />
 		<property name="RepairTools" value="cloth" />
@@ -5764,7 +5618,7 @@ Mesh files no longer used:
 	</item>
 	<item id="483" name="bandanaRed">
 		<property name="Extends" value="bandana" />
-		<property name="CustomIcon" value="ui_game_symbol_bandana" />
+		<property name="CustomIcon" value="bandana" />
 		<property name="CustomIconTint" value="172,33,50" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="172,33,50" />
@@ -5772,7 +5626,7 @@ Mesh files no longer used:
 	</item>
 	<item id="484" name="bandanaBlue">
 		<property name="Extends" value="bandana" />
-		<property name="CustomIcon" value="ui_game_symbol_bandana" />
+		<property name="CustomIcon" value="bandana" />
 		<property name="CustomIconTint" value="110,173,255" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="110,173,255" />
@@ -5780,7 +5634,7 @@ Mesh files no longer used:
 	</item>
 	<item id="485" name="bandanaGreen">
 		<property name="Extends" value="bandana" />
-		<property name="CustomIcon" value="ui_game_symbol_bandana" />
+		<property name="CustomIcon" value="bandana" />
 		<property name="CustomIconTint" value="51,92,65" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="51,92,65" />
@@ -5788,7 +5642,7 @@ Mesh files no longer used:
 	</item>
 	<item id="486" name="bandanaBrown">
 		<property name="Extends" value="bandana" />
-		<property name="CustomIcon" value="ui_game_symbol_bandana" />
+		<property name="CustomIcon" value="bandana" />
 		<property name="CustomIconTint" value="132,105,84" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="132,105,84" />
@@ -5796,7 +5650,7 @@ Mesh files no longer used:
 	</item>
 	<item id="487" name="bandanaBlack">
 		<property name="Extends" value="bandana" />
-		<property name="CustomIcon" value="ui_game_symbol_bandana" />
+		<property name="CustomIcon" value="bandana" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="87,87,87" />
@@ -5815,7 +5669,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Legs" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_denimPants" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Action1">
 			<!-- UseAction -->
@@ -5849,7 +5702,7 @@ Mesh files no longer used:
 	</item>
 	<item id="491" name="blackDenimPants">
 		<property name="Extends" value="denimPants" />
-		<property name="CustomIcon" value="ui_game_symbol_denimPants" />
+		<property name="CustomIcon" value="denimPants" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="87,87,87" />
@@ -5857,7 +5710,7 @@ Mesh files no longer used:
 	</item>
 	<item id="492" name="redDenimPants">
 		<property name="Extends" value="denimPants" />
-		<property name="CustomIcon" value="ui_game_symbol_denimPants" />
+		<property name="CustomIcon" value="denimPants" />
 		<property name="CustomIconTint" value="100,0,0" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="130,20,20" />
@@ -5865,7 +5718,7 @@ Mesh files no longer used:
 	</item>
 	<item id="493" name="brownDenimPants">
 		<property name="Extends" value="denimPants" />
-		<property name="CustomIcon" value="ui_game_symbol_denimPants" />
+		<property name="CustomIcon" value="denimPants" />
 		<property name="CustomIconTint" value="150,120,90" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="150,120,90" />
@@ -5873,7 +5726,6 @@ Mesh files no longer used:
 	</item>
 	<item id="494" name="armyPants">
 		<property name="Extends" value="denimPants" />
-		<property name="CustomIcon" value="ui_game_symbol_denimPants" />
 		<property name="Insulation" value="3" />
 		<property class="UMA">
 			<property name="Mesh" value="clothes_army_pants" />
@@ -5896,7 +5748,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Chest" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_tankTopWhite" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Action1">
 			<!-- UseAction -->
@@ -5932,7 +5783,7 @@ Mesh files no longer used:
 	</item>
 	<item id="498" name="tankTopRed">
 		<property name="Extends" value="tankTopWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_tankTopWhite" />
+		<property name="CustomIcon" value="tankTopWhite" />
 		<property name="CustomIconTint" value="172,33,50" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="172,33,50" />
@@ -5940,7 +5791,7 @@ Mesh files no longer used:
 	</item>
 	<item id="499" name="tankTopPurple">
 		<property name="Extends" value="tankTopWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_tankTopWhite" />
+		<property name="CustomIcon" value="tankTopWhite" />
 		<property name="CustomIconTint" value="196,131,255" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="196,131,255" />
@@ -5949,7 +5800,7 @@ Mesh files no longer used:
 	</item>
 	<item id="500" name="tankTopGreen">
 		<property name="Extends" value="tankTopWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_tankTopWhite" />
+		<property name="CustomIcon" value="tankTopWhite" />
 		<property name="CustomIconTint" value="184,241,164" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="184,241,164" />
@@ -5957,7 +5808,7 @@ Mesh files no longer used:
 	</item>
 	<item id="501" name="tankTopBlue">
 		<property name="Extends" value="tankTopWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_tankTopWhite" />
+		<property name="CustomIcon" value="tankTopWhite" />
 		<property name="CustomIconTint" value="98,130,163" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="98,130,163" />
@@ -5974,7 +5825,6 @@ Mesh files no longer used:
 		<property name="Stacknumber" value="1" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_facialPiercings" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Group" value="Clothing" />
 		<property class="UMA">
@@ -5987,7 +5837,6 @@ Mesh files no longer used:
 	<item id="507" name="wornBoots">
 		<property name="Insulation" value="4" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_wornBoots" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="cloth" />
 		<property name="RepairTools" value="cloth" />
@@ -6019,7 +5868,6 @@ Mesh files no longer used:
 	</item>
 	<item id="508" name="runningShoes">
 		<property name="Extends" value="leatherBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_runningShoes" />
 		<property name="Weight" value="25" />
 		<property name="Encumbrance" value="0.02" />
 		<property class="Attributes">
@@ -6044,7 +5892,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Chest" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_shirt" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Action1">
 			<!-- UseAction -->
@@ -6077,7 +5924,7 @@ Mesh files no longer used:
 	</item>
 	<item id="510" name="shirtRed">
 		<property name="Extends" value="shirt" />
-		<property name="CustomIcon" value="ui_game_symbol_shirt" />
+		<property name="CustomIcon" value="shirt" />
 		<property name="CustomIconTint" value="172,33,50" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="172,33,50" />
@@ -6085,7 +5932,7 @@ Mesh files no longer used:
 	</item>
 	<item id="511" name="shirtBrown">
 		<property name="Extends" value="shirt" />
-		<property name="CustomIcon" value="ui_game_symbol_shirt" />
+		<property name="CustomIcon" value="shirt" />
 		<property name="CustomIconTint" value="132,105,84" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="132,105,84" />
@@ -6093,7 +5940,7 @@ Mesh files no longer used:
 	</item>
 	<item id="512" name="shirtGreen">
 		<property name="Extends" value="shirt" />
-		<property name="CustomIcon" value="ui_game_symbol_shirt" />
+		<property name="CustomIcon" value="shirt" />
 		<property name="CustomIconTint" value="51,92,65" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="51,92,65" />
@@ -6101,7 +5948,7 @@ Mesh files no longer used:
 	</item>
 	<item id="513" name="shirtBlue">
 		<property name="Extends" value="shirt" />
-		<property name="CustomIcon" value="ui_game_symbol_shirt" />
+		<property name="CustomIcon" value="shirt" />
 		<property name="CustomIconTint" value="110,173,255" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="110,173,255" />
@@ -6109,7 +5956,7 @@ Mesh files no longer used:
 	</item>
 	<item id="514" name="shirtBlack">
 		<property name="Extends" value="shirt" />
-		<property name="CustomIcon" value="ui_game_symbol_shirt" />
+		<property name="CustomIcon" value="shirt" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="87,87,87" />
@@ -6129,7 +5976,6 @@ Mesh files no longer used:
 		<property name="Insulation" value="30" />
 		<property name="Waterproof" value="0.55" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_leatherDuster" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="leather" />
 		<property name="RepairTools" value="leather" />
@@ -6164,7 +6010,7 @@ Mesh files no longer used:
 	</item>
 	<item id="518" name="leatherDusterBlack">
 		<property name="Extends" value="leatherDuster" />
-		<property name="CustomIcon" value="ui_game_symbol_leatherDuster" />
+		<property name="CustomIcon" value="leatherDuster" />
 		<property name="CustomIconTint" value="60,60,60" />
 		<property name="EconomicValue" value="1200" />
 		<property class="UMA">
@@ -6175,7 +6021,6 @@ Mesh files no longer used:
 		<property name="Insulation" value="40" />
 		<property name="Waterproof" value="0.45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_pufferCoat" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="cloth" />
 		<property name="RepairTools" value="cloth" />
@@ -6217,7 +6062,7 @@ Mesh files no longer used:
 	</item>
 	<item id="521" name="pufferCoatRed">
 		<property name="Extends" value="pufferCoat" />
-		<property name="CustomIcon" value="ui_game_symbol_pufferCoat" />
+		<property name="CustomIcon" value="pufferCoat" />
 		<property name="CustomIconTint" value="172,33,50" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="172,33,50" />
@@ -6225,7 +6070,7 @@ Mesh files no longer used:
 	</item>
 	<item id="522" name="pufferCoatGreen">
 		<property name="Extends" value="pufferCoat" />
-		<property name="CustomIcon" value="ui_game_symbol_pufferCoat" />
+		<property name="CustomIcon" value="pufferCoat" />
 		<property name="CustomIconTint" value="200,255,200" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="200,255,200" />
@@ -6233,7 +6078,7 @@ Mesh files no longer used:
 	</item>
 	<item id="523" name="pufferCoatBrown">
 		<property name="Extends" value="pufferCoat" />
-		<property name="CustomIcon" value="ui_game_symbol_pufferCoat" />
+		<property name="CustomIcon" value="pufferCoat" />
 		<property name="CustomIconTint" value="132,105,84" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="132,105,84" />
@@ -6241,16 +6086,15 @@ Mesh files no longer used:
 	</item>
 	<item id="524" name="pufferCoatBlack">
 		<property name="Extends" value="pufferCoat" />
-		<property name="CustomIcon" value="ui_game_symbol_pufferCoat" />
+		<property name="CustomIcon" value="pufferCoat" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="87,87,87" />
 		</property>
 	</item>
 	<item id="527" name="backpackMedium">
-		<property name="CreativeMode" value="Dev" />
+		<property name="CreativeMode" value="None" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_backpackMedium" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="organic" />
 		<property name="RepairTools" value="cloth" />
@@ -6280,7 +6124,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Chest" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_sweatshirt" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Action1">
 			<!-- UseAction -->
@@ -6314,7 +6157,7 @@ Mesh files no longer used:
 	</item>
 	<item id="532" name="sweatshirtRed">
 		<property name="Extends" value="sweatshirt" />
-		<property name="CustomIcon" value="ui_game_symbol_sweatshirt" />
+		<property name="CustomIcon" value="sweatshirt" />
 		<property name="CustomIconTint" value="172,33,50" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="172,33,50" />
@@ -6322,7 +6165,7 @@ Mesh files no longer used:
 	</item>
 	<item id="533" name="sweatshirtBrown">
 		<property name="Extends" value="sweatshirt" />
-		<property name="CustomIcon" value="ui_game_symbol_sweatshirt" />
+		<property name="CustomIcon" value="sweatshirt" />
 		<property name="CustomIconTint" value="132,105,84" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="132,105,84" />
@@ -6330,7 +6173,7 @@ Mesh files no longer used:
 	</item>
 	<item id="534" name="sweatshirtGreen">
 		<property name="Extends" value="sweatshirt" />
-		<property name="CustomIcon" value="ui_game_symbol_sweatshirt" />
+		<property name="CustomIcon" value="sweatshirt" />
 		<property name="CustomIconTint" value="51,92,65" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="51,92,65" />
@@ -6338,7 +6181,7 @@ Mesh files no longer used:
 	</item>
 	<item id="535" name="sweatshirtBlue">
 		<property name="Extends" value="sweatshirt" />
-		<property name="CustomIcon" value="ui_game_symbol_sweatshirt" />
+		<property name="CustomIcon" value="sweatshirt" />
 		<property name="CustomIconTint" value="110,173,255" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="110,173,255" />
@@ -6346,7 +6189,7 @@ Mesh files no longer used:
 	</item>
 	<item id="536" name="sweatshirtBlack">
 		<property name="Extends" value="sweatshirt" />
-		<property name="CustomIcon" value="ui_game_symbol_sweatshirt" />
+		<property name="CustomIcon" value="sweatshirt" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="87,87,87" />
@@ -6365,7 +6208,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Chest" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_tshirtWhite" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Action1">
 			<!-- UseAction -->
@@ -6401,7 +6243,7 @@ Mesh files no longer used:
 	</item>
 	<item id="538" name="tshirtRed">
 		<property name="Extends" value="tshirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_tshirtWhite" />
+		<property name="CustomIcon" value="tshirtWhite" />
 		<property name="CustomIconTint" value="172,33,50" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="172,33,50" />
@@ -6409,7 +6251,7 @@ Mesh files no longer used:
 	</item>
 	<item id="539" name="tshirtBrown">
 		<property name="Extends" value="tshirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_tshirtWhite" />
+		<property name="CustomIcon" value="tshirtWhite" />
 		<property name="CustomIconTint" value="132,105,84" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="132,105,84" />
@@ -6417,7 +6259,7 @@ Mesh files no longer used:
 	</item>
 	<item id="540" name="tshirtGreen">
 		<property name="Extends" value="tshirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_tshirtWhite" />
+		<property name="CustomIcon" value="tshirtWhite" />
 		<property name="CustomIconTint" value="51,92,65" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="51,92,65" />
@@ -6425,7 +6267,7 @@ Mesh files no longer used:
 	</item>
 	<item id="541" name="tshirtBlue">
 		<property name="Extends" value="tshirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_tshirtWhite" />
+		<property name="CustomIcon" value="tshirtWhite" />
 		<property name="CustomIconTint" value="110,173,255" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="110,173,255" />
@@ -6433,7 +6275,7 @@ Mesh files no longer used:
 	</item>
 	<item id="542" name="tshirtBlack">
 		<property name="Extends" value="tshirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_tshirtWhite" />
+		<property name="CustomIcon" value="tshirtWhite" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="87,87,87" />
@@ -6441,7 +6283,6 @@ Mesh files no longer used:
 	</item>
 	<item id="543" name="skirt">
 		<property name="Extends" value="denimPants" />
-		<property name="CustomIcon" value="ui_game_symbol_skirt" />
 		<property name="Insulation" value="-10" />
 		<property class="UMA">
 			<property name="Mesh" value="skirt" />
@@ -6456,7 +6297,6 @@ Mesh files no longer used:
 		<property name="Insulation" value="30" />
 		<property name="Waterproof" value="0.4" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_jacketWhite" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="cloth" />
 		<property name="RepairTools" value="cloth" />
@@ -6498,7 +6338,7 @@ Mesh files no longer used:
 	</item>
 	<item id="545" name="skirtRed">
 		<property name="Extends" value="skirt" />
-		<property name="CustomIcon" value="ui_game_symbol_skirt" />
+		<property name="CustomIcon" value="skirt" />
 		<property name="CustomIconTint" value="172,33,50" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="172,33,50" />
@@ -6506,7 +6346,7 @@ Mesh files no longer used:
 	</item>
 	<item id="546" name="skirtBrown">
 		<property name="Extends" value="skirt" />
-		<property name="CustomIcon" value="ui_game_symbol_skirt" />
+		<property name="CustomIcon" value="skirt" />
 		<property name="CustomIconTint" value="132,105,84" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="132,105,84" />
@@ -6514,7 +6354,7 @@ Mesh files no longer used:
 	</item>
 	<item id="547" name="skirtGreen">
 		<property name="Extends" value="skirt" />
-		<property name="CustomIcon" value="ui_game_symbol_skirt" />
+		<property name="CustomIcon" value="skirt" />
 		<property name="CustomIconTint" value="51,92,65" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="51,92,65" />
@@ -6522,7 +6362,7 @@ Mesh files no longer used:
 	</item>
 	<item id="548" name="skirtBlue">
 		<property name="Extends" value="skirt" />
-		<property name="CustomIcon" value="ui_game_symbol_skirt" />
+		<property name="CustomIcon" value="skirt" />
 		<property name="CustomIconTint" value="110,173,255" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="110,173,255" />
@@ -6530,7 +6370,7 @@ Mesh files no longer used:
 	</item>
 	<item id="549" name="skirtBlack">
 		<property name="Extends" value="skirt" />
-		<property name="CustomIcon" value="ui_game_symbol_skirt" />
+		<property name="CustomIcon" value="skirt" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="87,87,87" />
@@ -6538,7 +6378,7 @@ Mesh files no longer used:
 	</item>
 	<item id="550" name="ballCapRed">
 		<property name="Extends" value="ballCap" />
-		<property name="CustomIcon" value="ui_game_symbol_ballCap" />
+		<property name="CustomIcon" value="ballCap" />
 		<property name="CustomIconTint" value="172,33,50" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="172,33,50" />
@@ -6546,7 +6386,7 @@ Mesh files no longer used:
 	</item>
 	<item id="551" name="ballCapBrown">
 		<property name="Extends" value="ballCap" />
-		<property name="CustomIcon" value="ui_game_symbol_ballCap" />
+		<property name="CustomIcon" value="ballCap" />
 		<property name="CustomIconTint" value="132,105,84" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="132,105,84" />
@@ -6554,7 +6394,7 @@ Mesh files no longer used:
 	</item>
 	<item id="552" name="ballCapGreen">
 		<property name="Extends" value="ballCap" />
-		<property name="CustomIcon" value="ui_game_symbol_ballCap" />
+		<property name="CustomIcon" value="ballCap" />
 		<property name="CustomIconTint" value="51,92,65" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="51,92,65" />
@@ -6562,7 +6402,7 @@ Mesh files no longer used:
 	</item>
 	<item id="553" name="ballCapBlue">
 		<property name="Extends" value="ballCap" />
-		<property name="CustomIcon" value="ui_game_symbol_ballCap" />
+		<property name="CustomIcon" value="ballCap" />
 		<property name="CustomIconTint" value="110,173,255" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="110,173,255" />
@@ -6570,7 +6410,7 @@ Mesh files no longer used:
 	</item>
 	<item id="554" name="ballCapBlack">
 		<property name="Extends" value="ballCap" />
-		<property name="CustomIcon" value="ui_game_symbol_ballCap" />
+		<property name="CustomIcon" value="ballCap" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="87,87,87" />
@@ -6578,7 +6418,7 @@ Mesh files no longer used:
 	</item>
 	<item id="555" name="jacketBlack">
 		<property name="Extends" value="jacketWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_jacketWhite" />
+		<property name="CustomIcon" value="jacketWhite" />
 		<property name="CustomIconTint" value="31,31,34" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="31,31,24" />
@@ -6586,7 +6426,7 @@ Mesh files no longer used:
 	</item>
 	<item id="556" name="jacketLetter">
 		<property name="Extends" value="jacketWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_jacketWhite" />
+		<property name="CustomIcon" value="jacketWhite" />
 		<property class="UMA">
 			<property name="Mesh" value="letter_jacket" />
 			<property name="Overlay0" value="letter_jacket" />
@@ -6600,7 +6440,6 @@ Mesh files no longer used:
 	</item>
 	<item id="557" name="denimShortsPants">
 		<property name="Extends" value="denimPants" />
-		<property name="CustomIcon" value="ui_game_symbol_denimShortsPants" />
 		<property name="Insulation" value="-10" />
 		<property class="UMA">
 			<property name="Mesh" value="base_legs" />
@@ -6615,7 +6454,7 @@ Mesh files no longer used:
 	</item>
 	<item id="558" name="denimShortsPantsRed">
 		<property name="Extends" value="denimShortsPants" />
-		<property name="CustomIcon" value="ui_game_symbol_denimShortsPants" />
+		<property name="CustomIcon" value="denimShortsPants" />
 		<property name="CustomIconTint" value="172,33,50" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="172,33,50" />
@@ -6623,7 +6462,7 @@ Mesh files no longer used:
 	</item>
 	<item id="559" name="denimShortsPantsBrown">
 		<property name="Extends" value="denimShortsPants" />
-		<property name="CustomIcon" value="ui_game_symbol_denimShortsPants" />
+		<property name="CustomIcon" value="denimShortsPants" />
 		<property name="CustomIconTint" value="132,105,84" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="132,105,84" />
@@ -6631,7 +6470,7 @@ Mesh files no longer used:
 	</item>
 	<item id="560" name="denimShortsPantsGreen">
 		<property name="Extends" value="denimShortsPants" />
-		<property name="CustomIcon" value="ui_game_symbol_denimShortsPants" />
+		<property name="CustomIcon" value="denimShortsPants" />
 		<property name="CustomIconTint" value="51,92,65" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="51,92,65" />
@@ -6639,7 +6478,7 @@ Mesh files no longer used:
 	</item>
 	<item id="561" name="denimShortsPantsBlue">
 		<property name="Extends" value="denimShortsPants" />
-		<property name="CustomIcon" value="ui_game_symbol_denimShortsPants" />
+		<property name="CustomIcon" value="denimShortsPants" />
 		<property name="CustomIconTint" value="110,173,255" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="110,173,255" />
@@ -6647,7 +6486,7 @@ Mesh files no longer used:
 	</item>
 	<item id="562" name="denimShortsPantsBlack">
 		<property name="Extends" value="denimShortsPants" />
-		<property name="CustomIcon" value="ui_game_symbol_denimShortsPants" />
+		<property name="CustomIcon" value="denimShortsPants" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property class="UMA">
 			<property name="Overlay1Tint" value="87,87,87" />
@@ -6666,7 +6505,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Chest" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_hoodedSweatshirtWhite" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Action1">
 			<!-- UseAction -->
@@ -6702,7 +6540,7 @@ Mesh files no longer used:
 	</item>
 	<item id="565" name="hoodedSweatshirtRed">
 		<property name="Extends" value="hoodedSweatshirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_hoodedSweatshirtWhite" />
+		<property name="CustomIcon" value="hoodedSweatshirtWhite" />
 		<property name="CustomIconTint" value="172,33,50" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="172,33,50" />
@@ -6710,7 +6548,7 @@ Mesh files no longer used:
 	</item>
 	<item id="566" name="hoodedSweatshirtBrown">
 		<property name="Extends" value="hoodedSweatshirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_hoodedSweatshirtWhite" />
+		<property name="CustomIcon" value="hoodedSweatshirtWhite" />
 		<property name="CustomIconTint" value="132,105,84" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="132,105,84" />
@@ -6718,7 +6556,7 @@ Mesh files no longer used:
 	</item>
 	<item id="567" name="hoodedSweatshirtGreen">
 		<property name="Extends" value="hoodedSweatshirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_hoodedSweatshirtWhite" />
+		<property name="CustomIcon" value="hoodedSweatshirtWhite" />
 		<property name="CustomIconTint" value="51,92,65" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="51,92,65" />
@@ -6726,7 +6564,7 @@ Mesh files no longer used:
 	</item>
 	<item id="568" name="hoodedSweatshirtBlue">
 		<property name="Extends" value="hoodedSweatshirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_hoodedSweatshirtWhite" />
+		<property name="CustomIcon" value="hoodedSweatshirtWhite" />
 		<property name="CustomIconTint" value="110,173,255" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="110,173,255" />
@@ -6734,7 +6572,7 @@ Mesh files no longer used:
 	</item>
 	<item id="569" name="hoodedSweatshirtBlack">
 		<property name="Extends" value="hoodedSweatshirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_hoodedSweatshirtWhite" />
+		<property name="CustomIcon" value="hoodedSweatshirtWhite" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="87,87,87" />
@@ -6743,7 +6581,6 @@ Mesh files no longer used:
 	<item id="571" name="pressboyCapWhite">
 		<!-- pressboyCapMaster -->
 		<property name="Extends" value="ballCap" />
-		<property name="CustomIcon" value="ui_game_symbol_pressboyCapWhite" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="LearnRecipe" />
@@ -6762,7 +6599,7 @@ Mesh files no longer used:
 	</item>
 	<item id="572" name="pressboyCapRed">
 		<property name="Extends" value="pressboyCapWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_pressboyCapWhite" />
+		<property name="CustomIcon" value="pressboyCapWhite" />
 		<property name="CustomIconTint" value="172,33,50" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="172,33,50" />
@@ -6770,7 +6607,7 @@ Mesh files no longer used:
 	</item>
 	<item id="573" name="pressboyCapBrown">
 		<property name="Extends" value="pressboyCapWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_pressboyCapWhite" />
+		<property name="CustomIcon" value="pressboyCapWhite" />
 		<property name="CustomIconTint" value="132,105,84" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="132,105,84" />
@@ -6778,7 +6615,7 @@ Mesh files no longer used:
 	</item>
 	<item id="574" name="pressboyCapGreen">
 		<property name="Extends" value="pressboyCapWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_pressboyCapWhite" />
+		<property name="CustomIcon" value="pressboyCapWhite" />
 		<property name="CustomIconTint" value="51,92,65" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="51,92,65" />
@@ -6786,7 +6623,7 @@ Mesh files no longer used:
 	</item>
 	<item id="575" name="pressboyCapBlue">
 		<property name="Extends" value="pressboyCapWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_pressboyCapWhite" />
+		<property name="CustomIcon" value="pressboyCapWhite" />
 		<property name="CustomIconTint" value="110,173,255" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="110,173,255" />
@@ -6794,7 +6631,7 @@ Mesh files no longer used:
 	</item>
 	<item id="576" name="pressboyCapBlack">
 		<property name="Extends" value="pressboyCapWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_pressboyCapWhite" />
+		<property name="CustomIcon" value="pressboyCapWhite" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="87,87,87" />
@@ -6803,7 +6640,7 @@ Mesh files no longer used:
 	<item id="578" name="tshirtZUWhite">
 		<!-- sleevelessClothZUShirtMaster -->
 		<property name="Extends" value="tshirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_tshirtWhite" />
+		<property name="CustomIcon" value="tshirtWhite" />
 		<property class="Attributes">
 			<property name="ConcussiveProtection" value="0.07,0.15" />
 			<property name="DegradationMax" value="100,250" />
@@ -6816,7 +6653,6 @@ Mesh files no longer used:
 	</item>
 	<item id="585" name="cowboyBootsBrown">
 		<property name="Extends" value="leatherBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_cowboyBootsBrown" />
 		<property name="Weight" value="20" />
 		<!-- weight because loot only -->
 		<property class="Action1">
@@ -6836,7 +6672,7 @@ Mesh files no longer used:
 	</item>
 	<item id="586" name="cowboyBootsBlack">
 		<property name="Extends" value="cowboyBootsBrown" />
-		<property name="CustomIcon" value="ui_game_symbol_cowboyBootsBrown" />
+		<property name="CustomIcon" value="cowboyBootsBrown" />
 		<property name="CustomIconTint" value="44,44,44" />
 		<property class="UMA">
 			<property name="Overlay0" value="boot02" />
@@ -6845,7 +6681,6 @@ Mesh files no longer used:
 	</item>
 	<item id="587" name="gothBootsBlack">
 		<property name="Extends" value="cowboyBootsBrown" />
-		<property name="CustomIcon" value="ui_game_symbol_gothBootsBlack" />
 		<property class="Attributes">
 			<property name="ConcussiveProtection" value="0.16,0.4" />
 			<property name="DegradationMax" value="180,650" />
@@ -6858,7 +6693,6 @@ Mesh files no longer used:
 	<item id="588" name="gothicPants">
 		<!-- leatherArmor -->
 		<property name="Extends" value="leatherPants" />
-		<property name="CustomIcon" value="ui_game_symbol_gothicPants" />
 		<property name="Insulation" value="2" />
 		<property name="EquipSlot" value="Legs" />
 		<property class="Action1">
@@ -6883,7 +6717,6 @@ Mesh files no longer used:
 	<item id="589" name="overalls">
 		<!-- warmClothPants -->
 		<property name="Extends" value="denimPants" />
-		<property name="CustomIcon" value="ui_game_symbol_overalls" />
 		<property name="Insulation" value="3" />
 		<!-- <property name="Encumbrance" value="0.001"/> -->
 		<property class="Action1">
@@ -6901,7 +6734,6 @@ Mesh files no longer used:
 	<item id="590" name="flannelShirtWhite">
 		<!-- new icon xxx -->
 		<property name="Extends" value="sweatshirt" />
-		<property name="CustomIcon" value="ui_game_symbol_flannelShirtWhite" />
 		<property name="Insulation" value="5" />
 		<property class="Action1">
 			<!-- UseAction -->
@@ -6920,7 +6752,7 @@ Mesh files no longer used:
 	</item>
 	<item id="591" name="flannelShirtRed">
 		<property name="Extends" value="flannelShirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_flannelShirtWhite" />
+		<property name="CustomIcon" value="flannelShirtWhite" />
 		<property name="CustomIconTint" value="172,33,50" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="133,14,14" />
@@ -6930,7 +6762,7 @@ Mesh files no longer used:
 	</item>
 	<item id="592" name="flannelShirtBrown">
 		<property name="Extends" value="flannelShirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_flannelShirtWhite" />
+		<property name="CustomIcon" value="flannelShirtWhite" />
 		<property name="CustomIconTint" value="132,105,84" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="132,105,84" />
@@ -6940,7 +6772,7 @@ Mesh files no longer used:
 	</item>
 	<item id="593" name="flannelShirtGreen">
 		<property name="Extends" value="flannelShirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_flannelShirtWhite" />
+		<property name="CustomIcon" value="flannelShirtWhite" />
 		<property name="CustomIconTint" value="51,92,65" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="51,92,65" />
@@ -6950,7 +6782,7 @@ Mesh files no longer used:
 	</item>
 	<item id="594" name="flannelShirtBlue">
 		<property name="Extends" value="flannelShirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_flannelShirtWhite" />
+		<property name="CustomIcon" value="flannelShirtWhite" />
 		<property name="CustomIconTint" value="110,173,255" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="110,173,255" />
@@ -6960,7 +6792,7 @@ Mesh files no longer used:
 	</item>
 	<item id="595" name="flannelShirtBlack">
 		<property name="Extends" value="flannelShirtWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_flannelShirtWhite" />
+		<property name="CustomIcon" value="flannelShirtWhite" />
 		<property name="CustomIconTint" value="87,87,87" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="87,87,87" />
@@ -6982,7 +6814,6 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Legs" />
 		<property name="HoldType" value="45" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_suitPantsBlack" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Action1">
 			<!-- UseAction -->
@@ -7016,7 +6847,6 @@ Mesh files no longer used:
 	</item>
 	<item id="599" name="suitJacketBlack">
 		<property name="Extends" value="jacketWhite" />
-		<property name="CustomIcon" value="ui_game_symbol_suitJacketBlack" />
 		<property name="CustomIconTint" value="57,57,57" />
 		<property class="Action1">
 			<!-- UseAction -->
@@ -7037,7 +6867,6 @@ Mesh files no longer used:
 	</item>
 	<item id="600" name="dressShoesBlack">
 		<property name="Extends" value="leatherBoots" />
-		<property name="CustomIcon" value="ui_game_symbol_dressShoesBlack" />
 		<property name="CustomIconTint" value="57,57,57" />
 		<property name="Weight" value="25" />
 		<property name="Encumbrance" value="0.02" />
@@ -7054,7 +6883,6 @@ Mesh files no longer used:
 	<!-- * * * * * * * * * * food, water, medical items * * * * * * * * * * -->
 	<item id="650" name="splint">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_splint" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="wood" />
 		<property name="HoldType" value="45" />
@@ -7089,7 +6917,6 @@ Mesh files no longer used:
 	</item>
 	<item id="655" name="aloeCream">
 		<property name="Meshfile" value="Items/Food/aloeCreamPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_aloeCream" />
 		<property name="Material" value="organic" />
 		<property name="EconomicValue" value="10" />
 		<property name="HoldType" value="3" />
@@ -7121,7 +6948,6 @@ Mesh files no longer used:
 	</item>
 	<item id="656" name="bandage">
 		<property name="Meshfile" value="Items/Health/gauze" />
-		<property name="CustomIcon" value="ui_game_symbol_bandage" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="cloth" />
 		<property name="HoldType" value="16" />
@@ -7159,7 +6985,6 @@ Mesh files no longer used:
 	</item>
 	<item id="657" name="firstAidBandage">
 		<property name="Extends" value="bandage" />
-		<property name="CustomIcon" value="ui_game_symbol_firstAidBandage" />
 		<property name="EconomicValue" value="15" />
 		<property class="Action0">
 			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
@@ -7175,7 +7000,6 @@ Mesh files no longer used:
 	</item>
 	<item id="658" name="firstAidKit">
 		<property name="Extends" value="bandage" />
-		<property name="CustomIcon" value="ui_game_symbol_firstAidKit" />
 		<property name="EconomicValue" value="200" />
 		<property class="Action0">
 			<property name="Gain_health" value="50" />
@@ -7194,7 +7018,6 @@ Mesh files no longer used:
 	</item>
 	<item id="661" name="bloodDrawKit">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_bloodDrawKit" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="Mplastics" />
 		<property name="Weight" value="6" />
@@ -7221,7 +7044,6 @@ Mesh files no longer used:
 	</item>
 	<item id="662" name="bloodBag">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_bloodBag" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="organic" />
 		<property name="Stacknumber" value="250" />
@@ -7247,7 +7069,7 @@ Mesh files no longer used:
 	</item>
 	<item id="663" name="sunblocker">
 		<property name="Extends" value="aloeCream" />
-		<property name="CustomIcon" value="ui_game_symbol_sunblocker" />
+		<property name="CustomIcon" value="sunblocker" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="CustomIcon" value="aloeCream" />
 		<property name="CustomIconTint" value="afffaf" />
@@ -7277,7 +7099,6 @@ Mesh files no longer used:
 	</item>
 	<item id="666" name="painkillers">
 		<property name="Meshfile" value="Items/Health/painkillersPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_painkillers" />
 		<property name="Material" value="organic" />
 		<property name="EconomicValue" value="80" />
 		<property name="HoldType" value="16" />
@@ -7312,7 +7133,7 @@ Mesh files no longer used:
 	</item>
 	<item id="667" name="herbalAntibiotics">
 		<property name="Meshfile" value="Items/Health/painkillersPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_painkillers" />
+		<property name="CustomIcon" value="painkillers" />
 		<property name="CustomIconTint" value="b0ffb0" />
 		<property name="Material" value="organic" />
 		<property name="EconomicValue" value="70" />
@@ -7348,7 +7169,6 @@ Mesh files no longer used:
 	</item>
 	<item id="668" name="antibiotics">
 		<property name="Meshfile" value="Items/Health/painkillersPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_antibiotics" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="16" />
 		<property name="EconomicValue" value="140" />
@@ -7387,7 +7207,7 @@ Mesh files no longer used:
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="16" />
 		<property name="CreativeMode" value="Dev" />
-		<property name="CustomIcon" value="ui_game_symbol_painkillers" />
+		<property name="CustomIcon" value="painkillers" />
 		<property name="CustomIconTint" value="ff4040" />
 		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
@@ -7419,7 +7239,7 @@ Mesh files no longer used:
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="16" />
 		<property name="CreativeMode" value="Dev" />
-		<property name="CustomIcon" value="ui_game_symbol_painkillers" />
+		<property name="CustomIcon" value="painkillers" />
 		<property name="CustomIconTint" value="4040ff" />
 		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
@@ -7443,7 +7263,6 @@ Mesh files no longer used:
 	<item id="671" name="brokenGlass">
 		<!-- scrap material -->
 		<property name="Meshfile" value="Items/Misc/brokenGlassPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_brokenGlass" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="glass" />
 		<property name="HoldType" value="23" />
@@ -7467,7 +7286,6 @@ Mesh files no longer used:
 	</item>
 	<item id="700" name="foodHoney">
 		<property name="Meshfile" value="Items/Food/honeyPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_foodHoney" />
 		<property name="Material" value="organic" />
 		<property name="EconomicValue" value="80" />
 		<property name="HoldType" value="3" />
@@ -7500,7 +7318,6 @@ Mesh files no longer used:
 	</item>
 	<item id="701" name="foodYuccaFruit">
 		<property name="Meshfile" value="Items/Food/fruit_yucca" />
-		<property name="CustomIcon" value="ui_game_symbol_foodYuccaFruit" />
 		<property name="Material" value="Mfruit" />
 		<property name="Weight" value="1" />
 		<property name="HoldType" value="14" />
@@ -7559,7 +7376,6 @@ Mesh files no longer used:
 	</item>
 	<item id="706" name="canBeef">
 		<property name="Meshfile" value="Items/Food/can_beefPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_canBeef" />
 		<property name="Material" value="Mprotein" />
 		<property name="Weight" value="1" />
 		<property name="EconomicValue" value="60" />
@@ -7582,7 +7398,6 @@ Mesh files no longer used:
 	</item>
 	<item id="708" name="canChicken">
 		<property name="Extends" value="canBeef" />
-		<property name="CustomIcon" value="ui_game_symbol_canChicken" />
 		<property name="Meshfile" value="Items/Food/can_ChickenPrefab" />
 		<property class="Action1">
 			<property name="Gain_food" value="10" />
@@ -7590,7 +7405,6 @@ Mesh files no longer used:
 	</item>
 	<item id="709" name="canLamb">
 		<property name="Extends" value="canBeef" />
-		<property name="CustomIcon" value="ui_game_symbol_canLamb" />
 		<property name="Meshfile" value="Items/Food/can_LambPrefab" />
 		<property class="Action1">
 			<property name="Gain_food" value="10" />
@@ -7598,7 +7412,6 @@ Mesh files no longer used:
 	</item>
 	<item id="711" name="canCatfood">
 		<property name="Extends" value="canBeef" />
-		<property name="CustomIcon" value="ui_game_symbol_canCatfood" />
 		<property name="Material" value="metal" />
 		<property name="Weight" value="5" />
 		<property name="EconomicValue" value="20" />
@@ -7620,12 +7433,10 @@ Mesh files no longer used:
 	</item>
 	<item id="712" name="canDogfood">
 		<property name="Extends" value="canCatfood" />
-		<property name="CustomIcon" value="ui_game_symbol_canDogfood" />
 		<property name="Meshfile" value="Items/Food/can_dogfoodPrefab" />
 	</item>
 	<item id="713" name="canChili">
 		<property name="Extends" value="canCatfood" />
-		<property name="CustomIcon" value="ui_game_symbol_canChili" />
 		<property name="Material" value="Mprotein" />
 		<property name="Weight" value="1" />
 		<property name="Meshfile" value="Items/Food/can_chiliPrefab" />
@@ -7640,7 +7451,6 @@ Mesh files no longer used:
 	</item>
 	<item id="714" name="canMiso">
 		<property name="Extends" value="canCatfood" />
-		<property name="CustomIcon" value="ui_game_symbol_canMiso" />
 		<property name="EconomicValue" value="80" />
 		<property name="Meshfile" value="Items/Food/can_misoPrefab" />
 		<property class="Action1">
@@ -7653,7 +7463,6 @@ Mesh files no longer used:
 	</item>
 	<item id="715" name="canPasta">
 		<property name="Extends" value="canMiso" />
-		<property name="CustomIcon" value="ui_game_symbol_canPasta" />
 		<property name="Material" value="Mgrain" />
 		<property name="Weight" value="1" />
 		<property name="Meshfile" value="Items/Food/can_pastaPrefab" />
@@ -7667,7 +7476,6 @@ Mesh files no longer used:
 	</item>
 	<item id="716" name="canPeas">
 		<property name="Extends" value="canMiso" />
-		<property name="CustomIcon" value="ui_game_symbol_canPeas" />
 		<property name="Material" value="Mveggie" />
 		<property name="Weight" value="1" />
 		<property name="Meshfile" value="Items/Food/can_peasPrefab" />
@@ -7681,7 +7489,6 @@ Mesh files no longer used:
 	</item>
 	<item id="717" name="canPears">
 		<property name="Extends" value="canMiso" />
-		<property name="CustomIcon" value="ui_game_symbol_canPears" />
 		<property name="Material" value="Mfruit" />
 		<property name="Weight" value="1" />
 		<property name="Meshfile" value="Items/Food/can_pearsPrefab" />
@@ -7694,7 +7501,6 @@ Mesh files no longer used:
 	</item>
 	<item id="718" name="canSoup">
 		<property name="Extends" value="canMiso" />
-		<property name="CustomIcon" value="ui_game_symbol_canSoup" />
 		<property name="Meshfile" value="Items/Food/can_soupPrefab" />
 		<property class="Action1">
 			<property name="Gain_health" value="0" />
@@ -7706,7 +7512,6 @@ Mesh files no longer used:
 	</item>
 	<item id="719" name="canStock">
 		<property name="Extends" value="canMiso" />
-		<property name="CustomIcon" value="ui_game_symbol_canStock" />
 		<property name="Meshfile" value="Items/Food/can_stockPrefab" />
 		<property class="Action1">
 			<property name="Gain_health" value="0" />
@@ -7718,7 +7523,6 @@ Mesh files no longer used:
 	</item>
 	<item id="720" name="canTuna">
 		<property name="Extends" value="canMiso" />
-		<property name="CustomIcon" value="ui_game_symbol_canTuna" />
 		<property name="Material" value="Mprotein" />
 		<property name="Weight" value="1" />
 		<property name="Meshfile" value="Items/Food/can_tunaPrefab" />
@@ -7732,7 +7536,6 @@ Mesh files no longer used:
 	</item>
 	<item id="723" name="canHam">
 		<property name="Meshfile" value="Items/Food/can_hamPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_canHam" />
 		<property name="Material" value="Mprotein" />
 		<property name="Weight" value="1" />
 		<property name="EconomicValue" value="80" />
@@ -7755,7 +7558,6 @@ Mesh files no longer used:
 	</item>
 	<item id="724" name="canSalmon">
 		<property name="Extends" value="canHam" />
-		<property name="CustomIcon" value="ui_game_symbol_canSalmon" />
 		<property name="Meshfile" value="Items/Food/can_salmonPrefab" />
 		<property class="Action1">
 			<property name="Gain_health" value="0" />
@@ -7767,7 +7569,7 @@ Mesh files no longer used:
 	</item>
 	<item id="725" name="snowberryExtract">
 		<property name="Extends" value="aloeCream" />
-		<property name="CustomIcon" value="ui_game_symbol_aloeCream" />
+		<property name="CustomIcon" value="aloeCream" />
 		<property name="CustomIconTint" value="9f9fff" />
 		<property name="EconomicValue" value="50" />
 		<property name="CraftingIngredientTime" value="20" />
@@ -7782,7 +7584,6 @@ Mesh files no longer used:
 	</item>
 	<item id="727" name="corn">
 		<property name="Meshfile" value="Items/Food/vegetable_corn" />
-		<property name="CustomIcon" value="ui_game_symbol_corn" />
 		<property name="Material" value="Mveggie" />
 		<property name="Weight" value="1" />
 		<property name="HoldType" value="15" />
@@ -7804,7 +7605,6 @@ Mesh files no longer used:
 	</item>
 	<item id="728" name="cornOnTheCob">
 		<property name="Meshfile" value="Items/Food/corn_cooked" />
-		<property name="CustomIcon" value="ui_game_symbol_cornOnTheCob" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="15" />
 		<property name="Stacknumber" value="50" />
@@ -7825,7 +7625,6 @@ Mesh files no longer used:
 	</item>
 	<item id="729" name="cornMeal">
 		<property name="Meshfile" value="Items/Food/cornmealPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_cornMeal" />
 		<property name="Material" value="Mgrain" />
 		<property name="Weight" value="1" />
 		<property name="HoldType" value="21" />
@@ -7847,7 +7646,6 @@ Mesh files no longer used:
 	</item>
 	<item id="730" name="cornBread">
 		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_cornBread" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="HoldType" value="31" />
 		<property name="Material" value="organic" />
@@ -7870,7 +7668,6 @@ Mesh files no longer used:
 	</item>
 	<item id="731" name="moldyBread">
 		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_moldyBread" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="HoldType" value="31" />
 		<property name="Material" value="MbioMass" />
@@ -7909,7 +7706,7 @@ Mesh files no longer used:
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="1" />
 		<property name="SellableToTrader" value="false" />
-		<property name="CustomIcon" value="ui_game_symbol_shamSandwich" />
+		<property name="CustomIcon" value="shamSandwich" />
 		<property name="CraftingIngredientTime" value="30" />
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -7927,7 +7724,6 @@ Mesh files no longer used:
 	</item>
 	<item id="735" name="rawMeat">
 		<property name="Meshfile" value="Items/Misc/raw_meatPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_rawMeat" />
 		<property name="Material" value="Mprotein" />
 		<property name="Weight" value="1" />
 		<property name="HoldType" value="3" />
@@ -7953,7 +7749,6 @@ Mesh files no longer used:
 	</item>
 	<item id="736" name="rottingFlesh">
 		<property name="Meshfile" value="Items/Food/meat_rabbit" />
-		<property name="CustomIcon" value="ui_game_symbol_rottingFlesh" />
 		<property name="Material" value="MbioMass" />
 		<property name="Weight" value="3" />
 		<property name="HoldType" value="21" />
@@ -7981,7 +7776,6 @@ Mesh files no longer used:
 	</item>
 	<item id="737" name="charredMeat">
 		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_charredMeat" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="HoldType" value="31" />
 		<property name="Material" value="organic" />
@@ -8004,7 +7798,6 @@ Mesh files no longer used:
 	</item>
 	<item id="738" name="grilledMeat">
 		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_grilledMeat" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="HoldType" value="31" />
 		<property name="Material" value="organic" />
@@ -8027,7 +7820,6 @@ Mesh files no longer used:
 	</item>
 	<item id="739" name="boiledMeat">
 		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_boiledMeat" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="HoldType" value="31" />
 		<property name="Material" value="organic" />
@@ -8074,7 +7866,7 @@ Mesh files no longer used:
 	</item>
 	<item id="750" name="potato">
 		<property name="Meshfile" value="Items/Food/vegetable_potatoPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_potato" />
+		<!-- <property name="CustomIcon" value="ui_game_symbol_potato" /> -->
 		<property name="Material" value="Mveggie" />
 		<property name="Weight" value="1" />
 		<property name="HoldType" value="3" />
@@ -8098,7 +7890,6 @@ Mesh files no longer used:
 	</item>
 	<item id="751" name="blueberries">
 		<property name="Meshfile" value="Items/Food/blueberriesPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_blueberries" />
 		<property name="Material" value="Mfruit" />
 		<property name="Weight" value="1" />
 		<property name="HoldType" value="23" />
@@ -8122,7 +7913,6 @@ Mesh files no longer used:
 	</item>
 	<item id="752" name="egg">
 		<property name="Meshfile" value="Items/Food/eggPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_egg" />
 		<property name="Material" value="Mprotein" />
 		<property name="Weight" value="1" />
 		<property name="HoldType" value="23" />
@@ -8147,7 +7937,6 @@ Mesh files no longer used:
 	</item>
 	<item id="753" name="eggboiled">
 		<property name="Meshfile" value="Items/Food/eggPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_egg" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="23" />
 		<property name="Stacknumber" value="50" />
@@ -8170,7 +7959,6 @@ Mesh files no longer used:
 	</item>
 	<item id="754" name="blueberryPie">
 		<property name="Meshfile" value="Items/Food/blueberry_piePrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_blueberryPie" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="23" />
 		<property name="Stacknumber" value="50" />
@@ -8193,7 +7981,6 @@ Mesh files no longer used:
 	</item>
 	<item id="755" name="bakedPotato">
 		<property name="Meshfile" value="Items/Food/vegetable_potato_bakedPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_bakedPotato" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="15" />
 		<property name="Stacknumber" value="50" />
@@ -8215,7 +8002,6 @@ Mesh files no longer used:
 	</item>
 	<item id="756" name="baconAndEggs">
 		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_baconAndEggs" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="HoldType" value="31" />
 		<property name="Material" value="organic" />
@@ -8238,7 +8024,6 @@ Mesh files no longer used:
 	</item>
 	<item id="757" name="mushrooms">
 		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_mushrooms" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="HoldType" value="31" />
 		<property name="Material" value="Mprotein" />
@@ -8264,7 +8049,6 @@ Mesh files no longer used:
 	</item>
 	<item id="758" name="vegetableStew">
 		<property name="Meshfile" value="Items/Food/venison_stewPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_vegetableStew" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="23" />
 		<property name="Stacknumber" value="50" />
@@ -8286,7 +8070,6 @@ Mesh files no longer used:
 	</item>
 	<item id="775" name="canMurkyWater">
 		<property name="Meshfile" value="Items/Food/can_empty" />
-		<property name="CustomIcon" value="ui_game_symbol_canMurkyWater" />
 		<property name="Material" value="metal" />
 		<property name="Weight" value="5" />
 		<property name="HoldType" value="14" />
@@ -8316,7 +8099,6 @@ Mesh files no longer used:
 	</item>
 	<item id="776" name="canBoiledWater">
 		<property name="Meshfile" value="Items/Food/can_empty" />
-		<property name="CustomIcon" value="ui_game_symbol_canBoiledWater" />
 		<property name="Material" value="metal" />
 		<property name="Weight" value="5" />
 		<property name="HoldType" value="14" />
@@ -8339,7 +8121,6 @@ Mesh files no longer used:
 	</item>
 	<item id="779" name="bottledRiverWater">
 		<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_bottledRiverWater" />
 		<property name="Material" value="glass" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="500" />
@@ -8369,7 +8150,6 @@ Mesh files no longer used:
 	</item>
 	<item id="780" name="bottledWater">
 		<property name="Meshfile" value="Items/Food/bottled_waterPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_bottledWater" />
 		<property name="Material" value="glass" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="15" />
@@ -8393,7 +8173,7 @@ Mesh files no longer used:
 	</item>
 	<item id="781" name="snowberryJuice">
 		<property name="Extends" value="bottledWater" />
-		<property name="CustomIcon" value="ui_game_symbol_grainAlcohol" />
+		<property name="CustomIcon" value="grainAlcohol" />
 		<property name="CustomIconTint" value="9f9fff" />
 		<property name="EconomicValue" value="100" />
 		<property name="CraftingIngredientTime" value="5" />
@@ -8409,7 +8189,6 @@ Mesh files no longer used:
 	</item>
 	<item id="782" name="goldenRodTea">
 		<property name="Meshfile" value="Items/Food/goldenrod_teaPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_goldenRodtea" />
 		<property name="Material" value="glass" />
 		<property name="HoldType" value="3" />
 		<property name="Weight" value="10" />
@@ -8432,7 +8211,6 @@ Mesh files no longer used:
 	</item>
 	<item id="783" name="redTea">
 		<property name="Meshfile" value="Items/Food/redTeaPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_redTea" />
 		<property name="Material" value="glass" />
 		<property name="HoldType" value="3" />
 		<property name="Weight" value="10" />
@@ -8459,12 +8237,12 @@ Mesh files no longer used:
 		<property name="Extends" value="redTea" />
 		<property name="CreativeMode" value="Dev" />
 		<!-- not done, yet -->
-		<property name="CustomIcon" value="ui_game_symbol_redTea" />
+		<property name="CustomIcon" value="redTea" />
 		<property name="CustomIconTint" value="8fffff" />
 	</item>
 	<item id="785" name="megaCrush">
 		<property name="Extends" value="redTea" />
-		<property name="CustomIcon" value="ui_game_symbol_megaCrush" />
+		
 		<!-- <property name="Meshfile" value="Items/Food/redTeaPrefab"/>
 	<property name="HoldType" value="3"/> -->
 		<property name="EconomicValue" value="100" />
@@ -8478,7 +8256,6 @@ Mesh files no longer used:
 	<!-- jzmod start here -->
 	<item id="786" name="coffee">
 		<property name="Meshfile" value="Items/Food/coffeePrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_coffee" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="3" />
 		<property name="Weight" value="10" />
@@ -8502,7 +8279,6 @@ Mesh files no longer used:
 	</item>
 	<item id="787" name="beer">
 		<property name="Meshfile" value="Items/Food/bottledBeerPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_beer" />
 		<property name="Material" value="glass" />
 		<property name="HoldType" value="3" />
 		<property name="Weight" value="10" />
@@ -8526,7 +8302,6 @@ Mesh files no longer used:
 	</item>
 	<item id="788" name="grainAlcohol">
 		<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_grainAlcohol" />
 		<property name="Material" value="glass" />
 		<property name="HoldType" value="3" />
 		<property name="Weight" value="10" />
@@ -8577,7 +8352,7 @@ Mesh files no longer used:
 	<item id="901" name="invisibleRecipesForRepairCost">
 		<!-- Gating book for lootable things we dont want the player to repair -->
 		<property name="Extends" value="schematicMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_schematicMaster" />
+		<property name="CustomIcon" value="schematicMaster" />
 		<property name="CreativeMode" value="None" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="oldWood,schematicMaster" />
@@ -8673,7 +8448,6 @@ Mesh files no longer used:
 	</item>
 	<item id="928" name="aK47Schematic">
 		<property name="Extends" value="schematicMaster" />
-		<property name="CustomIcon" value="AK47Schematic" />
 		<property name="EconomicValue" value="500" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="gunAK47" />
@@ -8831,7 +8605,7 @@ Mesh files no longer used:
 	<item id="970" name="wrenchSchematic">
 		<!-- NO LONGER USED -->
 		<property name="Extends" value="schematicMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_schematicMaster" />
+		<property name="CustomIcon" value="schematicMaster" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="wrenchSchematic" />
 			<!-- <property name="Skills_to_gain" value="craftSkillTools"/> -->
@@ -8840,7 +8614,7 @@ Mesh files no longer used:
 	<item id="971" name="clawHammerSchematic">
 		<!-- NO LONGER USED -->
 		<property name="Extends" value="schematicMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_schematicMaster" />
+		<property name="CustomIcon" value="schematicMaster" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="clawHammerSchematic" />
 			<!-- <property name="Skills_to_gain" value="craftSkillTools"/> -->
@@ -8882,7 +8656,7 @@ Mesh files no longer used:
 	<item id="991" name="herbalAntibioticsRecipe">
 		<property name="Extends" value="schematicMaster" />
 		<property name="EconomicValue" value="500" />
-		<property name="CustomIcon" value="ui_game_symbol_schematicMaster" />
+		<property name="CustomIcon" value="schematicMaster" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="herbalAntibiotics" />
 			<!-- <property name="Skills_to_gain" value="craftSkillScience"/> -->
@@ -8906,7 +8680,7 @@ Mesh files no longer used:
 
 <item id="1001" name="theRiddleOfSteel">
 	<property name="Extends" value="schematicMaster"/>
-	<property name="CustomIcon" value="ui_game_symbol_schematicMaster"/>
+	<property name="CustomIcon" value="schematicMaster"/>
 	<property class="Action1">
 		<property name="Skills_to_gain" value="Steel Smithing,Construction Tools"/>
 	</property>
@@ -9072,7 +8846,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Misc/Book" />
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="21" />
-		<property name="CustomIcon" value="ui_game_symbol_questMaster" />
+		<property name="CustomIcon" value="questMaster" />
 		<property name="Stacknumber" value="50" />
 		<!-- STK book -->
 		<property name="EconomicValue" value="1600" />
@@ -9090,14 +8864,14 @@ Mesh files no longer used:
 		<property name="Extends" value="questMaster" />
 		<property name="CreativeMode" value="None" />
 		<property name="DescriptionKey" value="qc_ZombieGroupDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_challengeQuestMaster" />
+		<property name="CustomIcon" value="challengeQuestMaster" />
 		<property name="EconomicValue" value="400" />
 	</item>
 	<item id="1152" name="treasureQuestMaster">
 		<property name="Extends" value="questMaster" />
 		<property name="CreativeMode" value="None" />
 		<property name="DescriptionKey" value="qt_desc" />
-		<property name="CustomIcon" value="ui_game_symbol_treasureQuestMaster" />
+		<property name="CustomIcon" value="treasureQuestMaster" />
 		<property name="PickupJournalEntry" value="treasureMapTip" />
 	</item>
 	<item id="1160" name="q_basicSurvival">
@@ -9255,7 +9029,7 @@ Mesh files no longer used:
 		<!-- scrap material -->
 		<property name="Meshfile" value="Items/Crafting/plant_fibers" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_plantFibers" />
+		<property name="CustomIcon" value="plantFibers" />
 		<property name="Weight" value="1" />
 		<property name="Material" value="plants" />
 		<property name="RepairTime" value="2.5" />
@@ -9277,7 +9051,6 @@ Mesh files no longer used:
 	<item id="1301" name="wood">
 		<!-- scrap material -->
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_wood" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="wood" />
 		<property name="Weight" value="5" />
@@ -10732,7 +10505,7 @@ Mesh files no longer used:
 	<item id="1509" name="crossbow_Parts">
 		<property name="Extends" value="partsMaster" />
 		<property name="DescriptionKey" value="crossbow_PartsDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_crossbow_Parts" />
+		<property name="CustomIcon" value="crossbow_Parts" />
 		<property name="PartType" value="Pump" />
 		<property name="Weight" value="10" />
 		<property class="Attributes">
@@ -10809,7 +10582,7 @@ Mesh files no longer used:
 	<item id="1516" name="carbonCrossbow_Parts">
 		<property name="Extends" value="crossbow_Parts" />
 		<property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_crossbow_Parts" />
+		<property name="CustomIcon" value="crossbow_Parts" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="100,1000" />
 		</property>
@@ -10910,7 +10683,7 @@ Mesh files no longer used:
 	<item id="1524" name="craftedRifle_receiver">
 		<property name="Extends" value="partsMaster" />
 		<property name="DescriptionKey" value="craftedRiflePartsDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_partsHuntingRifle_receiver" />
+		<property name="CustomIcon" value="partsHuntingRifle_receiver" />
 		<property name="PartType" value="Receiver" />
 		<property name="Weight" value="10" />
 		<property class="Attributes">
@@ -10924,7 +10697,7 @@ Mesh files no longer used:
 	<item id="1525" name="craftedRifle_stock">
 		<property name="Extends" value="partsMaster" />
 		<property name="DescriptionKey" value="craftedRiflePartsDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_partsHuntingRifle_stock" />
+		<property name="CustomIcon" value="partsHuntingRifle_stock" />
 		<property name="PartType" value="Stock" />
 		<property name="Weight" value="10" />
 		<property class="Attributes">
@@ -10936,7 +10709,7 @@ Mesh files no longer used:
 	<item id="1526" name="craftedRifleBarrel">
 		<property name="Extends" value="partsMaster" />
 		<property name="DescriptionKey" value="craftedRiflePartsDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_partsHuntingRifle_barrel" />
+		<property name="CustomIcon" value="partsHuntingRifle_barrel" />
 		<property name="PartType" value="Barrel" />
 		<property name="Weight" value="20" />
 		<property class="Attributes">
@@ -10953,7 +10726,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="44" />
 		<property name="Weight" value="10" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="CustomIcon" value="ui_game_symbol_gunRevolver" />
+		<property name="CustomIcon" value="gunRevolver" />
 		<property name="DescriptionKey" value="oldRevolverDesc" />
 		<property name="Stacknumber" value="1" />
 		<property name="Degradation" value="99999" param1="true" />
@@ -11009,7 +10782,7 @@ Mesh files no longer used:
 	<item id="1528" name="oldRifle">
 		<property name="Extends" value="oldRevolver" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_gunHuntingRifle" />
+		<property name="CustomIcon" value="gunHuntingRifle" />
 		<property name="DescriptionKey" value="oldRifleDesc" />
 		<property name="HoldType" value="30" />
 		<property name="FuelValue" value="15" />
@@ -11056,7 +10829,7 @@ Mesh files no longer used:
 	<item id="1529" name="silencedPistolBarrel">
 		<property name="Extends" value="partsPistol_barrel" />
 		<property name="DescriptionKey" value="silencedPistolBarrelDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_partsPistol_barrel" />
+		<property name="CustomIcon" value="partsPistol_barrel" />
 		<property name="CustomIconTint" value="FD9095" />
 		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 	</item>
@@ -11130,14 +10903,14 @@ Mesh files no longer used:
 	<item id="1536" name="silencedHuntingBarrel">
 		<property name="Extends" value="partsHuntingRifle_barrel" />
 		<property name="DescriptionKey" value="silencedHuntingBarrelDesc" />
-		<property name="CustomIcon" value="ui_game_symbol_partsHuntingRifle_barrel" />
+		<property name="CustomIcon" value="partsHuntingRifle_barrel" />
 		<property name="CustomIconTint" value="FD9095" />
 		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 	</item>
 	<!--JZMOD RIFLES-->
 	<item id="1537" name="silencedAK47">
 		<property name="Extends" value="gunAK47" />
-		<property name="CustomIcon" value="ui_game_symbol_gunAK47" />
+		<property name="CustomIcon" value="gunAK47" />
 		<property name="DescriptionKey" value="silencedAK47Desc" />
 		<property class="Parts">
 			<property name="Barrel" value="silencedAK47Barrel" />
@@ -11148,7 +10921,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1538" name="scopedAK47">
 		<property name="Extends" value="gunAK47" />
-		<property name="CustomIcon" value="ui_game_symbol_gunAK47" />
+		<property name="CustomIcon" value="gunAK47" />
 		<property name="DescriptionKey" value="ScopedAK47Desc" />
 		<property class="Parts">
 			<property name="Stock" value="aK47StockScope" />
@@ -11162,7 +10935,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1539" name="silentScopedAK47">
 		<property name="Extends" value="gunAK47" />
-		<property name="CustomIcon" value="ui_game_symbol_gunAK47" />
+		<property name="CustomIcon" value="gunAK47" />
 		<property name="DescriptionKey" value="SilentScopedAK47Desc" />
 		<property class="Parts">
 			<property name="Barrel" value="silencedAK47Barrel" />
@@ -11981,7 +11754,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1570" name="oldWrench">
 		<property name="Extends" value="wrench" />
-		<property name="CustomIcon" value="ui_game_symbol_wrench" />
+		<property name="CustomIcon" value="wrench" />
 		<property name="RepairTools" value="NoRepair" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="1,100" />
@@ -12042,7 +11815,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1572" name="welder_receiver">
 		<property name="Extends" value="partsNailgun_receiver" />
-		<property name="CustomIcon" value="ui_game_symbol_partsNailgun_receiver" />
+		<property name="CustomIcon" value="partsNailgun_receiver" />
 		<property name="DescriptionKey" value="partsNailgunGroupDesc" />
 		<property class="Attributes">
 			<property name="BlockDamage" value="2,10" />
@@ -12052,7 +11825,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1573" name="welder_parts">
 		<property name="Extends" value="partsNailgun_parts" />
-		<property name="CustomIcon" value="ui_game_symbol_partsNailgun_parts" />
+		<property name="CustomIcon" value="partsNailgun_parts" />
 		<property name="DescriptionKey" value="partsNailgunGroupDesc" />
 		<property class="Attributes">
 			<property name="EntityDamage" value="5,10" />
@@ -12065,7 +11838,7 @@ Mesh files no longer used:
 		<property name="PartType" value="Pump" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_ui_game_symbol_exhaust" />
+		<property name="CustomIcon" value="ui_game_symbol_exhaust" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="45" />
 		<property name="Weight" value="75" />
@@ -12102,7 +11875,7 @@ Mesh files no longer used:
 	<!--JZMOD ARMOR -->
 	<item id="1576" name="ironHelmet+Light">
 		<property name="Extends" value="ironHelmet" />
-		<property name="CustomIcon" value="ui_game_symbol_ironHelmet" />
+		<property name="CustomIcon" value="ironHelmet" />
 		<property name="Class" value="ItemClassToggle" />
 		<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
 		<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -12110,7 +11883,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1577" name="footballHelmet+Light">
 		<property name="Extends" value="footballHelmet" />
-		<property name="CustomIcon" value="ui_game_symbol_footballHelmet" />
+		<property name="CustomIcon" value="footballHelmet" />
 		<property name="Class" value="ItemClassToggle" />
 		<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
 		<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -12118,7 +11891,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1578" name="militaryHelmet+Light">
 		<property name="Extends" value="militaryHelmet" />
-		<property name="CustomIcon" value="ui_game_symbol_militaryHelmet" />
+		<property name="CustomIcon" value="militaryHelmet" />
 		<property name="Class" value="ItemClassToggle" />
 		<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
 		<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -12126,14 +11899,14 @@ Mesh files no longer used:
 	</item>
 	<item id="1579" name="scrapHelmet+Light">
 		<property name="Extends" value="scrapHelmet" />
-		<property name="CustomIcon" value="ui_game_symbol_scrapHelmet" />
+		<property name="CustomIcon" value="scrapHelmet" />
 		<property name="Class" value="ItemClassToggle" />
 		<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
 		<property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
 		<property name="DescriptionKey" value="helmetLightDesc" />
 	</item>
 	<item id="1580" name="tatteredShirt">
-		<property name="CustomIcon" value="ui_game_symbol_shirt" />
+		<property name="CustomIcon" value="shirt" />
 		<property name="Insulation" value="0" />
 		<property name="Material" value="cloth" />
 		<property name="DegradationBreaksAfter" value="true" />
@@ -12163,7 +11936,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1581" name="tatteredPants">
 		<property name="Insulation" value="0" />
-		<property name="CustomIcon" value="ui_game_symbol_denimPants" />
+		<property name="CustomIcon" value="denimPants" />
 		<property name="Material" value="cloth" />
 		<property name="DegradationBreaksAfter" value="true" />
 		<property name="FuelValue" value="6" />
@@ -12192,7 +11965,7 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="tatteredClothesDesc" />
 	</item>
 	<item id="1582" name="tatteredShoes">
-		<property name="CustomIcon" value="ui_game_symbol_runningShoes" />
+		<property name="CustomIcon" value="runningShoes" />
 		<property name="Insulation" value="0" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
