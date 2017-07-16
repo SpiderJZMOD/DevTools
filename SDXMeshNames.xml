@@ -8,13 +8,17 @@ Block Meshes
 <property name="Model" value="#workbenches?BlenderPrefab" />
 <property name="Model" value="#workbenches?SteelCookerPrefab" />                  
 <property name="Model" value="#workbenches?MixerPrefab" />                  
-<property name="Model" value="#workbenches?MeatGrinderPrefab" />                    
+<property name="Model" value="#workbenches?MeatGrinderPrefab" />
+<property name="Model" value="#workbenches?ToolboxPrefab" />
+<property name="Model" value="#workbenches?cableExtension" /> 
+<property name="Model" value="#workbenches?Blacksmith" />                   
 <property name="Model" value="#driller?Driller" />                    
 <property name="Model" value="#oilrocker?OilRockerPrefab" />                    
 <property name="Model" value="#windgenerator?WindRadPrefab" />                   
 <property name="Model" value="#windgenerator?WindRadPrefab2" />                    
 <property name="Model" value="#cage?FilledCage" />                    
 <property name="Model" value="#batteries?BatteryLoaderPrefab" />
+<property name="Model" value="#batteries?BatteryBlock" />
 <property name="Model" value="#Meter?MeterPrefab" />
 <property name="Model" value="#Lathe?LathePrefab" />
 <property name="Model" value="#mill?MillPrefab" />
@@ -27,6 +31,7 @@ Block Meshes
 <property name="Model" value="#biggenerator?Generator1" />
 <property name="Model" value="#poweredtraps?TrapSpike1" />
 <property name="Model" value="#poweredtraps?Trapfire1" />
+<property name="Model" value="#poweredtraps?PoweredZdGrinder" />
 <property name="Model" value="#watertank?watertankPrefab" />
 <property name="Model" value="#Transformers?Driller" />
 <property name="Model" value="#RazorWire?RazorWirePrefab" />
@@ -36,6 +41,7 @@ Block Meshes
 <property name="Model" value="#traps?BearTrap" />
 <property name="Model" value="#traps?NailTrap" />
 <property name="Model" value="#traps?Trapdoor" />
+<property name="Model" value="#traps?ZdGrinder" />
 <property name="Model" value="#animalfarming?through" />
 <property name="Model" value="#fishes?bass" />
 <property name="Model" value="#fishes?bigBass" />
@@ -125,15 +131,13 @@ Block Meshes
 <property name="Model" value="#signs?LogoBlock" />
 <property name="Model" value="#nest?Nest2Prefab" />
 <property name="Model" value="#nest?Nest2BrokePrefab" />	
-<property name="Model" value="#hflnew?spotBattery" />
 <property name="Model" value="#lightsnew?disco" />	
+<property name="Model" value="#hflnew?spotBattery" />
 <property name="Model" value="#hflnew?ammoBag" />	
 <property name="Model" value="#hflnew?ammunationBagSmall" />
 <property name="Model" value="#hflnew?ammunationBox" />
 <property name="Model" value="#hflnew?ammunationBox1" />
-<property name="Model" value="#workbenches?ToolboxPrefab" />
 <property name="Model" value="#MortarAndPestle1?MortarAndPestle1Prefab" />
-<property name="Model" value="#workbenches?cableExtension" />
 <property name="Model" value="#AppleTree1?AppleTree1Prefab" />
 <property name="Model" value="#CannabisSprout1?CannabisSprout1Prefab" />
 <property name="Model" value="#CannabisSmallPlant1?CannabisSmallPlant1Prefab" />
@@ -155,8 +159,6 @@ Block Meshes
 <property name="Model" value="#powerplant?CorePrefab" />
 <property name="Model" value="#lightsnew?LampNew" />
 <property name="Model" value="#lamps?LampSide" />
-<property name="Model" value="#traps?ZdGrinder" />
-<property name="Model" value="#poweredtraps?PoweredZdGrinder" />
 <property name="Model" value="#boobytrap?BoobyTrap" />
 <property name="Model" value="#TobaccoPlant1?TobaccoPlant1Prefab" />
 <property name="Model" value="#lightsnew?LampNew1" />
@@ -194,15 +196,12 @@ Block Meshes
 <property name="Model" value="#vehiclesdeco?Schoolbus" />
 <property name="Model" value="#vehiclesdeco?Fiat147" />
 <property name="Model" value="#RuinedCar?RuinedCarPrefab" />	
-<property name="Model" value="#workbenches?Blacksmith" />
 <property name="Model" value="#carrot?carrotPrefab" />		
 <property name="Model" value="#onion?onionPrefab" />
 <property name="Model" value="#onion?onionPrefabSmall" />
 <property name="Model" value="#fruits?SaladPrefab" />
 <property name="Model" value="#strawberry?StrawberryPrefab1" />
 <property name="Model" value="#strawberry?StrawberryPrefab" />			
-<property name="Model" value="#paprika?paprikaPrefab" />
-<property name="Model" value="#paprika?smallPlantPrefab" />	
 <property name="Model" value="#StorageBoxCustomLabel?StorageBoxCustomLabelPrefab" />
 <property name="Model" value="#engineersdesk?EngineersDesk" />
 <property name="Model" value="#alchemistic?AlchemisticWorkbenchPrefab" />
@@ -281,12 +280,91 @@ Block Meshes
 <property name="Model" value="#WoodShutters2R2?WoodShutters2R2" />
 <property name="Model" value="#Elevator22?Elevator22" />
 <property name="Model" value="#radio?radio" />
+<property name="Model" value="#smallgenerator?smallGeneratorPrefab" />
+<property name="Model" value="#TableMetal1?TableMetal1Prefab" />
+<property name="Model" value="#nukes?nuke1" />
+<property name="Model" value="#nukes?Exploson10" />
+<property name="Model" value="#Survivors?radioTowerPrefab" />
+<property name="Model" value="#Survivors?survivorPrefab" />
+<property name="Model" value="#Survivors?smithPrefab" />
+<property name="Model" value="#Survivors?cookPrefab" />
+<property name="Model" value="#Survivors?farmerPrefab" />
+<property name="Model" value="#Survivors?farmContainer" />
+<property name="Model" value="#Survivors?guardPrefab" />
+<property name="Model" value="#Survivors?mechanicPrefab" />
+<property name="Model" value="#scorpion?ScorpionPrefab" />
+<property name="Model" value="#scorpion?SpiderPrefab" />
+<property name="Model" value="#scorpion?SnakePrefab" />
+<property name="Model" value="#scorpion?PiranhaPrefab" />
+<property name="Model" value="#DecoVehiclesPrefabs?Guntruck" />
+<property name="Model" value="#DecoVehiclesPrefabs?military_truck" />
+<property name="Model" value="#DecoVehiclesPrefabs?AmbulanceUSFBX" />
+<property name="Model" value="#DecoVehiclesPrefabs?oldArmyTruck" />
+<property name="Model" value="#SpiderNest?SpiderNest" />
+<property name="Model" value="#turbine?Turbine1" />
+<property name="Model" value="#powerplant?CorePrefab" />
+<property name="Model" value="#powerplant?CoolingTowerPrefab" />
+<property name="Model" value="#workbenches1?WorkbenchBigPrefab" />
+<property name="Model" value="#workbenches1?ElectronicWorkbench" />
+<property name="Model" value="#lamps1?LampSide" />
+<property name="Model" value="#lamps1?LampTop" />
+<property name="Model" value="#warning?NuclearSign" />
+<property name="Model" value="#cooking?KitchenWorkbench" />
+<property name="Model" value="#cooking?SteelCookerPrefab" />
+<property name="Model" value="#paprika?smallPlantPrefab" />
+<property name="Model" value="#paprika?paprikaPrefab" />
+<property name="Model" value="#eggplant?eggplantSprout" />
+<property name="Model" value="#garlic?smallGarlic" />
+<property name="Model" value="#lemontree?saladCrop" />
+<property name="Model" value="#lemontree?smallLimeTree" />
+<property name="Model" value="#lemontree?smallLemonTree" />
+<property name="Model" value="#lemontree?smallOrangeTree" />
+<property name="Model" value="#peachtree?smallPeachTree" />
+<property name="Model" value="#lemontree?smallPearTree" />
+<property name="Model" value="#lemontree?smallCherryTree" />
+<property name="Model" value="#sunflower?sunflower" />
+<property name="Model" value="#smallbanana?smallBananaPlant" />
+<property name="Model" value="#smallpalm?Palm" />
+<property name="Model" value="#palm?PalmDate" />
+<property name="Model" value="#avocado?AvocadoTree" />
+<property name="Model" value="#redwoodtree?RedwoodTreeSmall" />
+<property name="Model" value="#redwoodtree?RedwoodTree" />
+<property name="Model" value="#sunenergy?SolarCollector" />
+<property name="Model" value="#weaponworkbench?WeaponWorkbenchPrefabV" />
+<property name="Model" value="#animalCoops?ChickenHousePrefab" />
+<property name="Model" value="#animalCoops?rabitCagePrefab" />
+<property name="Model" value="#animalCoops?BoxTrapPrefab" />
+<property name="Model" value="#radiated?DecalSphere" />
+<property name="Model" value="#radiated?RadBarrel" />
+<property name="Model" value="#radiated?RadBarrelV" />
+<property name="Model" value="#radiated?RadMushroom" />
+<property name="Model" value="#radiated?RadTree" />
+<property name="Model" value="#radiated?Nest2Prefab" />
+<property name="Model" value="#randomtanks?Tanks" />
+<property name="Model" value="#tanksm?TanksM" />
+<property name="Model" value="#decocars?DecoCars" />
+<property name="Model" value="#tanksm?M1A1" />
+<property name="Model" value="#tanksm?TanksT-90" />
+<property name="Model" value="#ammoreloder?ammunitionReloader1" />
+<property name="Model" value="#forge1?forge1Prefab" />
+<property name="Model" value="#forge1?anvilPrefab" />
+<property name="Model" value="#forge1?forgestonePrefab" />
+<property name="Model" value="#floatPlat?barrelRaft" />
+<property name="Model" value="#browning?BrowningBlockPrefab" />
+<property name="Model" value="#browning?BrowningTripodPrefab" />
+<property name="Model" value="#ammobags?ammoBag" />
+<property name="Model" value="#ammobags?ammoBag1" />
+<property name="Model" value="#shutter?ShutterDoor" />
+<property name="Model" value="#shutter?ShutterDoorV" />
+<property name="Model" value="#mgold?OldMgBlockPrefab" />
+<property name="Model" value="#mgold?OldMgTripod" />
 Hand Meshes             
 <property name="Meshfile" value="#lifestraw?LifeStraw" />                    
 <property name="Meshfile" value="#lmg?LSAT" /><property name="HoldType" value="6" />                    
 <property name="Meshfile" value="#lmg?MG42" />           
 <property name="Meshfile" value="#launcher?GrenadeLauncher" />                    
 <property name="Meshfile" value="#launcher?Grenade_launcher" />	<property name="HoldType" value="3" />                    
+<property name="Meshfile" value="#launcher?RocketLauncher" /><property name="HoldType" value="10" />                    
 <property name="Meshfile" value="#pistols?Beretta" /><property name="HoldType" value="1" />                    
 <property name="Meshfile" value="#pistols?MK23" />                    
 <property name="Meshfile" value="#pistols?MP-443" />                    
@@ -300,28 +378,26 @@ Hand Meshes
 <property name="Meshfile" value="#uzi?UziPrefab" />                    
 <property name="Meshfile" value="#cbj?CbjPrefab" />                    
 <property name="Meshfile" value="#amr2?AMR3" /><property name="HoldType" value="11" />                   
-<property name="Meshfile" value="#usas?USAS12" /><property name="HoldType" value="6" />                    
-<property name="Meshfile" value="#launcher?RocketLauncher" /><property name="HoldType" value="10" />                    
-<property name="Meshfile" value="#minigun?MinigunPrefab" /><property name="HoldType" value="19" />                    
+<property name="Meshfile" value="#minigun?MinigunPrefab" /><property name="HoldType" value="19" />
+<property name="Meshfile" value="#minigun?minigun" /><property name="HoldType" value="19" />
 <property name="Meshfile" value="#husbandry?woolScissor" />   <property name="HoldType" value="36" />                 
 <property name="Meshfile" value="#husbandry?whip" /><property name="HoldType" value="17" />                    
 <property name="Meshfile" value="#animalfarming?bucket1" /><property name="HoldType" value="36" />   
-<property name="Meshfile" value="#fishing1?cane" /><property name="HoldType" value="20" />                 
 <property name="Meshfile" value="#worms?earthworms" /><property name="HoldType" value="3" />                    
-<property name="Meshfile" value="#fishes?rawFish" />  
 <property name="Meshfile" value="#bamboo?bambooPole" /><property name="HoldType" value="17" />
-<property name="Meshfile" value="#fishes?hook" /><property name="HoldType" value="23" />
 <property name="Meshfile" value="#skulls?skull1" /><property name="HoldType" value="27" />
 <property name="Meshfile" value="#skulls?skull2" />
 <property name="Meshfile" value="#skulls?skull3" />
+<property name="Meshfile" value="#fishes?rawFish" /><property name="HoldType" value="3" />
+<property name="Meshfile" value="#fishes?hook" /><property name="HoldType" value="23" />
 <property name="Meshfile" value="#fishes?bass" />
 <property name="Meshfile" value="#fishes?bigFish" />
 <property name="Meshfile" value="#fishes?fish" />
 <property name="Meshfile" value="#fishes?rudFish" />
 <property name="Meshfile" value="#fishes?salmon" />
 <property name="Meshfile" value="#rafts?bambooRaftS" /><property name="HoldType" value="45" />
+<property name="Meshfile" value="#fishing1?cane" /><property name="HoldType" value="20" />                 
 <property name="Meshfile" value="#fishing1?caneW" /><property name="HoldType" value="20" />
-<property name="Meshfile" value="#fishing1?cane" />
 <property name="Meshfile" value="#axe1?AXE" /><property name="HoldType" value="17" />
 <property name="Meshfile" value="#axe1?AXE3" />
 <property name="Meshfile" value="#axe1?AXE1" /><property name="HoldType" value="2" />
@@ -329,17 +405,17 @@ Hand Meshes
 <property name="Meshfile" value="#axe1?AXE4" />
 <property name="Meshfile" value="#axe1?AXE5" />
 <property name="Meshfile" value="#axe1?AXE6" />
-<property name="Meshfile" value="#sword?Sword" />
+<property name="Meshfile" value="#sword?Sword" /><property name="HoldType" value="2" />
 <property name="Meshfile" value="#sword?Sword1" />
 <property name="Meshfile" value="#sword?Sword2" />
 <property name="Meshfile" value="#sword?Sword3" />
 <property name="Meshfile" value="#sword?Sword5" />
 <property name="Meshfile" value="#sword?Sword6" />
-<property name="Meshfile" value="#medieval?decoSchwert1" />
 <property name="Meshfile" value="#sword?Saber" />
 <property name="Meshfile" value="#sword?2HandedSword" /><property name="HoldType" value="17" />
 <property name="Meshfile" value="#sword?2HandedSword1" />
 <property name="Meshfile" value="#sword?2HandedSword2" />
+<property name="Meshfile" value="#medieval?decoSchwert1" />
 <property name="Meshfile" value="#dagger?Dagger" /><property name="HoldType" value="36" />
 <property name="Meshfile" value="#dagger?Dagger1" />
 <property name="Meshfile" value="#mace?Mace" /><property name="HoldType" value="2" />
@@ -361,7 +437,6 @@ Hand Meshes
 <property name="Meshfile" value="#extweapons?MK23Attachment" />
 <property name="Meshfile" value="#extweapons?MP-443Attachment" />
 <property name="Meshfile" value="#extweapons?DesertEagleAttachment" />
-<property name="Meshfile" value="#pistols?Luger" />
 <property name="Meshfile" value="#extweapons?ACWPrefabTest" /><property name="HoldType" value="6" />
 <property name="Meshfile" value="#extweapons?AK12Attachments" />
 <property name="Meshfile" value="#extweapons?Scar-HAttachment" />
@@ -372,8 +447,6 @@ Hand Meshes
 <property name="Meshfile" value="#extweapons?CbjAttachment" />
 <property name="Meshfile" value="#extweapons?AMR2Attachment" /><property name="HoldType" value="11" />
 <property name="Meshfile" value="#usas?USAS12" /><property name="HoldType" value="6" />
-<property name="Meshfile" value="#launcher?RocketLauncher" /><property name="HoldType" value="10" />
-<property name="Meshfile" value="#minigun?MinigunPrefab" /><property name="HoldType" value="19" />
 <property name="Meshfile" value="#hflnew?Lightsword" /><property name="HoldType" value="17" />
 <property name="Meshfile" value="#hflnew?Hooligan-Tool" />
 <property name="Meshfile" value="#hflnew?AXE" />
@@ -399,14 +472,25 @@ Hand Meshes
 <property name="Meshfile" value="#food1?BananaIceCreamPrefab" />
 <property name="Meshfile" value="#food1?AppleIceCreamPrefab" />
 <property name="Meshfile" value="#food1?BananamilkshakePrefab" />
-<property name="Meshfile" value="#WheatGrains1?WheatGrains1Prefab" />         
-<property name="Meshfile" value="#Flour1?Flour1Prefab" /><property name="HoldType" value="23" />         
-<property name="Meshfile" value="#BreadLoaf1?BreadLoaf1Prefab" />         
+<property name="Meshfile" value="#food1?Applemilk1shakePrefab" />
+<property name="Meshfile" value="#food1?Bananamilk1shakePrefab" />
+<property name="Meshfile" value="#food1?Cherrymilk1shakePrefab" />
+<property name="Meshfile" value="#food1?Cocomilk1shakePrefab" />
+<property name="Meshfile" value="#food1?Blueberrymilk1shakePrefab" />
+<property name="Meshfile" value="#food1?LemonIceCreamPrefab" />
+<property name="Meshfile" value="#food1?CherryIceCreamPrefab" />
+<property name="Meshfile" value="#food1?CocoIceCreamPrefab" />
 <property name="Meshfile" value="#food1?Hamburger" /><property name="HoldType" value="3" />         
 <property name="Meshfile" value="#food1?HamburerMeatPrefab" />         
 <property name="Meshfile" value="#food1?HamburerBunPrefab" />         
 <property name="Meshfile" value="#food1?cheese" />         
-<property name="Meshfile" value="#food1?Cheeseburger" />         
+<property name="Meshfile" value="#food1?Cheeseburger" />   
+<property name="Meshfile" value="#food1?mixedSalad" />
+<property name="Meshfile" value="#food1?Rum" />
+<property name="Meshfile" value="#food1?Libre" />
+<property name="Meshfile" value="#WheatGrains1?WheatGrains1Prefab" />         
+<property name="Meshfile" value="#Flour1?Flour1Prefab" /><property name="HoldType" value="23" />         
+<property name="Meshfile" value="#BreadLoaf1?BreadLoaf1Prefab" />         
 <property name="Meshfile" value="#fishing?caneBrown" /><property name="HoldType" value="20" />         
 <property name="Meshfile" value="#fishing?caneWood2" />  
 <property name="Meshfile" value="#fishing?caneGold" /> 
@@ -436,6 +520,7 @@ Hand Meshes
 <property name="Meshfile" value="#stoneHammer?stoneHammer" />
 <property name="Meshfile" value="#lockPick?lockPick" /><property name="HoldType" value="1" />
 <property name="Meshfile" value="#drill?Drill" /><property name="HoldType" value="37" />
+<property name="Meshfile" value="#drill?DrillTool" /> 
 <property name="Meshfile" value="#saw?Saw" /><property name="HoldType" value="19" />
 <property name="Meshfile" value="#fishingRod?fishingRod" /><property name="HoldType" value="16" />
 <property name="Meshfile" value="#IronShiv?IronShiv" /><property name="HoldType" value="36" />
@@ -496,7 +581,6 @@ Hand Meshes
 <property name="Meshfile" value="#ex41?ex41" /><property name="HoldType" value="6" />
 <property name="Meshfile" value="#mk1SMGL?mk1SMGL" /><property name="HoldType" value="6" />
 <property name="Meshfile" value="#coltNavy?coltNavy" /><property name="HoldType" value="44" />
-<property name="Meshfile" value="#minigun?minigun" /><property name="HoldType" value="19" />
 <property name="Meshfile" value="#flamethrower?flamethrower" /><property name="HoldType" value="19" />
 <property name="Meshfile" value="#SimpleGranade?SimpleGranade" /><property name="HoldType" value="21" />
 <property name="Meshfile" value="#F1Grenade?F1Grenade" /><property name="HoldType" value="25" />
@@ -530,13 +614,42 @@ Hand Meshes
 <property name="Meshfile" value="#spoon?spoon" />
 <property name="Meshfile" value="#pistolBlank?pistolBlank" />
 <property name="Meshfile" value="#Items/Tools/stone_shovelPrefab" />
-
-
-
-
-
-
-
+<property name="Meshfile" value="#crossbownew?CrossbowNew" />
+<property name="Meshfile" value="#crudeweapons?HuntingKnifeSpear" /><property name="HoldType" value="18" />
+<property name="Meshfile" value="#crudeweapons?nailedBat" /><property name="HoldType" value="2" />
+<property name="Meshfile" value="#crudeweapons?ChainNlocksPrefab" />
+<property name="Meshfile" value="#crudeweapons?nailwood" />
+<property name="Meshfile" value="#crudeweapons?Fork" /><property name="HoldType" value="36" />
+<property name="Meshfile" value="#crudeweapons?woddenSpear" /><property name="HoldType" value="18" />
+<property name="Meshfile" value="#fork?Fork" /><property name="HoldType" value="36" />
+<property name="Meshfile" value="#psg-1?Psg-1" /><property name="HoldType" value="11" />
+<property name="Meshfile" value="#Baton?Baton" /><property name="HoldType" value="2" />
+<property name="Meshfile" value="#ZdWeapons?Tomahawk" /><property name="HoldType" value="2" />
+<property name="Meshfile" value="#cbradio?MegaP" /><property name="HoldType" value="3" />
+<property name="Meshfile" value="#cbradio?WT" />
+<property name="Meshfile" value="#hammer?SmithHammer" /><property name="HoldType" value="2" />
+<property name="Meshfile" value="#RadSpider?SpiderVomit" />
+<property name="Meshfile" value="#ChemTable?SyringePrefab" /><property name="HoldType" value="23" />
+<property name="Meshfile" value="#browning?BrowningPrefab" />	<property name="HoldType" value="20" />
+<property name="Meshfile" value="#mgold?OldMGPrefab" /><property name="HoldType" value="20" />
+<property name="Meshfile" value="#lightswordnew?Lightsword" /><property name="HoldType" value="17" />
+<property name="Meshfile" value="#nailGuns?ShotgunNailPrefab" />
+<property name="Meshfile" value="#Banana1?Banana1Prefab" />
+<property name="Meshfile" value="#lemontree?limeFruit" />
+<property name="Meshfile" value="#lemontree?lemonFruit" />
+<property name="Meshfile" value="#lemontree?orangeFruit" />
+<property name="Meshfile" value="#lemontree?peachFruit" />
+<property name="Meshfile" value="#lemontree?pearFruit" />
+<property name="Meshfile" value="#lemontree?cherryFruit" />
+<property name="Meshfile" value="#hk?UMP45" /><property name="HoldType" value="6" />
+<property name="Meshfile" value="#hk?HK416" />
+<property name="Meshfile" value="#hk?MG4" />
+<property name="Meshfile" value="#revolver?revolverPrefab" /><property name="HoldType" value="44" />
+<property name="Meshfile" value="#steampunk?Revolver" /><property name="HoldType" value="44" />
+<property name="Meshfile" value="#steampunk?buechse" /><property name="HoldType" value="39" />
+<property name="Meshfile" value="#electric?BatElectric" /><property name="HoldType" value="2" />
+<property name="Meshfile" value="#electric?Power_Spear" /><property name="HoldType" value="18" />
+<property name="Meshfile" value="#mtar?mtarPrefab" />
 entitys
 <property name="MeshMaterial" value="#husbandry?Cow1" />  
 <property name="MeshMaterial" value="#husbandry?sheep1" /> 
